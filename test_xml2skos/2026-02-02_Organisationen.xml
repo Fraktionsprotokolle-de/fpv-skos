@@ -22,12 +22,7 @@
 				<!--Anfang Organisationen A-->
 				<!---->
 				<!---->
-				<org xml:id="xyz-unbekannte_Org">
-					<orgName full="yes">Unbekannte Institution/Eintrag konnte nicht identifiziert werden</orgName>
-					<orgName full="abb"/>
-					<idno type="gnd"/>
-					<idno type="wikipedia"/>
-				</org>
+				
 				<!--  A  -->
 				<org xml:id="Aftenposten" role="news">
 					<orgName full="yes">Aftenposten</orgName>
