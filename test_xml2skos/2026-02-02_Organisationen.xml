@@ -3820,13 +3820,13 @@
 				<!--Anfang Organisationen R-->
 				<!---->
 				<!---->
-				<org xml:id="RAF " role="pol">
+				<org xml:id="RAF" role="pol">
 					<orgName full="yes">Rote Armee Fraktion</orgName>
 					<orgName full="abb">RAF </orgName>
 					<idno type="gnd">http://d-nb.info/gnd/1007504-5</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Rote_Armee_Fraktion</idno>
 				</org>
-				<org xml:id="RCDS " role="pol">
+				<org xml:id="RCDS" role="pol">
 					<orgName full="yes">Ring Christlich-Demokratischer Studenten</orgName>
 					<orgName full="abb">RCDS </orgName>
 					<idno type="gnd">http://d-nb.info/gnd/1022689-8</idno>
@@ -3892,13 +3892,13 @@
 					<idno type="gnd">http://d-nb.info/gnd/7556849-4</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Reichstagspr%C3%A4sident_(Weimarer_Republik)</idno>
 				</org>
-				<org xml:id="RGW " role="pol">
+				<org xml:id="RGW" role="pol">
 					<orgName full="yes">Rat für gegenseitige Wirtschaftshilfe</orgName>
 					<orgName full="abb">RGW</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/1016341-4</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Rat_f%C3%BCr_gegenseitige_Wirtschaftshilfe</idno>
 				</org>
-				<org xml:id="ECOFIN " role="pol">
+				<org xml:id="ECOFIN" role="pol">
 					<orgName full="yes">Rat für Wirtschaft und Finanzen</orgName>
 					<orgName full="abb">ECOFIN</orgName>
 					<idno type="gnd"> / </idno>
@@ -3917,7 +3917,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/4342951-8</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Die_Rheinpfalz</idno>
 				</org>
-				<org xml:id="RIAS " role="news">
+				<org xml:id="RIAS" role="news">
 					<orgName full="yes">Rundfunk im amerikanischen Sektor</orgName>
 					<orgName full="abb">RIAS </orgName>
 					<idno type="gnd">http://d-nb.info/gnd/2020099-7</idno>
@@ -3983,19 +3983,19 @@
 					<idno type="gnd">http://d-nb.info/gnd/1086472-6</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/RTL_Television</idno>
 				</org>
-				<org xml:id="RPMittel " role="pol">
+				<org xml:id="RPMittel" role="pol">
 					<orgName full="yes">Reichspartei des deutschen Mittelstandes (auch: Wirtschaftspartei)</orgName>
 					<orgName full="abb">WP </orgName>
 					<idno type="gnd">http://d-nb.info/gnd/2066944-6</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Reichspartei_des_deutschen_Mittelstandes</idno>
 				</org>
-				<org xml:id="RVO " role="pol">
+				<org xml:id="RVO" role="pol">
 					<orgName full="yes">Reichsversicherungsordnung</orgName>
 					<orgName full="abb">RVO </orgName>
 					<idno type="gnd">http://d-nb.info/gnd/4121575-8</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Reichsversicherungsordnung</idno>
 				</org>
-				<org xml:id="RBosch " role="pol">
+				<org xml:id="RBosch" role="pol">
 					<orgName full="yes">Robert Bosch GmbH</orgName>
 					<orgName full="abb">Bosch </orgName>
 					<idno type="gnd">https://d-nb.info/gnd/2019917-X</idno>
@@ -4173,13 +4173,13 @@
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Sowjetische_Milit%C3%A4radministration_in_Deutschland</idno>
 				</org>
 				<org xml:id="SOPADE" role="news">
-					<orgName full="yes">SOPADE. Querschnitt durch Politik und Wirtschaft : sozialdemokratische Parteikorrespondenz / Hrsg.: Sopade, Sozialdemokratische Partei, Parteivorstand</orgName>
+					<orgName full="yes">SOPADE. Querschnitt durch Politik und Wirtschaft</orgName>
 					<orgName full="abb">SOPADE</orgName>
 					<idno type="gnd">https://d-nb.info/01117157X</idno>
 					<idno type="wikipedia"/>
 					<!--kein Eintrag bei Wiki für diese Publikation-->
 				</org>
-				<org xml:id="SoVD " role="pol">
+				<org xml:id="SoVD" role="pol">
 					<orgName full="yes">Sozialverband Deutschland e.V., vor 1999 Sozialverband Reichsbund</orgName>
 					<orgName full="abb">SoVD </orgName>
 					<idno type="gnd">http://d-nb.info/gnd/5198393-X</idno>
