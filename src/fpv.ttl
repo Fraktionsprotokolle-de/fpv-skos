@@ -1,4 +1,5 @@
 @prefix coll: <https://vokabular.fraktionsprotokolle.de/collection/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix org1: <https://vokabular.fraktionsprotokolle.de/org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
