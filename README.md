@@ -1,5 +1,5 @@
 # fpv-skos
-Dieses Repository enthält das kontrollierte Schlagwortvokabular (Fraktionsprotokolle Vocabulary, FPV) für die wissenschaftliche Edition »Fraktionen im Deutschen Bundestag 1949-2005«. Es dient als zentrale Referenzinstanz für die semantische Erschließung der Protokolle und die Optimierung der webbasierten Suche.
+Dieses Repository dient der Entwicklung eines kontrollierten Schlagwortvokabulars (Fraktionsprotokolle Vocabulary, FPV) für die wissenschaftliche Edition »Fraktionen im Deutschen Bundestag 1949-2005«. Es soll in Zukunft als zentrale Referenzinstanz für die semantische Erschließung der Protokolle und die Optimierung der webbasierten Suche dienen.
 
 ## Zweck des Vokabulars
 
