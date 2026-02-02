@@ -3645,7 +3645,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/2012569-0</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Gewerkschaft_%C3%96ffentliche_Dienste,_Transport_und_Verkehr</idno>
 				</org>
-				<org xml:id="ÖVP" role="pol">
+				<org xml:id="OEVP" role="pol">
 					<orgName full="yes">Österreichische Volkspartei</orgName>
 					<orgName full="abb">ÖVP</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/1013073-1</idno>
