@@ -4,7 +4,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 coll:com a skos:Collection ;
-    skos:member org1:ABiD,
+    skos:member org1:ABB,
+        org1:ABiD,
         org1:AEG,
         org1:AOK,
         org1:Agfa,
@@ -121,10 +122,6 @@ coll:com a skos:Collection ;
         org1:ZDH,
         org1:infas ;
     skos:prefLabel "Unternehmen"@de .
-
-coll:comm a skos:Collection ;
-    skos:member org1:ABB ;
-    skos:prefLabel "comm"@de .
 
 coll:news a skos:Collection ;
     skos:member org1:AAPD,
