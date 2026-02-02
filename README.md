@@ -21,7 +21,7 @@ Das Vokabular wird nach dem **SKOS-Standard (Simple Knowledge Organization Syste
 
 ## Technischer Workflow (in Entwicklung)
 
-Die Verarbeitung der Daten soll automatisiert über GitHub Actions:
+Die Verarbeitung der Daten soll automatisiert über GitHub Actions erfolgen:
 
 1. **Validierung:** Bei jedem Commit wird die `src/fpv.ttl` auf syntaktische Korrektheit (RDF/SKOS) geprüft.
 2. **Transformation:** Python-Skripte (`scripts/`) generieren die XML- und JSON-Artefakte im Verzeichnis `dist/`.
