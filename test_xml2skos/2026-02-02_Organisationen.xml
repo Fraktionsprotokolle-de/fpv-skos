@@ -25,7 +25,7 @@
 				
 				<!--  A  -->
 				<org xml:id="Aftenposten" role="news">
-					<orgName full="yes">Aftenposten</orgName>
+					<orgName full="yes">Afternposten</orgName>
 					<orgName full="abb"></orgName>
 					<idno type="VIAF">http://viaf.org/viaf/147145969949732250346</idno>
 					<idno type="gnd"><!--kein Eintrag--></idno>
