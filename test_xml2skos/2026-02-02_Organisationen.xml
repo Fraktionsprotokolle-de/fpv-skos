@@ -80,7 +80,7 @@
 					<idno type="gnd">https://d-nb.info/gnd/4560220-7</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Der_Abend_(Deutschland)</idno>
 				</org>	
-				<org xml:id="ABB" role="comm">
+				<org xml:id="ABB" role="com">
 					<orgName full="yes">ASEA Brown Boveri</orgName>
 					<orgName full="abb">ABB</orgName>
 					<idno type="gnd">	https://d-nb.info/gnd/10041007-8</idno>
