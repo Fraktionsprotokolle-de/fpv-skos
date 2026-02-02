@@ -1,9 +1,9 @@
 import os
 import logging
-from urllib.parse import urlparse
+from urllib.parse import urlparse, quote
 from lxml import etree
-from rdflib import Graph, Literal, RDF, URIRef, Namespace
-from rdflib.namespace import SKOS, DCTERMS, RDF as RDF_NS
+from rdflib import Graph, Literal, URIRef, Namespace, RDF
+from rdflib.namespace import SKOS, DCTERMS
 
 # Konfiguration
 INPUT_FILE = 'test_xml2skos/2026-02-02_Organisationen.xml'
@@ -13,7 +13,6 @@ BASE_URI = "https://vokabular.fraktionsprotokolle.de/"
 # Mapping für Rollen zur Konsistenzprüfung
 ROLE_MAP = {
     "com": "Unternehmen",
-    "comm": "Unternehmen",
     "pol": "Politische Organisationen",
     "soc": "Gesellschaftliche Organisationen",
     "news": "Medien"
@@ -59,15 +58,16 @@ def convert():
     COLL_NS = Namespace(BASE_URI + "collection/")
     SCHEME_NS = Namespace(BASE_URI + "scheme/")
     
-    # Bindings erzwingen (override=True verhindert org1, org2)
+    # Bindings (replace=True statt dem ungültigen override=True)
     g.bind("skos", SKOS)
-    g.bind("org", ORG_NS, override=True)
-    g.bind("coll", COLL_NS, override=True)
+    g.bind("rdf", RDF)
+    g.bind("org", ORG_NS, replace=True)
+    g.bind("coll", COLL_NS, replace=True)
     g.bind("dct", DCTERMS)
 
     # 1. Concept Scheme initialisieren
     scheme_uri = URIRef(BASE_URI + "scheme/fpv")
-    g.add((scheme_uri, RDF_NS.type, SKOS.ConceptScheme))
+    g.add((scheme_uri, RDF.type, SKOS.ConceptScheme))
     g.add((scheme_uri, SKOS.prefLabel, Literal("Organisationen der Fraktionsprotokolle", lang="de")))
     g.add((scheme_uri, DCTERMS.description, Literal("SKOS-Vokabular generiert aus TEI-Organisationenverzeichnis.", lang="de")))
 
@@ -76,16 +76,17 @@ def convert():
     logger.info('%d Organisationen im XML gefunden.', len(organizations))
 
     for org in organizations:
-        # ID extrahieren
+        # ID extrahieren (xml:id)
         org_id = org.get('{%s}id' % XML_NS)
         if not org_id:
             continue
 
-        # URI bilden
-        subject = URIRef(ORG_NS[org_id])
+        # Lokalen Teil sicher in eine IRI-kodierte Form bringen
+        safe_local = quote(org_id, safe='')
+        subject = URIRef(str(ORG_NS) + safe_local)
         
         # Grunddaten des Konzepts
-        g.add((subject, RDF_NS.type, SKOS.Concept))
+        g.add((subject, RDF.type, SKOS.Concept))
         g.add((subject, SKOS.inScheme, scheme_uri))
         g.add((subject, SKOS.note, Literal("tbd", lang="de")))
 
@@ -96,31 +97,55 @@ def convert():
             display_name = ROLE_MAP.get(role_key, role_key.capitalize())
             
             if role_key not in collections:
-                coll_uri = URIRef(COLL_NS[role_key])
-                g.add((coll_uri, RDF_NS.type, SKOS.Collection))
+                coll_uri = URIRef(str(COLL_NS) + quote(role_key, safe=''))
+                g.add((coll_uri, RDF.type, SKOS.Collection))
                 g.add((coll_uri, SKOS.prefLabel, Literal(display_name, lang="de")))
+                # Collection in das Scheme setzen (semantisch sinnvoll)
+                g.add((coll_uri, SKOS.inScheme, scheme_uri))
                 collections[role_key] = coll_uri
             
             g.add((collections[role_key], SKOS.member, subject))
 
         # Namen (Labels)
         names = org.xpath('./tei:orgName', namespaces=ns)
+        preflabel_set = False
+        first_name_text = None
         for name in names:
             full_type = name.get('full')
             text = (name.text or "").strip()
             if not text or text in ["/", "–"]:
                 continue
-            
+
+            if first_name_text is None:
+                first_name_text = text  # fallback
+
             if full_type == "yes":
                 g.add((subject, SKOS.prefLabel, Literal(text, lang="de")))
+                preflabel_set = True
             elif full_type == "abb":
                 g.add((subject, SKOS.altLabel, Literal(text, lang="de")))
+            else:
+                # unknown 'full' attribute: treat as altLabel unless no prefLabel exists
+                if not preflabel_set:
+                    g.add((subject, SKOS.prefLabel, Literal(text, lang="de")))
+                    preflabel_set = True
+                else:
+                    g.add((subject, SKOS.altLabel, Literal(text, lang="de")))
+
+        # Fallback: falls kein prefLabel gesetzt wurde, nutze den ersten Namenstext
+        if not preflabel_set and first_name_text:
+            g.add((subject, SKOS.prefLabel, Literal(first_name_text, lang="de")))
 
         # Identifikatoren & Matches
         idnos = org.xpath('./tei:idno', namespaces=ns)
         for idno in idnos:
             val = (idno.text or "").strip()
-            if not val or not is_valid_uri(val):
+            if not val:
+                continue
+
+            # Falls eine bare GND/VIAF-ID vorkommt, kann man hier evtl. Canonical-URIs erzeugen.
+            # Der Code hier akzeptiert nur gültige http(s)-URIs als Matches.
+            if not is_valid_uri(val):
                 continue
             
             match_uri = URIRef(val)
@@ -130,12 +155,14 @@ def convert():
                 g.add((subject, SKOS.exactMatch, match_uri))
             elif id_type == "wikipedia":
                 g.add((subject, SKOS.closeMatch, match_uri))
+            else:
+                # generischer closeMatch für unbekannte Typen, falls erwünscht
+                g.add((subject, SKOS.closeMatch, match_uri))
 
     # Serialisierung
     try:
-        # Wir nutzen 'long' Format für bessere Lesbarkeit und explizite Kodierung
-        data = g.serialize(format='turtle', encoding='utf-8')
-        with open(OUTPUT_FILE, 'wb') as f:
+        data = g.serialize(format='turtle')  # liefert einen str
+        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write(data)
         logger.info('SKOS-Datei erfolgreich geschrieben: %s (%d Tripel)', OUTPUT_FILE, len(g))
     except Exception as e:
