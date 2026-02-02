@@ -1,0 +1,36 @@
+name: TEI to SKOS Conversion
+
+on:
+  push:
+    paths:
+      - 'test_xml2skos/2026-02-02_Organisationen.xml'
+  workflow_dispatch: {}
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install lxml rdflib
+
+      - name: Run conversion script
+        run: python test_xml2skos/xml2skos.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update SKOS vocabulary from TEI XML"
+          file_pattern: 'src/fpv.ttl'
