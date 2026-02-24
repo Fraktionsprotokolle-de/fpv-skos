@@ -1,13 +1,6 @@
 @prefix ex: <https://voc.fraktionsprotokolle.de/concept/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://voc.fraktionsprotokolle.de/concept/%C3%96TV> a skos:Concept ;
-    skos:altLabel "ÖTV"@de ;
-    skos:closeMatch <https://de.wikipedia.org/wiki/Gewerkschaft_%C3%96ffentliche_Dienste,_Transport_und_Verkehr> ;
-    skos:exactMatch <http://d-nb.info/gnd/2012569-0> ;
-    skos:note "pol"@de ;
-    skos:prefLabel "Gewerkschaft Öffentliche Dienste, Transport und Verkehr"@de .
-
 ex:AA a skos:Concept ;
     skos:altLabel "AA"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Ausw%C3%A4rtiges_Amt> ;
@@ -180,7 +173,7 @@ ex:AL a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Alternative Liste für Demokratie und Umweltschutz"@de .
 
-ex:AL-%C3%96sterreich a skos:Concept ;
+ex:AL-OEsterreich a skos:Concept ;
     skos:altLabel "AL-Österreich"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Alternative_Liste_%C3%96sterreichs> ;
     skos:exactMatch <http://d-nb.info/gnd/407324-1> ;
@@ -263,6 +256,12 @@ ex:AUD a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Aktionsgemeinschaft Unabhängiger Deutscher"@de .
 
+ex:AVP a skos:Concept ;
+    skos:altLabel "AVP"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Aktionsgemeinschaft_Vierte_Partei> ;
+    skos:note "soc"@de ;
+    skos:prefLabel "Aktionsgemeinschaft Vierte Partei"@de .
+
 ex:AWO a skos:Concept ;
     skos:altLabel "AWO"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Arbeiterwohlfahrt> ;
@@ -322,7 +321,7 @@ ex:Aftenposten a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Aftenposten> ;
     skos:exactMatch <http://viaf.org/viaf/147145969949732250346> ;
     skos:note "news"@de ;
-    skos:prefLabel "Afternposten"@de .
+    skos:prefLabel "Aftenposten"@de .
 
 ex:Agfa a skos:Concept ;
     skos:altLabel "Agfa"@de ;
@@ -379,13 +378,6 @@ ex:Avanti a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Avanti!_(Zeitung)> ;
     skos:note "pol"@de ;
     skos:prefLabel "Avanti!(1896–1993)"@de .
-
-<https://voc.fraktionsprotokolle.de/concept/B.Z.> a skos:Concept ;
-    skos:altLabel "B.Z."@de ;
-    skos:closeMatch <https://de.wikipedia.org/wiki/B.Z.> ;
-    skos:exactMatch <http://d-nb.info/gnd/1355827787> ;
-    skos:note "pol"@de ;
-    skos:prefLabel "B.Z."@de .
 
 ex:BAG a skos:Concept ;
     skos:altLabel "BAG"@de ;
@@ -532,6 +524,12 @@ ex:BKAmt a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/2050132-8> ;
     skos:note "pol"@de ;
     skos:prefLabel "Bundeskanzleramt"@de .
+
+ex:BLW a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Bayerisches_Landwirtschaftliches_Wochenblatt> ;
+    skos:exactMatch <https://d-nb.info/014492741> ;
+    skos:note "news"@de ;
+    skos:prefLabel "Bayerisches Landwirtschaftliches Wochenblatt"@de .
 
 ex:BMA a skos:Concept ;
     skos:altLabel "pol"@de ;
@@ -987,6 +985,12 @@ ex:BerMoPo a skos:Concept ;
     skos:note "news"@de ;
     skos:prefLabel "Berliner Morgenpost"@de .
 
+ex:BergmannBorsig a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Bergmann-Borsig> ;
+    skos:exactMatch <https://d-nb.info/gnd/7533735-6> ;
+    skos:note "com"@de ;
+    skos:prefLabel "Bergmann-Borsig"@de .
+
 ex:BerlinerStimme a skos:Concept ;
     skos:note "news"@de ;
     skos:prefLabel "Berliner Stimme - Wochenzeitung für Politik, Wirtschaft und Kultur"@de .
@@ -1048,6 +1052,13 @@ ex:BosGlo a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/4257322-1> ;
     skos:note "news"@de ;
     skos:prefLabel "The Boston Globe"@de .
+
+ex:BoulZ a skos:Concept ;
+    skos:altLabel "B.Z."@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/B.Z.> ;
+    skos:exactMatch <http://d-nb.info/gnd/1355827787> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "B.Z."@de .
 
 ex:BpB a skos:Concept ;
     skos:altLabel "bpb"@de ;
@@ -1140,6 +1151,13 @@ ex:CDApp a skos:Concept ;
     skos:exactMatch <https://d-nb.info/gnd/62128-6> ;
     skos:note "pol"@de ;
     skos:prefLabel "Christen-Democratisch Appèl"@de .
+
+ex:CDS a skos:Concept ;
+    skos:altLabel "CDS"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux> ;
+    skos:exactMatch <http://d-nb.info/gnd/516235-X> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "Centre des démocrates sociaux"@de .
 
 ex:CDU a skos:Concept ;
     skos:altLabel "CDU"@de ;
@@ -1821,6 +1839,12 @@ ex:DT a skos:Concept ;
     skos:note "news"@de ;
     skos:prefLabel "Daily Telegraph"@de .
 
+ex:DT64 a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/DT64> ;
+    skos:exactMatch <https://d-nb.info/gnd/5281344-7> ;
+    skos:note "news"@de ;
+    skos:prefLabel "Jugendradio DT64"@de .
+
 ex:DU a skos:Concept ;
     skos:altLabel "DU"@de ;
     skos:note "pol"@de ;
@@ -2210,12 +2234,20 @@ ex:EZU a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Europäische Zahlungsunion"@de .
 
+ex:EilenburgBau a skos:Concept ;
+    skos:note "com"@de ;
+    skos:prefLabel "Straßen- und Tiefbau GmbH Eilenburg"@de .
+
 ex:Emnid a skos:Concept ;
     skos:altLabel "Emnid"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/TNS_Emnid> ;
     skos:exactMatch <http://d-nb.info/gnd/2092484-7> ;
     skos:note "com"@de ;
     skos:prefLabel "Erforschung der öffentlichen Meinung, Marktforschung, Nachrichten, Informationen und Dienstleistungen"@de .
+
+ex:Eska a skos:Concept ;
+    skos:note "com"@de ;
+    skos:prefLabel "Eska Automotiv GmbH"@de .
 
 ex:EuRH a skos:Concept ;
     skos:altLabel "EuRH"@de ;
@@ -2261,6 +2293,13 @@ ex:FA a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/7570489-4> ;
     skos:note "news"@de ;
     skos:prefLabel "Foreign Affairs"@de .
+
+ex:FAO a skos:Concept ;
+    skos:altLabel "FAO"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Ern%C3%A4hrungs-_und_Landwirtschaftsorganisation_der_Vereinten_Nationen> ;
+    skos:exactMatch <https://d-nb.info/gnd/2010460-1> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "Food and Agriculture Organization of the United Nations"@de .
 
 ex:FAP a skos:Concept ;
     skos:altLabel "FAP"@de ;
@@ -2395,7 +2434,7 @@ ex:FORBIT a skos:Concept ;
     skos:note "com"@de ;
     skos:prefLabel "Forschungs- und Beratungsstelle Informationstechnologie"@de .
 
-ex:FP%C3%96 a skos:Concept ;
+ex:FPOe a skos:Concept ;
     skos:altLabel "FPÖ"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Freiheitliche_Partei_%C3%96sterreichs> ;
     skos:exactMatch <https://d-nb.info/gnd/2088858-2> ;
@@ -2471,6 +2510,12 @@ ex:FedAA a skos:Concept ;
     skos:note "soc"@de ;
     skos:prefLabel "Federal Aviation Administration"@de .
 
+ex:Filmfabrik a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Filmfabrik_Wolfen> ;
+    skos:exactMatch <https://d-nb.info/gnd/2010328-1> ;
+    skos:note "com"@de ;
+    skos:prefLabel "Filmfabrik"@de .
+
 ex:Framatome a skos:Concept ;
     skos:altLabel "Framatome"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Framatome> ;
@@ -2483,7 +2528,7 @@ ex:FreiePresse a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Presse_(Bielefeld)> ;
     skos:exactMatch <https://d-nb.info/010375287> ;
     skos:note "news"@de ;
-    skos:prefLabel "Freie Presse: Tageszeitung für Bielefeld Stadt und Land"@de .
+    skos:prefLabel "Freie Presse. Tageszeitung für Bielefeld Stadt und Land"@de .
 
 ex:FriedKruppAG a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Friedrich_Krupp_AG> ;
@@ -2493,6 +2538,7 @@ ex:FriedKruppAG a skos:Concept ;
 
 ex:Frontal a skos:Concept ;
     skos:altLabel "Frontal"@de ;
+    skos:exactMatch <https://d-nb.info/011835362> ;
     skos:note "news"@de ;
     skos:prefLabel "Frontal. Zeitschrift für demokratische Studenten"@de .
 
@@ -2835,7 +2881,7 @@ ex:Helaba a skos:Concept ;
     skos:note "com"@de ;
     skos:prefLabel "Hessische Landesbank (1953-1992)"@de .
 
-ex:HelabaTh%C3%BC a skos:Concept ;
+ex:HelabaThue a skos:Concept ;
     skos:altLabel "Helaba"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Landesbank_Hessen-Th%C3%BCringen> ;
     skos:exactMatch <https://d-nb.info/gnd/5058506-X> ;
@@ -3067,6 +3113,13 @@ ex:IWF a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Internationaler Währungsfond"@de .
 
+ex:IfD a skos:Concept ;
+    skos:altLabel "IfD"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Demoskopie_Allensbach> ;
+    skos:exactMatch <http://d-nb.info/gnd/2013703-5> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "Institut für Demoskopie Allensbach"@de .
+
 ex:IfZ a skos:Concept ;
     skos:altLabel "IfZ"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Zeitgeschichte> ;
@@ -3086,6 +3139,13 @@ ex:InFrueh a skos:Concept ;
     skos:exactMatch <https://d-nb.info/gnd/4211330-1> ;
     skos:note "news"@de ;
     skos:prefLabel "Der Internationale Frühschoppen"@de .
+
+ex:Interflug a skos:Concept ;
+    skos:altLabel "Interflug GmbH"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Interflug> ;
+    skos:exactMatch <https://d-nb.info/gnd/2150228-6> ;
+    skos:note "com"@de ;
+    skos:prefLabel "Interflug Gesellschaft für internationalen Flugverkehr mit beschränkter Haftung"@de .
 
 ex:Izv a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Iswestija> ;
@@ -3167,12 +3227,23 @@ ex:KGParl a skos:Concept ;
     skos:note "soc"@de ;
     skos:prefLabel "Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V."@de .
 
+ex:KKWStendal a skos:Concept ;
+    skos:note "com"@de ;
+    skos:prefLabel "KKW Stendal GmbH"@de .
+
 ex:KLM a skos:Concept ;
     skos:altLabel "KLM"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/KLM_Royal_Dutch_Airlines> ;
     skos:exactMatch <http://d-nb.info/gnd/4399528-7> ;
     skos:note "com"@de ;
     skos:prefLabel "Koninklijke Luchtvaart Maatschappij"@de .
+
+ex:KNA a skos:Concept ;
+    skos:altLabel "KNA"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Katholische_Nachrichten-Agentur> ;
+    skos:exactMatch <https://d-nb.info/gnd/2015513-X> ;
+    skos:note "news"@de ;
+    skos:prefLabel "Katholische Nachrichtenagentur"@de .
 
 ex:KOFAZ a skos:Concept ;
     skos:altLabel "KOFAZ"@de ;
@@ -3198,13 +3269,6 @@ ex:KP a skos:Concept ;
     skos:note "com"@de ;
     skos:prefLabel "Koninklijke Philips N.V."@de .
 
-ex:KP%C4%8C a skos:Concept ;
-    skos:altLabel "KPČ"@de ;
-    skos:closeMatch <https://de.wikipedia.org/wiki/Komunistick%C3%A1_strana_%C4%8Ceskoslovenska> ;
-    skos:exactMatch <http://d-nb.info/gnd/1012929-7> ;
-    skos:note "pol"@de ;
-    skos:prefLabel "Komunistická strana Československa"@de .
-
 ex:KPD a skos:Concept ;
     skos:altLabel "KPD"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Kommunistische_Partei_Deutschlands> ;
@@ -3229,6 +3293,13 @@ ex:KPI a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/3008-9> ;
     skos:note "pol"@de ;
     skos:prefLabel "Partito comunista italiano"@de .
+
+ex:KPTsch a skos:Concept ;
+    skos:altLabel "KPČ"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Komunistick%C3%A1_strana_%C4%8Ceskoslovenska> ;
+    skos:exactMatch <http://d-nb.info/gnd/1012929-7> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "Komunistická strana Československa"@de .
 
 ex:KPV a skos:Concept ;
     skos:altLabel "KPV"@de ;
@@ -3507,6 +3578,12 @@ ex:McK a skos:Concept ;
     skos:note "com"@de ;
     skos:prefLabel "McKinsey and Company"@de .
 
+ex:Medico a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Medico_international> ;
+    skos:exactMatch <https://d-nb.info/gnd/2000450-3> ;
+    skos:note "com"@de ;
+    skos:prefLabel "Medico International e.V."@de .
+
 ex:Mercorsur a skos:Concept ;
     skos:altLabel "Mercorsur"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Mercosur> ;
@@ -3520,6 +3597,13 @@ ex:MfS a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/2065138-7> ;
     skos:note "pol"@de ;
     skos:prefLabel "Ministerium für Staatssicherheit"@de .
+
+ex:MitBay a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Mittelbayerische_Zeitung> ;
+    skos:exactMatch <https://d-nb.info/gnd/16074959-1>,
+        <https://d-nb.info/gnd/4367490-2> ;
+    skos:note "news"@de ;
+    skos:prefLabel "Mittelbayerische Zeitung"@de .
 
 ex:Monitor a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Monitor_(Fernsehmagazin)> ;
@@ -3838,6 +3922,13 @@ ex:OEEC a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Organisation for European Economic Cooperation"@de .
 
+ex:OEMV a skos:Concept ;
+    skos:altLabel "ÖMV"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/OMV> ;
+    skos:exactMatch <https://d-nb.info/gnd/2170995-6> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "Österreichische Mineralölverwaltung Aktiengesellschaft"@de .
+
 ex:OEVP a skos:Concept ;
     skos:altLabel "ÖVP"@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/%C3%96sterreichische_Volkspartei> ;
@@ -3891,6 +3982,13 @@ ex:OSI a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/10017375-5> ;
     skos:note "soc"@de ;
     skos:prefLabel "Otto-Suhr-Institut der Freien Universität Berlin"@de .
+
+ex:OeTV a skos:Concept ;
+    skos:altLabel "ÖTV"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Gewerkschaft_%C3%96ffentliche_Dienste,_Transport_und_Verkehr> ;
+    skos:exactMatch <http://d-nb.info/gnd/2012569-0> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "Gewerkschaft Öffentliche Dienste, Transport und Verkehr"@de .
 
 ex:Opel a skos:Concept ;
     skos:altLabel "Opel"@de ;
@@ -4026,6 +4124,12 @@ ex:PionET a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Pionierorganisation Ernst Thälmann"@de .
 
+ex:Platow a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Platow_Brief> ;
+    skos:exactMatch <https://d-nb.info/01322073X> ;
+    skos:note "news"@de ;
+    skos:prefLabel "Der Platow-Brief"@de .
+
 ex:Pra a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Prawda> ;
     skos:exactMatch <http://d-nb.info/gnd/4175594-7> ;
@@ -4078,7 +4182,7 @@ ex:Qantas a skos:Concept ;
     skos:note "com"@de ;
     skos:prefLabel "Qantas Airways"@de .
 
-ex:Qui a skos:Concept ;
+ex:Quick a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Quick_(Zeitschrift)> ;
     skos:exactMatch <http://d-nb.info/gnd/4192904-4> ;
     skos:note "news"@de ;
@@ -4105,7 +4209,7 @@ ex:RCDS a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Ring Christlich-Demokratischer Studenten"@de .
 
-<https://voc.fraktionsprotokolle.de/concept/RGBl.> a skos:Concept ;
+ex:RGBlatt a skos:Concept ;
     skos:altLabel "RGBl."@de ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Reichsgesetzblatt> ;
     skos:exactMatch <http://d-nb.info/gnd/4796684-1> ;
@@ -4430,7 +4534,7 @@ ex:SOPADE a skos:Concept ;
     skos:altLabel "SOPADE"@de ;
     skos:exactMatch <https://d-nb.info/01117157X> ;
     skos:note "news"@de ;
-    skos:prefLabel "SOPADE. Querschnitt durch Politik und Wirtschaft"@de .
+    skos:prefLabel "SOPADE. Querschnitt durch Politik und Wirtschaft : sozialdemokratische Parteikorrespondenz / Hrsg.: Sopade, Sozialdemokratische Partei, Parteivorstand"@de .
 
 ex:SP a skos:Concept ;
     skos:altLabel "SP"@de ;
@@ -4438,13 +4542,6 @@ ex:SP a skos:Concept ;
     skos:exactMatch <https://d-nb.info/gnd/13728-5> ;
     skos:note "pol"@de ;
     skos:prefLabel "Sozialdemokratische Partei der Schweiz"@de .
-
-ex:SP%C3%96 a skos:Concept ;
-    skos:altLabel "SPÖ"@de ;
-    skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratische_Partei_%C3%96sterreichs> ;
-    skos:exactMatch <http://d-nb.info/gnd/5060450-8> ;
-    skos:note "pol"@de ;
-    skos:prefLabel "Sozialdemokratische Partei Österreichs"@de .
 
 ex:SPD a skos:Concept ;
     skos:altLabel "SPD"@de ;
@@ -4485,6 +4582,13 @@ ex:SPDVorstand a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/4479218-9> ;
     skos:note "pol"@de ;
     skos:prefLabel "SPD-Parteivorstand"@de .
+
+ex:SPOe a skos:Concept ;
+    skos:altLabel "SPÖ"@de ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratische_Partei_%C3%96sterreichs> ;
+    skos:exactMatch <http://d-nb.info/gnd/5060450-8> ;
+    skos:note "pol"@de ;
+    skos:prefLabel "Sozialdemokratische Partei Österreichs"@de .
 
 ex:SPS a skos:Concept ;
     skos:altLabel "SPS"@de ;
@@ -4575,6 +4679,11 @@ ex:SaarbergwerkeAG a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/2021274-4> ;
     skos:note "com"@de ;
     skos:prefLabel "Saarbergwerke AG"@de .
+
+ex:Sachsenhydraulik a skos:Concept ;
+    skos:exactMatch <https://d-nb.info/gnd/5055875-4> ;
+    skos:note "com"@de ;
+    skos:prefLabel "Sachsenhydraulik GmbH"@de .
 
 ex:SalzgitterAG a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Salzgitter_AG> ;
@@ -4678,11 +4787,21 @@ ex:Stahlhelm a skos:Concept ;
     skos:note "pol"@de ;
     skos:prefLabel "Stahlhelm, Bund der Frontsoldaten"@de .
 
+ex:StarkstromLeipzig a skos:Concept ;
+    skos:note "com"@de ;
+    skos:prefLabel "VEB Kombinat Starkstrom-Anlagenbau Leipzig-Halle"@de .
+
 ex:Stern a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Stern_(Zeitschrift)> ;
     skos:exactMatch <http://d-nb.info/gnd/4057347-3> ;
     skos:note "news"@de ;
     skos:prefLabel "Stern"@de .
+
+ex:Sternradio a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Kombinat_Sternradio> ;
+    skos:exactMatch <https://d-nb.info/gnd/16168255-8> ;
+    skos:note "com"@de ;
+    skos:prefLabel "Kombinat Sternradio"@de .
 
 ex:Suedkurier a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/S%C3%BCdkurier> ;
@@ -4822,6 +4941,12 @@ ex:Times a skos:Concept ;
     skos:exactMatch <http://d-nb.info/gnd/4184996-6> ;
     skos:note "news"@de ;
     skos:prefLabel "The Times"@de .
+
+ex:Titanic a skos:Concept ;
+    skos:closeMatch <https://de.wikipedia.org/wiki/Titanic_(Magazin)> ;
+    skos:exactMatch <https://d-nb.info/gnd/4722439-3> ;
+    skos:note "news"@de ;
+    skos:prefLabel "Titanic (Zeitschrift)"@de .
 
 ex:Trybuna a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Trybuna_Ludu> ;
@@ -4993,7 +5118,7 @@ ex:Unilever a skos:Concept ;
     skos:note "com"@de ;
     skos:prefLabel "Unilever"@de .
 
-ex:Unit%C3%A0 a skos:Concept ;
+ex:Unita a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/L%E2%80%99Unit%C3%A0> ;
     skos:exactMatch <http://d-nb.info/gnd/4166290-8> ;
     skos:note "news"@de ;
@@ -5565,4 +5690,7 @@ ex:unserezeit a skos:Concept ;
     skos:closeMatch <https://de.wikipedia.org/wiki/Unsere_Zeit_(Zeitung)> ;
     skos:note "pol"@de ;
     skos:prefLabel "Unsere Zeit - Zeitung der DKP (seit 1969)"@de .
+
+ex:xyz-unbekannte_Org a skos:Concept ;
+    skos:prefLabel "Unbekannte Institution/Eintrag konnte nicht identifiziert werden"@de .
 
