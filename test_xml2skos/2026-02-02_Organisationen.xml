@@ -7,7 +7,7 @@
 				<title>Organisationen</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>Datum der Aktualisierung: 2026-02-02(SJ)</p>
+				<p>Datum der Aktualisierung: 2026-02-19 (CG)</p>
 			</publicationStmt>
 			<sourceDesc>
 				<p>Nicht hierarchische Liste von in der Edition https://fraktionsprotokolle.de erwähnten Organisation und Zeitungen samit ihren Abkürzungen und, sofern vorhanden, Wikipedia-Links und GND-IDs (im Moment unvollständig und nicht konsistent).</p>
@@ -18,14 +18,19 @@
 	<text>
 		<body>
 			<listOrg>
-				<!-- Bitte nach den Ergänzungen auch den Zeitstempel (<p>Datum der Aktualisierung: 2022-06-29 (SR)</p>) möglichst aktualisieren! -->
+				<!-- Bitte KEINERLEI Umlaute oder Sonderzeichen in die ID, auch KEINE Punkte. Bitte nach den Ergänzungen auch den Zeitstempel (<p>Datum der Aktualisierung: 2022-06-29 (SR)</p>) möglichst aktualisieren! -->
 				<!--Anfang Organisationen A-->
 				<!---->
 				<!---->
-				
+				<org xml:id="xyz-unbekannte_Org">
+					<orgName full="yes">Unbekannte Institution/Eintrag konnte nicht identifiziert werden</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd"/>
+					<idno type="wikipedia"/>
+				</org>
 				<!--  A  -->
 				<org xml:id="Aftenposten" role="news">
-					<orgName full="yes">Afternposten</orgName>
+					<orgName full="yes">Aftenposten</orgName>
 					<orgName full="abb"></orgName>
 					<idno type="VIAF">http://viaf.org/viaf/147145969949732250346</idno>
 					<idno type="gnd"><!--kein Eintrag--></idno>
@@ -152,6 +157,12 @@
 					<idno type="gnd">https://d-nb.info/gnd/2062596-0</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/ADFC</idno>
 				</org>
+				<org xml:id="AVP" role="soc">
+					<orgName full="yes">Aktionsgemeinschaft Vierte Partei</orgName>
+					<orgName full="abb">AVP</orgName>
+					<idno type="gnd"></idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Aktionsgemeinschaft_Vierte_Partei</idno>
+				</org>
 				<org xml:id="ArthurAndersen" role="pol">
 					<orgName full="yes">Arthur Andersen</orgName>
 					<orgName full="abb">/</orgName>
@@ -260,7 +271,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/2064924-1</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/B%C3%BCndnis_90/Die_Gr%C3%BCnen_Berlin</idno>
 				</org>
-				<org xml:id="AL-Österreich" role="pol">
+				<org xml:id="AL-OEsterreich" role="pol">
 					<orgName full="yes">Alternative Liste Österreichs</orgName>
 					<orgName full="abb">AL-Österreich</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/407324-1</idno>
@@ -400,6 +411,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/16126610-1</idno>
 					<idno type="wikipedia"/>
 				</org>
+				
 				<org xml:id="Bayern" role="pol">
 					<orgName full="yes">Freistaat Bayern</orgName>
 					<orgName full="abb">Bayern</orgName>
@@ -417,6 +429,12 @@
 					<orgName full="abb"/>
 					<idno type="gnd">http://d-nb.info/gnd/4209049-0</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Bayernkurier</idno>
+				</org>
+				<org xml:id="BLW" role="news">
+					<orgName full="yes">Bayerisches Landwirtschaftliches Wochenblatt</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/014492741</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Bayerisches_Landwirtschaftliches_Wochenblatt</idno>
 				</org>
 				<org xml:id="BayStBk" role="com">
 					<orgName full="yes">Bayerische Staatsbank AG</orgName>
@@ -549,6 +567,12 @@
 					<orgName full="abb">BdV</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/2006262-X</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Bund_der_Vertriebenen</idno>
+				</org>
+				<org xml:id="BergmannBorsig" role="com">
+					<orgName full="yes">Bergmann-Borsig</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/7533735-6</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Bergmann-Borsig</idno>
 				</org>
 				<org xml:id="Beweg2Juni" role="pol">
 					<orgName full="yes">Bewegung 2. Juni (terroristische Vereinigung)</orgName>
@@ -1014,7 +1038,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/7535479-2</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Berliner_Zeitung</idno>
 				</org>
-				<org xml:id="B.Z." role="pol">
+				<org xml:id="BoulZ" role="pol">
 					<orgName full="yes">B.Z.</orgName>
 					<orgName full="abb">B.Z.</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/1355827787</idno>
@@ -1094,6 +1118,12 @@
 					<orgName full="abb">CEMT</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/4616346-3</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Europ%C3%A4ische_Verkehrsministerkonferenz</idno>
+				</org>
+				<org xml:id="CDS" role="pol">
+					<orgName full="yes">Centre des démocrates sociaux</orgName>
+					<orgName full="abb">CDS</orgName>
+					<idno type="gnd">http://d-nb.info/gnd/516235-X</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux</idno>
 				</org>
 				<org xml:id="CFP" role="com">
 					<orgName full="yes">Compagnie Française des Pétroles</orgName>
@@ -1794,6 +1824,12 @@
 					<idno type="gnd">http://d-nb.info/gnd/4148752-7</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/The_Daily_Telegraph</idno>
 				</org>
+				<org xml:id="DT64" role="news">
+					<orgName full="yes">Jugendradio DT64</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/5281344-7</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/DT64</idno>
+				</org>
 				<org xml:id="DU" role="pol">
 					<orgName full="yes">Deutsche Union</orgName>
 					<orgName full="abb">DU</orgName>
@@ -2013,6 +2049,12 @@
 					<idno type="gnd">https://d-nb.info/gnd/5263681-1</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Europ%C3%A4ischer_Rat</idno>
 				</org>
+				<org xml:id="Eska" role="com">
+					<orgName full="yes">Eska Automotiv GmbH</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd"/>
+					<idno type="wikipedia"/>
+				</org>
 				<org xml:id="EURATOM" role="pol">
 					<orgName full="yes">Europäische Atomgemeinschaft</orgName>
 					<orgName full="abb">EURATOM</orgName>
@@ -2094,17 +2136,11 @@
 					<idno type="gnd">http://d-nb.info/gnd/7570489-4</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Foreign_Affairs</idno>
 				</org>
-				<org xml:id="FRUS" role="news">
-					<orgName full="yes">Foreign Relations of the United States</orgName>
-					<orgName full="abb">FRUS</orgName>
-					<idno type="gnd"/>
-					<idno type="wikipedia">https://en.wikipedia.org/wiki/Foreign_Relations_of_the_United_States_(book_series)</idno>
-				</org>
-				<org xml:id="FAZ" role="news">
-					<orgName full="yes">Frankfurter Allgemeine Zeitung</orgName>
-					<orgName full="abb">FAZ</orgName>
-					<idno type="gnd">http://d-nb.info/gnd/4155156-4</idno>
-					<idno type="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Allgemeine_Zeitung</idno>
+				<org xml:id="FAO" role="pol">
+					<orgName full="yes">Food and Agriculture Organization of the United Nations</orgName>
+					<orgName full="abb">FAO</orgName>
+					<idno type="gnd">https://d-nb.info/gnd/2010460-1</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Ern%C3%A4hrungs-_und_Landwirtschaftsorganisation_der_Vereinten_Nationen</idno>
 				</org>
 				<org xml:id="FAP" role="pol">
 					<orgName full="yes">Freiheitliche Deutsche Arbeiterpartei</orgName>
@@ -2112,17 +2148,23 @@
 					<idno type="gnd">http://d-nb.info/gnd/5333212-X</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Freiheitliche_Deutsche_Arbeiterpartei</idno>
 				</org>
+				<org xml:id="FAR" role="pol">
+					<orgName full="yes">Fuerzas Armadas Revolucionarias</orgName>
+					<orgName full="abb">FAR</orgName>
+					<idno type="gnd">http://d-nb.info/gnd/5255007-2</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Fuerzas_Armadas_Revolucionarias</idno>
+				</org>
 				<org xml:id="Fatah" role="pol">
 					<orgName full="yes">Al Fatah</orgName>
 					<orgName full="abb">Fatah</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/10012327-2</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Fatah</idno>
 				</org>
-				<org xml:id="FAR" role="pol">
-					<orgName full="yes">Fuerzas Armadas Revolucionarias</orgName>
-					<orgName full="abb">FAR</orgName>
-					<idno type="gnd">http://d-nb.info/gnd/5255007-2</idno>
-					<idno type="wikipedia">https://de.wikipedia.org/wiki/Fuerzas_Armadas_Revolucionarias</idno>
+				<org xml:id="FAZ" role="news">
+					<orgName full="yes">Frankfurter Allgemeine Zeitung</orgName>
+					<orgName full="abb">FAZ</orgName>
+					<idno type="gnd">http://d-nb.info/gnd/4155156-4</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Allgemeine_Zeitung</idno>
 				</org>
 				<org xml:id="FBI" role="pol">
 					<orgName full="yes">Federal Bureau of Investigation</orgName>
@@ -2166,36 +2208,6 @@
 					<idno type="gnd">http://d-nb.info/gnd/10031324-3</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Freie_Volkspartei#Freie_Deutsche_Volkspartei_(Berlin)</idno>
 				</org>
-				<org xml:id="FPÖ" role="pol">
-					<orgName full="yes">Freiheitliche Partei Österreichs</orgName>
-					<orgName full="abb">FPÖ</orgName>
-					<idno type="gnd">https://d-nb.info/gnd/2088858-2</idno>
-					<idno type="wikipedia">https://de.wikipedia.org/wiki/Freiheitliche_Partei_%C3%96sterreichs</idno>
-				</org>
-				<org xml:id="FreiePresse" role="news">
-					<orgName full="yes">Freie Presse: Tageszeitung für Bielefeld Stadt und Land</orgName>
-					<orgName full="abb">FreiePresse</orgName>
-					<idno type="gnd">https://d-nb.info/010375287</idno>
-					<idno type="wikipedia">https://de.wikipedia.org/wiki/Freie_Presse_(Bielefeld)</idno>
-				</org>
-				<org xml:id="FES" role="pol">
-					<orgName full="yes">Friedrich-Ebert-Stiftung</orgName>
-					<orgName full="abb">FES</orgName>
-					<idno type="gnd">http://d-nb.info/gnd/37498-2</idno>
-					<idno type="wikipedia">https://de.wikipedia.org/wiki/Friedrich-Ebert-Stiftung</idno>
-				</org>
-				<org xml:id="FriedKruppAG" role="com">
-					<orgName full="yes">Friedrich Krupp AG</orgName>
-					<orgName full="abb"/>
-					<idno type="gnd">http://d-nb.info/gnd/280119-X</idno>
-					<idno type="wikipedia">https://de.wikipedia.org/wiki/Friedrich_Krupp_AG</idno>
-				</org>
-				<org xml:id="FFI" role="com">
-					<orgName full="yes">Fireman's Fund Insurance Company</orgName>
-					<orgName full="abb"/>
-					<idno type="gnd"> </idno>
-					<idno type="wikipedia">https://en.wikipedia.org/wiki/Fireman%27s_Fund_Insurance_Company</idno>
-				</org>
 				<org xml:id="Fed" role="pol">
 					<orgName full="yes">Federal Reserve System</orgName>
 					<orgName full="abb">Fed</orgName>
@@ -2208,6 +2220,18 @@
 					<idno type="gnd">http://d-nb.info/gnd/19542-X</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Federal_Aviation_Administration</idno>
 				</org>
+				<org xml:id="FES" role="pol">
+					<orgName full="yes">Friedrich-Ebert-Stiftung</orgName>
+					<orgName full="abb">FES</orgName>
+					<idno type="gnd">http://d-nb.info/gnd/37498-2</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Friedrich-Ebert-Stiftung</idno>
+				</org>
+				<org xml:id="FFI" role="com">
+					<orgName full="yes">Fireman's Fund Insurance Company</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd"> </idno>
+					<idno type="wikipedia">https://en.wikipedia.org/wiki/Fireman%27s_Fund_Insurance_Company</idno>
+				</org>
 				<org xml:id="FIAT" role="com">
 					<orgName full="yes">Fiat Group (Turin)</orgName>
 					<orgName full="abb">FIAT</orgName>
@@ -2219,6 +2243,12 @@
 					<orgName full="abb">FIBAG</orgName>
 					<idno type="gnd"/>
 					<idno type="wikipedia"/>
+				</org>
+				<org xml:id="Filmfabrik" role="com">
+					<orgName full="yes">Filmfabrik </orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/2010328-1</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Filmfabrik_Wolfen</idno>
 				</org>
 				<org xml:id="FIU" role="soc">
 					<orgName full="yes">Free International University</orgName>
@@ -2256,6 +2286,12 @@
 					<idno type="gnd">http://d-nb.info/gnd/2114821-1</idno>
 					<idno type="wikipedia"/>
 				</org>
+				<org xml:id="FPOe" role="pol">
+					<orgName full="yes">Freiheitliche Partei Österreichs</orgName>
+					<orgName full="abb">FPÖ</orgName>
+					<idno type="gnd">https://d-nb.info/gnd/2088858-2</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Freiheitliche_Partei_%C3%96sterreichs</idno>
+				</org>
 				<org xml:id="FR" role="news">
 					<orgName full="yes">Frankfurter Rundschau</orgName>
 					<orgName full="abb">FR</orgName>
@@ -2267,6 +2303,24 @@
 					<orgName full="abb">Framatome</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/16176999-8</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Framatome</idno>
+				</org>
+				<org xml:id="FreiePresse" role="news">
+					<orgName full="yes">Freie Presse. Tageszeitung für Bielefeld Stadt und Land</orgName>
+					<orgName full="abb">FreiePresse</orgName>
+					<idno type="gnd">https://d-nb.info/010375287</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Freie_Presse_(Bielefeld)</idno>
+				</org>
+				<org xml:id="FriedKruppAG" role="com">
+					<orgName full="yes">Friedrich Krupp AG</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">http://d-nb.info/gnd/280119-X</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Friedrich_Krupp_AG</idno>
+				</org>
+				<org xml:id="FRUS" role="news">
+					<orgName full="yes">Foreign Relations of the United States</orgName>
+					<orgName full="abb">FRUS</orgName>
+					<idno type="gnd"/>
+					<idno type="wikipedia">https://en.wikipedia.org/wiki/Foreign_Relations_of_the_United_States_(book_series)</idno>
 				</org>
 				<org xml:id="FSK" role="soc">
 					<orgName full="yes">Freiwillige Selbstkontrolle der Filmwirtschaft</orgName>
@@ -2301,7 +2355,7 @@
 				<org xml:id="Frontal" role="news">
 					<orgName full="yes">Frontal. Zeitschrift für demokratische Studenten</orgName>
 					<orgName full="abb">Frontal</orgName>
-					<idno type="gnd"><!--kein Eintrag--></idno>
+					<idno type="gnd">https://d-nb.info/011835362</idno>
 					<idno type="wikipedia"><!--kein Eintrag--></idno>
 				</org>
 				<!--Anfang Organisationen G-->
@@ -2585,7 +2639,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/2011766-8</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Landesbank_Hessen-Th%C3%BCringen</idno>
 				</org>
-				<org xml:id="HelabaThü" role="com">
+				<org xml:id="HelabaThue" role="com">
 					<orgName full="yes">Landesbank Hessen-Thüringen (seit 1992))</orgName>
 					<orgName full="abb">Helaba</orgName>
 					<idno type="gnd">https://d-nb.info/gnd/5058506-X</idno>
@@ -2846,11 +2900,23 @@
 					<idno type="gnd">http://d-nb.info/gnd/2038353-8</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Irisch-Republikanische_Armee</idno>
 				</org>
+				<org xml:id="IfD" role="pol">
+					<orgName full="yes">Institut für Demoskopie Allensbach</orgName>
+					<orgName full="abb">IfD</orgName>
+					<idno type="gnd">http://d-nb.info/gnd/2013703-5</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Demoskopie_Allensbach</idno>
+				</org>
 				<org xml:id="INTERATOM" role="com">
 					<orgName full="yes">Internationale Atomreaktorbau-GmbH</orgName>
 					<orgName full="abb">INTERATOM</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/2078499-5</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Interatom</idno>
+				</org>
+				<org xml:id="Interflug" role="com">
+					<orgName full="yes">Interflug Gesellschaft für internationalen Flugverkehr mit beschränkter Haftung</orgName>
+					<orgName full="abb">Interflug GmbH</orgName>
+					<idno type="gnd">https://d-nb.info/gnd/2150228-6</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Interflug</idno>
 				</org>
 				<org xml:id="ISK" role="pol">
 					<orgName full="yes">Internationale Sozialistischer Kampfbund</orgName>
@@ -2972,6 +3038,12 @@
 					<idno type="gnd">http://d-nb.info/gnd/2015995-X</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Kommission_f%C3%BCr_Geschichte_des_Parlamentarismus_und_der_politischen_Parteien</idno>
 				</org>
+				<org xml:id="KKWStendal" role="com">
+					<orgName full="yes">KKW Stendal GmbH</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd"/>
+					<idno type="wikipedia"/>
+				</org>
 				<org xml:id="KLM" role="com">
 					<orgName full="yes">Koninklijke Luchtvaart Maatschappij</orgName>
 					<orgName full="abb">KLM</orgName>
@@ -2983,6 +3055,12 @@
 					<orgName full="abb"/>
 					<idno type="gnd">http://d-nb.info/gnd/217686-5</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Kl%C3%B6ckner_%26_Co</idno>
+				</org>
+				<org xml:id="KNA" role="news">
+					<orgName full="yes">Katholische Nachrichtenagentur</orgName>
+					<orgName full="abb">KNA</orgName>
+					<idno type="gnd">https://d-nb.info/gnd/2015513-X</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Katholische_Nachrichten-Agentur</idno>
 				</org>
 				<org xml:id="KP" role="com">
 					<orgName full="yes">Koninklijke Philips N.V.</orgName>
@@ -3014,7 +3092,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/4473056-1</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Konkret_(Zeitschrift)</idno>
 				</org>
-				<org xml:id="KPČ" role="pol">
+				<org xml:id="KPTsch" role="pol">
 					<orgName full="yes">Komunistická strana Československa</orgName>
 					<orgName full="abb">KPČ</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/1012929-7</idno>
@@ -3230,6 +3308,12 @@
 					<idno type="gnd">https://d-nb.info/gnd/10009905-1</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/McKinsey_%26_Company</idno>
 				</org>
+				<org xml:id="Medico" role="com">
+					<orgName full="yes">Medico International e.V.</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/2000450-3</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Medico_international</idno>
+				</org>
 				<org xml:id="Mercorsur" role="com">
 					<orgName full="yes">Mercado Común del Sur</orgName>
 					<orgName full="abb">Mercorsur</orgName>
@@ -3259,6 +3343,13 @@
 					<orgName full="abb">MIT</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/2179-9</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Massachusetts_Institute_of_Technology</idno>
+				</org>
+				<org xml:id="MitBay" role="news">
+					<orgName full="yes">Mittelbayerische Zeitung</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/4367490-2</idno>
+					<idno type="gnd">https://d-nb.info/gnd/16074959-1</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Mittelbayerische_Zeitung</idno>
 				</org>
 				<org xml:id="Monitor" role="news">
 					<orgName full="yes">Monitor (Fernsehmagazin)</orgName>
@@ -3639,7 +3730,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/10017375-5</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Otto-Suhr-Institut</idno>
 				</org>
-				<org xml:id="ÖTV" role="pol">
+				<org xml:id="OeTV" role="pol">
 					<orgName full="yes">Gewerkschaft Öffentliche Dienste, Transport und Verkehr</orgName>
 					<orgName full="abb">ÖTV</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/2012569-0</idno>
@@ -3650,6 +3741,12 @@
 					<orgName full="abb">ÖVP</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/1013073-1</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/%C3%96sterreichische_Volkspartei</idno>
+				</org>
+				<org xml:id="OEMV" role="pol">
+					<orgName full="yes">Österreichische Mineralölverwaltung Aktiengesellschaft</orgName>
+					<orgName full="abb">ÖMV</orgName>
+					<idno type="gnd">https://d-nb.info/gnd/2170995-6</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/OMV</idno>
 				</org>
 				<!--Anfang Organisationen P-->
 				<!---->
@@ -3726,6 +3823,12 @@
 					<idno type="gnd">https://d-nb.info/gnd/2117697-8</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Arbeiterpartei_Kurdistans</idno>
 				</org>
+				<org xml:id="Platow" role="news">
+					<orgName full="yes">Der Platow-Brief</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/01322073X</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Platow_Brief</idno>
+				</org>
 				<org xml:id="PNP" role="news">
 					<orgName full="yes">Passauer Neue Presse</orgName>
 					<orgName full="abb"/>
@@ -3798,10 +3901,6 @@
 					<idno type="gnd">https://d-nb.info/011036893</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Publik-Forum</idno>
 				</org>
-				
-				
-				
-				
 				<!--Anfang Organisationen Q-->
 				<!---->
 				<!---->
@@ -3811,7 +3910,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/4217640-2</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Qantas_Airways</idno>
 				</org>
-				<org xml:id="Qui" role="news">
+				<org xml:id="Quick" role="news">
 					<orgName full="yes">Quick</orgName>
 					<orgName full="abb"/>
 					<idno type="gnd">http://d-nb.info/gnd/4192904-4</idno>
@@ -3880,7 +3979,7 @@
 					<idno type="gnd">https://d-nb.info/gnd/40240-0</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Reichsschrifttumskammer</idno>
 				</org>
-				<org xml:id="RGBl." role="news">
+				<org xml:id="RGBlatt" role="news">
 					<orgName full="yes">Reichsgesetzblatt</orgName>
 					<orgName full="abb">RGBl. </orgName>
 					<idno type="gnd">http://d-nb.info/gnd/4796684-1</idno>
@@ -4022,6 +4121,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/4195974-7</idno>
 					<idno type="wikipedia">https://en.wikipedia.org/wiki/Saarbr%C3%BCcker_Zeitung</idno>
 				</org>
+				
 				<org xml:id="SalzgitterAG" role="com">
 					<orgName full="yes">Salzgitter AG</orgName>
 					<orgName full="abb"/>
@@ -4033,6 +4133,12 @@
 					<orgName full="abb">SA</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/63215-6</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Sturmabteilung</idno>
+				</org>
+				<org xml:id="Sachsenhydraulik" role="com">
+					<orgName full="yes">Sachsenhydraulik GmbH</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/5055875-4</idno>
+					<idno type="wikipedia"/>
 				</org>
 				<org xml:id="SAJ" role="pol">
 					<orgName full="yes">Sozialistische Arbeiterjugend</orgName>
@@ -4173,7 +4279,7 @@
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Sowjetische_Milit%C3%A4radministration_in_Deutschland</idno>
 				</org>
 				<org xml:id="SOPADE" role="news">
-					<orgName full="yes">SOPADE. Querschnitt durch Politik und Wirtschaft</orgName>
+					<orgName full="yes">SOPADE. Querschnitt durch Politik und Wirtschaft : sozialdemokratische Parteikorrespondenz / Hrsg.: Sopade, Sozialdemokratische Partei, Parteivorstand</orgName>
 					<orgName full="abb">SOPADE</orgName>
 					<idno type="gnd">https://d-nb.info/01117157X</idno>
 					<idno type="wikipedia"/>
@@ -4251,7 +4357,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/4056205-0</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Der_Spiegel</idno>
 				</org>
-				<org xml:id="SPÖ" role="pol">
+				<org xml:id="SPOe" role="pol">
 					<orgName full="yes">Sozialdemokratische Partei Österreichs</orgName>
 					<orgName full="abb">SPÖ</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/5060450-8</idno>
@@ -4317,11 +4423,18 @@
 					<idno type="gnd">https://d-nb.info/gnd/63616-2</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Stahlhelm,_Bund_der_Frontsoldaten</idno>
 				</org>
+				
 				<org xml:id="Stern" role="news">
 					<orgName full="yes">Stern</orgName>
 					<orgName full="abb"/>
 					<idno type="gnd">http://d-nb.info/gnd/4057347-3</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Stern_(Zeitschrift)</idno>
+				</org>
+				<org xml:id="Sternradio" role="com">
+					<orgName full="yes">Kombinat Sternradio</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/16168255-8</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Kombinat_Sternradio</idno>
 				</org>
 				<org xml:id="SVI" role="soc">
 					<orgName full="yes">Studentenverband Deutscher Ingenieurschulen e. V.</orgName>
@@ -4394,6 +4507,12 @@
 					<orgName full="abb">STEAG</orgName>
 					<idno type="gnd">http://d-nb.info/gnd/2002668-7</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Steag</idno>
+				</org>
+				<org xml:id="EilenburgBau" role="com">
+					<orgName full="yes">Straßen- und Tiefbau GmbH Eilenburg</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd"><!--kein Eintrag--></idno>
+					<idno type="wikipedia"><!--kein Eintrag--></idno>
 				</org>
 				<org xml:id="Suedkurier" role="news">
 					<orgName full="yes">Südkurier</orgName>
@@ -4481,6 +4600,12 @@
 					<orgName full="abb"/>
 					<idno type="gnd">http://d-nb.info/gnd/4184996-6</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/The_Economist</idno>
+				</org>
+				<org xml:id="Titanic" role="news">
+					<orgName full="yes">Titanic (Zeitschrift)</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd">https://d-nb.info/gnd/4722439-3</idno>
+					<idno type="wikipedia">https://de.wikipedia.org/wiki/Titanic_(Magazin)</idno>
 				</org>
 				<org xml:id="TNRe" role="news">
 					<orgName full="yes">The New Republic</orgName>
@@ -4617,7 +4742,7 @@
 					<idno type="gnd">http://d-nb.info/gnd/2023755-8</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/UNESCO</idno>
 				</org>
-				<org xml:id="Unità" role="news">
+				<org xml:id="Unita" role="news">
 					<orgName full="yes">L’Unità</orgName>
 					<orgName full="abb"/>
 					<idno type="gnd">http://d-nb.info/gnd/4166290-8</idno>
@@ -4751,6 +4876,12 @@
 					<orgName full="abb"/>
 					<idno type="gnd">https://d-nb.info/gnd/4234425-6</idno>
 					<idno type="wikipedia">https://de.wikipedia.org/wiki/Vermittlungsausschuss</idno>
+				</org>
+				<org xml:id="StarkstromLeipzig" role="com">
+					<orgName full="yes">VEB Kombinat Starkstrom-Anlagenbau Leipzig-Halle</orgName>
+					<orgName full="abb"/>
+					<idno type="gnd"><!--kein Eintrag--></idno>
+					<idno type="wikipedia"><!--kein Eintrag--></idno>
 				</org>
 				<org xml:id="VEBA" role="com">
 					<orgName full="yes">Vereinigte Elektrizitäts- und Bergwerks-Aktiengesellschaft</orgName>
