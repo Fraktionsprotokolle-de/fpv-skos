@@ -1,7 +1,36 @@
-@prefix ex: <https://voc.fraktionsprotokolle.de/id/> .
+@prefix ex:  <https://voc.fraktionsprotokolle.de/id/> .
 @prefix fpv: <https://voc.fraktionsprotokolle.de/schema/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ------------------------------------------------------------
+# FPV Datenmodell (Kurzprofil)
+# - Alle Einträge sind skos:Concept.
+# - Die lokale ID steht in der URI: ex:{ID}
+# - Klassifikation über skos:notation als typisiertes Literal:
+#     skos:notation "{code}"^^fpv:entityType
+# - Zulässige Codes (entityType): siehe fpv:entityTypeNote unten.
+# ------------------------------------------------------------
+
+fpv:entityType a rdfs:Datatype ;
+  rdfs:label "FPV entity type code"@en ;
+  rdfs:label "FPV-Entitätstyp (Code)"@de ;
+  rdfs:comment "Datatype for controlled, short classification codes used in skos:notation, e.g. \"org\"^^fpv:entityType."@en ;
+  rdfs:comment "Datentyp für kontrollierte, kurze Klassifikationscodes in skos:notation, z. B. \"org\"^^fpv:entityType."@de .
+
+# Dokumentation der zulässigen Codes (nicht maschinell erzwungen).
+fpv:entityTypeNote a skos:Concept ;
+  skos:prefLabel "Zulässige entityType-Codes (Dokumentation)"@de ;
+  skos:note """
+org    = Organisation / Institution / Verband / Gremium
+com    = Unternehmen / Wirtschaft (falls benötigt)
+news   = Presse / Zeitung / Medium (falls benötigt)
+topic  = Sachbegriff / Thema (z. B. "Mülltrennung")
+law    = Gesetz / Rechtsnorm (falls benötigt)
+pol    = Partei / politische Gruppierung (falls benötigt)
+"""@de .
 
 
 # ex:xyz-unbekannte_Org a skos:Concept ;
