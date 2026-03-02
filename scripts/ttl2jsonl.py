@@ -8,7 +8,7 @@ TTL_FILE = "src/fpv.ttl"
 OUT_FILE = "dist/json/synonyms-fpv.jsonl"
 
 # Diese Tokens sollen niemals als Synonyme auftauchen
-BLACKLIST = {"pol", "com", "soc", "news", "topic", "law, "org"}
+BLACKLIST = {"pol", "com", "soc", "news", "topic", "law", "org"}
 
 def uri_to_id(uri: str) -> str:
     last = uri.rstrip("/").split("/")[-1]
