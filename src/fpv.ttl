@@ -1,3 +1,4 @@
+# Trigger
 @prefix ex:  <https://voc.fraktionsprotokolle.de/id/> .
 @prefix fpv: <https://voc.fraktionsprotokolle.de/schema/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
