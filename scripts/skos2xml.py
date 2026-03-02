@@ -101,8 +101,8 @@ def convert_ttl_to_xml(input_path, output_path):
         f.write(pretty_xml)
 
 if __name__ == "__main__":
-    input_file = "fpv.ttl"
-    output_file = "tei-fpv.xml"
+    input_file = "src/fpv.ttl"
+    output_file = "dist/xml/tei-fpv.xml"
     
     if os.path.exists(input_file):
         convert_ttl_to_xml(input_file, output_file)
