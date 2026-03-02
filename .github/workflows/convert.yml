@@ -1,0 +1,45 @@
+name: Convert SKOS Data
+
+on:
+  push:
+    paths:
+      - 'src/fpv.ttl'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install rdflib
+
+      - name: Create Distribution Directories
+        run: |
+          mkdir -p dist/xml
+          mkdir -p dist/json
+
+      - name: Execute Conversion Scripts
+        run: |
+          python scripts/skos2xml.py
+          python scripts/ttl2jsonl.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/
+          git commit -m "Auto-update distribution files from fpv.ttl" || echo "No changes to commit"
+          git push
