@@ -3,13 +3,16 @@ Dieses Repository dient der Entwicklung eines kontrollierten (Schlagwort-)Vokabu
 
 ## Zweck des Vokabulars
 
-Das FPV konsolidiert Sachschlagworte sowie Bezeichnungen von Organisationen und Institutionen, die in den Editionsbänden und im Webauftritt Fraktionsprotkolle.de Erwähnung finden. 
+Das Vokabular wird als **SKOS (Turtle)** gepflegt und dient in Zukunft als Single Source of Truth für:
 
-Die Ziele des Repositories umfassen:
-
-- **Semantische Annotation:** Bereitstellung stabiler Identifikatoren (URIs) für die Auszeichnung von Entitäten in den TEI-XML-Dokumenten der Edition.
-- **Suchoptimierung:** Hinterlegung von Synonymen und Abkürzungen zur Anreicherung einer Typesense-Volltextsuche.
-- **Interoperabilität:** Verknüpfung der Begriffe mit externen Normdaten (GND, Wikidata) im Sinne der Linked Open Data (LOD) Prinzipien.
+- Organisationsnamen
+- politische Begriffe
+- Institutionen
+- Gesetze
+- Medien
+- Themen
+- Synonyme für Suchindexe
+- Entity-Typen für die Webdarstellung
 
 ## Datenstruktur und Formate
 
@@ -23,6 +26,19 @@ Das Vokabular wird nach dem **SKOS-Standard (Simple Knowledge Organization Syste
 
 Die Verarbeitung der Daten soll automatisiert über GitHub Actions erfolgen:
 
-1. **Validierung:** Bei jedem Commit wird die `src/fpv.ttl` auf syntaktische Korrektheit (RDF/SKOS) geprüft.
-2. **Transformation:** Python-Skripte (`scripts/`) generieren die XML- und JSON-Artefakte im Verzeichnis `dist/`.
-3. **Publikation:** Das Vokabular wird über [SkoHub](https://skohub.io/) als statische Weboberfläche sowie als JSON-LD Schnittstelle unter `https://fraktionsprotokolle.github.io/fpv-skos/` bereitgestellt.
+1. **Validierung:** Bei jedem Commit wird die `src/fpv.ttl` auf syntaktische Korrektheit (RDF/SKOS) geprüft (geplant, derzeit manuell.
+2. **Transformation:** Python-Skripte (`scripts/`) generieren die XML- und JSON-Artefakte im Verzeichnis `dist/`. Diese sind Grundlage für die Erstellung der Register in der Edition fraktionsprotokolle.de
+3. **Publikation:** Zur besseren Lesbarkeit wird das Vokabular zugleich als einfache Webseite ausgeliefert: `https://fraktionsprotokolle-de.github.io/fpv-skos/index.html`.
+
+## Struktur des Repositoriums
+
+```
+/
+├── .github/ 	-- Workflow für die GH-Actions
+├── dist/		-- TEI-XML für die Edition und JSONL für die Suche in der Edition
+├── docs/		-- Verzeichnis für HTML für Webseite mit dem Vokabular
+├── scripts/	-- Verzeichnis sämtlicher genutzter Scripte
+├── src/		-- Vokabular im Turtle-Format (RDF/SKOS).
+├── README.md
+```
+
