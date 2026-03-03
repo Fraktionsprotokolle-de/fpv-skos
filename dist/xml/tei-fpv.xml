@@ -50,7 +50,7 @@
 			<item xml:id="ABN">
 				<term type="pref" xml:lang="de">Arbeitsgemeinschaft beruflicher und ehrenamtlicher Naturschutz</term>
 				<term type="alt" xml:lang="de">ABN</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2075661-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverband_Beruflicher_Naturschutz"/>
 			</item>
@@ -84,7 +84,7 @@
 			<item xml:id="ADAC">
 				<term type="pref" xml:lang="de">Allgemeiner Deutscher Automobilclub</term>
 				<term type="alt" xml:lang="de">ADAC</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1002947-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/ADAC"/>
 			</item>
@@ -98,7 +98,7 @@
 			<item xml:id="ADFC">
 				<term type="pref" xml:lang="de">Allgemeine Deutsche Fahrrad-Club e. V.</term>
 				<term type="alt" xml:lang="de">ADFC</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2062596-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/ADFC"/>
 			</item>
@@ -112,7 +112,7 @@
 			<item xml:id="ADK">
 				<term type="pref" xml:lang="de">Arbeitsgemeinschaft Demokratischer Kreise</term>
 				<term type="alt" xml:lang="de">ADK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/18838-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_Demokratischer_Kreise"/>
 			</item>
@@ -168,7 +168,7 @@
 			<item xml:id="AI">
 				<term type="pref" xml:lang="de">Amnesty International</term>
 				<term type="alt" xml:lang="de">AI</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2003911-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Amnesty_International"/>
 			</item>
@@ -250,14 +250,14 @@
 			<item xml:id="ASF">
 				<term type="pref" xml:lang="de">Aktion Sühnezeichen Friedensdienste</term>
 				<term type="alt" xml:lang="de">ASF</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2044021-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Aktion_S%C3%BChnezeichen_Friedensdienste"/>
 			</item>
 			<item xml:id="ASJur">
 				<term type="pref" xml:lang="de">Arbeitsgemeinschaft sozialdemokratischer Juristinnen und Juristen</term>
 				<term type="alt" xml:lang="de">ASJ</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2109194-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_sozialdemokratischer_Juristinnen_und_Juristen"/>
 			</item>
@@ -278,13 +278,13 @@
 			<item xml:id="AVP">
 				<term type="pref" xml:lang="de">Aktionsgemeinschaft Vierte Partei</term>
 				<term type="alt" xml:lang="de">AVP</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Aktionsgemeinschaft_Vierte_Partei"/>
 			</item>
 			<item xml:id="AWO">
 				<term type="pref" xml:lang="de">Arbeiterwohlfahrt</term>
 				<term type="alt" xml:lang="de">AWO</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2004155-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Arbeiterwohlfahrt"/>
 			</item>
@@ -401,7 +401,7 @@
 			<item xml:id="AvD">
 				<term type="pref" xml:lang="de">Automobilclub von Deutschland</term>
 				<term type="alt" xml:lang="de">AvD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4552123-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Automobilclub_von_Deutschland"/>
 			</item>
@@ -462,7 +462,7 @@
 			<item xml:id="BBU">
 				<term type="pref" xml:lang="de">Bundesverband Bürgerinitiativen Umweltschutz</term>
 				<term type="alt" xml:lang="de">BBU</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/75385-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverband_B%C3%BCrgerinitiativen_Umweltschutz"/>
 			</item>
@@ -490,14 +490,14 @@
 			<item xml:id="BDJ">
 				<term type="pref" xml:lang="de">Bund Deutscher Jugend</term>
 				<term type="alt" xml:lang="de">BDJ</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/279083-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bund_Deutscher_Jugend"/>
 			</item>
 			<item xml:id="BDKJ">
 				<term type="pref" xml:lang="de">Bund der Deutschen Katholischen Jugend</term>
 				<term type="alt" xml:lang="de">BDKJ</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1002384-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bund_der_Deutschen_Katholischen_Jugend"/>
 			</item>
@@ -511,7 +511,7 @@
 			<item xml:id="BFD">
 				<term type="pref" xml:lang="de">Bund Freies Deutschland</term>
 				<term type="alt" xml:lang="de">BFD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2061706-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bund_Freies_Deutschland"/>
 			</item>
@@ -817,7 +817,7 @@
 			<item xml:id="BRRH">
 				<term type="pref" xml:lang="de">Bund der Ruhestandsbeamten, Rentner und Hinterbliebenen (1953-2013)</term>
 				<term type="alt" xml:lang="de">BRH</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/5031805-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bund_der_Ruhestandsbeamten,_Rentner_und_Hinterbliebenen"/>
 			</item>
@@ -862,7 +862,7 @@
 			<item xml:id="BUND">
 				<term type="pref" xml:lang="de">Bund für Umwelt und Naturschutz Deutschland</term>
 				<term type="alt" xml:lang="de">BUND</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2051339-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bund_f%C3%BCr_Umwelt_und_Naturschutz_Deutschland"/>
 			</item>
@@ -876,14 +876,14 @@
 			<item xml:id="BVFrauen">
 				<term type="pref" xml:lang="de">Berufsverband der Frauenärzte</term>
 				<term type="alt" xml:lang="de">BVF</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2004298-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Berufsverband_der_Frauen%C3%A4rzte"/>
 			</item>
 			<item xml:id="BVG">
 				<term type="pref" xml:lang="de">Berliner Verkehrsbetriebe</term>
 				<term type="alt" xml:lang="de">BVG</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2004374-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Berliner_Verkehrsbetriebe"/>
 			</item>
@@ -994,14 +994,14 @@
 			<item xml:id="BdSt">
 				<term type="pref" xml:lang="de">Bund Deutscher Steuerbeamter (Deutsche Steuer-Gewerkschaft)</term>
 				<term type="alt" xml:lang="de">BDSt</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2038699-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Steuer-Gewerkschaft"/>
 			</item>
 			<item xml:id="BdV">
 				<term type="pref" xml:lang="de">Bund der Vertriebenen</term>
 				<term type="alt" xml:lang="de">BdV</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2006262-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bund_der_Vertriebenen"/>
 			</item>
@@ -1153,7 +1153,7 @@
 			<item xml:id="BvD">
 				<term type="pref" xml:lang="de">Bund vertriebener Deutscher</term>
 				<term type="alt" xml:lang="de">BvD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/135786-4"/>
 			</item>
 			<item xml:id="Bw">
@@ -1344,7 +1344,7 @@
 			<item xml:id="CV">
 				<term type="pref" xml:lang="de">Cartellverband der katholischen deutschen Studentenverbindungen</term>
 				<term type="alt" xml:lang="de">CV</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2006807-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Cartellverband_der_katholischen_deutschen_Studentenverbindungen"/>
 			</item>
@@ -1475,7 +1475,7 @@
 			<item xml:id="DBJR">
 				<term type="pref" xml:lang="de">Deutscher Bundesjugendring</term>
 				<term type="alt" xml:lang="de">DBJR</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2008379-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Bundesjugendring"/>
 			</item>
@@ -1496,7 +1496,7 @@
 			<item xml:id="DBV">
 				<term type="pref" xml:lang="de">Deutscher Bund für Vogelschutz (seit 1990 Naturschutzbund Deutschland)</term>
 				<term type="alt" xml:lang="de">DBV</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2008371-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Naturschutzbund_Deutschland"/>
 			</item>
@@ -1516,7 +1516,7 @@
 			</item>
 			<item xml:id="DCV">
 				<term type="pref" xml:lang="de">Deutscher Caritasverband</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/37114-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Caritasverband"/>
 			</item>
@@ -1585,7 +1585,7 @@
 			<item xml:id="DFB">
 				<term type="pref" xml:lang="de">Deutscher Fußball Bund</term>
 				<term type="alt" xml:lang="de">DFB</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2008246-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Fu%C3%9Fball-Bund"/>
 			</item>
@@ -1734,7 +1734,7 @@
 			<item xml:id="DNR">
 				<term type="pref" xml:lang="de">Deutscher Naturschutzring</term>
 				<term type="alt" xml:lang="de">DNR</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1008844-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Naturschutzring"/>
 			</item>
@@ -1780,7 +1780,7 @@
 			<item xml:id="DPGe">
 				<term type="pref" xml:lang="de">Deutsche Postgewerkschaft (1949-2001)</term>
 				<term type="alt" xml:lang="de">DPG</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/4011762-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Postgewerkschaft"/>
 			</item>
@@ -1808,7 +1808,7 @@
 			<item xml:id="DRK">
 				<term type="pref" xml:lang="de">Deutsches Rotes Kreuz</term>
 				<term type="alt" xml:lang="de">DRK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2116802-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsches_Rotes_Kreuz"/>
 			</item>
@@ -1829,14 +1829,14 @@
 			<item xml:id="DSF">
 				<term type="pref" xml:lang="de">Gesellschaft für Deutsch-Sowjetische Freundschaft</term>
 				<term type="alt" xml:lang="de">DSF</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2012053-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_Deutsch-Sowjetische_Freundschaft"/>
 			</item>
 			<item xml:id="DSL">
 				<term type="pref" xml:lang="de">Deutsche Siedlungs- und Landesrentenbank</term>
 				<term type="alt" xml:lang="de">DSL Bank</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5028904-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/DSL_Bank"/>
 			</item>
@@ -2008,7 +2008,7 @@
 			<item xml:id="DeuGK">
 				<term type="pref" xml:lang="de">Deutsche Grünes Kreuz</term>
 				<term type="alt" xml:lang="de">DGK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2008773-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsches_Gr%C3%BCnes_Kreuz"/>
 			</item>
@@ -2021,19 +2021,19 @@
 			<item xml:id="DeuNK">
 				<term type="pref" xml:lang="de">Deutsches Nationalkomitee für Denkmalschutz</term>
 				<term type="alt" xml:lang="de">DNK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2053361-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsches_Nationalkomitee_f%C3%BCr_Denkmalschutz"/>
 			</item>
 			<item xml:id="DeuNStift">
 				<term type="pref" xml:lang="de">Deutsche Nationalstiftung (seit 1993)</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5146980-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Nationalstiftung"/>
 			</item>
 			<item xml:id="DeuPR">
 				<term type="pref" xml:lang="de">Deutscher Presserat</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2008626-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Presserat"/>
 			</item>
@@ -2051,7 +2051,7 @@
 			<item xml:id="DkP">
 				<term type="pref" xml:lang="de">Deutschkonservative Partei</term>
 				<term type="alt" xml:lang="de">DkP</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/118349-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutschkonservative_Partei"/>
 			</item>
@@ -2140,14 +2140,14 @@
 			<item xml:id="EKD">
 				<term type="pref" xml:lang="de">Evangelische Kirche in Deutschland</term>
 				<term type="alt" xml:lang="de">EKD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2009798-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Evangelische_Kirche_in_Deutschland"/>
 			</item>
 			<item xml:id="ELD">
 				<term type="pref" xml:lang="de">Liberale und Demokratische Fraktion des Europäischen Parlaments</term>
 				<term type="alt" xml:lang="de">ELD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1041461038"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Liberale_und_Demokratische_Fraktion"/>
 			</item>
@@ -2187,7 +2187,7 @@
 			</item>
 			<item xml:id="ESG">
 				<term type="pref" xml:lang="de">Evangelische Studentengemeinde</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2009807-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Evangelische_Studierendengemeinde"/>
 			</item>
@@ -2243,7 +2243,7 @@
 			<item xml:id="EVKOMM">
 				<term type="pref" xml:lang="de">Evangelische Kommentare: Monatsschrift zum Zeitgeschehen in Kirche und Gesellschaft</term>
 				<term type="alt" xml:lang="de">EVKOMM</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1086212630"/>
 			</item>
 			<item xml:id="EVP">
@@ -2299,7 +2299,7 @@
 			<item xml:id="EurZBeruf">
 				<term type="pref" xml:lang="de">Europäisches Zentrum für die Förderung der Berufsbildung</term>
 				<term type="alt" xml:lang="de">CEDEFOP</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2116941-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4isches_Zentrum_f%C3%BCr_die_F%C3%B6rderung_der_Berufsbildung"/>
 			</item>
@@ -2430,7 +2430,7 @@
 			<item xml:id="FIU">
 				<term type="pref" xml:lang="de">Free International University</term>
 				<term type="alt" xml:lang="de">FIU</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/16057346-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Free_International_University"/>
 			</item>
@@ -2490,7 +2490,7 @@
 			<item xml:id="FSK">
 				<term type="pref" xml:lang="de">Freiwillige Selbstkontrolle der Filmwirtschaft</term>
 				<term type="alt" xml:lang="de">FSK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2000119-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Freiwillige_Selbstkontrolle_der_Filmwirtschaft"/>
 			</item>
@@ -2539,7 +2539,7 @@
 			<item xml:id="FedAA">
 				<term type="pref" xml:lang="de">Federal Aviation Administration</term>
 				<term type="alt" xml:lang="de">FAA</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/19542-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Federal_Aviation_Administration"/>
 			</item>
@@ -2598,7 +2598,7 @@
 			<item xml:id="GBA">
 				<term type="pref" xml:lang="de">Generalbundesanwalt beim Bundesgerichtshof</term>
 				<term type="alt" xml:lang="de">GBA</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/5058541-12"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Der_Generalbundesanwalt_beim_Bundesgerichtshof"/>
 			</item>
@@ -2633,7 +2633,7 @@
 			<item xml:id="GEMA">
 				<term type="pref" xml:lang="de">Gesellschaft für musikalische Aufführungs- und mechanische Vervielfältigungsrechte</term>
 				<term type="alt" xml:lang="de">GEMA</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/43194-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_musikalische_Auff%C3%BChrungs-_und_mechanische_Vervielf%C3%A4ltigungsrechte"/>
 			</item>
@@ -2742,19 +2742,19 @@
 			<item xml:id="GfK">
 				<term type="pref" xml:lang="de">Gesellschaft für Kernforschung Karlsruhe</term>
 				<term type="alt" xml:lang="de">GfK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1007525-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Karlsruher_Institut_f%C3%BCr_Technologie#Geschichte_des_Forschungszentrums_Karlsruhe"/>
 			</item>
 			<item xml:id="GoetheInstitut">
 				<term type="pref" xml:lang="de">Goethe-Institut</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10068828-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Goethe-Institut"/>
 			</item>
 			<item xml:id="Gr47">
 				<term type="pref" xml:lang="de">Gruppe 47</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2164070-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Gruppe_47"/>
 			</item>
@@ -2780,7 +2780,7 @@
 			<item xml:id="HAW">
 				<term type="pref" xml:lang="de">Homosexuelle Aktion Westberlin</term>
 				<term type="alt" xml:lang="de">HAW</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2047607-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Homosexuelle_Aktion_Westberlin"/>
 			</item>
@@ -2806,7 +2806,7 @@
 			<item xml:id="HIAG">
 				<term type="pref" xml:lang="de">Hilfsgemeinschaft auf Gegenseitigkeit der Angehörigen der ehemaligen Waffen-SS</term>
 				<term type="alt" xml:lang="de">HIAG</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2032541-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Hilfsgemeinschaft_auf_Gegenseitigkeit_der_Angeh%C3%B6rigen_der_ehemaligen_Waffen-SS"/>
 			</item>
@@ -2853,7 +2853,7 @@
 			<item xml:id="HSU">
 				<term type="pref" xml:lang="de">Humanistische Studentenunion</term>
 				<term type="alt" xml:lang="de">HSU</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2043931-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Humanistische_Studentenunion"/>
 			</item>
@@ -2897,13 +2897,13 @@
 			</item>
 			<item xml:id="Hartmann">
 				<term type="pref" xml:lang="de">Hartmannbund e. V.</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2144155-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Haus_%26_Grund"/>
 			</item>
 			<item xml:id="HausundGrund">
 				<term type="pref" xml:lang="de">Haus und Grund - Zentralverband der Deutschen Haus-, Wohnungs- und Grundeigentümer e. V.</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/15244-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Hartmannbund"/>
 			</item>
@@ -2984,14 +2984,14 @@
 			<item xml:id="IFEU">
 				<term type="pref" xml:lang="de">IFEU</term>
 				<term type="alt" xml:lang="de">Institut für Energie- und Umweltforschung</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2079170-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Energie-_und_Umweltforschung_Heidelberg"/>
 			</item>
 			<item xml:id="IFM">
 				<term type="pref" xml:lang="de">Initiative Frieden und Menschenrechte</term>
 				<term type="alt" xml:lang="de">IFM</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2104913-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Initiative_Frieden_und_Menschenrechte"/>
 			</item>
@@ -3054,7 +3054,7 @@
 			<item xml:id="IISG">
 				<term type="pref" xml:lang="de">Internationales Institut für Sozialgeschichte</term>
 				<term type="alt" xml:lang="de">IISG</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1004926-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Internationales_Institut_f%C3%BCr_Sozialgeschichte"/>
 			</item>
@@ -3067,7 +3067,7 @@
 			<item xml:id="IKF">
 				<term type="pref" xml:lang="de">Interkirchlicher Friedensrat</term>
 				<term type="alt" xml:lang="de">IKF</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2075344-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Interkirchlicher_Friedensrat"/>
 			</item>
@@ -3081,7 +3081,7 @@
 			<item xml:id="IOC">
 				<term type="pref" xml:lang="de">International Olympic Committee</term>
 				<term type="alt" xml:lang="de">IOC</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/210056-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Internationales_Olympisches_Komitee"/>
 			</item>
@@ -3093,7 +3093,7 @@
 			<item xml:id="IPPNW">
 				<term type="pref" xml:lang="de">International Physicians for the Prevention of Nuclear War</term>
 				<term type="alt" xml:lang="de">IPPNW</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/5070419-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/IPPNW"/>
 			</item>
@@ -3156,7 +3156,7 @@
 			<item xml:id="IfZ">
 				<term type="pref" xml:lang="de">Institut für Zeitgeschichte</term>
 				<term type="alt" xml:lang="de">IfZ</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2014524-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Zeitgeschichte"/>
 			</item>
@@ -3256,7 +3256,7 @@
 			<item xml:id="KGParl">
 				<term type="pref" xml:lang="de">Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V.</term>
 				<term type="alt" xml:lang="de">KGParl</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2015995-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Kommission_f%C3%BCr_Geschichte_des_Parlamentarismus_und_der_politischen_Parteien"/>
 			</item>
@@ -3281,7 +3281,7 @@
 			<item xml:id="KOFAZ">
 				<term type="pref" xml:lang="de">Komitee für Frieden, Abrüstung und Zusammenarbeit</term>
 				<term type="alt" xml:lang="de">KOFAZ</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2092862-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Komitee_f%C3%BCr_Frieden,_Abr%C3%BCstung_und_Zusammenarbeit"/>
 			</item>
@@ -3294,7 +3294,7 @@
 			<item xml:id="KOMKAR">
 				<term type="pref" xml:lang="de">Verband der Vereine aus Kurdistan</term>
 				<term type="alt" xml:lang="de">KOMKAR</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1065283733"/>
 			</item>
 			<item xml:id="KP">
@@ -3378,7 +3378,7 @@
 			<item xml:id="KV">
 				<term type="pref" xml:lang="de">Kartellverband katholischer deutscher Studentenvereine</term>
 				<term type="alt" xml:lang="de">KV</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1015545-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Kartellverband_katholischer_deutscher_Studentenvereine"/>
 			</item>
@@ -3422,7 +3422,9 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Kursbuch_(Zeitschrift)"/>
 			</item>
 			<item xml:id="LAT">
-				<term type="alt" xml:lang="de">Labour Times</term>
+				<term type="pref" xml:lang="de">Los Angeles Times</term>
+				<term type="alt" xml:lang="de">LAT</term>
+				<term type="alt" xml:lang="de">LA Times</term>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/4168169-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Los_Angeles_Times"/>
@@ -3569,7 +3571,7 @@
 			<item xml:id="MSB">
 				<term type="pref" xml:lang="de">Marxistischer Studentenbund</term>
 				<term type="alt" xml:lang="de">MSB</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/10187933-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Marxistischer_Studentenbund_Spartakus"/>
 			</item>
@@ -3744,7 +3746,7 @@
 			<item xml:id="NH">
 				<term type="pref" xml:lang="de">Neue Heimat Städtebau</term>
 				<term type="alt" xml:lang="de">NH</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2020180-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Neue_Heimat"/>
 			</item>
@@ -3889,14 +3891,14 @@
 			<item xml:id="NaturFDeutsch">
 				<term type="pref" xml:lang="de">Naturfreunde Deutschlands</term>
 				<term type="alt" xml:lang="de">NFJD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/30468-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Naturfreundejugend_Deutschlands"/>
 			</item>
 			<item xml:id="NaturFJD">
 				<term type="pref" xml:lang="de">Naturfreundejugend Deutschlands</term>
 				<term type="alt" xml:lang="de">NFD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/10050806-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Naturfreunde#Naturfreunde_Deutschlands"/>
 			</item>
@@ -3924,7 +3926,7 @@
 			<item xml:id="OA">
 				<term type="pref" xml:lang="de">Ost-Ausschuss der Deutschen Wirtschaft</term>
 				<term type="alt" xml:lang="de">OA</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1161422145"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Ost-Ausschuss_der_Deutschen_Wirtschaft"/>
 			</item>
@@ -3973,7 +3975,7 @@
 			<item xml:id="OKR">
 				<term type="pref" xml:lang="de">Oberkirchenrat</term>
 				<term type="alt" xml:lang="de">OKR</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1032454156"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Oberkirchenrat"/>
 			</item>
@@ -4013,7 +4015,7 @@
 			<item xml:id="OSI">
 				<term type="pref" xml:lang="de">Otto-Suhr-Institut der Freien Universität Berlin</term>
 				<term type="alt" xml:lang="de">OSI</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/10017375-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Otto-Suhr-Institut"/>
 			</item>
@@ -4553,7 +4555,7 @@
 			<item xml:id="SJ">
 				<term type="pref" xml:lang="de">Societas Jesu</term>
 				<term type="alt" xml:lang="de">SJ</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/80092-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Jesuiten"/>
 			</item>
@@ -4675,7 +4677,7 @@
 			<item xml:id="SVI">
 				<term type="pref" xml:lang="de">Studentenverband Deutscher Ingenieurschulen e. V.</term>
 				<term type="alt" xml:lang="de">SVI</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/508072-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Studentenverband_Deutscher_Ingenieurschulen"/>
 			</item>
@@ -4956,7 +4958,7 @@
 			</item>
 			<item xml:id="Terredho">
 				<term type="pref" xml:lang="de">Terre des hommes</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4059525-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Terre_des_hommes"/>
 			</item>
@@ -5016,7 +5018,7 @@
 			<item xml:id="UCT">
 				<term type="pref" xml:lang="de">Unión general de trabajadores</term>
 				<term type="alt" xml:lang="de">UCT</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/219851-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Uni%C3%B3n_General_de_Trabajadores"/>
 			</item>
@@ -5037,7 +5039,7 @@
 			<item xml:id="UGO">
 				<term type="pref" xml:lang="de">Unabhängige Gewerkschaftsopposition</term>
 				<term type="alt" xml:lang="de">UGO</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Gewerkschaftsopposition"/>
 			</item>
 			<item xml:id="ULA">
@@ -5142,7 +5144,7 @@
 			</item>
 			<item xml:id="UniUlm">
 				<term type="pref" xml:lang="de">Universität Ulm</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/30607-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Universit%C3%A4t_Ulm"/>
 			</item>
@@ -5160,7 +5162,7 @@
 			</item>
 			<item xml:id="UnivGoett">
 				<term type="pref" xml:lang="de">Georg-August-Universität Göttingen</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2024315-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen"/>
 			</item>
@@ -5174,7 +5176,7 @@
 			<item xml:id="VBL">
 				<term type="pref" xml:lang="de">Versorgungsanstalt des Bundes und der Länder</term>
 				<term type="alt" xml:lang="de">VBL</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1012841-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Versorgungsanstalt_des_Bundes_und_der_L%C3%A4nder"/>
 			</item>
@@ -5216,7 +5218,7 @@
 			<item xml:id="VELKD">
 				<term type="pref" xml:lang="de">Vereinigte Evangelisch-Lutherische Kirche Deutschlands</term>
 				<term type="alt" xml:lang="de">VELKD</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2025447-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vereinigte_Evangelisch-Lutherische_Kirche_Deutschlands"/>
 			</item>
@@ -5271,7 +5273,7 @@
 			<item xml:id="VVN">
 				<term type="pref" xml:lang="de">Vereinigung der Verfolgten des Naziregimes</term>
 				<term type="alt" xml:lang="de">VVN</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2148028-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vereinigung_der_Verfolgten_des_Naziregimes_%E2%80%93_Bund_der_Antifaschistinnen_und_Antifaschisten"/>
 			</item>
@@ -5285,21 +5287,21 @@
 			<item xml:id="VdAK">
 				<term type="pref" xml:lang="de">Verband der Angestellten-Krankenkassen e.V.</term>
 				<term type="alt" xml:lang="de">VdAK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35909-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_der_Ersatzkassen"/>
 			</item>
 			<item xml:id="VdH">
 				<term type="pref" xml:lang="de">VVerband der Heimkehrer, Kriegsgefangenen und Vermisstenangehörigen Deutschlands e. V.</term>
 				<term type="alt" xml:lang="de">VdH</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/1022435-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_der_Heimkehrer,_Kriegsgefangenen_und_Vermisstenangeh%C3%B6rigen_Deutschlands"/>
 			</item>
 			<item xml:id="VdK">
 				<term type="pref" xml:lang="de">Verband der Kriegsbeschädigten, Kriegshinterbliebenen und Sozialrentner Deutschlands e. V.</term>
 				<term type="alt" xml:lang="de">VdK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/5157025-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sozialverband_VdK_Deutschland"/>
 			</item>
@@ -5418,7 +5420,7 @@
 			<item xml:id="WSI">
 				<term type="pref" xml:lang="de">Wirtschafts- und Sozialwissenschaftliches Institut</term>
 				<term type="alt" xml:lang="de">WSI</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2033849-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschafts-_und_Sozialwissenschaftliches_Institut"/>
 			</item>
@@ -5602,7 +5604,7 @@
 			<item xml:id="ZdK">
 				<term type="pref" xml:lang="de">Zentralkomitee der deutschen Katholiken</term>
 				<term type="alt" xml:lang="de">ZdK</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/10786-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zentralkomitee_der_deutschen_Katholiken"/>
 			</item>
@@ -5645,7 +5647,7 @@
 			<item xml:id="djo">
 				<term type="pref" xml:lang="de">djo-Deutsche Jugend in Europa</term>
 				<term type="alt" xml:lang="de">djo</term>
-				<note type="entityType">soc</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/2041261-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Djo-Deutsche_Jugend_in_Europa"/>
 			</item>
