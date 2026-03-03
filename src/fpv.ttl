@@ -55,7 +55,7 @@ ex:Aftenposten a skos:Concept ;
   skos:prefLabel "Aftenposten"@de ;
   skos:notation "news"^^fpv:entityType ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Aftenposten> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  skos:note "Wichtig schwedische Tageszeitung."@de .
 
 ex:AKP-Gruppe a skos:Concept ;
   skos:prefLabel "African, Caribbean and Pacific Group of States (Organisation Afrikanischer, Karibischer und Pazifischer Staaten)"@de ;
