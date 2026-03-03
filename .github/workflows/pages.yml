@@ -34,20 +34,21 @@ jobs:
         run: |
           mkdir -p dist/xml
           mkdir -p dist/json
+          mkdir -p docs
 
-      - name: Run Conversion
+      - name: Generate XML + JSON
         run: |
           python scripts/skos2xml.py
           python scripts/ttl2jsonl.py
 
-      - name: Build HTML
+      - name: Generate HTML
         run: |
           python scripts/build_html.py
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: docs
 
   deploy:
     needs: build
