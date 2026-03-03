@@ -47,7 +47,7 @@ ex:Atomwaffensperrvertrag a skos:Concept ;
  skos:notation "topic"^^fpv:entityType ;
  skos:exactMatch <http://d-nb.info/gnd/4131647-2> ;
  skos:closeMatch <https://de.wikipedia.org/wiki/Atomwaffensperrvertrag> ;
- skos:note "Ein internationaler Vertrag, der die Verbreitung von Kernwaffen einschränkt"@de .
+ skos:note "Ein internationaler Vertrag, der die Verbreitung von Kernwaffen einschränken soll."@de .
 
 
 
