@@ -1,0 +1,4385 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Fraktionsprotokolle Vokabular (FPV)</title>
+
+<style>
+body {
+    font-family: Georgia, serif;
+    max-width: 1000px;
+    margin: 40px auto;
+    line-height: 1.5;
+}
+
+h1 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.index a {
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.filter button {
+    margin-right: 5px;
+}
+
+.concept {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.uri {
+    font-size: 0.85em;
+    color: #666;
+}
+</style>
+
+<script>
+function filterType(type) {
+    let items = document.querySelectorAll(".concept");
+    items.forEach(item => {
+        if (type === "all") {
+            item.style.display = "block";
+        } else {
+            item.style.display = item.dataset.type === type ? "block" : "none";
+        }
+    });
+}
+
+function searchConcept() {
+    let input = document.getElementById("search").value.toLowerCase();
+    let items = document.querySelectorAll(".concept");
+
+    items.forEach(item => {
+        let text = item.innerText.toLowerCase();
+        item.style.display = text.includes(input) ? "block" : "none";
+    });
+}
+</script>
+
+</head>
+<body>
+
+<h1>Fraktionsprotokolle Vokabular (FPV)</h1>
+
+<div>
+<input type="text" id="search" placeholder="Suche..." onkeyup="searchConcept()" style="width: 300px;">
+</div>
+
+<h2>Alphabetischer Index</h2>
+<div class="index">
+<a href="#A">A</a><a href="#B">B</a><a href="#C">C</a><a href="#D">D</a><a href="#E">E</a><a href="#F">F</a><a href="#G">G</a><a href="#H">H</a><a href="#I">I</a><a href="#J">J</a><a href="#K">K</a><a href="#L">L</a><a href="#M">M</a><a href="#N">N</a><a href="#O">O</a><a href="#P">P</a><a href="#Q">Q</a><a href="#R">R</a><a href="#S">S</a><a href="#T">T</a><a href="#U">U</a><a href="#V">V</a><a href="#W">W</a><a href="#X">X</a><a href="#Y">Y</a><a href="#Z">Z</a><a href="#Ä">Ä</a><a href="#Ö">Ö</a></div>
+<h2>Filter nach Entitätstyp</h2>
+<div class="filter">
+<button onclick="filterType('all')">Alle</button>
+<button onclick="filterType('org')">org</button>
+<button onclick="filterType('com')">com</button>
+<button onclick="filterType('news')">news</button>
+<button onclick="filterType('topic')">topic</button>
+<button onclick="filterType('law')">law</button>
+<button onclick="filterType('pol')">pol</button>
+</div>
+
+<hr>
+<h2 id="A">A</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AZ</div>
+    <strong>Abendzeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> AZ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Ruhrstatut</div>
+    <strong>Abkommen über die Errichtung einer Internationalen Ruhrbehörde (Ruhrstatut)</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Agfa</div>
+    <strong>Actien-Gesellschaft für Anilin-Fabrication</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Agfa<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ANC</div>
+    <strong>African National Congress</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ANC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AKP-Gruppe</div>
+    <strong>African, Caribbean and Pacific Group of States (Organisation Afrikanischer, Karibischer und Pazifischer Staaten)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OACPS (dt. AKP-Gruppe)<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Aftenposten</div>
+    <strong>Aftenposten</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AFP</div>
+    <strong>Agence France-Presse</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> AFP<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Airbus</div>
+    <strong>Airbus</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Airbus<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AAPD</div>
+    <strong>Akten zur auswärtigen Politik der Bundesrepublik Deutschland</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> AAPD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ADF</div>
+    <strong>Aktion Demokratischer Fortschritt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ADF<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ASF</div>
+    <strong>Aktion Sühnezeichen Friedensdienste</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ASF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AUD</div>
+    <strong>Aktionsgemeinschaft Unabhängiger Deutscher</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AUD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AVP</div>
+    <strong>Aktionsgemeinschaft Vierte Partei</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> AVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Fatah</div>
+    <strong>Al Fatah</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Fatah<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/APRA</div>
+    <strong>Alianza Popular Revolucionaria Americana</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> APRA<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ADFC</div>
+    <strong>Allgemeine Deutsche Fahrrad-Club e. V.</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ADFC<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AEG</div>
+    <strong>Allgemeine Elektricitäts-Gesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> AEG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AOK</div>
+    <strong>Allgemeine Ortskrankenkasse</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> AOK<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AllgZeitMainz</div>
+    <strong>Allgemeine Zeitung (Mainz)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ABiD</div>
+    <strong>Allgemeiner Behindertenverband in Deutschland e.V.</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> ABiD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ADAC</div>
+    <strong>Allgemeiner Deutscher Automobilclub</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ADAC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ADGB</div>
+    <strong>Allgemeiner Deutscher Gewerkschaftsbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ADGB<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ADN</div>
+    <strong>Allgemeiner Deutscher Nachrichtendienst</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ADN<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AHK</div>
+    <strong>Alliierte Hohe Kommission</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AHK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AL</div>
+    <strong>Alternative Liste für Demokratie und Umweltschutz</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AL-OEsterreich</div>
+    <strong>Alternative Liste Österreichs</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AL-Österreich<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ABC</div>
+    <strong>American Broadcasting Company</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ABC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AFL</div>
+    <strong>American Federation of Labor</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AFL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AD</div>
+    <strong>Amerika-Dienst (Bonn)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AI</div>
+    <strong>Amnesty International</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> AI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ARP</div>
+    <strong>Anti-Revolutionaire Partij</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ARP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ASU</div>
+    <strong>Arabische Sozialistische Union (Ittiḥād al-Ištirākī al-'Arabī)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ASU<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AJ</div>
+    <strong>Arbeiterjugend: Zeitung der Sozialistischen Jugend Deutschlands Die Falken, Bundesvorstand</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> AJ<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AWO</div>
+    <strong>Arbeiterwohlfahrt</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> AWO<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ABN</div>
+    <strong>Arbeitsgemeinschaft beruflicher und ehrenamtlicher Naturschutz</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ABN<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ADK</div>
+    <strong>Arbeitsgemeinschaft Demokratischer Kreise</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ADK<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ARD</div>
+    <strong>Arbeitsgemeinschaft der öffentlich-rechtlichen Rundfunkanstalten der Bundesrepublik Deutschland</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ARD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AfA</div>
+    <strong>Arbeitsgemeinschaft für Arbeitnehmerfragen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AfA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AsozF</div>
+    <strong>Arbeitsgemeinschaft sozialdemokratischer Frauen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ASF<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ASJur</div>
+    <strong>Arbeitsgemeinschaft sozialdemokratischer Juristinnen und Juristen</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ASJ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AdG</div>
+    <strong>Archiv der Gegenwart (AdG)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> AdG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AdLESt</div>
+    <strong>Archiv der Ludwig-Erhard-Stiftung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AdLESt<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AdsD</div>
+    <strong>Archiv der sozialen Demokratie</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AdsD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ADL</div>
+    <strong>Archiv des Liberalismus</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ADL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ACDP</div>
+    <strong>Archiv für Christlich-Demokratische Politik</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ACDP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ACSP</div>
+    <strong>Archiv für Christlich-Soziale Politik</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ACSP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AGG</div>
+    <strong>Archiv Grünes Gedächtnis</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AGG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ArthurAndersen</div>
+    <strong>Arthur Andersen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> /<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ArDL</div>
+    <strong>Arthur D. Little</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ADL<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ABB</div>
+    <strong>ASEA Brown Boveri</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> ABB<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AP</div>
+    <strong>Associated Press</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> AP<br></div>
+<div class="concept" data-type="topic">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Atomwaffensperrvertrag</div>
+    <strong>Atomwaffensperrvertrag</strong><br>
+    <em>Typ:</em> topic<br>
+<em>AltLabel:</em> Kernwaffensperrvertrag, Nuklearer Nichtverbreitungsvertrag, Non-Proliferation-Treaty, Treaty on the Non-Proliferation of Nuclear Weapons<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AugAll</div>
+    <strong>Augsburger Allgemeine</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AA</div>
+    <strong>Auswärtiges Amt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> AA<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AvD</div>
+    <strong>Automobilclub von Deutschland</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> AvD<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UNIC</div>
+    <strong>Automobiles Unic</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> UNIC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Avanti</div>
+    <strong>Avanti!(1896–1993)</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ASD</div>
+    <strong>Axel-Springer-Inlandsdienst</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ASD<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SpringerVerlag</div>
+    <strong>Axel-Springer-Verlag</strong><br>
+    <em>Typ:</em> com<br>
+</div><h2 id="B">B</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BoulZ</div>
+    <strong>B.Z.</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> B.Z.<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BASF</div>
+    <strong>Badische Anilin- und Sodafabrik</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> BASF<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BadZ</div>
+    <strong>Badische Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> BadZ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BdL</div>
+    <strong>Bank deutscher Länder</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BdL<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BfG</div>
+    <strong>Bank für Gemeinwirtschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> BfG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BaslerAZ</div>
+    <strong>Basler Arbeiter-Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Basler AZ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMW</div>
+    <strong>Bayerische Motorenwerke</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> BMW<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BayStBk</div>
+    <strong>Bayerische Staatsbank AG</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BayStabi</div>
+    <strong>Bayerische Staatsbibliothek</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BayStabi<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BVP</div>
+    <strong>Bayerische Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BVP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BR</div>
+    <strong>Bayerischer Rundfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> BR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BayHStA</div>
+    <strong>Bayerisches Hauptstaatsarchiv</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BayHStA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BLW</div>
+    <strong>Bayerisches Landwirtschaftliches Wochenblatt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Baykur</div>
+    <strong>Bayernkurier</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BP</div>
+    <strong>Bayernpartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BayrLV</div>
+    <strong>Bayrische Landvolk-Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KOKO</div>
+    <strong>Bereich Kommerzielle Koordinierung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KoKo<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BergmannBorsig</div>
+    <strong>Bergmann-Borsig</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BerExtra</div>
+    <strong>Berliner Extra-Dienst</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BerMoPo</div>
+    <strong>Berliner Morgenpost</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BerlinerStimme</div>
+    <strong>Berliner Stimme - Wochenzeitung für Politik, Wirtschaft und Kultur</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BEWAG</div>
+    <strong>Berliner Städtische Elektrizitätswerke Aktiengesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> BEWAG<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BVG</div>
+    <strong>Berliner Verkehrsbetriebe</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BVG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BZ</div>
+    <strong>Berliner Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BVFrauen</div>
+    <strong>Berufsverband der Frauenärzte</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BVF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Beweg2Juni</div>
+    <strong>Bewegung 2. Juni (terroristische Vereinigung)</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Bild</div>
+    <strong>Bild</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BamS</div>
+    <strong>Bild am Sonntag</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> BamS<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BidW</div>
+    <strong>Blick in die Welt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BHE</div>
+    <strong>Block der Heimatvertriebenen und Entrechteten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BHE<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BonnerRund</div>
+    <strong>Bonner Rundschau (Lokalausgabe der Kölnischen Rundschau)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BBC</div>
+    <strong>British Broadcasting Corporation</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> BBC<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BritPet</div>
+    <strong>British Petroleum</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> BP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BulletinEG</div>
+    <strong>Bulletin der Europäischen Gemeinschaften</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Bulletin EG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Bulletin</div>
+    <strong>Bulletin des Presse- und Informationsamtes der Bundesregierung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Bulletin<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BulletinIP</div>
+    <strong>Bulletin Interparlementaire</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BDKJ</div>
+    <strong>Bund der Deutschen Katholischen Jugend</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BDKJ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BdD</div>
+    <strong>Bund der Deutschen, Partei für Einheit, Frieden und Freiheit</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BdD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BRRH</div>
+    <strong>Bund der Ruhestandsbeamten, Rentner und Hinterbliebenen (1953-2013)</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BRH<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BdV</div>
+    <strong>Bund der Vertriebenen</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BdV<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BDJ</div>
+    <strong>Bund Deutscher Jugend</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BDJ<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BdSt</div>
+    <strong>Bund Deutscher Steuerbeamter (Deutsche Steuer-Gewerkschaft)</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BDSt<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BFD</div>
+    <strong>Bund Freies Deutschland</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BFD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BUND</div>
+    <strong>Bund für Umwelt und Naturschutz Deutschland</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BUND<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BvD</div>
+    <strong>Bund vertriebener Deutscher</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BvD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BBR</div>
+    <strong>Bundesamt für Bauwesen und Raumordnung (ab 1998)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BBR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BAMF</div>
+    <strong>Bundesamt für die Anerkennung ausländischer Flüchtlinge</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BAMF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BfV</div>
+    <strong>Bundesamt für Verfassungsschutz</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BfV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BfArbeit</div>
+    <strong>Bundesanstalt für Arbeit (seit 1969)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BfA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BundAnz</div>
+    <strong>Bundesanzeiger</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BAnz<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BAG</div>
+    <strong>Bundesarbeitsgericht (BRD 1954-1990)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BAG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BArch</div>
+    <strong>Bundesarchiv</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BArch<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BBD</div>
+    <strong>Bundesbaudirektion (bis 1998)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BBD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BFH</div>
+    <strong>Bundesfinanzhof</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BFH<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BGH</div>
+    <strong>Bundesgerichtshof</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BGH<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BundGA</div>
+    <strong>Bundesgesundheitsamt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BGA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BGS</div>
+    <strong>Bundesgrenzschutz</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BGS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BKAmt</div>
+    <strong>Bundeskanzleramt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BKAmt<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BKA</div>
+    <strong>Bundeskriminalamt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BKA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMF</div>
+    <strong>Bundesministerium der Finanzen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMJ</div>
+    <strong>Bundesministerium der Justiz</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMJ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMVg</div>
+    <strong>Bundesministerium der Verteidigung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMVg<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMI</div>
+    <strong>Bundesministerium des Innern</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMBR</div>
+    <strong>Bundesministerium für Angelegenheiten des Bundesrates und der Länder</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMBR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMA</div>
+    <strong>Bundesministerium für Arbeit</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> pol<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMAS</div>
+    <strong>Bundesministerium für Arbeit und Sozialordnung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMAS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMAtom</div>
+    <strong>Bundesministerium für Atomfragen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMAtom<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMBW</div>
+    <strong>Bundesministerium für Bildung und Wissenschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMBW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMP</div>
+    <strong>Bundesministerium für das Post- und Fernmeldewesen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMM</div>
+    <strong>Bundesministerium für den Marshallplan</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMM<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMEL</div>
+    <strong>Bundesministerium für Ernährung und Landwirtschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMEL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMELF</div>
+    <strong>Bundesministerium für Ernährung, Landwirtschaft und Forsten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMELF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMFa</div>
+    <strong>Bundesministerium für Familienfragen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMFa<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMFT</div>
+    <strong>Bundesministerium für Forschung und Technologie</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMFT<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMG</div>
+    <strong>Bundesministerium für gesamtdeutsche Fragen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMGes</div>
+    <strong>Bundesministerium für Gesundheitswesen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMGes<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMB</div>
+    <strong>Bundesministerium für innerdeutsche Beziehungen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMJFG</div>
+    <strong>Bundesministerium für Jugend, Familie, Frauen und Gesundheit</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMJFG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMRaum</div>
+    <strong>Bundesministerium für Raumordnung, Bauwesen und Städtebau (1972-1998)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMBau<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMV</div>
+    <strong>Bundesministerium für Verkehr</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMVt</div>
+    <strong>Bundesministerium für Vertriebene, Flüchtlinge und Kriegsgeschädigte</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMVt<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMWi</div>
+    <strong>Bundesministerium für Wirtschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMWi<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMWF</div>
+    <strong>Bundesministerium für Wirtschaft und Finanzen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMWF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMZ</div>
+    <strong>Bundesministerium für wirtschaftliche Zusammenarbeit</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMZ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMBes</div>
+    <strong>Bundesministerium für wirtschaftlichen Besitz des Bundes</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMBes<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BMWo</div>
+    <strong>Bundesministerium für Wohnungsbau</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BMWo<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BND</div>
+    <strong>Bundesnachrichtendienst</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> pol<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BPA</div>
+    <strong>Bundespresseamt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BPA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BPK</div>
+    <strong>Bundespressekonferenz</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> BVA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BPrA</div>
+    <strong>Bundespräsidialamt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BPrA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BRat</div>
+    <strong>Bundesrat</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BRat<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BRH</div>
+    <strong>Bundesrechnungshof</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BRH<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BuReg</div>
+    <strong>Bundesregierung (Bundesrepublik Deutschland)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BReg<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BPFraktBT</div>
+    <strong>Bundestagsfraktion der Bayernpartei</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DZPFraktBT</div>
+    <strong>Bundestagsfraktion der Deutschen Zentrumspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DZP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KPDFraktionBT</div>
+    <strong>Bundestagsfraktion der Kommunistischen Partei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WAVerFrak</div>
+    <strong>Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung (Partei)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WAV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BTPraesident</div>
+    <strong>Bundestagspräsident</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BTPraesidium</div>
+    <strong>Bundestagspräsidium</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BBU</div>
+    <strong>Bundesverband Bürgerinitiativen Umweltschutz</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> BBU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BDI</div>
+    <strong>Bundesverband der Deutschen Industrie</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BDI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BdB</div>
+    <strong>Bundesverband deutscher Banken</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BdB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BDA</div>
+    <strong>Bundesvereinigung der Deutschen Arbeitgeberverbände</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BDA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BVerfG</div>
+    <strong>Bundesverfassungsgericht</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BVerfG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BuVer</div>
+    <strong>Bundesversammlung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BuVer<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BfA</div>
+    <strong>Bundesversicherungsanstalt für Angestellte</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BfA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BVA</div>
+    <strong>Bundesverwaltungsamt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BVA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BVerwG</div>
+    <strong>Bundesverwaltungsgericht</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BVerwG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Bw</div>
+    <strong>Bundeswehr</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Bw<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BpB</div>
+    <strong>Bundeszentrale für politische Bildung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> bpb<br></div><h2 id="C">C</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Cap</div>
+    <strong>Capital</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CV</div>
+    <strong>Cartellverband der katholischen deutschen Studentenverbindungen</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> CV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CDUFraktionBT</div>
+    <strong>CDU/CSU-Fraktion im Deutschen Bundestag</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CDU/CSU-Fraktion<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CIA</div>
+    <strong>Central Intelligence Agency</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CIA<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CMA</div>
+    <strong>Centrale Marketing-Gesellschaft der deutschen Agrarwirtschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> CMA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CentreDS</div>
+    <strong>Centre des démocrates sociaux</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CDS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CDS</div>
+    <strong>Centre des démocrates sociaux</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CDS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CNIP</div>
+    <strong>Centre national des indépendants et paysans</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CNIP<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Ciba</div>
+    <strong>Chemische Industrie Basel</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Ciba<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ChiTri</div>
+    <strong>Chicago Tribune</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CuW</div>
+    <strong>Christ und Welt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CVP-BE</div>
+    <strong>Christelijke Volkspartij</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CDApp</div>
+    <strong>Christen-Democratisch Appèl</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CDA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CVP-CH</div>
+    <strong>Christldemokratische Volkspartei der Schweiz</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CSWU</div>
+    <strong>Christlich Soziale Wähler Union im Saarland</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CSWU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CDA</div>
+    <strong>Christlich-Demokratische Arbeitnehmerschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CDA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CDU</div>
+    <strong>Christlich-Demokratische Union Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CDU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Ost-CDU</div>
+    <strong>Christlich-Demokratische Union Deutschlands (Ost-CDU)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Ost-CDU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CSA</div>
+    <strong>Christlich-Soziale Arbeitnehmerschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CSA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CSP</div>
+    <strong>Christlich-Soziale Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CSP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CSU</div>
+    <strong>Christlich-Soziale Union in Bayern</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CSU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CGD</div>
+    <strong>Christliche Gewerkschaft Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CGD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CVP-SL</div>
+    <strong>Christliche Volkspartei des Saarlandes</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CGB</div>
+    <strong>Christlicher Gewerkschaftsbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CGB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CSV</div>
+    <strong>Chrëschtlech Sozial Vollekspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CSV<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CBS</div>
+    <strong>Columbia Broadcasting System</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> CBS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/COPCON</div>
+    <strong>Comando Operacional do Continente</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> COPCON<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Combank</div>
+    <strong>Commerzbank</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Comisco</div>
+    <strong>Committee of the International Socialist Conference</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Comisco<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CFP</div>
+    <strong>Compagnie Française des Pétroles</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> CFP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CISNU</div>
+    <strong>Confederation of Iranian Students National Union (CISNU)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CISNU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CEMT</div>
+    <strong>Conférence Européenne des Ministres des Transports</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CEMT<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CIO</div>
+    <strong>Congress of Industrial Organizations</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CIO<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/COCOM</div>
+    <strong>Coordinating Committee on Multilateral Export Controls; NATO.Koordinierungskomittee für den Ost-West-Handel</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> COCOM<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CdS</div>
+    <strong>Corriere delle Sera</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/COMECON</div>
+    <strong>Council for Mutual Economic Assistance</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> COMECON<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CIC</div>
+    <strong>Counter Intelligence Corps</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CIC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CSU-LandesgruppeBT</div>
+    <strong>CSU-Landesgruppe</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RVP</div>
+    <strong>Cumhuriyet Halk Partisi (Republikanische Volkspartei, Türkei)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CHP (RVP)<br></div><h2 id="D">D</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DT</div>
+    <strong>Daily Telegraph</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DaiBenz</div>
+    <strong>Daimler-Benz AG</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/dasda</div>
+    <strong>das da - Monatsmagazin für Kultur und Politik</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> DAK<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DObl</div>
+    <strong>Das Ostpreußenblatt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DasParl</div>
+    <strong>Das Parlament (Zeitung)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/dasVolk</div>
+    <strong>Das Volk: Organ der Sozialdemokratichen Partei Badens</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/deVol</div>
+    <strong>de Volkskrant</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DC</div>
+    <strong>Democrazia Cristiana</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DJ</div>
+    <strong>Demokratie Jetzt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DJ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DPS</div>
+    <strong>Demokratische Partei Saar</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DPS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DVP</div>
+    <strong>Demokratische Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DA</div>
+    <strong>Demokratischer Aufbruch</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DFD</div>
+    <strong>Demokratischer Frauenbund Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DFD<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Abend</div>
+    <strong>Der Abend (Zeitung)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Abend<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BStU</div>
+    <strong>Der Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BStU<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/InFrueh</div>
+    <strong>Der Internationale Frühschoppen</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DerMorgen</div>
+    <strong>Der Morgen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Der Morgen<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Platow</div>
+    <strong>Der Platow-Brief</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DerSelbs</div>
+    <strong>Der Selbständige</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Spiegel</div>
+    <strong>Der Spiegel</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Tsp</div>
+    <strong>Der Tagesspiegel</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DHP</div>
+    <strong>Deutsch-Hannoversche Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DHP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DAG</div>
+    <strong>Deutsche Angestellten Gewerkschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DAG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DAK</div>
+    <strong>Deutsche Angestellten-Krankenkasse</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DAK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeuBa</div>
+    <strong>Deutsche Bank</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DB</div>
+    <strong>Deutsche Bundesbahn</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BBk</div>
+    <strong>Deutsche Bundesbank</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BBk (international: DBB)<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DBP</div>
+    <strong>Deutsche Bundespost</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DBP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DDP</div>
+    <strong>Deutsche Demokratische Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DDP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DDR</div>
+    <strong>Deutsche Demokratische Republik</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DDR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ddvg</div>
+    <strong>Deutsche Druck- und Verlagsgesellschaft mbH</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ddvg<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DEA</div>
+    <strong>Deutsche Erdöl AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DEA<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DEFA</div>
+    <strong>Deutsche Film-AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DEFA<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DFG</div>
+    <strong>Deutsche Forschungsgemeinschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DFG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DFU</div>
+    <strong>Deutsche Friedensunion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DFU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DG</div>
+    <strong>Deutsche Gemeinschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DGK</div>
+    <strong>Deutsche Genossenschaftskasse</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DGK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DGAP</div>
+    <strong>Deutsche Gesellschaft für Auswärtige Politik</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DGAP<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DGG</div>
+    <strong>Deutsche Gesellschaft für kombinierten Güterverkehr</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DGG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GTZ</div>
+    <strong>Deutsche Gesellschaft für Technische Zusammenarbeit</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GTZ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DWKern</div>
+    <strong>Deutsche Gesellschaft für Wiederaufarbeitung von Kernbrennstoffen (Hannover)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DWK<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeuGK</div>
+    <strong>Deutsche Grünes Kreuz</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DGK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DtIndAnlagenAG</div>
+    <strong>Deutsche Industrieanlagen AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DIAG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DIAG</div>
+    <strong>Deutsche Industrieanlagen Gesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DIAG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DJK</div>
+    <strong>Deutsche Jugendkraft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DJK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DjD</div>
+    <strong>Deutsche Jungdemokraten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DJD<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DKBL</div>
+    <strong>Deutsche Kohlenbergbau-Leitung</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DKBL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DKP</div>
+    <strong>Deutsche Kommunistische Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DKP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DLG</div>
+    <strong>Deutsche Landwirtschafts-Gesellschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DLG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Lufthansa</div>
+    <strong>Deutsche Lufthansa AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> LH<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DMS</div>
+    <strong>Deutsche Maschinen- und Schiffbau AG Rostock</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DMS<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DEMAG</div>
+    <strong>Deutsche Maschinenbau-Aktiengesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DEMAG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DENA</div>
+    <strong>Deutsche Nachrichten-Agentur</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> DENA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DNZ</div>
+    <strong>Deutsche National-Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeuNStift</div>
+    <strong>Deutsche Nationalstiftung (seit 1993)</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DNatS</div>
+    <strong>Deutsche Nationalstiftung (seit 1993)</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DParlG</div>
+    <strong>Deutsche Parlamentarische Gesellschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DPG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DPG</div>
+    <strong>Deutsche Parlamentarische Gesellschaft e. V.</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DPG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DP</div>
+    <strong>Deutsche Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DP<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Depfa</div>
+    <strong>Deutsche Pfandbriefanstalt</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Depfa<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DPGe</div>
+    <strong>Deutsche Postgewerkschaft (1949-2001)</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DPG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/dpa</div>
+    <strong>Deutsche Presse-Agentur</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> dpa<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DR</div>
+    <strong>Deutsche Rechtspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DR<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ReichsbahnDDR</div>
+    <strong>Deutsche Reichsbahn (DDR)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DRP</div>
+    <strong>Deutsche Reichspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DRP<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DSL</div>
+    <strong>Deutsche Siedlungs- und Landesrentenbank</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DSL Bank<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DSP</div>
+    <strong>Deutsche Sozialdemokratische Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DSP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/dsj</div>
+    <strong>Deutsche Sportjugend</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> dsj<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DStP</div>
+    <strong>Deutsche Staatspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DSP<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeTeWe</div>
+    <strong>Deutsche Telephonwerke und Kabelindustrie</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DeTeWe<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DU</div>
+    <strong>Deutsche Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DV</div>
+    <strong>Deutsche Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DNVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DVU</div>
+    <strong>Deutsche Volksunion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DVU<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DW</div>
+    <strong>Deutsche Welle</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> DW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DWK</div>
+    <strong>Deutsche Wirtschaftskommission</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DWK<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DZuWz</div>
+    <strong>Deutsche Zeitung und Wirtschaftszeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DZP</div>
+    <strong>Deutsche Zentrumspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DZP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DtBauernV</div>
+    <strong>Deutscher Bauernverband</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DBV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DBB</div>
+    <strong>Deutscher Beamtenbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DBB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DBS</div>
+    <strong>Deutscher Behindertensportverband</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DBS<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DBV</div>
+    <strong>Deutscher Bund für Vogelschutz (seit 1990 Naturschutzbund Deutschland)</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DBV<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DBJR</div>
+    <strong>Deutscher Bundesjugendring</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DBJR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BT</div>
+    <strong>Deutscher Bundestag</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BT<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DBwV</div>
+    <strong>Deutscher Bundeswehrverband</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DBwV<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DCV</div>
+    <strong>Deutscher Caritasverband</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ddp</div>
+    <strong>Deutscher Depeschendienst</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ddp<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DED</div>
+    <strong>Deutscher Entwicklungsdienst</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DED<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DFB</div>
+    <strong>Deutscher Fußball Bund</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DFB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DGB</div>
+    <strong>Deutscher Gewerkschaftsbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DGB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DEHOGA</div>
+    <strong>Deutscher Hotel- und Gaststättenverband</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DEHOGA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DIHT</div>
+    <strong>Deutscher Industrie- und Handelstag</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DIHT<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DNR</div>
+    <strong>Deutscher Naturschutzring</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DNR<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/dpd</div>
+    <strong>Deutscher Pressedienst</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> dpd<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeuPR</div>
+    <strong>Deutscher Presserat</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DSB</div>
+    <strong>Deutscher Sportbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DSB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DST</div>
+    <strong>Deutscher Städtetag</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DST<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DAS</div>
+    <strong>Deutsches Allgemeines Sonntagsblatt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DIW</div>
+    <strong>Deutsches Institut für Wirtschaftsforschung</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> DIW<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DNB</div>
+    <strong>Deutsches Nachrichtenbüro</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> DNB<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeuNK</div>
+    <strong>Deutsches Nationalkomitee für Denkmalschutz</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DNK<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DRK</div>
+    <strong>Deutsches Rotes Kreuz</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DRK<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DkP</div>
+    <strong>Deutschkonservative Partei</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DkP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DUD</div>
+    <strong>Deutschland Union Dienst</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> DUD<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeuMag</div>
+    <strong>Deutschland-Magazin</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DLF</div>
+    <strong>Deutschlandfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> DLF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DNVP</div>
+    <strong>Deutschnationale Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> DNVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DGBJugend</div>
+    <strong>DGB-Jugend</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NBD</div>
+    <strong>Die neue Bonner Depesche</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NBD<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NGes</div>
+    <strong>Die Neue Gesellschaft (Zeitschrift)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Rhpf</div>
+    <strong>Die Rheinpfalz</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Welt</div>
+    <strong>Die Welt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Weltwoche</div>
+    <strong>Die Weltwoche</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Zeit</div>
+    <strong>DIE ZEIT</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/djo</div>
+    <strong>djo-Deutsche Jugend in Europa</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> djo<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DesdnerB</div>
+    <strong>Dresdner Bank</strong><br>
+    <em>Typ:</em> com<br>
+</div><h2 id="E">E</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ECE</div>
+    <strong>Economic Commission for Europe</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ECE<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Pais</div>
+    <strong>El País</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EK</div>
+    <strong>Enōsis Kentru</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Emnid</div>
+    <strong>Erforschung der öffentlichen Meinung, Marktforschung, Nachrichten, Informationen und Dienstleistungen</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Emnid<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Eska</div>
+    <strong>Eska Automotiv GmbH</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EurArchiv</div>
+    <strong>Europa-Archiv (Zeitschrift)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> EA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EuropaUnion</div>
+    <strong>Europa-Union Deutschland</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CdE</div>
+    <strong>Europarat</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CoE/CdE<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EFTA</div>
+    <strong>European Free Trade Association</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EFTA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ERP</div>
+    <strong>European Recovery Program (Marshall-Plan)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ERP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EUREKA</div>
+    <strong>European Research Coordination Agency</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EUREKA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EAP</div>
+    <strong>Europäische Arbeiter-Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EAP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EURATOM</div>
+    <strong>Europäische Atomgemeinschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EURATOM<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EDU</div>
+    <strong>Europäische Demokratische Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EDU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EG</div>
+    <strong>Europäische Gemeinschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EGKS</div>
+    <strong>Europäische Gemeinschaft für Kohle und Stahl</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EGKS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EuropKommission</div>
+    <strong>Europäische Kommission</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EUROCONTROL</div>
+    <strong>Europäische Organisation zur Sicherung der Luftfahrt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EUROCONTROL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EPU</div>
+    <strong>Europäische Parlamentarier Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EPU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EPG</div>
+    <strong>Europäische Politische Gemeinschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EPG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EU</div>
+    <strong>Europäische Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EUCD</div>
+    <strong>Europäische Union Christlicher Demokraten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EUCD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EVG</div>
+    <strong>Europäische Verteidigungsgemeinschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EVG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EVP</div>
+    <strong>Europäische Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EWG</div>
+    <strong>Europäische Wirtschaftsgemeinschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EWG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EZU</div>
+    <strong>Europäische Zahlungsunion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EZU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EUGH</div>
+    <strong>Europäischer Gerichtshof</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EuGH<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EGB</div>
+    <strong>Europäischer Gewerkschaftsbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EGB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ER</div>
+    <strong>Europäischer Rat</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ER<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EuRH</div>
+    <strong>Europäischer Rechnungshof</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EuRH<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EP</div>
+    <strong>Europäisches Parlament</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> EP<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EurZBeruf</div>
+    <strong>Europäisches Zentrum für die Förderung der Berufsbildung</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> CEDEFOP<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EKD</div>
+    <strong>Evangelische Kirche in Deutschland</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> EKD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EVKOMM</div>
+    <strong>Evangelische Kommentare: Monatsschrift zum Zeitgeschehen in Kirche und Gesellschaft</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> EVKOMM<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ESG</div>
+    <strong>Evangelische Studentengemeinde</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Exp</div>
+    <strong>Express</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="F">F</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FDP-FraktionBT</div>
+    <strong>FDP-Bundestagsfraktion</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FedAA</div>
+    <strong>Federal Aviation Administration</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> FAA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FBI</div>
+    <strong>Federal Bureau of Investigation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FBI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Fed</div>
+    <strong>Federal Reserve System</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Fed<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FIAT</div>
+    <strong>Fiat Group (Turin)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> FIAT<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Filmfabrik</div>
+    <strong>Filmfabrik</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FFA</div>
+    <strong>Filmförderungsanstalt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FFA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FT</div>
+    <strong>Financial Times</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> FT<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FIBAG</div>
+    <strong>Finanzbau-Aktiengesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> FIBAG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FFI</div>
+    <strong>Fireman's Fund Insurance Company</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FAO</div>
+    <strong>Food and Agriculture Organization of the United Nations</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FAO<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FA</div>
+    <strong>Foreign Affairs</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FOA</div>
+    <strong>Foreign Operations Administration</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FOA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FRUS</div>
+    <strong>Foreign Relations of the United States</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> FRUS<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FORBIT</div>
+    <strong>Forschungs- und Beratungsstelle Informationstechnologie</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> FORBIT<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DSoz</div>
+    <strong>Forum Demokratischer Sozialismus – Jahrbuch für Theorie und Praxis des demokratischen Sozialismus (Zeitschrift)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Forum DS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DeuParteiFrak</div>
+    <strong>Fraktion der Deutschen Partei im Bundestag</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Framatome</div>
+    <strong>Franco-Américaine de Constructions Atomiques</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Framatome<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FAZ</div>
+    <strong>Frankfurter Allgemeine Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> FAZ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FNP</div>
+    <strong>Frankfurter Neue Presse</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> FNP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FR</div>
+    <strong>Frankfurter Rundschau</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> FR<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FIU</div>
+    <strong>Free International University</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> FIU<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/fdk</div>
+    <strong>Freie Demokratische Korrespondenz</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> fdk<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FDP</div>
+    <strong>Freie Demokratische Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FDP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FDJ</div>
+    <strong>Freie Deutsche Jugend</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FDJ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FDV</div>
+    <strong>Freie Deutsche Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FDV<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FreiePresse</div>
+    <strong>Freie Presse. Tageszeitung für Bielefeld Stadt und Land</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> FreiePresse<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FU</div>
+    <strong>Freie Universität Berlin</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> FU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FVP</div>
+    <strong>Freie Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FDGB</div>
+    <strong>Freier Deutscher Gewerkschaftsbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FDGB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FAP</div>
+    <strong>Freiheitliche Deutsche Arbeiterpartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FAP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FPOe</div>
+    <strong>Freiheitliche Partei Österreichs</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FPÖ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Bayern</div>
+    <strong>Freistaat Bayern</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Bayern<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FSK</div>
+    <strong>Freiwillige Selbstkontrolle der Filmwirtschaft</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> FSK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FriedKruppAG</div>
+    <strong>Friedrich Krupp AG</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FES</div>
+    <strong>Friedrich-Ebert-Stiftung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FES<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FLQ</div>
+    <strong>Front de libération du Québec</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FLQ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FLN</div>
+    <strong>Front de Libération Nationale</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FLN<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Frontal</div>
+    <strong>Frontal. Zeitschrift für demokratische Studenten</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Frontal<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/FAR</div>
+    <strong>Fuerzas Armadas Revolucionarias</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> FAR<br></div><h2 id="G">G</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Gestapo</div>
+    <strong>Geheime Staatspolizei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Gestapo<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GBAG</div>
+    <strong>Gelsenkirchener Bergwerks-Aktien-Gesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> GBAG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GUS</div>
+    <strong>Gemeinschaft Unabhängiger Staaten</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GLS</div>
+    <strong>Gemeinschaftsbank für Leihen und Schenken</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> GLS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GATT</div>
+    <strong>General Agreement on Tariffs and Trade</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GATT<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GE</div>
+    <strong>General Electric Company</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> GE<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GMC</div>
+    <strong>General Motors Company</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> GMC<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GA</div>
+    <strong>General-Anzeiger</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GBA</div>
+    <strong>Generalbundesanwalt beim Bundesgerichtshof</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> GBA<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UnivGoett</div>
+    <strong>Georg-August-Universität Göttingen</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GSO</div>
+    <strong>German Service Organisation</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GDP</div>
+    <strong>Gesamtdeutsche Partei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GDP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GVP</div>
+    <strong>Gesamtdeutsche Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GVP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GBBHE</div>
+    <strong>Gesamtdeutscher Block/Bund der Heimatvertriebenen und Entrechteten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GB/BHE<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DSF</div>
+    <strong>Gesellschaft für Deutsch-Sowjetische Freundschaft</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> DSF<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GfK</div>
+    <strong>Gesellschaft für Kernforschung Karlsruhe</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> GfK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GMD</div>
+    <strong>Gesellschaft für Mathematik und Datenverarbeitung</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> GMD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GEMA</div>
+    <strong>Gesellschaft für musikalische Aufführungs- und mechanische Vervielfältigungsrechte</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> GEMA<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Prakla</div>
+    <strong>Gesellschaft für praktische Lagerstättenforschung GmbH (Prakla, bis 1963)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Prakla<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WiGBl</div>
+    <strong>Gesetzblatt der Verwaltung des Vereinigten Wirtschaftsgebietes</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WiGBl.<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GdED</div>
+    <strong>Gewerkschaft der Eisenbahner Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GdED<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GdPol</div>
+    <strong>Gewerkschaft der Polizei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GdP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GEW</div>
+    <strong>Gewerkschaft Erziehung und Wissenschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GEW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HBV</div>
+    <strong>Gewerkschaft Handel, Banken und Versicherungen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> HBV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NGG</div>
+    <strong>Gewerkschaft Nahrung-Genuss-Gaststätten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NGG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OeTV</div>
+    <strong>Gewerkschaft Öffentliche Dienste, Transport und Verkehr</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ÖTV<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GoetheInstitut</div>
+    <strong>Goethe-Institut</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GSG-9</div>
+    <strong>Grenzschutzgruppe 9</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> GSG 9<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GG</div>
+    <strong>Grundgesetz für die Bundesrepublik Deutschland</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GG<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Gr47</div>
+    <strong>Gruppe 47</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GAL</div>
+    <strong>Grün-Alternative Liste</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GAL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GLU</div>
+    <strong>Grüne Liste Umweltschutz</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GLU<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Gruenenthal</div>
+    <strong>Grünenthal GmbH</strong><br>
+    <em>Typ:</em> com<br>
+</div><h2 id="H">H</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HamAbend</div>
+    <strong>Hamburger Abendblatt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MopoHH</div>
+    <strong>Hamburger Morgenpost</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Mopo<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HamBuerg</div>
+    <strong>Hamburgische Bürgerschaft</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HaBl</div>
+    <strong>Handelsblatt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HannovAllgZ</div>
+    <strong>Hannoverische Allgemeine Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HSS</div>
+    <strong>Hanns-Seidel-Stiftung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> HSS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HansardSoc</div>
+    <strong>Hansard Society for Parliamentary Government</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Hansard Society<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HAN</div>
+    <strong>Harburger Anzeigen und Nachrichten</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> HAN<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Hartmann</div>
+    <strong>Hartmannbund e. V.</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HausundGrund</div>
+    <strong>Haus und Grund - Zentralverband der Deutschen Haus-, Wohnungs- und Grundeigentümer e. V.</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HHeadS</div>
+    <strong>Hearst Headline Service</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> HHS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HSA</div>
+    <strong>Helmut-Schmidt-Archiv</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> HSA<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Herstatt</div>
+    <strong>Herstatt Bank (I. D. Herstatt KGaA)</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Helaba</div>
+    <strong>Hessische Landesbank (1953-1992)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Helaba<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HSFK</div>
+    <strong>Hessische Stiftung Friedens- und Konfliktforschung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> HSFK<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HR</div>
+    <strong>Hessischer Rundfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> HR<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HIAG</div>
+    <strong>Hilfsgemeinschaft auf Gegenseitigkeit der Angehörigen der ehemaligen Waffen-SS</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> HIAG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HS</div>
+    <strong>Hispano-Suiza</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> HS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HJ</div>
+    <strong>Hitlerjugend</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> HJ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Hochtief</div>
+    <strong>Hochtief AG</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HAW</div>
+    <strong>Homosexuelle Aktion Westberlin</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> HAW<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HDW</div>
+    <strong>Howaldtswerke – Deutsche Werft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> HDW<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HSU</div>
+    <strong>Humanistische Studentenunion</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> HSU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HU</div>
+    <strong>Humanistische Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> HU<br></div><h2 id="I">I</h2>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IFEU</div>
+    <strong>IFEU</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> Institut für Energie- und Umweltforschung<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ifo-institut</div>
+    <strong>ifo Institut für Wirtschaftsforschung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ifo-Institut<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IGBSE</div>
+    <strong>IG Bau-Steine-Erdene</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IG BSE<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IGBE</div>
+    <strong>IG Bergbau und Energie (1946-1997)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IG BE<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IGCHemie</div>
+    <strong>IG Chemie-Papier-Keramik (1946-1997)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IG CPK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IGFarben</div>
+    <strong>IG Farben (Interessengemeinschaft Farbenindustrie AG)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> I.G. Farben<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IGDruck</div>
+    <strong>Industriegewerkschaft Druck und Papier</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IG Druck und Papier<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IGM</div>
+    <strong>Industriegewerkschaft Metall</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IGM<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IK</div>
+    <strong>Industriekurier</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IVG</div>
+    <strong>Industrieverwaltungsgesellschaft mbH</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IVG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Ifo</div>
+    <strong>Informations- und Forschungsstelle für Wirtschaftsbeobachtung</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Ifo<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ID</div>
+    <strong>Informationsdienst zur Verbreitung unterbliebener Nachrichten</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ID<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IBEK</div>
+    <strong>Ingenieur- und Beratungsgesellschaft für Organisation und Technik</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> IBEK<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IFM</div>
+    <strong>Initiative Frieden und Menschenrechte</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> IFM<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/infas</div>
+    <strong>Institut für angewandte Sozialwissenschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> infas<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IfD</div>
+    <strong>Institut für Demoskopie Allensbach</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IfD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IfZ</div>
+    <strong>Institut für Zeitgeschichte</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> IfZ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Interflug</div>
+    <strong>Interflug Gesellschaft für internationalen Flugverkehr mit beschränkter Haftung</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Interflug GmbH<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IKF</div>
+    <strong>Interkirchlicher Friedensrat</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> IKF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/intern</div>
+    <strong>Intern: Informationen des SPD-Parteivorstands für aktive Mitglieder</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Intern<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IAEO</div>
+    <strong>International Atomic Energy Agency</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IAEO<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IBM</div>
+    <strong>International Business Machines Corporation</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> IBM<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IDA</div>
+    <strong>International Development Association</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IDA<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IOC</div>
+    <strong>International Olympic Committee</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> IOC<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IPPNW</div>
+    <strong>International Physicians for the Prevention of Nuclear War</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> IPPNW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IAO</div>
+    <strong>Internationale Arbeitsorganisation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IAO<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/INTERATOM</div>
+    <strong>Internationale Atomreaktorbau-GmbH</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> INTERATOM<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ISA</div>
+    <strong>Internationale Meeresbodenbehörde</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ISA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ISK</div>
+    <strong>Internationale Sozialistischer Kampfbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ISK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ITF</div>
+    <strong>Internationale Transportarbeiter-Föderation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ITF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IBFG</div>
+    <strong>Internationaler Bund Freier Gewerkschaften</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IBFG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IGH</div>
+    <strong>Internationaler Gerichtshof</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IGH<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IWF</div>
+    <strong>Internationaler Währungsfond</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IWF<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IISG</div>
+    <strong>Internationales Institut für Sozialgeschichte</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> IISG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IPA</div>
+    <strong>Interparlamentarische Arbeitsgemeinschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IPA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IPU</div>
+    <strong>Interparlamentarische Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IPU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IRA</div>
+    <strong>Irish Republican Army</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> IRA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Izv</div>
+    <strong>Izvestija</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="J">J</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/JdB</div>
+    <strong>Journal do Brasil</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/journalist</div>
+    <strong>journalist</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DT64</div>
+    <strong>Jugendradio DT64</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/JEF</div>
+    <strong>Junge Europäische Föderalisten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> JEF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/JU</div>
+    <strong>Junge Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> JU<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/jW</div>
+    <strong>Junge Welt</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> jW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Jusos</div>
+    <strong>Jungsozialisten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Jusos<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/JusoZeitschrift</div>
+    <strong>JUSO - Zeitschrift der Jungsozialisten in der SPD</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> JUSO<br></div><h2 id="K">K</h2>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KV</div>
+    <strong>Kartellverband katholischer deutscher Studentenvereine</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> KV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KVP</div>
+    <strong>Katholieke Volkspartij</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KVP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KNA</div>
+    <strong>Katholische Nachrichtenagentur</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> KNA<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KKWStendal</div>
+    <strong>KKW Stendal GmbH</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Kloeckner</div>
+    <strong>Klöckner &amp; Co</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Sternradio</div>
+    <strong>Kombinat Sternradio</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KOFAZ</div>
+    <strong>Komitee für Frieden, Abrüstung und Zusammenarbeit</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> KOFAZ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KGB</div>
+    <strong>Komitet Gosudarstvennoj Bezopasnosti</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KGB<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KGParl</div>
+    <strong>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V.</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> KGParl<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KPV</div>
+    <strong>Kommunalpolitische Vereinigung der CDU und CSU Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KPV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KPdSU</div>
+    <strong>Kommunistische Partei der Sowjetunion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KPdSU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KPD</div>
+    <strong>Kommunistische Partei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KPD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KPDML</div>
+    <strong>Kommunistische Partei Deutschlands/Marxisten Leninisten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KPD/ML<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KB</div>
+    <strong>Kommunistischer Bund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KBWD</div>
+    <strong>Kommunistischer Bund Westdeutschland</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KBW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Komsomol</div>
+    <strong>Komsomol</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KPTsch</div>
+    <strong>Komunistická strana Československa</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KPČ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KSZE</div>
+    <strong>Konferenz über Sicherheit und Zusammenarbeit in Europa</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KSZE<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KLM</div>
+    <strong>Koninklijke Luchtvaart Maatschappij</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> KLM<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KP</div>
+    <strong>Koninklijke Philips N.V.</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/konkret</div>
+    <strong>konkret (Zeitschrift)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KAS</div>
+    <strong>Konrad-Adenauer-Stiftung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> KAS<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KWU</div>
+    <strong>Kraftwerk Union</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> KWU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KfW</div>
+    <strong>Kreditanstalt für Wiederaufbau (früher auch: »Bundesanstalt für Wiederaufbau« genannt)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KfW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KUD</div>
+    <strong>Kuratorium Unteilbares Deutschland</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KUD<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Kurs</div>
+    <strong>Kursbuch</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KStA</div>
+    <strong>Kölner Stadtanzeiger</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> KStA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KR</div>
+    <strong>Kölnische Rundschau</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="L">L</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LaStampa</div>
+    <strong>La Stampa</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> La Stampa<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Labour</div>
+    <strong>Labour Party (Großbritannien)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> LA Times<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/HelabaThue</div>
+    <strong>Landesbank Hessen-Thüringen (seit 1992))</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Helaba<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LVA</div>
+    <strong>Landesversicherungsanstalt</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> LVA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LeFig</div>
+    <strong>Le Figaro</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LM</div>
+    <strong>Le Monde</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LDPD</div>
+    <strong>Liberal-Demokratische Partei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> LDPD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ELD</div>
+    <strong>Liberale und Demokratische Fraktion des Europäischen Parlaments</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ELD<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Life</div>
+    <strong>Life</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Likud</div>
+    <strong>Likud - Nationalliberale Bewegung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Likud<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LockheedCorp</div>
+    <strong>Lockheed Corporation</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LAT</div>
+    <strong>Los Angeles Times</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> LAT, LA Times<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/LESt</div>
+    <strong>Ludwig-Erhard-Stiftung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> LESt<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OR</div>
+    <strong>L’Osservatore Romano</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Unita</div>
+    <strong>L’Unità</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="M">M</h2>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Magirus</div>
+    <strong>Magirus-Deutz AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Magirus<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MaM</div>
+    <strong>Mannheimer Morgen</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MarburgerPresse</div>
+    <strong>Marburger Presse</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MSB</div>
+    <strong>Marxistischer Studentenbund</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> MSB<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MAKiel</div>
+    <strong>Maschinenbau Kiel</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> MaK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MIT</div>
+    <strong>Massachusetts Institute of Technology</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> MIT<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/McK</div>
+    <strong>McKinsey and Company</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> McK<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Medico</div>
+    <strong>Medico International e.V.</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Mercorsur</div>
+    <strong>Mercado Común del Sur</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Mercorsur<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MBB</div>
+    <strong>Messerschmitt-Bölkow-Blohm GmbH (MBB)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> MBB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Mapai</div>
+    <strong>Mifleget Poalei Eretz Jisrael</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Mapai<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MAD</div>
+    <strong>Militärischer Abschirmdienst</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> MAD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MfS</div>
+    <strong>Ministerium für Staatssicherheit</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> MfS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MITI</div>
+    <strong>Ministry of International Trade and Industry</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> MITI<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MitBay</div>
+    <strong>Mittelbayerische Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Dnes</div>
+    <strong>Mladá fronta dnes</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Monitor</div>
+    <strong>Monitor (Fernsehmagazin)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MG</div>
+    <strong>Morgan Grenfell</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> MG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MTU</div>
+    <strong>Motoren- und Turbinen-Union Friedrichshafen</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> MTU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MRP</div>
+    <strong>Mouvement républicain populaire</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> MRP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MForcA</div>
+    <strong>Movimento das Forças Armadas (portug.: Bewegung der Streitkräfte)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> MFA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MBFR</div>
+    <strong>Mutual and Balanced Force Reductions</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> MBFR<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MuenchRueck</div>
+    <strong>Münchener Rückversicherungs-Gesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Münchener Rück<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/MM</div>
+    <strong>Münchner Merkur</strong><br>
+    <em>Typ:</em> com<br>
+</div><h2 id="N">N</h2>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NASA</div>
+    <strong>National Aeronautics and Space Administration</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> NASA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NBC</div>
+    <strong>National Broadcasting Company</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NBC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NPD</div>
+    <strong>Nationaldemokratische Partei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NPD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NatReichPartei</div>
+    <strong>Nationale Reichspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NRP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NVA</div>
+    <strong>Nationale Volksarmee</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NVA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NOK</div>
+    <strong>Nationales Olympisches Komitee</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NOK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NLA</div>
+    <strong>Nationalliberale Aktion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NLA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NSDAP</div>
+    <strong>Nationalsozialistische Deutsche Arbeiterpartei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NSDAP-AO</div>
+    <strong>Nationalsozialistische Deutsche Arbeiterpartei Deutschlands, Aufbau- und Auslandsorganisation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NSDAP-AO<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NaturFDeutsch</div>
+    <strong>Naturfreunde Deutschlands</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> NFJD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NaturFJD</div>
+    <strong>Naturfreundejugend Deutschlands</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> NFD<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NeueBP</div>
+    <strong>Neue Bildpost (kathl. Wochenzeitung)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Bildpost<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NDtWochen</div>
+    <strong>Neue Deutsche Wochenschau</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NDW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NF</div>
+    <strong>Neue Forum</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NF<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NH</div>
+    <strong>Neue Heimat Städtebau</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> NH<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NOZ</div>
+    <strong>Neue Osnabrücker Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NOZ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NRhZ</div>
+    <strong>Neue Rhein Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NRZ</div>
+    <strong>Neue Ruhr Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NRZ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NW</div>
+    <strong>Neue Westfälische</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NW<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NZ</div>
+    <strong>Neue Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NZ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NZZ</div>
+    <strong>Neue Zürcher Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NZZ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ND</div>
+    <strong>Neues Deutschland</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ND<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NYT</div>
+    <strong>New York Times</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NYT<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NWeek</div>
+    <strong>Newsweek</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NVSt</div>
+    <strong>Niedersächsische Volksstimme</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NAV</div>
+    <strong>Nordatlantische Versammlung (1966-1999)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NAV<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NDR</div>
+    <strong>Norddeutscher Rundfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NDR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NRW</div>
+    <strong>Nordrhein-Westfalen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NRW<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NWZ</div>
+    <strong>Nordwest-Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NWDR</div>
+    <strong>Nordwestdeutscher Rundfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NWDR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NATO</div>
+    <strong>North Atlantic Treaty Organisation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NATO<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NSKampf</div>
+    <strong>NS-Kampfruf: Kampfschrift der Nationalsozialisten Deutschen Arbeiterpartei Auslands- und Aufbauorganisation</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NRC</div>
+    <strong>Nuclear Regulatory Commission</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NRC<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NuernNachr</div>
+    <strong>Nürnberger Nachrichten</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NN<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NuernZeit</div>
+    <strong>Nürnberger Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> NZ<br></div><h2 id="O">O</h2>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OKR</div>
+    <strong>Oberkirchenrat</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> OKR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OKW</div>
+    <strong>Oberkommando der Wehrmacht</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OKW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OLG</div>
+    <strong>Oberlandesgericht</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OLG<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Opel</div>
+    <strong>Opel Automobile GmbH</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Opel<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OECD</div>
+    <strong>Organisation for Economic Cooperation and Development</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OECD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OEEC</div>
+    <strong>Organisation for European Economic Cooperation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OEEC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OAU</div>
+    <strong>Organization of African Unity (Organisation für Afrikanische Einheit</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OAU<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OAPEC</div>
+    <strong>Organization of Arab Petroleum Exporting Countries (Organisation der arabischen Erdöl exportierenden Staaten)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OAPEC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OPEC</div>
+    <strong>Organization of the Petroleum Exporting Countries (Organisation erdölexportierender Länder)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> OPEC<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OA</div>
+    <strong>Ost-Ausschuss der Deutschen Wirtschaft</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> OA<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OSI</div>
+    <strong>Otto-Suhr-Institut der Freien Universität Berlin</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> OSI<br></div><h2 id="P">P</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PLO</div>
+    <strong>Palestine Liberation Organization</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PLO<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PEU</div>
+    <strong>Paneuropa-Union</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> PEU<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PPP</div>
+    <strong>Parlamentarisch-Politischer Pressedienst</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> PPP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/NATOPV</div>
+    <strong>Parlamentarische Versammlung der NATO</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> NATOPV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ParlRat</div>
+    <strong>Parlamentarischer Rat (1948/49)</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BTParlA</div>
+    <strong>Parlamentsarchiv des Deutschen Bundestages</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> BTParlA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PS</div>
+    <strong>Parti Socialiste (Frankreich)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PSD</div>
+    <strong>Partia Socialdemokrate (Albanien)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PSD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PRChile</div>
+    <strong>Partido Radical (Chile)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PSOE</div>
+    <strong>Partido Socialista Obrero Español</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PSOE<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PvdA</div>
+    <strong>Partij van de Arbeid</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PvdA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KPI</div>
+    <strong>Partito comunista italiano</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> KPI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PKK</div>
+    <strong>Partiya Karkerên Kurdistanê</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PKK<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PNP</div>
+    <strong>Passauer Neue Presse</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PEN</div>
+    <strong>PEN-Zentrum Deutschland</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> PEN<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PHolzmann</div>
+    <strong>Philipp Holzmann AG</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PionET</div>
+    <strong>Pionierorganisation Ernst Thälmann</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PPR</div>
+    <strong>Politieke Partij Radicalen (Politische Radikale Partei, Niederlande)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PPR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PAAA</div>
+    <strong>Politisches Archiv des Auswärtigen Amts</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PAAA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PVAP</div>
+    <strong>Polnische Vereinigte Arbeiterpartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PVAP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PZPR</div>
+    <strong>Polska Zjednoczona Partia Robotnicza</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> PZPR<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PraklaSeismos</div>
+    <strong>Prakla-Seismos GmbH (seit 1963)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Prakla-Seismos<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Pra</div>
+    <strong>Prawda</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/PressemitteilungenSPD</div>
+    <strong>Pressemitteilungen und Informationen der SPD (1958-1998)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Preussag</div>
+    <strong>Preussag AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> PREUSSAG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Publik</div>
+    <strong>Publik-Forum</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="Q">Q</h2>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Qantas</div>
+    <strong>Qantas Airways</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Qantas<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Quick</div>
+    <strong>Quick</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="R">R</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RTL</div>
+    <strong>Radio Télévision Luxembourg</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> RTL<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RGW</div>
+    <strong>Rat für gegenseitige Wirtschaftshilfe</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> RGW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ECOFIN</div>
+    <strong>Rat für Wirtschaft und Finanzen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ECOFIN<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RGBlatt</div>
+    <strong>Reichsgesetzblatt</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> RGBl.<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RPMittel</div>
+    <strong>Reichspartei des deutschen Mittelstandes (auch: Wirtschaftspartei)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RSK</div>
+    <strong>Reichsschrifttumskammer</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> RSK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RSHA</div>
+    <strong>Reichssicherheitshauptamt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> RSHA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RT</div>
+    <strong>Reichstag</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> RT<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RTPraesWeim</div>
+    <strong>Reichstagspräsident (Weimarer Republik)</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RVO</div>
+    <strong>Reichsversicherungsordnung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> RVO<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RWHG</div>
+    <strong>Reichswerke Hermann Göring</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ReRi</div>
+    <strong>Renmin Ribao</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RepublicaPortugal</div>
+    <strong>República (portugiesische Tageszeitung, die der Partido Socialista nahestand)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Reu</div>
+    <strong>Reuters</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Rhein-Echo</div>
+    <strong>Rhein-Echo</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RWE</div>
+    <strong>Rheinisch-Westfälisches Elektrizitätswerk</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> RWE<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RP</div>
+    <strong>Rheinische Post</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> RP<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Rheinstahl</div>
+    <strong>Rheinische Stahlwerke AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Rheinstahl<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RM</div>
+    <strong>Rheinischer Merkur</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Rheinmetall</div>
+    <strong>Rheinmetall</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Rheinmetall<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RCDS</div>
+    <strong>Ring Christlich-Demokratischer Studenten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> RCDS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RBosch</div>
+    <strong>Robert Bosch GmbH</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Bosch<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RAF</div>
+    <strong>Rote Armee Fraktion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> RAF<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Rup</div>
+    <strong>Rudé právo</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RN</div>
+    <strong>Ruhr-Nachrichten</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RuhrkohleAG</div>
+    <strong>Ruhrkohle AG (seit 1997: RAG Aktiengesellschaft)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> RAG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/RIAS</div>
+    <strong>Rundfunk im amerikanischen Sektor</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> RIAS<br></div><h2 id="S">S</h2>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SaarbergwerkeAG</div>
+    <strong>Saarbergwerke AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Saarberg<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SaarZeit</div>
+    <strong>Saarbrücker Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> SZ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Sachsenhydraulik</div>
+    <strong>Sachsenhydraulik GmbH</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SalzgitterAG</div>
+    <strong>Salzgitter AG</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SAVAK</div>
+    <strong>SAVAK (Organisation für Informationen und Sicherheit des Landes, iran. Geheimdienst bis 1979)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SAVAK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SS</div>
+    <strong>Schutzstaffel (SS)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SS<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SchwarzBote</div>
+    <strong>Schwarzwälder Bote</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SchweinfTag</div>
+    <strong>Schweinfurter Tagblatt</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SRG</div>
+    <strong>Schweizerische Radio- und Fernsehgesellschaft</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SchwaebZeit</div>
+    <strong>Schwäbische Zeitung (Leutkirch, Allgäu)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Search</div>
+    <strong>Searchlight Magazine</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SFIO</div>
+    <strong>Section Française de l’Internationale Ouvrière</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SFIO<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SFB</div>
+    <strong>Sender Freies Berlin</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SD</div>
+    <strong>Sicherheitsdienst der SS</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SD<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Siemens</div>
+    <strong>Siemens</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SJ</div>
+    <strong>Societas Jesu</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> SJ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SOPADE</div>
+    <strong>SOPADE. Querschnitt durch Politik und Wirtschaft : sozialdemokratische Parteikorrespondenz / Hrsg.: Sopade, Sozialdemokratische Partei, Parteivorstand</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> SOPADE<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SEATO</div>
+    <strong>South East Asia Treaty Organization</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SEATO<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SWAPO</div>
+    <strong>South-West Africa People’s Organisation ( Südwestafrikanische Volksorganisation)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SWAPO<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SBZ</div>
+    <strong>Sowjetische Besatzungszone</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SBZ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SMAD</div>
+    <strong>Sowjetische Militäradministration in Deutschland</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SMAD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPDFraktionBT</div>
+    <strong>Sozialdemokratische Bundestagsfraktion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SPD-Fraktion<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SGK</div>
+    <strong>Sozialdemokratische Gemeinschaft für Kommunalpolitik</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SGK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SP</div>
+    <strong>Sozialdemokratische Partei der Schweiz</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPS</div>
+    <strong>Sozialdemokratische Partei des Saarlandes</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SPS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPD</div>
+    <strong>Sozialdemokratische Partei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SPD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SDP</div>
+    <strong>Sozialdemokratische Partei in der DDR</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SDP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPOe</div>
+    <strong>Sozialdemokratische Partei Österreichs</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SPÖ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPDPressedienst</div>
+    <strong>Sozialdemokratischer Pressedienst (1946-1995)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SozialeSicherheit</div>
+    <strong>Soziale Sicherheit. Zeitschrift für Arbeit und Soziales</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Soziale Sicherheit<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SAJ</div>
+    <strong>Sozialistische Arbeiterjugend</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SAJ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SAP</div>
+    <strong>Sozialistische Arbeiterpartei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SAP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SDAJ</div>
+    <strong>Sozialistische Deutsche Arbeiterjugend</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SDAJ<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SED</div>
+    <strong>Sozialistische Einheitspartei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SED<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SEW</div>
+    <strong>Sozialistische Einheitspartei Westberlins</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SEW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SI</div>
+    <strong>Sozialistische Internationale</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Falken</div>
+    <strong>Sozialistische Jugend Deutschlands – Die Falken</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SJD - Falken<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SRP</div>
+    <strong>Sozialistische Reichspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SRP<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SDS</div>
+    <strong>Sozialistischer Deutscher Studentenbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SDS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SHB</div>
+    <strong>Sozialistischer Hochschulbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SHB<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SoVD</div>
+    <strong>Sozialverband Deutschland e.V., vor 1999 Sozialverband Reichsbund</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SoVD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPD-LTFraktionBayern</div>
+    <strong>SPD-Fraktion im Bayrischen Landtag</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Bayern-SPD-Landtagsfraktion<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPDVorstand</div>
+    <strong>SPD-Parteivorstand</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/GSG</div>
+    <strong>Spezialeinheit der deutschen Bundespolizei zur Bekämpfung von Terrorismus</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> GSG 9<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/STEG</div>
+    <strong>Staatliche Erfassungsgesellschaft für öffentliches Gut</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> STEG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Stahlhelm</div>
+    <strong>Stahlhelm, Bund der Frontsoldaten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Stahlhelm<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Destatis</div>
+    <strong>Statistisches Bundesamt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> StBA/Destatis<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/STEAG</div>
+    <strong>Steinkohlen-Elektrizität AG (1937-2004)</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> STEAG<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Stern</div>
+    <strong>Stern</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/StKAH</div>
+    <strong>Stiftung Bundeskanzler-Adenauer-Haus</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> StKAH<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SALT</div>
+    <strong>Strategic Arms Limitation Talks</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SALT<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/EilenburgBau</div>
+    <strong>Straßen- und Tiefbau GmbH Eilenburg</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SVI</div>
+    <strong>Studentenverband Deutscher Ingenieurschulen e. V.</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> SVI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SA</div>
+    <strong>Sturmabteilung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/StN</div>
+    <strong>Stuttgarter Nachrichten</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/StZ</div>
+    <strong>Stuttgarter Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/StaeVBRD</div>
+    <strong>Ständige Vertretung der Bundesrepublik Deutschland</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> StäV (BRD)<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/StaeVDDR</div>
+    <strong>Ständige Vertretung der Deutschen Demokratischen Republik</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> StäV (DDR)<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Superillu</div>
+    <strong>Superillu</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Svenska</div>
+    <strong>Svenska Dagbladet</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SZ</div>
+    <strong>Süddeutsche Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> SZ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SDR</div>
+    <strong>Süddeutscher Rundfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> SDR<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Suedkurier</div>
+    <strong>Südkurier</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SSW</div>
+    <strong>Südschleswigscher Wählerverband</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SSW<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SuedtirolerVolkspartei</div>
+    <strong>Südtiroler Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SVP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/suedwestpresse</div>
+    <strong>Südwest Presse (Zeitung)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> SWP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SWF</div>
+    <strong>Südwestfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> SWF<br></div><h2 id="T">T</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Taz</div>
+    <strong>Taz, die Tageszeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> taz<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TUEV</div>
+    <strong>Technischer Überwachungsverein</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> TÜV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/THW</div>
+    <strong>Technisches Hilfswerk</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> THW<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Telegraf</div>
+    <strong>Telegraf (West-Berliner Tageszeitung)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TASS</div>
+    <strong>Telegrafnoe Agentstvo Sovetskogo Sojuza (sowjet. Nachrichtenagentur)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> TASS<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Tanjug</div>
+    <strong>Telegrafska Agencija Nova Jugoslavija</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Tanjug<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Terredho</div>
+    <strong>Terre des hommes</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TBG</div>
+    <strong>The Boston Globe</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/BosGlo</div>
+    <strong>The Boston Globe</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TEc</div>
+    <strong>The Economist</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Gua</div>
+    <strong>The Guardian</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/IHT</div>
+    <strong>The International Herald Tribune</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> IHT<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/JPost</div>
+    <strong>The Jerusalem Post</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> JPost<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TNRe</div>
+    <strong>The New Republic</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TNY</div>
+    <strong>The New Yorker</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ClevelandPlain</div>
+    <strong>The Plain Dealer (Cleveland)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Times</div>
+    <strong>The Times</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WSJ</div>
+    <strong>The Wall Street Journal</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> WSJ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TWaP</div>
+    <strong>The Washington Post</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ThBr</div>
+    <strong>Thomson-Brandt</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Thyssen</div>
+    <strong>Thyssen-Gruppe (Konglomerat von Einzelfirmen, dann Konzernverbund bis 1999, fusioniert zu Thyssenkrupp AG)</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Titanic</div>
+    <strong>Titanic (Zeitschrift)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TUC</div>
+    <strong>Trades Union Congress</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> TUC<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/THA</div>
+    <strong>Treuhandanstalt</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> THA<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/TV</div>
+    <strong>Trierischer Volksfreund</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> TV<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Trybuna</div>
+    <strong>Trybuna Ludu</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="U">U</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UBA</div>
+    <strong>Umweltbundesamt (BRD)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UBA<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UGO</div>
+    <strong>Unabhängige Gewerkschaftsopposition</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> UGO<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/USPD</div>
+    <strong>Unabhängige Sozialdemokratische Partei Deutschlands</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> USPD<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Unilever</div>
+    <strong>Unilever</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UdA</div>
+    <strong>Union der Ausgewiesenen und Flüchtlinge</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UdA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ULA</div>
+    <strong>Union der Leitenden Angestellten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ULA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UDSR</div>
+    <strong>Union Démocratique et Socialiste de la Résistance</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UDSR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UiD</div>
+    <strong>Union in Deutschland/Deutschland-Union-Dienst</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UiD/DUD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UDF</div>
+    <strong>Union pour la Démocratie Française</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UDF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UNR</div>
+    <strong>Union pour la Nouvelle République</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UNR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UN</div>
+    <strong>United Nations</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UN<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UNICEF</div>
+    <strong>United Nations Children’s Fund (Kinderhilfswerk der Vereinten Nationen</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UNICEF<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UNCTAD</div>
+    <strong>United Nations Conference on Trade and Development (Konferenz der Vereinten Nationen für Handel und Entwicklung/UNCTAD)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UNCTAD<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UNESCO</div>
+    <strong>United Nations Educational, Scientific and Cultural Organisation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UNESCO<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UNSC</div>
+    <strong>United Nations Security Council</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UNSC<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UPI</div>
+    <strong>United Press Internationaly Series</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> UPI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/URO</div>
+    <strong>United Restitution Organization</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> URO<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UniUlm</div>
+    <strong>Universität Ulm</strong><br>
+    <em>Typ:</em> org<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Ufa</div>
+    <strong>Universum Film AG</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Ufa<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UCD</div>
+    <strong>Unión de Centro Democrático</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> UCD<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UCT</div>
+    <strong>Unión general de trabajadores</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> UCT<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/unserezeit</div>
+    <strong>Unsere Zeit - Zeitung der DKP (seit 1969)</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UTM</div>
+    <strong>Unternehmensgruppe Theo Müller</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> UTM<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/UCOR</div>
+    <strong>Uranium Enrichment Corporation of South Africa Ltd.</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> UCOR<br></div><h2 id="V">V</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VBH</div>
+    <strong>Vaterstädtischer Bund Hamburg</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> VBH<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/StarkstromLeipzig</div>
+    <strong>VEB Kombinat Starkstrom-Anlagenbau Leipzig-Halle</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VdAK</div>
+    <strong>Verband der Angestellten-Krankenkassen e.V.</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> VdAK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VCI</div>
+    <strong>Verband der chemischen Industrie</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> VCI<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VDEW</div>
+    <strong>Verband der Elektrizitätswirtschaft e. V.</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> VDEW<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VdK</div>
+    <strong>Verband der Kriegsbeschädigten, Kriegshinterbliebenen und Sozialrentner Deutschlands e. V.</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> VdK<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/KOMKAR</div>
+    <strong>Verband der Vereine aus Kurdistan</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> KOMKAR<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VDMA</div>
+    <strong>Verband Deutscher Maschinen und Anlagenbauer e.V</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> VDMA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VdS</div>
+    <strong>Verband deutscher Soldaten</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> VdS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VDS</div>
+    <strong>Verband Deutscher Studentenschaften</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> VDS<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VOEV</div>
+    <strong>Verband Öffentlicher Verkehrsbetriebe (VÖV)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> VÖV<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VEBA</div>
+    <strong>Vereinigte Elektrizitäts- und Bergwerks-Aktiengesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> VEBA<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VEW</div>
+    <strong>Vereinigte Elektrizitätswerke Westfalen</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> VEW<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VELKD</div>
+    <strong>Vereinigte Evangelisch-Lutherische Kirche Deutschlands</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> VELKD<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VFW</div>
+    <strong>Vereinigte Flugtechnische Werke</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> VFW<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VIAG</div>
+    <strong>Vereinigte Industrie-Unternehmungen Aktiengesellschaft</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> VIAG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VereinigWirtschaftsgeb</div>
+    <strong>Vereinigtes Wirtschaftsgebiet</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VVN</div>
+    <strong>Vereinigung der Verfolgten des Naziregimes</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> VVN<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VN</div>
+    <strong>Vereinte Nationen (Zeitschrift)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> VN<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Wagenbach</div>
+    <strong>Verlag Klaus Wagenbach</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VVDA</div>
+    <strong>Verleger-Verband Deutscher Anzeigenblätter</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> VVDA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Vermittlungssausschuss</div>
+    <strong>Vermittlungsausschuss (Ausschuss nach Art. 77 Abs. 2 GG</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VBL</div>
+    <strong>Versorgungsanstalt des Bundes und der Länder</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> VBL<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VfZ</div>
+    <strong>Vierteljahrshefte für Zeitgeschichte</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> VfZ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VolkundWissen</div>
+    <strong>Volk und Wissen - Volkseigener Verlag (DDR, 1945-1980)</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/DDRVolkskammer</div>
+    <strong>Volkskammer der Deutschen Demokratischen Republik</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VVD</div>
+    <strong>Volkspartij voor Vrijheid en Democratie (Niederlande)</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> VVD<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VW</div>
+    <strong>Volkswagen AG</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> VW AG<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/CDUFraktionsvorstandBT</div>
+    <strong>Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> CDU/CSU-Fraktionsvorstand<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/SPDFraktionvorstandBT</div>
+    <strong>Vorstand der Sozialdemokratischen Bundestagsfraktion</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> SPD-Fraktionvorstand<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Vorw</div>
+    <strong>Vorwärts</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/VdH</div>
+    <strong>VVerband der Heimkehrer, Kriegsgefangenen und Vermisstenangehörigen Deutschlands e. V.</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> VdH<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Voelk</div>
+    <strong>Völkischer Beobachter</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="W">W</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WaffenSS</div>
+    <strong>Waffen-SS</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WV</div>
+    <strong>Warschauer Pakt, Warschauer Vertragsorganisaton</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WV<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Wehrkunde</div>
+    <strong>Wehrkunde: Zeitschrift für alle Wehrfragen</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> Wehrkunde<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WeimarNV</div>
+    <strong>Weimarer Nationalversammlung</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WamS</div>
+    <strong>Welt am Sonntag</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> WamS<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WdA</div>
+    <strong>Welt der Arbeit (Wochenzeitung des DGB)</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WiF</div>
+    <strong>Welt im Film</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WesKur</div>
+    <strong>Weser Kurier</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WAZ</div>
+    <strong>Westdeutsche Allgemeine Zeitung</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> WAZ<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WDR</div>
+    <strong>Westdeutscher Rundfunk</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> WDR<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WEU</div>
+    <strong>Westeuropäische Union</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WEU<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WN</div>
+    <strong>Westfälische Nachrichten</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WfR</div>
+    <strong>Westfälische Rundschau</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WiKu</div>
+    <strong>Wiesbadener Kurier</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WBA</div>
+    <strong>Willy-Brandt-Archiv</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> WBA<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WAV</div>
+    <strong>Wirtschaftliche Aufbau-Vereinigung</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WAV<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WSI</div>
+    <strong>Wirtschafts- und Sozialwissenschaftliches Institut</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> WSI<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WiRatVerWirt</div>
+    <strong>Wirtschaftsrat des Vereinigten Wirtschaftsgebietes</strong><br>
+    <em>Typ:</em> pol<br>
+</div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WKBL</div>
+    <strong>Wirtschaftsvereinigung Eisen- und Stahlindustrie</strong><br>
+    <em>Typ:</em> com<br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WiWo</div>
+    <strong>Wirtschaftswoche</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WHO</div>
+    <strong>World Health Organisation</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WHO<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/WPC</div>
+    <strong>World Peace Council</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> WPC<br></div><h2 id="X">X</h2>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Xerox</div>
+    <strong>Xerox Corporation</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Xerox<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Xin</div>
+    <strong>Xinhua</strong><br>
+    <em>Typ:</em> news<br>
+</div><h2 id="Y">Y</h2>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/Yokohama</div>
+    <strong>Yokohama Rubber</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> Yokohama<br></div><h2 id="Z">Z</h2>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZParl</div>
+    <strong>Zeitschrift für Parlamentsfragen</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ZParl<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZaS</div>
+    <strong>Zeitung am Sonntag: sozialdemokratische Sonntagszeitung (Augabe zu Landtagswahlen)</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ZaS<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZdK</div>
+    <strong>Zentralkomitee der deutschen Katholiken</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ZdK<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZK</div>
+    <strong>Zentralkommitee der SED</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ZK<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZdJ</div>
+    <strong>Zentralrat der Juden in Deutschland</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ZdJ<br></div>
+<div class="concept" data-type="com">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZDH</div>
+    <strong>Zentralverband des Deutschen Handwerks</strong><br>
+    <em>Typ:</em> com<br>
+<em>AltLabel:</em> ZDH<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZANU</div>
+    <strong>Zimbabwe African National Union - Patriotic Front</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ZANU<br></div>
+<div class="concept" data-type="org">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZAPU</div>
+    <strong>Zimbabwe African People´s Union</strong><br>
+    <em>Typ:</em> org<br>
+<em>AltLabel:</em> ZAPU<br></div>
+<div class="concept" data-type="">
+    <div class="uri">https://voc.fraktionsprotokolle.de/schema/entityTypeNote</div>
+    <strong>Zulässige entityType-Codes (Dokumentation)</strong><br>
+    <em>Typ:</em> <br>
+</div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ZDF</div>
+    <strong>Zweites Deutsches Fernsehen</strong><br>
+    <em>Typ:</em> news<br>
+<em>AltLabel:</em> ZDF<br></div><h2 id="Ä">Ä</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/AeRat</div>
+    <strong>Ältestenrat des Deutschen Bundestages</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> Ältestenrat<br></div><h2 id="Ö">Ö</h2>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OEMV</div>
+    <strong>Österreichische Mineralölverwaltung Aktiengesellschaft</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ÖMV<br></div>
+<div class="concept" data-type="pol">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/OEVP</div>
+    <strong>Österreichische Volkspartei</strong><br>
+    <em>Typ:</em> pol<br>
+<em>AltLabel:</em> ÖVP<br></div>
+<div class="concept" data-type="news">
+    <div class="uri">https://voc.fraktionsprotokolle.de/id/ORF</div>
+    <strong>Österreichischer Rundfunk</strong><br>
+    <em>Typ:</em> news<br>
+</div>
+</body>
+</html>
