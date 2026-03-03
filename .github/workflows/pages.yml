@@ -3,10 +3,13 @@ name: Build and Deploy FPV
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/fpv.ttl'
+      - 'scripts/**'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -27,8 +30,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install rdflib
+        run: pip install rdflib
 
       - name: Prepare Directories
         run: |
@@ -44,6 +46,18 @@ jobs:
       - name: Generate HTML
         run: |
           python scripts/build_html.py
+
+      - name: Commit generated files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/ docs/
+          if git diff --quiet --staged; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated build: update XML, JSON and HTML"
+            git push
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
