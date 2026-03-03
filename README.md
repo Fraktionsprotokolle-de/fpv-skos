@@ -1,5 +1,5 @@
 # fpv-skos
-Dieses Repository dient der Entwicklung eines kontrollierten Schlagwortvokabulars (Fraktionsprotokolle Vocabulary, FPV) für die wissenschaftliche Edition »Fraktionen im Deutschen Bundestag 1949-2005«. Es soll in Zukunft als zentrale Referenzinstanz für die semantische Erschließung der Protokolle und die Optimierung der webbasierten Suche dienen.
+Dieses Repository dient der Entwicklung eines kontrollierten (Schlagwort-)Vokabulars (Fraktionsprotokolle Vocabulary, FPV) für die wissenschaftliche Edition »Fraktionen im Deutschen Bundestag 1949-2005«. Es soll in Zukunft als zentrale Referenzinstanz für die semantische Erschließung der Protokolle und die Optimierung der webbasierten Suche dienen.
 
 ## Zweck des Vokabulars
 
@@ -16,7 +16,7 @@ Die Ziele des Repositories umfassen:
 Das Vokabular wird nach dem **SKOS-Standard (Simple Knowledge Organization System)** verwaltet.
 
 - **Source of Truth:** `src/fpv.ttl` (Turtle-Format). **Alle Änderungen am Vokabular erfolgen ausschließlich in dieser Datei**.
-- **TEI-Export:** `dist/xml/taxonomy-fpv.xml`. Eine automatisch generierte TEI-Taxonomie zur Einbindung als Authority File in Oxygen XML.
+- **TEI-Export:** `dist/xml/tei-fpv.xml`. Eine automatisch generierte TEI-Taxonomie zur Einbindung als Authority File in Oxygen XML.
 - **Typesense-Export:** `dist/json/synonyms-fpv.jsonl`. Eine flache Liste von Synonymgruppen für die Indizierung der digitalen Edition.
 
 ## Technischer Workflow (in Entwicklung)
