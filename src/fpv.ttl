@@ -130,7 +130,7 @@ ex:ABB a skos:Concept ;
 ex:ABN a skos:Concept ;
   skos:prefLabel "Arbeitsgemeinschaft beruflicher und ehrenamtlicher Naturschutz"@de ;
   skos:altLabel "ABN"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2075661-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_Beruflicher_Naturschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -192,7 +192,7 @@ ex:AD a skos:Concept ;
 ex:ADAC a skos:Concept ;
   skos:prefLabel "Allgemeiner Deutscher Automobilclub"@de ;
   skos:altLabel "ADAC"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1002947-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/ADAC> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -208,7 +208,7 @@ ex:ADF a skos:Concept ;
 ex:ADFC a skos:Concept ;
   skos:prefLabel "Allgemeine Deutsche Fahrrad-Club e. V."@de ;
   skos:altLabel "ADFC"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2062596-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/ADFC> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -216,7 +216,7 @@ ex:ADFC a skos:Concept ;
 ex:AVP a skos:Concept ;
   skos:prefLabel "Aktionsgemeinschaft Vierte Partei"@de ;
   skos:altLabel "AVP"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Aktionsgemeinschaft_Vierte_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -255,7 +255,7 @@ ex:ADGB a skos:Concept ;
 ex:ADK a skos:Concept ;
   skos:prefLabel "Arbeitsgemeinschaft Demokratischer Kreise"@de ;
   skos:altLabel "ADK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/18838-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_Demokratischer_Kreise> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -294,7 +294,7 @@ ex:AdsD a skos:Concept ;
 ex:AWO a skos:Concept ;
   skos:prefLabel "Arbeiterwohlfahrt"@de ;
   skos:altLabel "AWO"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2004155-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeiterwohlfahrt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -350,7 +350,7 @@ ex:AHK a skos:Concept ;
 ex:AI a skos:Concept ;
   skos:prefLabel "Amnesty International"@de ;
   skos:altLabel "AI"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2003911-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Amnesty_International> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -429,7 +429,7 @@ ex:ASD a skos:Concept ;
 ex:ASF a skos:Concept ;
   skos:prefLabel "Aktion Sühnezeichen Friedensdienste"@de ;
   skos:altLabel "ASF"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2044021-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Aktion_S%C3%BChnezeichen_Friedensdienste> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -437,7 +437,7 @@ ex:ASF a skos:Concept ;
 ex:ASJur a skos:Concept ;
   skos:prefLabel "Arbeitsgemeinschaft sozialdemokratischer Juristinnen und Juristen"@de ;
   skos:altLabel "ASJ"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2109194-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_sozialdemokratischer_Juristinnen_und_Juristen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -482,7 +482,7 @@ ex:AZ a skos:Concept ;
 ex:AvD a skos:Concept ;
   skos:prefLabel "Automobilclub von Deutschland"@de ;
   skos:altLabel "AvD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/4552123-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Automobilclub_von_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -608,7 +608,7 @@ ex:BMW a skos:Concept ;
 ex:BVFrauen a skos:Concept ;
   skos:prefLabel "Berufsverband der Frauenärzte"@de ;
   skos:altLabel "BVF"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2004298-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berufsverband_der_Frauen%C3%A4rzte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -646,7 +646,7 @@ ex:BStU a skos:Concept ;
 ex:BBU a skos:Concept ;
   skos:prefLabel "Bundesverband Bürgerinitiativen Umweltschutz"@de ;
   skos:altLabel "BBU"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/75385-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_B%C3%BCrgerinitiativen_Umweltschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -686,7 +686,7 @@ ex:BdB a skos:Concept ;
 ex:BDJ a skos:Concept ;
   skos:prefLabel "Bund Deutscher Jugend"@de ;
   skos:altLabel "BDJ"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/279083-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_Deutscher_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -694,7 +694,7 @@ ex:BDJ a skos:Concept ;
 ex:BdSt a skos:Concept ;
   skos:prefLabel "Bund Deutscher Steuerbeamter (Deutsche Steuer-Gewerkschaft)"@de ;
   skos:altLabel "BDSt"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2038699-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Steuer-Gewerkschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -710,7 +710,7 @@ ex:BEWAG a skos:Concept ;
 ex:BFD a skos:Concept ;
   skos:prefLabel "Bund Freies Deutschland"@de ;
   skos:altLabel "BFD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2061706-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_Freies_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -718,7 +718,7 @@ ex:BFD a skos:Concept ;
 ex:BDKJ a skos:Concept ;
   skos:prefLabel "Bund der Deutschen Katholischen Jugend"@de ;
   skos:altLabel "BDKJ"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1002384-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Deutschen_Katholischen_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -734,7 +734,7 @@ ex:BdL a skos:Concept ;
 ex:BdV a skos:Concept ;
   skos:prefLabel "Bund der Vertriebenen"@de ;
   skos:altLabel "BdV"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2006262-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Vertriebenen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1276,7 +1276,7 @@ ex:BTParlA a skos:Concept ;
 ex:BUND a skos:Concept ;
   skos:prefLabel "Bund für Umwelt und Naturschutz Deutschland"@de ;
   skos:altLabel "BUND"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2051339-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_f%C3%BCr_Umwelt_und_Naturschutz_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1300,7 +1300,7 @@ ex:BuVer a skos:Concept ;
 ex:BvD a skos:Concept ;
   skos:prefLabel "Bund vertriebener Deutscher"@de ;
   skos:altLabel "BvD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/135786-4> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1323,7 +1323,7 @@ ex:BVerwG a skos:Concept ;
 ex:BVG a skos:Concept ;
   skos:prefLabel "Berliner Verkehrsbetriebe"@de ;
   skos:altLabel "BVG"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2004374-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berliner_Verkehrsbetriebe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1354,7 +1354,7 @@ ex:BoulZ a skos:Concept ;
 ex:BRRH a skos:Concept ;
   skos:prefLabel "Bund der Ruhestandsbeamten, Rentner und Hinterbliebenen (1953-2013)"@de ;
   skos:altLabel "BRH"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/5031805-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Ruhestandsbeamten,_Rentner_und_Hinterbliebenen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1638,7 +1638,7 @@ ex:CuW a skos:Concept ;
 ex:CV a skos:Concept ;
   skos:prefLabel "Cartellverband der katholischen deutschen Studentenverbindungen"@de ;
   skos:altLabel "CV"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2006807-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Cartellverband_der_katholischen_deutschen_Studentenverbindungen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1683,7 +1683,7 @@ ex:DAS a skos:Concept ;
 
 ex:DCV a skos:Concept ;
   skos:prefLabel "Deutscher Caritasverband"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/37114-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Caritasverband> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1780,7 +1780,7 @@ ex:DGG a skos:Concept ;
 ex:DBJR a skos:Concept ;
   skos:prefLabel "Deutscher Bundesjugendring"@de ;
   skos:altLabel "DBJR"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2008379-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Bundesjugendring> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1795,7 +1795,7 @@ ex:DNatS a skos:Concept ;
 ex:DBV a skos:Concept ;
   skos:prefLabel "Deutscher Bund für Vogelschutz (seit 1990 Naturschutzbund Deutschland)"@de ;
   skos:altLabel "DBV"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2008371-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Naturschutzbund_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1962,7 +1962,7 @@ ex:deVol a skos:Concept ;
 ex:DFB a skos:Concept ;
   skos:prefLabel "Deutscher Fußball Bund"@de ;
   skos:altLabel "DFB"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2008246-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Fu%C3%9Fball-Bund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2064,7 +2064,7 @@ ex:DJK a skos:Concept ;
 ex:djo a skos:Concept ;
   skos:prefLabel "djo-Deutsche Jugend in Europa"@de ;
   skos:altLabel "djo"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2041261-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Djo-Deutsche_Jugend_in_Europa> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2072,7 +2072,7 @@ ex:djo a skos:Concept ;
 ex:DeuGK a skos:Concept ;
   skos:prefLabel "Deutsche Grünes Kreuz"@de ;
   skos:altLabel "DGK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2008773-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Gr%C3%BCnes_Kreuz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2095,7 +2095,7 @@ ex:DKP a skos:Concept ;
 ex:DeuNK a skos:Concept ;
   skos:prefLabel "Deutsches Nationalkomitee für Denkmalschutz"@de ;
   skos:altLabel "DNK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2053361-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Nationalkomitee_f%C3%BCr_Denkmalschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2103,7 +2103,7 @@ ex:DeuNK a skos:Concept ;
 ex:DkP a skos:Concept ;
   skos:prefLabel "Deutschkonservative Partei"@de ;
   skos:altLabel "DkP"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/118349-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutschkonservative_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2150,7 +2150,7 @@ ex:Dnes a skos:Concept ;
 ex:DNR a skos:Concept ;
   skos:prefLabel "Deutscher Naturschutzring"@de ;
   skos:altLabel "DNR"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1008844-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Naturschutzring> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2227,7 +2227,7 @@ ex:ddp a skos:Concept ;
 
 ex:DeuPR a skos:Concept ;
   skos:prefLabel "Deutscher Presserat"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2008626-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Presserat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2242,7 +2242,7 @@ ex:dpd a skos:Concept ;
 
 ex:DeuNStift a skos:Concept ;
   skos:prefLabel "Deutsche Nationalstiftung (seit 1993)"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/5146980-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Nationalstiftung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2266,7 +2266,7 @@ ex:DR a skos:Concept ;
 ex:DRK a skos:Concept ;
   skos:prefLabel "Deutsches Rotes Kreuz"@de ;
   skos:altLabel "DRK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2116802-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Rotes_Kreuz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2298,7 +2298,7 @@ ex:DSB a skos:Concept ;
 ex:DSF a skos:Concept ;
   skos:prefLabel "Gesellschaft für Deutsch-Sowjetische Freundschaft"@de ;
   skos:altLabel "DSF"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2012053-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_Deutsch-Sowjetische_Freundschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2306,7 +2306,7 @@ ex:DSF a skos:Concept ;
 ex:DSL a skos:Concept ;
   skos:prefLabel "Deutsche Siedlungs- und Landesrentenbank"@de ;
   skos:altLabel "DSL Bank"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/5028904-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DSL_Bank> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2433,7 +2433,7 @@ ex:DesdnerB a skos:Concept ;
 ex:DPGe a skos:Concept ;
   skos:prefLabel "Deutsche Postgewerkschaft (1949-2001)"@de ;
   skos:altLabel "DPG"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/4011762-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Postgewerkschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2496,7 +2496,7 @@ ex:EGKS a skos:Concept ;
 ex:ELD a skos:Concept ;
   skos:prefLabel "Liberale und Demokratische Fraktion des Europäischen Parlaments"@de ;
   skos:altLabel "ELD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1041461038> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Liberale_und_Demokratische_Fraktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2512,7 +2512,7 @@ ex:EK a skos:Concept ;
 ex:EKD a skos:Concept ;
   skos:prefLabel "Evangelische Kirche in Deutschland"@de ;
   skos:altLabel "EKD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2009798-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Evangelische_Kirche_in_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2588,7 +2588,7 @@ ex:EUGH a skos:Concept ;
 
 ex:ESG a skos:Concept ;
   skos:prefLabel "Evangelische Studentengemeinde"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2009807-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Evangelische_Studierendengemeinde> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2596,7 +2596,7 @@ ex:ESG a skos:Concept ;
 ex:EVKOMM a skos:Concept ;
   skos:prefLabel "Evangelische Kommentare: Monatsschrift zum Zeitgeschehen in Kirche und Gesellschaft"@de ;
   skos:altLabel "EVKOMM"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/1086212630> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2704,7 +2704,7 @@ ex:EWG a skos:Concept ;
 ex:EurZBeruf a skos:Concept ;
   skos:prefLabel "Europäisches Zentrum für die Förderung der Berufsbildung"@de ;
   skos:altLabel "CEDEFOP"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2116941-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4isches_Zentrum_f%C3%BCr_die_F%C3%B6rderung_der_Berufsbildung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2836,7 +2836,7 @@ ex:Fed a skos:Concept ;
 ex:FedAA a skos:Concept ;
   skos:prefLabel "Federal Aviation Administration"@de ;
   skos:altLabel "FAA"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/19542-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Federal_Aviation_Administration> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2879,7 +2879,7 @@ ex:Filmfabrik a skos:Concept ;
 ex:FIU a skos:Concept ;
   skos:prefLabel "Free International University"@de ;
   skos:altLabel "FIU"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/16057346-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Free_International_University> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2971,7 +2971,7 @@ ex:FRUS a skos:Concept ;
 ex:FSK a skos:Concept ;
   skos:prefLabel "Freiwillige Selbstkontrolle der Filmwirtschaft"@de ;
   skos:altLabel "FSK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2000119-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Freiwillige_Selbstkontrolle_der_Filmwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3105,7 +3105,7 @@ ex:GG a skos:Concept ;
 ex:GEMA a skos:Concept ;
   skos:prefLabel "Gesellschaft für musikalische Aufführungs- und mechanische Vervielfältigungsrechte"@de ;
   skos:altLabel "GEMA"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/43194-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_musikalische_Auff%C3%BChrungs-_und_mechanische_Vervielf%C3%A4ltigungsrechte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3137,14 +3137,14 @@ ex:GdPol a skos:Concept ;
 ex:GBA a skos:Concept ;
   skos:prefLabel "Generalbundesanwalt beim Bundesgerichtshof"@de ;
   skos:altLabel "GBA"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/5058541-12> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Der_Generalbundesanwalt_beim_Bundesgerichtshof> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 ex:UnivGoett a skos:Concept ;
   skos:prefLabel "Georg-August-Universität Göttingen"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2024315-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3152,7 +3152,7 @@ ex:UnivGoett a skos:Concept ;
 ex:GfK a skos:Concept ;
   skos:prefLabel "Gesellschaft für Kernforschung Karlsruhe"@de ;
   skos:altLabel "GfK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1007525-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Karlsruher_Institut_f%C3%BCr_Technologie#Geschichte_des_Forschungszentrums_Karlsruhe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3183,7 +3183,7 @@ ex:GMD a skos:Concept ;
 
 ex:GoetheInstitut a skos:Concept ;
   skos:prefLabel "Goethe-Institut"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/10068828-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Goethe-Institut> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3257,7 +3257,7 @@ ex:Gruenenthal a skos:Concept ;
 
 ex:Gr47 a skos:Concept ;
   skos:prefLabel "Gruppe 47"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2164070-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gruppe_47> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3324,14 +3324,14 @@ ex:HAN a skos:Concept ;
 
 ex:Hartmann a skos:Concept ;
   skos:prefLabel "Hartmannbund e. V."@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2144155-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Haus_%26_Grund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 ex:HausundGrund a skos:Concept ;
   skos:prefLabel "Haus und Grund - Zentralverband der Deutschen Haus-, Wohnungs- und Grundeigentümer e. V."@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/15244-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Hartmannbund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3390,7 +3390,7 @@ ex:HR a skos:Concept ;
 ex:HIAG a skos:Concept ;
   skos:prefLabel "Hilfsgemeinschaft auf Gegenseitigkeit der Angehörigen der ehemaligen Waffen-SS"@de ;
   skos:altLabel "HIAG"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2032541-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Hilfsgemeinschaft_auf_Gegenseitigkeit_der_Angeh%C3%B6rigen_der_ehemaligen_Waffen-SS> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3421,7 +3421,7 @@ ex:Hochtief a skos:Concept ;
 ex:HAW a skos:Concept ;
   skos:prefLabel "Homosexuelle Aktion Westberlin"@de ;
   skos:altLabel "HAW"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2047607-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Homosexuelle_Aktion_Westberlin> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3437,7 +3437,7 @@ ex:HDW a skos:Concept ;
 ex:HSU a skos:Concept ;
   skos:prefLabel "Humanistische Studentenunion"@de ;
   skos:altLabel "HSU"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2043931-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Humanistische_Studentenunion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3453,7 +3453,7 @@ ex:HU a skos:Concept ;
 ex:IfZ a skos:Concept ;
   skos:prefLabel "Institut für Zeitgeschichte"@de ;
   skos:altLabel "IfZ"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2014524-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Zeitgeschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3548,7 +3548,7 @@ ex:IDA a skos:Concept ;
 ex:IFEU a skos:Concept ;
   skos:prefLabel "IFEU"@de ;
   skos:altLabel "Institut für Energie- und Umweltforschung"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2079170-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Energie-_und_Umweltforschung_Heidelberg> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3556,7 +3556,7 @@ ex:IFEU a skos:Concept ;
 ex:IFM a skos:Concept ;
   skos:prefLabel "Initiative Frieden und Menschenrechte"@de ;
   skos:altLabel "IFM"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2104913-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Initiative_Frieden_und_Menschenrechte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3620,7 +3620,7 @@ ex:IHT a skos:Concept ;
 ex:IISG a skos:Concept ;
   skos:prefLabel "Internationales Institut für Sozialgeschichte"@de ;
   skos:altLabel "IISG"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1004926-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationales_Institut_f%C3%BCr_Sozialgeschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3635,7 +3635,7 @@ ex:IK a skos:Concept ;
 ex:IKF a skos:Concept ;
   skos:prefLabel "Interkirchlicher Friedensrat"@de ;
   skos:altLabel "IKF"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2075344-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Interkirchlicher_Friedensrat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3657,7 +3657,7 @@ ex:intern a skos:Concept ;
 ex:IOC a skos:Concept ;
   skos:prefLabel "International Olympic Committee"@de ;
   skos:altLabel "IOC"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/210056-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationales_Olympisches_Komitee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3678,7 +3678,7 @@ ex:IPA a skos:Concept ;
 ex:IPPNW a skos:Concept ;
   skos:prefLabel "International Physicians for the Prevention of Nuclear War"@de ;
   skos:altLabel "IPPNW"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/5070419-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IPPNW> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3864,7 +3864,7 @@ ex:KGB a skos:Concept ;
 ex:KGParl a skos:Concept ;
   skos:prefLabel "Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V."@de ;
   skos:altLabel "KGParl"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2015995-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Kommission_f%C3%BCr_Geschichte_des_Parlamentarismus_und_der_politischen_Parteien> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3906,7 +3906,7 @@ ex:KP a skos:Concept ;
 ex:KOFAZ a skos:Concept ;
   skos:prefLabel "Komitee für Frieden, Abrüstung und Zusammenarbeit"@de ;
   skos:altLabel "KOFAZ"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2092862-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Komitee_f%C3%BCr_Frieden,_Abr%C3%BCstung_und_Zusammenarbeit> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -3914,7 +3914,7 @@ ex:KOFAZ a skos:Concept ;
 ex:KOMKAR a skos:Concept ;
   skos:prefLabel "Verband der Vereine aus Kurdistan"@de ;
   skos:altLabel "KOMKAR"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1065283733> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4027,7 +4027,7 @@ ex:KUD a skos:Concept ;
 ex:KV a skos:Concept ;
   skos:prefLabel "Kartellverband katholischer deutscher Studentenvereine"@de ;
   skos:altLabel "KV"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1015545-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Kartellverband_katholischer_deutscher_Studentenvereine> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4072,7 +4072,9 @@ ex:LaStampa a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 ex:LAT a skos:Concept ;
-  skos:altLabel "Labour Times"@de ;
+  skos:prefLabel "Los Angeles Times"@de ;
+  skos:altLabel "LAT" ;
+  skos:altLabel "LA Times" ;
   skos:notation "news"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/4168169-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Los_Angeles_Times> ;
@@ -4302,7 +4304,7 @@ ex:MRP a skos:Concept ;
 ex:MSB a skos:Concept ;
   skos:prefLabel "Marxistischer Studentenbund"@de ;
   skos:altLabel "MSB"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/10187933-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Marxistischer_Studentenbund_Spartakus> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4348,7 +4350,7 @@ ex:NGG a skos:Concept ;
 ex:NaturFJD a skos:Concept ;
   skos:prefLabel "Naturfreundejugend Deutschlands"@de ;
   skos:altLabel "NFD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/10050806-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreunde#Naturfreunde_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4371,7 +4373,7 @@ ex:NVA a skos:Concept ;
 ex:NaturFDeutsch a skos:Concept ;
   skos:prefLabel "Naturfreunde Deutschlands"@de ;
   skos:altLabel "NFJD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/30468-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreundejugend_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4471,7 +4473,7 @@ ex:NDtWochen a skos:Concept ;
 ex:NH a skos:Concept ;
   skos:prefLabel "Neue Heimat Städtebau"@de ;
   skos:altLabel "NH"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2020180-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Heimat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4681,7 +4683,7 @@ ex:OEEC a skos:Concept ;
 ex:OKR a skos:Concept ;
   skos:prefLabel "Oberkirchenrat"@de ;
   skos:altLabel "OKR"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1032454156> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Oberkirchenrat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4712,7 +4714,7 @@ ex:OR a skos:Concept ;
 ex:OA a skos:Concept ;
   skos:prefLabel "Ost-Ausschuss der Deutschen Wirtschaft"@de ;
   skos:altLabel "OA"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/1161422145> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ost-Ausschuss_der_Deutschen_Wirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4727,7 +4729,7 @@ ex:ORF a skos:Concept ;
 ex:OSI a skos:Concept ;
   skos:prefLabel "Otto-Suhr-Institut der Freien Universität Berlin"@de ;
   skos:altLabel "OSI"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/10017375-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Otto-Suhr-Institut> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5390,7 +5392,7 @@ ex:SI a skos:Concept ;
 ex:SJ a skos:Concept ;
   skos:prefLabel "Societas Jesu"@de ;
   skos:altLabel "SJ"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/80092-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Jesuiten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5612,7 +5614,7 @@ ex:Sternradio a skos:Concept ;
 ex:SVI a skos:Concept ;
   skos:prefLabel "Studentenverband Deutscher Ingenieurschulen e. V."@de ;
   skos:altLabel "SVI"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/508072-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Studentenverband_Deutscher_Ingenieurschulen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5776,7 +5778,7 @@ ex:Telegraf a skos:Concept ;
 
 ex:Terredho a skos:Concept ;
   skos:prefLabel "Terre des hommes"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/4059525-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Terre_des_hommes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5941,7 +5943,7 @@ ex:UNIC a skos:Concept ;
 
 ex:UniUlm a skos:Concept ;
   skos:prefLabel "Universität Ulm"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/30607-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Universit%C3%A4t_Ulm> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6012,7 +6014,7 @@ ex:UCD a skos:Concept ;
 ex:UCT a skos:Concept ;
   skos:prefLabel "Unión general de trabajadores"@de ;
   skos:altLabel "UCT"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/219851-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Uni%C3%B3n_General_de_Trabajadores> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6073,7 +6075,7 @@ ex:UTM a skos:Concept ;
 ex:UGO a skos:Concept ;
   skos:prefLabel "Unabhängige Gewerkschaftsopposition"@de ;
   skos:altLabel "UGO"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Gewerkschaftsopposition> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -6088,7 +6090,7 @@ ex:VBH a skos:Concept ;
 ex:VdAK a skos:Concept ;
   skos:prefLabel "Verband der Angestellten-Krankenkassen e.V."@de ;
   skos:altLabel "VdAK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/35909-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Ersatzkassen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6096,7 +6098,7 @@ ex:VdAK a skos:Concept ;
 ex:VdK a skos:Concept ;
   skos:prefLabel "Verband der Kriegsbeschädigten, Kriegshinterbliebenen und Sozialrentner Deutschlands e. V."@de ;
   skos:altLabel "VdK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/5157025-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialverband_VdK_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6104,7 +6106,7 @@ ex:VdK a skos:Concept ;
 ex:VdH a skos:Concept ;
   skos:prefLabel "VVerband der Heimkehrer, Kriegsgefangenen und Vermisstenangehörigen Deutschlands e. V."@de ;
   skos:altLabel "VdH"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/1022435-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Heimkehrer,_Kriegsgefangenen_und_Vermisstenangeh%C3%B6rigen_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6164,7 +6166,7 @@ ex:VEBA a skos:Concept ;
 ex:VELKD a skos:Concept ;
   skos:prefLabel "Vereinigte Evangelisch-Lutherische Kirche Deutschlands"@de ;
   skos:altLabel "VELKD"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2025447-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinigte_Evangelisch-Lutherische_Kirche_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6241,7 +6243,7 @@ ex:VEW a skos:Concept ;
 ex:VBL a skos:Concept ;
   skos:prefLabel "Versorgungsanstalt des Bundes und der Länder"@de ;
   skos:altLabel "VBL"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/1012841-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Versorgungsanstalt_des_Bundes_und_der_L%C3%A4nder> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6257,7 +6259,7 @@ ex:VVD a skos:Concept ;
 ex:VVN a skos:Concept ;
   skos:prefLabel "Vereinigung der Verfolgten des Naziregimes"@de ;
   skos:altLabel "VVN"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/2148028-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinigung_der_Verfolgten_des_Naziregimes_%E2%80%93_Bund_der_Antifaschistinnen_und_Antifaschisten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6493,7 +6495,7 @@ ex:WeimarNV a skos:Concept ;
 ex:WSI a skos:Concept ;
   skos:prefLabel "Wirtschafts- und Sozialwissenschaftliches Institut"@de ;
   skos:altLabel "WSI"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <https://d-nb.info/gnd/2033849-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschafts-_und_Sozialwissenschaftliches_Institut> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6583,7 +6585,7 @@ ex:ZDH a skos:Concept ;
 ex:ZdK a skos:Concept ;
   skos:prefLabel "Zentralkomitee der deutschen Katholiken"@de ;
   skos:altLabel "ZdK"@de ;
-  skos:notation "soc"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
   skos:exactMatch <http://d-nb.info/gnd/10786-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zentralkomitee_der_deutschen_Katholiken> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
