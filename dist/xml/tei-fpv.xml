@@ -384,7 +384,7 @@
 			</item>
 			<item xml:id="Aftenposten">
 				<term type="pref" xml:lang="de">Aftenposten</term>
-				<note type="definition" xml:lang="de">Wichtige schwedische Tageszeitung.</note>
+				<note type="definition" xml:lang="de">Führende norwegische Zeitung aus Oslo.</note>
 				<note type="entityType">news</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Aftenposten"/>
 			</item>

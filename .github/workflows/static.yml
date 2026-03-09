@@ -1,0 +1,83 @@
+name: Build and Deploy FPV
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'src/fpv.ttl'
+      - 'scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install rdflib
+
+      - name: Prepare directories
+        run: |
+          mkdir -p dist/xml
+          mkdir -p dist/json
+          mkdir -p docs
+
+      - name: Generate XML
+        run: python scripts/skos2xml.py
+
+      - name: Generate JSONL
+        run: python scripts/ttl2jsonl.py
+
+      - name: Generate HTML
+        run: python scripts/build_html.py
+
+      - name: Preserve Pages files
+        run: |
+          if [ -f CNAME ]; then cp CNAME docs/CNAME; fi
+          touch docs/.nojekyll
+
+      - name: Commit generated dist files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/
+          if git diff --quiet --staged; then
+            echo "No dist changes to commit."
+          else
+            git commit -m "Automated build: update XML and JSON"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
