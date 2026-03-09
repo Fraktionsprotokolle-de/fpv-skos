@@ -1,4 +1,4 @@
-name: Build and Deploy FPV
+name: Build FPV
 
 on:
   push:
@@ -10,12 +10,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
   build:
@@ -38,14 +32,14 @@ jobs:
           mkdir -p dist/json
           mkdir -p docs
 
-      - name: Generate XML + JSON
-        run: |
-          python scripts/skos2xml.py
-          python scripts/ttl2jsonl.py
+      - name: Generate XML
+        run: python scripts/skos2xml.py
+
+      - name: Generate JSONL
+        run: python scripts/ttl2jsonl.py
 
       - name: Generate HTML
-        run: |
-          python scripts/build_html.py
+        run: python scripts/build_html.py
 
       - name: Commit generated files
         run: |
@@ -58,20 +52,3 @@ jobs:
             git commit -m "Automated build: update XML, JSON and HTML"
             git push
           fi
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
