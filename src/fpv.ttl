@@ -245,10 +245,9 @@ ex:AVP a skos:Concept ;
 
 ex:ArthurAndersen a skos:Concept ;
   skos:prefLabel "Arthur Andersen"@de ;
-  skos:altLabel "/"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch </> ;
+  
   skos:closeMatch <https://de.wikipedia.org/wiki/Arthur_Andersen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -257,7 +256,7 @@ ex:ArDL a skos:Concept ;
   skos:altLabel "ADL"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch </> ;
+  
   skos:closeMatch <https://de.wikipedia.org/wiki/Arthur_D._Little> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4781,7 +4780,7 @@ ex:MITI a skos:Concept ;
   skos:altLabel "MITI"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch </> ;
+  
   skos:closeMatch <https://en.wikipedia.org/wiki/Ministry_of_International_Trade_and_Industry#HeroSection> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4833,7 +4832,7 @@ ex:MG a skos:Concept ;
   skos:altLabel "MG"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch </> ;
+  
   skos:closeMatch <https://de.wikipedia.org/wiki/Morgan_Grenfell> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -5718,7 +5717,7 @@ ex:ECOFIN a skos:Concept ;
   skos:altLabel "ECOFIN"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch </> ;
+  
   skos:closeMatch <https://de.wikipedia.org/wiki/Rat_f%C3%BCr_Wirtschaft_und_Finanzen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
