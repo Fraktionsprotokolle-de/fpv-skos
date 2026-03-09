@@ -57,7 +57,7 @@ ex:Aftenposten a skos:Concept ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Aftenposten> ;
-  skos:note "Wichtige schwedische Tageszeitung."@de .
+  skos:note "Führende norwegische Zeitung aus Oslo."@de .
 
 ex:AKP-Gruppe a skos:Concept ;
   skos:prefLabel "African, Caribbean and Pacific Group of States (Organisation Afrikanischer, Karibischer und Pazifischer Staaten)"@de ;
