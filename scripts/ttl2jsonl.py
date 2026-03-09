@@ -1,7 +1,7 @@
 import json
 import re
-from rdflib import Graph
-from rdflib.namespace import SKOS
+from rdflib import Graph, Namespace
+from rdflib.namespace import SKOS, XSD
 from rdflib.term import Literal
 
 TTL_FILE = "src/fpv.ttl"
@@ -20,10 +20,23 @@ def clean_label(label: str) -> str:
 g = Graph()
 g.parse(TTL_FILE, format="turtle")
 
+# Dynamische Ermittlung des ex-Namensraums aus der Datei
+# Falls 'ex' nicht definiert ist, wird der Standard http://example.org/ genutzt
+namespaces = {prefix: str(uri) for prefix, uri in g.namespaces()}
+EX_URI = namespaces.get("ex", "http://example.org/")
+EX = Namespace(EX_URI)
+
 count = 0
 
 with open(OUT_FILE, "w", encoding="utf-8") as out:
     for concept in g.subjects(predicate=SKOS.prefLabel):
+
+        # Explizite Prüfung des Tripels
+        # rdflib vergleicht hier die absolute URI (z.B. <http://example.org/useInSynonymList>)
+        is_active = (concept, EX.useInSynonymList, Literal(True, datatype=XSD.boolean))
+        
+        if is_active not in g:
+            continue
 
         labels = set()
 
@@ -49,7 +62,7 @@ with open(OUT_FILE, "w", encoding="utf-8") as out:
 
         item = {
             "id": uri_to_id(str(concept)),
-            "synonyms": sorted(labels)
+            "synonyms": sorted(list(labels))
         }
 
         out.write(json.dumps(item, ensure_ascii=False) + "\n")
