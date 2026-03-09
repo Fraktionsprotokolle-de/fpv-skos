@@ -252,7 +252,7 @@
 			<item xml:id="APRA">
 				<term type="pref" xml:lang="de">Alianza Popular Revolucionaria Americana</term>
 				<term type="alt" xml:lang="de">APRA</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen..</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/5503965-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Alianza_Popular_Revolucionaria_Americana"/>
