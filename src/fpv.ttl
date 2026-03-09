@@ -66,7 +66,7 @@ ex:AKP-Gruppe a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2056042-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Organisation_Afrikanischer,_Karibischer_und_Pazifischer_Staaten> ;
-  skos:note "Die Organisation der Staaten Afrikas, der Karibik und des Pazifiks (OACPS, französisch: Organisation des États d'Afrique, des Caraïbes et du Pacifique) ist ein Zusammenschluss von Ländern in Afrika, der Karibik und dem Pazifik, der 1975 durch das Georgetown-Abkommen gegründet wurde.[1] Die Organisation, die früher als Gruppe der Staaten Afrikas, der Karibik und des Pazifiks (AKP) bekannt war, verfolgt die Hauptziele der nachhaltigen Entwicklung und Armutsbekämpfung in ihren Mitgliedstaaten"@de .
+  skos:note "Organisation der Staaten Afrikas, der Karibik und des Pazifiks (OACPS, französisch: Organisation des États d'Afrique, des Caraïbes et du Pacifique). En Zusammenschluss von Ländern in Afrika, der Karibik und dem Pazifik, der 1975 durch das Georgetown-Abkommen gegründet wurde.Früher als Gruppe der Staaten Afrikas, der Karibik und des Pazifiks (AKP) bekannt."@de .
 
 ex:APRA a skos:Concept ;
   skos:prefLabel "Alianza Popular Revolucionaria Americana"@de ;
