@@ -62,7 +62,7 @@ ex:Aftenposten a skos:Concept ;
 ex:AKP-Gruppe a skos:Concept ;
   skos:prefLabel "African, Caribbean and Pacific Group of States (Organisation Afrikanischer, Karibischer und Pazifischer Staaten)"@de ;
   skos:altLabel "OACPS (dt. AKP-Gruppe)"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2056042-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Organisation_Afrikanischer,_Karibischer_und_Pazifischer_Staaten> ;
