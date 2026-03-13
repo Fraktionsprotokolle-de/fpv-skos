@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}FPV-Editor – Übersicht{% endblock %}
+{% block content %}
+
+<section class="page-intro">
+  <h2>Schlagwortvokabular</h2>
+  <p>Suche, alphabetischer Einstieg und redaktionelle Bearbeitung der Concept-Einträge.</p>
+</section>
+
+<section class="card card-pad">
+  <section class="toolbar">
+    <form method="get" action="{{ url_for('index') }}" class="search-form">
+      <input type="text" name="q" value="{{ q }}" placeholder="Suche über ID, Label, Note ...">
+      <button type="submit">Suchen</button>
+    </form>
+
+    <form method="post" action="{{ url_for('validate_all') }}">
+      <button type="submit" class="secondary">Validieren</button>
+    </form>
+  </section>
+
+  <section class="alphabet">
+    {% for letter in letters %}
+      <a class="letter {% if starts_with == letter %}active{% endif %}" href="{{ url_for('index', starts_with=letter) }}">{{ letter }}</a>
+    {% endfor %}
+    <a class="letter" href="{{ url_for('index') }}">Alle</a>
+  </section>
+</section>
+
+<section class="card entry-list">
+  <table>
+    <thead>
+      <tr>
+        <th>prefLabel</th>
+        <th>ID</th>
+        <th>Typ</th>
+        <th>Synonymliste</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in entries %}
+      <tr>
+        <td><a href="{{ url_for('entry_edit', entry_id=entry.id) }}">{{ entry.pref_label }}</a></td>
+        <td><span class="badge">{{ entry.id }}</span></td>
+        <td><span class="badge">{{ entry.notation }}</span></td>
+        <td>
+          {% if entry.use_in_synonym_list %}
+            <span class="badge badge-true">true</span>
+          {% else %}
+            <span class="badge badge-false">false</span>
+          {% endif %}
+        </td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="4">
+          <div class="empty-state">Keine Einträge gefunden.</div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<div class="footer-note">
+  Aktueller Stand: lokale Pflegeoberfläche ohne Datenbank, TTL bleibt die maßgebliche Datei.
+</div>
+
+{% endblock %}

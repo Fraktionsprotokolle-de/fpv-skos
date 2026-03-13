@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}FPV-Editor – Eintrag{% endblock %}
+{% block content %}
+
+<section class="page-intro">
+  <h2>{% if is_new %}Neuen Eintrag anlegen{% else %}Eintrag bearbeiten{% endif %}</h2>
+  <p>Redaktionelle Bearbeitung eines einzelnen Concept-Eintrags.</p>
+</section>
+
+<section class="card entry-form">
+  <form method="post">
+    <div class="grid">
+      <label>ID
+        <input type="text" name="id" value="{{ entry.id }}" required>
+      </label>
+
+      <label>prefLabel
+        <input type="text" name="pref_label" value="{{ entry.pref_label }}" required>
+      </label>
+
+      <label>Sprache prefLabel
+        <input type="text" name="pref_label_lang" value="{{ entry.pref_label_lang }}">
+      </label>
+
+      <label>notation / entityType
+        <select name="notation" required>
+          {% for opt in ['org', 'com', 'news', 'topic', 'law', 'pol'] %}
+            <option value="{{ opt }}" {% if entry.notation == opt %}selected{% endif %}>{{ opt }}</option>
+          {% endfor %}
+        </select>
+      </label>
+
+      <label>In Synonymliste
+        <select name="use_in_synonym_list">
+          <option value="false" {% if not entry.use_in_synonym_list %}selected{% endif %}>false</option>
+          <option value="true" {% if entry.use_in_synonym_list %}selected{% endif %}>true</option>
+        </select>
+      </label>
+
+      <label>exactMatch
+        <input type="url" name="exact_match" value="{{ entry.exact_match }}">
+      </label>
+
+      <label>closeMatch
+        <input type="url" name="close_match" value="{{ entry.close_match }}">
+      </label>
+
+      <label>Sprache note
+        <input type="text" name="note_lang" value="{{ entry.note_lang }}">
+      </label>
+
+      <label>note
+        <textarea name="note" rows="5" required>{{ entry.note }}</textarea>
+      </label>
+    </div>
+
+    <h3>altLabel</h3>
+    <div id="altlabels">
+      {% set alts = entry.alt_labels if entry.alt_labels else [('', 'de')] %}
+      {% for value, lang in alts %}
+      <div class="alt-row">
+        <input type="text" name="alt_label[]" value="{{ value }}" placeholder="altLabel">
+        <input type="text" name="alt_lang[]" value="{{ lang }}" placeholder="Sprache">
+        <button type="button" class="remove-alt" onclick="removeAltLabelRow(this)">Entfernen</button>
+      </div>
+      {% endfor %}
+    </div>
+
+    <button type="button" class="secondary" onclick="addAltLabelRow()">Weiteres altLabel</button>
+
+    <h3>Weitere rohe Zeilen</h3>
+    <p>Dient zum Erhalt nicht explizit modellierter Zeilen innerhalb eines Concept-Blocks.</p>
+    <textarea name="raw_extra_lines" rows="6">{{ entry.raw_extra_lines|join('\n') }}</textarea>
+
+    <div class="form-actions">
+      <button type="submit">Speichern</button>
+      <a class="button secondary" href="{{ url_for('index') }}">Zurück</a>
+    </div>
+  </form>
+
+  {% if not is_new %}
+  <form method="post" action="{{ url_for('entry_delete', entry_id=entry.id) }}" onsubmit="return confirm('Eintrag wirklich löschen?');">
+    <button type="submit" class="danger">Löschen</button>
+  </form>
+  {% endif %}
+</section>
+
+<script>
+function addAltLabelRow() {
+  const wrapper = document.getElementById('altlabels');
+  const row = document.createElement('div');
+  row.className = 'alt-row';
+  row.innerHTML = `
+    <input type="text" name="alt_label[]" placeholder="altLabel">
+    <input type="text" name="alt_lang[]" value="de" placeholder="Sprache">
+    <button type="button" class="remove-alt" onclick="removeAltLabelRow(this)">Entfernen</button>
+  `;
+  wrapper.appendChild(row);
+}
+
+function removeAltLabelRow(button) {
+  const wrapper = document.getElementById('altlabels');
+  const rows = wrapper.querySelectorAll('.alt-row');
+
+  if (rows.length <= 1) {
+    const inputs = rows[0].querySelectorAll('input');
+    inputs[0].value = '';
+    inputs[1].value = 'de';
+    return;
+  }
+
+  button.closest('.alt-row').remove();
+}
+</script>
+
+{% endblock %}
