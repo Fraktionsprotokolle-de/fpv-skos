@@ -3,13 +3,17 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>FPV – Kontrolliertes Vokabular</title>
+				<title>FPV - Kontrolliertes Vokabular der Edition Fraktionsprotokolle.de</title>
 			</titleStmt>
 			<publicationStmt>
-				<p>Generiert aus fpv.ttl</p>
+				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
+				<date when="2026-03-19">19. März 2026, 10:27 Uhr</date>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
+				</availability>
 			</publicationStmt>
 			<sourceDesc>
-				<p>Single Source of Truth: SKOS TTL</p>
+				<p>XML-Schlagwortliste automatisch erzeugt aus https://github.com/Fraktionsprotokolle-de/fpv-skos/blob/main/src/fpv.ttl</p>
 			</sourceDesc>
 		</fileDesc>
 	</teiHeader>
