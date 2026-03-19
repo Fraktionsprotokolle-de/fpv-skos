@@ -39,7 +39,9 @@ pol    = Partei / politische Gruppierung (falls benötigt)
 #  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
 # A
+
 
 ex:AA a skos:Concept ;
   skos:prefLabel "Auswärtiges Amt"@de ;
@@ -624,6 +626,8 @@ ex:AZ a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Abendzeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
+
+
 # B
 
 
@@ -792,17 +796,18 @@ ex:BBR a skos:Concept ;
   skos:prefLabel "Bundesamt für Bauwesen und Raumordnung (ab 1998)"@de ;
   skos:altLabel "BBR"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5270174-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Bauwesen_und_Raumordnung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens ggf. in note.
 
 
 ex:BBU a skos:Concept ;
   skos:prefLabel "Bundesverband Bürgerinitiativen Umweltschutz"@de ;
   skos:altLabel "BBU"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/75385-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_B%C3%BCrgerinitiativen_Umweltschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -811,9 +816,9 @@ ex:BBU a skos:Concept ;
 ex:BDA a skos:Concept ;
   skos:prefLabel "Bundesvereinigung der Deutschen Arbeitgeberverbände"@de ;
   skos:altLabel "BDA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/36706-0> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/36706-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesvereinigung_der_Deutschen_Arbeitgeberverb%C3%A4nde> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -821,19 +826,20 @@ ex:BDA a skos:Concept ;
 ex:BdB a skos:Concept ;
   skos:prefLabel "Bundesverband deutscher Banken"@de ;
   skos:altLabel "BdB"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/36704-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_deutscher_Banken> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BdD a skos:Concept ;
-  skos:prefLabel "Bund der Deutschen, Partei für Einheit, Frieden und Freiheit"@de ;
+  skos:prefLabel "Bund der Deutschen"@de ;
+  skos:altLabel "Bund der Deutschen, Partei für Einheit, Frieden und Freiheit"@de ;
   skos:altLabel "BdD"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5168969-8> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/5168969-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Deutschen,_Partei_f%C3%BCr_Einheit,_Frieden_und_Freiheit> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -841,9 +847,9 @@ ex:BdD a skos:Concept ;
 ex:BDI a skos:Concept ;
   skos:prefLabel "Bundesverband der Deutschen Industrie"@de ;
   skos:altLabel "BDI"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2006611-9> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2006611-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_der_Deutschen_Industrie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -852,8 +858,8 @@ ex:BDJ a skos:Concept ;
   skos:prefLabel "Bund Deutscher Jugend"@de ;
   skos:altLabel "BDJ"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/279083-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/279083-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_Deutscher_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -862,8 +868,8 @@ ex:BDKJ a skos:Concept ;
   skos:prefLabel "Bund der Deutschen Katholischen Jugend"@de ;
   skos:altLabel "BDKJ"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1002384-7> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1002384-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Deutschen_Katholischen_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -871,31 +877,35 @@ ex:BDKJ a skos:Concept ;
 ex:BdL a skos:Concept ;
   skos:prefLabel "Bank deutscher Länder"@de ;
   skos:altLabel "BdL"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1086213084> ;
+  skos:notation "com"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1086213084> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bank_deutscher_L%C3%A4nder> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BdSt a skos:Concept ;
-  skos:prefLabel "Bund Deutscher Steuerbeamter (Deutsche Steuer-Gewerkschaft)"@de ;
+  skos:prefLabel "Bund Deutscher Steuerbeamter"@de ;
+  skos:altLabel "Deutsche Steuer-Gewerkschaft"@de ;
   skos:altLabel "BDSt"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2038699-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Steuer-Gewerkschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Umbenennung 1975.
 
 
 ex:BdV a skos:Concept ;
   skos:prefLabel "Bund der Vertriebenen"@de ;
+  skos:altLabel "Bund der Vertriebenen – Vereinigte Landsmannschaften und Landesverbände"@de ;
   skos:altLabel "BdV"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2006262-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2006262-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Vertriebenen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe auch BvD.
 
 
 ex:BerExtra a skos:Concept ;
@@ -917,17 +927,24 @@ ex:BergmannBorsig a skos:Concept ;
 
 
 ex:BerlinerStimme a skos:Concept ;
-  skos:prefLabel "Berliner Stimme - Wochenzeitung für Politik, Wirtschaft und Kultur"@de ;
+  skos:prefLabel "Berliner Stimme"@de ;
+  skos:altLabel "Berliner Stimme. Wochenzeitung für Politik, Wirtschaft und Kultur" ;
+  skos:altLabel "Berliner Stimme. Sozialdemokratische Wochenzeitung" ;
+  skos:altLabel "Berliner Stimme. Zeitung der Berliner Sozialdemokratie" ;
+  skos:altLabel "BS" ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/014041561>
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID ggf. BS oder BerStimme. Erste drei altLabels evtl. löschen.
 
 
 ex:BerMoPo a skos:Concept ;
   skos:prefLabel "Berliner Morgenpost"@de ;
+  skos:altLabel "MoPo" ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4439183-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4439183-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berliner_Morgenpost> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -936,10 +953,11 @@ ex:BEWAG a skos:Concept ;
   skos:prefLabel "Berliner Städtische Elektrizitätswerke Aktiengesellschaft"@de ;
   skos:altLabel "BEWAG"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4098260-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4098260-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bewag_(Berlin)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND problematisch, stimmt weder mit prefLabel noch mit Wikipedia überein.
 
 
 ex:Beweg2Juni a skos:Concept ;
@@ -949,33 +967,36 @@ ex:Beweg2Juni a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4402133-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bewegung_2._Juni> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #notation überdenken.
 
 
 ex:BfA a skos:Concept ;
   skos:prefLabel "Bundesversicherungsanstalt für Angestellte"@de ;
   skos:altLabel "BfA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2117026-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2117026-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesversicherungsanstalt_f%C3%BCr_Angestellte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #notation überdenken.
 
 
 ex:BfArbeit a skos:Concept ;
   skos:prefLabel "Bundesanstalt für Arbeit (seit 1969)"@de ;
   skos:altLabel "BfA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1002893-6> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1002893-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsamt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens ggf. in note. Wikipedia-Artikel ggf. spezifischer.
 
 
 ex:BFD a skos:Concept ;
   skos:prefLabel "Bund Freies Deutschland"@de ;
   skos:altLabel "BFD"@de ;
-  skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "pol"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2061706-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_Freies_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -985,8 +1006,8 @@ ex:BfG a skos:Concept ;
   skos:prefLabel "Bank für Gemeinwirtschaft"@de ;
   skos:altLabel "BfG"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/38967-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/38967-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bank_f%C3%BCr_Gemeinwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -995,18 +1016,19 @@ ex:BFH a skos:Concept ;
   skos:prefLabel "Bundesfinanzhof"@de ;
   skos:altLabel "BFH"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/35163-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/35163-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesrechnungshof> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BfV a skos:Concept ;
   skos:prefLabel "Bundesamt für Verfassungsschutz"@de ;
+  skos:altLabel "Verfassungsschutz"@de ;
   skos:altLabel "BfV"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2120343-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2120343-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Verfassungsschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1015,8 +1037,8 @@ ex:BGH a skos:Concept ;
   skos:prefLabel "Bundesgerichtshof"@de ;
   skos:altLabel "BGH"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2118180-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2118180-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesgerichtshof> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1025,8 +1047,8 @@ ex:BGS a skos:Concept ;
   skos:prefLabel "Bundesgrenzschutz"@de ;
   skos:altLabel "BGS"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2117462-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2117462-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesgrenzschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1035,26 +1057,28 @@ ex:BHE a skos:Concept ;
   skos:prefLabel "Block der Heimatvertriebenen und Entrechteten"@de ;
   skos:altLabel "BHE"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2096567-9> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Gesamtdeutscher_Block/Bund_der_Heimatvertriebenen_und_Entrechteten> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2096567-9> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Gesamtdeutscher_Block_/_Bund_der_Heimatvertriebenen_und_Entrechteten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #prüfen, ob auch "Gesamtdeutscher Block / Bund der Heimatvertriebenen und Entrechteten" (1952-1961) gemeint, https://d-nb.info/gnd/2001963-4.
 
 
 ex:BidW a skos:Concept ;
   skos:prefLabel "Blick in die Welt"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1065793189> ;
+  skos:exactMatch <https://d-nb.info/gnd/1065793189> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Blick_in_die_Welt> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  skos:note "Wochenschau von 1945 bis 1986."@de .
 
 
 ex:Bild a skos:Concept ;
   skos:prefLabel "Bild"@de ;
+  skos:altLabel "Bild-Zeitung"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4069456-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4069456-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bild_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1063,18 +1087,17 @@ ex:BKA a skos:Concept ;
   skos:prefLabel "Bundeskriminalamt"@de ;
   skos:altLabel "BKA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2119958-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2119958-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundeskriminalamt_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BKAmt a skos:Concept ;
   skos:prefLabel "Bundeskanzleramt"@de ;
-  skos:altLabel "BKAmt"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2050132-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/2050132-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundeskanzleramt_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1090,102 +1113,112 @@ ex:BLW a skos:Concept ;
 
 ex:BMA a skos:Concept ;
   skos:prefLabel "Bundesministerium für Arbeit"@de ;
-  skos:altLabel "pol"@de ;
+  skos:altLabel "BMA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/18997-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/18997-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Arbeit_und_Soziales> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1949-1957.
 
 
 ex:BMAS a skos:Concept ;
   skos:prefLabel "Bundesministerium für Arbeit und Sozialordnung"@de ;
-  skos:altLabel "BMAS"@de ;
+  skos:altLabel "BMA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028862-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028862-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Arbeit_und_Soziales> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1957-1990, 1990-2002 (andere GND).
 
 
 ex:BMAtom a skos:Concept ;
   skos:prefLabel "Bundesministerium für Atomfragen"@de ;
-  skos:altLabel "BMAtom"@de ;
+  skos:altLabel "BMAt"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/35168-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/35168-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID ggf. ändern in BMAt.
 
 
 ex:BMB a skos:Concept ;
   skos:prefLabel "Bundesministerium für innerdeutsche Beziehungen"@de ;
   skos:altLabel "BMB"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2117646-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2117646-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_innerdeutsche_Beziehungen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1969-1990, zuvor: BMG.
 
 
 ex:BMBes a skos:Concept ;
   skos:prefLabel "Bundesministerium für wirtschaftlichen Besitz des Bundes"@de ;
-  skos:altLabel "BMBes"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1041377010> ;
+  skos:exactMatch <https://d-nb.info/gnd/1041377010> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesschatzministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1957-1961, zuvor BM für Angelegenheiten des Marshallplanes (1949-1953) und BM für wirtschaftliche Zusammenarbeit (1953-1957), danach Bundesschatzministerium (1961-1969).
 
 
 ex:BMBR a skos:Concept ;
   skos:prefLabel "Bundesministerium für Angelegenheiten des Bundesrates und der Länder"@de ;
   skos:altLabel "BMBR"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/35166-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/35166-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Angelegenheiten_des_Bundesrates> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1957-1966, zuvor BM für Angelegenheiten des Bundesrates (1955-1957).
 
 
 ex:BMBW a skos:Concept ;
   skos:prefLabel "Bundesministerium für Bildung und Wissenschaft"@de ;
   skos:altLabel "BMBW"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028870-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028870-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1969-1990.
 
 
 ex:BMEL a skos:Concept ;
   skos:prefLabel "Bundesministerium für Ernährung und Landwirtschaft"@de ;
   skos:altLabel "BMEL"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1045949620> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1045949620> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Ern%C3%A4hrung_und_Landwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens für angegebene GND: 2013-2025, offenbar falsch. Klären, wozu benötigt.
 
 
 ex:BMELF a skos:Concept ;
   skos:prefLabel "Bundesministerium für Ernährung, Landwirtschaft und Forsten"@de ;
   skos:altLabel "BMELF"@de ;
+  skos:altLabel "BML"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5030113-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028894-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Ern%C3%A4hrung_und_Landwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1949-2001, GND ab 1990: http://d-nb.info/gnd/5030113-5.
 
 
 ex:BMF a skos:Concept ;
   skos:prefLabel "Bundesministerium der Finanzen"@de ;
   skos:altLabel "BMF"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/3009228-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028782-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990: http://d-nb.info/gnd/3009228-0.
 
 
 ex:BMFa a skos:Concept ;
@@ -1193,127 +1226,144 @@ ex:BMFa a skos:Concept ;
   skos:altLabel "BMFa"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028950-9> ;
+  skos:exactMatch <https://d-nb.info/gnd/2028950-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Familie,_Senioren,_Frauen_und_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1953-1957, danach BM für Familien- und Jugendfragen (1957-1963), BM für Familie und Jugend (1963-1969).
+  #zwischenzeitlich: BM für Jugend, Familie und Gesundheit (1969-1986), BM für Jugend, Familie, Frauen und Gesundheit (1986-1991).
+  #anschließend: BM für Familie und Senioren + BM für Frauen und Jugend (1991-1994), dann BM für Familie, Senioren, Frauen und Jugend (1994-2025).
 
 
 ex:BMFT a skos:Concept ;
   skos:prefLabel "Bundesministerium für Forschung und Technologie"@de ;
   skos:altLabel "BMFT"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2116224-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028958-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1972-1994, GND ab 1990: http://d-nb.info/gnd/2116224-4.
 
 
 ex:BMG a skos:Concept ;
   skos:prefLabel "Bundesministerium für gesamtdeutsche Fragen"@de ;
   skos:altLabel "BMG"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028926-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028926-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_innerdeutsche_Beziehungen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1949-1969, danach BMB.
 
 
 ex:BMGes a skos:Concept ;
   skos:prefLabel "Bundesministerium für Gesundheitswesen"@de ;
-  skos:altLabel "BMGes"@de ;
+  skos:altLabel "BMG"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4561973-6> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4561973-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Gesundheit_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1961-1969, danach BM für Jugend, Familie und Gesundheit (1969-1986), BM für Jugend, Familie, Frauen und Gesundheit (1986-1991).
+  #anschließend: BM für Gesundheit (1991-2002, erneut ab 2005), zwischenzeitlich: BM für Gesundheit und Soziale Sicherheit (2002-2005).
 
 
 ex:BMI a skos:Concept ;
   skos:prefLabel "Bundesministerium des Innern"@de ;
   skos:altLabel "BMI"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2117465-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028854-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_des_Innern,_f%C3%BCr_Bau_und_Heimat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990: http://d-nb.info/gnd/2117465-9.
 
 
 ex:BMJ a skos:Concept ;
   skos:prefLabel "Bundesministerium der Justiz"@de ;
   skos:altLabel "BMJ"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028822-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028822-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Justiz_und_f%C3%BCr_Verbraucherschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990: https://d-nb.info/gnd/2118801-4.
 
 
 ex:BMJFG a skos:Concept ;
   skos:prefLabel "Bundesministerium für Jugend, Familie, Frauen und Gesundheit"@de ;
   skos:altLabel "BMJFG"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4020762-6> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4020762-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Familie,_Senioren,_Frauen_und_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1969-1991, siehe BMGes und BMFa. altLabel prüfen, evtl. BMJFFG.
 
 
 ex:BMM a skos:Concept ;
   skos:prefLabel "Bundesministerium für den Marshallplan"@de ;
   skos:altLabel "BMM"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1086197976> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1086197976> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesschatzministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1949-1953, siehe BMBes.
 
 
 ex:BMP a skos:Concept ;
   skos:prefLabel "Bundesministerium für das Post- und Fernmeldewesen"@de ;
   skos:altLabel "BMP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028886-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028886-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Post_und_Telekommunikation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1950-1989, danach: BM für Post und Telekommunikation (1989-1997).
 
 
 ex:BMRaum a skos:Concept ;
-  skos:prefLabel "Bundesministerium für Raumordnung, Bauwesen und Städtebau (1972-1998)"@de ;
+  skos:prefLabel "Bundesministerium für Raumordnung, Bauwesen und Städtebau"@de ;
   skos:altLabel "BMBau"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028799-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028799-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesbauministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1972-1998, altLabel prüfen.
+  #zuvor: BM für Wohnungsbau (1950-1961), BM für Wohnungswesen, Städtebau und Raumordnung (1961-1965), BM für Wohnungswesen und Städtebau (1965-1969), BM für Städtebau und Wohnungswesen (1969-1972)
+  #danach: BM für  Verkehr, Bau- und Wohnungswesen (1998-2005)
 
 
 ex:BMV a skos:Concept ;
   skos:prefLabel "Bundesministerium für Verkehr"@de ;
   skos:altLabel "BMV"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2117656-5> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Verkehr_und_digitale_Infrastruktur> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2036867-7> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Verkehr_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990: https://d-nb.info/gnd/2117656-5.
 
 
 ex:BMVg a skos:Concept ;
   skos:prefLabel "Bundesministerium der Verteidigung"@de ;
   skos:altLabel "BMVg"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2117075-7> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028830-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Verteidigung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990: https://d-nb.info/gnd/2117075-7.
 
 
 ex:BMVt a skos:Concept ;
   skos:prefLabel "Bundesministerium für Vertriebene, Flüchtlinge und Kriegsgeschädigte"@de ;
   skos:altLabel "BMVt"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/16283248-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/16283248-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Vertriebene,_Fl%C3%BCchtlinge_und_Kriegsgesch%C3%A4digte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1322,7 +1372,7 @@ ex:BMW a skos:Concept ;
   skos:prefLabel "Bayerische Motorenwerke"@de ;
   skos:altLabel "BMW"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2005475-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/BMW> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1332,78 +1382,87 @@ ex:BMWF a skos:Concept ;
   skos:prefLabel "Bundesministerium für Wirtschaft und Finanzen"@de ;
   skos:altLabel "BMWF"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/16291479-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/16291479-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1971-1972.
 
 
 ex:BMWi a skos:Concept ;
   skos:prefLabel "Bundesministerium für Wirtschaft"@de ;
   skos:altLabel "BMWi"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5029261-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2028855-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990 (bis 1998): https://d-nb.info/gnd/5029261-4.
+  #anschließend: BM für Wirtschaft und Technologie (1998-2002), BM für Wirtschaft und Arbeit (2002-2005).
+  #zwischenzeitlich: BMWF (1971-1972).
 
 
 ex:BMWo a skos:Concept ;
   skos:prefLabel "Bundesministerium für Wohnungsbau"@de ;
   skos:altLabel "BMWo"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/115060-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/115060-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesbauministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1950-1961. siehe BMBau.
 
 
 ex:BMZ a skos:Concept ;
   skos:prefLabel "Bundesministerium für wirtschaftliche Zusammenarbeit"@de ;
   skos:altLabel "BMZ"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/35174-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/35174-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_wirtschaftliche_Zusammenarbeit_und_Entwicklung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990: https://d-nb.info/gnd/5032588-7.
+  #ab 1993: BM für Wirtschaftliche Zusammenarbeit und Entwicklung.
 
 
 ex:BND a skos:Concept ;
   skos:prefLabel "Bundesnachrichtendienst"@de ;
-  skos:altLabel "pol"@de ;
+  skos:altLabel "BND"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2130784-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/2130509-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/2130784-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesnachrichtendienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BonnerRund a skos:Concept ;
-  skos:prefLabel "Bonner Rundschau (Lokalausgabe der Kölnischen Rundschau)"@de ;
+  skos:prefLabel "Bonner Rundschau"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4838357-0> ;
+  skos:exactMatch <https://d-nb.info/012171247> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/K%C3%B6lnische_Rundschau> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  skos:note "Lokalausgabe der Kölnischen Rundschau."@de .
 
 
 ex:BosGlo a skos:Concept ;
-  skos:prefLabel "The Boston Globe"@de ;
+  skos:prefLabel "The Boston Globe"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4257322-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/4257322-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Boston_Globe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BoulZ a skos:Concept ;
   skos:prefLabel "B.Z."@de ;
-  skos:altLabel "B.Z."@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1355827787> ;
+  skos:exactMatch <https://d-nb.info/014050420> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/B.Z.> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID möglichst ändern in BZ (BZ dafür ändern in BerZeit).
 
 
 ex:BP a skos:Concept ;
@@ -1411,26 +1470,27 @@ ex:BP a skos:Concept ;
   skos:altLabel "BP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1020500-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/1020500-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayernpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BPA a skos:Concept ;
   skos:prefLabel "Bundespresseamt"@de ;
+  skos:altLabel "Presse- und Informationsamt der Bundesregierung"@de ;
   skos:altLabel "BPA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2029155-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2029155-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Presse-_und_Informationsamt_der_Bundesregierung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BpB a skos:Concept ;
   skos:prefLabel "Bundeszentrale für politische Bildung"@de ;
-  skos:altLabel "bpb"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:altLabel "BpB"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2006663-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundeszentrale_f%C3%BCr_politische_Bildung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1443,13 +1503,14 @@ ex:BPFraktBT a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/1020500-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayernpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND und Wikipedia identisch mit BP.
 
 
 ex:BPK a skos:Concept ;
   skos:prefLabel "Bundespressekonferenz"@de ;
-  skos:altLabel "BVA"@de ;
+  skos:altLabel "BPK"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2043600-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundespressekonferenz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1459,7 +1520,8 @@ ex:BPrA a skos:Concept ;
   skos:prefLabel "Bundespräsidialamt"@de ;
   skos:altLabel "BPrA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2033907-0> ;
   skos:exactMatch <https://d-nb.info/gnd/5530976-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundespr%C3%A4sidialamt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1470,17 +1532,17 @@ ex:BR a skos:Concept ;
   skos:altLabel "BR"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2005531-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/2005531-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayerischer_Rundfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BRat a skos:Concept ;
   skos:prefLabel "Bundesrat"@de ;
-  skos:altLabel "BRat"@de ;
+  skos:altLabel "BR"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5054695-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/5054695-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesrat_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1488,40 +1550,42 @@ ex:BRat a skos:Concept ;
 ex:BRH a skos:Concept ;
   skos:prefLabel "Bundesrechnungshof"@de ;
   skos:altLabel "BRH"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2044205-1> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesfinanzhof> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2044205-1> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesrechnungshof> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BritPet a skos:Concept ;
-  skos:prefLabel "British Petroleum"@de ;
-  skos:altLabel "BP"@de ;
+  skos:prefLabel "British Petroleum"@en ;
+  skos:altLabel "BP"@en ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2005982-6>
   skos:closeMatch <https://de.wikipedia.org/wiki/BP> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BRRH a skos:Concept ;
-  skos:prefLabel "Bund der Ruhestandsbeamten, Rentner und Hinterbliebenen (1953-2013)"@de ;
+  skos:prefLabel "Bund der Ruhestandsbeamten, Rentner und Hinterbliebenen"@de ;
   skos:altLabel "BRH"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5031805-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/5031805-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Ruhestandsbeamten,_Rentner_und_Hinterbliebenen> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  skos:note "Der BRH war von 1953 bis 2013 der Seniorenverband im Deutschen Beamtenbund."@de .
 
 
 ex:BStU a skos:Concept ;
-  skos:prefLabel "Der Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik"@de ;
+  skos:prefLabel "Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik"@de ;
   skos:altLabel "BStU"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5078273-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesbeauftragter_f%C3%BCr_die_Stasi-Unterlagen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Wechsel von prefLabel und altLabel überlegen.
 
 
 ex:BT a skos:Concept ;
@@ -1529,18 +1593,19 @@ ex:BT a skos:Concept ;
   skos:altLabel "BT"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2028840-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/2028840-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/2116123-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BTParlA a skos:Concept ;
-  skos:prefLabel "Parlamentsarchiv des Deutschen Bundestages"@de ;
-  skos:altLabel "BTParlA"@de ;
+  skos:prefLabel "Parlamentsarchiv"@de ;
+  skos:altLabel "Parlamentsarchiv des Deutschen Bundestages"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/16013267-8> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Bundestag> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1043102-0> ;
+  skos:exactMatch <https://d-nb.info/gnd/16013267-8> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -1548,9 +1613,11 @@ ex:BTPraesident a skos:Concept ;
   skos:prefLabel "Bundestagspräsident"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4070419-1> ;
   skos:exactMatch <https://d-nb.info/gnd/4377827-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Pr%C3%A4sident_des_Deutschen_Bundestages> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #überlegen, wie "Bundestagspräsidentin" abgebildet werden kann.
 
 
 ex:BTPraesidium a skos:Concept ;
@@ -1562,27 +1629,30 @@ ex:BTPraesidium a skos:Concept ;
 
 ex:Bulletin a skos:Concept ;
   skos:prefLabel "Bulletin des Presse- und Informationsamtes der Bundesregierung"@de ;
-  skos:altLabel "Bulletin"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/010015744> ;
+  skos:altLabel "Bulletin der Bundesregierung"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/010015744> ;
+  skos:exactMatch <https://d-nb.info/016667832> ;
+  skos:exactMatch <https://d-nb.info/020264968> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bulletin_der_Bundesregierung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BulletinEG a skos:Concept ;
   skos:prefLabel "Bulletin der Europäischen Gemeinschaften"@de ;
-  skos:altLabel "Bulletin EG"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/010015264>
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BulletinIP a skos:Concept ;
-  skos:prefLabel "Bulletin Interparlementaire"@de ;
+  skos:prefLabel "Bulletin interparlementaire"@fr ;
+  skos:altLabel "Bulletin interparlementaire. Organe officiel de l'Union Interparlementaire"@fr ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4069456-2> ;
+  skos:exactMatch <https://d-nb.info/011257520> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -1590,8 +1660,8 @@ ex:BUND a skos:Concept ;
   skos:prefLabel "Bund für Umwelt und Naturschutz Deutschland"@de ;
   skos:altLabel "BUND"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2051339-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2051339-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_f%C3%BCr_Umwelt_und_Naturschutz_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1599,9 +1669,9 @@ ex:BUND a skos:Concept ;
 ex:BundAnz a skos:Concept ;
   skos:prefLabel "Bundesanzeiger"@de ;
   skos:altLabel "BAnz"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4146927-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/4146927-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesanzeiger> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1609,58 +1679,66 @@ ex:BundAnz a skos:Concept ;
 ex:BundGA a skos:Concept ;
   skos:prefLabel "Bundesgesundheitsamt"@de ;
   skos:altLabel "BGA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028941-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesgesundheitsamt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BuReg a skos:Concept ;
-  skos:prefLabel "Bundesregierung (Bundesrepublik Deutschland)"@de ;
+  skos:prefLabel "Bundesregierung"@de ;
+  skos:altLabel "Bundesregierung der Bundesrepublik Deutschland"@de ;
+  skos:altLabel "Bundeskabinett"@de ;
   skos:altLabel "BReg"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028808-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/2117038-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesregierung_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher:BReg.
 
 
 ex:BuVer a skos:Concept ;
   skos:prefLabel "Bundesversammlung"@de ;
-  skos:altLabel "BuVer"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2171986-X> ;
+  skos:exactMatch <https://d-nb.info/gnd/2171986-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesversammlung_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher:BVers.
 
 
 ex:BVA a skos:Concept ;
   skos:prefLabel "Bundesverwaltungsamt"@de ;
   skos:altLabel "BVA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5056541-2> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/5056541-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverwaltungsamt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BvD a skos:Concept ;
-  skos:prefLabel "Bund vertriebener Deutscher"@de ;
+  skos:prefLabel "Bund der vertriebenen Deutschen"@de ;
+  skos:altLabel "Bund vertriebener Deutscher"@de ;
   skos:altLabel "BvD"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/135786-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/30571-6> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Vertriebenen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe auch BdV.
 
 
 ex:BVerfG a skos:Concept ;
   skos:prefLabel "Bundesverfassungsgericht"@de ;
   skos:altLabel "BVerfG"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2117905-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/35194-5>
+  skos:exactMatch <https://d-nb.info/gnd/2117905-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverfassungsgericht> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1669,8 +1747,9 @@ ex:BVerwG a skos:Concept ;
   skos:prefLabel "Bundesverwaltungsgericht"@de ;
   skos:altLabel "BVerwG"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/35195-7> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/35195-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/5054870-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverwaltungsgericht_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1679,17 +1758,18 @@ ex:BVFrauen a skos:Concept ;
   skos:prefLabel "Berufsverband der Frauenärzte"@de ;
   skos:altLabel "BVF"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2004298-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berufsverband_der_Frauen%C3%A4rzte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: BVF.
 
 
 ex:BVG a skos:Concept ;
   skos:prefLabel "Berliner Verkehrsbetriebe"@de ;
   skos:altLabel "BVG"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2004374-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berliner_Verkehrsbetriebe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1699,8 +1779,8 @@ ex:BVP a skos:Concept ;
   skos:prefLabel "Bayerische Volkspartei"@de ;
   skos:altLabel "BVP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/63715-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/63715-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayerische_Volkspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1710,6 +1790,7 @@ ex:Bw a skos:Concept ;
   skos:altLabel "Bw"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2032018-8> ;
   skos:exactMatch <https://d-nb.info/gnd/2116728-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundeswehr> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1719,22 +1800,15 @@ ex:BZ a skos:Concept ;
   skos:prefLabel "Berliner Zeitung"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/7535479-2> ;
+  skos:exactMatch <https://d-nb.info/014328984> ;
+  skos:exactMatch <https://d-nb.info/gnd/7535479-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berliner_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID ggf. ändern, vgl. B.Z.
 
 
 
-
-
-
-
-
-
-
-
-
-
+# C
 
 
 ex:Cap a skos:Concept ;
@@ -2123,6 +2197,10 @@ ex:CVP-SL a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/36779-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christliche_Volkspartei_des_Saarlandes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# D
 
 
 ex:DA a skos:Concept ;
@@ -3144,6 +3222,10 @@ ex:DZuWz a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# E
+
+
 ex:EAP a skos:Concept ;
   skos:prefLabel "Europäische Arbeiter-Partei"@de ;
   skos:altLabel "EAP"@de ;
@@ -3500,6 +3582,10 @@ ex:EZU a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/37224-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Zahlungsunion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# F
 
 
 ex:FA a skos:Concept ;
@@ -3879,6 +3965,10 @@ ex:FVP a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# G
+
+
 ex:GA a skos:Concept ;
   skos:prefLabel "General-Anzeiger"@de ;
   skos:notation "news"^^fpv:entityType ;
@@ -4161,6 +4251,10 @@ ex:GVP a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# H
+
+
 ex:HaBl a skos:Concept ;
   skos:prefLabel "Handelsblatt"@de ;
   skos:notation "news"^^fpv:entityType ;
@@ -4397,6 +4491,10 @@ ex:HU a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/2013237-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Humanistische_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# I
 
 
 ex:IAEO a skos:Concept ;
@@ -4791,6 +4889,10 @@ ex:Izv a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# J
+
+
 ex:JdB a skos:Concept ;
   skos:prefLabel "Journal do Brasil"@de ;
   skos:notation "news"^^fpv:entityType ;
@@ -4866,6 +4968,9 @@ ex:jW a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Junge_Welt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
+
+
+# K
 
 ex:KAS a skos:Concept ;
   skos:prefLabel "Konrad-Adenauer-Stiftung"@de ;
@@ -5162,6 +5267,10 @@ ex:KWU a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# L
+
+
 ex:Labour a skos:Concept ;
   skos:prefLabel "Labour Party (Großbritannien)"@de ;
   skos:altLabel "LA Times"@de ;
@@ -5276,6 +5385,10 @@ ex:LVA a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Landesversicherungsanstalt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# M
 
 
 ex:MAD a skos:Concept ;
@@ -5508,6 +5621,10 @@ ex:MuenchRueck a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/1027268-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/M%C3%BCnchener_R%C3%BCck> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# N
 
 
 ex:NASA a skos:Concept ;
@@ -5889,6 +6006,10 @@ ex:NZZ a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# O
+
+
 ex:OA a skos:Concept ;
   skos:prefLabel "Ost-Ausschuss der Deutschen Wirtschaft"@de ;
   skos:altLabel "OA"@de ;
@@ -6055,6 +6176,10 @@ ex:Ost-CDU a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1010501-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich-Demokratische_Union_Deutschlands_%28DDR%29> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# P
 
 
 ex:PAAA a skos:Concept ;
@@ -6306,6 +6431,10 @@ ex:PZPR a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# Q
+
+
 ex:Qantas a skos:Concept ;
   skos:prefLabel "Qantas Airways"@de ;
   skos:altLabel "Qantas"@de ;
@@ -6323,6 +6452,10 @@ ex:Quick a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/4192904-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Quick_(Zeitschrift)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# R
 
 
 ex:RAF a skos:Concept ;
@@ -6609,6 +6742,10 @@ ex:RWHG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2081749-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichswerke_Hermann_G%C3%B6ring> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# S
 
 
 ex:SA a skos:Concept ;
@@ -7266,6 +7403,10 @@ ex:SZ a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# T
+
+
 ex:Tanjug a skos:Concept ;
   skos:prefLabel "Telegrafska Agencija Nova Jugoslavija"@de ;
   skos:altLabel "Tanjug"@de ;
@@ -7458,6 +7599,10 @@ ex:TWaP a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/4185034-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Washington_Post> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# U
 
 
 ex:UBA a skos:Concept ;
@@ -7715,6 +7860,10 @@ ex:UTM a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Unternehmensgruppe_Theo_M%C3%BCller> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# V
 
 
 ex:VBH a skos:Concept ;
@@ -7981,6 +8130,10 @@ ex:VW a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# W
+
+
 ex:WaffenSS a skos:Concept ;
   skos:prefLabel "Waffen-SS"@de ;
   skos:notation "pol"^^fpv:entityType ;
@@ -8243,6 +8396,10 @@ ex:WV a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# X
+
+
 ex:Xerox a skos:Concept ;
   skos:prefLabel "Xerox Corporation"@de ;
   skos:altLabel "Xerox"@de ;
@@ -8262,6 +8419,10 @@ ex:Xin a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+
+# Y
+
+
 ex:Yokohama a skos:Concept ;
   skos:prefLabel "Yokohama Rubber"@de ;
   skos:altLabel "Yokohama"@de ;
@@ -8269,6 +8430,10 @@ ex:Yokohama a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Yokohama_(Unternehmen)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+
+# Z
 
 
 ex:ZANU a skos:Concept ;
