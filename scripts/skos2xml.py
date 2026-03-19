@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from rdflib import Graph, Namespace
 from rdflib.namespace import SKOS, RDF
 import xml.etree.ElementTree as ET
@@ -14,25 +15,53 @@ FPV = Namespace("https://voc.fraktionsprotokolle.de/schema/")
 ET.register_namespace('', TEI_NS)
 
 
+def format_datetime_de():
+    """Erzeugt Datum + Uhrzeit im gewünschten deutschen Format."""
+    now = datetime.now()
+    months = [
+        "Januar", "Februar", "März", "April", "Mai", "Juni",
+        "Juli", "August", "September", "Oktober", "November", "Dezember"
+    ]
+    return f"{now.day}. {months[now.month - 1]} {now.year}, {now.strftime('%H:%M')} Uhr", now.strftime("%Y-%m-%d")
+
+
 def create_tei_header():
-    """Erzeugt den statischen TEI-Header gemäß Vorlage."""
+    """Erzeugt den TEI-Header gemäß validierter Struktur."""
+
+    display_date, iso_date = format_datetime_de()
+
     tei = ET.Element(f"{{{TEI_NS}}}TEI")
 
     header = ET.SubElement(tei, f"{{{TEI_NS}}}teiHeader")
     file_desc = ET.SubElement(header, f"{{{TEI_NS}}}fileDesc")
 
+    # --- titleStmt ---
     title_stmt = ET.SubElement(file_desc, f"{{{TEI_NS}}}titleStmt")
     title = ET.SubElement(title_stmt, f"{{{TEI_NS}}}title")
-    title.text = "FPV – Kontrolliertes Vokabular"
+    title.text = "FPV - Kontrolliertes Vokabular der Edition Fraktionsprotokolle.de"
 
+    # --- publicationStmt ---
     pub_stmt = ET.SubElement(file_desc, f"{{{TEI_NS}}}publicationStmt")
-    p_pub = ET.SubElement(pub_stmt, f"{{{TEI_NS}}}p")
-    p_pub.text = "Generiert aus fpv.ttl"
 
+    publisher = ET.SubElement(pub_stmt, f"{{{TEI_NS}}}publisher")
+    publisher.text = "Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)"
+
+    date_el = ET.SubElement(pub_stmt, f"{{{TEI_NS}}}date")
+    date_el.set("when", iso_date)
+    date_el.text = display_date
+
+    availability = ET.SubElement(pub_stmt, f"{{{TEI_NS}}}availability")
+
+    licence = ET.SubElement(availability, f"{{{TEI_NS}}}licence")
+    licence.set("target", "https://creativecommons.org/licenses/by/4.0/")
+    licence.text = "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+
+    # --- sourceDesc ---
     src_desc = ET.SubElement(file_desc, f"{{{TEI_NS}}}sourceDesc")
     p_src = ET.SubElement(src_desc, f"{{{TEI_NS}}}p")
-    p_src.text = "Single Source of Truth: SKOS TTL"
+    p_src.text = "XML-Schlagwortliste automatisch erzeugt aus https://github.com/Fraktionsprotokolle-de/fpv-skos/blob/main/src/fpv.ttl"
 
+    # --- text ---
     text = ET.SubElement(tei, f"{{{TEI_NS}}}text")
     body = ET.SubElement(text, f"{{{TEI_NS}}}body")
     p_body = ET.SubElement(body, f"{{{TEI_NS}}}p")
