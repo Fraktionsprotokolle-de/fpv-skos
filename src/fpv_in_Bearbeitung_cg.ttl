@@ -553,7 +553,7 @@ ex:Atomwaffensperrvertrag a skos:Concept ;
   skos:altLabel "Treaty on the Non-Proliferation of Nuclear Weapons"@en ;
   skos:notation "topic"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4131647-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/4131647-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Atomwaffensperrvertrag> ;
   skos:note "Ein internationaler Vertrag, der die Verbreitung von Kernwaffen einschränken soll."@de .
 
@@ -582,10 +582,10 @@ ex:Avanti a skos:Concept ;
   skos:altLabel "Avanti! Giornale socialista"@it ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:exactMatch <https://gvk.k10plus.de/DB=2.1/PPNSET?PPN=168652609> ;
+  skos:exactMatch <https://zdb-katalog.de/title.xhtml?idn=014429705> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Avanti!_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
+  #nicht in GND, Verweis auf ZDB.
 
 
 ex:AvD a skos:Concept ;
@@ -1207,7 +1207,7 @@ ex:BMELF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028894-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Ern%C3%A4hrung_und_Landwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1949-2001, GND ab 1990: http://d-nb.info/gnd/5030113-5.
+  #Zeitraum des Bestehens: 1949-2001, GND ab 1990: https://d-nb.info/gnd/5030113-5.
 
 
 ex:BMF a skos:Concept ;
@@ -1218,7 +1218,7 @@ ex:BMF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028782-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: http://d-nb.info/gnd/3009228-0.
+  #GND ab 1990: https://d-nb.info/gnd/3009228-0.
 
 
 ex:BMFa a skos:Concept ;
@@ -1242,7 +1242,7 @@ ex:BMFT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028958-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1972-1994, GND ab 1990: http://d-nb.info/gnd/2116224-4.
+  #Zeitraum des Bestehens: 1972-1994, GND ab 1990: https://d-nb.info/gnd/2116224-4.
 
 
 ex:BMG a skos:Concept ;
@@ -1276,7 +1276,7 @@ ex:BMI a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028854-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_des_Innern,_f%C3%BCr_Bau_und_Heimat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: http://d-nb.info/gnd/2117465-9.
+  #GND ab 1990: https://d-nb.info/gnd/2117465-9.
 
 
 ex:BMJ a skos:Concept ;
@@ -1500,7 +1500,7 @@ ex:BPFraktBT a skos:Concept ;
   skos:prefLabel "Bundestagsfraktion der Bayernpartei"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1020500-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/1020500-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayernpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   #GND und Wikipedia identisch mit BP.
@@ -1815,36 +1815,36 @@ ex:Cap a skos:Concept ;
   skos:prefLabel "Capital"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4465694-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/4465694-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Capital_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CBS a skos:Concept ;
-  skos:prefLabel "Columbia Broadcasting System"@de ;
-  skos:altLabel "CBS"@de ;
+  skos:prefLabel "Columbia Broadcasting System"@en ;
+  skos:altLabel "CBS"@en ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1020961-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1020961-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Columbia_Broadcasting_System> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CDA a skos:Concept ;
-  skos:prefLabel "Christlich-Demokratische Arbeitnehmerschaft"@de ;
+  skos:prefLabel "Christlich-Demokratische Arbeitnehmerschaft Deutschlands"@de ;
   skos:altLabel "CDA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2037716-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2037716-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich-Demokratische_Arbeitnehmerschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CDApp a skos:Concept ;
-  skos:prefLabel "Christen-Democratisch Appèl"@de ;
-  skos:altLabel "CDA"@de ;
+  skos:prefLabel "Christen-Democratisch Appèl"@nl ;
+  skos:altLabel "CDA"@nl ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/62128-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christen-Democratisch_App%C3%A8l> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1852,31 +1852,34 @@ ex:CDApp a skos:Concept ;
 
 ex:CdE a skos:Concept ;
   skos:prefLabel "Europarat"@de ;
-  skos:altLabel "CoE/CdE"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:altLabel "Council of Europe"@en ;
+  skos:altLabel "Counseil de l'Europe"@fr ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/36821-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europarat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: EURat.
 
 
 ex:CdS a skos:Concept ;
-  skos:prefLabel "Corriere delle Sera"@de ;
+  skos:prefLabel "Corriere della Sera"@it ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4208422-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/4208422-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Corriere_della_Sera> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CDS a skos:Concept ;
-  skos:prefLabel "Centre des démocrates sociaux"@de ;
-  skos:altLabel "CDS"@de ;
+  skos:prefLabel "Centre des démocrates sociaux"@fr ;
+  skos:altLabel "CDS"@fr ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/516235-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/516235-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Dublette: CentreDS!
 
 
 ex:CDU a skos:Concept ;
@@ -1884,66 +1887,78 @@ ex:CDU a skos:Concept ;
   skos:altLabel "CDU"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1010501-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/1010501-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich_Demokratische_Union_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Klären: GND verweis auf die CDU in der DDR, Wikipedia auf die gesamtdeutsche Partei.
 
 
 ex:CDUFraktionBT a skos:Concept ;
-  skos:prefLabel "CDU/CSU-Fraktion im Deutschen Bundestag"@de ;
-  skos:altLabel "CDU/CSU-Fraktion"@de ;
+  skos:prefLabel "CDU/CSU-Bundestagsfraktion"@de ;
+  skos:altLabel "CDU/CSU-Fraktion im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2083400-7> ;
   skos:exactMatch <https://d-nb.info/gnd/2124998-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/CDU/CSU-Fraktion_im_Deutschen_Bundestag> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_CDU/CSU_im_Deutschen_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: CDUCSUFraktionBT. Vgl. die ID: BPFraktBT und ggf. andere.
 
 
 ex:CDUFraktionsvorstandBT a skos:Concept ;
-  skos:prefLabel "Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag"@de ;
-  skos:altLabel "CDU/CSU-Fraktionsvorstand"@de ;
+  skos:prefLabel "CDU/CSU-Fraktionsvorstand"@de ;
+  skos:altLabel "Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2124998-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/CDU/CSU-Fraktion_im_Deutschen_Bundestag> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_CDU/CSU_im_Deutschen_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: CDUCSUFraktionsvorstandBT.
 
 
 ex:CEMT a skos:Concept ;
-  skos:prefLabel "Conférence Européenne des Ministres des Transports"@de ;
-  skos:altLabel "CEMT"@de ;
+  skos:prefLabel "Europäische Konferenz der Verkehrsminister"@de ;
+  skos:altLabel "Europäische Verkehrsministerkonferenz"@de ;
+  skos:altLabel "Conférence Européenne des Ministres des Transports"@fr ;
+  skos:altLabel "CEMT"@fr ;
+  skos:altLabel "European Conference of Ministers of Transport"@en ;
+  skos:altLabel "ECMT"@en ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4616346-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4616346-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Verkehrsministerkonferenz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID evtl. anpassen (bisher auf fr abgestellt).
 
 
 ex:CentreDS a skos:Concept ;
-  skos:prefLabel "Centre des démocrates sociaux"@de ;
-  skos:altLabel "CDS"@de ;
+  skos:prefLabel "Centre des démocrates sociaux"@fr ;
+  skos:altLabel "CDS"@fr ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/516235-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Dublette: CDS! Diesen Eintrag löschen.
 
 
 ex:CFP a skos:Concept ;
-  skos:prefLabel "Compagnie Française des Pétroles"@de ;
-  skos:altLabel "CFP"@de ;
+  skos:prefLabel "Compagnie Française des Pétroles"@fr ;
+  skos:altLabel "CFP"@fr ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1087363608> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1087363608> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Geschichte_der_%C3%96lf%C3%B6rderung_Frankreichs> ;
+  skos:closeMatch <https://en.wikipedia.org/wiki/TotalEnergies> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CGB a skos:Concept ;
   skos:prefLabel "Christlicher Gewerkschaftsbund"@de ;
+  skos:altLabel "Christlicher Gewerkschaftsbund Deutschlands"@de ;
   skos:altLabel "CGB"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2006778-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2006778-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlicher_Gewerkschaftsbund_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1952,25 +1967,25 @@ ex:CGD a skos:Concept ;
   skos:prefLabel "Christliche Gewerkschaft Deutschlands"@de ;
   skos:altLabel "CGD"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christliche_Gewerkschaft_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:ChiTri a skos:Concept ;
-  skos:prefLabel "Chicago Tribune"@de ;
+  skos:prefLabel "Chicago Tribune"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4793005-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/4793005-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Chicago_Tribune> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CIA a skos:Concept ;
-  skos:prefLabel "Central Intelligence Agency"@de ;
-  skos:altLabel "CIA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "Central Intelligence Agency"@en ;
+  skos:altLabel "CIA"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1021698-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Central_Intelligence_Agency> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1980,48 +1995,52 @@ ex:Ciba a skos:Concept ;
   skos:prefLabel "Chemische Industrie Basel"@de ;
   skos:altLabel "Ciba"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2006998-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2006998-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ciba_AG> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CIC a skos:Concept ;
-  skos:prefLabel "Counter Intelligence Corps"@de ;
-  skos:altLabel "CIC"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4267849-3> ;
+  skos:prefLabel "Counter Intelligence Corps"@en ;
+  skos:altLabel "CIC"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4267849-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Counter_Intelligence_Corps> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CIO a skos:Concept ;
-  skos:prefLabel "Congress of Industrial Organizations"@de ;
-  skos:altLabel "CIO"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/108751844X> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/CIO_(Gewerkschaft)> ;
+  skos:prefLabel "Congress of Industrial Organizations"@en ;
+  skos:altLabel "CIO"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/108751844X> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Congress_of_Industrial_Organizations> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CISNU a skos:Concept ;
-  skos:prefLabel "Confederation of Iranian Students National Union (CISNU)"@de ;
-  skos:altLabel "CISNU"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2035584-1> ;
+  skos:prefLabel "Confederation of Iranian Students"@en ;
+  skos:altLabel "Confederation of Iranian Students National Union"@en ;
+  skos:altLabel "CISNU"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2035584-1> ;
   skos:closeMatch <https://en.wikipedia.org/wiki/Confederation_of_Iranian_Students> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:ClevelandPlain a skos:Concept ;
-  skos:prefLabel "The Plain Dealer (Cleveland)"@de ;
+  skos:prefLabel "The Plain Dealer (Cleveland)"@en ;
+  skos:altLabel "Cleveland Plain Dealer"@en ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://zdb-katalog.de/title.xhtml?idn=977654583> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Plain_Dealer_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #nicht in der GND, Verweis auf ZDB. Prüfen, ob Angabe in Klammern notwendig.
 
 
 ex:CMA a skos:Concept ;
@@ -2029,26 +2048,29 @@ ex:CMA a skos:Concept ;
   skos:altLabel "CMA"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2006955-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/2006955-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Centrale_Marketing-Gesellschaft_der_deutschen_Agrarwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CNIP a skos:Concept ;
-  skos:prefLabel "Centre national des indépendants et paysans"@de ;
-  skos:altLabel "CNIP"@de ;
+  skos:prefLabel "Centre national des indépendants et paysans"@fr ;
+  skos:altLabel "CNIP"@fr ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/7537614-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/7537614-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Centre_national_des_ind%C3%A9pendants_et_paysans> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:COCOM a skos:Concept ;
-  skos:prefLabel "Coordinating Committee on Multilateral Export Controls; NATO.Koordinierungskomittee für den Ost-West-Handel"@de ;
-  skos:altLabel "COCOM"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "Coordinating Committee for Multilateral Export Controls"@en ;
+  skos:altLabel "Coordinating Committee for East West Trade Policy"@en ;
+  skos:altLabel "Koordinierungskomittee für multilaterale Ausfuhrkontrollen"@de ;
+  skos:altLabel "Koordinierungskomittee für den Ost-West-Handel"@de ;
+  skos:altLabel "COCOM"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2117766-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Coordinating_Committee_on_Multilateral_Export_Controls> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2058,36 +2080,40 @@ ex:Combank a skos:Concept ;
   skos:prefLabel "Commerzbank"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1800007-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/1800007-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Commerzbank> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:COMECON a skos:Concept ;
-  skos:prefLabel "Council for Mutual Economic Assistance"@de ;
-  skos:altLabel "COMECON"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1016341-4> ;
+  skos:prefLabel "Council for Mutual Economic Assistance"@en ;
+  skos:altLabel "CMEA"@en ;
+  skos:altLabel "COMECON"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1016341-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rat_f%C3%BCr_gegenseitige_Wirtschaftshilfe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Dublette: RGW!
 
 
 ex:Comisco a skos:Concept ;
-  skos:prefLabel "Committee of the International Socialist Conference"@de ;
-  skos:altLabel "Comisco"@de ;
+  skos:prefLabel "Committee of the International Socialist Conferences"@en ;
+  skos:altLabel "Arbeitsgemeinschaft Internationaler Sozialistenkonferenzen"@de ;
+  skos:altLabel "Comisco"@en ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1090627610> ;
+  skos:exactMatch <https://d-nb.info/gnd/19071-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/1090627610> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:COPCON a skos:Concept ;
-  skos:prefLabel "Comando Operacional do Continente"@de ;
-  skos:altLabel "COPCON"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/6063262-8> ;
+  skos:prefLabel "Comando Operacional do Continente"@pt ;
+  skos:altLabel "COPCON"@pt ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/6063262-8> ;
   skos:closeMatch <https://en.wikipedia.org/wiki/COPCON> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2096,18 +2122,19 @@ ex:CSA a skos:Concept ;
   skos:prefLabel "Christlich-Soziale Arbeitnehmerschaft"@de ;
   skos:altLabel "CSA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1091317-8> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1091317-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitnehmer-Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #heute: Arbeitnehmer-Union.
 
 
 ex:CSP a skos:Concept ;
   skos:prefLabel "Christlich-Soziale Partei"@de ;
   skos:altLabel "CSP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5175545-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/5175545-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich-soziale_Partei_(Deutsches_Kaiserreich)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2116,8 +2143,8 @@ ex:CSU a skos:Concept ;
   skos:prefLabel "Christlich-Soziale Union in Bayern"@de ;
   skos:altLabel "CSU"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2006707-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2006707-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich-Soziale_Union_in_Bayern> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2132,11 +2159,13 @@ ex:CSU-LandesgruppeBT a skos:Concept ;
 
 
 ex:CSV a skos:Concept ;
-  skos:prefLabel "Chrëschtlech Sozial Vollekspartei"@de ;
-  skos:altLabel "CSV"@de ;
+  skos:prefLabel "Chrëschtlech Sozial Vollekspartei"@lb ;
+  skos:altLabel "Parti Chrétien Social"@fr ;
+  skos:altLabel "Christlich-Soziale Volkspartei"@de ;
+  skos:altLabel "CSV"@lb ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2017408-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2017408-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Chr%C3%ABschtlech_Sozial_Vollekspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2145,7 +2174,7 @@ ex:CSWU a skos:Concept ;
   skos:prefLabel "Christlich Soziale Wähler Union im Saarland"@de ;
   skos:altLabel "CSWU"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich_Soziale_W%C3%A4hler_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2154,37 +2183,39 @@ ex:CuW a skos:Concept ;
   skos:prefLabel "Christ und Welt"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1064925057> ;
+  skos:exactMatch <https://d-nb.info/01068042X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christ_und_Welt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND bisher: https://d-nb.info/gnd/1064925057, die geht aber auf den Verlag.
 
 
 ex:CV a skos:Concept ;
   skos:prefLabel "Cartellverband der katholischen deutschen Studentenverbindungen"@de ;
   skos:altLabel "CV"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2006807-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2006807-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Cartellverband_der_katholischen_deutschen_Studentenverbindungen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:CVP-BE a skos:Concept ;
-  skos:prefLabel "Christelijke Volkspartij"@de ;
-  skos:altLabel "CVP"@de ;
+  skos:prefLabel "Christelijke Volkspartij"@nl ;
+  skos:altLabel "CVP"@nl ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4488907-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4488907-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christen-Democratisch_en_Vlaams> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #prefLabel und GND verweisen auf die niederländische Partei, ID und Wikipedia auf die flämische. Klären!
 
 
 ex:CVP-CH a skos:Concept ;
-  skos:prefLabel "Christldemokratische Volkspartei der Schweiz"@de ;
+  skos:prefLabel "Christlichdemokratische Volkspartei der Schweiz"@de ;
   skos:altLabel "CVP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/43772-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/43772-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlichdemokratische_Volkspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2193,8 +2224,8 @@ ex:CVP-SL a skos:Concept ;
   skos:prefLabel "Christliche Volkspartei des Saarlandes"@de ;
   skos:altLabel "CVP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/36779-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/36779-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christliche_Volkspartei_des_Saarlandes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2207,18 +2238,18 @@ ex:DA a skos:Concept ;
   skos:prefLabel "Demokratischer Aufbruch"@de ;
   skos:altLabel "DA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5017671-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Demokratischer_Aufbruch> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DAG a skos:Concept ;
-  skos:prefLabel "Deutsche Angestellten Gewerkschaft"@de ;
+  skos:prefLabel "Deutsche Angestellten-Gewerkschaft"@de ;
   skos:altLabel "DAG"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/37043-5> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/37043-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Angestellten-Gewerkschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2230,49 +2261,57 @@ ex:DaiBenz a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2007419-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Daimler-Benz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID evtl. DBenz.
 
 
 ex:DAK a skos:Concept ;
   skos:prefLabel "Deutsche Angestellten-Krankenkasse"@de ;
   skos:altLabel "DAK"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007652-6> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2007652-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DAK-Gesundheit> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DAS a skos:Concept ;
   skos:prefLabel "Deutsches Allgemeines Sonntagsblatt"@de ;
+  skos:altLabel "Das Sonntagsblatt"@de ;
+  skos:altLabel "DS"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4752710-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4752710-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Allgemeines_Sonntagsblatt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: DS.
 
 
 ex:dasda a skos:Concept ;
   skos:prefLabel "das da - Monatsmagazin für Kultur und Politik"@de ;
-  skos:altLabel "DAK"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/011787511>
   skos:closeMatch <https://de.wikipedia.org/wiki/Das_da> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DasParl a skos:Concept ;
-  skos:prefLabel "Das Parlament (Zeitung)"@de ;
+  skos:prefLabel "Das Parlament"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1086235312> ;
+  skos:exactMatch <https://d-nb.info/010695311> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Das_Parlament> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND bisher: https://d-nb.info/gnd/1086235312, die geht aber auf die Redaktion.
 
 
 ex:dasVolk a skos:Concept ;
-  skos:prefLabel "Das Volk: Organ der Sozialdemokratichen Partei Badens"@de ;
+  skos:prefLabel "Das Volk"@de ;
+  skos:altLabel "Das Volk. Organ der Sozialdemokratischen Partei Badens"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/011976241>
+  skos:closeMatch <https://de.wikipedia.org/wiki/Das_Volk_(1946%E2%80%931954)>
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -2281,7 +2320,7 @@ ex:DB a skos:Concept ;
   skos:altLabel "DB"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007837-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/2007837-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Bundesbahn> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2289,9 +2328,9 @@ ex:DB a skos:Concept ;
 ex:DBB a skos:Concept ;
   skos:prefLabel "Deutscher Beamtenbund"@de ;
   skos:altLabel "DBB"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008175-3> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2008175-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DBB_Beamtenbund_und_Tarifunion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2300,8 +2339,8 @@ ex:DBJR a skos:Concept ;
   skos:prefLabel "Deutscher Bundesjugendring"@de ;
   skos:altLabel "DBJR"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008379-8> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2008379-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Bundesjugendring> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2310,7 +2349,7 @@ ex:DBP a skos:Concept ;
   skos:prefLabel "Deutsche Bundespost"@de ;
   skos:altLabel "DBP"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2007726-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Bundespost> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2320,38 +2359,40 @@ ex:DBS a skos:Concept ;
   skos:prefLabel "Deutscher Behindertensportverband"@de ;
   skos:altLabel "DBS"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2114663-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/3003712-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Behindertensportverband> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DBV a skos:Concept ;
-  skos:prefLabel "Deutscher Bund für Vogelschutz (seit 1990 Naturschutzbund Deutschland)"@de ;
+  skos:prefLabel "Deutscher Bund für Vogelschutz"@de ;
   skos:altLabel "DBV"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008371-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2008371-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Naturschutzbund_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ab 1990: NABU. Prüfen, ob darauf Verweise.
 
 
 ex:DBwV a skos:Concept ;
   skos:prefLabel "Deutscher Bundeswehrverband"@de ;
   skos:altLabel "DBwV"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2008403-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Bundeswehrverband> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DC a skos:Concept ;
-  skos:prefLabel "Democrazia Cristiana"@de ;
-  skos:altLabel "DC"@de ;
+  skos:prefLabel "Democrazia Cristiana"@it ;
+  skos:altLabel "Democrazia Cristiana Italiana"@it ;
+  skos:altLabel "DC"@it ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/291-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/291-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Democrazia_Cristiana> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2369,8 +2410,8 @@ ex:DDP a skos:Concept ;
   skos:prefLabel "Deutsche Demokratische Partei"@de ;
   skos:altLabel "DDP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/118094-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/118094-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Demokratische_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2379,47 +2420,52 @@ ex:ddp a skos:Concept ;
   skos:prefLabel "Deutscher Depeschendienst"@de ;
   skos:altLabel "ddp"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4230201-8> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4230201-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Depeschendienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Problem mit ID zuvor?
 
 
 ex:DDR a skos:Concept ;
   skos:prefLabel "Deutsche Demokratische Republik"@de ;
   skos:altLabel "DDR"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4011890-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Geografikum. Prüfen, wo verwendet.
 
 
 ex:DDRVolkskammer a skos:Concept ;
-  skos:prefLabel "Volkskammer der Deutschen Demokratischen Republik"@de ;
+  skos:prefLabel "Volkskammer"@de ;
+  skos:altLabel "Volkskammer der DDR"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35143-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Volkskammer> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: Volkskammer.
 
 
 ex:ddvg a skos:Concept ;
-  skos:prefLabel "Deutsche Druck- und Verlagsgesellschaft mbH"@de ;
+  skos:prefLabel "Deutsche Druck- und Verlagsgesellschaft"@de ;
   skos:altLabel "ddvg"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10051085-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Druck-_und_Verlagsgesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #notation eher com oder news.
 
 
 ex:DEA a skos:Concept ;
   skos:prefLabel "Deutsche Erdöl AG"@de ;
   skos:altLabel "DEA"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1075343917> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1075343917> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DEA> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2427,9 +2473,9 @@ ex:DEA a skos:Concept ;
 ex:DED a skos:Concept ;
   skos:prefLabel "Deutscher Entwicklungsdienst"@de ;
   skos:altLabel "DED"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/42392-0> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/42392-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Entwicklungsdienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2438,8 +2484,8 @@ ex:DEFA a skos:Concept ;
   skos:prefLabel "Deutsche Film-AG"@de ;
   skos:altLabel "DEFA"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007664-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2007664-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DEFA> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2447,9 +2493,9 @@ ex:DEFA a skos:Concept ;
 ex:DEHOGA a skos:Concept ;
   skos:prefLabel "Deutscher Hotel- und Gaststättenverband"@de ;
   skos:altLabel "DEHOGA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008657-X> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2008657-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Hotel-_und_Gastst%C3%A4ttenverband> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2458,8 +2504,8 @@ ex:DEMAG a skos:Concept ;
   skos:prefLabel "Deutsche Maschinenbau-Aktiengesellschaft"@de ;
   skos:altLabel "DEMAG"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007413-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2007413-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Demag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2468,8 +2514,8 @@ ex:DENA a skos:Concept ;
   skos:prefLabel "Deutsche Nachrichten-Agentur"@de ;
   skos:altLabel "DENA"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4302140-2> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4302140-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Nachrichtenagentur> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2478,15 +2524,14 @@ ex:Depfa a skos:Concept ;
   skos:prefLabel "Deutsche Pfandbriefanstalt"@de ;
   skos:altLabel "Depfa"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007883-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2007883-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Depfa_Bank> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DerMorgen a skos:Concept ;
   skos:prefLabel "Der Morgen"@de ;
-  skos:altLabel "Der Morgen"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7747670-0> ;
@@ -2498,35 +2543,40 @@ ex:DerSelbs a skos:Concept ;
   skos:prefLabel "Der Selbständige"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1067149953> ;
+  skos:exactMatch <https://d-nb.info/gnd/1067149953> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. GND bisher Hg., in der ZDB mehrere Treffer, wahrscheinlich https://d-nb.info/010716521.
 
 
 ex:DesdnerB a skos:Concept ;
   skos:prefLabel "Dresdner Bank"@de ;
+  skos:altLabel "DB"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/63008-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/63008-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Dresdner_Bank> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Destatis a skos:Concept ;
   skos:prefLabel "Statistisches Bundesamt"@de ;
-  skos:altLabel "StBA/Destatis"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:altLabel "StBA"@de ;
+  skos:altLabel "Destatis"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1002826-2> ;
   skos:exactMatch <https://d-nb.info/gnd/2116281-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Statistisches_Bundesamt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DeTeWe a skos:Concept ;
-  skos:prefLabel "Deutsche Telephonwerke und Kabelindustrie"@de ;
+  skos:prefLabel "Deutsche Telephonwerke"@de ;
+  skos:altLabel "Deutsche Telephonwerke und Kabelindustrie"@de ;
   skos:altLabel "DeTeWe"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/7626937-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/7626937-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DeTeWe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2541,10 +2591,10 @@ ex:DeuBa a skos:Concept ;
 
 
 ex:DeuGK a skos:Concept ;
-  skos:prefLabel "Deutsche Grünes Kreuz"@de ;
+  skos:prefLabel "Deutsches Grünes Kreuz"@de ;
   skos:altLabel "DGK"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2008773-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Gr%C3%BCnes_Kreuz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -2554,8 +2604,8 @@ ex:DeuMag a skos:Concept ;
   skos:prefLabel "Deutschland-Magazin"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4539986-4> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Deutschland-Stiftung#Deutschland-Magazin> ;
+  skos:exactMatch <https://d-nb.info/gnd/4539986-4> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Deutschland-Magazin> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -2563,14 +2613,15 @@ ex:DeuNK a skos:Concept ;
   skos:prefLabel "Deutsches Nationalkomitee für Denkmalschutz"@de ;
   skos:altLabel "DNK"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2053361-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Nationalkomitee_f%C3%BCr_Denkmalschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: DNK.
 
 
 ex:DeuNStift a skos:Concept ;
-  skos:prefLabel "Deutsche Nationalstiftung (seit 1993)"@de ;
+  skos:prefLabel "Deutsche Nationalstiftung"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5146980-7> ;
@@ -2582,7 +2633,9 @@ ex:DeuParteiFrak a skos:Concept ;
   skos:prefLabel "Fraktion der Deutschen Partei im Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID anpassen an DP, dort einordnen.
 
 
 ex:DeuPR a skos:Concept ;
@@ -2592,23 +2645,24 @@ ex:DeuPR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2008626-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Presserat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID eher: DPR.
 
 
 ex:deVol a skos:Concept ;
   skos:prefLabel "de Volkskrant"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4383689-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/4383689-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/De_Volkskrant> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DFB a skos:Concept ;
-  skos:prefLabel "Deutscher Fußball Bund"@de ;
+  skos:prefLabel "Deutscher Fußball-Bund"@de ;
   skos:altLabel "DFB"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008246-0> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2008246-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Fu%C3%9Fball-Bund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2618,7 +2672,7 @@ ex:DFD a skos:Concept ;
   skos:altLabel "DFD"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007270-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/2007270-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Demokratischer_Frauenbund_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2628,7 +2682,7 @@ ex:DFG a skos:Concept ;
   skos:altLabel "DFG"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007744-0> ;
+  skos:exactMatch <https://d-nb.info/gnd/2007744-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Forschungsgemeinschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2638,7 +2692,7 @@ ex:DFU a skos:Concept ;
   skos:altLabel "DFU"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008105-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/2008105-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Friedens-Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2648,7 +2702,7 @@ ex:DG a skos:Concept ;
   skos:altLabel "DG"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4011643-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/4011643-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Gemeinschaft_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2658,7 +2712,7 @@ ex:DGAP a skos:Concept ;
   skos:altLabel "DGAP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/40234-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/40234-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Gesellschaft_f%C3%BCr_Ausw%C3%A4rtige_Politik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2668,7 +2722,7 @@ ex:DGB a skos:Concept ;
   skos:altLabel "DGB"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008287-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/2008287-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Gewerkschaftsbund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2677,7 +2731,7 @@ ex:DGBJugend a skos:Concept ;
   skos:prefLabel "DGB-Jugend"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5131102-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/5131102-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DGB-Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2695,7 +2749,7 @@ ex:DGK a skos:Concept ;
   skos:altLabel "DGK"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/7675-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/7675-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DZ_Bank#Geschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2705,7 +2759,7 @@ ex:DHP a skos:Concept ;
   skos:altLabel "DHP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5030393-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/5030393-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsch-Hannoversche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2715,7 +2769,7 @@ ex:DIAG a skos:Concept ;
   skos:altLabel "DIAG"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/355355-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/355355-3> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -2724,7 +2778,7 @@ ex:DIHT a skos:Concept ;
   skos:altLabel "DIHT"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008689-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/2008689-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Industrie-_und_Handelskammertag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2734,7 +2788,7 @@ ex:DIW a skos:Concept ;
   skos:altLabel "DIW"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/37419-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/37419-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Institut_f%C3%BCr_Wirtschaftsforschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2754,7 +2808,7 @@ ex:DjD a skos:Concept ;
   skos:altLabel "DJD"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2033034-0> ;
+  skos:exactMatch <https://d-nb.info/gnd/2033034-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Geschichte_der_Jungdemokraten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2764,7 +2818,7 @@ ex:DJK a skos:Concept ;
   skos:altLabel "DJK"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2002260-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/2002260-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/DJK-Sportverband> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2774,7 +2828,7 @@ ex:djo a skos:Concept ;
   skos:altLabel "djo"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2041261-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/2041261-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Djo-Deutsche_Jugend_in_Europa> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2784,7 +2838,7 @@ ex:DKBL a skos:Concept ;
   skos:altLabel "DKBL"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/39989-9> ;
+  skos:exactMatch <https://d-nb.info/gnd/39989-9> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -2793,7 +2847,7 @@ ex:DKP a skos:Concept ;
   skos:altLabel "DKP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/6701-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/6701-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Kommunistische_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2813,7 +2867,7 @@ ex:DLF a skos:Concept ;
   skos:altLabel "DLF"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/38768-X> ;
+  skos:exactMatch <https://d-nb.info/gnd/38768-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutschlandfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2823,7 +2877,7 @@ ex:DLG a skos:Concept ;
   skos:altLabel "DLG"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007640-X> ;
+  skos:exactMatch <https://d-nb.info/gnd/2007640-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Landwirtschafts-Gesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2840,7 +2894,7 @@ ex:DMS a skos:Concept ;
 
 ex:DNatS a skos:Concept ;
   skos:prefLabel "Deutsche Nationalstiftung (seit 1993)"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5146980-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Nationalstiftung> ;
@@ -2851,17 +2905,17 @@ ex:DNB a skos:Concept ;
   skos:prefLabel "Deutsches Nachrichtenbüro"@de ;
   skos:altLabel "DNB"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5164535-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/5164535-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Nachrichtenb%C3%BCro> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Dnes a skos:Concept ;
-  skos:prefLabel "Mladá fronta dnes"@de ;
+  skos:prefLabel "Mladá fronta dnes"@cs ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4560234-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/4560234-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Mlad%C3%A1_fronta_Dnes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2870,8 +2924,8 @@ ex:DNR a skos:Concept ;
   skos:prefLabel "Deutscher Naturschutzring"@de ;
   skos:altLabel "DNR"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1008844-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1008844-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Naturschutzring> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2881,7 +2935,7 @@ ex:DNVP a skos:Concept ;
   skos:altLabel "DNVP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/117762-X> ;
+  skos:exactMatch <https://d-nb.info/gnd/117762-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutschnationale_Volkspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2890,7 +2944,7 @@ ex:DNZ a skos:Concept ;
   skos:prefLabel "Deutsche National-Zeitung"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4231989-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/4231989-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/National-Zeitung_(M%C3%BCnchen)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2899,7 +2953,7 @@ ex:DObl a skos:Concept ;
   skos:prefLabel "Das Ostpreußenblatt"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4364274-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/4364274-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Preu%C3%9Fische_Allgemeine_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2909,7 +2963,7 @@ ex:DP a skos:Concept ;
   skos:altLabel "DP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/30964-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/30964-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2919,7 +2973,7 @@ ex:dpa a skos:Concept ;
   skos:altLabel "dpa"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007876-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/2007876-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Presse-Agentur> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2929,7 +2983,7 @@ ex:DParlG a skos:Concept ;
   skos:altLabel "DPG"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2088038-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/2088038-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Parlamentarische_Gesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2949,7 +3003,7 @@ ex:DPG a skos:Concept ;
   skos:altLabel "DPG"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2088038-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/2088038-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Parlamentarische_Gesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2959,7 +3013,7 @@ ex:DPGe a skos:Concept ;
   skos:altLabel "DPG"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4011762-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/4011762-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Postgewerkschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2969,7 +3023,7 @@ ex:DPS a skos:Concept ;
   skos:altLabel "DPS"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/37036-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/37036-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Demokratische_Partei/Demokratische_Partei_Saar#Geschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2979,7 +3033,7 @@ ex:DR a skos:Concept ;
   skos:altLabel "DR"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/17469-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/17469-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Konservative_Partei_%E2%80%93_Deutsche_Rechtspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2989,7 +3043,7 @@ ex:DRK a skos:Concept ;
   skos:altLabel "DRK"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2116802-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/2116802-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Rotes_Kreuz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3009,7 +3063,7 @@ ex:DSB a skos:Concept ;
   skos:altLabel "DSB"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008517-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/2008517-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Sportbund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3019,7 +3073,7 @@ ex:DSF a skos:Concept ;
   skos:altLabel "DSF"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2012053-9> ;
+  skos:exactMatch <https://d-nb.info/gnd/2012053-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_Deutsch-Sowjetische_Freundschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3029,7 +3083,7 @@ ex:dsj a skos:Concept ;
   skos:altLabel "dsj"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2007998-9> ;
+  skos:exactMatch <https://d-nb.info/gnd/2007998-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Sportjugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3057,7 +3111,7 @@ ex:DSP a skos:Concept ;
   skos:altLabel "DSP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/10192254-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/10192254-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Sozialdemokratische_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3077,7 +3131,7 @@ ex:DStP a skos:Concept ;
   skos:altLabel "DSP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/116380-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/116380-2> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -3085,7 +3139,7 @@ ex:DT a skos:Concept ;
   skos:prefLabel "Daily Telegraph"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4148752-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/4148752-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Daily_Telegraph> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3149,7 +3203,7 @@ ex:DVP a skos:Concept ;
   skos:altLabel "DVP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4028389-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/4028389-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Demokratische_Volkspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3169,7 +3223,7 @@ ex:DW a skos:Concept ;
   skos:altLabel "DW"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/10085357-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/10085357-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Welle> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3179,7 +3233,7 @@ ex:DWK a skos:Concept ;
   skos:altLabel "DWK"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/35128-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/35128-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Wirtschaftskommission> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3198,7 +3252,7 @@ ex:DZP a skos:Concept ;
   skos:altLabel "DZP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008369-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/2008369-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3208,7 +3262,7 @@ ex:DZPFraktBT a skos:Concept ;
   skos:altLabel "DZP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2008369-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/2008369-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3217,7 +3271,7 @@ ex:DZuWz a skos:Concept ;
   skos:prefLabel "Deutsche Zeitung und Wirtschaftszeitung"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4424585-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/4424585-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Zeitung_und_Wirtschaftszeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -6541,6 +6595,7 @@ ex:RGW a skos:Concept ;
   skos:exactMatch <http://d-nb.info/gnd/1016341-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rat_f%C3%BCr_gegenseitige_Wirtschaftshilfe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Dublette: COMECON!
 
 
 ex:Rhein-Echo a skos:Concept ;
