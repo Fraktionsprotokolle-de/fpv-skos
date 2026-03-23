@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-03-23">23. März 2026, 12:00 Uhr</date>
+				<date when="2026-03-23">23. März 2026, 12:28 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -446,6 +446,8 @@
 				<note type="entityType">topic</note>
 				<ref type="exactMatch" target="http://d-nb.info/gnd/4131647-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Atomwaffensperrvertrag"/>
+				<ref type="seeAlso" target="#MBFR"/>
+				<ref type="seeAlso" target="#SALT"/>
 			</item>
 			<item xml:id="AugAll">
 				<term type="pref" xml:lang="de">Augsburger Allgemeine</term>
