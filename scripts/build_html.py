@@ -19,6 +19,7 @@ g.parse(TTL_PATH, format="turtle")
 
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 
+
 def get_local_id(uri: str) -> str:
     """
     Extract local ID from URI. Assumes your IDs are the last path segment.
@@ -28,6 +29,19 @@ def get_local_id(uri: str) -> str:
     u = uri.rstrip("/")
     return u.split("/")[-1]
 
+
+def get_pref_label_de(concept) -> str | None:
+    """Return the German prefLabel for a concept, or None."""
+    for label in g.objects(concept, SKOS.prefLabel):
+        if isinstance(label, Literal) and label.language == "de":
+            return str(label)
+    # Fallback: any prefLabel
+    for label in g.objects(concept, SKOS.prefLabel):
+        if isinstance(label, Literal):
+            return str(label)
+    return None
+
+
 def lang_sorted_literals(lits):
     """Return list of (lang, text) sorted by lang then text."""
     out = []
@@ -35,6 +49,7 @@ def lang_sorted_literals(lits):
         if isinstance(l, Literal):
             out.append((l.language or "", str(l)))
     return sorted(out, key=lambda x: (x[0], x[1].lower()))
+
 
 def write_detail_page(concept):
     uri = str(concept)
@@ -46,6 +61,7 @@ def write_detail_page(concept):
     notations = list(g.objects(concept, SKOS.notation))
     exact = list(g.objects(concept, SKOS.exactMatch))
     close = list(g.objects(concept, SKOS.closeMatch))
+    related = list(g.objects(concept, SKOS.related))
 
     pref_de = None
     for p in pref:
@@ -82,6 +98,26 @@ def write_detail_page(concept):
         for u in sorted({str(x) for x in uris}):
             eu = escape(u)
             rows.append(f"<li><a href='{eu}'>{eu}</a></li>")
+        return f"""
+        <section>
+          <h2>{escape(title)}</h2>
+          <ul class="kv">{''.join(rows)}</ul>
+        </section>
+        """
+
+    def render_related_list(title, related_uris):
+        """Render skos:related as internal links with prefLabel."""
+        if not related_uris:
+            return ""
+        rows = []
+        for rel in sorted(related_uris, key=lambda r: str(r)):
+            rel_id = get_local_id(str(rel))
+            rel_label = get_pref_label_de(rel) or rel_id
+            rel_href = f"../{quote(rel_id)}/"
+            rows.append(
+                f"<li><a href='{escape(rel_href)}'>{escape(rel_label)}</a>"
+                f" <span class='uri'>{escape(rel_id)}</span></li>"
+            )
         return f"""
         <section>
           <h2>{escape(title)}</h2>
@@ -153,6 +189,7 @@ def write_detail_page(concept):
 {render_lit_list("Anmerkung (note)", notes)}
 {render_uri_list("exactMatch", exact)}
 {render_uri_list("closeMatch", close)}
+{render_related_list("Verwandte Konzepte (related)", related)}
 
 </body>
 </html>
