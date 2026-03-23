@@ -148,16 +148,6 @@ def convert_ttl_to_xml(input_path, output_path):
                 target=str(match)
             )
 
-        # skos:related → TEI ref type="seeAlso"
-        for related in sorted(g.objects(concept, SKOS.related)):
-            related_id = str(related).split('/')[-1]
-            ET.SubElement(
-                item,
-                f"{{{TEI_NS}}}ref",
-                type="seeAlso",
-                target=f"#{related_id}"
-            )
-
     # XML formatieren
     xml_str = ET.tostring(root, encoding='utf-8')
     parsed_xml = minidom.parseString(xml_str)

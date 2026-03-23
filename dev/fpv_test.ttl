@@ -1,0 +1,229 @@
+# Beispieldatei (fiktiv) – 20 Konzepte mit skos:related-Verknüpfungen
+@prefix ex:  <https://voc.fraktionsprotokolle.de/id/> .
+@prefix fpv: <https://voc.fraktionsprotokolle.de/schema/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ------------------------------------------------------------
+# FPV Datenmodell (Kurzprofil)
+# - Alle Einträge sind skos:Concept.
+# - Die lokale ID steht in der URI: ex:{ID}
+# - Klassifikation über skos:notation als typisiertes Literal:
+#     skos:notation "{code}"^^fpv:entityType
+# - Zulässige Codes (entityType): siehe fpv:entityTypeNote unten.
+# - Verwandte Konzepte können über skos:related verknüpft werden:
+#     skos:related ex:AndereID , ex:NochEineID .
+#   Hinweis: skos:related ist symmetrisch – wird die Beziehung
+#   in eine Richtung angegeben, gilt sie auch umgekehrt.
+# ------------------------------------------------------------
+
+fpv:entityType a rdfs:Datatype ;
+  rdfs:label "FPV entity type code"@en ;
+  rdfs:label "FPV-Entitätstyp (Code)"@de ;
+  rdfs:comment "Datatype for controlled, short classification codes used in skos:notation, e.g. \"org\"^^fpv:entityType."@en ;
+  rdfs:comment "Datentyp für kontrollierte, kurze Klassifikationscodes in skos:notation, z. B. \"org\"^^fpv:entityType."@de .
+
+# Dokumentation der zulässigen Codes (nicht maschinell erzwungen).
+fpv:entityTypeNote a skos:Concept ;
+  skos:prefLabel "Zulässige entityType-Codes (Dokumentation)"@de ;
+  skos:note """
+org    = Organisation / Institution / Verband / Gremium
+com    = Unternehmen / Wirtschaft (falls benötigt)
+news   = Presse / Zeitung / Medium (falls benötigt)
+topic  = Sachbegriff / Thema (z. B. "Mülltrennung")
+law    = Gesetz / Rechtsnorm (falls benötigt)
+pol    = Partei / politische Gruppierung (falls benötigt)
+
+Zusätzliche Relationen:
+skos:related = Verweis auf thematisch verwandte Konzepte innerhalb des FPV
+"""@de .
+
+
+# === 20 fiktive Beispielkonzepte ===
+
+ex:NATO a skos:Concept ;
+  skos:prefLabel "North Atlantic Treaty Organization"@de ;
+  skos:altLabel "NATO"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/2006524-8> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/NATO> ;
+  skos:related ex:Bundeswehr , ex:WEU , ex:Wiederbewaffnung ;
+  skos:note "Westliches Verteidigungsbündnis, gegründet 1949."@de .
+
+ex:Bundeswehr a skos:Concept ;
+  skos:prefLabel "Bundeswehr"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/2116728-X> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundeswehr> ;
+  skos:related ex:NATO , ex:Wiederbewaffnung , ex:BMVg ;
+  skos:note "Streitkräfte der Bundesrepublik Deutschland."@de .
+
+ex:Wiederbewaffnung a skos:Concept ;
+  skos:prefLabel "Wiederbewaffnung"@de ;
+  skos:notation "topic"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Wiederbewaffnung> ;
+  skos:related ex:NATO , ex:Bundeswehr , ex:EVG ;
+  skos:note "Debatte über die Wiederaufstellung deutscher Streitkräfte nach 1945."@de .
+
+ex:EVG a skos:Concept ;
+  skos:prefLabel "Europäische Verteidigungsgemeinschaft"@de ;
+  skos:altLabel "EVG"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/4015720-7> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Verteidigungsgemeinschaft> ;
+  skos:related ex:Wiederbewaffnung , ex:WEU ;
+  skos:note "Gescheitertes Projekt einer gemeinsamen europäischen Armee (1952–1954)."@de .
+
+ex:WEU a skos:Concept ;
+  skos:prefLabel "Westeuropäische Union"@de ;
+  skos:altLabel "WEU"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/5005685-3> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Westeurop%C3%A4ische_Union> ;
+  skos:related ex:NATO , ex:EVG ;
+  skos:note "Europäisches Verteidigungsbündnis (1948–2011)."@de .
+
+ex:BMVg a skos:Concept ;
+  skos:prefLabel "Bundesministerium der Verteidigung"@de ;
+  skos:altLabel "BMVg"@de ;
+  skos:notation "pol"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/2028994-7> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Verteidigung> ;
+  skos:related ex:Bundeswehr , ex:Wehrpflicht ;
+  skos:note "Bundesministerium, zuständig für Verteidigung und Bundeswehr."@de .
+
+ex:Wehrpflicht a skos:Concept ;
+  skos:prefLabel "Wehrpflicht"@de ;
+  skos:notation "topic"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Wehrpflicht_in_Deutschland> ;
+  skos:related ex:BMVg , ex:Bundeswehr ;
+  skos:note "Gesetzliche Verpflichtung zum Wehrdienst."@de .
+
+ex:EWG a skos:Concept ;
+  skos:prefLabel "Europäische Wirtschaftsgemeinschaft"@de ;
+  skos:altLabel "EWG"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/5765-8> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Wirtschaftsgemeinschaft> ;
+  skos:related ex:EGKS , ex:RoemerVertraege , ex:EG ;
+  skos:note "Europäische Wirtschaftsgemeinschaft, Vorläufer der EU."@de .
+
+ex:EGKS a skos:Concept ;
+  skos:prefLabel "Europäische Gemeinschaft für Kohle und Stahl"@de ;
+  skos:altLabel "EGKS"@de ;
+  skos:altLabel "Montanunion"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/5007456-8> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Gemeinschaft_f%C3%BCr_Kohle_und_Stahl> ;
+  skos:related ex:EWG , ex:RoemerVertraege ;
+  skos:note "Erste supranationale europäische Organisation (1951)."@de .
+
+ex:RoemerVertraege a skos:Concept ;
+  skos:prefLabel "Römische Verträge"@de ;
+  skos:notation "law"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/R%C3%B6mische_Vertr%C3%A4ge> ;
+  skos:related ex:EWG , ex:EGKS , ex:EG ;
+  skos:note "Gründungsverträge der EWG und EURATOM (1957)."@de .
+
+ex:EG a skos:Concept ;
+  skos:prefLabel "Europäische Gemeinschaften"@de ;
+  skos:altLabel "EG"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/5098525-5> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Gemeinschaften> ;
+  skos:related ex:EWG , ex:RoemerVertraege ;
+  skos:note "Sammelbezeichnung für EGKS, EWG und EURATOM."@de .
+
+ex:Spiegel a skos:Concept ;
+  skos:prefLabel "Der Spiegel"@de ;
+  skos:notation "news"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/4056205-0> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Der_Spiegel> ;
+  skos:related ex:SpiegelAffaere , ex:Pressefreiheit ;
+  skos:note "Deutsches Nachrichtenmagazin."@de .
+
+ex:SpiegelAffaere a skos:Concept ;
+  skos:prefLabel "Spiegel-Affäre"@de ;
+  skos:notation "topic"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Spiegel-Aff%C3%A4re> ;
+  skos:related ex:Spiegel , ex:Pressefreiheit ;
+  skos:note "Politischer Skandal 1962 um die Durchsuchung der Spiegel-Redaktion."@de .
+
+ex:Pressefreiheit a skos:Concept ;
+  skos:prefLabel "Pressefreiheit"@de ;
+  skos:notation "topic"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Pressefreiheit> ;
+  skos:related ex:Spiegel , ex:SpiegelAffaere , ex:Grundgesetz ;
+  skos:note "Grundrecht der freien Berichterstattung."@de .
+
+ex:Grundgesetz a skos:Concept ;
+  skos:prefLabel "Grundgesetz für die Bundesrepublik Deutschland"@de ;
+  skos:altLabel "GG"@de ;
+  skos:notation "law"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/4072133-4> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Grundgesetz_f%C3%BCr_die_Bundesrepublik_Deutschland> ;
+  skos:related ex:Pressefreiheit , ex:ParlRat ;
+  skos:note "Verfassung der Bundesrepublik Deutschland."@de .
+
+ex:ParlRat a skos:Concept ;
+  skos:prefLabel "Parlamentarischer Rat"@de ;
+  skos:notation "pol"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/2005521-6> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Parlamentarischer_Rat> ;
+  skos:related ex:Grundgesetz ;
+  skos:note "Verfassunggebende Versammlung für das Grundgesetz (1948–1949)."@de .
+
+ex:DGB a skos:Concept ;
+  skos:prefLabel "Deutscher Gewerkschaftsbund"@de ;
+  skos:altLabel "DGB"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/2004088-1> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Gewerkschaftsbund> ;
+  skos:related ex:Mitbestimmung , ex:IGMetall ;
+  skos:note "Dachverband der deutschen Gewerkschaften."@de .
+
+ex:IGMetall a skos:Concept ;
+  skos:prefLabel "Industriegewerkschaft Metall"@de ;
+  skos:altLabel "IG Metall"@de ;
+  skos:notation "org"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/2006545-5> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/IG_Metall> ;
+  skos:related ex:DGB , ex:Mitbestimmung ;
+  skos:note "Größte Einzelgewerkschaft in Deutschland."@de .
+
+ex:Mitbestimmung a skos:Concept ;
+  skos:prefLabel "Mitbestimmung"@de ;
+  skos:notation "topic"^^fpv:entityType ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Mitbestimmung> ;
+  skos:related ex:DGB , ex:IGMetall , ex:MontanMitbestG ;
+  skos:note "Beteiligung der Arbeitnehmer an Unternehmensentscheidungen."@de .
+
+ex:MontanMitbestG a skos:Concept ;
+  skos:prefLabel "Montan-Mitbestimmungsgesetz"@de ;
+  skos:altLabel "MontanMitbestG"@de ;
+  skos:notation "law"^^fpv:entityType ;
+  ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Montan-Mitbestimmungsgesetz> ;
+  skos:related ex:Mitbestimmung , ex:EGKS ;
+  skos:note "Gesetz über die Mitbestimmung in der Montanindustrie (1951)."@de .
