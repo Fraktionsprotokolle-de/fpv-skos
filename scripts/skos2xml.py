@@ -148,15 +148,17 @@ def convert_ttl_to_xml(input_path, output_path):
                 target=str(match)
             )
 
-        # skos:related → TEI ref type="seeAlso"
-        for related in sorted(g.objects(concept, SKOS.related)):
-            related_id = str(related).split('/')[-1]
-            ET.SubElement(
-                item,
-                f"{{{TEI_NS}}}ref",
-                type="seeAlso",
-                target=f"#{related_id}"
-            )
+        # skos:related → TEI list type="related" mit item-Einträgen
+        related_objects = sorted(g.objects(concept, SKOS.related))
+        if related_objects:
+            related_list = ET.SubElement(item, f"{{{TEI_NS}}}list", type="related")
+            for related in related_objects:
+                related_id = str(related).split('/')[-1]
+                ET.SubElement(
+                    related_list,
+                    f"{{{TEI_NS}}}item",
+                    corresp=f"#{related_id}"
+                )
 
     # XML formatieren
     xml_str = ET.tostring(root, encoding='utf-8')

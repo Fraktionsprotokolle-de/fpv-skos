@@ -104,7 +104,8 @@ ex:AA a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <http://d-nb.info/gnd/2028884-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ausw%C3%A4rtiges_Amt> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  skos:note "Erläuterungen können jetzt hier stehen."@de ;
+  skos:related ex:AAPD .
 
 ex:AAPD a skos:Concept ;
   skos:prefLabel "Akten zur auswärtigen Politik der Bundesrepublik Deutschland"@de ;
@@ -112,7 +113,8 @@ ex:AAPD a skos:Concept ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <http://d-nb.info/1233778501> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  skos:note "Erläuterungen können jetzt hier stehen."@de ;
+  skos:related ex:AA.
 
 ex:ABC a skos:Concept ;
   skos:prefLabel "American Broadcasting Company"@de ;
