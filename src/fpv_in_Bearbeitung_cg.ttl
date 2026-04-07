@@ -4670,20 +4670,24 @@ ex:HU a skos:Concept ;
 
 
 ex:IAEO a skos:Concept ;
-  skos:prefLabel "International Atomic Energy Agency"@de ;
+  skos:prefLabel "Internationale Atomenergie-Organisation"@de ;
+  skos:altLabel "International Atomic Energy Agency"@en ;
   skos:altLabel "IAEO"@de ;
+  skos:altLabel "IAEA"@en ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2014563-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2014563-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationale_Atomenergie-Organisation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IAO a skos:Concept ;
   skos:prefLabel "Internationale Arbeitsorganisation"@de ;
+  skos:altLabel "International Labour Organisation"@en ;
   skos:altLabel "IAO"@de ;
+  skos:altLabel "ILO"@en ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4367-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationale_Arbeitsorganisation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -4691,69 +4695,72 @@ ex:IAO a skos:Concept ;
 
 ex:IBEK a skos:Concept ;
   skos:prefLabel "Ingenieur- und Beratungsgesellschaft für Organisation und Technik"@de ;
-  skos:altLabel "IBEK"@de ;
+  skos:altLabel "ibek"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/6058538-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/6058538-9> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IBFG a skos:Concept ;
   skos:prefLabel "Internationaler Bund Freier Gewerkschaften"@de ;
   skos:altLabel "IBFG"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2015628-5> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2015628-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationaler_Bund_Freier_Gewerkschaften> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IBM a skos:Concept ;
-  skos:prefLabel "International Business Machines Corporation"@de ;
-  skos:altLabel "IBM"@de ;
+  skos:prefLabel "International Business Machines Corporation"@en ;
+  skos:altLabel "IBM"@en ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1042-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IBM> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:ID a skos:Concept ;
-  skos:prefLabel "Informationsdienst zur Verbreitung unterbliebener Nachrichten"@de ;
+  skos:prefLabel "Informations-Dienst zur Verbreitung unterbliebener Nachrichten"@de ;
   skos:altLabel "ID"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/16296974-0> ;
+  skos:exactMatch <https://d-nb.info/gnd/16296974-0> ;
+  skos:closeMatch <https://d-nb.info/015110591> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Informations-Dienst_zur_Verbreitung_unterbliebener_Nachrichten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IDA a skos:Concept ;
-  skos:prefLabel "International Development Association"@de ;
-  skos:altLabel "IDA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1004638-0> ;
+  skos:prefLabel "International Development Association"@en ;
+  skos:prefLabel "Internationale Entwicklungsorganisation"@de ;
+  skos:altLabel "IDA"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1004638-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/International_Development_Association> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IfD a skos:Concept ;
   skos:prefLabel "Institut für Demoskopie Allensbach"@de ;
-  skos:altLabel "IfD"@de ;
+  skos:altLabel "IfD Allensbach"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2013703-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2013703-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Demoskopie_Allensbach> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #notation evtl. com.
 
 
 ex:IFEU a skos:Concept ;
-  skos:prefLabel "IFEU"@de ;
-  skos:altLabel "Institut für Energie- und Umweltforschung"@de ;
+  skos:prefLabel "Institut für Energie- und Umweltforschung Heidelberg"@de ;
+  skos:altLabel "ifeu"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2079170-7> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2079170-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Energie-_und_Umweltforschung_Heidelberg> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4763,9 +4770,10 @@ ex:IFM a skos:Concept ;
   skos:altLabel "IFM"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2104913-0> ;
+  skos:exactMatch <https://d-nb.info/gnd/2104913-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Initiative_Frieden_und_Menschenrechte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #notation evtl. pol.
 
 
 ex:Ifo a skos:Concept ;
@@ -4773,17 +4781,19 @@ ex:Ifo a skos:Concept ;
   skos:altLabel "Ifo"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/63922-9> ;
+  skos:exactMatch <https://d-nb.info/gnd/63922-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ifo_Institut_f%C3%BCr_Wirtschaftsforschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. siehe hierunter, auch zur unterschiedlichen notation.
 
 
 ex:ifo-institut a skos:Concept ;
-  skos:prefLabel "ifo Institut für Wirtschaftsforschung"@de ;
-  skos:altLabel "ifo-Institut"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/16345994-0> ;
+  skos:prefLabel "Ifo-Institut für Wirtschaftsforschung"@de ;
+  skos:altLabel "Institut für Wirtschaftsforschung"@de ;
+  skos:altLabel "Ifo"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/9046-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ifo_Institut_f%C3%BCr_Wirtschaftsforschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4792,98 +4802,112 @@ ex:IfZ a skos:Concept ;
   skos:prefLabel "Institut für Zeitgeschichte"@de ;
   skos:altLabel "IfZ"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2014524-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2014524-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Zeitgeschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IGBE a skos:Concept ;
-  skos:prefLabel "IG Bergbau und Energie (1946-1997)"@de ;
-  skos:altLabel "IG BE"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2013555-5> ;
+  skos:prefLabel "IG Bergbau und Energie"@de ;
+  skos:altLabel "Industriegewerkschaft Bergbau und Energie"@de ;
+  skos:altLabel "IGBE"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2013555-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Bergbau_und_Energie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. Zeitraum des Bestehens: 1960-1997. 1948-1960: https://d-nb.info/gnd/2013539-7 (IG Bergbau), ab 1997: https://d-nb.info/gnd/5184092-3 u. https://d-nb.info/gnd/1376276941 (IGBCE, siehe zwei hierunter).
 
 
 ex:IGBSE a skos:Concept ;
-  skos:prefLabel "IG Bau-Steine-Erdene"@de ;
+  skos:prefLabel "IG Bau-Steine-Erden"@de ;
+  skos:altLabel "Industriegewerkschaft Bau, Steine, Erden"@de ;
   skos:altLabel "IG BSE"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2013523-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Bau-Steine-Erden> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1951-1995. ab 1996: https://d-nb.info/gnd/5165754-5 (IG BAU).
 
 
 ex:IGCHemie a skos:Concept ;
-  skos:prefLabel "IG Chemie-Papier-Keramik (1946-1997)"@de ;
+  skos:prefLabel "IG Chemie-Papier-Keramik"@de ;
+  skos:altLabel "Industriegewerkschaft Chemie, Papier, Keramik"@de ;
   skos:altLabel "IG CPK"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2013571-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Chemie-Papier-Keramik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Schreibung ID prüfen. Zeitraum des Bestehens: 1946-1996. ab 1997: IGBCE (siehe zwei hierüber)
 
 
 ex:IGDruck a skos:Concept ;
-  skos:prefLabel "Industriegewerkschaft Druck und Papier"@de ;
-  skos:altLabel "IG Druck und Papier"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "IG Druck und Papier"@de ;
+  skos:altLabel "Industriegewerkschaft Druck und Papier"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2013587-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Druck_und_Papier> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1948-1989. 1989-2001: https://d-nb.info/gnd/517279-2 (IG Medien), ab 2001: https://d-nb.info/gnd/10024483-X (ver.di).
 
 
 ex:IGFarben a skos:Concept ;
-  skos:prefLabel "IG Farben (Interessengemeinschaft Farbenindustrie AG)"@de ;
+  skos:prefLabel "IG Farben"@de ;
+  skos:altLabel "Interessengemeinschaft Farbenindustrie AG"@de ;
   skos:altLabel "I.G. Farben"@de ;
+  skos:altLabel "igfag"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16005-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/I.G._Farben> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1925-1952.
 
 
 ex:IGH a skos:Concept ;
   skos:prefLabel "Internationaler Gerichtshof"@de ;
   skos:altLabel "IGH"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/36344-3> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/36344-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationaler_Gerichtshof> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IGM a skos:Concept ;
-  skos:prefLabel "Industriegewerkschaft Metall"@de ;
+  skos:prefLabel "IG Metall"@de ;
+  skos:altLabel "Industriegewerkschaft Metall"@de ;
   skos:altLabel "IGM"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2013524-5> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2013524-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Metall> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1950-1990. ab 1991: https://d-nb.info/gnd/2123264-7.
 
 
 ex:IHT a skos:Concept ;
-  skos:prefLabel "The International Herald Tribune"@de ;
-  skos:altLabel "IHT"@de ;
+  skos:prefLabel "International Herald Tribune"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4476359-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/4476359-1> ;
+  skos:closeMatch <https://en.wikipedia.org/wiki/International_Herald_Tribune> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_New_York_Times_International_Edition> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IISG a skos:Concept ;
   skos:prefLabel "Internationales Institut für Sozialgeschichte"@de ;
+  skos:altLabel "Internationaal Instituut voor Sociale Geschiedenis"@nl ;
+  skos:altLabel "International Institute of Social History"@en ;
   skos:altLabel "IISG"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1004926-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1004926-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationales_Institut_f%C3%BCr_Sozialgeschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4892,17 +4916,18 @@ ex:IK a skos:Concept ;
   skos:prefLabel "Industriekurier"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4424587-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/4424587-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Industriekurier> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IKF a skos:Concept ;
   skos:prefLabel "Interkirchlicher Friedensrat"@de ;
-  skos:altLabel "IKF"@de ;
+  skos:altLabel "Interkerkelijk Vredesberaad"@nl ;
+  skos:altLabel "IKV"@nl ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2075344-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2075344-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Interkirchlicher_Friedensrat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4911,8 +4936,8 @@ ex:infas a skos:Concept ;
   skos:prefLabel "Institut für angewandte Sozialwissenschaft"@de ;
   skos:altLabel "infas"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1013624-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1013624-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Infas> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -4927,41 +4952,47 @@ ex:InFrueh a skos:Concept ;
 
 
 ex:INTERATOM a skos:Concept ;
-  skos:prefLabel "Internationale Atomreaktorbau-GmbH"@de ;
+  skos:prefLabel "Internationale Atomreaktorbau GmbH"@de ;
   skos:altLabel "INTERATOM"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2078499-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2078499-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Interatom> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #zur Groß- und Kleinschreibung vgl. Framatome.
 
 
 ex:Interflug a skos:Concept ;
-  skos:prefLabel "Interflug Gesellschaft für internationalen Flugverkehr mit beschränkter Haftung"@de ;
-  skos:altLabel "Interflug GmbH"@de ;
+  skos:prefLabel "Interflug"@de ;
+  skos:altLabel "Gesellschaft für Internationalen Flugverkehr"@de ;
+  skos:altLabel "INTERFLUG DDR"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2150228-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Interflug> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:intern a skos:Concept ;
-  skos:prefLabel "Intern: Informationen des SPD-Parteivorstands für aktive Mitglieder"@de ;
-  skos:altLabel "Intern"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "Intern"@de ;
+  skos:altLabel "Intern. Informationen des SPD-Parteivorstands für aktive Mitglieder"@de ;
+  skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/010367810> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IOC a skos:Concept ;
-  skos:prefLabel "International Olympic Committee"@de ;
-  skos:altLabel "IOC"@de ;
+  skos:prefLabel "Internationales Olympisches Komitee"@de ;
+  skos:altLabel "International Olympic Committee"@en ;
+  skos:altLabel "IOK"@de ;
+  skos:altLabel "IOC"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/210056-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/210056-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationales_Olympisches_Komitee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID / prefLabel.
 
 
 ex:IPA a skos:Concept ;
@@ -4969,74 +5000,82 @@ ex:IPA a skos:Concept ;
   skos:altLabel "IPA"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1002525-X> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IPPNW a skos:Concept ;
-  skos:prefLabel "International Physicians for the Prevention of Nuclear War"@de ;
-  skos:altLabel "IPPNW"@de ;
+  skos:prefLabel "Internationale Ärzte für die Verhütung des Atomkrieges"@de ;
+  skos:altLabel "International Physicians for the Prevention of Nuclear War"@en ;
+  skos:altLabel "IPPNW"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/5070419-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2084646-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IPPNW> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID / prefLabel.
 
 
 ex:IPU a skos:Concept ;
   skos:prefLabel "Interparlamentarische Union"@de ;
   skos:altLabel "IPU"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1010516-5> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1010516-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Interparlamentarische_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IRA a skos:Concept ;
-  skos:prefLabel "Irish Republican Army"@de ;
-  skos:altLabel "IRA"@de ;
+  skos:prefLabel "Irish Republican Army"@en ;
+  skos:altLabel "Irisch-Republikanische Armee"@de ;
+  skos:altLabel "IRA"@en ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2038353-8> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2038353-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Irisch-Republikanische_Armee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #notation überlegen.
 
 
 ex:ISA a skos:Concept ;
   skos:prefLabel "Internationale Meeresbodenbehörde"@de ;
-  skos:altLabel "ISA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:altLabel "International Seabed Authority"@en ;
+  skos:altLabel "ISA"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/6099121-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationale_Meeresbodenbehörde> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID / prefLabel.
 
 
 ex:ISK a skos:Concept ;
-  skos:prefLabel "Internationale Sozialistischer Kampfbund"@de ;
+  skos:prefLabel "Internationaler Sozialistischer Kampfbund"@de ;
   skos:altLabel "ISK"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2070546-3> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2070546-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationaler_Sozialistischer_Kampfbund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. Zeitraum des Bestehens: 1926-1945.
 
 
 ex:ITF a skos:Concept ;
   skos:prefLabel "Internationale Transportarbeiter-Föderation"@de ;
   skos:altLabel "ITF"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2015120-2> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2015120-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationale_Transportarbeiter-F%C3%B6deration> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:IVG a skos:Concept ;
-  skos:prefLabel "Industrieverwaltungsgesellschaft mbH"@de ;
+  skos:prefLabel "Industrieverwaltungsgesellschaft"@de ;
   skos:altLabel "IVG"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "com"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4451347-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IVG_Immobilien> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5044,19 +5083,21 @@ ex:IVG a skos:Concept ;
 
 ex:IWF a skos:Concept ;
   skos:prefLabel "Internationaler Währungsfond"@de ;
+  skos:altLabel "International Monetary Fund"@en ;
   skos:altLabel "IWF"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1013082-2> ;
+  skos:altLabel "IMF"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1013082-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationaler_W%C3%A4hrungsfonds> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Izv a skos:Concept ;
-  skos:prefLabel "Izvestija"@de ;
+  skos:prefLabel "Izvestija"@ru ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4394628-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/4394628-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Iswestija> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -5066,10 +5107,10 @@ ex:Izv a skos:Concept ;
 
 
 ex:JdB a skos:Concept ;
-  skos:prefLabel "Journal do Brasil"@de ;
+  skos:prefLabel "Jornal do Brasil"@pt ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/1160333017> ;
+  skos:exactMatch <https://d-nb.info/gnd/1160333017> ;
   skos:closeMatch <https://pt.wikipedia.org/wiki/Jornal_do_Brasil> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -5077,66 +5118,70 @@ ex:JdB a skos:Concept ;
 ex:JEF a skos:Concept ;
   skos:prefLabel "Junge Europäische Föderalisten"@de ;
   skos:altLabel "JEF"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2040181-4> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2040181-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Junge_Europ%C3%A4ische_F%C3%B6deralisten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:journalist a skos:Concept ;
   skos:prefLabel "journalist"@de ;
+  skos:altLabel "Journalist. Das Medienmagazin"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1254635262> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Journalist_(Zeitschrift)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:JPost a skos:Concept ;
-  skos:prefLabel "The Jerusalem Post"@de ;
-  skos:altLabel "JPost"@de ;
+  skos:prefLabel "The Jerusalem Post"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4353146-5> ;
+  skos:exactMatch <https://d-nb.info/gnd/4353146-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Jerusalem_Post> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Titel 1932-1950: The Palestine Post.
 
 
 ex:JU a skos:Concept ;
   skos:prefLabel "Junge Union"@de ;
+  skos:altLabel "Junge Union Deutschlands"@de ;
   skos:altLabel "JU"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2017005-1> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2017005-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Junge_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Jusos a skos:Concept ;
   skos:prefLabel "Jungsozialisten"@de ;
+  skos:altLabel "Arbeitsgemeinschaft der Jungsozialistinnen und Jungsozialisten in der SPD"@de ;
   skos:altLabel "Jusos"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/2106151-8> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2106151-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Jusos> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:JusoZeitschrift a skos:Concept ;
-  skos:prefLabel "JUSO - Zeitschrift der Jungsozialisten in der SPD"@de ;
-  skos:altLabel "JUSO"@de ;
+  skos:prefLabel "JUSO"@de ;
+  skos:altLabel "JUSO. Zeitschrift der Jungsozialisten in der SPD"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/012758574> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:jW a skos:Concept ;
   skos:prefLabel "Junge Welt"@de ;
-  skos:altLabel "jW"@de ;
+  skos:altLabel "JW"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <http://d-nb.info/gnd/4438591-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/4438591-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Junge_Welt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
