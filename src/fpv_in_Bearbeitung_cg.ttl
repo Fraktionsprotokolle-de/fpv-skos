@@ -5523,6 +5523,7 @@ ex:KWU a skos:Concept ;
 ex:Labour a skos:Concept ;
   skos:prefLabel "Labour Party"@en ;
   skos:altLabel "The British Labour Party"@en ;
+  skos:altLabel "Britische Arbeiterpartei"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2124-6> ;
@@ -5633,10 +5634,11 @@ ex:LVA a skos:Concept ;
   skos:prefLabel "Landesversicherungsanstalt"@de ;
   skos:altLabel "LVA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4166580-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Landesversicherungsanstalt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Oberbegriff, keine konkrete Organisation! Prüfen, wo verwendet. Spezifische GND heraussuchen. Oder löschen.
+  #Oberbegriff, keine konkrete Organisation! Prüfen, wo verwendet. Spezifische GND heraussuchen. Oder diesen Eintrag anpassen (notation).
 
 
 
@@ -5645,17 +5647,18 @@ ex:LVA a skos:Concept ;
 
 ex:MAD a skos:Concept ;
   skos:prefLabel "Militärischer Abschirmdienst"@de ;
+  skos:altLabel "Amt für den Militärischen Abschirmdienst"@de ;
   skos:altLabel "MAD"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2087512-5> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/7592360-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Milit%C3%A4rischer_Abschirmdienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. 1956-1984: Amt für Sicherheit der Bundeswehr, GND: https://d-nb.info/gnd/2087512-5.
 
 
 ex:Magirus a skos:Concept ;
-  skos:prefLabel "Magirus-Deutz AG"@de ;
-  skos:altLabel "Magirus"@de ;
+  skos:prefLabel "Magirus-Deutz"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/33596-4> ;
@@ -5667,27 +5670,30 @@ ex:MAKiel a skos:Concept ;
   skos:prefLabel "Maschinenbau Kiel"@de ;
   skos:altLabel "MaK"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Maschinenbau_Kiel> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. GND 1948-1959:	https://d-nb.info/gnd/380938-9, 1959-1964: https://d-nb.info/gnd/506142-8, ab 1964: https://d-nb.info/gnd/2071486-5.
+  #altLabel entsprechend ergänzen.
 
 
 ex:MaM a skos:Concept ;
   skos:prefLabel "Mannheimer Morgen"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/16058691-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/4601250-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Mannheimer_Morgen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Mapai a skos:Concept ;
-  skos:prefLabel "Mifleget Poalei Eretz Jisrael"@de ;
-  skos:altLabel "Mapai"@de ;
+  skos:prefLabel "Mifleget Poalei Eretz Israel"@he ;
+  skos:altLabel "Arbeiterpartei Israels"@de ;
+  skos:altLabel "Mapai"@he ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4303428-7> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Awoda> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Avoda_(Partei)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -5701,29 +5707,32 @@ ex:MarburgerPresse a skos:Concept ;
 
 
 ex:MBB a skos:Concept ;
-  skos:prefLabel "Messerschmitt-Bölkow-Blohm GmbH (MBB)"@de ;
+  skos:prefLabel "Messerschmitt-Bölkow-Blohm"@de ;
   skos:altLabel "MBB"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4098291-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2019542-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Messerschmitt-B%C3%B6lkow-Blohm> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:MBFR a skos:Concept ;
-  skos:prefLabel "Mutual and Balanced Force Reductions"@de ;
-  skos:altLabel "MBFR"@de ;
+  skos:prefLabel "Mutual and Balanced Force Reductions"@en ;
+  skos:altLabel "Wiener Verhandlungen über Truppenreduzierungen in Mitteleuropa"@de ;
+  skos:altLabel "MBFR"@en ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1089019-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Mutual_and_Balanced_Force_Reductions> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #notation überlegen.
 
 
 ex:McK a skos:Concept ;
-  skos:prefLabel "McKinsey and Company"@de ;
-  skos:altLabel "McK"@de ;
+  skos:prefLabel "McKinsey & Company"@en ;
+  skos:altLabel "McK"@en ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10009905-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/McKinsey_%26_Company> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5731,7 +5740,8 @@ ex:McK a skos:Concept ;
 
 ex:Medico a skos:Concept ;
   skos:prefLabel "Medico International"@de ;
-  skos:notation "com"^^fpv:entityType ;
+  skos:altLabel "MI"@de ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2000450-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Medico_international> ;
@@ -5739,50 +5749,55 @@ ex:Medico a skos:Concept ;
 
 
 ex:Mercorsur a skos:Concept ;
-  skos:prefLabel "Mercado Común del Sur"@de ;
-  skos:altLabel "Mercorsur"@de ;
-  skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "Mercorsur"@es ;
+  skos:altLabel "Mercosul"@pt ;
+  skos:altLabel "Mercado Común del Sur"@es ;
+  skos:altLabel "Mercado Comum do Sul"@pt ;
+  skos:altLabel "Gemeinsamer Markt des Südens"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5100682-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Mercosur> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:MForcA a skos:Concept ;
-  skos:prefLabel "Movimento das Forças Armadas (portug.: Bewegung der Streitkräfte)"@de ;
-  skos:altLabel "MFA"@de ;
+  skos:prefLabel "Movimento das Forças Armadas"@pt ;
+  skos:altLabel "MFA"@pt ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5211677-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Movimento_das_For%C3%A7as_Armadas> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen.
 
 
 ex:MfS a skos:Concept ;
   skos:prefLabel "Ministerium für Staatssicherheit"@de ;
   skos:altLabel "MfS"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:altLabel "Stasi"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2065138-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ministerium_f%C3%BCr_Staatssicherheit> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:MG a skos:Concept ;
-  skos:prefLabel "Morgan Grenfell"@de ;
-  skos:altLabel "MG"@de ;
+  skos:prefLabel "Morgan Grenfell"@en ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  
+  skos:exactMatch <https://d-nb.info/gnd/2115658-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Morgan_Grenfell> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #weitere GNDs: https://d-nb.info/gnd/1085949257, https://d-nb.info/gnd/4239176-3.
 
 
 ex:MIT a skos:Concept ;
-  skos:prefLabel "Massachusetts Institute of Technology"@de ;
-  skos:altLabel "MIT"@de ;
-  skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "Massachusetts Institute of Technology"@en ;
+  skos:altLabel "MIT"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2179-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Massachusetts_Institute_of_Technology> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5798,13 +5813,16 @@ ex:MitBay a skos:Concept ;
 
 
 ex:MITI a skos:Concept ;
-  skos:prefLabel "Ministry of International Trade and Industry"@de ;
-  skos:altLabel "MITI"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  
-  skos:closeMatch <https://en.wikipedia.org/wiki/Ministry_of_International_Trade_and_Industry#HeroSection> ;
+  skos:prefLabel "Ministry of International Trade and Industry"@en ;
+  skos:altLabel "Tsūshō-Sangyōshō"@ja ;
+  skos:altLabel "Ministerium für Internationalen Handel und Industrie"@de ;
+  skos:altLabel "MITI"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/43419-X> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Ministerium_f%C3%BCr_Internationalen_Handel_und_Industrie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Überlegen, ob / wie Japan anzugeben ist (en, de).
 
 
 ex:MM a skos:Concept ;
@@ -5817,7 +5835,7 @@ ex:MM a skos:Concept ;
 
 
 ex:Monitor a skos:Concept ;
-  skos:prefLabel "Monitor (Fernsehmagazin)"@de ;
+  skos:prefLabel "Monitor"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4199468-1> ;
@@ -5829,28 +5847,30 @@ ex:MopoHH a skos:Concept ;
   skos:prefLabel "Hamburger Morgenpost"@de ;
   skos:altLabel "Mopo"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4658095-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Hamburger_Morgenpost> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:MRP a skos:Concept ;
-  skos:prefLabel "Mouvement républicain populaire"@de ;
-  skos:altLabel "MRP"@de ;
+  skos:prefLabel "Mouvement républicain populaire"@fr ;
+  skos:altLabel "Volksrepublikanische Bewegung"@de ;
+  skos:altLabel "Republikanische Volksbewegung"@de ;
+  skos:altLabel "MRP"@fr ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4102626-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Mouvement_r%C3%A9publicain_populaire> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:MSB a skos:Concept ;
-  skos:prefLabel "Marxistischer Studentenbund"@de ;
-  skos:altLabel "MSB"@de ;
-  skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/10187933-7> ;
+  skos:prefLabel "Marxistischer Studentenbund Spartakus"@de ;
+  skos:altLabel "MSB Spartakus"@de ;
+  skos:notation "pol"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2019014-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Marxistischer_Studentenbund_Spartakus> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -5859,7 +5879,7 @@ ex:MTU a skos:Concept ;
   skos:prefLabel "Motoren- und Turbinen-Union Friedrichshafen"@de ;
   skos:altLabel "MTU"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1085800377> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/MTU_Friedrichshafen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5869,7 +5889,7 @@ ex:MuenchRueck a skos:Concept ;
   skos:prefLabel "Münchener Rückversicherungs-Gesellschaft"@de ;
   skos:altLabel "Münchener Rück"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1027268-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/M%C3%BCnchener_R%C3%BCck> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
