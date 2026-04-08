@@ -173,6 +173,14 @@ def write_detail_page(concept):
   }}
   nav {{ margin-top: 10px; }}
   nav a {{ text-decoration: none; border-bottom: 1px dotted #000; }}
+  footer {{
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 0.85em;
+    color: #666;
+  }}
+  footer a {{ color: #666; text-decoration: none; border-bottom: 1px dotted #666; }}
 </style>
 </head>
 <body>
@@ -191,6 +199,9 @@ def write_detail_page(concept):
 {render_uri_list("closeMatch", close)}
 {render_related_list("Verwandte Konzepte (related)", related)}
 
+<footer>
+  <a href="https://kgparl.de/impressum/">Impressum</a>
+</footer>
 </body>
 </html>
 """
@@ -317,6 +328,20 @@ index_parts.append("""<!DOCTYPE html>
     font-size: 0.9em;
     margin-left: 8px;
   }
+  .intro {
+    margin: 12px 0 0 0;
+    font-size: 0.97em;
+    max-width: 820px;
+    line-height: 1.6;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 0.85em;
+    color: #666;
+  }
+  footer a { color: #666; text-decoration: none; border-bottom: 1px dotted #666; }
 </style>
 
 <script>
@@ -356,6 +381,12 @@ window.addEventListener("DOMContentLoaded", () => {
 <body>
 <header>
   <h1>Fraktionsprotokolle Vokabular (FPV)</h1>
+  <p class="intro">Diese Webseite dient der einfacheren Darstellung des kontrollierten (Schlagwort-)Vokabulars
+  (<a href="https://github.com/Fraktionsprotokolle-de/fpv-skos/">Fraktionsprotokolle Vocabulary, FPV</a>)
+  der wissenschaftlichen Edition
+  <a href="https://fraktionsprotokolle.de/">&#x00BB;Fraktionen im Deutschen Bundestag 1949&#x2013;2005&#x00AB;</a>.
+  Die Webseite wird &#xFC;ber einen Github-Workflow automatisch aus der Vokabulardatei
+  <a href="https://github.com/Fraktionsprotokolle-de/fpv-skos/blob/main/src/fpv.ttl">fpv.ttl</a> erzeugt.</p>
   <div class="controls">
     <input id="q" type="search" placeholder="Suche (prefLabel, ID) …" oninput="applyFilters()">
     <div class="filter" aria-label="Filter nach entityType">
@@ -395,7 +426,10 @@ for c in concept_rows:
 </div>"""
     )
 
-index_parts.append("</body></html>")
+index_parts.append("""<footer>
+  <a href="https://kgparl.de/impressum/">Impressum</a>
+</footer>
+</body></html>""")
 
 (DOCS_DIR / "index.html").write_text("\n".join(index_parts), encoding="utf-8")
 
