@@ -5900,20 +5900,24 @@ ex:MuenchRueck a skos:Concept ;
 
 
 ex:NASA a skos:Concept ;
-  skos:prefLabel "National Aeronautics and Space Administration"@de ;
-  skos:altLabel "NASA"@de ;
-  skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/1086340205> ;
+  skos:prefLabel "National Aeronautics and Space Administration"@en ;
+  skos:altLabel "Nationale Luft- und Raumfahrtbehörde"@de ;
+  skos:altLabel "NASA"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2294-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/NASA> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. GND bisher: https://d-nb.info/gnd/1086340205 (Kennedy Space Center).
 
 
 ex:NATO a skos:Concept ;
-  skos:prefLabel "North Atlantic Treaty Organisation"@de ;
-  skos:altLabel "NATO"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "North Atlantic Treaty Organisation"@en ;
+  skos:altLabel "Organisation des Nordatlantikvertrages"@de ;
+  skos:altLabel "Nordatlantikpakt"@de ;
+  skos:altLabel "NATO"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/377-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/NATO> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5921,58 +5925,67 @@ ex:NATO a skos:Concept ;
 
 ex:NATOPV a skos:Concept ;
   skos:prefLabel "Parlamentarische Versammlung der NATO"@de ;
-  skos:altLabel "NATOPV"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:altLabel "NATO Parliamentary Assembly"@en ;
+  skos:altLabel "NATO-PV"@de ;
+  skos:altLabel "NATO PA"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10001063-5> ;
-  skos:closeMatch <https://de.wikipedia.org/w/index.php?title=Parlamentarische_Versammlung_der_NATO> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Parlamentarische_Versammlung_der_NATO> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ab 1999, zuvor: NAV.
 
 
 ex:NatReichPartei a skos:Concept ;
   skos:prefLabel "Nationale Reichspartei"@de ;
   skos:altLabel "NRP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationale_Reichspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen (altLabel).
 
 
 ex:NaturFDeutsch a skos:Concept ;
-  skos:prefLabel "Naturfreunde Deutschlands"@de ;
-  skos:altLabel "NFJD"@de ;
+  skos:prefLabel "NaturFreunde Deutschlands"@de ;
+  skos:altLabel "NFD"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/30468-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreundejugend_Deutschlands> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/10050806-6> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreunde#Naturfreunde_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen (altLabel).
 
 
 ex:NaturFJD a skos:Concept ;
   skos:prefLabel "Naturfreundejugend Deutschlands"@de ;
-  skos:altLabel "NFD"@de ;
+  skos:altLabel "NFJD"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/10050806-6> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreunde#Naturfreunde_Deutschlands> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/30468-2> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreundejugend_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen (altLabel).
 
 
 ex:NAV a skos:Concept ;
-  skos:prefLabel "Nordatlantische Versammlung (1966-1999)"@de ;
+  skos:prefLabel "Nordatlantische Versammlung"@de ;
+  skos:altLabel "North Atlantic Assembly"@en ;
   skos:altLabel "NAV"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:altLabel "NAA"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2037117-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Parlamentarische_Versammlung_der_NATO#Geschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1966-1999, ab dann: NATO-PV.
 
 
 ex:NBC a skos:Concept ;
-  skos:prefLabel "National Broadcasting Company"@de ;
-  skos:altLabel "NBC"@de ;
+  skos:prefLabel "National Broadcasting Company"@en ;
+  skos:altLabel "NBC"@en ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1212286-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/National_Broadcasting_Company> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -5980,9 +5993,10 @@ ex:NBC a skos:Concept ;
 
 ex:NBD a skos:Concept ;
   skos:prefLabel "Die neue Bonner Depesche"@de ;
-  skos:altLabel "NBD"@de ;
+  skos:altLabel "Neue Bonner Depesche"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/015831353> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -6000,7 +6014,7 @@ ex:NDR a skos:Concept ;
   skos:prefLabel "Norddeutscher Rundfunk"@de ;
   skos:altLabel "NDR"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2020461-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Norddeutscher_Rundfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6014,43 +6028,47 @@ ex:NDtWochen a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/7853198-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Deutsche_Wochenschau> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen (altLabel).
 
 
 ex:NeueBP a skos:Concept ;
-  skos:prefLabel "Neue Bildpost (kathl. Wochenzeitung)"@de ;
+  skos:prefLabel "Neue Bildpost"@de ;
   skos:altLabel "Bildpost"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://de.wikipedia.org/wiki/Neue_Bildpost> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/010357335> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Bildpost> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND des Verlags: https://d-nb.info/gnd/1064784674.
+  #ID überlegen.
 
 
 ex:NF a skos:Concept ;
-  skos:prefLabel "Neue Forum"@de ;
+  skos:prefLabel "Neues Forum"@de ;
   skos:altLabel "NF"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/5013546-6> ;
   skos:exactMatch <https://d-nb.info/gnd/5039449-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neues_Forum> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:NGes a skos:Concept ;
-  skos:prefLabel "Die Neue Gesellschaft (Zeitschrift)"@de ;
-  skos:altLabel "NG"@de ;
+  skos:prefLabel "Die Neue Gesellschaft"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4198766-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Gesellschaft/Frankfurter_Hefte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Zeitraum des Bestehens: 1954-1984. Ab 1985: Neue Gesellschaft/Frankfurter Hefte.
 
 
 ex:NGG a skos:Concept ;
   skos:prefLabel "Gewerkschaft Nahrung-Genuss-Gaststätten"@de ;
   skos:altLabel "NGG"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2012457-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gewerkschaft_Nahrung-Genuss-Gastst%C3%A4tten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6058,9 +6076,10 @@ ex:NGG a skos:Concept ;
 
 ex:NH a skos:Concept ;
   skos:prefLabel "Neue Heimat Städtebau"@de ;
+  skos:altLabel "Neue Heimat"@de ;
   skos:altLabel "NH"@de ;
-  skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "com"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2020180-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Heimat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6070,7 +6089,7 @@ ex:NLA a skos:Concept ;
   skos:prefLabel "Nationalliberale Aktion"@de ;
   skos:altLabel "NLA"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationalliberale_Aktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -6078,97 +6097,108 @@ ex:NLA a skos:Concept ;
 ex:NOK a skos:Concept ;
   skos:prefLabel "Nationales Olympisches Komitee"@de ;
   skos:altLabel "NOK"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4331145-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationales_Olympisches_Komitee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #keine spezifische Organisation, sondern allgemeiner Begriff. Prüfen, wo verwendet.
 
 
 ex:NOZ a skos:Concept ;
   skos:prefLabel "Neue Osnabrücker Zeitung"@de ;
   skos:altLabel "NOZ"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16009583-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Osnabr%C3%BCcker_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND geht auf den Verlag. DNB-Nachweise: https://d-nb.info/016063775 (1967-2004), https://d-nb.info/025770004 (2004-2006).
 
 
 ex:NPD a skos:Concept ;
   skos:prefLabel "Nationaldemokratische Partei Deutschlands"@de ;
   skos:altLabel "NPD"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2019974-0> ;
   skos:exactMatch <https://d-nb.info/gnd/2123842-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationaldemokratische_Partei_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:NRC a skos:Concept ;
-  skos:prefLabel "Nuclear Regulatory Commission"@de ;
-  skos:altLabel "NRC"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "Nuclear Regulatory Commission"@en ;
+  skos:altLabel "NRC"@en ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/13190-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nuclear_Regulatory_Commission> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:NRhZ a skos:Concept ;
-  skos:prefLabel "Neue Rhein Zeitung"@de ;
+  skos:prefLabel "Neue Rhein-Zeitung"@de ;
+  skos:altLabel "NRZ"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7765485-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Ruhr_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe NRZ.
 
 
 ex:NRW a skos:Concept ;
   skos:prefLabel "Nordrhein-Westfalen"@de ;
   skos:altLabel "NRW"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4042570-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nordrhein-Westfalen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Geografikum. notation. Prüfen, wo verwendet.
 
 
 ex:NRZ a skos:Concept ;
-  skos:prefLabel "Neue Ruhr Zeitung"@de ;
+  skos:prefLabel "Neue Ruhr-Zeitung"@de ;
   skos:altLabel "NRZ"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4317913-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Ruhr_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe NRhZ.
 
 
 ex:NSDAP a skos:Concept ;
-  skos:prefLabel "Nationalsozialistische Deutsche Arbeiterpartei Deutschlands"@de ;
-  skos:altLabel "NS"@de ;
+  skos:prefLabel "Nationalsozialistische Deutsche Arbeiterpartei"@de ;
+  skos:altLabel "NSDAP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1012979-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationalsozialistische_Deutsche_Arbeiterpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:NSDAP-AO a skos:Concept ;
-  skos:prefLabel "Nationalsozialistische Deutsche Arbeiterpartei Deutschlands, Aufbau- und Auslandsorganisation"@de ;
+  skos:prefLabel "NSDAP-Aufbauorganisation"@de ;
+  skos:altLabel "NSDAP-Aufbau- und Auslandsorganisation"@de ;
   skos:altLabel "NSDAP-AO"@de ;
+  skos:altLabel "NSDAP/AO"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/10123190-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/NSDAP-Aufbauorganisation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:NSKampf a skos:Concept ;
-  skos:prefLabel "NS-Kampfruf: Kampfschrift der Nationalsozialisten Deutschen Arbeiterpartei Auslands- und Aufbauorganisation"@de ;
+  skos:prefLabel "NS-Kampfruf"@de ;
+  skos:altLabel "NS-Kampfruf. Kampfschrift der Nationalsozialisten Deutschen Arbeiterpartei Auslands- und Aufbauorganisation"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/551387033> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Ruhr_Zeitung> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/NSDAP-Aufbauorganisation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -6180,6 +6210,7 @@ ex:NuernNachr a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4172128-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/N%C3%BCrnberger_Nachrichten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen (altLabel).
 
 
 ex:NuernZeit a skos:Concept ;
@@ -6190,13 +6221,14 @@ ex:NuernZeit a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4819392-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/N%C3%BCrnberger_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen (altLabel).
 
 
 ex:NVA a skos:Concept ;
   skos:prefLabel "Nationale Volksarmee"@de ;
   skos:altLabel "NVA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2032312-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationale_Volksarmee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6206,6 +6238,7 @@ ex:NVSt a skos:Concept ;
   skos:prefLabel "Niedersächsische Volksstimme"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/012806048> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Hannoversche_Volksstimme> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -6215,23 +6248,26 @@ ex:NW a skos:Concept ;
   skos:altLabel "NW"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/1065174616> ;
+  skos:exactMatch <https://d-nb.info/gnd/4734515-9> ;
+  skos:closeMatch <https://d-nb.info/gnd/1065174616> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Westf%C3%A4lische> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GNd geht auf Verlag.
 
 
 ex:NWDR a skos:Concept ;
   skos:prefLabel "Nordwestdeutscher Rundfunk"@de ;
   skos:altLabel "NWDR"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/17905-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nordwestdeutscher_Rundfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe NDR.
 
 
 ex:NWeek a skos:Concept ;
-  skos:prefLabel "Newsweek"@de ;
+  skos:prefLabel "Newsweek"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4171692-9> ;
@@ -6241,25 +6277,26 @@ ex:NWeek a skos:Concept ;
 
 ex:NWZ a skos:Concept ;
   skos:prefLabel "Nordwest-Zeitung"@de ;
+  skos:altLabel "NWZ"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4773540-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nordwest-Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:NYT a skos:Concept ;
-  skos:prefLabel "New York Times"@de ;
-  skos:altLabel "NYT"@de ;
+  skos:prefLabel "The New York Times"@en ;
+  skos:altLabel "NYT"@en ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1086196953> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_New_York_Times> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:NZ a skos:Concept ;
-  skos:prefLabel "Neue Zeitung"@de ;
+  skos:prefLabel "Die Neue Zeitung"@de ;
   skos:altLabel "NZ"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
@@ -6272,7 +6309,7 @@ ex:NZZ a skos:Concept ;
   skos:prefLabel "Neue Zürcher Zeitung"@de ;
   skos:altLabel "NZZ"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4041739-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Z%C3%BCrcher_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
