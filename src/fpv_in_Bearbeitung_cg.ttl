@@ -5096,6 +5096,7 @@ ex:IWF a skos:Concept ;
 
 ex:Izv a skos:Concept ;
   skos:prefLabel "Izvestija"@ru ;
+  skos:altLabel "Iswestija"@ru ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4394628-8> ;
@@ -5233,6 +5234,7 @@ ex:KfW a skos:Concept ;
 
 ex:KGB a skos:Concept ;
   skos:prefLabel "Komitet Gosudarstvennoj Bezopasnosti"@ru ;
+  skos:altLabel "Komitet Gosudarstwennoi Besopasnosti"@ru ;
   skos:altLabel "KGB"@ru ;
   skos:altLabel "Komitee für Staatssicherheit beim Ministerrat der UdSSR"@de ;
   skos:notation "pol"^^fpv:entityType ;
@@ -5328,6 +5330,7 @@ ex:KOMKAR a skos:Concept ;
 ex:Komsomol a skos:Concept ;
   skos:prefLabel "Komsomol"@ru ;
   skos:altLabel "Kommunističeskij Sojuz Molodëži"@ru ;
+  skos:altLabel "Kommunistitscheski Sojus Molodjoschi"@ru ;
   skos:altLabel "Kommunistischer Jugendverband der Sowjetunion"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
@@ -5391,6 +5394,7 @@ ex:KPDML a skos:Concept ;
 ex:KPdSU a skos:Concept ;
   skos:prefLabel "Kommunistische Partei der Sowjetunion"@de ;
   skos:altLabel "Kommunističeskaja Partija Sovetskogo Sojuza"@ru ;
+  skos:altLabel "Kommunistitscheskaja Partija Sowetskowo Sojusa"@ru ;
   skos:altLabel "KPdSU"@de ;
   skos:altLabel "KPSS"@ru ;
   skos:notation "pol"^^fpv:entityType ;
@@ -6509,16 +6513,16 @@ ex:Ost-CDU a skos:Concept ;
 
 ex:PAAA a skos:Concept ;
   skos:prefLabel "Politisches Archiv des Auswärtigen Amts"@de ;
-  skos:altLabel "PAAA"@de ;
+  skos:altLabel "PA AA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10073644-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Politisches_Archiv_des_Ausw%C3%A4rtigen_Amts> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Pais a skos:Concept ;
-  skos:prefLabel "El País"@de ;
+  skos:prefLabel "El País"@es ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4231580-3> ;
@@ -6527,8 +6531,8 @@ ex:Pais a skos:Concept ;
 
 
 ex:ParlRat a skos:Concept ;
-  skos:prefLabel "Parlamentarischer Rat (1948/49)"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "Parlamentarischer Rat"@de ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4044691-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Parlamentarischer_Rat> ;
@@ -6537,45 +6541,51 @@ ex:ParlRat a skos:Concept ;
 
 ex:PEN a skos:Concept ;
   skos:prefLabel "PEN-Zentrum Deutschland"@de ;
-  skos:altLabel "PEN"@de ;
-  skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2018009-3> ;
+  skos:altLabel "PEN Deutschland"@de ;
+  skos:altLabel "Deutsches PEN-Zentrum"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/10017027-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/PEN-Zentrum_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. verwendete GND für Zeitraum 1998-2025. weitere GNDs: https://d-nb.info/gnd/2120433-0 (1993-1998), https://d-nb.info/gnd/2008616-7 (1951-1993).
 
 
 ex:PEU a skos:Concept ;
   skos:prefLabel "Paneuropa-Union"@de ;
+  skos:altLabel "Internationale Paneuropa Union"@de ;
   skos:altLabel "PEU"@de ;
-  skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/118340-0> ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/404270-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Paneuropa-Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. GNDs für PEU Deutschland: https://d-nb.info/gnd/2102930-1, https://d-nb.info/gnd/4307396-7, Vorläufer (Deutsches Reich): https://d-nb.info/gnd/118340-0.
 
 
 ex:PHolzmann a skos:Concept ;
   skos:prefLabel "Philipp Holzmann AG"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2018009-3> ;
-  skos:closeMatch <https://d-nb.info/gnd/2017822-0> ;
+  skos:exactMatch <https://d-nb.info/gnd/2017822-0> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Philipp_Holzmann> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:PionET a skos:Concept ;
   skos:prefLabel "Pionierorganisation Ernst Thälmann"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/10017027-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/2018009-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Pionierorganisation_Ernst_Th%C3%A4lmann> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen.
 
 
 ex:PKK a skos:Concept ;
-  skos:prefLabel "Partiya Karkerên Kurdistanê"@de ;
-  skos:altLabel "PKK"@de ;
+  skos:prefLabel "Partiya Karkerên Kurdistanê"@ku ;
+  skos:altLabel "Arbeiterpartei Kurdistans"@de ;
+  skos:altLabel "PKK"@ku ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2117697-8> ;
@@ -6593,19 +6603,22 @@ ex:Platow a skos:Concept ;
 
 
 ex:PLO a skos:Concept ;
-  skos:prefLabel "Palestine Liberation Organization"@de ;
-  skos:altLabel "PLO"@de ;
+  skos:prefLabel "Palestine Liberation Organization"@en ;
+  skos:altLabel "Palästinensische Befreiungsorganisation"@de ;
+  skos:altLabel "Munaẓẓamat at-Taḥrīr al-Filasṭīniya"@ar ;
+  skos:altLabel "PLO"@en ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/1086812077> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1034839-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Pal%C3%A4stinensische_Befreiungsorganisation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:PNP a skos:Concept ;
   skos:prefLabel "Passauer Neue Presse"@de ;
+  skos:altLabel "PNP"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4272200-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Passauer_Neue_Presse> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6615,92 +6628,104 @@ ex:PPP a skos:Concept ;
   skos:prefLabel "Parlamentarisch-Politischer Pressedienst"@de ;
   skos:altLabel "PPP"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2017368-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratischer_Pressedienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe PressemitteilungenSPD.
 
 
 ex:PPR a skos:Concept ;
-  skos:prefLabel "Politieke Partij Radicalen (Politische Radikale Partei, Niederlande)"@de ;
-  skos:altLabel "PPR"@de ;
+  skos:prefLabel "Politieke Partij Radicalen"@nl ;
+  skos:altLabel "Politische Partei Radikale"@de ;
+  skos:altLabel "PPR"@nl ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/217211-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Politieke_Partij_Radikalen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Pra a skos:Concept ;
-  skos:prefLabel "Prawda"@de ;
+  skos:prefLabel "Pravda"@ru ;
+  skos:altLabel "Prawda"@ru ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4175594-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Prawda> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Prakla a skos:Concept ;
-  skos:prefLabel "Gesellschaft für praktische Lagerstättenforschung GmbH (Prakla, bis 1963)"@de ;
+  skos:prefLabel "Gesellschaft für praktische Lagerstättenforschung"@de ;
   skos:altLabel "Prakla"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2017983-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Prakla-Seismos> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe Prakla-Seismos.
 
 
 ex:PraklaSeismos a skos:Concept ;
-  skos:prefLabel "Prakla-Seismos GmbH (seit 1963)"@de ;
-  skos:altLabel "Prakla-Seismos"@de ;
+  skos:prefLabel "Prakla-Seismos"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/8728-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Prakla-Seismos> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #siehe Prakla.
 
 
 ex:PRChile a skos:Concept ;
-  skos:prefLabel "Partido Radical (Chile)"@de ;
-  skos:altLabel "PR"@de ;
+  skos:prefLabel "Partido Radical"@es ;
+  skos:altLabel "Partido Radical de Chile"@es ;
+  skos:altLabel "Radikale Partei"@de ;
+  skos:altLabel "PR"@es ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5166625-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Partido_Radical_(Chile)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:PressemitteilungenSPD a skos:Concept ;
-  skos:prefLabel "Pressemitteilungen und Informationen der SPD (1958-1998)"@de ;
+  skos:prefLabel "Pressemitteilungen und Informationen"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/025209817> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratischer_Pressedienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen. siehe PPP.
 
 
 ex:Preussag a skos:Concept ;
   skos:prefLabel "Preussag AG"@de ;
   skos:altLabel "PREUSSAG"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2017976-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Preussag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:PS a skos:Concept ;
-  skos:prefLabel "Parti Socialiste (Frankreich)"@de ;
-  skos:altLabel "PS"@de ;
+  skos:prefLabel "Parti Socialiste"@fr ;
+  skos:altLabel "Parti Socialiste de France"@fr ;
+  skos:altLabel "Sozialistische Partei"@de ;
+  skos:altLabel "PS"@fr ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/64634-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Parti_socialiste_(Frankreich)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:PSD a skos:Concept ;
-  skos:prefLabel "Partia Socialdemokrate (Albanien)"@de ;
-  skos:altLabel "PSD"@de ;
+  skos:prefLabel "Partia Socialdemokrate"@sq ;
+  skos:altLabel "Partia Socialdemokrate e Shqipërisë"@sq ;
+  skos:altLabel "Sozialdemokratische Partei"@de ;
+  skos:altLabel "PSD"@sq ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Partia_Socialdemokrate_e_Shqip%C3%ABris%C3%AB> ;
@@ -6708,10 +6733,11 @@ ex:PSD a skos:Concept ;
 
 
 ex:PSOE a skos:Concept ;
-  skos:prefLabel "Partido Socialista Obrero Español"@de ;
-  skos:altLabel "PSOE"@de ;
+  skos:prefLabel "Partido Socialista Obrero Español"@es ;
+  skos:altLabel "Spanische Sozialistische Arbeiterpartei"@de ;
+  skos:altLabel "PSOE"@es ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/219809-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Partido_Socialista_Obrero_Espa%C3%B1ol> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6727,33 +6753,40 @@ ex:Publik a skos:Concept ;
 
 
 ex:PVAP a skos:Concept ;
-  skos:prefLabel "Polnische Vereinigte Arbeiterpartei"@de ;
+  skos:prefLabel "Polska Zjednoczona Partia Robotnicza"@pl ;
+  skos:altLabel "Polnische Vereinigte Arbeiterpartei"@de ;
+  skos:altLabel "PZPR"@pl ;
   skos:altLabel "PVAP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1009009-5> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Polska_Zjednoczona_Partia_Robotnicza> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Polnische_Vereinigte_Arbeiterpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Dublette zu PZPR!
 
 
 ex:PvdA a skos:Concept ;
-  skos:prefLabel "Partij van de Arbeid"@de ;
-  skos:altLabel "PvdA"@de ;
+  skos:prefLabel "Partij van de Arbeid"@nl ;
+  skos:altLabel "Partei der Arbeit"@de ;
+  skos:altLabel "PvdA"@nl ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/62222-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Partij_van_de_Arbeid> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:PZPR a skos:Concept ;
-  skos:prefLabel "Polska Zjednoczona Partia Robotnicza"@de ;
-  skos:altLabel "PZPR"@de ;
+  skos:prefLabel "Polska Zjednoczona Partia Robotnicza"@pl ;
+  skos:altLabel "Polnische Vereinigte Arbeiterpartei"@de ;
+  skos:altLabel "PZPR"@pl ;
+  skos:altLabel "PVAP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1009009-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Polska_Zjednoczona_Partia_Robotnicza> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Dublette zu PVAP!
 
 
 
@@ -6761,10 +6794,10 @@ ex:PZPR a skos:Concept ;
 
 
 ex:Qantas a skos:Concept ;
-  skos:prefLabel "Qantas Airways"@de ;
-  skos:altLabel "Qantas"@de ;
+  skos:prefLabel "Qantas Airways"@en ;
+  skos:altLabel "Qantas"@en ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4217640-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Qantas_Airways> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
