@@ -1617,7 +1617,7 @@ ex:BTPraesident a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4377827-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Pr%C3%A4sident_des_Deutschen_Bundestages> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #überlegen, wie "Bundestagspräsidentin" abgebildet werden kann.
+  #Prüfen, wo verwendet. Ggf. überlegen, wie "Bundestagspräsidentin" abgebildet werden kann.
 
 
 ex:BTPraesidium a skos:Concept ;
@@ -6819,8 +6819,8 @@ ex:Quick a skos:Concept ;
 ex:RAF a skos:Concept ;
   skos:prefLabel "Rote Armee Fraktion"@de ;
   skos:altLabel "RAF"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1007504-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rote_Armee_Fraktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6829,8 +6829,8 @@ ex:RAF a skos:Concept ;
 ex:RBosch a skos:Concept ;
   skos:prefLabel "Robert Bosch GmbH"@de ;
   skos:altLabel "Bosch"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "com"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2019917-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Robert_Bosch_GmbH> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6840,33 +6840,38 @@ ex:RCDS a skos:Concept ;
   skos:prefLabel "Ring Christlich-Demokratischer Studenten"@de ;
   skos:altLabel "RCDS"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1022689-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ring_Christlich-Demokratischer_Studenten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:ReichsbahnDDR a skos:Concept ;
-  skos:prefLabel "Deutsche Reichsbahn (DDR)"@de ;
+  skos:prefLabel "Deutsche Reichsbahn"@de ;
   skos:altLabel "DR"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2008004-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Reichsbahn_(1945%E2%80%931993)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:RepublicaPortugal a skos:Concept ;
-  skos:prefLabel "República (portugiesische Tageszeitung, die der Partido Socialista nahestand)"@de ;
+  skos:prefLabel "República"@pt ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1160106908> ;
+  skos:closeMatch <https://pt.wikipedia.org/wiki/Rep%C3%BAblica_(jornal)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet und ob Verlinkungen passend. ZDB: https://zdb-katalog.de/title.xhtml?idn=013982435, https://zdb-katalog.de/title.xhtml?idn=1151414522.
+  #Hinweis: portugiesische Tageszeitung, die der Partido Socialista nahestand.
 
 
 ex:ReRi a skos:Concept ;
-  skos:prefLabel "Renmin Ribao"@de ;
+  skos:prefLabel "Renmin Ribao"@zh ;
+  skos:altLabel "Chinesische Volkszeitung"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4617812-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Renmin_Ribao> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6885,7 +6890,7 @@ ex:RGBlatt a skos:Concept ;
   skos:prefLabel "Reichsgesetzblatt"@de ;
   skos:altLabel "RGBl."@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4796684-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichsgesetzblatt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6894,8 +6899,8 @@ ex:RGBlatt a skos:Concept ;
 ex:RGW a skos:Concept ;
   skos:prefLabel "Rat für gegenseitige Wirtschaftshilfe"@de ;
   skos:altLabel "RGW"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1016341-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rat_f%C3%BCr_gegenseitige_Wirtschaftshilfe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6911,20 +6916,21 @@ ex:Rhein-Echo a skos:Concept ;
 
 
 ex:Rheinmetall a skos:Concept ;
-  skos:prefLabel "Rheinmetall"@de ;
+  skos:prefLabel "Rheinmetall AB"@de ;
   skos:altLabel "Rheinmetall"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10044945-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rheinmetall> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. GND ab 1996. Für 1956-1996: https://d-nb.info/gnd/2040116-4.
 
 
 ex:Rheinstahl a skos:Concept ;
   skos:prefLabel "Rheinische Stahlwerke AG"@de ;
   skos:altLabel "Rheinstahl"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2019672-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rheinstahl> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6941,9 +6947,9 @@ ex:Rhpf a skos:Concept ;
 
 ex:RIAS a skos:Concept ;
   skos:prefLabel "Rundfunk im amerikanischen Sektor"@de ;
-  skos:altLabel "RIAS"@de ;
+  skos:altLabel "RIAS Berlin"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2020099-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/RIAS> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -6960,6 +6966,7 @@ ex:RM a skos:Concept ;
 
 ex:RN a skos:Concept ;
   skos:prefLabel "Ruhr-Nachrichten"@de ;
+  skos:altLabel "RN"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7742937-0> ;
@@ -6978,20 +6985,22 @@ ex:RP a skos:Concept ;
 
 
 ex:RPMittel a skos:Concept ;
-  skos:prefLabel "Reichspartei des deutschen Mittelstandes (auch: Wirtschaftspartei)"@de ;
+  skos:prefLabel "Reichspartei des deutschen Mittelstandes"@de ;
+  skos:altLabel "Wirtschaftspartei"@de ;
   skos:altLabel "WP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2066944-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichspartei_des_deutschen_Mittelstandes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. GND für Parei ab 1924, zuvor (1920-1924): Wirtschaftspartei des deutschen Mittelstandes, https://d-nb.info/gnd/5012377-4.
 
 
 ex:RSHA a skos:Concept ;
   skos:prefLabel "Reichssicherheitshauptamt"@de ;
   skos:altLabel "RSHA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2021970-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichssicherheitshauptamt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -7000,8 +7009,8 @@ ex:RSHA a skos:Concept ;
 ex:RSK a skos:Concept ;
   skos:prefLabel "Reichsschrifttumskammer"@de ;
   skos:altLabel "RSK"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/40240-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichsschrifttumskammer> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -7009,76 +7018,85 @@ ex:RSK a skos:Concept ;
 
 ex:RT a skos:Concept ;
   skos:prefLabel "Reichstag"@de ;
-  skos:altLabel "RT"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4049170-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichstag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. GND als Ereignis (hist. Reichstage bis 1806). Auch Wikipedia-Artikel keine Institution.
 
 
 ex:RTL a skos:Concept ;
-  skos:prefLabel "Radio Télévision Luxembourg"@de ;
-  skos:altLabel "RTL"@de ;
+  skos:prefLabel "Radio Télévision Luxembourg"@fr ;
+  skos:altLabel "RTL"@fr ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1086472-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/RTL_Television> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Pürfen, wo verwendet. GND derzeit übergreifender Konzern. Zum Wikipedia-Artikel gehörige GND: https://d-nb.info/gnd/5274211-8 (TV-Sender).
 
 
 ex:RTPraesWeim a skos:Concept ;
-  skos:prefLabel "Reichstagspräsident (Weimarer Republik)"@de ;
+  skos:prefLabel "Reichstagspräsident"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7556849-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichstagspr%C3%A4sident_(Weimarer_Republik)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #für Weimarer Republik.
+  #Prüfen, wo verwendet. GND nicht spezifisch für Weimar.
 
 
 ex:RuhrkohleAG a skos:Concept ;
-  skos:prefLabel "Ruhrkohle AG (seit 1997: RAG Aktiengesellschaft)"@de ;
+  skos:prefLabel "Ruhrkohle AG"@de ;
   skos:altLabel "RAG"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/10008534-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2039413-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/RAG_Aktiengesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüfen, wo verwendet. Ab 1997: RAG Aktiengesellschaft, https://d-nb.info/gnd/10008534-9
 
 
 ex:Ruhrstatut a skos:Concept ;
-  skos:prefLabel "Abkommen über die Errichtung einer Internationalen Ruhrbehörde (Ruhrstatut)"@de ;
-  skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:prefLabel "Abkommen über die Errichtung einer Internationalen Ruhrbehörde"@de ;
+  skos:altLabel "Ruhrstatut"@de ;
+  skos:notation "law"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4130745-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ruhrstatut> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #Prüen, wo verwendet. Ggf. ändern auf Internationale Ruhrbehörde: https://d-nb.info/gnd/4236085-7.
 
 
 ex:Rup a skos:Concept ;
-  skos:prefLabel "Rudé právo"@de ;
+  skos:prefLabel "Rudé právo"@cs ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1086097955> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rud%C3%A9_pr%C3%A1vo> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #ID überlegen.
 
 
 ex:RVO a skos:Concept ;
   skos:prefLabel "Reichsversicherungsordnung"@de ;
   skos:altLabel "RVO"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "law"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4121575-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichsversicherungsordnung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:RVP a skos:Concept ;
-  skos:prefLabel "Cumhuriyet Halk Partisi (Republikanische Volkspartei, Türkei)"@de ;
-  skos:altLabel "CHP (RVP)"@de ;
+  skos:prefLabel "Cumhuriyet Halk Partisi"@tr ;
+  skos:altLabel "Republikanische Volkspartei"@de ;
+  skos:altLabel "CHP"@tr ;
+  skos:altLabel "RVP"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1093412-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Cumhuriyet_Halk_Partisi> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -7088,10 +7106,11 @@ ex:RWE a skos:Concept ;
   skos:prefLabel "Rheinisch-Westfälisches Elektrizitätswerk"@de ;
   skos:altLabel "RWE"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2019882-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/RWE> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #GND ab 1990: https://d-nb.info/gnd/2123397-4.
 
 
 ex:RWHG a skos:Concept ;
