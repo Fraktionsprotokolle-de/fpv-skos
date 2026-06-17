@@ -1,19 +1,19 @@
-# Trigger
+#  Trigger
 @prefix ex:  <https://voc.fraktionsprotokolle.de/id/> .
 @prefix fpv: <https://voc.fraktionsprotokolle.de/schema/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core# > .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema# > .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema# > .
 
-# ------------------------------------------------------------
-# FPV Datenmodell (Kurzprofil)
-# - Alle Einträge sind skos:Concept.
-# - Die lokale ID steht in der URI: ex:{ID}
-# - Klassifikation über skos:notation als typisiertes Literal:
-#     skos:notation "{code}"^^fpv:entityType
-# - Zulässige Codes (entityType): siehe fpv:entityTypeNote unten.
-# ------------------------------------------------------------
+#  ------------------------------------------------------------
+#  FPV Datenmodell (Kurzprofil)
+#  - Alle Einträge sind skos:Concept.
+#  - Die lokale ID steht in der URI: ex:{ID}
+#  - Klassifikation über skos:notation als typisiertes Literal:
+#      skos:notation "{code}"^^fpv:entityType
+#  - Zulässige Codes (entityType): siehe fpv:entityTypeNote unten.
+#  ------------------------------------------------------------
 
 fpv:entityType a rdfs:Datatype ;
   rdfs:label "FPV entity type code"@en ;
@@ -21,7 +21,7 @@ fpv:entityType a rdfs:Datatype ;
   rdfs:comment "Datatype for controlled, short classification codes used in skos:notation, e.g. \"org\"^^fpv:entityType."@en ;
   rdfs:comment "Datentyp für kontrollierte, kurze Klassifikationscodes in skos:notation, z. B. \"org\"^^fpv:entityType."@de .
 
-# Dokumentation der zulässigen Codes (nicht maschinell erzwungen).
+#  Dokumentation der zulässigen Codes (nicht maschinell erzwungen).
 fpv:entityTypeNote a skos:Concept ;
   skos:prefLabel "Zulässige entityType-Codes (Dokumentation)"@de ;
   skos:note """
@@ -34,13 +34,13 @@ pol    = Partei / politische Gruppierung (falls benötigt)
 """@de .
 
 
-# ex:xyz-unbekannte_Org a skos:Concept ;
-#  skos:prefLabel "Unbekannte Institution/Eintrag konnte nicht identifiziert werden"@de ;
-#  skos:note "Erläuterungen können jetzt hier stehen."@de .
+#  ex:xyz-unbekannte_Org a skos:Concept ;
+#   skos:prefLabel "Unbekannte Institution/Eintrag konnte nicht identifiziert werden"@de ;
+#   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 
-# A
+#  A
 
 
 ex:AA a skos:Concept ;
@@ -60,7 +60,7 @@ ex:AAPD a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/1233778501> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
+  # Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
 
 
 ex:ABB a skos:Concept ;
@@ -140,7 +140,7 @@ ex:AD a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16143799-0> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #altLabel beibehalten?
+  # altLabel beibehalten?
 
 
 ex:ADAC a skos:Concept ;
@@ -181,7 +181,7 @@ ex:AdG a skos:Concept ;
   skos:closeMatch <https://d-nb.info/01000372X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_der_Gegenwart> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
+  # Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
 
 
 ex:ADGB a skos:Concept ;
@@ -212,7 +212,7 @@ ex:ADL a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/3068203-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_des_Liberalismus> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID evtl. als "AdL"
+  #  ID evtl. als "AdL"
 
 
 ex:AdLESt a skos:Concept ;
@@ -222,7 +222,7 @@ ex:AdLESt a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1203669976> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID evtl. als "AdLES", altLabel ggf. löschen.
+  #  ID evtl. als "AdLES", altLabel ggf. löschen.
 
 
 ex:ADN a skos:Concept ;
@@ -261,7 +261,7 @@ ex:AeRat a skos:Concept ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2088812-0> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/%C3%84ltestenrat#Deutscher_Bundestag> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/%C3%84ltestenrat# Deutscher_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -354,7 +354,7 @@ ex:Airbus a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1246778939> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Airbus_(Zivilflugzeugsparte)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND und Wikipedia prüfen.
+  # GND und Wikipedia prüfen.
 
 
 ex:AJ a skos:Concept ;
@@ -364,7 +364,7 @@ ex:AJ a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/012178004> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
+  # Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
 
 
 ex:AKP-Gruppe a skos:Concept ;
@@ -400,7 +400,7 @@ ex:AL-OEsterreich a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/407324-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Alternative_Liste_%C3%96sterreichs> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID ändern zu "ALOe".
+  # ID ändern zu "ALOe".
 
 
 ex:AllgZeitMainz a skos:Concept ;
@@ -410,7 +410,7 @@ ex:AllgZeitMainz a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4751692-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Allgemeine_Zeitung_(Mainz)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
+  # Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
 
 
 ex:ANC a skos:Concept ;
@@ -446,7 +446,7 @@ ex:AP a skos:Concept ;
 ex:APRA a skos:Concept ;
   skos:prefLabel "Alianza Popular Revolucionaria Americana"@es ;
   skos:altLabel "APRA"@es ;
-  skos:altLabel "Amerikanische Revolutionäre Volksallianz"@de 
+  skos:altLabel "Amerikanische Revolutionäre Volksallianz"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5503965-0> ;
@@ -520,7 +520,7 @@ ex:ASJur a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2109194-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_sozialdemokratischer_Juristinnen_und_Juristen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID ggf. ändern zu ASJ.
+  # ID ggf. ändern zu ASJ.
 
 
 ex:AsozF a skos:Concept ;
@@ -531,7 +531,7 @@ ex:AsozF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/116038-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_sozialdemokratischer_Frauen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID ggf. als ASozF.
+  # ID ggf. als ASozF.
 
 
 ex:ASU a skos:Concept ;
@@ -585,7 +585,7 @@ ex:Avanti a skos:Concept ;
   skos:closeMatch <https://zdb-katalog.de/title.xhtml?idn=014429705> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Avanti!_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #nicht in GND, Verweis auf ZDB.
+  # nicht in GND, Verweis auf ZDB.
 
 
 ex:AvD a skos:Concept ;
@@ -628,7 +628,7 @@ ex:AZ a skos:Concept ;
 
 
 
-# B
+#  B
 
 
 ex:BadZ a skos:Concept ;
@@ -648,7 +648,7 @@ ex:BAG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35158-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesarbeitsgericht> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND für 1954-1990. weitere ggf. ergänzen. Klären auch in Bezug auf Ministerien.
+  # GND für 1954-1990. weitere ggf. ergänzen. Klären auch in Bezug auf Ministerien.
 
 
 ex:BAMF a skos:Concept ;
@@ -659,7 +659,7 @@ ex:BAMF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10046457-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Migration_und_Fl%C3%BCchtlinge> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Bisher prefLabel: Bundesamt für die Anerkennung Ausländischer Flüchtlinge, das war aber die Vorgängerorganisation (anderer Name, andere GND).
+  # Bisher prefLabel: Bundesamt für die Anerkennung Ausländischer Flüchtlinge, das war aber die Vorgängerorganisation (anderer Name, andere GND).
 
 
 ex:BamS a skos:Concept ;
@@ -711,7 +711,7 @@ ex:Bayern a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4005044-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayern> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Klären im Zusammenhang mit Geografika.
+  # Klären im Zusammenhang mit Geografika.
 
 
 ex:BayHStA a skos:Concept ;
@@ -738,7 +738,7 @@ ex:BayrLV a skos:Concept ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitung in der ZDB nicht gefunden. Titel prüfen. ID ggf. ändern zu: BayLV.
+  # Zeitung in der ZDB nicht gefunden. Titel prüfen. ID ggf. ändern zu: BayLV.
 
 
 ex:BayStabi a skos:Concept ;
@@ -778,7 +778,7 @@ ex:BBD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5073004-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Bauwesen_und_Raumordnung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1990-1997. siehe BBR.
+  # Zeitraum des Bestehens: 1990-1997. siehe BBR.
 
 
 ex:BBk a skos:Concept ;
@@ -800,7 +800,7 @@ ex:BBR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5270174-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Bauwesen_und_Raumordnung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: ab 1998. siehe BBD.
+  # Zeitraum des Bestehens: ab 1998. siehe BBD.
 
 
 ex:BBU a skos:Concept ;
@@ -893,7 +893,7 @@ ex:BdSt a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2038699-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Steuer-Gewerkschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Umbenennung 1975.
+  # Umbenennung 1975.
 
 
 ex:BdV a skos:Concept ;
@@ -905,7 +905,7 @@ ex:BdV a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2006262-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Vertriebenen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe auch BvD.
+  # siehe auch BvD.
 
 
 ex:BerExtra a skos:Concept ;
@@ -934,9 +934,9 @@ ex:BerlinerStimme a skos:Concept ;
   skos:altLabel "BS" ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:closeMatch <https://d-nb.info/014041561>
+  skos:closeMatch <https://d-nb.info/014041561> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID ggf. BS oder BerStimme. Erste drei altLabels evtl. löschen.
+  # ID ggf. BS oder BerStimme. Erste drei altLabels evtl. löschen.
 
 
 ex:BerMoPo a skos:Concept ;
@@ -957,7 +957,7 @@ ex:BEWAG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4098260-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bewag_(Berlin)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND problematisch, stimmt weder mit prefLabel noch mit Wikipedia überein.
+  # GND problematisch, stimmt weder mit prefLabel noch mit Wikipedia überein.
 
 
 ex:Beweg2Juni a skos:Concept ;
@@ -967,7 +967,7 @@ ex:Beweg2Juni a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4402133-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bewegung_2._Juni> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation überdenken.
+  # notation überdenken.
 
 
 ex:BfA a skos:Concept ;
@@ -978,7 +978,7 @@ ex:BfA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2117026-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesversicherungsanstalt_f%C3%BCr_Angestellte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation überdenken.
+  # notation überdenken.
 
 
 ex:BfArbeit a skos:Concept ;
@@ -989,7 +989,7 @@ ex:BfArbeit a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1002893-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsamt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1969-2003. Wikipedia-Artikel ggf. spezifischer.
+  # Zeitraum des Bestehens: 1969-2003. Wikipedia-Artikel ggf. spezifischer.
 
 
 ex:BFD a skos:Concept ;
@@ -1061,7 +1061,7 @@ ex:BHE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2096567-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesamtdeutscher_Block_/_Bund_der_Heimatvertriebenen_und_Entrechteten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. siehe auch GBBHE (https://d-nb.info/gnd/2001963-4).
+  # Prüfen, wo verwendet. siehe auch GBBHE (https://d-nb.info/gnd/2001963-4).
 
 
 ex:BidW a skos:Concept ;
@@ -1119,7 +1119,7 @@ ex:BMA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/18997-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Arbeit_und_Soziales> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1949-1957.
+  # Zeitraum des Bestehens: 1949-1957.
 
 
 ex:BMAS a skos:Concept ;
@@ -1130,7 +1130,7 @@ ex:BMAS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028862-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Arbeit_und_Soziales> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1957-1990, 1990-2002 (andere GND).
+  # Zeitraum des Bestehens: 1957-1990, 1990-2002 (andere GND).
 
 
 ex:BMAtom a skos:Concept ;
@@ -1141,7 +1141,7 @@ ex:BMAtom a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35168-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID ggf. ändern in BMAt.
+  # ID ggf. ändern in BMAt.
 
 
 ex:BMB a skos:Concept ;
@@ -1152,7 +1152,7 @@ ex:BMB a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2117646-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_innerdeutsche_Beziehungen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1969-1990, zuvor: BMG.
+  # Zeitraum des Bestehens: 1969-1990, zuvor: BMG.
 
 
 ex:BMBes a skos:Concept ;
@@ -1162,7 +1162,7 @@ ex:BMBes a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1041377010> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesschatzministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1957-1961, zuvor BM für Angelegenheiten des Marshallplanes (1949-1953) und BM für wirtschaftliche Zusammenarbeit (1953-1957), danach Bundesschatzministerium (1961-1969).
+  # Zeitraum des Bestehens: 1957-1961, zuvor BM für Angelegenheiten des Marshallplanes (1949-1953) und BM für wirtschaftliche Zusammenarbeit (1953-1957), danach Bundesschatzministerium (1961-1969).
 
 
 ex:BMBR a skos:Concept ;
@@ -1173,7 +1173,7 @@ ex:BMBR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35166-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Angelegenheiten_des_Bundesrates> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1957-1966, zuvor BM für Angelegenheiten des Bundesrates (1955-1957).
+  # Zeitraum des Bestehens: 1957-1966, zuvor BM für Angelegenheiten des Bundesrates (1955-1957).
 
 
 ex:BMBW a skos:Concept ;
@@ -1184,7 +1184,7 @@ ex:BMBW a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028870-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1969-1990.
+  # Zeitraum des Bestehens: 1969-1990.
 
 
 ex:BMEL a skos:Concept ;
@@ -1195,7 +1195,7 @@ ex:BMEL a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1045949620> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Ern%C3%A4hrung_und_Landwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens für angegebene GND: 2013-2025, offenbar falsch. Klären, wozu benötigt.
+  # Zeitraum des Bestehens für angegebene GND: 2013-2025, offenbar falsch. Klären, wozu benötigt.
 
 
 ex:BMELF a skos:Concept ;
@@ -1207,7 +1207,7 @@ ex:BMELF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028894-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Ern%C3%A4hrung_und_Landwirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1949-2001, GND ab 1990: https://d-nb.info/gnd/5030113-5.
+  # Zeitraum des Bestehens: 1949-2001, GND ab 1990: https://d-nb.info/gnd/5030113-5.
 
 
 ex:BMF a skos:Concept ;
@@ -1218,7 +1218,7 @@ ex:BMF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028782-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: https://d-nb.info/gnd/3009228-0.
+  # GND ab 1990: https://d-nb.info/gnd/3009228-0.
 
 
 ex:BMFa a skos:Concept ;
@@ -1229,9 +1229,9 @@ ex:BMFa a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028950-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Familie,_Senioren,_Frauen_und_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1953-1957, danach BM für Familien- und Jugendfragen (1957-1963), BM für Familie und Jugend (1963-1969).
-  #zwischenzeitlich: BM für Jugend, Familie und Gesundheit (1969-1986), BM für Jugend, Familie, Frauen und Gesundheit (1986-1991).
-  #anschließend: BM für Familie und Senioren + BM für Frauen und Jugend (1991-1994), dann BM für Familie, Senioren, Frauen und Jugend (1994-2025).
+  # Zeitraum des Bestehens: 1953-1957, danach BM für Familien- und Jugendfragen (1957-1963), BM für Familie und Jugend (1963-1969).
+  # zwischenzeitlich: BM für Jugend, Familie und Gesundheit (1969-1986), BM für Jugend, Familie, Frauen und Gesundheit (1986-1991).
+  # anschließend: BM für Familie und Senioren + BM für Frauen und Jugend (1991-1994), dann BM für Familie, Senioren, Frauen und Jugend (1994-2025).
 
 
 ex:BMFT a skos:Concept ;
@@ -1242,7 +1242,7 @@ ex:BMFT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028958-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1972-1994, GND ab 1990: https://d-nb.info/gnd/2116224-4.
+  # Zeitraum des Bestehens: 1972-1994, GND ab 1990: https://d-nb.info/gnd/2116224-4.
 
 
 ex:BMG a skos:Concept ;
@@ -1253,7 +1253,7 @@ ex:BMG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028926-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_innerdeutsche_Beziehungen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1949-1969, danach BMB.
+  # Zeitraum des Bestehens: 1949-1969, danach BMB.
 
 
 ex:BMGes a skos:Concept ;
@@ -1264,8 +1264,8 @@ ex:BMGes a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4561973-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Gesundheit_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1961-1969, danach BM für Jugend, Familie und Gesundheit (1969-1986), BM für Jugend, Familie, Frauen und Gesundheit (1986-1991).
-  #anschließend: BM für Gesundheit (1991-2002, erneut ab 2005), zwischenzeitlich: BM für Gesundheit und Soziale Sicherheit (2002-2005).
+  # Zeitraum des Bestehens: 1961-1969, danach BM für Jugend, Familie und Gesundheit (1969-1986), BM für Jugend, Familie, Frauen und Gesundheit (1986-1991).
+  # anschließend: BM für Gesundheit (1991-2002, erneut ab 2005), zwischenzeitlich: BM für Gesundheit und Soziale Sicherheit (2002-2005).
 
 
 ex:BMI a skos:Concept ;
@@ -1276,7 +1276,7 @@ ex:BMI a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028854-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_des_Innern,_f%C3%BCr_Bau_und_Heimat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: https://d-nb.info/gnd/2117465-9.
+  # GND ab 1990: https://d-nb.info/gnd/2117465-9.
 
 
 ex:BMJ a skos:Concept ;
@@ -1287,7 +1287,7 @@ ex:BMJ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028822-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Justiz_und_f%C3%BCr_Verbraucherschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: https://d-nb.info/gnd/2118801-4.
+  # GND ab 1990: https://d-nb.info/gnd/2118801-4.
 
 
 ex:BMJFG a skos:Concept ;
@@ -1298,7 +1298,7 @@ ex:BMJFG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4020762-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Familie,_Senioren,_Frauen_und_Jugend> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1969-1991, siehe BMGes und BMFa. altLabel prüfen, evtl. BMJFFG.
+  # Zeitraum des Bestehens: 1969-1991, siehe BMGes und BMFa. altLabel prüfen, evtl. BMJFFG.
 
 
 ex:BMM a skos:Concept ;
@@ -1309,7 +1309,7 @@ ex:BMM a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1086197976> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesschatzministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1949-1953, siehe BMBes.
+  # Zeitraum des Bestehens: 1949-1953, siehe BMBes.
 
 
 ex:BMP a skos:Concept ;
@@ -1320,7 +1320,7 @@ ex:BMP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028886-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Post_und_Telekommunikation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1950-1989, danach: BM für Post und Telekommunikation (1989-1997).
+  # Zeitraum des Bestehens: 1950-1989, danach: BM für Post und Telekommunikation (1989-1997).
 
 
 ex:BMRaum a skos:Concept ;
@@ -1331,9 +1331,9 @@ ex:BMRaum a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028799-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesbauministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1972-1998, altLabel prüfen.
-  #zuvor: BM für Wohnungsbau (1950-1961), BM für Wohnungswesen, Städtebau und Raumordnung (1961-1965), BM für Wohnungswesen und Städtebau (1965-1969), BM für Städtebau und Wohnungswesen (1969-1972)
-  #danach: BM für  Verkehr, Bau- und Wohnungswesen (1998-2005)
+  # Zeitraum des Bestehens: 1972-1998, altLabel prüfen.
+  # zuvor: BM für Wohnungsbau (1950-1961), BM für Wohnungswesen, Städtebau und Raumordnung (1961-1965), BM für Wohnungswesen und Städtebau (1965-1969), BM für Städtebau und Wohnungswesen (1969-1972)
+  # danach: BM für  Verkehr, Bau- und Wohnungswesen (1998-2005)
 
 
 ex:BMV a skos:Concept ;
@@ -1344,7 +1344,7 @@ ex:BMV a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2036867-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Verkehr_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: https://d-nb.info/gnd/2117656-5.
+  # GND ab 1990: https://d-nb.info/gnd/2117656-5.
 
 
 ex:BMVg a skos:Concept ;
@@ -1355,7 +1355,7 @@ ex:BMVg a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028830-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Verteidigung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: https://d-nb.info/gnd/2117075-7.
+  # GND ab 1990: https://d-nb.info/gnd/2117075-7.
 
 
 ex:BMVt a skos:Concept ;
@@ -1387,7 +1387,7 @@ ex:BMWF a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1971-1972.
+  # Zeitraum des Bestehens: 1971-1972.
 
 
 ex:BMWi a skos:Concept ;
@@ -1398,9 +1398,9 @@ ex:BMWi a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028855-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990 (bis 1998): https://d-nb.info/gnd/5029261-4.
-  #anschließend: BM für Wirtschaft und Technologie (1998-2002), BM für Wirtschaft und Arbeit (2002-2005).
-  #zwischenzeitlich: BMWF (1971-1972).
+  # GND ab 1990 (bis 1998): https://d-nb.info/gnd/5029261-4.
+  # anschließend: BM für Wirtschaft und Technologie (1998-2002), BM für Wirtschaft und Arbeit (2002-2005).
+  # zwischenzeitlich: BMWF (1971-1972).
 
 
 ex:BMWo a skos:Concept ;
@@ -1411,7 +1411,7 @@ ex:BMWo a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/115060-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesbauministerium> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1950-1961. siehe BMBau.
+  # Zeitraum des Bestehens: 1950-1961. siehe BMBau.
 
 
 ex:BMZ a skos:Concept ;
@@ -1422,8 +1422,8 @@ ex:BMZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35174-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_wirtschaftliche_Zusammenarbeit_und_Entwicklung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: https://d-nb.info/gnd/5032588-7.
-  #ab 1993: BM für Wirtschaftliche Zusammenarbeit und Entwicklung.
+  # GND ab 1990: https://d-nb.info/gnd/5032588-7.
+  # ab 1993: BM für Wirtschaftliche Zusammenarbeit und Entwicklung.
 
 
 ex:BND a skos:Concept ;
@@ -1462,7 +1462,7 @@ ex:BoulZ a skos:Concept ;
   skos:closeMatch <https://d-nb.info/014050420> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/B.Z.> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID möglichst ändern in BZ (BZ dafür ändern in BerZeit).
+  # ID möglichst ändern in BZ (BZ dafür ändern in BerZeit).
 
 
 ex:BP a skos:Concept ;
@@ -1503,7 +1503,7 @@ ex:BPFraktBT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1020500-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayernpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND und Wikipedia identisch mit BP.
+  # GND und Wikipedia identisch mit BP.
 
 
 ex:BPK a skos:Concept ;
@@ -1562,7 +1562,7 @@ ex:BritPet a skos:Concept ;
   skos:altLabel "BP"@en ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2005982-6>
+  skos:exactMatch <https://d-nb.info/gnd/2005982-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/BP> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1585,7 +1585,7 @@ ex:BStU a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5078273-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesbeauftragter_f%C3%BCr_die_Stasi-Unterlagen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Wechsel von prefLabel und altLabel überlegen.
+  # Wechsel von prefLabel und altLabel überlegen.
 
 
 ex:BT a skos:Concept ;
@@ -1617,7 +1617,7 @@ ex:BTPraesident a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4377827-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Pr%C3%A4sident_des_Deutschen_Bundestages> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Ggf. überlegen, wie "Bundestagspräsidentin" abgebildet werden kann.
+  # Prüfen, wo verwendet. Ggf. überlegen, wie "Bundestagspräsidentin" abgebildet werden kann.
 
 
 ex:BTPraesidium a skos:Concept ;
@@ -1643,7 +1643,7 @@ ex:BulletinEG a skos:Concept ;
   skos:prefLabel "Bulletin der Europäischen Gemeinschaften"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:closeMatch <https://d-nb.info/010015264>
+  skos:closeMatch <https://d-nb.info/010015264> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -1697,7 +1697,7 @@ ex:BuReg a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2117038-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesregierung_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher:BReg.
+  # ID eher:BReg.
 
 
 ex:BuVer a skos:Concept ;
@@ -1707,7 +1707,7 @@ ex:BuVer a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2171986-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesversammlung_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher:BVers.
+  # ID eher:BVers.
 
 
 ex:BVA a skos:Concept ;
@@ -1729,7 +1729,7 @@ ex:BvD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/30571-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Vertriebenen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe auch BdV.
+  # siehe auch BdV.
 
 
 ex:BVerfG a skos:Concept ;
@@ -1737,7 +1737,7 @@ ex:BVerfG a skos:Concept ;
   skos:altLabel "BVerfG"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/35194-5>
+  skos:exactMatch <https://d-nb.info/gnd/35194-5> ;
   skos:exactMatch <https://d-nb.info/gnd/2117905-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverfassungsgericht> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -1762,7 +1762,7 @@ ex:BVFrauen a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2004298-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berufsverband_der_Frauen%C3%A4rzte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: BVF.
+  # ID eher: BVF.
 
 
 ex:BVG a skos:Concept ;
@@ -1804,11 +1804,11 @@ ex:BZ a skos:Concept ;
   skos:closeMatch <https://d-nb.info/014328984> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Berliner_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID ggf. ändern, vgl. B.Z.
+  # ID ggf. ändern, vgl. B.Z.
 
 
 
-# C
+#  C
 
 
 ex:Cap a skos:Concept ;
@@ -1859,7 +1859,7 @@ ex:CdE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/36821-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europarat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: EURat.
+  # ID eher: EURat.
 
 
 ex:CdS a skos:Concept ;
@@ -1879,7 +1879,7 @@ ex:CDS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/516235-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette: CentreDS!
+  # Dublette: CentreDS!
 
 
 ex:CDU a skos:Concept ;
@@ -1890,7 +1890,7 @@ ex:CDU a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1010501-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich_Demokratische_Union_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Klären: GND verweis auf die CDU in der DDR, Wikipedia auf die gesamtdeutsche Partei.
+  # Klären: GND verweis auf die CDU in der DDR, Wikipedia auf die gesamtdeutsche Partei.
 
 
 ex:CDUFraktionBT a skos:Concept ;
@@ -1902,7 +1902,7 @@ ex:CDUFraktionBT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2124998-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_CDU/CSU_im_Deutschen_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: CDUCSUFraktionBT. Vgl. die ID: BPFraktBT und ggf. andere.
+  # ID eher: CDUCSUFraktionBT. Vgl. die ID: BPFraktBT und ggf. andere.
 
 
 ex:CDUFraktionsvorstandBT a skos:Concept ;
@@ -1912,7 +1912,7 @@ ex:CDUFraktionsvorstandBT a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_CDU/CSU_im_Deutschen_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: CDUCSUFraktionsvorstandBT.
+  # ID eher: CDUCSUFraktionsvorstandBT.
 
 
 ex:CEMT a skos:Concept ;
@@ -1927,7 +1927,7 @@ ex:CEMT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4616346-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Verkehrsministerkonferenz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID evtl. anpassen (bisher auf fr abgestellt).
+  # ID evtl. anpassen (bisher auf fr abgestellt).
 
 
 ex:CentreDS a skos:Concept ;
@@ -1938,7 +1938,7 @@ ex:CentreDS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/516235-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette: CDS! Diesen Eintrag löschen.
+  # Dublette: CDS! Diesen Eintrag löschen.
 
 
 ex:CFP a skos:Concept ;
@@ -2041,7 +2041,7 @@ ex:ClevelandPlain a skos:Concept ;
   skos:closeMatch <https://zdb-katalog.de/title.xhtml?idn=977654583> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Plain_Dealer_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #nicht in der GND, Verweis auf ZDB. Prüfen, ob Angabe in Klammern notwendig.
+  # nicht in der GND, Verweis auf ZDB. Prüfen, ob Angabe in Klammern notwendig.
 
 
 ex:CMA a skos:Concept ;
@@ -2095,7 +2095,7 @@ ex:COMECON a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1016341-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rat_f%C3%BCr_gegenseitige_Wirtschaftshilfe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette: RGW!
+  # Dublette: RGW!
 
 
 ex:Comisco a skos:Concept ;
@@ -2127,7 +2127,7 @@ ex:CSA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1091317-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitnehmer-Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #heute: Arbeitnehmer-Union.
+  # heute: Arbeitnehmer-Union.
 
 
 ex:CSP a skos:Concept ;
@@ -2187,7 +2187,7 @@ ex:CuW a skos:Concept ;
   skos:closeMatch <https://d-nb.info/01068042X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christ_und_Welt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND bisher: https://d-nb.info/gnd/1064925057, die geht aber auf den Verlag.
+  # GND bisher: https://d-nb.info/gnd/1064925057, die geht aber auf den Verlag.
 
 
 ex:CV a skos:Concept ;
@@ -2208,7 +2208,7 @@ ex:CVP-BE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4488907-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christen-Democratisch_en_Vlaams> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #prefLabel und GND verweisen auf die niederländische Partei, ID und Wikipedia auf die flämische. Klären!
+  # prefLabel und GND verweisen auf die niederländische Partei, ID und Wikipedia auf die flämische. Klären!
 
 
 ex:CVP-CH a skos:Concept ;
@@ -2232,7 +2232,7 @@ ex:CVP-SL a skos:Concept ;
 
 
 
-# D
+#  D
 
 
 ex:DA a skos:Concept ;
@@ -2262,7 +2262,7 @@ ex:DaiBenz a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2007419-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Daimler-Benz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID evtl. DBenz.
+  # ID evtl. DBenz.
 
 
 ex:DAK a skos:Concept ;
@@ -2284,14 +2284,14 @@ ex:DAS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4752710-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Allgemeines_Sonntagsblatt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: DS.
+  # ID eher: DS.
 
 
 ex:dasda a skos:Concept ;
   skos:prefLabel "das da - Monatsmagazin für Kultur und Politik"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:closeMatch <https://d-nb.info/011787511>
+  skos:closeMatch <https://d-nb.info/011787511> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Das_da> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -2303,7 +2303,7 @@ ex:DasParl a skos:Concept ;
   skos:closeMatch <https://d-nb.info/010695311> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Das_Parlament> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND bisher: https://d-nb.info/gnd/1086235312, die geht aber auf die Redaktion.
+  # GND bisher: https://d-nb.info/gnd/1086235312, die geht aber auf die Redaktion.
 
 
 ex:dasVolk a skos:Concept ;
@@ -2311,8 +2311,8 @@ ex:dasVolk a skos:Concept ;
   skos:altLabel "Das Volk. Organ der Sozialdemokratischen Partei Badens"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:closeMatch <https://d-nb.info/011976241>
-  skos:closeMatch <https://de.wikipedia.org/wiki/Das_Volk_(1946%E2%80%931954)>
+  skos:closeMatch <https://d-nb.info/011976241> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Das_Volk_(1946%E2%80%931954)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -2374,7 +2374,7 @@ ex:DBV a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2008371-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Naturschutzbund_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ab 1990: NABU. Prüfen, ob darauf Verweise.
+  # ab 1990: NABU. Prüfen, ob darauf Verweise.
 
 
 ex:DBwV a skos:Concept ;
@@ -2415,7 +2415,7 @@ ex:DDP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/118094-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Demokratische_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe DStP.
+  # siehe DStP.
 
 
 ex:ddp a skos:Concept ;
@@ -2426,7 +2426,7 @@ ex:ddp a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4230201-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Depeschendienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Problem mit ID zuvor?
+  # Problem mit ID zuvor?
 
 
 ex:DDR a skos:Concept ;
@@ -2437,7 +2437,7 @@ ex:DDR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4011890-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Geografikum. Prüfen, wo verwendet.
+  # Geografikum. Prüfen, wo verwendet.
 
 
 ex:DDRVolkskammer a skos:Concept ;
@@ -2448,7 +2448,7 @@ ex:DDRVolkskammer a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35143-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Volkskammer> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: Volkskammer.
+  # ID eher: Volkskammer.
 
 
 ex:ddvg a skos:Concept ;
@@ -2459,7 +2459,7 @@ ex:ddvg a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10051085-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Druck-_und_Verlagsgesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation eher com oder news.
+  # notation eher com oder news.
 
 
 ex:DEA a skos:Concept ;
@@ -2547,7 +2547,7 @@ ex:DerSelbs a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1067149953> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND bisher Hg., in der ZDB mehrere Treffer, wahrscheinlich https://d-nb.info/010716521.
+  # Prüfen, wo verwendet. GND bisher Hg., in der ZDB mehrere Treffer, wahrscheinlich https://d-nb.info/010716521.
 
 
 ex:DesdnerB a skos:Concept ;
@@ -2619,7 +2619,7 @@ ex:DeuNK a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2053361-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsches_Nationalkomitee_f%C3%BCr_Denkmalschutz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: DNK.
+  # ID eher: DNK.
 
 
 ex:DeuNStift a skos:Concept ;
@@ -2637,7 +2637,7 @@ ex:DeuParteiFrak a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID anpassen an DP, dort einordnen.
+  # ID anpassen an DP, dort einordnen.
 
 
 ex:DeuPR a skos:Concept ;
@@ -2647,7 +2647,7 @@ ex:DeuPR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2008626-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Presserat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: DPR.
+  # ID eher: DPR.
 
 
 ex:deVol a skos:Concept ;
@@ -2657,7 +2657,7 @@ ex:deVol a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4383689-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/De_Volkskrant> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: Volkskrant.
+  # ID eher: Volkskrant.
 
 
 ex:DFB a skos:Concept ;
@@ -2678,7 +2678,7 @@ ex:DFD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2007270-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Demokratischer_Frauenbund_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND nach 1990: https://d-nb.info/gnd/5076948-0
+  # GND nach 1990: https://d-nb.info/gnd/5076948-0
 
 
 ex:DFG a skos:Concept ;
@@ -2742,14 +2742,14 @@ ex:DGBJugend a skos:Concept ;
 
 ex:DGG a skos:Concept ;
   skos:prefLabel "Deutsche Gesellschaft für kombinierten Güterverkehr"@de ;
-  skos:altLabel "Kombiverkehr. Deutsche Gesellschaft für Kombinierten Güterverkehr"
+  skos:altLabel "Kombiverkehr. Deutsche Gesellschaft für Kombinierten Güterverkehr"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2031025-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Kombiverkehr_(Unternehmen)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet und ob ggf. prefLabel und altLabel umstellbar.
-  #ID eher: DGkG oder ggf. KombiV.
+  #  Prüfen, wo verwendet und ob ggf. prefLabel und altLabel umstellbar.
+  # ID eher: DGkG oder ggf. KombiV.
 
 
 ex:DGK a skos:Concept ;
@@ -2758,7 +2758,7 @@ ex:DGK a skos:Concept ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7675-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/DZ_Bank#Geschichte> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/DZ_Bank# Geschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -2771,7 +2771,7 @@ ex:DHP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5030393-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsch-Hannoversche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe DP (Nachfolgerin).
+  # siehe DP (Nachfolgerin).
 
 
 ex:DIAG a skos:Concept ;
@@ -2782,7 +2782,7 @@ ex:DIAG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/355355-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Industrieanlagen_Gesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette: DtIndAnlagenAG - hierher.
+  # Dublette: DtIndAnlagenAG - hierher.
 
 
 ex:DIHT a skos:Concept ;
@@ -2793,7 +2793,7 @@ ex:DIHT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2008689-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Industrie-_und_Handelskammer> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 2001:	https://d-nb.info/gnd/10023377-6 (Deutscher Industrie- und Handelskammertag, DIHK)
+  # GND ab 2001:	https://d-nb.info/gnd/10023377-6 (Deutscher Industrie- und Handelskammertag, DIHK)
 
 
 ex:DIW a skos:Concept ;
@@ -2885,7 +2885,7 @@ ex:DLF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/38768-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutschlandfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #bis 1993, ab 1994: Deutschlandradio (https://d-nb.info/gnd/38768-X, https://de.wikipedia.org/wiki/Deutschlandradio)
+  # bis 1993, ab 1994: Deutschlandradio (https://d-nb.info/gnd/38768-X, https://de.wikipedia.org/wiki/Deutschlandradio)
 
 
 ex:DLG a skos:Concept ;
@@ -2983,7 +2983,7 @@ ex:DP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/30964-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe DHP (Vorgängerin), siehe DeuParteiFrak (hierher).
+  # siehe DHP (Vorgängerin), siehe DeuParteiFrak (hierher).
 
 
 ex:dpa a skos:Concept ;
@@ -3004,7 +3004,7 @@ ex:DParlG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2088038-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Parlamentarische_Gesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette, siehe DPG - dorthin.
+  # Dublette, siehe DPG - dorthin.
 
 
 ex:dpd a skos:Concept ;
@@ -3025,7 +3025,7 @@ ex:DPG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2088038-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Parlamentarische_Gesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette, siehe DParlG - hierher.
+  # Dublette, siehe DParlG - hierher.
 
 
 ex:DPGe a skos:Concept ;
@@ -3044,7 +3044,7 @@ ex:DPS a skos:Concept ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/37036-8> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Demokratische_Partei/Demokratische_Partei_Saar#Geschichte> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Demokratische_Partei/Demokratische_Partei_Saar# Geschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -3056,7 +3056,7 @@ ex:DR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/17469-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Konservative_Partei_%E2%80%93_Deutsche_Rechtspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #lt. Wikipedia: Deutsche Konservative Partei – Deutsche Rechtspartei (DKP – DRP).
+  # lt. Wikipedia: Deutsche Konservative Partei – Deutsche Rechtspartei (DKP – DRP).
 
 
 ex:DRK a skos:Concept ;
@@ -3158,7 +3158,7 @@ ex:DStP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/116380-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Demokratische_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe DDP.
+  # siehe DDP.
 
 
 ex:DT a skos:Concept ;
@@ -3188,7 +3188,7 @@ ex:DtBauernV a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2008135-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutscher_Bauernverband> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen.
+  # ID überlegen.
 
 
 ex:DtIndAnlagenAG a skos:Concept ;
@@ -3198,7 +3198,7 @@ ex:DtIndAnlagenAG a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Industrieanlagen_Gesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette: DIAG - dorthin.
+  # Dublette: DIAG - dorthin.
 
 
 ex:DU a skos:Concept ;
@@ -3215,9 +3215,9 @@ ex:DUD a skos:Concept ;
   skos:altLabel "DUD"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:closeMatch <https://d-nb.info/010644768>
+  skos:closeMatch <https://d-nb.info/010644768> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet - ggf. mit Bindestrichen (so in ZDB und DNB).
+  # Prüfen, wo verwendet - ggf. mit Bindestrichen (so in ZDB und DNB).
 
 
 ex:DV a skos:Concept ;
@@ -3278,7 +3278,7 @@ ex:DWKern a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2057875-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Gesellschaft_f%C3%BCr_Wiederaufarbeitung_von_Kernbrennstoffen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation überlegen: com oder org.
+  # notation überlegen: com oder org.
 
 
 ex:DZP a skos:Concept ;
@@ -3309,12 +3309,12 @@ ex:DZuWz a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4424585-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Zeitung_und_Wirtschaftszeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #lt. ZDB aufgegangen in: Handelsblatt. lt. Wikipedia gefolgt von: Deutsche Zeitung. Christ und Welt.
-  #ID anpassen (ursprünglich "Deutsche Zeitung und Wirtschaftszeitung", aber so nicht in ZDB und DNB).
+  # lt. ZDB aufgegangen in: Handelsblatt. lt. Wikipedia gefolgt von: Deutsche Zeitung. Christ und Welt.
+  # ID anpassen (ursprünglich "Deutsche Zeitung und Wirtschaftszeitung", aber so nicht in ZDB und DNB).
 
 
 
-# E
+#  E
 
 
 ex:EAP a skos:Concept ;
@@ -3343,7 +3343,7 @@ ex:ECE a skos:Concept ;
 
 ex:ECOFIN a skos:Concept ;
   skos:prefLabel "Rat für Wirtschaft und Finanzen"@de ;
-  skos:altLabel "EU-Finanzministerrat"@de
+  skos:altLabel "EU-Finanzministerrat"@de ;
   skos:altLabel "Ecofin-Rat"@de ;
   skos:altLabel "Economic and Financial Affairs Council"@en ;
   skos:altLabel "ECOFIN"@en ;
@@ -3383,7 +3383,7 @@ ex:EG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5103087-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Gemeinschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #von 1993 bis 2009, zuvor: EGKS (1951-1993), EWG (1957-1993), danach: EU (ab 2009).
+  # von 1993 bis 2009, zuvor: EGKS (1951-1993), EWG (1957-1993), danach: EU (ab 2009).
 
 
 ex:EGB a skos:Concept ;
@@ -3404,7 +3404,7 @@ ex:EGKS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1003478-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Gemeinschaft_f%C3%BCr_Kohle_und_Stahl> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #von 1951 bis 1993, siehe EG.
+  # von 1951 bis 1993, siehe EG.
 
 
 ex:EilenburgBau a skos:Concept ;
@@ -3412,7 +3412,7 @@ ex:EilenburgBau a skos:Concept ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GmbH aufnehmen?
+  # GmbH aufnehmen?
 
 
 ex:EK a skos:Concept ;
@@ -3444,7 +3444,7 @@ ex:ELD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1041461038> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Liberale_und_Demokratische_Fraktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Abkürzung prüfen.
+  # Abkürzung prüfen.
 
 
 ex:Emnid a skos:Concept ;
@@ -3524,7 +3524,7 @@ ex:Eska a skos:Concept ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GmbH aufnehmen?
+  # GmbH aufnehmen?
 
 
 ex:EU a skos:Concept ;
@@ -3535,7 +3535,7 @@ ex:EU a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5098525-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe EG.
+  # siehe EG.
 
 
 ex:EUCD a skos:Concept ;
@@ -3680,7 +3680,7 @@ ex:EWG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35433-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Wirtschaftsgemeinschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe EG.
+  # siehe EG.
 
 
 ex:Exp a skos:Concept ;
@@ -3700,11 +3700,11 @@ ex:EZU a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/37224-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Europ%C3%A4ische_Zahlungsunion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation klären, evtl. law.
+  # notation klären, evtl. law.
 
 
 
-# F
+#  F
 
 
 ex:FA a skos:Concept ;
@@ -3839,7 +3839,7 @@ ex:FDP-FraktionBT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2028872-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_Freien_Demokraten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID eher: FDPFraktionBT, siehe weitere Fraktionen.
+  # ID eher: FDPFraktionBT, siehe weitere Fraktionen.
 
 
 ex:FDV a skos:Concept ;
@@ -3848,9 +3848,9 @@ ex:FDV a skos:Concept ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10031324-3> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Volkspartei#Freie_Deutsche_Volkspartei_(Berlin)> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Volkspartei# Freie_Deutsche_Volkspartei_(Berlin)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe FVP.
+  # siehe FVP.
 
 
 ex:Fed a skos:Concept ;
@@ -3920,7 +3920,7 @@ ex:FIBAG a skos:Concept ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND für Fibag-Affäre: https://d-nb.info/gnd/4154294-0. Nicht dieses Unternehmen: https://d-nb.info/gnd/1087006538.
+  # GND für Fibag-Affäre: https://d-nb.info/gnd/4154294-0. Nicht dieses Unternehmen: https://d-nb.info/gnd/1087006538.
 
 
 ex:Filmfabrik a skos:Concept ;
@@ -4042,7 +4042,7 @@ ex:FriedKruppAG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/280119-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Friedrich_Krupp_AG> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND verweist auf Zeitraum 1903-1943, ggf. ändern.
+  # Prüfen, wo verwendet. GND verweist auf Zeitraum 1903-1943, ggf. ändern.
 
 
 ex:Frontal a skos:Concept ;
@@ -4063,7 +4063,7 @@ ex:FRUS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1085184463> ;
   skos:closeMatch <https://en.wikipedia.org/wiki/Foreign_Relations_of_the_United_States_(book_series)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Eintrag löschen, siehe AAPD.
+  # Eintrag löschen, siehe AAPD.
 
 
 ex:FSK a skos:Concept ;
@@ -4104,11 +4104,11 @@ ex:FVP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/45347-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Volkspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe FDV.
+  # siehe FDV.
 
 
 
-# G
+#  G
 
 
 ex:GA a skos:Concept ;
@@ -4174,7 +4174,7 @@ ex:GBBHE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2001963-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesamtdeutscher_Block/Bund_der_Heimatvertriebenen_und_Entrechteten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe auch BHE (https://d-nb.info/gnd/2096567-9).
+  # siehe auch BHE (https://d-nb.info/gnd/2096567-9).
 
 
 ex:GdED a skos:Concept ;
@@ -4197,7 +4197,7 @@ ex:GDP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5007105-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesamtdeutsche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #entstanden aus GB/BHE und DP.
+  # entstanden aus GB/BHE und DP.
 
 
 ex:GdPol a skos:Concept ;
@@ -4256,9 +4256,9 @@ ex:GfK a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1007525-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Karlsruher_Institut_f%C3%BCr_Technologie#Geschichte_des_Forschungszentrums_Karlsruhe> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Karlsruher_Institut_f%C3%BCr_Technologie# Geschichte_des_Forschungszentrums_Karlsruhe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Bestand 1959-1977.
+  # Prüfen, wo verwendet. Bestand 1959-1977.
 
 
 ex:GG a skos:Concept ;
@@ -4320,7 +4320,7 @@ ex:GoetheInstitut a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10068828-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Goethe-Institut> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID anpassen an altLabel.
+  # ID anpassen an altLabel.
 
 
 ex:Gr47 a skos:Concept ;
@@ -4349,7 +4349,7 @@ ex:GSG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4100247-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/GSG_9_der_Bundespolizei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette hierunter.
+  # Dublette hierunter.
 
 
 ex:GSG-9 a skos:Concept ;
@@ -4360,7 +4360,7 @@ ex:GSG-9 a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4100247-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/GSG_9_der_Bundespolizei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette hierüber.
+  # Dublette hierüber.
 
 
 ex:GSO a skos:Concept ;
@@ -4379,7 +4379,7 @@ ex:GTZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2037665-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Gesellschaft_f%C3%BCr_Technische_Zusammenarbeit> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation: org oder com.
+  # notation: org oder com.
 
 
 ex:Gua a skos:Concept ;
@@ -4399,7 +4399,7 @@ ex:GUS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2128486-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gemeinschaft_Unabh%C3%A4ngiger_Staaten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Geografikum, siehe DDR. Prüfen, wo verwendet.
+  # Geografikum, siehe DDR. Prüfen, wo verwendet.
 
 
 ex:GVP a skos:Concept ;
@@ -4413,7 +4413,7 @@ ex:GVP a skos:Concept ;
 
 
 
-# H
+#  H
 
 
 ex:HaBl a skos:Concept ;
@@ -4462,7 +4462,7 @@ ex:HannovAllgZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4159087-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Hannoversche_Allgemeine_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID anpassen an altLabel.
+  # ID anpassen an altLabel.
 
 
 ex:HansardSoc a skos:Concept ;
@@ -4534,7 +4534,7 @@ ex:Helaba a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2011766-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Landesbank_Hessen-Th%C3%BCringen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1953-1992. siehe HelabaThue.
+  # Zeitraum des Bestehens: 1953-1992. siehe HelabaThue.
 
 
 ex:HelabaThue a skos:Concept ;
@@ -4545,7 +4545,7 @@ ex:HelabaThue a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5058506-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Landesbank_Hessen-Th%C3%BCringen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum: ab 1992. siehe Helaba.
+  # Zeitraum: ab 1992. siehe Helaba.
 
 
 ex:Herstatt a skos:Concept ;
@@ -4564,7 +4564,7 @@ ex:HHeadS a skos:Concept ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Keine Datensätze gefunden, auch nicht für altLabel.
+  # Prüfen, wo verwendet. Keine Datensätze gefunden, auch nicht für altLabel.
 
 
 ex:HIAG a skos:Concept ;
@@ -4575,7 +4575,7 @@ ex:HIAG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2032541-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Hilfsgemeinschaft_auf_Gegenseitigkeit_der_Angeh%C3%B6rigen_der_ehemaligen_Waffen-SS> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ggf. prefLabel und altLabel tauschen.
+  # ggf. prefLabel und altLabel tauschen.
 
 
 ex:HJ a skos:Concept ;
@@ -4623,7 +4623,7 @@ ex:HSA a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Archiv entweder hier: https://de.wikipedia.org/wiki/Helmut_und_Loki_Schmidt-Stiftung oder im AdsD. altLabel prüfen.
+  # Prüfen, wo verwendet. Archiv entweder hier: https://de.wikipedia.org/wiki/Helmut_und_Loki_Schmidt-Stiftung oder im AdsD. altLabel prüfen.
 
 
 ex:HSFK a skos:Concept ;
@@ -4667,7 +4667,7 @@ ex:HU a skos:Concept ;
 
 
 
-# I
+#  I
 
 
 ex:IAEO a skos:Concept ;
@@ -4753,7 +4753,7 @@ ex:IfD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2013703-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Demoskopie_Allensbach> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation evtl. com.
+  # notation evtl. com.
 
 
 ex:IFEU a skos:Concept ;
@@ -4774,7 +4774,7 @@ ex:IFM a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2104913-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Initiative_Frieden_und_Menschenrechte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation evtl. pol.
+  # notation evtl. pol.
 
 
 ex:Ifo a skos:Concept ;
@@ -4785,7 +4785,7 @@ ex:Ifo a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/63922-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ifo_Institut_f%C3%BCr_Wirtschaftsforschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. siehe hierunter, auch zur unterschiedlichen notation.
+  # Prüfen, wo verwendet. siehe hierunter, auch zur unterschiedlichen notation.
 
 
 ex:ifo-institut a skos:Concept ;
@@ -4818,7 +4818,7 @@ ex:IGBE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2013555-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Bergbau_und_Energie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Zeitraum des Bestehens: 1960-1997. 1948-1960: https://d-nb.info/gnd/2013539-7 (IG Bergbau), ab 1997: https://d-nb.info/gnd/5184092-3 u. https://d-nb.info/gnd/1376276941 (IGBCE, siehe zwei hierunter).
+  # Prüfen, wo verwendet. Zeitraum des Bestehens: 1960-1997. 1948-1960: https://d-nb.info/gnd/2013539-7 (IG Bergbau), ab 1997: https://d-nb.info/gnd/5184092-3 u. https://d-nb.info/gnd/1376276941 (IGBCE, siehe zwei hierunter).
 
 
 ex:IGBSE a skos:Concept ;
@@ -4830,7 +4830,7 @@ ex:IGBSE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2013523-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Bau-Steine-Erden> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1951-1995. ab 1996: https://d-nb.info/gnd/5165754-5 (IG BAU).
+  # Zeitraum des Bestehens: 1951-1995. ab 1996: https://d-nb.info/gnd/5165754-5 (IG BAU).
 
 
 ex:IGCHemie a skos:Concept ;
@@ -4842,7 +4842,7 @@ ex:IGCHemie a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2013571-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Chemie-Papier-Keramik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Schreibung ID prüfen. Zeitraum des Bestehens: 1946-1996. ab 1997: IGBCE (siehe zwei hierüber)
+  # Schreibung ID prüfen. Zeitraum des Bestehens: 1946-1996. ab 1997: IGBCE (siehe zwei hierüber)
 
 
 ex:IGDruck a skos:Concept ;
@@ -4853,7 +4853,7 @@ ex:IGDruck a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2013587-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Druck_und_Papier> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1948-1989. 1989-2001: https://d-nb.info/gnd/517279-2 (IG Medien), ab 2001: https://d-nb.info/gnd/10024483-X (ver.di).
+  # Zeitraum des Bestehens: 1948-1989. 1989-2001: https://d-nb.info/gnd/517279-2 (IG Medien), ab 2001: https://d-nb.info/gnd/10024483-X (ver.di).
 
 
 ex:IGFarben a skos:Concept ;
@@ -4866,7 +4866,7 @@ ex:IGFarben a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/16005-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/I.G._Farben> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1925-1952.
+  # Zeitraum des Bestehens: 1925-1952.
 
 
 ex:IGH a skos:Concept ;
@@ -4888,7 +4888,7 @@ ex:IGM a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2013524-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IG_Metall> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1950-1990. ab 1991: https://d-nb.info/gnd/2123264-7.
+  # Zeitraum des Bestehens: 1950-1990. ab 1991: https://d-nb.info/gnd/2123264-7.
 
 
 ex:IHT a skos:Concept ;
@@ -4960,7 +4960,7 @@ ex:INTERATOM a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2078499-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Interatom> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #zur Groß- und Kleinschreibung vgl. Framatome.
+  # zur Groß- und Kleinschreibung vgl. Framatome.
 
 
 ex:Interflug a skos:Concept ;
@@ -4993,7 +4993,7 @@ ex:IOC a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/210056-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationales_Olympisches_Komitee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID / prefLabel.
+  # ID / prefLabel.
 
 
 ex:IPA a skos:Concept ;
@@ -5014,7 +5014,7 @@ ex:IPPNW a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2084646-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/IPPNW> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID / prefLabel.
+  # ID / prefLabel.
 
 
 ex:IPU a skos:Concept ;
@@ -5036,7 +5036,7 @@ ex:IRA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2038353-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Irisch-Republikanische_Armee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation überlegen.
+  # notation überlegen.
 
 
 ex:ISA a skos:Concept ;
@@ -5048,7 +5048,7 @@ ex:ISA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/6099121-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationale_Meeresbodenbehörde> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID / prefLabel.
+  # ID / prefLabel.
 
 
 ex:ISK a skos:Concept ;
@@ -5059,7 +5059,7 @@ ex:ISK a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2070546-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Internationaler_Sozialistischer_Kampfbund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Zeitraum des Bestehens: 1926-1945.
+  # Prüfen, wo verwendet. Zeitraum des Bestehens: 1926-1945.
 
 
 ex:ITF a skos:Concept ;
@@ -5105,7 +5105,7 @@ ex:Izv a skos:Concept ;
 
 
 
-# J
+#  J
 
 
 ex:JdB a skos:Concept ;
@@ -5144,7 +5144,7 @@ ex:JPost a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4353146-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Jerusalem_Post> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Titel 1932-1950: The Palestine Post.
+  # Titel 1932-1950: The Palestine Post.
 
 
 ex:JU a skos:Concept ;
@@ -5189,7 +5189,7 @@ ex:jW a skos:Concept ;
 
 
 
-# K
+#  K
 
 ex:KAS a skos:Concept ;
   skos:prefLabel "Konrad-Adenauer-Stiftung"@de ;
@@ -5229,7 +5229,7 @@ ex:KfW a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/38996-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/KfW> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 2000: https://d-nb.info/gnd/10058878-5.
+  # GND ab 2000: https://d-nb.info/gnd/10058878-5.
 
 
 ex:KGB a skos:Concept ;
@@ -5358,7 +5358,7 @@ ex:KP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1155212657> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Philips> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen. GND 1891-1991: https://d-nb.info/gnd/20044-X, 1991-1996:  	https://d-nb.info/gnd/5073075-7.
+  # ID überlegen. GND 1891-1991: https://d-nb.info/gnd/20044-X, 1991-1996:  	https://d-nb.info/gnd/5073075-7.
 
 
 ex:KPD a skos:Concept ;
@@ -5378,7 +5378,7 @@ ex:KPDFraktionBT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/806513-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Kommunistische_Partei_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Für prefLabel siehe weitere Fraktionen.
+  # Für prefLabel siehe weitere Fraktionen.
 
 
 ex:KPDML a skos:Concept ;
@@ -5465,7 +5465,7 @@ ex:KSZE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5114817-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Konferenz_%C3%BCber_Sicherheit_und_Zusammenarbeit_in_Europa> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1975-1994. GND 1973-1975: https://d-nb.info/gnd/2040315-X. Nachfolgeorganisation: OSZE, https://d-nb.info/gnd/2149347-9.
+  # Zeitraum des Bestehens: 1975-1994. GND 1973-1975: https://d-nb.info/gnd/2040315-X. Nachfolgeorganisation: OSZE, https://d-nb.info/gnd/2149347-9.
 
 
 ex:KUD a skos:Concept ;
@@ -5522,7 +5522,7 @@ ex:KWU a skos:Concept ;
 
 
 
-# L
+#  L
 
 
 ex:Labour a skos:Concept ;
@@ -5573,7 +5573,7 @@ ex:LeFig a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4113556-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Le_Figaro> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen.
+  # ID überlegen.
 
 
 ex:LESt a skos:Concept ;
@@ -5612,7 +5612,7 @@ ex:LM a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4040040-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Le_Monde> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen.
+  # ID überlegen.
 
 
 ex:LockheedCorp a skos:Concept ;
@@ -5643,11 +5643,11 @@ ex:LVA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4166580-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Landesversicherungsanstalt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Oberbegriff, keine konkrete Organisation! Prüfen, wo verwendet. Spezifische GND heraussuchen. Oder diesen Eintrag anpassen (notation).
+  # Oberbegriff, keine konkrete Organisation! Prüfen, wo verwendet. Spezifische GND heraussuchen. Oder diesen Eintrag anpassen (notation).
 
 
 
-# M
+#  M
 
 
 ex:MAD a skos:Concept ;
@@ -5659,7 +5659,7 @@ ex:MAD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/7592360-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Milit%C3%A4rischer_Abschirmdienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. 1956-1984: Amt für Sicherheit der Bundeswehr, GND: https://d-nb.info/gnd/2087512-5.
+  # Prüfen, wo verwendet. 1956-1984: Amt für Sicherheit der Bundeswehr, GND: https://d-nb.info/gnd/2087512-5.
 
 
 ex:Magirus a skos:Concept ;
@@ -5678,8 +5678,8 @@ ex:MAKiel a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Maschinenbau_Kiel> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND 1948-1959:	https://d-nb.info/gnd/380938-9, 1959-1964: https://d-nb.info/gnd/506142-8, ab 1964: https://d-nb.info/gnd/2071486-5.
-  #altLabel entsprechend ergänzen.
+  # Prüfen, wo verwendet. GND 1948-1959:	https://d-nb.info/gnd/380938-9, 1959-1964: https://d-nb.info/gnd/506142-8, ab 1964: https://d-nb.info/gnd/2071486-5.
+  # altLabel entsprechend ergänzen.
 
 
 ex:MaM a skos:Concept ;
@@ -5730,7 +5730,7 @@ ex:MBFR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1089019-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Mutual_and_Balanced_Force_Reductions> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation überlegen.
+  # notation überlegen.
 
 
 ex:McK a skos:Concept ;
@@ -5774,7 +5774,7 @@ ex:MForcA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5211677-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Movimento_das_For%C3%A7as_Armadas> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen.
+  # ID überlegen.
 
 
 ex:MfS a skos:Concept ;
@@ -5795,7 +5795,7 @@ ex:MG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2115658-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Morgan_Grenfell> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #weitere GNDs: https://d-nb.info/gnd/1085949257, https://d-nb.info/gnd/4239176-3.
+  # weitere GNDs: https://d-nb.info/gnd/1085949257, https://d-nb.info/gnd/4239176-3.
 
 
 ex:MIT a skos:Concept ;
@@ -5827,7 +5827,7 @@ ex:MITI a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/43419-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ministerium_f%C3%BCr_Internationalen_Handel_und_Industrie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Überlegen, ob / wie Japan anzugeben ist (en, de).
+  # Überlegen, ob / wie Japan anzugeben ist (en, de).
 
 
 ex:MM a skos:Concept ;
@@ -5901,7 +5901,7 @@ ex:MuenchRueck a skos:Concept ;
 
 
 
-# N
+#  N
 
 
 ex:NASA a skos:Concept ;
@@ -5913,7 +5913,7 @@ ex:NASA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2294-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/NASA> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND bisher: https://d-nb.info/gnd/1086340205 (Kennedy Space Center).
+  # Prüfen, wo verwendet. GND bisher: https://d-nb.info/gnd/1086340205 (Kennedy Space Center).
 
 
 ex:NATO a skos:Concept ;
@@ -5938,7 +5938,7 @@ ex:NATOPV a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10001063-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Parlamentarische_Versammlung_der_NATO> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ab 1999, zuvor: NAV.
+  # ab 1999, zuvor: NAV.
 
 
 ex:NatReichPartei a skos:Concept ;
@@ -5948,7 +5948,7 @@ ex:NatReichPartei a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationale_Reichspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen (altLabel).
+  # ID überlegen (altLabel).
 
 
 ex:NaturFDeutsch a skos:Concept ;
@@ -5957,9 +5957,9 @@ ex:NaturFDeutsch a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10050806-6> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreunde#Naturfreunde_Deutschlands> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreunde# Naturfreunde_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen (altLabel).
+  # ID überlegen (altLabel).
 
 
 ex:NaturFJD a skos:Concept ;
@@ -5970,7 +5970,7 @@ ex:NaturFJD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/30468-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Naturfreundejugend_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen (altLabel).
+  # ID überlegen (altLabel).
 
 
 ex:NAV a skos:Concept ;
@@ -5981,9 +5981,9 @@ ex:NAV a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2037117-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Parlamentarische_Versammlung_der_NATO#Geschichte> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Parlamentarische_Versammlung_der_NATO# Geschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1966-1999, ab dann: NATO-PV.
+  # Zeitraum des Bestehens: 1966-1999, ab dann: NATO-PV.
 
 
 ex:NBC a skos:Concept ;
@@ -6033,7 +6033,7 @@ ex:NDtWochen a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/7853198-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Deutsche_Wochenschau> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen (altLabel).
+  # ID überlegen (altLabel).
 
 
 ex:NeueBP a skos:Concept ;
@@ -6044,8 +6044,8 @@ ex:NeueBP a skos:Concept ;
   skos:closeMatch <https://d-nb.info/010357335> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Bildpost> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND des Verlags: https://d-nb.info/gnd/1064784674.
-  #ID überlegen.
+  # GND des Verlags: https://d-nb.info/gnd/1064784674.
+  # ID überlegen.
 
 
 ex:NF a skos:Concept ;
@@ -6066,7 +6066,7 @@ ex:NGes a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4198766-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Gesellschaft/Frankfurter_Hefte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1954-1984. Ab 1985: Neue Gesellschaft/Frankfurter Hefte.
+  # Zeitraum des Bestehens: 1954-1984. Ab 1985: Neue Gesellschaft/Frankfurter Hefte.
 
 
 ex:NGG a skos:Concept ;
@@ -6107,7 +6107,7 @@ ex:NOK a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4331145-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nationales_Olympisches_Komitee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #keine spezifische Organisation, sondern allgemeiner Begriff. Prüfen, wo verwendet.
+  # keine spezifische Organisation, sondern allgemeiner Begriff. Prüfen, wo verwendet.
 
 
 ex:NOZ a skos:Concept ;
@@ -6118,7 +6118,7 @@ ex:NOZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/16009583-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Osnabr%C3%BCcker_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND geht auf den Verlag. DNB-Nachweise: https://d-nb.info/016063775 (1967-2004), https://d-nb.info/025770004 (2004-2006).
+  # GND geht auf den Verlag. DNB-Nachweise: https://d-nb.info/016063775 (1967-2004), https://d-nb.info/025770004 (2004-2006).
 
 
 ex:NPD a skos:Concept ;
@@ -6150,7 +6150,7 @@ ex:NRhZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/7765485-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Ruhr_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe NRZ.
+  # siehe NRZ.
 
 
 ex:NRW a skos:Concept ;
@@ -6161,7 +6161,7 @@ ex:NRW a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4042570-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nordrhein-Westfalen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Geografikum. notation. Prüfen, wo verwendet.
+  # Geografikum. notation. Prüfen, wo verwendet.
 
 
 ex:NRZ a skos:Concept ;
@@ -6172,7 +6172,7 @@ ex:NRZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4317913-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Ruhr_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe NRhZ.
+  # siehe NRhZ.
 
 
 ex:NSDAP a skos:Concept ;
@@ -6215,7 +6215,7 @@ ex:NuernNachr a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4172128-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/N%C3%BCrnberger_Nachrichten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen (altLabel).
+  # ID überlegen (altLabel).
 
 
 ex:NuernZeit a skos:Concept ;
@@ -6226,7 +6226,7 @@ ex:NuernZeit a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4819392-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/N%C3%BCrnberger_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen (altLabel).
+  # ID überlegen (altLabel).
 
 
 ex:NVA a skos:Concept ;
@@ -6257,7 +6257,7 @@ ex:NW a skos:Concept ;
   skos:closeMatch <https://d-nb.info/gnd/1065174616> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Neue_Westf%C3%A4lische> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GNd geht auf Verlag.
+  # GNd geht auf Verlag.
 
 
 ex:NWDR a skos:Concept ;
@@ -6268,7 +6268,7 @@ ex:NWDR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/17905-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nordwestdeutscher_Rundfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe NDR.
+  # siehe NDR.
 
 
 ex:NWeek a skos:Concept ;
@@ -6321,7 +6321,7 @@ ex:NZZ a skos:Concept ;
 
 
 
-# O
+#  O
 
 
 ex:OA a skos:Concept ;
@@ -6365,7 +6365,7 @@ ex:OECD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5157-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Organisation_f%C3%BCr_wirtschaftliche_Zusammenarbeit_und_Entwicklung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe OEEC.
+  # siehe OEEC.
 
 
 ex:OEEC a skos:Concept ;
@@ -6377,7 +6377,7 @@ ex:OEEC a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35714-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Organisation_f%C3%BCr_wirtschaftliche_Zusammenarbeit_und_Entwicklung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe OECD.
+  # siehe OECD.
 
 
 ex:OEMV a skos:Concept ;
@@ -6389,7 +6389,7 @@ ex:OEMV a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/134231-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/OMV> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Zeitraum des Bestehens: 1956-1973. GND für 1974-1995: https://d-nb.info/gnd/2125128-9, ab 1995: https://d-nb.info/gnd/2170995-6.
+  # Prüfen, wo verwendet. Zeitraum des Bestehens: 1956-1973. GND für 1974-1995: https://d-nb.info/gnd/2125128-9, ab 1995: https://d-nb.info/gnd/2170995-6.
 
 
 ex:OeTV a skos:Concept ;
@@ -6420,7 +6420,7 @@ ex:OKR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1032454156> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Oberkirchenrat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Keine Institution, sondern kirchliche Amtsbezeichnung.
+  # Prüfen, wo verwendet. Keine Institution, sondern kirchliche Amtsbezeichnung.
 
 
 ex:OKW a skos:Concept ;
@@ -6441,7 +6441,7 @@ ex:OLG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/126300-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Oberlandesgericht> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND geht auf OLG Köln, Wiki auf allgemeinen Begriff.
+  # Prüfen, wo verwendet. GND geht auf OLG Köln, Wiki auf allgemeinen Begriff.
 
 
 ex:OPEC a skos:Concept ;
@@ -6504,11 +6504,11 @@ ex:Ost-CDU a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1010501-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Christlich-Demokratische_Union_Deutschlands_(DDR)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID ändern in: CDU-DDR.
+  # ID ändern in: CDU-DDR.
 
 
 
-# P
+#  P
 
 
 ex:PAAA a skos:Concept ;
@@ -6548,7 +6548,7 @@ ex:PEN a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10017027-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/PEN-Zentrum_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. verwendete GND für Zeitraum 1998-2025. weitere GNDs: https://d-nb.info/gnd/2120433-0 (1993-1998), https://d-nb.info/gnd/2008616-7 (1951-1993).
+  # Prüfen, wo verwendet. verwendete GND für Zeitraum 1998-2025. weitere GNDs: https://d-nb.info/gnd/2120433-0 (1993-1998), https://d-nb.info/gnd/2008616-7 (1951-1993).
 
 
 ex:PEU a skos:Concept ;
@@ -6560,7 +6560,7 @@ ex:PEU a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/404270-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Paneuropa-Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GNDs für PEU Deutschland: https://d-nb.info/gnd/2102930-1, https://d-nb.info/gnd/4307396-7, Vorläufer (Deutsches Reich): https://d-nb.info/gnd/118340-0.
+  # Prüfen, wo verwendet. GNDs für PEU Deutschland: https://d-nb.info/gnd/2102930-1, https://d-nb.info/gnd/4307396-7, Vorläufer (Deutsches Reich): https://d-nb.info/gnd/118340-0.
 
 
 ex:PHolzmann a skos:Concept ;
@@ -6579,7 +6579,7 @@ ex:PionET a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2018009-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Pionierorganisation_Ernst_Th%C3%A4lmann> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen.
+  # ID überlegen.
 
 
 ex:PKK a skos:Concept ;
@@ -6632,7 +6632,7 @@ ex:PPP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2017368-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratischer_Pressedienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe PressemitteilungenSPD.
+  # siehe PressemitteilungenSPD.
 
 
 ex:PPR a skos:Concept ;
@@ -6664,7 +6664,7 @@ ex:Prakla a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2017983-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Prakla-Seismos> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe Prakla-Seismos.
+  # siehe Prakla-Seismos.
 
 
 ex:PraklaSeismos a skos:Concept ;
@@ -6674,7 +6674,7 @@ ex:PraklaSeismos a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/8728-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Prakla-Seismos> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe Prakla.
+  # siehe Prakla.
 
 
 ex:PRChile a skos:Concept ;
@@ -6696,7 +6696,7 @@ ex:PressemitteilungenSPD a skos:Concept ;
   skos:closeMatch <https://d-nb.info/025209817> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratischer_Pressedienst> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen. siehe PPP.
+  # ID überlegen. siehe PPP.
 
 
 ex:Preussag a skos:Concept ;
@@ -6719,7 +6719,7 @@ ex:PS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/64634-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Parti_socialiste_(Frankreich)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe SFIO.
+  # siehe SFIO.
 
 
 ex:PSD a skos:Concept ;
@@ -6763,7 +6763,7 @@ ex:PVAP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1009009-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Polnische_Vereinigte_Arbeiterpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette zu PZPR!
+  # Dublette zu PZPR!
 
 
 ex:PvdA a skos:Concept ;
@@ -6787,11 +6787,11 @@ ex:PZPR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1009009-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Polska_Zjednoczona_Partia_Robotnicza> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette zu PVAP!
+  # Dublette zu PVAP!
 
 
 
-# Q
+#  Q
 
 
 ex:Qantas a skos:Concept ;
@@ -6814,7 +6814,7 @@ ex:Quick a skos:Concept ;
 
 
 
-# R
+#  R
 
 
 ex:RAF a skos:Concept ;
@@ -6864,8 +6864,8 @@ ex:RepublicaPortugal a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1160106908> ;
   skos:closeMatch <https://pt.wikipedia.org/wiki/Rep%C3%BAblica_(jornal)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet und ob Verlinkungen passend. ZDB: https://zdb-katalog.de/title.xhtml?idn=013982435, https://zdb-katalog.de/title.xhtml?idn=1151414522.
-  #Hinweis: portugiesische Tageszeitung, die der Partido Socialista nahestand.
+  # Prüfen, wo verwendet und ob Verlinkungen passend. ZDB: https://zdb-katalog.de/title.xhtml?idn=013982435, https://zdb-katalog.de/title.xhtml?idn=1151414522.
+  # Hinweis: portugiesische Tageszeitung, die der Partido Socialista nahestand.
 
 
 ex:ReRi a skos:Concept ;
@@ -6905,7 +6905,7 @@ ex:RGW a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1016341-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rat_f%C3%BCr_gegenseitige_Wirtschaftshilfe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Dublette: COMECON!
+  # Dublette: COMECON!
 
 
 ex:Rhein-Echo a skos:Concept ;
@@ -6924,7 +6924,7 @@ ex:Rheinmetall a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10044945-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rheinmetall> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND ab 1996. Für 1956-1996: https://d-nb.info/gnd/2040116-4.
+  # Prüfen, wo verwendet. GND ab 1996. Für 1956-1996: https://d-nb.info/gnd/2040116-4.
 
 
 ex:Rheinstahl a skos:Concept ;
@@ -6994,7 +6994,7 @@ ex:RPMittel a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2066944-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichspartei_des_deutschen_Mittelstandes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND für Parei ab 1924, zuvor (1920-1924): Wirtschaftspartei des deutschen Mittelstandes, https://d-nb.info/gnd/5012377-4.
+  # Prüfen, wo verwendet. GND für Parei ab 1924, zuvor (1920-1924): Wirtschaftspartei des deutschen Mittelstandes, https://d-nb.info/gnd/5012377-4.
 
 
 ex:RSHA a skos:Concept ;
@@ -7024,7 +7024,7 @@ ex:RT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4049170-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichstag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND als Ereignis (hist. Reichstage bis 1806). Auch Wikipedia-Artikel keine Institution.
+  # Prüfen, wo verwendet. GND als Ereignis (hist. Reichstage bis 1806). Auch Wikipedia-Artikel keine Institution.
 
 
 ex:RTL a skos:Concept ;
@@ -7035,7 +7035,7 @@ ex:RTL a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1086472-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/RTL_Television> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Pürfen, wo verwendet. GND derzeit übergreifender Konzern. Zum Wikipedia-Artikel gehörige GND: https://d-nb.info/gnd/5274211-8 (TV-Sender).
+  # Pürfen, wo verwendet. GND derzeit übergreifender Konzern. Zum Wikipedia-Artikel gehörige GND: https://d-nb.info/gnd/5274211-8 (TV-Sender).
 
 
 ex:RTPraesWeim a skos:Concept ;
@@ -7045,8 +7045,8 @@ ex:RTPraesWeim a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/7556849-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Reichstagspr%C3%A4sident_(Weimarer_Republik)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #für Weimarer Republik.
-  #Prüfen, wo verwendet. GND nicht spezifisch für Weimar.
+  # für Weimarer Republik.
+  # Prüfen, wo verwendet. GND nicht spezifisch für Weimar.
 
 
 ex:RuhrkohleAG a skos:Concept ;
@@ -7057,7 +7057,7 @@ ex:RuhrkohleAG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2039413-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/RAG_Aktiengesellschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Ab 1997: RAG Aktiengesellschaft, https://d-nb.info/gnd/10008534-9
+  # Prüfen, wo verwendet. Ab 1997: RAG Aktiengesellschaft, https://d-nb.info/gnd/10008534-9
 
 
 ex:Ruhrstatut a skos:Concept ;
@@ -7068,7 +7068,7 @@ ex:Ruhrstatut a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4130745-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Ruhrstatut> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüen, wo verwendet. Ggf. ändern auf Internationale Ruhrbehörde: https://d-nb.info/gnd/4236085-7.
+  # Prüen, wo verwendet. Ggf. ändern auf Internationale Ruhrbehörde: https://d-nb.info/gnd/4236085-7.
 
 
 ex:Rup a skos:Concept ;
@@ -7078,7 +7078,7 @@ ex:Rup a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1086097955> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rud%C3%A9_pr%C3%A1vo> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #ID überlegen.
+  # ID überlegen.
 
 
 ex:RVO a skos:Concept ;
@@ -7111,7 +7111,7 @@ ex:RWE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2019882-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/RWE> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND ab 1990: https://d-nb.info/gnd/2123397-4.
+  # GND ab 1990: https://d-nb.info/gnd/2123397-4.
 
 
 ex:RWHG a skos:Concept ;
@@ -7124,7 +7124,7 @@ ex:RWHG a skos:Concept ;
 
 
 
-# S
+#  S
 
 
 ex:SA a skos:Concept ;
@@ -7194,7 +7194,7 @@ ex:SalzgitterAG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2003000-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Salzgitter_AG> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND ab 1998.
+  # Prüfen, wo verwendet. GND ab 1998.
 
 
 ex:SAP a skos:Concept ;
@@ -7217,7 +7217,7 @@ ex:SAVAK a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4330730-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/SAVAK> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # iran. Geheimdienst 1957-1979.
+  #  iran. Geheimdienst 1957-1979.
 
 
 ex:SBZ a skos:Concept ;
@@ -7228,7 +7228,7 @@ ex:SBZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4070431-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sowjetische_Besatzungszone> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Geografikum.
+  # Geografikum.
 
 
 ex:SchwaebZeit a skos:Concept ;
@@ -7297,7 +7297,7 @@ ex:SDR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1009721-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/S%C3%BCddeutscher_Rundfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe SWF.
+  # siehe SWF.
 
 
 ex:SDS a skos:Concept ;
@@ -7317,7 +7317,7 @@ ex:Search a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2171026-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Searchlight_Magazine> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND geht auf Verlag. Zeitschrift: https://zdb-katalog.de/title.xhtml?idn=017379679 (1976-2005).
+  # Prüfen, wo verwendet. GND geht auf Verlag. Zeitschrift: https://zdb-katalog.de/title.xhtml?idn=017379679 (1976-2005).
 
 
 ex:SEATO a skos:Concept ;
@@ -7350,7 +7350,7 @@ ex:SEW a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2030314-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Westberlins> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #GND für Vorgänger (1962-1969): https://d-nb.info/gnd/44213-6.
+  # GND für Vorgänger (1962-1969): https://d-nb.info/gnd/44213-6.
 
 
 ex:SFB a skos:Concept ;
@@ -7373,7 +7373,7 @@ ex:SFIO a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/16024867-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Section_fran%C3%A7aise_de_l%E2%80%99Internationale_ouvri%C3%A8re> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe PS.
+  # siehe PS.
 
 
 ex:SGK a skos:Concept ;
@@ -7395,7 +7395,7 @@ ex:SHB a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2032996-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialistischer_Hochschulbund> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. 1960-1972: Sozialdemokratischer Hochschulbund, https://d-nb.info/gnd/2022140-X.
+  # Prüfen, wo verwendet. 1960-1972: Sozialdemokratischer Hochschulbund, https://d-nb.info/gnd/2022140-X.
   
 
 ex:SI a skos:Concept ;
@@ -7406,7 +7406,7 @@ ex:SI a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1013867-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialistische_Internationale> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #notation überlegen, evtl. org.
+  # notation überlegen, evtl. org.
 
 
 ex:Siemens a skos:Concept ;
@@ -7447,7 +7447,7 @@ ex:SOPADE a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/01117157X> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Eigentlicher Titel: "Querschnitt durch...". Drei Einträge in ZDB. ID ggf. ändern.
+  # Prüfen, wo verwendet. Eigentlicher Titel: "Querschnitt durch...". Drei Einträge in ZDB. ID ggf. ändern.
 
 
 ex:SoVD a skos:Concept ;
@@ -7458,7 +7458,7 @@ ex:SoVD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10004461-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialverband_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. GND für Vorgänger - Sozialverband Reichsbund (1995-1999): https://d-nb.info/gnd/5198393-X.
+  # Prüfen, wo verwendet. GND für Vorgänger - Sozialverband Reichsbund (1995-1999): https://d-nb.info/gnd/5198393-X.
 
 
 ex:SozialeSicherheit a skos:Concept ;
@@ -7511,7 +7511,7 @@ ex:SPDFraktionBT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2125599-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/SPD-Bundestagsfraktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #vgl. weitere Fraktionen.
+  # vgl. weitere Fraktionen.
 
 
 ex:SPDFraktionvorstandBT a skos:Concept ;
@@ -7521,7 +7521,7 @@ ex:SPDFraktionvorstandBT a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/SPD-Bundestagsfraktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #vgl. weitere Fraktionsvorstände.
+  # vgl. weitere Fraktionsvorstände.
 
 
 ex:SPDPressedienst a skos:Concept ;
@@ -7540,7 +7540,7 @@ ex:SPDVorstand a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4479218-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/SPD-Parteivorstand> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #vgl. andere Vorstände.
+  # vgl. andere Vorstände.
 
 
 ex:Spiegel a skos:Concept ;
@@ -7560,7 +7560,7 @@ ex:SPOe a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5060450-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratische_Partei_%C3%96sterreichs> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Püfen, wo verwendet. GND für Sozialistische Partei Öserreichs (1945-1991): https://d-nb.info/gnd/3589-0.
+  # Püfen, wo verwendet. GND für Sozialistische Partei Öserreichs (1945-1991): https://d-nb.info/gnd/3589-0.
 
 
 ex:SpringerVerlag a skos:Concept ;
@@ -7593,7 +7593,7 @@ ex:SRG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2021639-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/SRG_SSR> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Zeitraum des Bestehens: 1960-1999.
+  # Zeitraum des Bestehens: 1960-1999.
 
 
 ex:SRP a skos:Concept ;
@@ -7702,7 +7702,7 @@ ex:Sternradio a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1266204946> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Kombinat_Sternradio> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, wo verwendet. Evtl. spezifisches Werk.
+  # Prüfen, wo verwendet. Evtl. spezifisches Werk.
 
 
 ex:StKAH a skos:Concept ;
@@ -7760,7 +7760,7 @@ ex:suedwestpresse a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1173196943> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/S%C3%BCdwest_Presse> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #Prüfen, weo verwendet. Nachweise für den Titel erst ab 2014. GND geht auf Hohenlohe.
+  # Prüfen, weo verwendet. Nachweise für den Titel erst ab 2014. GND geht auf Hohenlohe.
 
 
 ex:Superillu a skos:Concept ;
@@ -7811,7 +7811,7 @@ ex:SWF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1009723-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/S%C3%BCdwestfunk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  #siehe SDR.
+  # siehe SDR.
 
 
 ex:SZ a skos:Concept ;
@@ -7825,7 +7825,7 @@ ex:SZ a skos:Concept ;
 
 
 
-# T
+#  T
 
 
 ex:Tanjug a skos:Concept ;
@@ -8023,7 +8023,7 @@ ex:TWaP a skos:Concept ;
 
 
 
-# U
+#  U
 
 
 ex:UBA a skos:Concept ;
@@ -8284,7 +8284,7 @@ ex:UTM a skos:Concept ;
 
 
 
-# V
+#  V
 
 
 ex:VBH a skos:Concept ;
@@ -8552,7 +8552,7 @@ ex:VW a skos:Concept ;
 
 
 
-# W
+#  W
 
 
 ex:WaffenSS a skos:Concept ;
@@ -8818,7 +8818,7 @@ ex:WV a skos:Concept ;
 
 
 
-# X
+#  X
 
 
 ex:Xerox a skos:Concept ;
@@ -8841,7 +8841,7 @@ ex:Xin a skos:Concept ;
 
 
 
-# Y
+#  Y
 
 
 ex:Yokohama a skos:Concept ;
@@ -8854,7 +8854,7 @@ ex:Yokohama a skos:Concept ;
 
 
 
-# Z
+#  Z
 
 
 ex:ZANU a skos:Concept ;
@@ -8941,7 +8941,7 @@ ex:ZK a skos:Concept ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4131775-0> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Deutschlands#Zentralkomitee> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Deutschlands# Zentralkomitee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
