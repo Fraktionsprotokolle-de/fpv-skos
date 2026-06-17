@@ -212,7 +212,6 @@
 {"id": "DSF", "synonyms": ["DSF", "Gesellschaft für Deutsch-Sowjetische Freundschaft"]}
 {"id": "DSL", "synonyms": ["DSL Bank", "Deutsche Siedlungs- und Landesrentenbank"]}
 {"id": "DSoz", "synonyms": ["Forum DS", "Forum Demokratischer Sozialismus", "Forum Demokratischer Sozialismus. Jahrbuch für Theorie und Praxis des demokratischen Sozialismus"]}
-{"id": "DSoz", "synonyms": ["Forum DS", "Forum Demokratischer Sozialismus", "Forum Demokratischer Sozialismus. Jahrbuch für Theorie und Praxis des demokratischen Sozialismus"]}
 {"id": "DSP", "synonyms": ["DSP", "Deutsche Sozialdemokratische Partei"]}
 {"id": "DST", "synonyms": ["DST", "Deutscher Städtetag"]}
 {"id": "DStP", "synonyms": ["DStP", "Deutsche Staatspartei"]}
@@ -225,10 +224,8 @@
 {"id": "DWK", "synonyms": ["DWK", "Deutsche Wirtschaftskommission"]}
 {"id": "DWKern", "synonyms": ["DWK", "Deutsche Gesellschaft für Wiederaufarbeitung von Kernbrennstoffen"]}
 {"id": "DZP", "synonyms": ["DZP", "Deutsche Zentrumspartei", "Zentrum"]}
-{"id": "DZP", "synonyms": ["DZP", "Deutsche Zentrumspartei", "Zentrum"]}
 {"id": "DZPFraktBT", "synonyms": ["Bundestagsfraktion der Deutschen Zentrumspartei", "DZP"]}
 {"id": "EAP", "synonyms": ["EAP", "Europäische Arbeiter-Partei"]}
-{"id": "ECE", "synonyms": ["ECE", "Economic Commission for Europe", "UNECE", "United Nations Economic Commission for Europe", "Wirtschaftskommission für Europa", "Wirtschaftskommission für Europa der Vereinten Nationen"]}
 {"id": "ECE", "synonyms": ["ECE", "Economic Commission for Europe", "UNECE", "United Nations Economic Commission for Europe", "Wirtschaftskommission für Europa", "Wirtschaftskommission für Europa der Vereinten Nationen"]}
 {"id": "ECOFIN", "synonyms": ["ECOFIN", "EU-Finanzministerrat", "Ecofin-Rat", "Economic and Financial Affairs Council", "Rat für Wirtschaft und Finanzen"]}
 {"id": "EDU", "synonyms": ["EDU", "Europäische Demokratische Union"]}
@@ -284,8 +281,6 @@
 {"id": "FSK", "synonyms": ["FSK", "Freiwillige Selbstkontrolle der Filmwirtschaft"]}
 {"id": "FVP", "synonyms": ["FVP", "Freie Volkspartei"]}
 {"id": "GAL", "synonyms": ["GAL", "Grün-Alternative Liste", "Grün-Alternative Liste Hamburg"]}
-{"id": "GAL", "synonyms": ["GAL", "Grün-Alternative Liste", "Grün-Alternative Liste Hamburg"]}
-{"id": "GATT", "synonyms": ["Allgemeines Zoll- und Handelsabkommen", "GATT", "General Agreement on Tariffs and Trade"]}
 {"id": "GATT", "synonyms": ["Allgemeines Zoll- und Handelsabkommen", "GATT", "General Agreement on Tariffs and Trade"]}
 {"id": "GBA", "synonyms": ["Bundesanwaltschaft", "GBA", "Generalbundesanwalt", "Generalbundesanwalt beim Bundesgerichtshof"]}
 {"id": "GBAG", "synonyms": ["GBAG", "Gebag", "Gelsenberg", "Gelsenkirchener Bergwerks-Aktien-Gesellschaft"]}
@@ -432,7 +427,6 @@
 {"id": "OAU", "synonyms": ["OAU", "Organisation für Afrikanische Einheit", "Organization of African Unity"]}
 {"id": "OECD", "synonyms": ["OECD", "Organisation for Economic Cooperation and Development", "Organisation für Wirtschaftliche Zusammenarbeit und Entwicklung"]}
 {"id": "OEEC", "synonyms": ["OEEC", "Organisation for European Economic Cooperation", "Organisation für Europäische Wirtschaftliche Zusammenarbeit"]}
-{"id": "OEMV", "synonyms": ["ÖMV", "Österreichische Mineralölverwaltung", "Österreichische Mineralölverwaltung Aktiengesellschaft"]}
 {"id": "OEMV", "synonyms": ["ÖMV", "Österreichische Mineralölverwaltung", "Österreichische Mineralölverwaltung Aktiengesellschaft"]}
 {"id": "OeTV", "synonyms": ["Gewerkschaft Öffentliche Dienste, Transport und Verkehr", "ÖTV"]}
 {"id": "OEVP", "synonyms": ["ÖVP", "Österreichische Volkspartei"]}

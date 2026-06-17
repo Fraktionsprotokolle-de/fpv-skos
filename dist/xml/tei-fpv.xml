@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-06-17">17. Juni 2026, 08:43 Uhr</date>
+				<date when="2026-06-17">17. Juni 2026, 11:05 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -2203,8 +2203,8 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_St%C3%A4dtetag"/>
 			</item>
 			<item xml:id="DSoz">
-				<term type="pref" xml:lang="de">Forum Demokratischer Sozialismus</term>
 				<term type="pref" xml:lang="de">Forum Demokratischer Sozialismus. Jahrbuch für Theorie und Praxis des demokratischen Sozialismus</term>
+				<term type="alt" xml:lang="de">Forum Demokratischer Sozialismus</term>
 				<term type="alt" xml:lang="de">Forum DS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
@@ -2297,7 +2297,7 @@
 			</item>
 			<item xml:id="DZP">
 				<term type="pref" xml:lang="de">Deutsche Zentrumspartei</term>
-				<term type="pref" xml:lang="de">Zentrum</term>
+				<term type="alt" xml:lang="de">Zentrum</term>
 				<term type="alt" xml:lang="de">DZP</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
@@ -2479,7 +2479,7 @@
 			</item>
 			<item xml:id="ECE">
 				<term type="pref" xml:lang="de">Wirtschaftskommission für Europa</term>
-				<term type="pref" xml:lang="de">Wirtschaftskommission für Europa der Vereinten Nationen</term>
+				<term type="alt" xml:lang="de">Wirtschaftskommission für Europa der Vereinten Nationen</term>
 				<term type="alt" xml:lang="en">Economic Commission for Europe</term>
 				<term type="alt" xml:lang="en">United Nations Economic Commission for Europe</term>
 				<term type="alt" xml:lang="en">ECE</term>
@@ -3089,8 +3089,8 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/General-Anzeiger_(Bonn)"/>
 			</item>
 			<item xml:id="GAL">
-				<term type="pref" xml:lang="de">Grün-Alternative Liste</term>
 				<term type="pref" xml:lang="de">Grün-Alternative Liste Hamburg</term>
+				<term type="alt" xml:lang="de">Grün-Alternative Liste</term>
 				<term type="alt" xml:lang="de">GAL</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
@@ -3098,8 +3098,8 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/B%C3%BCndnis_90/Die_Gr%C3%BCnen_Hamburg"/>
 			</item>
 			<item xml:id="GATT">
-				<term type="pref" xml:lang="en">General Agreement on Tariffs and Trade</term>
 				<term type="pref" xml:lang="de">Allgemeines Zoll- und Handelsabkommen</term>
+				<term type="alt" xml:lang="en">General Agreement on Tariffs and Trade</term>
 				<term type="alt" xml:lang="en">GATT</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -4781,7 +4781,7 @@
 			</item>
 			<item xml:id="OEMV">
 				<term type="pref" xml:lang="de">Österreichische Mineralölverwaltung</term>
-				<term type="pref" xml:lang="de">Österreichische Mineralölverwaltung Aktiengesellschaft</term>
+				<term type="alt" xml:lang="de">Österreichische Mineralölverwaltung Aktiengesellschaft</term>
 				<term type="alt" xml:lang="de">ÖMV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
