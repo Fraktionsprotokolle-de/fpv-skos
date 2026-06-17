@@ -1,6 +1,5 @@
 Validierungsbericht: C:\Users\svenjuengerkes\Documents\fraktionsprotokolle\fpv-skos\src\fpv.ttl
-Strukturfehler gesamt: 2
+Strukturfehler gesamt: 1
 ========================================================================
 
-  - Zeilen 3285, 3286: Mehrfaches skos:prefLabel@de (2×) in ex:DZP <https://voc.fraktionsprotokolle.de/id/DZP>
-  - Zeilen 4124, 4125: Mehrfaches skos:prefLabel@de (2×) in ex:GAL <https://voc.fraktionsprotokolle.de/id/GAL>
+  - Zeilen 4738, 4739: Mehrfaches skos:prefLabel (2×) in ex:IDA <https://voc.fraktionsprotokolle.de/id/IDA>

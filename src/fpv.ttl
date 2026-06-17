@@ -4736,7 +4736,7 @@ ex:ID a skos:Concept ;
 
 ex:IDA a skos:Concept ;
   skos:prefLabel "International Development Association"@en ;
-  skos:prefLabel "Internationale Entwicklungsorganisation"@de ;
+  skos:altLabelLabel "Internationale Entwicklungsorganisation"@de ;
   skos:altLabel "IDA"@en ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;

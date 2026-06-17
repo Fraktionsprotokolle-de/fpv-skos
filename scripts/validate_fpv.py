@@ -83,7 +83,7 @@ class SourceIndex:
         self.prefixes: dict[str, str] = {}
         self.concept_lines_by_uri: dict[str, list[int]] = defaultdict(list)
         self.concept_qname_by_uri: dict[str, str] = {}
-        self.pref_label_de_lines_by_uri: dict[str, list[int]] = defaultdict(list)
+        self.pref_label_lines_by_uri: dict[str, list[int]] = defaultdict(list)  # alle Sprachen
         self.notation_lines_by_uri: dict[str, list[int]] = defaultdict(list)
         self.local_id_lines: dict[str, list[int]] = defaultdict(list)
         self.local_id_tokens: dict[str, list[str]] = defaultdict(list)
@@ -152,8 +152,8 @@ def build_source_index(ttl_path: Path) -> SourceIndex:
         if current_uri is None:
             continue
 
-        if re.match(r"^\s*skos:prefLabel\b", line) and "@de" in line:
-            index.pref_label_de_lines_by_uri[current_uri].append(lineno)
+        if re.match(r"^\s*skos:prefLabel\b", line):
+            index.pref_label_lines_by_uri[current_uri].append(lineno)
 
         if re.match(r"^\s*skos:notation\b", line):
             index.notation_lines_by_uri[current_uri].append(lineno)
@@ -180,8 +180,8 @@ def first_line_for(uri: URIRef | str, index: SourceIndex) -> int | None:
 
 def property_lines_for(uri: URIRef | str, index: SourceIndex, prop: str) -> list[int]:
     uri_str = str(uri)
-    if prop == "prefLabel@de":
-        return index.pref_label_de_lines_by_uri.get(uri_str, [])
+    if prop == "prefLabel":
+        return index.pref_label_lines_by_uri.get(uri_str, [])
     if prop == "notation":
         return index.notation_lines_by_uri.get(uri_str, [])
     return []
@@ -453,17 +453,16 @@ def main() -> None:
         if has_non_ascii_or_special_chars(local_id):
             errors.append(f"Zeile {line}: ID '{local_id}' in {token} enthält Umlaute oder unerlaubte Sonderzeichen")
 
-    # 3) prefLabel@de – maximal eines erlaubt, keines ist okay
-    # ACHTUNG: rdflib dedupliziert identische Tripel (Mengenlehre) – zwei mal
-    # dasselbe prefLabel@de landet im Graph als ein Tripel und würde nicht erkannt.
+    # 3) skos:prefLabel – maximal eines erlaubt (egal welche Sprache), keines ist okay
+    # ACHTUNG: rdflib dedupliziert identische Tripel (Mengenlehre).
     # Deshalb zählen wir Vorkommen direkt im Quelltext (SourceIndex).
     for concept in sorted(set(graph.subjects(RDF.type, SKOS.Concept)), key=str):
-        pref_lines = property_lines_for(concept, source_index, "prefLabel@de")
+        pref_lines = property_lines_for(concept, source_index, "prefLabel")
         if len(pref_lines) > 1:
             subject_label = format_subject(concept, source_index)
             errors.append(
                 f"Zeilen {', '.join(str(x) for x in pref_lines)}: "
-                f"Mehrfaches skos:prefLabel@de ({len(pref_lines)}×) in {subject_label}"
+                f"Mehrfaches skos:prefLabel ({len(pref_lines)}×) in {subject_label}"
             )
 
     # 4) skos:notation / entityType
