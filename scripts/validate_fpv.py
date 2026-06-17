@@ -453,24 +453,18 @@ def main() -> None:
         if has_non_ascii_or_special_chars(local_id):
             errors.append(f"Zeile {line}: ID '{local_id}' in {token} enthält Umlaute oder unerlaubte Sonderzeichen")
 
-    # 3) prefLabel@de
+    # 3) prefLabel@de – maximal eines erlaubt, keines ist okay
+    # ACHTUNG: rdflib dedupliziert identische Tripel (Mengenlehre) – zwei mal
+    # dasselbe prefLabel@de landet im Graph als ein Tripel und würde nicht erkannt.
+    # Deshalb zählen wir Vorkommen direkt im Quelltext (SourceIndex).
     for concept in sorted(set(graph.subjects(RDF.type, SKOS.Concept)), key=str):
-        pref_de = [
-            label for label in graph.objects(concept, SKOS.prefLabel)
-            if isinstance(label, Literal) and label.language == "de"
-        ]
-        subject_label = format_subject(concept, source_index)
-        concept_line = first_line_for(concept, source_index)
         pref_lines = property_lines_for(concept, source_index, "prefLabel@de")
-        loc = f"Zeile {concept_line}" if concept_line else "Unbekannte Zeile"
-
-        if len(pref_de) == 0:
-            errors.append(f"{loc}: Fehlendes skos:prefLabel@de in {subject_label}")
-        if len(pref_de) > 1:
-            if pref_lines:
-                errors.append(f"Zeilen {', '.join(str(x) for x in pref_lines)}: Mehrfaches skos:prefLabel@de in {subject_label}")
-            else:
-                errors.append(f"{loc}: Mehrfaches skos:prefLabel@de in {subject_label}")
+        if len(pref_lines) > 1:
+            subject_label = format_subject(concept, source_index)
+            errors.append(
+                f"Zeilen {', '.join(str(x) for x in pref_lines)}: "
+                f"Mehrfaches skos:prefLabel@de ({len(pref_lines)}×) in {subject_label}"
+            )
 
     # 4) skos:notation / entityType
     for concept in sorted(set(graph.subjects(RDF.type, SKOS.Concept)), key=str):

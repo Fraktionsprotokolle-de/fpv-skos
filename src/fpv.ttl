@@ -3121,7 +3121,7 @@ ex:DSL a skos:Concept ;
 
 
 ex:DSoz a skos:Concept ;
-  skos:prefLabel "Forum Demokratischer Sozialismus"@de ;
+  skos:altLabel "Forum Demokratischer Sozialismus"@de ;
   skos:prefLabel "Forum Demokratischer Sozialismus. Jahrbuch für Theorie und Praxis des demokratischen Sozialismus"@de ;
   skos:altLabel "Forum DS"@de ;
   skos:notation "news"^^fpv:entityType ;
@@ -3283,7 +3283,7 @@ ex:DWKern a skos:Concept ;
 
 ex:DZP a skos:Concept ;
   skos:prefLabel "Deutsche Zentrumspartei"@de ;
-  skos:prefLabel "Zentrum"@de ;
+  skos:altLabel "Zentrum"@de ;
   skos:altLabel "DZP"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
@@ -3329,7 +3329,7 @@ ex:EAP a skos:Concept ;
 
 ex:ECE a skos:Concept ;
   skos:prefLabel "Wirtschaftskommission für Europa"@de ;
-  skos:prefLabel "Wirtschaftskommission für Europa der Vereinten Nationen"@de ;
+  skos:altLabel "Wirtschaftskommission für Europa der Vereinten Nationen"@de ;
   skos:altLabel "Economic Commission for Europe"@en ;
   skos:altLabel "United Nations Economic Commission for Europe"@en ;
   skos:altLabel "ECE"@en ;
@@ -4121,7 +4121,7 @@ ex:GA a skos:Concept ;
 
 
 ex:GAL a skos:Concept ;
-  skos:prefLabel "Grün-Alternative Liste"@de ;
+  skos:altLabel "Grün-Alternative Liste"@de ;
   skos:prefLabel "Grün-Alternative Liste Hamburg"@de ;
   skos:altLabel "GAL"@de ;
   skos:notation "pol"^^fpv:entityType ;
@@ -4132,7 +4132,7 @@ ex:GAL a skos:Concept ;
 
 
 ex:GATT a skos:Concept ;
-  skos:prefLabel "General Agreement on Tariffs and Trade"@en ;
+  skos:altLabel "General Agreement on Tariffs and Trade"@en ;
   skos:prefLabel "Allgemeines Zoll- und Handelsabkommen"@de ;
   skos:altLabel "GATT"@en ;
   skos:notation "org"^^fpv:entityType ;
@@ -6382,7 +6382,7 @@ ex:OEEC a skos:Concept ;
 
 ex:OEMV a skos:Concept ;
   skos:prefLabel "Österreichische Mineralölverwaltung"@de ;
-  skos:prefLabel "Österreichische Mineralölverwaltung Aktiengesellschaft"@de ;
+  skos:altLabel "Österreichische Mineralölverwaltung Aktiengesellschaft"@de ;
   skos:altLabel "ÖMV"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
