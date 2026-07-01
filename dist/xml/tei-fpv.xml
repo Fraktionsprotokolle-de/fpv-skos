@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-06-17">17. Juni 2026, 13:02 Uhr</date>
+				<date when="2026-07-01">1. Juli 2026, 11:16 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -385,7 +385,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2088812-0"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/%C3%84ltestenrat# Deutscher_Bundestag"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/%C3%84ltestenrat#Deutscher_Bundestag"/>
 			</item>
 			<item xml:id="AfA">
 				<term type="pref" xml:lang="de">Arbeitsgemeinschaft für Arbeitnehmerfragen</term>
@@ -1959,7 +1959,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/7675-2"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/DZ_Bank# Geschichte"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/DZ_Bank#Geschichte"/>
 			</item>
 			<item xml:id="DHP">
 				<term type="pref" xml:lang="de">Deutsch-Hannoversche Partei</term>
@@ -2127,7 +2127,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/37036-8"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Freie_Demokratische_Partei/Demokratische_Partei_Saar# Geschichte"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Freie_Demokratische_Partei/Demokratische_Partei_Saar#Geschichte"/>
 			</item>
 			<item xml:id="DParlG">
 				<term type="pref" xml:lang="de">Deutsche Parlamentarische Gesellschaft</term>
@@ -3285,7 +3285,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1007525-2"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Karlsruher_Institut_f%C3%BCr_Technologie# Geschichte_des_Forschungszentrums_Karlsruhe"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Karlsruher_Institut_f%C3%BCr_Technologie#Geschichte_des_Forschungszentrums_Karlsruhe"/>
 			</item>
 			<item xml:id="GoetheInstitut">
 				<term type="pref" xml:lang="de">Goethe-Institut</term>
@@ -4452,7 +4452,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2037117-2"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Parlamentarische_Versammlung_der_NATO# Geschichte"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Parlamentarische_Versammlung_der_NATO#Geschichte"/>
 			</item>
 			<item xml:id="NBC">
 				<term type="pref" xml:lang="en">National Broadcasting Company</term>
@@ -4700,7 +4700,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10050806-6"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Naturfreunde# Naturfreunde_Deutschlands"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Naturfreunde#Naturfreunde_Deutschlands"/>
 			</item>
 			<item xml:id="NaturFJD">
 				<term type="pref" xml:lang="de">Naturfreundejugend Deutschlands</term>
@@ -6702,7 +6702,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4131775-0"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Deutschlands# Zentralkomitee"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Deutschlands#Zentralkomitee"/>
 			</item>
 			<item xml:id="ZParl">
 				<term type="pref" xml:lang="de">Zeitschrift für Parlamentsfragen</term>
