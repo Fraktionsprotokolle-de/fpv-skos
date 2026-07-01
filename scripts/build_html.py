@@ -304,11 +304,7 @@ for concept in sorted(set(g.subjects(RDF.type, SKOS.Concept)), key=lambda s: str
     uri = str(concept)
     cid = get_local_id(uri)
 
-    pref_de = None
-    for label in g.objects(concept, SKOS.prefLabel):
-        if isinstance(label, Literal) and label.language == "de":
-            pref_de = str(label)
-            break
+    pref_de = get_pref_label_de(concept)
     if not pref_de:
         continue
 
