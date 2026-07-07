@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-07-01">1. Juli 2026, 11:16 Uhr</date>
+				<date when="2026-07-07">7. Juli 2026, 07:47 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -2862,7 +2862,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10031324-3"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Freie_Volkspartei# Freie_Deutsche_Volkspartei_(Berlin)"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Freie_Volkspartei#Freie_Deutsche_Volkspartei_(Berlin)"/>
 			</item>
 			<item xml:id="FES">
 				<term type="pref" xml:lang="de">Friedrich-Ebert-Stiftung</term>
