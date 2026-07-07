@@ -3848,7 +3848,7 @@ ex:FDV a skos:Concept ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10031324-3> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Volkspartei# Freie_Deutsche_Volkspartei_(Berlin)> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Freie_Volkspartei#Freie_Deutsche_Volkspartei_(Berlin)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # siehe FVP.
 
