@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-07-07">7. Juli 2026, 07:47 Uhr</date>
+				<date when="2026-11-09">9. November 2026, 11:23 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -5878,22 +5878,24 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Svenska_Dagbladet"/>
 			</item>
 			<item xml:id="TASS">
-				<term type="pref" xml:lang="de">Telegrafnoe Agentstvo Sovetskogo Sojuza (sowjet. Nachrichtenagentur)</term>
-				<term type="alt" xml:lang="de">TASS</term>
+				<term type="pref" xml:lang="de">Sowjetische Nachrichtenagentur TASS</term>
+				<term type="alt" xml:lang="ru">Telegrafnoe Agentstvo Sovetskogo Sojuza</term>
+				<term type="alt" xml:lang="ru">TASS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/6142034-7"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/5265203-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/TASS"/>
 			</item>
 			<item xml:id="TBG">
-				<term type="pref" xml:lang="de">The Boston Globe</term>
+				<term type="pref" xml:lang="en">The Boston Globe</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/6077254-2"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/4257322-1"/>
+				<ref type="closeMatch" target="https://d-nb.info/gnd/6077254-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_Boston_Globe"/>
 			</item>
 			<item xml:id="TEc">
-				<term type="pref" xml:lang="de">The Economist</term>
+				<term type="pref" xml:lang="en">The Economist</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4184996-6"/>
@@ -5901,37 +5903,39 @@
 			</item>
 			<item xml:id="THA">
 				<term type="pref" xml:lang="de">Treuhandanstalt</term>
+				<term type="alt" xml:lang="de">Treuhand</term>
 				<term type="alt" xml:lang="de">THA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5017849-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Treuhandanstalt"/>
 			</item>
 			<item xml:id="THW">
 				<term type="pref" xml:lang="de">Technisches Hilfswerk</term>
+				<term type="alt" xml:lang="de">Bundesanstalt Technisches Hilfswerk</term>
 				<term type="alt" xml:lang="de">THW</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2003107-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Technisches_Hilfswerk"/>
 			</item>
 			<item xml:id="TNRe">
-				<term type="pref" xml:lang="de">The New Republic</term>
+				<term type="pref" xml:lang="en">The New Republic</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4259880-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_New_Republic"/>
 			</item>
 			<item xml:id="TNY">
-				<term type="pref" xml:lang="de">The New Yorker</term>
+				<term type="pref" xml:lang="en">The New Yorker</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4185014-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_New_Yorker"/>
 			</item>
 			<item xml:id="TUC">
-				<term type="pref" xml:lang="de">Trades Union Congress</term>
-				<term type="alt" xml:lang="de">TUC</term>
+				<term type="pref" xml:lang="en">Trades Union Congress</term>
+				<term type="alt" xml:lang="en">TUC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/3473-3"/>
@@ -5954,22 +5958,24 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Trierischer_Volksfreund"/>
 			</item>
 			<item xml:id="TWaP">
-				<term type="pref" xml:lang="de">The Washington Post</term>
+				<term type="pref" xml:lang="en">The Washington Post</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4185034-8"/>
+				<ref type="closeMatch" target="https://d-nb.info/gnd/1191765857"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_Washington_Post"/>
 			</item>
 			<item xml:id="Tanjug">
-				<term type="pref" xml:lang="de">Telegrafska Agencija Nova Jugoslavija</term>
-				<term type="alt" xml:lang="de">Tanjug</term>
+				<term type="pref" xml:lang="sh">Telegrafska Agencija Nove Jugoslavije</term>
+				<term type="alt" xml:lang="de">Nachrichtenagentur des Neuen Jugoslawiens</term>
+				<term type="alt" xml:lang="sh">Tanjug</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/508259-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Tanjug"/>
 			</item>
 			<item xml:id="Taz">
-				<term type="pref" xml:lang="de">Taz, die Tageszeitung</term>
+				<term type="pref" xml:lang="de">Die Tageszeitung</term>
 				<term type="alt" xml:lang="de">taz</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
@@ -5977,21 +5983,23 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Die_Tageszeitung"/>
 			</item>
 			<item xml:id="Telegraf">
-				<term type="pref" xml:lang="de">Telegraf (West-Berliner Tageszeitung)</term>
+				<term type="pref" xml:lang="de">Telegraf</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/4725431-2"/>
 				<ref type="closeMatch" target="https://d-nb.info/010714774"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Telegraf_(Zeitung)"/>
 			</item>
 			<item xml:id="Terredho">
-				<term type="pref" xml:lang="de">Terre des hommes</term>
+				<term type="pref" xml:lang="fr">Terre des Hommes</term>
+				<term type="alt" xml:lang="fr">tdh</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4059525-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Terre_des_hommes"/>
 			</item>
 			<item xml:id="ThBr">
-				<term type="pref" xml:lang="de">Thomson-Brandt</term>
+				<term type="pref" xml:lang="fr">Thomson-Brandt</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="closeMatch" target="https://fr.wikipedia.org/wiki/Thomson-Brandt"/>
@@ -6003,23 +6011,24 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Thyssenkrupp"/>
 			</item>
 			<item xml:id="Times">
-				<term type="pref" xml:lang="de">The Times</term>
+				<term type="pref" xml:lang="en">The Times</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/4184996-6"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_Economist"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/4185524-3"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_Times"/>
 			</item>
 			<item xml:id="Titanic">
-				<term type="pref" xml:lang="de">Titanic (Zeitschrift)</term>
+				<term type="pref" xml:lang="de">Titanic</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4722439-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Titanic_(Magazin)"/>
 			</item>
 			<item xml:id="Trybuna">
-				<term type="pref" xml:lang="de">Trybuna Ludu</term>
+				<term type="pref" xml:lang="pl">Trybuna Ludu</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://d-nb.info/011757213"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Trybuna_Ludu"/>
 			</item>
 			<item xml:id="Tsp">
@@ -6033,44 +6042,44 @@
 				<term type="pref" xml:lang="de">Umweltbundesamt (BRD)</term>
 				<term type="alt" xml:lang="de">UBA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2116834-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Umweltbundesamt_(Deutschland)"/>
 			</item>
 			<item xml:id="UCD">
-				<term type="pref" xml:lang="de">Unión de Centro Democrático</term>
-				<term type="alt" xml:lang="de">UCD</term>
+				<term type="pref" xml:lang="es">Unión de Centro Democrático</term>
+				<term type="alt" xml:lang="es">UCD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/511001-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Uni%C3%B3n_de_Centro_Democr%C3%A1tico"/>
 			</item>
 			<item xml:id="UCOR">
-				<term type="pref" xml:lang="de">Uranium Enrichment Corporation of South Africa Ltd.</term>
-				<term type="alt" xml:lang="de">UCOR</term>
+				<term type="pref" xml:lang="en">Uranium Enrichment Corporation of South Africa Ltd.</term>
+				<term type="alt" xml:lang="en">UCOR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1086268911"/>
 			</item>
 			<item xml:id="UCT">
-				<term type="pref" xml:lang="de">Unión general de trabajadores</term>
-				<term type="alt" xml:lang="de">UCT</term>
+				<term type="pref" xml:lang="es">Unión general de trabajadores</term>
+				<term type="alt" xml:lang="es">UCT</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/219851-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Uni%C3%B3n_General_de_Trabajadores"/>
 			</item>
 			<item xml:id="UDF">
-				<term type="pref" xml:lang="de">Union pour la Démocratie Française</term>
-				<term type="alt" xml:lang="de">UDF</term>
+				<term type="pref" xml:lang="fr">Union pour la Démocratie Française</term>
+				<term type="alt" xml:lang="fr">UDF</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5155648-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Union_pour_la_d%C3%A9mocratie_fran%C3%A7aise"/>
 			</item>
 			<item xml:id="UDSR">
-				<term type="pref" xml:lang="de">Union Démocratique et Socialiste de la Résistance</term>
-				<term type="alt" xml:lang="de">UDSR</term>
+				<term type="pref" xml:lang="fr">Union Démocratique et Socialiste de la Résistance</term>
+				<term type="alt" xml:lang="fr">UDSR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/104137884X"/>
@@ -6087,78 +6096,78 @@
 				<term type="pref" xml:lang="de">Union der Leitenden Angestellten</term>
 				<term type="alt" xml:lang="de">ULA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/41559-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/ULA_%E2%80%93_United_Leaders_Association"/>
 			</item>
 			<item xml:id="UN">
-				<term type="pref" xml:lang="de">United Nations</term>
-				<term type="alt" xml:lang="de">UN</term>
+				<term type="pref" xml:lang="en">United Nations</term>
+				<term type="alt" xml:lang="en">UN</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/333-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vereinte_Nationen"/>
 			</item>
 			<item xml:id="UNCTAD">
-				<term type="pref" xml:lang="de">United Nations Conference on Trade and Development (Konferenz der Vereinten Nationen für Handel und Entwicklung/UNCTAD)</term>
-				<term type="alt" xml:lang="de">UNCTAD</term>
+				<term type="pref" xml:lang="en">United Nations Conference on Trade and Development (Konferenz der Vereinten Nationen für Handel und Entwicklung/UNCTAD)</term>
+				<term type="alt" xml:lang="en">UNCTAD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1001366-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Konferenz_der_Vereinten_Nationen_f%C3%BCr_Handel_und_Entwicklung"/>
 			</item>
 			<item xml:id="UNESCO">
-				<term type="pref" xml:lang="de">United Nations Educational, Scientific and Cultural Organisation</term>
-				<term type="alt" xml:lang="de">UNESCO</term>
+				<term type="pref" xml:lang="en">United Nations Educational, Scientific and Cultural Organisation</term>
+				<term type="alt" xml:lang="en">UNESCO</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2023755-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/UNESCO"/>
 			</item>
 			<item xml:id="UNIC">
-				<term type="pref" xml:lang="de">Automobiles Unic</term>
-				<term type="alt" xml:lang="de">UNIC</term>
+				<term type="pref" xml:lang="fr">Automobiles Unic</term>
+				<term type="alt" xml:lang="fr">UNIC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Automobiles_Unic"/>
 			</item>
 			<item xml:id="UNICEF">
-				<term type="pref" xml:lang="de">United Nations Children’s Fund (Kinderhilfswerk der Vereinten Nationen</term>
-				<term type="alt" xml:lang="de">UNICEF</term>
+				<term type="pref" xml:lang="en">United Nations Children’s Fund (Kinderhilfswerk der Vereinten Nationen)</term>
+				<term type="alt" xml:lang="en">UNICEF</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2023668-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/UNICEF"/>
 			</item>
 			<item xml:id="UNR">
-				<term type="pref" xml:lang="de">Union pour la Nouvelle République</term>
-				<term type="alt" xml:lang="de">UNR</term>
+				<term type="pref" xml:lang="fr">Union pour la Nouvelle République</term>
+				<term type="alt" xml:lang="fr">UNR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1165195402"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Union_pour_la_Nouvelle_R%C3%A9publique"/>
 			</item>
 			<item xml:id="UNSC">
-				<term type="pref" xml:lang="de">United Nations Security Council</term>
-				<term type="alt" xml:lang="de">UNSC</term>
+				<term type="pref" xml:lang="en">United Nations Security Council</term>
+				<term type="alt" xml:lang="en">UNSC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1001797-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sicherheitsrat_der_Vereinten_Nationen"/>
 			</item>
 			<item xml:id="UPI">
-				<term type="pref" xml:lang="de">United Press Internationaly Series</term>
-				<term type="alt" xml:lang="de">UPI</term>
+				<term type="pref" xml:lang="en">United Press Internationaly Series</term>
+				<term type="alt" xml:lang="en">UPI</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4268324-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/United_Press_International"/>
 			</item>
 			<item xml:id="URO">
-				<term type="pref" xml:lang="de">United Restitution Organization</term>
-				<term type="alt" xml:lang="de">URO</term>
+				<term type="pref" xml:lang="en">United Restitution Organization</term>
+				<term type="alt" xml:lang="en">URO</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/814310-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/United_Restitution_Organization"/>
 			</item>
@@ -6181,14 +6190,14 @@
 				<term type="pref" xml:lang="de">Union der Ausgewiesenen und Flüchtlinge</term>
 				<term type="alt" xml:lang="de">UdA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2038632-1"/>
 			</item>
 			<item xml:id="Ufa">
 				<term type="pref" xml:lang="de">Universum Film AG</term>
 				<term type="alt" xml:lang="de">Ufa</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">news</note>
+				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10185986-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/UFA"/>
 			</item>
@@ -6196,7 +6205,7 @@
 				<term type="pref" xml:lang="de">Union in Deutschland/Deutschland-Union-Dienst</term>
 				<term type="alt" xml:lang="de">UiD/DUD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">news</note>
 			</item>
 			<item xml:id="UniUlm">
 				<term type="pref" xml:lang="de">Universität Ulm</term>
@@ -6206,14 +6215,14 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Universit%C3%A4t_Ulm"/>
 			</item>
 			<item xml:id="Unilever">
-				<term type="pref" xml:lang="de">Unilever</term>
+				<term type="pref" xml:lang="en">Unilever</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4258490-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Unilever"/>
 			</item>
 			<item xml:id="Unita">
-				<term type="pref" xml:lang="de">L’Unità</term>
+				<term type="pref" xml:lang="it">L’Unità</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4166290-8"/>
@@ -6246,7 +6255,7 @@
 				<term type="pref" xml:lang="de">Verband der chemischen Industrie</term>
 				<term type="alt" xml:lang="de">VCI</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2024399-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_der_Chemischen_Industrie"/>
 			</item>
@@ -6254,15 +6263,15 @@
 				<term type="pref" xml:lang="de">Verband der Elektrizitätswirtschaft</term>
 				<term type="alt" xml:lang="de">VDEW</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">com</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10015673-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_der_Elektrizit%C3%A4tswirtschaft"/>
 			</item>
 			<item xml:id="VDMA">
-				<term type="pref" xml:lang="de">Verband Deutscher Maschinen und Anlagenbauer e.V</term>
+				<term type="pref" xml:lang="de">Verband Deutscher Maschinen- und Anlagenbauer</term>
 				<term type="alt" xml:lang="de">VDMA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">com</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2069391-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/VDMA_e.V."/>
 			</item>
@@ -6270,7 +6279,7 @@
 				<term type="pref" xml:lang="de">Verband Deutscher Studentenschaften</term>
 				<term type="alt" xml:lang="de">VDS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4630615-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_Deutscher_Studentenschaften"/>
 			</item>
@@ -6325,13 +6334,13 @@
 				<term type="pref" xml:lang="de">Verband Öffentlicher Verkehrsbetriebe (VÖV)</term>
 				<term type="alt" xml:lang="de">VÖV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/7648730-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_%C3%B6ffentlicher_Verkehrsbetriebe"/>
 			</item>
 			<item xml:id="VVD">
-				<term type="pref" xml:lang="de">Volkspartij voor Vrijheid en Democratie (Niederlande)</term>
-				<term type="alt" xml:lang="de">VVD</term>
+				<term type="pref" xml:lang="nl">Volkspartij voor Vrijheid en Democratie (Niederlande)</term>
+				<term type="alt" xml:lang="nl">VVD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5119868-X"/>
@@ -6341,7 +6350,7 @@
 				<term type="pref" xml:lang="de">Verleger-Verband Deutscher Anzeigenblätter</term>
 				<term type="alt" xml:lang="de">VVDA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16116190-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverband_Deutscher_Anzeigenbl%C3%A4tter"/>
 			</item>
@@ -6389,7 +6398,7 @@
 				<term type="pref" xml:lang="de">Verband deutscher Soldaten</term>
 				<term type="alt" xml:lang="de">VdS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4215289-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_deutscher_Soldaten"/>
 			</item>
@@ -6480,22 +6489,22 @@
 				<term type="pref" xml:lang="de">Westeuropäische Union</term>
 				<term type="alt" xml:lang="de">WEU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35709-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Westeurop%C3%A4ische_Union"/>
 			</item>
 			<item xml:id="WHO">
-				<term type="pref" xml:lang="de">World Health Organisation</term>
-				<term type="alt" xml:lang="de">WHO</term>
+				<term type="pref" xml:lang="en">World Health Organisation</term>
+				<term type="alt" xml:lang="en">WHO</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1007857-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Weltgesundheitsorganisation"/>
 			</item>
 			<item xml:id="WKBL">
 				<term type="pref" xml:lang="de">Wirtschaftsvereinigung Eisen- und Stahlindustrie</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">com</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2026417-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschaftsvereinigung_Stahl"/>
 			</item>
@@ -6507,10 +6516,10 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Westf%C3%A4lische_Nachrichten"/>
 			</item>
 			<item xml:id="WPC">
-				<term type="pref" xml:lang="de">World Peace Council</term>
-				<term type="alt" xml:lang="de">WPC</term>
+				<term type="pref" xml:lang="en">World Peace Council</term>
+				<term type="alt" xml:lang="en">WPC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2026634-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Weltfriedensrat"/>
 			</item>
@@ -6523,8 +6532,8 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschafts-_und_Sozialwissenschaftliches_Institut"/>
 			</item>
 			<item xml:id="WSJ">
-				<term type="pref" xml:lang="de">The Wall Street Journal</term>
-				<term type="alt" xml:lang="de">WSJ</term>
+				<term type="pref" xml:lang="en">The Wall Street Journal</term>
+				<term type="alt" xml:lang="en">WSJ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4185032-4"/>
@@ -6534,14 +6543,14 @@
 				<term type="pref" xml:lang="de">Warschauer Pakt, Warschauer Vertragsorganisaton</term>
 				<term type="alt" xml:lang="de">WV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/14767-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Warschauer_Pakt"/>
 			</item>
 			<item xml:id="WaffenSS">
 				<term type="pref" xml:lang="de">Waffen-SS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/67738-3"/>
 				<ref type="closeMatch" target="hhttps://de.wikipedia.org/wiki/Waffen-SS"/>
 			</item>
@@ -6576,7 +6585,7 @@
 			<item xml:id="WeimarNV">
 				<term type="pref" xml:lang="de">Weimarer Nationalversammlung</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/37473-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Weimarer_Nationalversammlung"/>
 			</item>
@@ -6618,7 +6627,7 @@
 				<term type="pref" xml:lang="de">Gesetzblatt der Verwaltung des Vereinigten Wirtschaftsgebietes</term>
 				<term type="alt" xml:lang="de">WiGBl.</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">news</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Gesetzblatt_der_Verwaltung_des_Vereinigten_Wirtschaftsgebietes"/>
 			</item>
 			<item xml:id="WiKu">
@@ -6631,7 +6640,7 @@
 			<item xml:id="WiRatVerWirt">
 				<term type="pref" xml:lang="de">Wirtschaftsrat des Vereinigten Wirtschaftsgebietes</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35141-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschaftsrat_des_Vereinigten_Wirtschaftsgebietes"/>
 			</item>
@@ -6643,38 +6652,38 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschaftswoche"/>
 			</item>
 			<item xml:id="Xerox">
-				<term type="pref" xml:lang="de">Xerox Corporation</term>
-				<term type="alt" xml:lang="de">Xerox</term>
+				<term type="pref" xml:lang="en">Xerox Corporation</term>
+				<term type="alt" xml:lang="en">Xerox</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16423-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Xerox"/>
 			</item>
 			<item xml:id="Xin">
-				<term type="pref" xml:lang="de">Xinhua</term>
+				<term type="pref" xml:lang="zh">Xinhua</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1084057-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Xinhua"/>
 			</item>
 			<item xml:id="Yokohama">
-				<term type="pref" xml:lang="de">Yokohama Rubber</term>
+				<term type="pref" xml:lang="en">Yokohama Rubber</term>
 				<term type="alt" xml:lang="de">Yokohama</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Yokohama_(Unternehmen)"/>
 			</item>
 			<item xml:id="ZANU">
-				<term type="pref" xml:lang="de">Zimbabwe African National Union - Patriotic Front</term>
-				<term type="alt" xml:lang="de">ZANU</term>
+				<term type="pref" xml:lang="en">Zimbabwe African National Union - Patriotic Front</term>
+				<term type="alt" xml:lang="en">ZANU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/3058770-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zimbabwe_African_National_Union_%E2%80%93_Patriotic_Front"/>
 			</item>
 			<item xml:id="ZAPU">
-				<term type="pref" xml:lang="de">Zimbabwe African People´s Union</term>
-				<term type="alt" xml:lang="de">ZAPU</term>
+				<term type="pref" xml:lang="en">Zimbabwe African People’s Union</term>
+				<term type="alt" xml:lang="en">ZAPU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/44087-5"/>
@@ -6692,7 +6701,7 @@
 				<term type="pref" xml:lang="de">Zentralverband des Deutschen Handwerks</term>
 				<term type="alt" xml:lang="de">ZDH</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">com</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2027118-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zentralverband_des_Deutschen_Handwerks"/>
 			</item>
@@ -6700,7 +6709,7 @@
 				<term type="pref" xml:lang="de">Zentralkommitee der SED</term>
 				<term type="alt" xml:lang="de">ZK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4131775-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Deutschlands#Zentralkomitee"/>
 			</item>
@@ -6723,7 +6732,7 @@
 				<term type="pref" xml:lang="de">Zentralrat der Juden in Deutschland</term>
 				<term type="alt" xml:lang="de">ZdJ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">news</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/9663-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zentralrat_der_Juden_in_Deutschland"/>
 			</item>
@@ -6879,7 +6888,7 @@
 			<item xml:id="unserezeit">
 				<term type="pref" xml:lang="de">Unsere Zeit - Zeitung der DKP (seit 1969)</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">news</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Unsere_Zeit_(Zeitung)"/>
 			</item>
 		</list>
