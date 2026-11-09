@@ -7829,46 +7829,49 @@ ex:SZ a skos:Concept ;
 
 
 ex:Tanjug a skos:Concept ;
-  skos:prefLabel "Telegrafska Agencija Nova Jugoslavija"@de ;
-  skos:altLabel "Tanjug"@de ;
+  skos:prefLabel "Telegrafska Agencija Nove Jugoslavije"@sh ;
+  skos:altLabel "Nachrichtenagentur des Neuen Jugoslawiens"@de ;
+  skos:altLabel "Tanjug"@sh ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/508259-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Tanjug> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:TASS a skos:Concept ;
-  skos:prefLabel "Telegrafnoe Agentstvo Sovetskogo Sojuza (sowjet. Nachrichtenagentur)"@de ;
-  skos:altLabel "TASS"@de ;
+  skos:prefLabel "Sowjetische Nachrichtenagentur TASS"@de ;
+  skos:altLabel "Telegrafnoe Agentstvo Sovetskogo Sojuza"@ru ;
+  skos:altLabel "TASS"@ru ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/6142034-7> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/5265203-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/TASS> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Taz a skos:Concept ;
-  skos:prefLabel "Taz, die Tageszeitung"@de ;
+  skos:prefLabel "Die Tageszeitung"@de ;
   skos:altLabel "taz"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4206478-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Die_Tageszeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:TBG a skos:Concept ;
-  skos:prefLabel "The Boston Globe"@de ;
+  skos:prefLabel "The Boston Globe"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/6077254-2> ;
+  skos:exactMatch <https://d-nb.info/gnd/4257322-1> ;
+  skos:closeMatch <https://d-nb.info/gnd/6077254-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Boston_Globe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:TEc a skos:Concept ;
-  skos:prefLabel "The Economist"@de ;
+  skos:prefLabel "The Economist"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4184996-6> ;
@@ -7877,18 +7880,20 @@ ex:TEc a skos:Concept ;
 
 
 ex:Telegraf a skos:Concept ;
-  skos:prefLabel "Telegraf (West-Berliner Tageszeitung)"@de ;
+  skos:prefLabel "Telegraf"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4725431-2> ;
   skos:closeMatch <https://d-nb.info/010714774> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Telegraf_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Terredho a skos:Concept ;
-  skos:prefLabel "Terre des hommes"@de ;
+  skos:prefLabel "Terre des Hommes"@fr ;
+  skos:altLabel "tdh"@fr ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4059525-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Terre_des_hommes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -7896,27 +7901,30 @@ ex:Terredho a skos:Concept ;
 
 ex:THA a skos:Concept ;
   skos:prefLabel "Treuhandanstalt"@de ;
+  skos:altLabel "Treuhand"@de ;
   skos:altLabel "THA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5017849-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Treuhandanstalt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:ThBr a skos:Concept ;
-  skos:prefLabel "Thomson-Brandt"@de ;
+  skos:prefLabel "Thomson-Brandt"@fr ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://fr.wikipedia.org/wiki/Thomson-Brandt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # ggf. https://d-nb.info/gnd/274395-4.
 
 
 ex:THW a skos:Concept ;
   skos:prefLabel "Technisches Hilfswerk"@de ;
+  skos:altLabel "Bundesanstalt Technisches Hilfswerk"@de ;
   skos:altLabel "THW"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2003107-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Technisches_Hilfswerk> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -7928,19 +7936,20 @@ ex:Thyssen a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Thyssenkrupp> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  #prüfen, wo verwendet - präzise formulieren
 
 
 ex:Times a skos:Concept ;
-  skos:prefLabel "The Times"@de ;
+  skos:prefLabel "The Times"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4184996-6> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/The_Economist> ;
+  skos:exactMatch <https://d-nb.info/gnd/4185524-3> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/The_Times> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Titanic a skos:Concept ;
-  skos:prefLabel "Titanic (Zeitschrift)"@de ;
+  skos:prefLabel "Titanic"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4722439-3> ;
@@ -7949,7 +7958,7 @@ ex:Titanic a skos:Concept ;
 
 
 ex:TNRe a skos:Concept ;
-  skos:prefLabel "The New Republic"@de ;
+  skos:prefLabel "The New Republic"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4259880-1> ;
@@ -7958,7 +7967,7 @@ ex:TNRe a skos:Concept ;
 
 
 ex:TNY a skos:Concept ;
-  skos:prefLabel "The New Yorker"@de ;
+  skos:prefLabel "The New Yorker"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4185014-2> ;
@@ -7967,9 +7976,10 @@ ex:TNY a skos:Concept ;
 
 
 ex:Trybuna a skos:Concept ;
-  skos:prefLabel "Trybuna Ludu"@de ;
+  skos:prefLabel "Trybuna Ludu"@pl ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/011757213> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Trybuna_Ludu> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -7984,10 +7994,10 @@ ex:Tsp a skos:Concept ;
 
 
 ex:TUC a skos:Concept ;
-  skos:prefLabel "Trades Union Congress"@de ;
-  skos:altLabel "TUC"@de ;
+  skos:prefLabel "Trades Union Congress"@en ;
+  skos:altLabel "TUC"@en ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/3473-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Trades_Union_Congress> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -7997,7 +8007,7 @@ ex:TUEV a skos:Concept ;
   skos:prefLabel "Technischer Überwachungsverein"@de ;
   skos:altLabel "TÜV"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4137407-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/T%C3%9CV> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8014,10 +8024,11 @@ ex:TV a skos:Concept ;
 
 
 ex:TWaP a skos:Concept ;
-  skos:prefLabel "The Washington Post"@de ;
+  skos:prefLabel "The Washington Post"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4185034-8> ;
+  skos:closeMatch <https://d-nb.info/gnd/1191765857> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Washington_Post> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -8029,7 +8040,7 @@ ex:TWaP a skos:Concept ;
 ex:UBA a skos:Concept ;
   skos:prefLabel "Umweltbundesamt (BRD)"@de ;
   skos:altLabel "UBA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2116834-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Umweltbundesamt_(Deutschland)> ;
@@ -8037,8 +8048,8 @@ ex:UBA a skos:Concept ;
 
 
 ex:UCD a skos:Concept ;
-  skos:prefLabel "Unión de Centro Democrático"@de ;
-  skos:altLabel "UCD"@de ;
+  skos:prefLabel "Unión de Centro Democrático"@es ;
+  skos:altLabel "UCD"@es ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/511001-4> ;
@@ -8047,8 +8058,8 @@ ex:UCD a skos:Concept ;
 
 
 ex:UCOR a skos:Concept ;
-  skos:prefLabel "Uranium Enrichment Corporation of South Africa Ltd."@de ;
-  skos:altLabel "UCOR"@de ;
+  skos:prefLabel "Uranium Enrichment Corporation of South Africa Ltd."@en ;
+  skos:altLabel "UCOR"@en ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1086268911> ;
@@ -8056,8 +8067,8 @@ ex:UCOR a skos:Concept ;
 
 
 ex:UCT a skos:Concept ;
-  skos:prefLabel "Unión general de trabajadores"@de ;
-  skos:altLabel "UCT"@de ;
+  skos:prefLabel "Unión general de trabajadores"@es ;
+  skos:altLabel "UCT"@es ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/219851-4> ;
@@ -8068,15 +8079,15 @@ ex:UCT a skos:Concept ;
 ex:UdA a skos:Concept ;
   skos:prefLabel "Union der Ausgewiesenen und Flüchtlinge"@de ;
   skos:altLabel "UdA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2038632-1> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:UDF a skos:Concept ;
-  skos:prefLabel "Union pour la Démocratie Française"@de ;
-  skos:altLabel "UDF"@de ;
+  skos:prefLabel "Union pour la Démocratie Française"@fr ;
+  skos:altLabel "UDF"@fr ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5155648-0> ;
@@ -8085,8 +8096,8 @@ ex:UDF a skos:Concept ;
 
 
 ex:UDSR a skos:Concept ;
-  skos:prefLabel "Union Démocratique et Socialiste de la Résistance"@de ;
-  skos:altLabel "UDSR"@de ;
+  skos:prefLabel "Union Démocratique et Socialiste de la Résistance"@fr ;
+  skos:altLabel "UDSR"@fr ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/104137884X> ;
@@ -8097,7 +8108,7 @@ ex:UDSR a skos:Concept ;
 ex:Ufa a skos:Concept ;
   skos:prefLabel "Universum Film AG"@de ;
   skos:altLabel "Ufa"@de ;
-  skos:notation "news"^^fpv:entityType ;
+  skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10185986-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/UFA> ;
@@ -8116,7 +8127,7 @@ ex:UGO a skos:Concept ;
 ex:UiD a skos:Concept ;
   skos:prefLabel "Union in Deutschland/Deutschland-Union-Dienst"@de ;
   skos:altLabel "UiD/DUD"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -8124,7 +8135,7 @@ ex:UiD a skos:Concept ;
 ex:ULA a skos:Concept ;
   skos:prefLabel "Union der Leitenden Angestellten"@de ;
   skos:altLabel "ULA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/41559-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/ULA_%E2%80%93_United_Leaders_Association> ;
@@ -8132,9 +8143,9 @@ ex:ULA a skos:Concept ;
 
 
 ex:UN a skos:Concept ;
-  skos:prefLabel "United Nations"@de ;
-  skos:altLabel "UN"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "United Nations"@en ;
+  skos:altLabel "UN"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/333-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinte_Nationen> ;
@@ -8142,9 +8153,9 @@ ex:UN a skos:Concept ;
 
 
 ex:UNCTAD a skos:Concept ;
-  skos:prefLabel "United Nations Conference on Trade and Development (Konferenz der Vereinten Nationen für Handel und Entwicklung/UNCTAD)"@de ;
-  skos:altLabel "UNCTAD"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "United Nations Conference on Trade and Development (Konferenz der Vereinten Nationen für Handel und Entwicklung/UNCTAD)"@en ;
+  skos:altLabel "UNCTAD"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1001366-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Konferenz_der_Vereinten_Nationen_f%C3%BCr_Handel_und_Entwicklung> ;
@@ -8152,9 +8163,9 @@ ex:UNCTAD a skos:Concept ;
 
 
 ex:UNESCO a skos:Concept ;
-  skos:prefLabel "United Nations Educational, Scientific and Cultural Organisation"@de ;
-  skos:altLabel "UNESCO"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "United Nations Educational, Scientific and Cultural Organisation"@en ;
+  skos:altLabel "UNESCO"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2023755-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/UNESCO> ;
@@ -8162,8 +8173,8 @@ ex:UNESCO a skos:Concept ;
 
 
 ex:UNIC a skos:Concept ;
-  skos:prefLabel "Automobiles Unic"@de ;
-  skos:altLabel "UNIC"@de ;
+  skos:prefLabel "Automobiles Unic"@fr ;
+  skos:altLabel "UNIC"@fr ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Automobiles_Unic> ;
@@ -8171,9 +8182,9 @@ ex:UNIC a skos:Concept ;
 
 
 ex:UNICEF a skos:Concept ;
-  skos:prefLabel "United Nations Children’s Fund (Kinderhilfswerk der Vereinten Nationen"@de ;
-  skos:altLabel "UNICEF"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "United Nations Children’s Fund (Kinderhilfswerk der Vereinten Nationen)"@en ;
+  skos:altLabel "UNICEF"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2023668-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/UNICEF> ;
@@ -8181,7 +8192,7 @@ ex:UNICEF a skos:Concept ;
 
 
 ex:Unilever a skos:Concept ;
-  skos:prefLabel "Unilever"@de ;
+  skos:prefLabel "Unilever"@en ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4258490-5> ;
@@ -8190,7 +8201,7 @@ ex:Unilever a skos:Concept ;
 
 
 ex:Unita a skos:Concept ;
-  skos:prefLabel "L’Unità"@de ;
+  skos:prefLabel "L’Unità"@it ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4166290-8> ;
@@ -8217,8 +8228,8 @@ ex:UnivGoett a skos:Concept ;
 
 
 ex:UNR a skos:Concept ;
-  skos:prefLabel "Union pour la Nouvelle République"@de ;
-  skos:altLabel "UNR"@de ;
+  skos:prefLabel "Union pour la Nouvelle République"@fr ;
+  skos:altLabel "UNR"@fr ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1165195402> ;
@@ -8227,9 +8238,9 @@ ex:UNR a skos:Concept ;
 
 
 ex:UNSC a skos:Concept ;
-  skos:prefLabel "United Nations Security Council"@de ;
-  skos:altLabel "UNSC"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "United Nations Security Council"@en ;
+  skos:altLabel "UNSC"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1001797-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sicherheitsrat_der_Vereinten_Nationen> ;
@@ -8238,15 +8249,15 @@ ex:UNSC a skos:Concept ;
 
 ex:unserezeit a skos:Concept ;
   skos:prefLabel "Unsere Zeit - Zeitung der DKP (seit 1969)"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Unsere_Zeit_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:UPI a skos:Concept ;
-  skos:prefLabel "United Press Internationaly Series"@de ;
-  skos:altLabel "UPI"@de ;
+  skos:prefLabel "United Press Internationaly Series"@en ;
+  skos:altLabel "UPI"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4268324-5> ;
@@ -8255,9 +8266,9 @@ ex:UPI a skos:Concept ;
 
 
 ex:URO a skos:Concept ;
-  skos:prefLabel "United Restitution Organization"@de ;
-  skos:altLabel "URO"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "United Restitution Organization"@en ;
+  skos:altLabel "URO"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/814310-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/United_Restitution_Organization> ;
@@ -8310,7 +8321,7 @@ ex:VBL a skos:Concept ;
 ex:VCI a skos:Concept ;
   skos:prefLabel "Verband der chemischen Industrie"@de ;
   skos:altLabel "VCI"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2024399-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Chemischen_Industrie> ;
@@ -8330,7 +8341,7 @@ ex:VdAK a skos:Concept ;
 ex:VDEW a skos:Concept ;
   skos:prefLabel "Verband der Elektrizitätswirtschaft"@de ;
   skos:altLabel "VDEW"@de ;
-  skos:notation "com"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10015673-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Elektrizit%C3%A4tswirtschaft> ;
@@ -8358,9 +8369,9 @@ ex:VdK a skos:Concept ;
 
 
 ex:VDMA a skos:Concept ;
-  skos:prefLabel "Verband Deutscher Maschinen und Anlagenbauer e.V"@de ;
+  skos:prefLabel "Verband Deutscher Maschinen- und Anlagenbauer"@de ;
   skos:altLabel "VDMA"@de ;
-  skos:notation "com"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2069391-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/VDMA_e.V.> ;
@@ -8370,7 +8381,7 @@ ex:VDMA a skos:Concept ;
 ex:VdS a skos:Concept ;
   skos:prefLabel "Verband deutscher Soldaten"@de ;
   skos:altLabel "VdS"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4215289-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_deutscher_Soldaten> ;
@@ -8380,7 +8391,7 @@ ex:VdS a skos:Concept ;
 ex:VDS a skos:Concept ;
   skos:prefLabel "Verband Deutscher Studentenschaften"@de ;
   skos:altLabel "VDS"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4630615-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_Deutscher_Studentenschaften> ;
@@ -8414,6 +8425,7 @@ ex:VereinigWirtschaftsgeb a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4070432-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bizone> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # notation ?
 
 
 ex:Vermittlungssausschuss a skos:Concept ;
@@ -8423,6 +8435,7 @@ ex:Vermittlungssausschuss a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4234425-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vermittlungsausschuss> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # notation ?
 
 
 ex:VEW a skos:Concept ;
@@ -8453,6 +8466,7 @@ ex:VfZ a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4581195-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vierteljahrshefte_f%C3%BCr_Zeitgeschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet.
 
 
 ex:VIAG a skos:Concept ;
@@ -8486,7 +8500,7 @@ ex:Voelk a skos:Concept ;
 ex:VOEV a skos:Concept ;
   skos:prefLabel "Verband Öffentlicher Verkehrsbetriebe (VÖV)"@de ;
   skos:altLabel "VÖV"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7648730-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_%C3%B6ffentlicher_Verkehrsbetriebe> ;
@@ -8512,8 +8526,8 @@ ex:Vorw a skos:Concept ;
 
 
 ex:VVD a skos:Concept ;
-  skos:prefLabel "Volkspartij voor Vrijheid en Democratie (Niederlande)"@de ;
-  skos:altLabel "VVD"@de ;
+  skos:prefLabel "Volkspartij voor Vrijheid en Democratie (Niederlande)"@nl ;
+  skos:altLabel "VVD"@nl ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5119868-X> ;
@@ -8524,7 +8538,7 @@ ex:VVD a skos:Concept ;
 ex:VVDA a skos:Concept ;
   skos:prefLabel "Verleger-Verband Deutscher Anzeigenblätter"@de ;
   skos:altLabel "VVDA"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16116190-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_Deutscher_Anzeigenbl%C3%A4tter> ;
@@ -8557,7 +8571,7 @@ ex:VW a skos:Concept ;
 
 ex:WaffenSS a skos:Concept ;
   skos:prefLabel "Waffen-SS"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/67738-3> ;
   skos:closeMatch <hhttps://de.wikipedia.org/wiki/Waffen-SS> ;
@@ -8652,7 +8666,7 @@ ex:Wehrkunde a skos:Concept ;
 
 ex:WeimarNV a skos:Concept ;
   skos:prefLabel "Weimarer Nationalversammlung"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/37473-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Weimarer_Nationalversammlung> ;
@@ -8688,7 +8702,7 @@ ex:WesKur a skos:Concept ;
 ex:WEU a skos:Concept ;
   skos:prefLabel "Westeuropäische Union"@de ;
   skos:altLabel "WEU"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35709-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Westeurop%C3%A4ische_Union> ;
@@ -8705,9 +8719,9 @@ ex:WfR a skos:Concept ;
 
 
 ex:WHO a skos:Concept ;
-  skos:prefLabel "World Health Organisation"@de ;
-  skos:altLabel "WHO"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "World Health Organisation"@en ;
+  skos:altLabel "WHO"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1007857-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Weltgesundheitsorganisation> ;
@@ -8726,10 +8740,11 @@ ex:WiF a skos:Concept ;
 ex:WiGBl a skos:Concept ;
   skos:prefLabel "Gesetzblatt der Verwaltung des Vereinigten Wirtschaftsgebietes"@de ;
   skos:altLabel "WiGBl."@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesetzblatt_der_Verwaltung_des_Vereinigten_Wirtschaftsgebietes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # notation ?
 
 
 ex:WiKu a skos:Concept ;
@@ -8743,7 +8758,7 @@ ex:WiKu a skos:Concept ;
 
 ex:WiRatVerWirt a skos:Concept ;
   skos:prefLabel "Wirtschaftsrat des Vereinigten Wirtschaftsgebietes"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35141-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftsrat_des_Vereinigten_Wirtschaftsgebietes> ;
@@ -8761,7 +8776,7 @@ ex:WiWo a skos:Concept ;
 
 ex:WKBL a skos:Concept ;
   skos:prefLabel "Wirtschaftsvereinigung Eisen- und Stahlindustrie"@de ;
-  skos:notation "com"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2026417-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftsvereinigung_Stahl> ;
@@ -8778,9 +8793,9 @@ ex:WN a skos:Concept ;
 
 
 ex:WPC a skos:Concept ;
-  skos:prefLabel "World Peace Council"@de ;
-  skos:altLabel "WPC"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "World Peace Council"@en ;
+  skos:altLabel "WPC"@en ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2026634-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Weltfriedensrat> ;
@@ -8798,8 +8813,8 @@ ex:WSI a skos:Concept ;
 
 
 ex:WSJ a skos:Concept ;
-  skos:prefLabel "The Wall Street Journal"@de ;
-  skos:altLabel "WSJ"@de ;
+  skos:prefLabel "The Wall Street Journal"@en ;
+  skos:altLabel "WSJ"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4185032-4> ;
@@ -8810,7 +8825,7 @@ ex:WSJ a skos:Concept ;
 ex:WV a skos:Concept ;
   skos:prefLabel "Warschauer Pakt, Warschauer Vertragsorganisaton"@de ;
   skos:altLabel "WV"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/14767-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Warschauer_Pakt> ;
@@ -8822,8 +8837,8 @@ ex:WV a skos:Concept ;
 
 
 ex:Xerox a skos:Concept ;
-  skos:prefLabel "Xerox Corporation"@de ;
-  skos:altLabel "Xerox"@de ;
+  skos:prefLabel "Xerox Corporation"@en ;
+  skos:altLabel "Xerox"@en ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16423-9> ;
@@ -8832,7 +8847,7 @@ ex:Xerox a skos:Concept ;
 
 
 ex:Xin a skos:Concept ;
-  skos:prefLabel "Xinhua"@de ;
+  skos:prefLabel "Xinhua"@zh ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1084057-6> ;
@@ -8845,7 +8860,7 @@ ex:Xin a skos:Concept ;
 
 
 ex:Yokohama a skos:Concept ;
-  skos:prefLabel "Yokohama Rubber"@de ;
+  skos:prefLabel "Yokohama Rubber"@en ;
   skos:altLabel "Yokohama"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
@@ -8858,23 +8873,25 @@ ex:Yokohama a skos:Concept ;
 
 
 ex:ZANU a skos:Concept ;
-  skos:prefLabel "Zimbabwe African National Union - Patriotic Front"@de ;
-  skos:altLabel "ZANU"@de ;
+  skos:prefLabel "Zimbabwe African National Union - Patriotic Front"@en ;
+  skos:altLabel "ZANU"@en ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/3058770-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zimbabwe_African_National_Union_%E2%80%93_Patriotic_Front> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # notaion ?
 
 
 ex:ZAPU a skos:Concept ;
-  skos:prefLabel "Zimbabwe African People´s Union"@de ;
-  skos:altLabel "ZAPU"@de ;
+  skos:prefLabel "Zimbabwe African People’s Union"@en ;
+  skos:altLabel "ZAPU"@en ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/44087-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zimbabwe_African_People%E2%80%99s_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # notation ?
 
 
 ex:ZaS a skos:Concept ;
@@ -8899,7 +8916,7 @@ ex:ZDF a skos:Concept ;
 ex:ZDH a skos:Concept ;
   skos:prefLabel "Zentralverband des Deutschen Handwerks"@de ;
   skos:altLabel "ZDH"@de ;
-  skos:notation "com"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2027118-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zentralverband_des_Deutschen_Handwerks> ;
@@ -8909,7 +8926,7 @@ ex:ZDH a skos:Concept ;
 ex:ZdJ a skos:Concept ;
   skos:prefLabel "Zentralrat der Juden in Deutschland"@de ;
   skos:altLabel "ZdJ"@de ;
-  skos:notation "news"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/9663-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zentralrat_der_Juden_in_Deutschland> ;
@@ -8938,7 +8955,7 @@ ex:Zeit a skos:Concept ;
 ex:ZK a skos:Concept ;
   skos:prefLabel "Zentralkommitee der SED"@de ;
   skos:altLabel "ZK"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4131775-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Deutschlands#Zentralkomitee> ;
@@ -8953,4 +8970,5 @@ ex:ZParl a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/16151732-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zeitschrift_f%C3%BCr_Parlamentsfragen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet.
 
