@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-09">9. November 2026, 11:23 Uhr</date>
+				<date when="2026-11-10">10. November 2026, 10:39 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -6039,11 +6039,11 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Der_Tagesspiegel"/>
 			</item>
 			<item xml:id="UBA">
-				<term type="pref" xml:lang="de">Umweltbundesamt (BRD)</term>
+				<term type="pref" xml:lang="de">Umweltbundesamt</term>
 				<term type="alt" xml:lang="de">UBA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/2116834-9"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/18049-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Umweltbundesamt_(Deutschland)"/>
 			</item>
 			<item xml:id="UCD">
@@ -6055,15 +6055,16 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Uni%C3%B3n_de_Centro_Democr%C3%A1tico"/>
 			</item>
 			<item xml:id="UCOR">
-				<term type="pref" xml:lang="en">Uranium Enrichment Corporation of South Africa Ltd.</term>
+				<term type="pref" xml:lang="en">Uranium Enrichment Corporation of South Africa</term>
 				<term type="alt" xml:lang="en">UCOR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1086268911"/>
+				<ref type="closeMatch" target="https://en.wikipedia.org/wiki/South_African_Nuclear_Energy_Corporation"/>
 			</item>
 			<item xml:id="UCT">
-				<term type="pref" xml:lang="es">Unión general de trabajadores</term>
-				<term type="alt" xml:lang="es">UCT</term>
+				<term type="pref" xml:lang="es">Unión General de Trabajadores</term>
+				<term type="alt" xml:lang="es">UGT</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/219851-4"/>
@@ -6086,11 +6087,12 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Union_d%C3%A9mocratique_et_socialiste_de_la_R%C3%A9sistance"/>
 			</item>
 			<item xml:id="UGO">
-				<term type="pref" xml:lang="de">Unabhängige Gewerkschaftsopposition</term>
+				<term type="pref" xml:lang="de">Unabhängige Gewerkschaftsorganisation</term>
 				<term type="alt" xml:lang="de">UGO</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Gewerkschaftsopposition"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/43285-4"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Gewerkschaftsorganisation"/>
 			</item>
 			<item xml:id="ULA">
 				<term type="pref" xml:lang="de">Union der Leitenden Angestellten</term>
@@ -6098,18 +6100,21 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/41559-5"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/ULA_%E2%80%93_United_Leaders_Association"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/ULA_%E2%80%93_Deutscher_F%C3%BChrungskr%C3%A4fteverband"/>
 			</item>
 			<item xml:id="UN">
 				<term type="pref" xml:lang="en">United Nations</term>
+				<term type="alt" xml:lang="de">Vereinte Nationen</term>
 				<term type="alt" xml:lang="en">UN</term>
+				<term type="alt" xml:lang="de">VN</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/333-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vereinte_Nationen"/>
 			</item>
 			<item xml:id="UNCTAD">
-				<term type="pref" xml:lang="en">United Nations Conference on Trade and Development (Konferenz der Vereinten Nationen für Handel und Entwicklung/UNCTAD)</term>
+				<term type="pref" xml:lang="en">United Nations Conference on Trade and Development</term>
+				<term type="alt" xml:lang="de">Konferenz der Vereinten Nationen für Handel und Entwicklung</term>
 				<term type="alt" xml:lang="en">UNCTAD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6118,6 +6123,7 @@
 			</item>
 			<item xml:id="UNESCO">
 				<term type="pref" xml:lang="en">United Nations Educational, Scientific and Cultural Organisation</term>
+				<term type="alt" xml:lang="de">Organisation der Vereinten Nationen für Bildung, Wissenschaft und Kultur</term>
 				<term type="alt" xml:lang="en">UNESCO</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6129,10 +6135,12 @@
 				<term type="alt" xml:lang="fr">UNIC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
+				<ref type="exactMatch" target="http://viaf.org/viaf/152010530"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Automobiles_Unic"/>
 			</item>
 			<item xml:id="UNICEF">
-				<term type="pref" xml:lang="en">United Nations Children’s Fund (Kinderhilfswerk der Vereinten Nationen)</term>
+				<term type="pref" xml:lang="en">United Nations Children’s Fund</term>
+				<term type="pref" xml:lang="de">Kinderhilfswerk der Vereinten Nationen</term>
 				<term type="alt" xml:lang="en">UNICEF</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6149,6 +6157,7 @@
 			</item>
 			<item xml:id="UNSC">
 				<term type="pref" xml:lang="en">United Nations Security Council</term>
+				<term type="alt" xml:lang="de">Sicherheitsrat der Vereinten Nationen</term>
 				<term type="alt" xml:lang="en">UNSC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6156,7 +6165,7 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sicherheitsrat_der_Vereinten_Nationen"/>
 			</item>
 			<item xml:id="UPI">
-				<term type="pref" xml:lang="en">United Press Internationaly Series</term>
+				<term type="pref" xml:lang="en">United Press International</term>
 				<term type="alt" xml:lang="en">UPI</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
@@ -6184,6 +6193,7 @@
 				<term type="alt" xml:lang="de">UTM</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/1045512508"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Unternehmensgruppe_Theo_M%C3%BCller"/>
 			</item>
 			<item xml:id="UdA">
@@ -6194,18 +6204,24 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2038632-1"/>
 			</item>
 			<item xml:id="Ufa">
-				<term type="pref" xml:lang="de">Universum Film AG</term>
+				<term type="pref" xml:lang="de">Universum-Film AG</term>
 				<term type="alt" xml:lang="de">Ufa</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/10185986-7"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/19944-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/UFA"/>
 			</item>
 			<item xml:id="UiD">
-				<term type="pref" xml:lang="de">Union in Deutschland/Deutschland-Union-Dienst</term>
-				<term type="alt" xml:lang="de">UiD/DUD</term>
+				<term type="pref" xml:lang="de">Union in Deutschland</term>
+				<term type="alt" xml:lang="de">Deutschland-Union-Dienst</term>
+				<term type="alt" xml:lang="de">UiD</term>
+				<term type="alt" xml:lang="de">DUD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://d-nb.info/012930342"/>
+				<ref type="closeMatch" target="https://d-nb.info/012852929"/>
+				<ref type="closeMatch" target="https://d-nb.info/012852937"/>
+				<ref type="closeMatch" target="https://d-nb.info/010644768"/>
 			</item>
 			<item xml:id="UniUlm">
 				<term type="pref" xml:lang="de">Universität Ulm</term>
@@ -6886,9 +6902,12 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/S%C3%BCdwest_Presse"/>
 			</item>
 			<item xml:id="unserezeit">
-				<term type="pref" xml:lang="de">Unsere Zeit - Zeitung der DKP (seit 1969)</term>
+				<term type="pref" xml:lang="de">Unsere Zeit</term>
+				<term type="alt" xml:lang="de">UZ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/1334781257"/>
+				<ref type="closeMatch" target="https://d-nb.info/010391584"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Unsere_Zeit_(Zeitung)"/>
 			</item>
 		</list>
