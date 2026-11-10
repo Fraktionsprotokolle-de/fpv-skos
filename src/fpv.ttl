@@ -8038,39 +8038,41 @@ ex:TWaP a skos:Concept ;
 
 
 ex:UBA a skos:Concept ;
-  skos:prefLabel "Umweltbundesamt (BRD)"@de ;
+  skos:prefLabel "Umweltbundesamt"@de ;
   skos:altLabel "UBA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2116834-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/18049-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Umweltbundesamt_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # nach 1990: https://d-nb.info/gnd/2116834-9.
 
 
 ex:UCD a skos:Concept ;
   skos:prefLabel "Unión de Centro Democrático"@es ;
   skos:altLabel "UCD"@es ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/511001-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Uni%C3%B3n_de_Centro_Democr%C3%A1tico> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:UCOR a skos:Concept ;
-  skos:prefLabel "Uranium Enrichment Corporation of South Africa Ltd."@en ;
+  skos:prefLabel "Uranium Enrichment Corporation of South Africa"@en ;
   skos:altLabel "UCOR"@en ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1086268911> ;
+  skos:closeMatch <https://en.wikipedia.org/wiki/South_African_Nuclear_Energy_Corporation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:UCT a skos:Concept ;
-  skos:prefLabel "Unión general de trabajadores"@es ;
-  skos:altLabel "UCT"@es ;
+  skos:prefLabel "Unión General de Trabajadores"@es ;
+  skos:altLabel "UGT"@es ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/219851-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Uni%C3%B3n_General_de_Trabajadores> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8080,16 +8082,17 @@ ex:UdA a skos:Concept ;
   skos:prefLabel "Union der Ausgewiesenen und Flüchtlinge"@de ;
   skos:altLabel "UdA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2038632-1> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # CSU-Arbeitsgemeinschaft, 1947-1953. Nachfolger: UdV, https://de.wikipedia.org/wiki/Union_der_Vertriebenen,_Aussiedler_und_deutschen_Minderheiten_der_CDU_und_CSU,	https://d-nb.info/gnd/2054532-0.
 
 
 ex:UDF a skos:Concept ;
   skos:prefLabel "Union pour la Démocratie Française"@fr ;
   skos:altLabel "UDF"@fr ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5155648-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Union_pour_la_d%C3%A9mocratie_fran%C3%A7aise> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8099,64 +8102,77 @@ ex:UDSR a skos:Concept ;
   skos:prefLabel "Union Démocratique et Socialiste de la Résistance"@fr ;
   skos:altLabel "UDSR"@fr ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/104137884X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Union_d%C3%A9mocratique_et_socialiste_de_la_R%C3%A9sistance> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Ufa a skos:Concept ;
-  skos:prefLabel "Universum Film AG"@de ;
+  skos:prefLabel "Universum-Film AG"@de ;
   skos:altLabel "Ufa"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/10185986-7> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/19944-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/UFA> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # ab 1990: https://d-nb.info/gnd/10185986-7.
 
 
 ex:UGO a skos:Concept ;
-  skos:prefLabel "Unabhängige Gewerkschaftsopposition"@de ;
+  skos:prefLabel "Unabhängige Gewerkschaftsorganisation"@de ;
   skos:altLabel "UGO"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Gewerkschaftsopposition> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/43285-4> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Gewerkschaftsorganisation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:UiD a skos:Concept ;
-  skos:prefLabel "Union in Deutschland/Deutschland-Union-Dienst"@de ;
-  skos:altLabel "UiD/DUD"@de ;
+  skos:prefLabel "Union in Deutschland"@de ;
+  skos:altLabel "Deutschland-Union-Dienst"@de ;
+  skos:altLabel "UiD"@de ;
+  skos:altLabel "DUD"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/012930342> ;
+  skos:closeMatch <https://d-nb.info/012852929> ;
+  skos:closeMatch <https://d-nb.info/012852937> ;
+  skos:closeMatch <https://d-nb.info/010644768> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # Unklar, ob zwei verschiedene Periodika. siehe: https://www.kas.de/de/web/geschichte-der-cdu/dokumente.
 
 
 ex:ULA a skos:Concept ;
   skos:prefLabel "Union der Leitenden Angestellten"@de ;
   skos:altLabel "ULA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/41559-5> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/ULA_%E2%80%93_United_Leaders_Association> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/ULA_%E2%80%93_Deutscher_F%C3%BChrungskr%C3%A4fteverband> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # weitere GND: https://d-nb.info/gnd/4061760-9.
 
 
 ex:UN a skos:Concept ;
   skos:prefLabel "United Nations"@en ;
+  skos:altLabel "Vereinte Nationen"@de ;
   skos:altLabel "UN"@en ;
+  skos:altLabel "VN"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/333-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinte_Nationen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:UNCTAD a skos:Concept ;
-  skos:prefLabel "United Nations Conference on Trade and Development (Konferenz der Vereinten Nationen für Handel und Entwicklung/UNCTAD)"@en ;
+  skos:prefLabel "United Nations Conference on Trade and Development"@en ;
+  skos:altLabel "Konferenz der Vereinten Nationen für Handel und Entwicklung"@de ;
   skos:altLabel "UNCTAD"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1001366-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Konferenz_der_Vereinten_Nationen_f%C3%BCr_Handel_und_Entwicklung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8164,9 +8180,10 @@ ex:UNCTAD a skos:Concept ;
 
 ex:UNESCO a skos:Concept ;
   skos:prefLabel "United Nations Educational, Scientific and Cultural Organisation"@en ;
+  skos:altLabel "Organisation der Vereinten Nationen für Bildung, Wissenschaft und Kultur"@de ;
   skos:altLabel "UNESCO"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2023755-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/UNESCO> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8176,16 +8193,18 @@ ex:UNIC a skos:Concept ;
   skos:prefLabel "Automobiles Unic"@fr ;
   skos:altLabel "UNIC"@fr ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://viaf.org/viaf/152010530> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Automobiles_Unic> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:UNICEF a skos:Concept ;
-  skos:prefLabel "United Nations Children’s Fund (Kinderhilfswerk der Vereinten Nationen)"@en ;
+  skos:prefLabel "United Nations Children’s Fund"@en ;
+  skos:prefLabel "Kinderhilfswerk der Vereinten Nationen"@de ;
   skos:altLabel "UNICEF"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2023668-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/UNICEF> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8231,7 +8250,7 @@ ex:UNR a skos:Concept ;
   skos:prefLabel "Union pour la Nouvelle République"@fr ;
   skos:altLabel "UNR"@fr ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1165195402> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Union_pour_la_Nouvelle_R%C3%A9publique> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8239,27 +8258,32 @@ ex:UNR a skos:Concept ;
 
 ex:UNSC a skos:Concept ;
   skos:prefLabel "United Nations Security Council"@en ;
+  skos:altLabel "Sicherheitsrat der Vereinten Nationen"@de ;
   skos:altLabel "UNSC"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1001797-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sicherheitsrat_der_Vereinten_Nationen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:unserezeit a skos:Concept ;
-  skos:prefLabel "Unsere Zeit - Zeitung der DKP (seit 1969)"@de ;
+  skos:prefLabel "Unsere Zeit"@de ;
+  skos:altLabel "UZ"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1334781257> ;
+  skos:closeMatch <https://d-nb.info/010391584> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Unsere_Zeit_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # Zeitung der DKP, seit 1969
 
 
 ex:UPI a skos:Concept ;
-  skos:prefLabel "United Press Internationaly Series"@en ;
+  skos:prefLabel "United Press International"@en ;
   skos:altLabel "UPI"@en ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4268324-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/United_Press_International> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8269,7 +8293,7 @@ ex:URO a skos:Concept ;
   skos:prefLabel "United Restitution Organization"@en ;
   skos:altLabel "URO"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/814310-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/United_Restitution_Organization> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8279,7 +8303,7 @@ ex:USPD a skos:Concept ;
   skos:prefLabel "Unabhängige Sozialdemokratische Partei Deutschlands"@de ;
   skos:altLabel "USPD"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2023731-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Unabh%C3%A4ngige_Sozialdemokratische_Partei_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8290,6 +8314,7 @@ ex:UTM a skos:Concept ;
   skos:altLabel "UTM"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1045512508> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Unternehmensgruppe_Theo_M%C3%BCller> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
