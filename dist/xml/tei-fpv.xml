@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-10">10. November 2026, 10:39 Uhr</date>
+				<date when="2026-11-11">11. November 2026, 11:02 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -6268,7 +6268,7 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Versorgungsanstalt_des_Bundes_und_der_L%C3%A4nder"/>
 			</item>
 			<item xml:id="VCI">
-				<term type="pref" xml:lang="de">Verband der chemischen Industrie</term>
+				<term type="pref" xml:lang="de">Verband der Chemischen Industrie</term>
 				<term type="alt" xml:lang="de">VCI</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6284,7 +6284,7 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_der_Elektrizit%C3%A4tswirtschaft"/>
 			</item>
 			<item xml:id="VDMA">
-				<term type="pref" xml:lang="de">Verband Deutscher Maschinen- und Anlagenbauer</term>
+				<term type="pref" xml:lang="de">Verband Deutscher Maschinen- und Anlagenbau</term>
 				<term type="alt" xml:lang="de">VDMA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6296,11 +6296,12 @@
 				<term type="alt" xml:lang="de">VDS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2024759-X"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4630615-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_Deutscher_Studentenschaften"/>
 			</item>
 			<item xml:id="VEBA">
-				<term type="pref" xml:lang="de">Vereinigte Elektrizitäts- und Bergwerks-Aktiengesellschaft</term>
+				<term type="pref" xml:lang="de">Vereinigte Elektrizitäts- und Bergwerks-AG</term>
 				<term type="alt" xml:lang="de">VEBA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
@@ -6320,7 +6321,7 @@
 				<term type="alt" xml:lang="de">VEW</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/5306415-X"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2025431-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vereinigte_Elektrizit%C3%A4tswerke_Westfalen"/>
 			</item>
 			<item xml:id="VFW">
@@ -6328,11 +6329,11 @@
 				<term type="alt" xml:lang="de">VFW</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/4062746-9"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2079077-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vereinigte_Flugtechnische_Werke"/>
 			</item>
 			<item xml:id="VIAG">
-				<term type="pref" xml:lang="de">Vereinigte Industrie-Unternehmungen Aktiengesellschaft</term>
+				<term type="pref" xml:lang="de">Vereinigte Industrie-Unternehmungen AG</term>
 				<term type="alt" xml:lang="de">VIAG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
@@ -6340,22 +6341,23 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/VIAG"/>
 			</item>
 			<item xml:id="VN">
-				<term type="pref" xml:lang="de">Vereinte Nationen (Zeitschrift)</term>
-				<term type="alt" xml:lang="de">VN</term>
+				<term type="pref" xml:lang="de">Vereinte Nationen</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://d-nb.info/011192739"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vereinte_Nationen_(Zeitschrift)"/>
 			</item>
 			<item xml:id="VOEV">
-				<term type="pref" xml:lang="de">Verband Öffentlicher Verkehrsbetriebe (VÖV)</term>
+				<term type="pref" xml:lang="de">Verband Öffentlicher Verkehrsbetriebe</term>
 				<term type="alt" xml:lang="de">VÖV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/7648730-1"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2025177-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_%C3%B6ffentlicher_Verkehrsbetriebe"/>
 			</item>
 			<item xml:id="VVD">
-				<term type="pref" xml:lang="nl">Volkspartij voor Vrijheid en Democratie (Niederlande)</term>
+				<term type="pref" xml:lang="nl">Volkspartij voor Vrijheid en Democratie</term>
 				<term type="alt" xml:lang="nl">VVD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
@@ -6368,7 +6370,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16116190-X"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverband_Deutscher_Anzeigenbl%C3%A4tter"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverband_kostenloser_Wochenzeitungen"/>
 			</item>
 			<item xml:id="VVN">
 				<term type="pref" xml:lang="de">Vereinigung der Verfolgten des Naziregimes</term>
@@ -6407,7 +6409,7 @@
 				<term type="alt" xml:lang="de">VdK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/5157025-7"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/30495-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sozialverband_VdK_Deutschland"/>
 			</item>
 			<item xml:id="VdS">
@@ -6416,19 +6418,21 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4215289-6"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2024902-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_deutscher_Soldaten"/>
 			</item>
 			<item xml:id="VereinigWirtschaftsgeb">
 				<term type="pref" xml:lang="de">Vereinigtes Wirtschaftsgebiet</term>
+				<term type="alt" xml:lang="de">Bizone</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/4070432-4"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/35103-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bizone"/>
 			</item>
 			<item xml:id="Vermittlungssausschuss">
-				<term type="pref" xml:lang="de">Vermittlungsausschuss (Ausschuss nach Art. 77 Abs. 2 GG</term>
+				<term type="pref" xml:lang="de">Vermittlungsausschuss</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4234425-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vermittlungsausschuss"/>
 			</item>
@@ -6442,13 +6446,14 @@
 			</item>
 			<item xml:id="Voelk">
 				<term type="pref" xml:lang="de">Völkischer Beobachter</term>
+				<term type="alt" xml:lang="de">VB</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/1086237285"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/4188483-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/V%C3%B6lkischer_Beobachter"/>
 			</item>
 			<item xml:id="VolkundWissen">
-				<term type="pref" xml:lang="de">Volk und Wissen - Volkseigener Verlag (DDR, 1945-1980)</term>
+				<term type="pref" xml:lang="de">Volk und Wissen</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2025672-3"/>
@@ -6458,7 +6463,7 @@
 				<term type="pref" xml:lang="de">Vorwärts</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/4188743-8"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/1388768046"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Vorw%C3%A4rts_(Deutschland)"/>
 			</item>
 			<item xml:id="WAV">
