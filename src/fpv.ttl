@@ -8327,7 +8327,7 @@ ex:VBH a skos:Concept ;
   skos:prefLabel "Vaterstädtischer Bund Hamburg"@de ;
   skos:altLabel "VBH"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1035378256> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vaterstädtischer_Bund_Hamburg> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8337,17 +8337,17 @@ ex:VBL a skos:Concept ;
   skos:prefLabel "Versorgungsanstalt des Bundes und der Länder"@de ;
   skos:altLabel "VBL"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1012841-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Versorgungsanstalt_des_Bundes_und_der_L%C3%A4nder> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:VCI a skos:Concept ;
-  skos:prefLabel "Verband der chemischen Industrie"@de ;
+  skos:prefLabel "Verband der Chemischen Industrie"@de ;
   skos:altLabel "VCI"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2024399-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Chemischen_Industrie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8357,7 +8357,7 @@ ex:VdAK a skos:Concept ;
   skos:prefLabel "Verband der Angestellten-Krankenkassen"@de ;
   skos:altLabel "VdAK"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35909-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Ersatzkassen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8367,7 +8367,7 @@ ex:VDEW a skos:Concept ;
   skos:prefLabel "Verband der Elektrizitätswirtschaft"@de ;
   skos:altLabel "VDEW"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10015673-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Elektrizit%C3%A4tswirtschaft> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8377,7 +8377,7 @@ ex:VdH a skos:Concept ;
   skos:prefLabel "Verband der Heimkehrer, Kriegsgefangenen und Vermisstenangehörigen Deutschlands"@de ;
   skos:altLabel "VdH"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1022435-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_der_Heimkehrer,_Kriegsgefangenen_und_Vermisstenangeh%C3%B6rigen_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8387,28 +8387,31 @@ ex:VdK a skos:Concept ;
   skos:prefLabel "Verband der Kriegsbeschädigten, Kriegshinterbliebenen und Sozialrentner Deutschlands"@de ;
   skos:altLabel "VdK"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/5157025-7> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/30495-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialverband_VdK_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. Zeitraum des Bestehens: 1950-1970; Nachfolger: Verband der Kriegs- und Wehrdienstopfer, Behinderten und Sozialrentner Deutschlands, https://d-nb.info/gnd/30066-4; seit 1994: Sozialverband VdK Deutschland, https://d-nb.info/gnd/5157025-7.
 
 
 ex:VDMA a skos:Concept ;
-  skos:prefLabel "Verband Deutscher Maschinen- und Anlagenbauer"@de ;
+  skos:prefLabel "Verband Deutscher Maschinen- und Anlagenbau"@de ;
   skos:altLabel "VDMA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2069391-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/VDMA_e.V.> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. Zeitraum des Bestehens: seit 1980; Vorgänger (seit 1892): Verband Deutscher Maschinenbau-Anstalten, https://d-nb.info/gnd/2025294-8.
 
 
 ex:VdS a skos:Concept ;
   skos:prefLabel "Verband deutscher Soldaten"@de ;
   skos:altLabel "VdS"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4215289-6> ;
+  skos:exactMatch <https://d-nb.info/gnd/2024902-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_deutscher_Soldaten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -8417,27 +8420,30 @@ ex:VDS a skos:Concept ;
   skos:prefLabel "Verband Deutscher Studentenschaften"@de ;
   skos:altLabel "VDS"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2024759-X> ;
   skos:exactMatch <https://d-nb.info/gnd/4630615-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_Deutscher_Studentenschaften> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wann verwendet. Nachfolger, 1975-1990: Vereinigte Deutsche Studentenschaften, https://d-nb.info/gnd/2041066-9.
 
 
 ex:VEBA a skos:Concept ;
-  skos:prefLabel "Vereinigte Elektrizitäts- und Bergwerks-Aktiengesellschaft"@de ;
+  skos:prefLabel "Vereinigte Elektrizitäts- und Bergwerks-AG"@de ;
   skos:altLabel "VEBA"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2052065-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/VEBA> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wann verwendet. GND für 1970-2000; Vorgänger: 1929-1970, https://d-nb.info/gnd/2033343-2.
 
 
 ex:VELKD a skos:Concept ;
   skos:prefLabel "Vereinigte Evangelisch-Lutherische Kirche Deutschlands"@de ;
   skos:altLabel "VELKD"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2025447-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinigte_Evangelisch-Lutherische_Kirche_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8445,30 +8451,32 @@ ex:VELKD a skos:Concept ;
 
 ex:VereinigWirtschaftsgeb a skos:Concept ;
   skos:prefLabel "Vereinigtes Wirtschaftsgebiet"@de ;
+  skos:altLabel "Bizone"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4070432-4> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/35103-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bizone> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # notation ?
+  # notation? Geografikum !
 
 
 ex:Vermittlungssausschuss a skos:Concept ;
-  skos:prefLabel "Vermittlungsausschuss (Ausschuss nach Art. 77 Abs. 2 GG"@de ;
-  skos:notation "pol"^^fpv:entityType ;
+  skos:prefLabel "Vermittlungsausschuss"@de ;
+  skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4234425-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vermittlungsausschuss> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # notation ?
+  # Ausschuss nach Art. 77 Abs. 2 GG
+  # vorliegende GND ab 1990. Vorgänger: 1951-1990, https://d-nb.info/gnd/133160575X.
 
 
 ex:VEW a skos:Concept ;
   skos:prefLabel "Vereinigte Elektrizitätswerke Westfalen"@de ;
   skos:altLabel "VEW"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/5306415-X> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2025431-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinigte_Elektrizit%C3%A4tswerke_Westfalen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -8477,8 +8485,8 @@ ex:VFW a skos:Concept ;
   skos:prefLabel "Vereinigte Flugtechnische Werke"@de ;
   skos:altLabel "VFW"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4062746-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2079077-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinigte_Flugtechnische_Werke> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -8487,7 +8495,7 @@ ex:VfZ a skos:Concept ;
   skos:prefLabel "Vierteljahrshefte für Zeitgeschichte"@de ;
   skos:altLabel "VfZ"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4581195-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vierteljahrshefte_f%C3%BCr_Zeitgeschichte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8495,66 +8503,74 @@ ex:VfZ a skos:Concept ;
 
 
 ex:VIAG a skos:Concept ;
-  skos:prefLabel "Vereinigte Industrie-Unternehmungen Aktiengesellschaft"@de ;
+  skos:prefLabel "Vereinigte Industrie-Unternehmungen AG"@de ;
   skos:altLabel "VIAG"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/275767-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/VIAG> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. GND für 1984-2000; Vorgänger: 1944-1983, https://d-nb.info/gnd/64785-8.
 
 
 ex:VN a skos:Concept ;
-  skos:prefLabel "Vereinte Nationen (Zeitschrift)"@de ;
-  skos:altLabel "VN"@de ;
+  skos:prefLabel "Vereinte Nationen"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/011192739> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinte_Nationen_(Zeitschrift)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet.
+  # Zeitschrift der DGVN.
+  # Label klären mit UN.
 
 
 ex:Voelk a skos:Concept ;
   skos:prefLabel "Völkischer Beobachter"@de ;
+  skos:altLabel "VB"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/1086237285> ;
+  skos:exactMatch <https://d-nb.info/gnd/4188483-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/V%C3%B6lkischer_Beobachter> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:VOEV a skos:Concept ;
-  skos:prefLabel "Verband Öffentlicher Verkehrsbetriebe (VÖV)"@de ;
+  skos:prefLabel "Verband Öffentlicher Verkehrsbetriebe"@de ;
   skos:altLabel "VÖV"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7648730-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/2025177-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Verband_%C3%B6ffentlicher_Verkehrsbetriebe> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:VolkundWissen a skos:Concept ;
-  skos:prefLabel "Volk und Wissen - Volkseigener Verlag (DDR, 1945-1980)"@de ;
+  skos:prefLabel "Volk und Wissen"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2025672-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Volk_und_Wissen_Verlag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. Vorgänger und Nachfolger: 1945-1951, seit 1990: https://d-nb.info/gnd/2025596-2.
+  # Angabe "Verlag" prüfen.
 
 
 ex:Vorw a skos:Concept ;
   skos:prefLabel "Vorwärts"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4188743-8> ;
+  skos:exactMatch <https://d-nb.info/gnd/1388768046> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vorw%C3%A4rts_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:VVD a skos:Concept ;
-  skos:prefLabel "Volkspartij voor Vrijheid en Democratie (Niederlande)"@nl ;
+  skos:prefLabel "Volkspartij voor Vrijheid en Democratie"@nl ;
   skos:altLabel "VVD"@nl ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5119868-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Volkspartij_voor_Vrijheid_en_Democratie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8564,27 +8580,30 @@ ex:VVDA a skos:Concept ;
   skos:prefLabel "Verleger-Verband Deutscher Anzeigenblätter"@de ;
   skos:altLabel "VVDA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16116190-X> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_Deutscher_Anzeigenbl%C3%A4tter> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesverband_kostenloser_Wochenzeitungen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. Nachfolger: Bundesverband Deutscher Anzeigenblätter (BDA), seit 1987, https://d-nb.info/gnd/16233178-2.
 
 
 ex:VVN a skos:Concept ;
   skos:prefLabel "Vereinigung der Verfolgten des Naziregimes"@de ;
   skos:altLabel "VVN"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2148028-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Vereinigung_der_Verfolgten_des_Naziregimes_%E2%80%93_Bund_der_Antifaschistinnen_und_Antifaschisten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. derzeitige GND: seit 2002; Vorgänger: https://d-nb.info/gnd/2032878-3 (BRD) bzw. https://d-nb.info/gnd/2073454-2 (DDR) und https://d-nb.info/gnd/2109798-7 (Alliierte Besatzung).
+  # Labels ggf. anpassen (BdA).
 
 
 ex:VW a skos:Concept ;
   skos:prefLabel "Volkswagen AG"@de ;
   skos:altLabel "VW AG"@de ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2111478-X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Volkswagen_AG> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
