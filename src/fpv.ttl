@@ -8635,7 +8635,7 @@ ex:WamS a skos:Concept ;
   skos:prefLabel "Welt am Sonntag"@de ;
   skos:altLabel "WamS"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4189565-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Welt_am_Sonntag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8645,27 +8645,28 @@ ex:WAV a skos:Concept ;
   skos:prefLabel "Wirtschaftliche Aufbau-Vereinigung"@de ;
   skos:altLabel "WAV"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4501763-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftliche_Aufbau-Vereinigung_(Partei)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:WAVerFrak a skos:Concept ;
-  skos:prefLabel "Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung (Partei)"@de ;
+  skos:prefLabel "Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung"@de ;
   skos:altLabel "WAV"@de ;
   skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4501763-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftliche_Aufbau-Vereinigung_(Partei)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. Label abstimmen mit anderen Fraktionen.
 
 
 ex:WAZ a skos:Concept ;
   skos:prefLabel "Westdeutsche Allgemeine Zeitung"@de ;
   skos:altLabel "WAZ"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4272770-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Westdeutsche_Allgemeine_Zeitung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8675,43 +8676,48 @@ ex:WBA a skos:Concept ;
   skos:prefLabel "Willy-Brandt-Archiv"@de ;
   skos:altLabel "WBA"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/104150487X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_der_sozialen_Demokratie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet.
 
 
 ex:WdA a skos:Concept ;
-  skos:prefLabel "Welt der Arbeit (Wochenzeitung des DGB)"@de ;
+  skos:prefLabel "Welt der Arbeit"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/01071653X> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # Wochenzeitung des DGB, 1949-1990.
 
 
 ex:WDR a skos:Concept ;
   skos:prefLabel "Westdeutscher Rundfunk"@de ;
+  skos:altLabel "Westdeutscher Rundfunk Köln"@de ;
   skos:altLabel "WDR"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/16292504-9> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2026599-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Westdeutscher_Rundfunk_K%C3%B6ln> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Wehrkunde a skos:Concept ;
-  skos:prefLabel "Wehrkunde: Zeitschrift für alle Wehrfragen"@de ;
-  skos:altLabel "Wehrkunde"@de ;
+  skos:prefLabel "Wehrkunde"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/011155175> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wehrkunde_(Zeitschrift)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # Zeitraum: 1952-1976. Untertitel: Zeitschrift für alle Wehrfragen.
 
 
 ex:WeimarNV a skos:Concept ;
   skos:prefLabel "Weimarer Nationalversammlung"@de ;
+  skos:altLabel "Verfassunggebende Nationalversammlung"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/37473-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Weimarer_Nationalversammlung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8736,10 +8742,11 @@ ex:Weltwoche a skos:Concept ;
 
 
 ex:WesKur a skos:Concept ;
-  skos:prefLabel "Weser Kurier"@de ;
+  skos:prefLabel "Weser-Kurier"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1045620653> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bremer_Tageszeitungen#Weser-Kurier_(WK)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -8747,7 +8754,7 @@ ex:WEU a skos:Concept ;
   skos:prefLabel "Westeuropäische Union"@de ;
   skos:altLabel "WEU"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35709-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Westeurop%C3%A4ische_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8755,6 +8762,7 @@ ex:WEU a skos:Concept ;
 
 ex:WfR a skos:Concept ;
   skos:prefLabel "Westfälische Rundschau"@de ;
+  skos:altLabel "WR"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4271983-5> ;
@@ -8764,9 +8772,10 @@ ex:WfR a skos:Concept ;
 
 ex:WHO a skos:Concept ;
   skos:prefLabel "World Health Organisation"@en ;
+  skos:altLabel "Weltgesundheitsorganisation"@de ;
   skos:altLabel "WHO"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1007857-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Weltgesundheitsorganisation> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8779,13 +8788,14 @@ ex:WiF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4398458-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Welt_im_Film> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # Wochenschau der Alliierten Kontrollkommission, 1945-1952.
 
 
 ex:WiGBl a skos:Concept ;
   skos:prefLabel "Gesetzblatt der Verwaltung des Vereinigten Wirtschaftsgebietes"@de ;
   skos:altLabel "WiGBl."@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesetzblatt_der_Verwaltung_des_Vereinigten_Wirtschaftsgebietes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # notation ?
@@ -8795,15 +8805,17 @@ ex:WiKu a skos:Concept ;
   skos:prefLabel "Wiesbadener Kurier"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/1086227972> ;
+  skos:exactMatch <https://d-nb.info/gnd/1386060739> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wiesbadener_Kurier> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:WiRatVerWirt a skos:Concept ;
   skos:prefLabel "Wirtschaftsrat des Vereinigten Wirtschaftsgebietes"@de ;
+  skos:altLabel "Wirtschaftsrat für das Vereinte Wirtschaftsgebiet"@de ;
+  skos:altLabel "Wirtschaftsrat der Bizone"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35141-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftsrat_des_Vereinigten_Wirtschaftsgebietes> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8811,8 +8823,9 @@ ex:WiRatVerWirt a skos:Concept ;
 
 ex:WiWo a skos:Concept ;
   skos:prefLabel "Wirtschaftswoche"@de ;
+  skos:altLabel "WiWo"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4564243-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftswoche> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8825,10 +8838,12 @@ ex:WKBL a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2026417-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftsvereinigung_Stahl> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # 1946-1988.
 
 
 ex:WN a skos:Concept ;
   skos:prefLabel "Westfälische Nachrichten"@de ;
+  skos:altLabel "WN"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/7569204-1> ;
@@ -8838,19 +8853,21 @@ ex:WN a skos:Concept ;
 
 ex:WPC a skos:Concept ;
   skos:prefLabel "World Peace Council"@en ;
+  skos:altLabel "Weltfriedensrat"@de ;
   skos:altLabel "WPC"@en ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2026634-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Weltfriedensrat> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet. ggf. prefLabel und altLabel tauschen.
 
 
 ex:WSI a skos:Concept ;
   skos:prefLabel "Wirtschafts- und Sozialwissenschaftliches Institut"@de ;
   skos:altLabel "WSI"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2033849-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschafts-_und_Sozialwissenschaftliches_Institut> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8860,17 +8877,17 @@ ex:WSJ a skos:Concept ;
   skos:prefLabel "The Wall Street Journal"@en ;
   skos:altLabel "WSJ"@en ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4185032-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Wall_Street_Journal> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:WV a skos:Concept ;
-  skos:prefLabel "Warschauer Pakt, Warschauer Vertragsorganisaton"@de ;
-  skos:altLabel "WV"@de ;
+  skos:prefLabel "Warschauer Pakt"@de ;
+  skos:altLabel "Organisation des Warschauer Vertrages"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/14767-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Warschauer_Pakt> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8882,7 +8899,6 @@ ex:WV a skos:Concept ;
 
 ex:Xerox a skos:Concept ;
   skos:prefLabel "Xerox Corporation"@en ;
-  skos:altLabel "Xerox"@en ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16423-9> ;
@@ -8892,8 +8908,10 @@ ex:Xerox a skos:Concept ;
 
 ex:Xin a skos:Concept ;
   skos:prefLabel "Xinhua"@zh ;
+  skos:altLabel "Xinhua Tongxunshe"@zh ;
+  skos:altLabel "Nachrichtenagentur Neues China"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1084057-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Xinhua> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8905,9 +8923,9 @@ ex:Xin a skos:Concept ;
 
 ex:Yokohama a skos:Concept ;
   skos:prefLabel "Yokohama Rubber"@en ;
-  skos:altLabel "Yokohama"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1087080967> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Yokohama_(Unternehmen)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -8919,39 +8937,40 @@ ex:Yokohama a skos:Concept ;
 ex:ZANU a skos:Concept ;
   skos:prefLabel "Zimbabwe African National Union - Patriotic Front"@en ;
   skos:altLabel "ZANU"@en ;
-  skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "pol"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/3058770-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zimbabwe_African_National_Union_%E2%80%93_Patriotic_Front> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # notaion ?
+  # prüfen, wann verwendet. Labels und GND anpassen. ZANU: 1963-1987; ZANU-PF: seit 1987.
 
 
 ex:ZAPU a skos:Concept ;
   skos:prefLabel "Zimbabwe African People’s Union"@en ;
   skos:altLabel "ZAPU"@en ;
-  skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:notation "pol"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/44087-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zimbabwe_African_People%E2%80%99s_Union> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # notation ?
 
 
 ex:ZaS a skos:Concept ;
-  skos:prefLabel "Zeitung am Sonntag: sozialdemokratische Sonntagszeitung (Augabe zu Landtagswahlen)"@de ;
+  skos:prefLabel "Zeitung am Sonntag"@de ;
   skos:altLabel "ZaS"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/550723668> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # prüfen, wo verwendet.
+  # sozialdemokratische Sonntagszeitung, Ausgabe zu Landtagswahlen
 
 
 ex:ZDF a skos:Concept ;
   skos:prefLabel "Zweites Deutsches Fernsehen"@de ;
   skos:altLabel "ZDF"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/38777-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/ZDF> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8961,7 +8980,7 @@ ex:ZDH a skos:Concept ;
   skos:prefLabel "Zentralverband des Deutschen Handwerks"@de ;
   skos:altLabel "ZDH"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2027118-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zentralverband_des_Deutschen_Handwerks> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8971,7 +8990,7 @@ ex:ZdJ a skos:Concept ;
   skos:prefLabel "Zentralrat der Juden in Deutschland"@de ;
   skos:altLabel "ZdJ"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/9663-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zentralrat_der_Juden_in_Deutschland> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
@@ -8979,16 +8998,17 @@ ex:ZdJ a skos:Concept ;
 
 ex:ZdK a skos:Concept ;
   skos:prefLabel "Zentralkomitee der deutschen Katholiken"@de ;
+  skos:altLabel "Zentralkomitee der Katholiken Deutschlands"@de ;
   skos:altLabel "ZdK"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/10786-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zentralkomitee_der_deutschen_Katholiken> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Zeit a skos:Concept ;
-  skos:prefLabel "DIE ZEIT"@de ;
+  skos:prefLabel "Die Zeit"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4136962-2> ;
@@ -8997,21 +9017,22 @@ ex:Zeit a skos:Concept ;
 
 
 ex:ZK a skos:Concept ;
-  skos:prefLabel "Zentralkommitee der SED"@de ;
-  skos:altLabel "ZK"@de ;
+  skos:prefLabel "Zentralkomitee der SED"@de ;
+  skos:altLabel "ZK der SED"@de ;
   skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4131775-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialistische_Einheitspartei_Deutschlands#Zentralkomitee> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # notation eher: pol ?
 
 
 ex:ZParl a skos:Concept ;
   skos:prefLabel "Zeitschrift für Parlamentsfragen"@de ;
   skos:altLabel "ZParl"@de ;
   skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/16151732-8> ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/011134151> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zeitschrift_f%C3%BCr_Parlamentsfragen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # prüfen, wo verwendet.
