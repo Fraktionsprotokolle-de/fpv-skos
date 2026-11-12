@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-11">11. November 2026, 11:02 Uhr</date>
+				<date when="2026-11-12">12. November 2026, 12:52 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -6475,7 +6475,7 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschaftliche_Aufbau-Vereinigung_(Partei)"/>
 			</item>
 			<item xml:id="WAVerFrak">
-				<term type="pref" xml:lang="de">Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung (Partei)</term>
+				<term type="pref" xml:lang="de">Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung</term>
 				<term type="alt" xml:lang="de">WAV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
@@ -6500,10 +6500,11 @@
 			</item>
 			<item xml:id="WDR">
 				<term type="pref" xml:lang="de">Westdeutscher Rundfunk</term>
+				<term type="alt" xml:lang="de">Westdeutscher Rundfunk Köln</term>
 				<term type="alt" xml:lang="de">WDR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/16292504-9"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2026599-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Westdeutscher_Rundfunk_K%C3%B6ln"/>
 			</item>
 			<item xml:id="WEU">
@@ -6516,6 +6517,7 @@
 			</item>
 			<item xml:id="WHO">
 				<term type="pref" xml:lang="en">World Health Organisation</term>
+				<term type="alt" xml:lang="de">Weltgesundheitsorganisation</term>
 				<term type="alt" xml:lang="en">WHO</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6531,6 +6533,7 @@
 			</item>
 			<item xml:id="WN">
 				<term type="pref" xml:lang="de">Westfälische Nachrichten</term>
+				<term type="alt" xml:lang="de">WN</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/7569204-1"/>
@@ -6538,6 +6541,7 @@
 			</item>
 			<item xml:id="WPC">
 				<term type="pref" xml:lang="en">World Peace Council</term>
+				<term type="alt" xml:lang="de">Weltfriedensrat</term>
 				<term type="alt" xml:lang="en">WPC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6561,8 +6565,8 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_Wall_Street_Journal"/>
 			</item>
 			<item xml:id="WV">
-				<term type="pref" xml:lang="de">Warschauer Pakt, Warschauer Vertragsorganisaton</term>
-				<term type="alt" xml:lang="de">WV</term>
+				<term type="pref" xml:lang="de">Warschauer Pakt</term>
+				<term type="alt" xml:lang="de">Organisation des Warschauer Vertrages</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/14767-9"/>
@@ -6591,13 +6595,13 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Welt_am_Sonntag"/>
 			</item>
 			<item xml:id="WdA">
-				<term type="pref" xml:lang="de">Welt der Arbeit (Wochenzeitung des DGB)</term>
+				<term type="pref" xml:lang="de">Welt der Arbeit</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://d-nb.info/01071653X"/>
 			</item>
 			<item xml:id="Wehrkunde">
-				<term type="pref" xml:lang="de">Wehrkunde: Zeitschrift für alle Wehrfragen</term>
-				<term type="alt" xml:lang="de">Wehrkunde</term>
+				<term type="pref" xml:lang="de">Wehrkunde</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="closeMatch" target="https://d-nb.info/011155175"/>
@@ -6605,6 +6609,7 @@
 			</item>
 			<item xml:id="WeimarNV">
 				<term type="pref" xml:lang="de">Weimarer Nationalversammlung</term>
+				<term type="alt" xml:lang="de">Verfassunggebende Nationalversammlung</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/37473-8"/>
@@ -6625,13 +6630,15 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Die_Weltwoche"/>
 			</item>
 			<item xml:id="WesKur">
-				<term type="pref" xml:lang="de">Weser Kurier</term>
+				<term type="pref" xml:lang="de">Weser-Kurier</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1045620653"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bremer_Tageszeitungen#Weser-Kurier_(WK)"/>
 			</item>
 			<item xml:id="WfR">
 				<term type="pref" xml:lang="de">Westfälische Rundschau</term>
+				<term type="alt" xml:lang="de">WR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4271983-5"/>
@@ -6655,11 +6662,13 @@
 				<term type="pref" xml:lang="de">Wiesbadener Kurier</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/1086227972"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/1386060739"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wiesbadener_Kurier"/>
 			</item>
 			<item xml:id="WiRatVerWirt">
 				<term type="pref" xml:lang="de">Wirtschaftsrat des Vereinigten Wirtschaftsgebietes</term>
+				<term type="alt" xml:lang="de">Wirtschaftsrat für das Vereinte Wirtschaftsgebiet</term>
+				<term type="alt" xml:lang="de">Wirtschaftsrat der Bizone</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35141-6"/>
@@ -6667,6 +6676,7 @@
 			</item>
 			<item xml:id="WiWo">
 				<term type="pref" xml:lang="de">Wirtschaftswoche</term>
+				<term type="alt" xml:lang="de">WiWo</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4564243-6"/>
@@ -6674,7 +6684,6 @@
 			</item>
 			<item xml:id="Xerox">
 				<term type="pref" xml:lang="en">Xerox Corporation</term>
-				<term type="alt" xml:lang="en">Xerox</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16423-9"/>
@@ -6682,6 +6691,8 @@
 			</item>
 			<item xml:id="Xin">
 				<term type="pref" xml:lang="zh">Xinhua</term>
+				<term type="alt" xml:lang="zh">Xinhua Tongxunshe</term>
+				<term type="alt" xml:lang="de">Nachrichtenagentur Neues China</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1084057-6"/>
@@ -6689,16 +6700,16 @@
 			</item>
 			<item xml:id="Yokohama">
 				<term type="pref" xml:lang="en">Yokohama Rubber</term>
-				<term type="alt" xml:lang="de">Yokohama</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/1087080967"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Yokohama_(Unternehmen)"/>
 			</item>
 			<item xml:id="ZANU">
 				<term type="pref" xml:lang="en">Zimbabwe African National Union - Patriotic Front</term>
 				<term type="alt" xml:lang="en">ZANU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
+				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/3058770-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zimbabwe_African_National_Union_%E2%80%93_Patriotic_Front"/>
 			</item>
@@ -6706,7 +6717,7 @@
 				<term type="pref" xml:lang="en">Zimbabwe African People’s Union</term>
 				<term type="alt" xml:lang="en">ZAPU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
+				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/44087-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zimbabwe_African_People%E2%80%99s_Union"/>
 			</item>
@@ -6727,8 +6738,8 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zentralverband_des_Deutschen_Handwerks"/>
 			</item>
 			<item xml:id="ZK">
-				<term type="pref" xml:lang="de">Zentralkommitee der SED</term>
-				<term type="alt" xml:lang="de">ZK</term>
+				<term type="pref" xml:lang="de">Zentralkomitee der SED</term>
+				<term type="alt" xml:lang="de">ZK der SED</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4131775-0"/>
@@ -6739,11 +6750,11 @@
 				<term type="alt" xml:lang="de">ZParl</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/16151732-8"/>
+				<ref type="closeMatch" target="https://d-nb.info/011134151"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zeitschrift_f%C3%BCr_Parlamentsfragen"/>
 			</item>
 			<item xml:id="ZaS">
-				<term type="pref" xml:lang="de">Zeitung am Sonntag: sozialdemokratische Sonntagszeitung (Augabe zu Landtagswahlen)</term>
+				<term type="pref" xml:lang="de">Zeitung am Sonntag</term>
 				<term type="alt" xml:lang="de">ZaS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
@@ -6759,6 +6770,7 @@
 			</item>
 			<item xml:id="ZdK">
 				<term type="pref" xml:lang="de">Zentralkomitee der deutschen Katholiken</term>
+				<term type="alt" xml:lang="de">Zentralkomitee der Katholiken Deutschlands</term>
 				<term type="alt" xml:lang="de">ZdK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -6766,7 +6778,7 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zentralkomitee_der_deutschen_Katholiken"/>
 			</item>
 			<item xml:id="Zeit">
-				<term type="pref" xml:lang="de">DIE ZEIT</term>
+				<term type="pref" xml:lang="de">Die Zeit</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4136962-2"/>
