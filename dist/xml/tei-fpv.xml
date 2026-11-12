@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-12">12. November 2026, 13:36 Uhr</date>
+				<date when="2026-11-12">12. November 2026, 15:45 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -28,7 +28,7 @@
 				<term type="pref" xml:lang="de">Auswärtiges Amt</term>
 				<term type="alt" xml:lang="de">AA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028884-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Ausw%C3%A4rtiges_Amt"/>
 			</item>
@@ -162,7 +162,7 @@
 				<term type="pref" xml:lang="en">American Federation of Labor</term>
 				<term type="alt" xml:lang="en">AFL</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/115045-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/American_Federation_of_Labor"/>
 			</item>
@@ -187,7 +187,7 @@
 				<term type="alt" xml:lang="de">Alliierte Hohe Kommission für Deutschland</term>
 				<term type="alt" xml:lang="de">AHK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35095-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Alliierte_Hohe_Kommission"/>
 			</item>
@@ -382,7 +382,7 @@
 				<term type="pref" xml:lang="de">Ältestenrat des Deutschen Bundestages</term>
 				<term type="alt" xml:lang="de">Ältestenrat</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2088812-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/%C3%84ltestenrat#Deutscher_Bundestag"/>
 			</item>
@@ -390,7 +390,7 @@
 				<term type="pref" xml:lang="de">Arbeitsgemeinschaft für Arbeitnehmerfragen</term>
 				<term type="alt" xml:lang="de">AfA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/44586-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_f%C3%BCr_Arbeitnehmerfragen"/>
 			</item>
@@ -485,7 +485,7 @@
 				<term type="pref" xml:lang="de">Bundesarbeitsgericht</term>
 				<term type="alt" xml:lang="de">BAG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35158-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesarbeitsgericht"/>
 			</item>
@@ -493,7 +493,7 @@
 				<term type="pref" xml:lang="de">Bundesamt für Migration und Flüchtlinge</term>
 				<term type="alt" xml:lang="de">BAMF</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10046457-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Migration_und_Fl%C3%BCchtlinge"/>
 			</item>
@@ -525,7 +525,7 @@
 				<term type="pref" xml:lang="de">Bundesbaudirektion</term>
 				<term type="alt" xml:lang="de">BBD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5073004-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Bauwesen_und_Raumordnung"/>
 			</item>
@@ -533,7 +533,7 @@
 				<term type="pref" xml:lang="de">Bundesamt für Bauwesen und Raumordnung</term>
 				<term type="alt" xml:lang="de">BBR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5270174-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Bauwesen_und_Raumordnung"/>
 			</item>
@@ -550,7 +550,7 @@
 				<term type="alt" xml:lang="de">BBk</term>
 				<term type="alt" xml:lang="de">DBB</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1002465-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Bundesbank"/>
 			</item>
@@ -606,7 +606,7 @@
 				<term type="pref" xml:lang="de">Bundesfinanzhof</term>
 				<term type="alt" xml:lang="de">BFH</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35163-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesrechnungshof"/>
 			</item>
@@ -614,7 +614,7 @@
 				<term type="pref" xml:lang="de">Bundesgerichtshof</term>
 				<term type="alt" xml:lang="de">BGH</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2118180-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesgerichtshof"/>
 			</item>
@@ -622,7 +622,7 @@
 				<term type="pref" xml:lang="de">Bundesgrenzschutz</term>
 				<term type="alt" xml:lang="de">BGS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2117462-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesgrenzschutz"/>
 			</item>
@@ -638,7 +638,7 @@
 				<term type="pref" xml:lang="de">Bundeskriminalamt</term>
 				<term type="alt" xml:lang="de">BKA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2119958-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundeskriminalamt_(Deutschland)"/>
 			</item>
@@ -660,7 +660,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Arbeit</term>
 				<term type="alt" xml:lang="de">BMA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/18997-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Arbeit_und_Soziales"/>
 			</item>
@@ -668,7 +668,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Arbeit und Sozialordnung</term>
 				<term type="alt" xml:lang="de">BMA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028862-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Arbeit_und_Soziales"/>
 			</item>
@@ -676,7 +676,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Atomfragen</term>
 				<term type="alt" xml:lang="de">BMAt</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35168-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung"/>
 			</item>
@@ -684,7 +684,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für innerdeutsche Beziehungen</term>
 				<term type="alt" xml:lang="de">BMB</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2117646-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_innerdeutsche_Beziehungen"/>
 			</item>
@@ -692,7 +692,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Angelegenheiten des Bundesrates und der Länder</term>
 				<term type="alt" xml:lang="de">BMBR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35166-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Angelegenheiten_des_Bundesrates"/>
 			</item>
@@ -700,14 +700,14 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Bildung und Wissenschaft</term>
 				<term type="alt" xml:lang="de">BMBW</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028870-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung"/>
 			</item>
 			<item xml:id="BMBes">
 				<term type="pref" xml:lang="de">Bundesministerium für wirtschaftlichen Besitz des Bundes</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1041377010"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesschatzministerium"/>
 			</item>
@@ -715,7 +715,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Ernährung und Landwirtschaft</term>
 				<term type="alt" xml:lang="de">BMEL</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1045949620"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Ern%C3%A4hrung_und_Landwirtschaft"/>
 			</item>
@@ -724,7 +724,7 @@
 				<term type="alt" xml:lang="de">BMELF</term>
 				<term type="alt" xml:lang="de">BML</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028894-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Ern%C3%A4hrung_und_Landwirtschaft"/>
 			</item>
@@ -732,7 +732,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium der Finanzen</term>
 				<term type="alt" xml:lang="de">BMF</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028782-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen"/>
 			</item>
@@ -740,7 +740,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Forschung und Technologie</term>
 				<term type="alt" xml:lang="de">BMFT</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028958-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung"/>
 			</item>
@@ -748,7 +748,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Familienfragen</term>
 				<term type="alt" xml:lang="de">BMFa</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028950-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Familie,_Senioren,_Frauen_und_Jugend"/>
 			</item>
@@ -756,7 +756,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für gesamtdeutsche Fragen</term>
 				<term type="alt" xml:lang="de">BMG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028926-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_innerdeutsche_Beziehungen"/>
 			</item>
@@ -764,7 +764,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Gesundheitswesen</term>
 				<term type="alt" xml:lang="de">BMG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4561973-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Gesundheit_(Deutschland)"/>
 			</item>
@@ -772,7 +772,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium des Innern</term>
 				<term type="alt" xml:lang="de">BMI</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028854-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_des_Innern,_f%C3%BCr_Bau_und_Heimat"/>
 			</item>
@@ -780,7 +780,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium der Justiz</term>
 				<term type="alt" xml:lang="de">BMJ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028822-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Justiz_und_f%C3%BCr_Verbraucherschutz"/>
 			</item>
@@ -788,7 +788,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Jugend, Familie, Frauen und Gesundheit</term>
 				<term type="alt" xml:lang="de">BMJFG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4020762-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Familie,_Senioren,_Frauen_und_Jugend"/>
 			</item>
@@ -796,7 +796,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für den Marshallplan</term>
 				<term type="alt" xml:lang="de">BMM</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1086197976"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesschatzministerium"/>
 			</item>
@@ -804,7 +804,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für das Post- und Fernmeldewesen</term>
 				<term type="alt" xml:lang="de">BMP</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028886-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Post_und_Telekommunikation"/>
 			</item>
@@ -812,7 +812,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Raumordnung, Bauwesen und Städtebau</term>
 				<term type="alt" xml:lang="de">BMBau</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028799-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesbauministerium"/>
 			</item>
@@ -820,7 +820,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Verkehr</term>
 				<term type="alt" xml:lang="de">BMV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2036867-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Verkehr_(Deutschland)"/>
 			</item>
@@ -828,7 +828,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium der Verteidigung</term>
 				<term type="alt" xml:lang="de">BMVg</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028830-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Verteidigung"/>
 			</item>
@@ -836,7 +836,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Vertriebene, Flüchtlinge und Kriegsgeschädigte</term>
 				<term type="alt" xml:lang="de">BMVt</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16283248-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Vertriebene,_Fl%C3%BCchtlinge_und_Kriegsgesch%C3%A4digte"/>
 			</item>
@@ -852,7 +852,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Wirtschaft und Finanzen</term>
 				<term type="alt" xml:lang="de">BMWF</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16291479-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie"/>
@@ -861,7 +861,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Wirtschaft</term>
 				<term type="alt" xml:lang="de">BMWi</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028855-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie"/>
 			</item>
@@ -869,7 +869,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für Wohnungsbau</term>
 				<term type="alt" xml:lang="de">BMWo</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/115060-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesbauministerium"/>
 			</item>
@@ -877,7 +877,7 @@
 				<term type="pref" xml:lang="de">Bundesministerium für wirtschaftliche Zusammenarbeit</term>
 				<term type="alt" xml:lang="de">BMZ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35174-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_wirtschaftliche_Zusammenarbeit_und_Entwicklung"/>
 			</item>
@@ -885,7 +885,7 @@
 				<term type="pref" xml:lang="de">Bundesnachrichtendienst</term>
 				<term type="alt" xml:lang="de">BND</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2130509-2"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2130784-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesnachrichtendienst"/>
@@ -903,7 +903,7 @@
 				<term type="alt" xml:lang="de">Presse- und Informationsamt der Bundesregierung</term>
 				<term type="alt" xml:lang="de">BPA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2029155-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Presse-_und_Informationsamt_der_Bundesregierung"/>
 			</item>
@@ -918,7 +918,7 @@
 				<term type="pref" xml:lang="de">Bundespressekonferenz</term>
 				<term type="alt" xml:lang="de">BPK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">news</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2043600-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundespressekonferenz"/>
 			</item>
@@ -926,7 +926,7 @@
 				<term type="pref" xml:lang="de">Bundespräsidialamt</term>
 				<term type="alt" xml:lang="de">BPrA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2033907-0"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5530976-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundespr%C3%A4sidialamt"/>
@@ -959,7 +959,7 @@
 				<term type="pref" xml:lang="de">Bundesrat</term>
 				<term type="alt" xml:lang="de">BR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5054695-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesrat_(Deutschland)"/>
 			</item>
@@ -967,7 +967,7 @@
 				<term type="pref" xml:lang="de">Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik</term>
 				<term type="alt" xml:lang="de">BStU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5078273-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesbeauftragter_f%C3%BCr_die_Stasi-Unterlagen"/>
 			</item>
@@ -991,7 +991,7 @@
 			<item xml:id="BTPraesident">
 				<term type="pref" xml:lang="de">Bundestagspräsident</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4070419-1"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4377827-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Pr%C3%A4sident_des_Deutschen_Bundestages"/>
@@ -999,7 +999,7 @@
 			<item xml:id="BTPraesidium">
 				<term type="pref" xml:lang="de">Bundestagspräsidium</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 			</item>
 			<item xml:id="BUND">
 				<term type="pref" xml:lang="de">Bund für Umwelt und Naturschutz Deutschland</term>
@@ -1045,7 +1045,7 @@
 				<term type="pref" xml:lang="de">Bundesverfassungsgericht</term>
 				<term type="alt" xml:lang="de">BVerfG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35194-5"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2117905-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverfassungsgericht"/>
@@ -1054,7 +1054,7 @@
 				<term type="pref" xml:lang="de">Bundesverwaltungsgericht</term>
 				<term type="alt" xml:lang="de">BVerwG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35195-7"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5054870-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverwaltungsgericht_(Deutschland)"/>
@@ -1118,7 +1118,7 @@
 				<term type="pref" xml:lang="de">Freistaat Bayern</term>
 				<term type="alt" xml:lang="de">Bayern</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4005044-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayern"/>
 			</item>
@@ -1220,7 +1220,7 @@
 				<term type="pref" xml:lang="de">Bundesversicherungsanstalt für Angestellte</term>
 				<term type="alt" xml:lang="de">BfA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2117026-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesversicherungsanstalt_f%C3%BCr_Angestellte"/>
 			</item>
@@ -1245,7 +1245,7 @@
 				<term type="alt" xml:lang="de">Verfassungsschutz</term>
 				<term type="alt" xml:lang="de">BfV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2120343-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Verfassungsschutz"/>
 			</item>
@@ -1315,7 +1315,7 @@
 			<item xml:id="BuVer">
 				<term type="pref" xml:lang="de">Bundesversammlung</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2171986-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesversammlung_(Deutschland)"/>
 			</item>
@@ -1371,7 +1371,7 @@
 				<term type="pref" xml:lang="de">Bundeswehr</term>
 				<term type="alt" xml:lang="de">Bw</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2032018-8"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2116728-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundeswehr"/>
@@ -1440,7 +1440,7 @@
 				<term type="alt" xml:lang="en">European Conference of Ministers of Transport</term>
 				<term type="alt" xml:lang="en">ECMT</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4616346-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Verkehrsministerkonferenz"/>
 			</item>
@@ -1741,7 +1741,7 @@
 				<term type="pref" xml:lang="de">Deutsche Bundesbahn</term>
 				<term type="alt" xml:lang="de">DB</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2007837-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Bundesbahn"/>
 			</item>
@@ -1773,7 +1773,7 @@
 				<term type="pref" xml:lang="de">Deutscher Behindertensportverband</term>
 				<term type="alt" xml:lang="de">DBS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/3003712-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Behindertensportverband"/>
 			</item>
@@ -1821,7 +1821,7 @@
 				<term type="pref" xml:lang="de">Deutsche Demokratische Republik</term>
 				<term type="alt" xml:lang="de">DDR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4011890-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik"/>
 			</item>
@@ -1829,7 +1829,7 @@
 				<term type="pref" xml:lang="de">Volkskammer</term>
 				<term type="alt" xml:lang="de">Volkskammer der DDR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35143-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Volkskammer"/>
 			</item>
@@ -2006,7 +2006,7 @@
 				<term type="alt" xml:lang="de">DJK-Sportverband</term>
 				<term type="alt" xml:lang="de">DJK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2002260-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/DJK-Sportverband"/>
 			</item>
@@ -2108,7 +2108,7 @@
 				<term type="pref" xml:lang="de">Deutsche Parlamentarische Gesellschaft</term>
 				<term type="alt" xml:lang="de">DPG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2088038-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Parlamentarische_Gesellschaft"/>
 			</item>
@@ -2132,7 +2132,7 @@
 				<term type="pref" xml:lang="de">Deutsche Parlamentarische Gesellschaft</term>
 				<term type="alt" xml:lang="de">DPG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2088038-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Parlamentarische_Gesellschaft"/>
 			</item>
@@ -2181,7 +2181,7 @@
 				<term type="pref" xml:lang="de">Deutsche Siedlungs- und Landesrentenbank</term>
 				<term type="alt" xml:lang="de">DSL Bank</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
+				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5028904-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/DSL_Bank"/>
 			</item>
@@ -2282,7 +2282,7 @@
 				<term type="pref" xml:lang="de">Deutsche Wirtschaftskommission</term>
 				<term type="alt" xml:lang="de">DWK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35128-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Wirtschaftskommission"/>
 			</item>
@@ -2352,7 +2352,7 @@
 			<item xml:id="DerMorgen">
 				<term type="pref" xml:lang="de">Der Morgen</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/7747670-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Der_Morgen"/>
 			</item>
@@ -2484,7 +2484,7 @@
 				<term type="alt" xml:lang="en">ECE</term>
 				<term type="alt" xml:lang="en">UNECE</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2023669-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschaftskommission_f%C3%BCr_Europa"/>
 			</item>
@@ -2495,7 +2495,7 @@
 				<term type="alt" xml:lang="en">Economic and Financial Affairs Council</term>
 				<term type="alt" xml:lang="en">ECOFIN</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1277989788"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Rat_f%C3%BCr_Wirtschaft_und_Finanzen"/>
 			</item>
@@ -2520,7 +2520,7 @@
 				<term type="pref" xml:lang="de">Europäische Gemeinschaft</term>
 				<term type="alt" xml:lang="de">EG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5103087-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Gemeinschaft"/>
 			</item>
@@ -2536,13 +2536,14 @@
 				<term type="pref" xml:lang="de">Europäische Gemeinschaft für Kohle und Stahl</term>
 				<term type="alt" xml:lang="de">EGKS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1003478-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Gemeinschaft_f%C3%BCr_Kohle_und_Stahl"/>
 			</item>
 			<item xml:id="EK">
 				<term type="pref" xml:lang="el">Enōsis Kentru</term>
 				<term type="alt" xml:lang="el">E.K.</term>
+				<term type="alt" xml:lang="de">Zentrumsunion</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1174752998"/>
@@ -2569,7 +2570,7 @@
 				<term type="pref" xml:lang="de">Europäisches Parlament</term>
 				<term type="alt" xml:lang="de">EP</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1051754-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4isches_Parlament"/>
 			</item>
@@ -2577,7 +2578,7 @@
 				<term type="pref" xml:lang="de">Europäische Politische Gemeinschaft</term>
 				<term type="alt" xml:lang="de">EPG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4153183-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Politische_Gemeinschaft_(1952)"/>
 			</item>
@@ -2585,14 +2586,14 @@
 				<term type="pref" xml:lang="de">Europäische Parlamentarier-Union</term>
 				<term type="alt" xml:lang="de">EPU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Parlamentarier-Union"/>
 			</item>
 			<item xml:id="ER">
 				<term type="pref" xml:lang="de">Europäischer Rat</term>
 				<term type="alt" xml:lang="de">ER</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5263681-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ischer_Rat"/>
 			</item>
@@ -2602,7 +2603,7 @@
 				<term type="alt" xml:lang="de">Europäisches Wiederaufbauprogramm</term>
 				<term type="alt" xml:lang="de">Marshallplan</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16113202-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Marshallplan"/>
 			</item>
@@ -2619,7 +2620,7 @@
 				<term type="pref" xml:lang="de">Europäische Union</term>
 				<term type="alt" xml:lang="de">EU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5098525-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Union"/>
 			</item>
@@ -2635,7 +2636,7 @@
 				<term type="pref" xml:lang="de">Europäischer Gerichtshof</term>
 				<term type="alt" xml:lang="de">EuGH</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5103273-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ischer_Gerichtshof"/>
 			</item>
@@ -2644,7 +2645,7 @@
 				<term type="alt" xml:lang="de">EAG</term>
 				<term type="alt" xml:lang="de">EURATOM</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1084-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Atomgemeinschaft"/>
 			</item>
@@ -2652,7 +2653,7 @@
 				<term type="pref" xml:lang="de">European Research Coordination Agency</term>
 				<term type="alt" xml:lang="de">EUREKA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4233951-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/EUREKA"/>
 			</item>
@@ -2669,7 +2670,7 @@
 				<term type="pref" xml:lang="de">Europäische Verteidigungsgemeinschaft</term>
 				<term type="alt" xml:lang="de">EVG</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4153190-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Verteidigungsgemeinschaft"/>
 			</item>
@@ -2702,7 +2703,7 @@
 				<term type="pref" xml:lang="de">Europäische Zahlungsunion</term>
 				<term type="alt" xml:lang="de">EZU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/37224-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Zahlungsunion"/>
 			</item>
@@ -2754,7 +2755,7 @@
 				<term type="pref" xml:lang="de">Europäische Kommission</term>
 				<term type="alt" xml:lang="de">EK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1024466-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Kommission"/>
 			</item>
@@ -2875,7 +2876,7 @@
 				<term type="pref" xml:lang="de">Filmförderungsanstalt</term>
 				<term type="alt" xml:lang="de">FFA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5250612-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Filmf%C3%B6rderungsanstalt"/>
 			</item>
@@ -2941,7 +2942,7 @@
 				<term type="pref" xml:lang="en">Foreign Operations Administration</term>
 				<term type="alt" xml:lang="en">FOA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/66199-5"/>
 				<ref type="closeMatch" target="https://en.wikipedia.org/wiki/United_States_Foreign_Operations_Administration"/>
 			</item>
@@ -3212,7 +3213,7 @@
 				<term type="pref" xml:lang="de">Grenzschutzgruppe 9</term>
 				<term type="alt" xml:lang="de">GSG 9</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4100247-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/GSG_9_der_Bundespolizei"/>
 			</item>
@@ -3234,7 +3235,7 @@
 				<term type="pref" xml:lang="de">Deutsche Gesellschaft für Technische Zusammenarbeit</term>
 				<term type="alt" xml:lang="de">GTZ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2037665-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Gesellschaft_f%C3%BCr_Technische_Zusammenarbeit"/>
 			</item>
@@ -3242,7 +3243,7 @@
 				<term type="pref" xml:lang="de">Gemeinschaft Unabhängiger Staaten</term>
 				<term type="alt" xml:lang="de">GUS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2128486-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Gemeinschaft_Unabh%C3%A4ngiger_Staaten"/>
 			</item>
@@ -3274,7 +3275,7 @@
 				<term type="pref" xml:lang="de">Geheime Staatspolizei</term>
 				<term type="alt" xml:lang="de">Gestapo</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2029665-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Geheime_Staatspolizei"/>
 			</item>
@@ -3441,7 +3442,7 @@
 				<term type="pref" xml:lang="de">Hamburgische Bürgerschaft</term>
 				<term type="alt" xml:lang="de">Bürgerschaft der Freien und Hansestadt Hamburg</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028271-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Hamburgische_B%C3%BCrgerschaft"/>
 			</item>
@@ -3515,7 +3516,7 @@
 				<term type="alt" xml:lang="de">IAEO</term>
 				<term type="alt" xml:lang="en">IAEA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2014563-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Internationale_Atomenergie-Organisation"/>
 			</item>
@@ -3525,7 +3526,7 @@
 				<term type="alt" xml:lang="de">IAO</term>
 				<term type="alt" xml:lang="en">ILO</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4367-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Internationale_Arbeitsorganisation"/>
 			</item>
@@ -3703,7 +3704,7 @@
 				<term type="pref" xml:lang="de">Interparlamentarische Arbeitsgemeinschaft</term>
 				<term type="alt" xml:lang="de">IPA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1002525-X"/>
 			</item>
 			<item xml:id="IPPNW">
@@ -3719,7 +3720,7 @@
 				<term type="pref" xml:lang="de">Interparlamentarische Union</term>
 				<term type="alt" xml:lang="de">IPU</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1010516-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Interparlamentarische_Union"/>
 			</item>
@@ -3728,7 +3729,7 @@
 				<term type="alt" xml:lang="de">Irisch-Republikanische Armee</term>
 				<term type="alt" xml:lang="en">IRA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2038353-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Irisch-Republikanische_Armee"/>
 			</item>
@@ -3779,7 +3780,7 @@
 				<term type="pref" xml:lang="de">Institut für Demoskopie Allensbach</term>
 				<term type="alt" xml:lang="de">IfD Allensbach</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2013703-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Institut_f%C3%BCr_Demoskopie_Allensbach"/>
 			</item>
@@ -3858,7 +3859,7 @@
 				<term type="pref" xml:lang="de">JUSO</term>
 				<term type="alt" xml:lang="de">JUSO. Zeitschrift der Jungsozialisten in der SPD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">news</note>
 				<ref type="closeMatch" target="https://d-nb.info/012758574"/>
 			</item>
 			<item xml:id="Jusos">
@@ -3900,7 +3901,7 @@
 				<term type="alt" xml:lang="ru">KGB</term>
 				<term type="alt" xml:lang="de">Komitee für Staatssicherheit beim Ministerrat der UdSSR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2101272-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/KGB"/>
 			</item>
@@ -4114,7 +4115,7 @@
 				<term type="alt" xml:lang="ru">Kommunistitscheski Sojus Molodjoschi</term>
 				<term type="alt" xml:lang="de">Kommunistischer Jugendverband der Sowjetunion</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2015973-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Komsomol"/>
 			</item>
@@ -4248,7 +4249,7 @@
 				<term type="alt" xml:lang="de">Wiener Verhandlungen über Truppenreduzierungen in Mitteleuropa</term>
 				<term type="alt" xml:lang="en">MBFR</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1089019-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Mutual_and_Balanced_Force_Reductions"/>
 			</item>
@@ -4569,7 +4570,7 @@
 				<term type="pref" xml:lang="de">Nordrhein-Westfalen</term>
 				<term type="alt" xml:lang="de">NRW</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4042570-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Nordrhein-Westfalen"/>
 			</item>
@@ -5222,7 +5223,7 @@
 			<item xml:id="RTPraesWeim">
 				<term type="pref" xml:lang="de">Reichstagspräsident</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/7556849-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Reichstagspr%C3%A4sident_(Weimarer_Republik)"/>
 			</item>
@@ -5381,7 +5382,7 @@
 				<term type="alt" xml:lang="fa">Sāzmān-i Ịttilāʿāt va Amnīyat-i Kishvar</term>
 				<term type="alt" xml:lang="fa">SAVAK</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4330730-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/SAVAK"/>
 			</item>
@@ -5389,7 +5390,7 @@
 				<term type="pref" xml:lang="de">Sowjetische Besatzungszone</term>
 				<term type="alt" xml:lang="de">SBZ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4070431-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sowjetische_Besatzungszone"/>
 			</item>
@@ -5397,7 +5398,7 @@
 				<term type="pref" xml:lang="de">Sicherheitsdienst des Reichsführers SS</term>
 				<term type="alt" xml:lang="de">SD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10162996-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sicherheitsdienst_des_Reichsf%C3%BChrers_SS"/>
 			</item>
@@ -5806,7 +5807,7 @@
 				<term type="pref" xml:lang="de">Ständige Vertretung der Bundesrepublik Deutschland</term>
 				<term type="alt" xml:lang="de">StäV (BRD)</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2069542-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/St%C3%A4ndige_Vertretungen_der_Bundesrepublik_Deutschland_und_der_Deutschen_Demokratischen_Republik"/>
 			</item>
@@ -5814,7 +5815,7 @@
 				<term type="pref" xml:lang="de">Ständige Vertretung der Deutschen Demokratischen Republik</term>
 				<term type="alt" xml:lang="de">StäV (DDR)</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1205746196"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/St%C3%A4ndige_Vertretungen_der_Bundesrepublik_Deutschland_und_der_Deutschen_Demokratischen_Republik"/>
 			</item>
@@ -5822,7 +5823,7 @@
 				<term type="pref" xml:lang="de">Stahlhelm</term>
 				<term type="alt" xml:lang="de">Stahlhelm, Bund der Frontsoldaten</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/63616-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Stahlhelm,_Bund_der_Frontsoldaten"/>
 			</item>
@@ -5879,6 +5880,7 @@
 			<item xml:id="TASS">
 				<term type="pref" xml:lang="de">Sowjetische Nachrichtenagentur TASS</term>
 				<term type="alt" xml:lang="ru">Telegrafnoe Agentstvo Sovetskogo Sojuza</term>
+				<term type="alt" xml:lang="ru">Telegrafnoje Agentstwo Sowjetskowo Sojusa</term>
 				<term type="alt" xml:lang="ru">TASS</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
@@ -5936,7 +5938,7 @@
 				<term type="pref" xml:lang="en">Trades Union Congress</term>
 				<term type="alt" xml:lang="en">TUC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/3473-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Trades_Union_Congress"/>
 			</item>
@@ -6424,7 +6426,7 @@
 				<term type="pref" xml:lang="de">Vereinigtes Wirtschaftsgebiet</term>
 				<term type="alt" xml:lang="de">Bizone</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35103-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bizone"/>
 			</item>
@@ -6810,7 +6812,7 @@
 				<term type="pref" xml:lang="de">Deutsche Druck- und Verlagsgesellschaft</term>
 				<term type="alt" xml:lang="de">ddvg</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10051085-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Druck-_und_Verlagsgesellschaft"/>
 			</item>
