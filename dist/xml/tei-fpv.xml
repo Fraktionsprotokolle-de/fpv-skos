@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-12">12. November 2026, 12:52 Uhr</date>
+				<date when="2026-11-12">12. November 2026, 13:36 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -122,7 +122,7 @@
 				<term type="pref" xml:lang="de">Allgemeiner Deutscher Gewerkschaftsbund</term>
 				<term type="alt" xml:lang="de">ADGB</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10354-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Allgemeiner_Deutscher_Gewerkschaftsbund"/>
 			</item>
@@ -350,7 +350,6 @@
 			</item>
 			<item xml:id="Abend">
 				<term type="pref" xml:lang="de">Der Abend</term>
-				<term type="alt" xml:lang="de">Abend</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4560220-7"/>
@@ -646,7 +645,7 @@
 			<item xml:id="BKAmt">
 				<term type="pref" xml:lang="de">Bundeskanzleramt</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2050132-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundeskanzleramt_(Deutschland)"/>
 			</item>
@@ -976,7 +975,7 @@
 				<term type="pref" xml:lang="de">Deutscher Bundestag</term>
 				<term type="alt" xml:lang="de">BT</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028840-2"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2116123-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Bundestag"/>
@@ -1459,7 +1458,7 @@
 				<term type="alt" xml:lang="de">Christlicher Gewerkschaftsbund Deutschlands</term>
 				<term type="alt" xml:lang="de">CGB</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2006778-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Christlicher_Gewerkschaftsbund_Deutschlands"/>
 			</item>
@@ -1467,7 +1466,7 @@
 				<term type="pref" xml:lang="de">Christliche Gewerkschaft Deutschlands</term>
 				<term type="alt" xml:lang="de">CGD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Christliche_Gewerkschaft_Deutschlands"/>
 			</item>
 			<item xml:id="CIA">
@@ -1694,7 +1693,7 @@
 				<term type="alt" xml:lang="de">Arbeitsgemeinschaft Internationaler Sozialistenkonferenzen</term>
 				<term type="alt" xml:lang="en">Comisco</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
+				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/19071-8"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1090627610"/>
 			</item>
@@ -2995,7 +2994,7 @@
 			</item>
 			<item xml:id="FU">
 				<term type="pref" xml:lang="de">Freie Universität Berlin</term>
-				<term type="alt" xml:lang="de">FU</term>
+				<term type="alt" xml:lang="de">FU Berlin</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2114189-7"/>
@@ -6135,7 +6134,7 @@
 				<term type="alt" xml:lang="fr">UNIC</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
-				<ref type="exactMatch" target="http://viaf.org/viaf/152010530"/>
+				<ref type="exactMatch" target="https://viaf.org/viaf/152010530"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Automobiles_Unic"/>
 			</item>
 			<item xml:id="UNICEF">

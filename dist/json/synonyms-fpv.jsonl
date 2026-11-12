@@ -1,6 +1,7 @@
 {"id": "AAPD", "synonyms": ["AAPD", "Akten zur auswärtigen Politik der Bundesrepublik Deutschland"]}
 {"id": "ABB", "synonyms": ["ABB", "ASEA Brown Boveri"]}
 {"id": "ABC", "synonyms": ["ABC", "American Broadcasting Company"]}
+{"id": "ABiD", "synonyms": ["ABiD", "Allgemeiner Behindertenverband in Deutschland"]}
 {"id": "ABN", "synonyms": ["ABN", "Arbeitsgemeinschaft beruflicher und ehrenamtlicher Naturschutz"]}
 {"id": "ACDP", "synonyms": ["ACDP", "Archiv für Christlich-Demokratische Politik"]}
 {"id": "ACSP", "synonyms": ["ACSP", "Archiv für Christlich-Soziale Politik"]}
@@ -13,11 +14,13 @@
 {"id": "ADL", "synonyms": ["AdL", "Archiv des Liberalismus"]}
 {"id": "AdLESt", "synonyms": ["AdLESt", "Archiv der Ludwig-Erhard-Stiftung"]}
 {"id": "ADN", "synonyms": ["ADN", "Allgemeiner Deutscher Nachrichtendienst"]}
+{"id": "AdsD", "synonyms": ["AdsD", "Archiv der sozialen Demokratie"]}
 {"id": "AEG", "synonyms": ["AEG", "Allgemeine Elektricitäts-Gesellschaft"]}
 {"id": "AeRat", "synonyms": ["Ältestenrat", "Ältestenrat des Deutschen Bundestages"]}
 {"id": "AfA", "synonyms": ["AfA", "Arbeitsgemeinschaft für Arbeitnehmerfragen"]}
 {"id": "AFL", "synonyms": ["AFL", "American Federation of Labor"]}
 {"id": "AFP", "synonyms": ["AFP", "Agence France-Presse"]}
+{"id": "Agfa", "synonyms": ["AGFA", "Actien-Gesellschaft für Anilin-Fabrication", "Agfa"]}
 {"id": "AGG", "synonyms": ["AGG", "Archiv Grünes Gedächtnis"]}
 {"id": "AHK", "synonyms": ["AHK", "Alliierte Hohe Kommission", "Alliierte Hohe Kommission für Deutschland"]}
 {"id": "AJ", "synonyms": ["Arbeiterjugend", "Arbeiterjugend. Zeitung der Sozialistischen Jugend Deutschlands Die Falken"]}
@@ -27,6 +30,7 @@
 {"id": "AOK", "synonyms": ["AOK", "Allgemeine Ortskrankenkasse"]}
 {"id": "APRA", "synonyms": ["APRA", "Alianza Popular Revolucionaria Americana", "Amerikanische Revolutionäre Volksallianz"]}
 {"id": "ARD", "synonyms": ["ARD", "Arbeitsgemeinschaft der öffentlich-rechtlichen Rundfunkanstalten der Bundesrepublik Deutschland"]}
+{"id": "ArDL", "synonyms": ["ADL", "Arthur D. Little"]}
 {"id": "ARP", "synonyms": ["ARP", "Anti-Revolutionaire Partij"]}
 {"id": "ArthurAndersen", "synonyms": ["Arthur Andersen", "Arthur Andersen LLP"]}
 {"id": "ASD", "synonyms": ["ASD", "Axel-Springer-Inland-Dienst", "Axel-Springer-Inlandsdienst"]}
@@ -46,6 +50,7 @@
 {"id": "BArch", "synonyms": ["BArch", "Bundesarchiv"]}
 {"id": "BASF", "synonyms": ["BASF", "Badische Anilin- und Sodafabrik"]}
 {"id": "BaslerAZ", "synonyms": ["Abend-Zeitung, Basel", "Basler AZ", "Basler Arbeiter-Zeitung"]}
+{"id": "Bayern", "synonyms": ["Bayern", "Freistaat Bayern"]}
 {"id": "BayHStA", "synonyms": ["BayHStA", "Bayerisches Hauptstaatsarchiv"]}
 {"id": "BayStabi", "synonyms": ["BSB", "Bayerische Staatsbibliothek"]}
 {"id": "BBC", "synonyms": ["BBC", "British Broadcasting Corporation"]}
@@ -78,12 +83,14 @@
 {"id": "BKA", "synonyms": ["BKA", "Bundeskriminalamt"]}
 {"id": "BMA", "synonyms": ["BMA", "Bundesministerium für Arbeit"]}
 {"id": "BMAS", "synonyms": ["BMA", "Bundesministerium für Arbeit und Sozialordnung"]}
+{"id": "BMAtom", "synonyms": ["BMAt", "Bundesministerium für Atomfragen"]}
 {"id": "BMB", "synonyms": ["BMB", "Bundesministerium für innerdeutsche Beziehungen"]}
 {"id": "BMBR", "synonyms": ["BMBR", "Bundesministerium für Angelegenheiten des Bundesrates und der Länder"]}
 {"id": "BMBW", "synonyms": ["BMBW", "Bundesministerium für Bildung und Wissenschaft"]}
 {"id": "BMEL", "synonyms": ["BMEL", "Bundesministerium für Ernährung und Landwirtschaft"]}
 {"id": "BMELF", "synonyms": ["BMELF", "BML", "Bundesministerium für Ernährung, Landwirtschaft und Forsten"]}
 {"id": "BMF", "synonyms": ["BMF", "Bundesministerium der Finanzen"]}
+{"id": "BMFa", "synonyms": ["BMFa", "Bundesministerium für Familienfragen"]}
 {"id": "BMFT", "synonyms": ["BMFT", "Bundesministerium für Forschung und Technologie"]}
 {"id": "BMG", "synonyms": ["BMG", "Bundesministerium für gesamtdeutsche Fragen"]}
 {"id": "BMGes", "synonyms": ["BMG", "Bundesministerium für Gesundheitswesen"]}
@@ -101,14 +108,17 @@
 {"id": "BMWi", "synonyms": ["BMWi", "Bundesministerium für Wirtschaft"]}
 {"id": "BMWo", "synonyms": ["BMWo", "Bundesministerium für Wohnungsbau"]}
 {"id": "BMZ", "synonyms": ["BMZ", "Bundesministerium für wirtschaftliche Zusammenarbeit"]}
+{"id": "BND", "synonyms": ["BND", "Bundesnachrichtendienst"]}
 {"id": "BPA", "synonyms": ["BPA", "Bundespresseamt", "Presse- und Informationsamt der Bundesregierung"]}
 {"id": "BpB", "synonyms": ["BpB", "Bundeszentrale für politische Bildung"]}
 {"id": "BPK", "synonyms": ["BPK", "Bundespressekonferenz"]}
 {"id": "BPrA", "synonyms": ["BPrA", "Bundespräsidialamt"]}
 {"id": "BRH", "synonyms": ["BRH", "Bundesrechnungshof"]}
+{"id": "BRRH", "synonyms": ["BRH", "Bund der Ruhestandsbeamten, Rentner und Hinterbliebenen"]}
 {"id": "BStU", "synonyms": ["BStU", "Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik"]}
 {"id": "BTParlA", "synonyms": ["Parlamentsarchiv", "Parlamentsarchiv des Deutschen Bundestages"]}
 {"id": "Bulletin", "synonyms": ["Bulletin der Bundesregierung", "Bulletin des Presse- und Informationsamtes der Bundesregierung"]}
+{"id": "BulletinIP", "synonyms": ["Bulletin interparlementaire", "Bulletin interparlementaire. Organe officiel de l’Union Interparlementaire"]}
 {"id": "BUND", "synonyms": ["BUND", "Bund für Umwelt und Naturschutz Deutschland"]}
 {"id": "BundGA", "synonyms": ["BGA", "Bundesgesundheitsamt"]}
 {"id": "BuReg", "synonyms": ["BReg", "Bundeskabinett", "Bundesregierung", "Bundesregierung der Bundesrepublik Deutschland"]}
@@ -125,7 +135,9 @@
 {"id": "CdE", "synonyms": ["Council of Europe", "Counseil de l’Europe", "Europarat"]}
 {"id": "CDS", "synonyms": ["CDS", "Centre des démocrates sociaux"]}
 {"id": "CentreDS", "synonyms": ["CDS", "Centre des démocrates sociaux"]}
+{"id": "CDU", "synonyms": ["CDU", "Christlich-Demokratische Union Deutschlands"]}
 {"id": "CDUFraktionBT", "synonyms": ["CDU/CSU-Bundestagsfraktion", "CDU/CSU-Fraktion im Deutschen Bundestag"]}
+{"id": "CDUFraktionsvorstandBT", "synonyms": ["CDU/CSU-Fraktionsvorstand", "Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag"]}
 {"id": "CEMT", "synonyms": ["CEMT", "Conférence Européenne des Ministres des Transports", "ECMT", "European Conference of Ministers of Transport", "Europäische Konferenz der Verkehrsminister", "Europäische Verkehrsministerkonferenz"]}
 {"id": "CFP", "synonyms": ["CFP", "Compagnie Française des Pétroles"]}
 {"id": "CGB", "synonyms": ["CGB", "Christlicher Gewerkschaftsbund", "Christlicher Gewerkschaftsbund Deutschlands"]}
@@ -136,8 +148,11 @@
 {"id": "CIO", "synonyms": ["CIO", "Congress of Industrial Organizations"]}
 {"id": "CISNU", "synonyms": ["CISNU", "Confederation of Iranian Students", "Confederation of Iranian Students National Union"]}
 {"id": "ClevelandPlain", "synonyms": ["Cleveland Plain Dealer", "The Plain Dealer", "The Plain Dealer. Ohio’s Largest Newspaper"]}
+{"id": "CMA", "synonyms": ["CMA", "Centrale Marketing-Gesellschaft der deutschen Agrarwirtschaft"]}
+{"id": "CNIP", "synonyms": ["CNIP", "Centre national des indépendants et paysans"]}
 {"id": "COCOM", "synonyms": ["COCOM", "Coordinating Committee for East West Trade Policy", "Coordinating Committee for Multilateral Export Controls", "Koordinierungskomittee für den Ost-West-Handel", "Koordinierungskomittee für multilaterale Ausfuhrkontrollen"]}
 {"id": "COMECON", "synonyms": ["CMEA", "COMECON", "Council for Mutual Economic Assistance"]}
+{"id": "Comisco", "synonyms": ["Arbeitsgemeinschaft Internationaler Sozialistenkonferenzen", "Comisco", "Committee of the International Socialist Conferences"]}
 {"id": "COPCON", "synonyms": ["COPCON", "Comando Operacional do Continente"]}
 {"id": "CSA", "synonyms": ["CSA", "Christlich-Soziale Arbeitnehmerschaft"]}
 {"id": "CSP", "synonyms": ["CSP", "Christlich-Soziale Partei"]}
@@ -146,6 +161,7 @@
 {"id": "CSWU", "synonyms": ["CSWU", "Christlich Soziale Wähler Union im Saarland"]}
 {"id": "CV", "synonyms": ["CV", "Cartellverband der katholischen deutschen Studentenverbindungen"]}
 {"id": "CVP-BE", "synonyms": ["CVP", "Christelijke Volkspartij"]}
+{"id": "CVP-CH", "synonyms": ["CVP", "Christlichdemokratische Volkspartei der Schweiz"]}
 {"id": "CVP-SL", "synonyms": ["CVP", "Christliche Volkspartei des Saarlandes"]}
 {"id": "DA", "synonyms": ["DA", "Demokratischer Aufbruch"]}
 {"id": "DAG", "synonyms": ["DAG", "Deutsche Angestellten-Gewerkschaft"]}
@@ -210,6 +226,7 @@
 {"id": "DRP", "synonyms": ["DRP", "Deutsche Reichs-Partei", "Deutsche Reichspartei"]}
 {"id": "DSB", "synonyms": ["DSB", "Deutscher Sportbund"]}
 {"id": "DSF", "synonyms": ["DSF", "Gesellschaft für Deutsch-Sowjetische Freundschaft"]}
+{"id": "dsj", "synonyms": ["Deutsche Sportjugend", "dsj"]}
 {"id": "DSL", "synonyms": ["DSL Bank", "Deutsche Siedlungs- und Landesrentenbank"]}
 {"id": "DSoz", "synonyms": ["Forum DS", "Forum Demokratischer Sozialismus", "Forum Demokratischer Sozialismus. Jahrbuch für Theorie und Praxis des demokratischen Sozialismus"]}
 {"id": "DSP", "synonyms": ["DSP", "Deutsche Sozialdemokratische Partei"]}
@@ -217,6 +234,7 @@
 {"id": "DStP", "synonyms": ["DStP", "Deutsche Staatspartei"]}
 {"id": "DT64", "synonyms": ["Jugendradio DT64", "Jugendstudio DT64"]}
 {"id": "DtBauernV", "synonyms": ["DBV", "Deutscher Bauernverband"]}
+{"id": "DtIndAnlagenAG", "synonyms": ["DIAG", "Deutsche Industrieanlagen AG"]}
 {"id": "DUD", "synonyms": ["DUD", "Deutschland Union Dienst"]}
 {"id": "DV", "synonyms": ["DVP", "Deutsche Volkspartei"]}
 {"id": "DVP", "synonyms": ["DVP", "Demokratische Volkspartei"]}
@@ -236,12 +254,14 @@
 {"id": "ELD", "synonyms": ["ELD", "Liberale und Demokratische Fraktion", "Liberale und Demokratische Fraktion im Europäischen Parlament"]}
 {"id": "Emnid", "synonyms": ["EMNID-Institut", "Institut für Erforschung der öffentlichen Meinung, Marktforschung, Nachrichten, Informationen und Dienstleistungen"]}
 {"id": "EPG", "synonyms": ["EPG", "Europäische Politische Gemeinschaft"]}
+{"id": "EPU", "synonyms": ["EPU", "Europäische Parlamentarier-Union"]}
 {"id": "ERP", "synonyms": ["ERP", "European Recovery Program", "Europäisches Wiederaufbauprogramm", "Marshallplan"]}
 {"id": "ESG", "synonyms": ["ESG", "Evangelische Studentengemeinde", "Evangelische Studentengemeinde in der BRD und Berlin (West)"]}
 {"id": "EUCD", "synonyms": ["EUCD", "Europäische Union Christlicher Demokraten"]}
 {"id": "EUGH", "synonyms": ["EuGH", "Europäischer Gerichtshof"]}
 {"id": "EURATOM", "synonyms": ["EAG", "EURATOM", "Europäische Atomgemeinschaft"]}
 {"id": "EUREKA", "synonyms": ["EUREKA", "European Research Coordination Agency"]}
+{"id": "EuRH", "synonyms": ["EuRH", "Europäischer Rechnungshof"]}
 {"id": "EUROCONTROL", "synonyms": ["EUROCONTROL", "Europäische Organisation für Flugsicherung", "Europäische Organisation zur Sicherung der Luftfahrt"]}
 {"id": "EurZBeruf", "synonyms": ["CEDEFOP", "Centre Européen pour le Développement de la Formation Professionelle", "European Centre for the Development of Vocational Training", "Europäisches Zentrum für die Förderung der Berufsbildung"]}
 {"id": "EVG", "synonyms": ["EVG", "Europäische Verteidigungsgemeinschaft"]}
@@ -261,6 +281,7 @@
 {"id": "fdk", "synonyms": ["Freie Demokratische Korrespondenz", "fdk"]}
 {"id": "FDP", "synonyms": ["FDP", "Freie Demokratische Partei"]}
 {"id": "FDP-FraktionBT", "synonyms": ["FDP-Bundestagsfraktion", "Fraktion der Freien Demokraten"]}
+{"id": "FDV", "synonyms": ["FDV", "Freie Deutsche Volkspartei"]}
 {"id": "Fed", "synonyms": ["Fed", "Federal Reserve", "Federal Reserve System"]}
 {"id": "FedAA", "synonyms": ["FAA", "Federal Aviation Administration"]}
 {"id": "FES", "synonyms": ["FES", "Friedrich-Ebert-Stiftung"]}
@@ -273,18 +294,21 @@
 {"id": "FLQ", "synonyms": ["FLQ", "Front de libération du Québec"]}
 {"id": "FNP", "synonyms": ["FNP", "Frankfurter Neue Presse"]}
 {"id": "FOA", "synonyms": ["FOA", "Foreign Operations Administration"]}
+{"id": "FORBIT", "synonyms": ["FORBIT", "Forschungs- und Beratungsstelle Informationstechnologie"]}
 {"id": "FPOe", "synonyms": ["FPÖ", "Freiheitliche Partei Österreichs"]}
 {"id": "Framatome", "synonyms": ["Framatome", "Franco-Américaine de Constructions Atomiques"]}
 {"id": "FreiePresse", "synonyms": ["Freie Presse", "Freie Presse. Tageszeitung für Bielefeld Stadt und Land"]}
 {"id": "Frontal", "synonyms": ["Frontal", "Frontal. Zeitschrift für demokratische Studenten"]}
 {"id": "FRUS", "synonyms": ["FRUS", "Foreign Relations of the United States"]}
 {"id": "FSK", "synonyms": ["FSK", "Freiwillige Selbstkontrolle der Filmwirtschaft"]}
+{"id": "FU", "synonyms": ["FU Berlin", "Freie Universität Berlin"]}
 {"id": "FVP", "synonyms": ["FVP", "Freie Volkspartei"]}
 {"id": "GAL", "synonyms": ["GAL", "Grün-Alternative Liste", "Grün-Alternative Liste Hamburg"]}
 {"id": "GATT", "synonyms": ["Allgemeines Zoll- und Handelsabkommen", "GATT", "General Agreement on Tariffs and Trade"]}
 {"id": "GBA", "synonyms": ["Bundesanwaltschaft", "GBA", "Generalbundesanwalt", "Generalbundesanwalt beim Bundesgerichtshof"]}
 {"id": "GBAG", "synonyms": ["GBAG", "Gebag", "Gelsenberg", "Gelsenkirchener Bergwerks-Aktien-Gesellschaft"]}
 {"id": "GBBHE", "synonyms": ["GB/BHE", "Gesamtdeutscher Block/Bund der Heimatvertriebenen und Entrechteten"]}
+{"id": "GdED", "synonyms": ["GdED", "Gewerkschaft der Eisenbahner Deutschlands"]}
 {"id": "GDP", "synonyms": ["GDP", "GPD", "Gesamtdeutsche Partei", "Gesamtdeutsche Partei Deutschlands"]}
 {"id": "GdPol", "synonyms": ["GdP", "Gewerkschaft der Polizei"]}
 {"id": "GEMA", "synonyms": ["GEMA", "Gesellschaft für musikalische Aufführungs- und mechanische Vervielfältigungsrechte"]}
@@ -294,12 +318,15 @@
 {"id": "GLS", "synonyms": ["GLS", "GLS Gemeinschaftsbank", "Gemeinschaftsbank für Leihen und Schenken"]}
 {"id": "GLU", "synonyms": ["GLU", "Grüne Liste Umweltschutz"]}
 {"id": "GMD", "synonyms": ["GMD", "Gesellschaft für Mathematik und Datenverarbeitung"]}
+{"id": "GSG", "synonyms": ["GSG 9", "Grenzschutzgruppe 9"]}
+{"id": "GSG-9", "synonyms": ["GSG 9", "Grenzschutzgruppe 9"]}
 {"id": "GTZ", "synonyms": ["Deutsche Gesellschaft für Technische Zusammenarbeit", "GTZ"]}
 {"id": "GUS", "synonyms": ["GUS", "Gemeinschaft Unabhängiger Staaten"]}
 {"id": "GVP", "synonyms": ["GVP", "Gesamtdeutsche Volkspartei"]}
 {"id": "HamBuerg", "synonyms": ["Bürgerschaft der Freien und Hansestadt Hamburg", "Hamburgische Bürgerschaft"]}
 {"id": "HAN", "synonyms": ["HAN", "Harburger Anzeigen und Nachrichten"]}
 {"id": "HannovAllgZ", "synonyms": ["HAZ", "Hannoverische Allgemeine Zeitung"]}
+{"id": "HansardSoc", "synonyms": ["Hansard Society", "Hansard Society for Parliamentary Government"]}
 {"id": "Hartmann", "synonyms": ["Hartmannbund", "Hartmannbund – Verband der Ärzte Deutschlands"]}
 {"id": "HausundGrund", "synonyms": ["Haus & Grund", "Haus & Grund Deutschland", "Haus & Grund – Zentralverband der Deutschen Haus-, Wohnungs- und Grundeigentümer"]}
 {"id": "HAW", "synonyms": ["HAW", "Homosexuelle Aktion Westberlin"]}
@@ -308,7 +335,9 @@
 {"id": "Helaba", "synonyms": ["Helaba", "Hessische Landesbank"]}
 {"id": "HelabaThue", "synonyms": ["Helaba", "Landesbank Hessen-Thüringen"]}
 {"id": "Herstatt", "synonyms": ["Herstatt-Bank", "I. D. Herstatt KGaA"]}
+{"id": "HHeadS", "synonyms": ["HHS", "Hearst Headline Service"]}
 {"id": "HIAG", "synonyms": ["HIAG", "Hilfsgemeinschaft auf Gegenseitigkeit der Angehörigen der ehemaligen Waffen-SS"]}
+{"id": "HSA", "synonyms": ["HSA", "Helmut-Schmidt-Archiv"]}
 {"id": "HSFK", "synonyms": ["HSFK", "Hessische Stiftung Friedens- und Konfliktforschung"]}
 {"id": "HSS", "synonyms": ["HSS", "Hanns-Seidel-Stiftung"]}
 {"id": "HSU", "synonyms": ["HSU", "Humanistische Studentenunion"]}
@@ -320,12 +349,15 @@
 {"id": "IDA", "synonyms": ["IDA", "International Development Association"]}
 {"id": "IfD", "synonyms": ["IfD Allensbach", "Institut für Demoskopie Allensbach"]}
 {"id": "IFEU", "synonyms": ["Institut für Energie- und Umweltforschung Heidelberg", "ifeu"]}
+{"id": "IFM", "synonyms": ["IFM", "Initiative Frieden und Menschenrechte"]}
+{"id": "Ifo", "synonyms": ["Ifo", "Informations- und Forschungsstelle für Wirtschaftsbeobachtung"]}
 {"id": "ifo-institut", "synonyms": ["Ifo", "Ifo-Institut für Wirtschaftsforschung", "Institut für Wirtschaftsforschung"]}
 {"id": "IfZ", "synonyms": ["IfZ", "Institut für Zeitgeschichte"]}
 {"id": "IGBE", "synonyms": ["IG Bergbau und Energie", "IGBE", "Industriegewerkschaft Bergbau und Energie"]}
 {"id": "IGBSE", "synonyms": ["IG BSE", "IG Bau-Steine-Erden", "Industriegewerkschaft Bau, Steine, Erden"]}
 {"id": "IGCHemie", "synonyms": ["IG CPK", "IG Chemie-Papier-Keramik", "Industriegewerkschaft Chemie, Papier, Keramik"]}
 {"id": "IGDruck", "synonyms": ["IG Druck und Papier", "Industriegewerkschaft Druck und Papier"]}
+{"id": "IGFarben", "synonyms": ["I.G. Farben", "IG Farben", "Interessengemeinschaft Farbenindustrie AG", "igfag"]}
 {"id": "IGH", "synonyms": ["IGH", "Internationaler Gerichtshof"]}
 {"id": "IGM", "synonyms": ["IG Metall", "IGM", "Industriegewerkschaft Metall"]}
 {"id": "IISG", "synonyms": ["IISG", "Internationaal Instituut voor Sociale Geschiedenis", "International Institute of Social History", "Internationales Institut für Sozialgeschichte"]}
@@ -333,7 +365,9 @@
 {"id": "infas", "synonyms": ["Institut für angewandte Sozialwissenschaft", "infas"]}
 {"id": "INTERATOM", "synonyms": ["INTERATOM", "Internationale Atomreaktorbau GmbH"]}
 {"id": "Interflug", "synonyms": ["Gesellschaft für Internationalen Flugverkehr", "INTERFLUG DDR", "Interflug"]}
+{"id": "intern", "synonyms": ["Intern", "Intern. Informationen des SPD-Parteivorstands für aktive Mitglieder"]}
 {"id": "IOC", "synonyms": ["IOC", "IOK", "International Olympic Committee", "Internationales Olympisches Komitee"]}
+{"id": "IPA", "synonyms": ["IPA", "Interparlamentarische Arbeitsgemeinschaft"]}
 {"id": "IPPNW", "synonyms": ["IPPNW", "International Physicians for the Prevention of Nuclear War", "Internationale Ärzte für die Verhütung des Atomkrieges"]}
 {"id": "IPU", "synonyms": ["IPU", "Interparlamentarische Union"]}
 {"id": "IRA", "synonyms": ["IRA", "Irisch-Republikanische Armee", "Irish Republican Army"]}
@@ -342,6 +376,7 @@
 {"id": "ITF", "synonyms": ["ITF", "Internationale Transportarbeiter-Föderation"]}
 {"id": "IVG", "synonyms": ["IVG", "Industrieverwaltungsgesellschaft"]}
 {"id": "IWF", "synonyms": ["IMF", "IWF", "International Monetary Fund", "Internationaler Währungsfond"]}
+{"id": "Izv", "synonyms": ["Iswestija", "Izvestija"]}
 {"id": "JEF", "synonyms": ["JEF", "Junge Europäische Föderalisten"]}
 {"id": "journalist", "synonyms": ["Journalist. Das Medienmagazin", "journalist"]}
 {"id": "JU", "synonyms": ["JU", "Junge Union", "Junge Union Deutschlands"]}
@@ -349,6 +384,7 @@
 {"id": "JusoZeitschrift", "synonyms": ["JUSO", "JUSO. Zeitschrift der Jungsozialisten in der SPD"]}
 {"id": "KAS", "synonyms": ["KAS", "Konrad-Adenauer-Stiftung"]}
 {"id": "KBWD", "synonyms": ["KBW", "Kommunistischer Bund Westdeutschland"]}
+{"id": "KfW", "synonyms": ["KfW", "Kreditanstalt für Wiederaufbau"]}
 {"id": "KGB", "synonyms": ["KGB", "Komitee für Staatssicherheit beim Ministerrat der UdSSR", "Komitet Gosudarstvennoj Bezopasnosti", "Komitet Gosudarstwennoi Besopasnosti"]}
 {"id": "KGParl", "synonyms": ["KGParl", "Kommission für Geschichte des Parlamentarismus und der politischen Parteien"]}
 {"id": "KKWStendal", "synonyms": ["KKW Stendal", "Kernkraftwerk Stendal"]}
@@ -402,7 +438,9 @@
 {"id": "NaturFJD", "synonyms": ["NFJD", "Naturfreundejugend Deutschlands"]}
 {"id": "NAV", "synonyms": ["NAA", "NAV", "Nordatlantische Versammlung", "North Atlantic Assembly"]}
 {"id": "NBC", "synonyms": ["NBC", "National Broadcasting Company"]}
+{"id": "NBD", "synonyms": ["Die neue Bonner Depesche", "Neue Bonner Depesche"]}
 {"id": "NDR", "synonyms": ["NDR", "Norddeutscher Rundfunk"]}
+{"id": "NDtWochen", "synonyms": ["NDW", "Neue Deutsche Wochenschau"]}
 {"id": "NeueBP", "synonyms": ["Bildpost", "Neue Bildpost"]}
 {"id": "NGG", "synonyms": ["Gewerkschaft Nahrung-Genuss-Gaststätten", "NGG"]}
 {"id": "NH", "synonyms": ["NH", "Neue Heimat", "Neue Heimat Städtebau"]}
@@ -435,10 +473,12 @@
 {"id": "OPEC", "synonyms": ["OPEC", "Organisation der erdölexportierenden Länder", "Organization of the Petroleum Exporting Countries"]}
 {"id": "Opel", "synonyms": ["Adam Opel AG", "Opel"]}
 {"id": "ORF", "synonyms": ["ORF", "Österreichischer Rundfunk"]}
+{"id": "OSI", "synonyms": ["OSI", "Otto-Suhr-Institut für Politikwissenschaft"]}
 {"id": "Ost-CDU", "synonyms": ["CDUD", "Christlich-Demokratische Union", "Christlich-Demokratische Union Deutschlands (DDR)", "Ost-CDU"]}
 {"id": "PAAA", "synonyms": ["PA AA", "Politisches Archiv des Auswärtigen Amts"]}
 {"id": "PEN", "synonyms": ["Deutsches PEN-Zentrum", "PEN Deutschland", "PEN-Zentrum Deutschland"]}
 {"id": "PEU", "synonyms": ["Internationale Paneuropa Union", "PEU", "Paneuropa-Union"]}
+{"id": "PKK", "synonyms": ["Arbeiterpartei Kurdistans", "PKK", "Partiya Karkerên Kurdistanê"]}
 {"id": "PLO", "synonyms": ["Munaẓẓamat at-Taḥrīr al-Filasṭīniya", "PLO", "Palestine Liberation Organization", "Palästinensische Befreiungsorganisation"]}
 {"id": "PNP", "synonyms": ["PNP", "Passauer Neue Presse"]}
 {"id": "PPP", "synonyms": ["PPP", "Parlamentarisch-Politischer Pressedienst"]}
@@ -448,6 +488,7 @@
 {"id": "PRChile", "synonyms": ["PR", "Partido Radical", "Partido Radical de Chile", "Radikale Partei"]}
 {"id": "Preussag", "synonyms": ["PREUSSAG", "Preussag AG"]}
 {"id": "PS", "synonyms": ["PS", "Parti Socialiste", "Parti Socialiste de France", "Sozialistische Partei"]}
+{"id": "PSD", "synonyms": ["PSD", "Partia Socialdemokrate", "Partia Socialdemokrate e Shqipërisë", "Sozialdemokratische Partei"]}
 {"id": "PSOE", "synonyms": ["PSOE", "Partido Socialista Obrero Español", "Spanische Sozialistische Arbeiterpartei"]}
 {"id": "PVAP", "synonyms": ["PVAP", "PZPR", "Polnische Vereinigte Arbeiterpartei", "Polska Zjednoczona Partia Robotnicza"]}
 {"id": "PZPR", "synonyms": ["PVAP", "PZPR", "Polnische Vereinigte Arbeiterpartei", "Polska Zjednoczona Partia Robotnicza"]}
@@ -475,7 +516,9 @@
 {"id": "SaarbergwerkeAG", "synonyms": ["Saarberg", "Saarbergwerke"]}
 {"id": "SAJ", "synonyms": ["SAJ", "Sozialistische Arbeiterjugend", "Verband der Sozialistischen Arbeiterjugend Deutschlands"]}
 {"id": "SALT", "synonyms": ["Gespräche zur Begrenzung strategischer Rüstung", "SALT", "Strategic Arms Limitation Talks"]}
+{"id": "SAP", "synonyms": ["SAP", "Sozialistische Arbeiterpartei Deutschlands"]}
 {"id": "SAVAK", "synonyms": ["Organisation für Informationen und nationale Sicherheit", "SAVAK", "Sāzmān-e eṭṭelāʿāt wa amnīyat-e kešvar", "Sāzmān-i Ịttilāʿāt va Amnīyat-i Kishvar"]}
+{"id": "SBZ", "synonyms": ["SBZ", "Sowjetische Besatzungszone"]}
 {"id": "SDAJ", "synonyms": ["SDAJ", "Sozialistische Deutsche Arbeiterjugend"]}
 {"id": "SDP", "synonyms": ["SDP", "Sozialdemokratische Partei in der DDR"]}
 {"id": "SDR", "synonyms": ["SDR", "Süddeutscher Rundfunk"]}
@@ -497,11 +540,13 @@
 {"id": "SPDFraktionBT", "synonyms": ["Bundestagsfraktion der SPD", "SPD-Fraktion im Deutschen Bundestag", "Sozialdemokratische Bundestagsfraktion"]}
 {"id": "SPDFraktionvorstandBT", "synonyms": ["SPD-Fraktionvorstand", "Vorstand der Sozialdemokratischen Bundestagsfraktion"]}
 {"id": "SPOe", "synonyms": ["SPÖ", "Sozialdemokratische Partei Österreichs"]}
+{"id": "SpringerVerlag", "synonyms": ["Axel-Springer-Verlag", "Springer"]}
 {"id": "SPS", "synonyms": ["SPS", "Sozialdemokratische Partei des Saarlandes"]}
 {"id": "SRG", "synonyms": ["SRG", "SSR", "Schweizerische Radio- und Fernsehgesellschaft", "Société suisse de radiodiffusion et télévision"]}
 {"id": "SRP", "synonyms": ["SRP", "Sozialistische Reichspartei"]}
 {"id": "SSW", "synonyms": ["SSV", "SSW", "Sydslesvigsk Vælgerforening", "Südschleswigscher Wählerverband"]}
 {"id": "StaeVBRD", "synonyms": ["StäV (BRD)", "Ständige Vertretung der Bundesrepublik Deutschland"]}
+{"id": "StaeVDDR", "synonyms": ["StäV (DDR)", "Ständige Vertretung der Deutschen Demokratischen Republik"]}
 {"id": "Stahlhelm", "synonyms": ["Stahlhelm", "Stahlhelm, Bund der Frontsoldaten"]}
 {"id": "STEAG", "synonyms": ["STEAG", "Steinkohlen-Elektrizität AG"]}
 {"id": "STEG", "synonyms": ["STEG", "Staatliche Erfassungsgesellschaft für öffentliches Gut"]}
@@ -542,6 +587,7 @@
 {"id": "UPI", "synonyms": ["UPI", "United Press International"]}
 {"id": "URO", "synonyms": ["URO", "United Restitution Organization"]}
 {"id": "USPD", "synonyms": ["USPD", "Unabhängige Sozialdemokratische Partei Deutschlands"]}
+{"id": "UTM", "synonyms": ["UTM", "Unternehmensgruppe Theo Müller"]}
 {"id": "VBH", "synonyms": ["VBH", "Vaterstädtischer Bund Hamburg"]}
 {"id": "VBL", "synonyms": ["VBL", "Versorgungsanstalt des Bundes und der Länder"]}
 {"id": "VCI", "synonyms": ["VCI", "Verband der Chemischen Industrie"]}
