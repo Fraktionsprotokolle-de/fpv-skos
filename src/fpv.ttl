@@ -471,7 +471,6 @@ ex:ARD a skos:Concept ;
 
 ex:ArDL a skos:Concept ;
   skos:prefLabel "Arthur D. Little"@en ;
-  skos:altLabel "ADL"@en ;
   skos:notation "com"^^fpv:entityType ;
   ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arthur_D._Little> ;
@@ -3226,6 +3225,7 @@ ex:DUD a skos:Concept ;
   skos:closeMatch <https://d-nb.info/010644768> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # Prüfen, wo verwendet - ggf. mit Bindestrichen (so in ZDB und DNB).
+  # Dublette zu UiD.
 
 
 ex:DV a skos:Concept ;
@@ -4746,7 +4746,7 @@ ex:ID a skos:Concept ;
 
 ex:IDA a skos:Concept ;
   skos:prefLabel "International Development Association"@en ;
-  skos:altLabelLabel "Internationale Entwicklungsorganisation"@de ;
+  skos:altLabel "Internationale Entwicklungsorganisation"@de ;
   skos:altLabel "IDA"@en ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
@@ -8154,6 +8154,7 @@ ex:UiD a skos:Concept ;
   skos:closeMatch <https://d-nb.info/010644768> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # Unklar, ob zwei verschiedene Periodika. siehe: https://www.kas.de/de/web/geschichte-der-cdu/dokumente.
+  # Dublette zu DUD: https://d-nb.info/010644768.
 
 
 ex:ULA a skos:Concept ;
@@ -8213,7 +8214,7 @@ ex:UNIC a skos:Concept ;
 
 ex:UNICEF a skos:Concept ;
   skos:prefLabel "United Nations Children’s Fund"@en ;
-  skos:prefLabel "Kinderhilfswerk der Vereinten Nationen"@de ;
+  skos:altLabel "Kinderhilfswerk der Vereinten Nationen"@de ;
   skos:altLabel "UNICEF"@en ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
@@ -8630,7 +8631,7 @@ ex:WaffenSS a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/67738-3> ;
-  skos:closeMatch <hhttps://de.wikipedia.org/wiki/Waffen-SS> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Waffen-SS> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
