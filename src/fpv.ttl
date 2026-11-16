@@ -473,7 +473,7 @@ ex:ArDL a skos:Concept ;
   skos:prefLabel "Arthur D. Little"@en ;
   skos:altLabel "ADL"@en ;
   skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "true"^^xsd:boolean ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arthur_D._Little> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
