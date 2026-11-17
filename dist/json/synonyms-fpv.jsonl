@@ -133,7 +133,6 @@
 {"id": "CDApp", "synonyms": ["CDA", "Christen-Democratisch Appèl"]}
 {"id": "CdE", "synonyms": ["Council of Europe", "Counseil de l’Europe", "Europarat"]}
 {"id": "CDS", "synonyms": ["CDS", "Centre des démocrates sociaux"]}
-{"id": "CentreDS", "synonyms": ["CDS", "Centre des démocrates sociaux"]}
 {"id": "CDU", "synonyms": ["CDU", "Christlich-Demokratische Union Deutschlands"]}
 {"id": "CDUFraktionBT", "synonyms": ["CDU/CSU-Bundestagsfraktion", "CDU/CSU-Fraktion im Deutschen Bundestag"]}
 {"id": "CDUFraktionsvorstandBT", "synonyms": ["CDU/CSU-Fraktionsvorstand", "Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag"]}
@@ -150,7 +149,6 @@
 {"id": "CMA", "synonyms": ["CMA", "Centrale Marketing-Gesellschaft der deutschen Agrarwirtschaft"]}
 {"id": "CNIP", "synonyms": ["CNIP", "Centre national des indépendants et paysans"]}
 {"id": "COCOM", "synonyms": ["COCOM", "Coordinating Committee for East West Trade Policy", "Coordinating Committee for Multilateral Export Controls", "Koordinierungskomittee für den Ost-West-Handel", "Koordinierungskomittee für multilaterale Ausfuhrkontrollen"]}
-{"id": "COMECON", "synonyms": ["CMEA", "COMECON", "Council for Mutual Economic Assistance"]}
 {"id": "Comisco", "synonyms": ["Arbeitsgemeinschaft Internationaler Sozialistenkonferenzen", "Comisco", "Committee of the International Socialist Conferences"]}
 {"id": "COPCON", "synonyms": ["COPCON", "Comando Operacional do Continente"]}
 {"id": "CSA", "synonyms": ["CSA", "Christlich-Soziale Arbeitnehmerschaft"]}
@@ -215,9 +213,8 @@
 {"id": "DNR", "synonyms": ["DNR", "Deutscher Naturschutzring"]}
 {"id": "DNVP", "synonyms": ["DNVP", "Deutschnationale Volkspartei"]}
 {"id": "dpa", "synonyms": ["Deutsche Presse-Agentur", "dpa"]}
-{"id": "DParlG", "synonyms": ["DPG", "Deutsche Parlamentarische Gesellschaft"]}
-{"id": "DPG", "synonyms": ["DPG", "Deutsche Parlamentarische Gesellschaft"]}
 {"id": "dpd", "synonyms": ["Deutscher Pressedienst", "dpd"]}
+{"id": "DPG", "synonyms": ["DPG", "Deutsche Parlamentarische Gesellschaft"]}
 {"id": "DPGe", "synonyms": ["DPG", "Deutsche Postgewerkschaft"]}
 {"id": "DPS", "synonyms": ["DPS", "Demokratische Partei Saar"]}
 {"id": "DR", "synonyms": ["DRP", "Deutsche Rechtspartei"]}
@@ -233,7 +230,6 @@
 {"id": "DStP", "synonyms": ["DStP", "Deutsche Staatspartei"]}
 {"id": "DT64", "synonyms": ["Jugendradio DT64", "Jugendstudio DT64"]}
 {"id": "DtBauernV", "synonyms": ["DBV", "Deutscher Bauernverband"]}
-{"id": "DtIndAnlagenAG", "synonyms": ["DIAG", "Deutsche Industrieanlagen AG"]}
 {"id": "DUD", "synonyms": ["DUD", "Deutschland Union Dienst"]}
 {"id": "DV", "synonyms": ["DVP", "Deutsche Volkspartei"]}
 {"id": "DVP", "synonyms": ["DVP", "Demokratische Volkspartei"]}
@@ -241,7 +237,6 @@
 {"id": "DWK", "synonyms": ["DWK", "Deutsche Wirtschaftskommission"]}
 {"id": "DWKern", "synonyms": ["DWK", "Deutsche Gesellschaft für Wiederaufarbeitung von Kernbrennstoffen"]}
 {"id": "DZP", "synonyms": ["DZP", "Deutsche Zentrumspartei", "Zentrum"]}
-{"id": "DZPFraktBT", "synonyms": ["Bundestagsfraktion der Deutschen Zentrumspartei", "DZP"]}
 {"id": "EAP", "synonyms": ["EAP", "Europäische Arbeiter-Partei"]}
 {"id": "ECE", "synonyms": ["ECE", "Economic Commission for Europe", "UNECE", "United Nations Economic Commission for Europe", "Wirtschaftskommission für Europa", "Wirtschaftskommission für Europa der Vereinten Nationen"]}
 {"id": "ECOFIN", "synonyms": ["ECOFIN", "EU-Finanzministerrat", "Ecofin-Rat", "Economic and Financial Affairs Council", "Rat für Wirtschaft und Finanzen"]}
@@ -317,7 +312,6 @@
 {"id": "GLS", "synonyms": ["GLS", "GLS Gemeinschaftsbank", "Gemeinschaftsbank für Leihen und Schenken"]}
 {"id": "GLU", "synonyms": ["GLU", "Grüne Liste Umweltschutz"]}
 {"id": "GMD", "synonyms": ["GMD", "Gesellschaft für Mathematik und Datenverarbeitung"]}
-{"id": "GSG", "synonyms": ["GSG 9", "Grenzschutzgruppe 9"]}
 {"id": "GSG-9", "synonyms": ["GSG 9", "Grenzschutzgruppe 9"]}
 {"id": "GTZ", "synonyms": ["Deutsche Gesellschaft für Technische Zusammenarbeit", "GTZ"]}
 {"id": "GUS", "synonyms": ["GUS", "Gemeinschaft Unabhängiger Staaten"]}
@@ -489,9 +483,8 @@
 {"id": "PS", "synonyms": ["PS", "Parti Socialiste", "Parti Socialiste de France", "Sozialistische Partei"]}
 {"id": "PSD", "synonyms": ["PSD", "Partia Socialdemokrate", "Partia Socialdemokrate e Shqipërisë", "Sozialdemokratische Partei"]}
 {"id": "PSOE", "synonyms": ["PSOE", "Partido Socialista Obrero Español", "Spanische Sozialistische Arbeiterpartei"]}
-{"id": "PVAP", "synonyms": ["PVAP", "PZPR", "Polnische Vereinigte Arbeiterpartei", "Polska Zjednoczona Partia Robotnicza"]}
-{"id": "PZPR", "synonyms": ["PVAP", "PZPR", "Polnische Vereinigte Arbeiterpartei", "Polska Zjednoczona Partia Robotnicza"]}
 {"id": "PvdA", "synonyms": ["Partei der Arbeit", "Partij van de Arbeid", "PvdA"]}
+{"id": "PZPR", "synonyms": ["PVAP", "PZPR", "Polnische Vereinigte Arbeiterpartei", "Polska Zjednoczona Partia Robotnicza"]}
 {"id": "Qantas", "synonyms": ["Qantas", "Qantas Airways"]}
 {"id": "RAF", "synonyms": ["RAF", "Rote Armee Fraktion"]}
 {"id": "RBosch", "synonyms": ["Bosch", "Robert Bosch GmbH"]}
@@ -499,7 +492,7 @@
 {"id": "ReichsbahnDDR", "synonyms": ["DR", "Deutsche Reichsbahn"]}
 {"id": "ReRi", "synonyms": ["Chinesische Volkszeitung", "Renmin Ribao"]}
 {"id": "RGBlatt", "synonyms": ["RGBl.", "Reichsgesetzblatt"]}
-{"id": "RGW", "synonyms": ["RGW", "Rat für gegenseitige Wirtschaftshilfe"]}
+{"id": "RGW", "synonyms": ["CMEA", "COMECON", "Council for Mutual Economic Assistance", "RGW", "Rat für gegenseitige Wirtschaftshilfe"]}
 {"id": "Rheinmetall", "synonyms": ["Rheinmetall", "Rheinmetall AG"]}
 {"id": "Rheinstahl", "synonyms": ["Rheinische Stahlwerke AG", "Rheinstahl"]}
 {"id": "RIAS", "synonyms": ["RIAS Berlin", "Rundfunk im amerikanischen Sektor"]}
@@ -610,7 +603,6 @@
 {"id": "VW", "synonyms": ["VW AG", "Volkswagen AG"]}
 {"id": "WamS", "synonyms": ["WamS", "Welt am Sonntag"]}
 {"id": "WAV", "synonyms": ["WAV", "Wirtschaftliche Aufbau-Vereinigung"]}
-{"id": "WAVerFrak", "synonyms": ["Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung", "WAV"]}
 {"id": "WAZ", "synonyms": ["WAZ", "Westdeutsche Allgemeine Zeitung"]}
 {"id": "WBA", "synonyms": ["WBA", "Willy-Brandt-Archiv"]}
 {"id": "WDR", "synonyms": ["WDR", "Westdeutscher Rundfunk", "Westdeutscher Rundfunk Köln"]}

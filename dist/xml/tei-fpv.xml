@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-16">16. November 2026, 15:19 Uhr</date>
+				<date when="2026-11-17">17. November 2026, 14:44 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -1528,15 +1528,6 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2117766-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Coordinating_Committee_on_Multilateral_Export_Controls"/>
 			</item>
-			<item xml:id="COMECON">
-				<term type="pref" xml:lang="en">Council for Mutual Economic Assistance</term>
-				<term type="alt" xml:lang="en">CMEA</term>
-				<term type="alt" xml:lang="en">COMECON</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/1016341-4"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Rat_f%C3%BCr_gegenseitige_Wirtschaftshilfe"/>
-			</item>
 			<item xml:id="COPCON">
 				<term type="pref" xml:lang="pt">Comando Operacional do Continente</term>
 				<term type="alt" xml:lang="pt">COPCON</term>
@@ -1647,14 +1638,6 @@
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4208422-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Corriere_della_Sera"/>
-			</item>
-			<item xml:id="CentreDS">
-				<term type="pref" xml:lang="fr">Centre des démocrates sociaux</term>
-				<term type="alt" xml:lang="fr">CDS</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/516235-X"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux"/>
 			</item>
 			<item xml:id="ChiTri">
 				<term type="pref" xml:lang="en">Chicago Tribune</term>
@@ -2127,14 +2110,6 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/37036-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Freie_Demokratische_Partei/Demokratische_Partei_Saar#Geschichte"/>
 			</item>
-			<item xml:id="DParlG">
-				<term type="pref" xml:lang="de">Deutsche Parlamentarische Gesellschaft</term>
-				<term type="alt" xml:lang="de">DPG</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/2088038-8"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Parlamentarische_Gesellschaft"/>
-			</item>
 			<item xml:id="DR">
 				<term type="pref" xml:lang="de">Deutsche Rechtspartei</term>
 				<term type="alt" xml:lang="de">DRP</term>
@@ -2304,7 +2279,6 @@
 			</item>
 			<item xml:id="DZPFraktBT">
 				<term type="pref" xml:lang="de">Bundestagsfraktion der Deutschen Zentrumspartei</term>
-				<term type="alt" xml:lang="de">DZP</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2008369-5"/>
@@ -2459,13 +2433,6 @@
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2008135-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Bauernverband"/>
-			</item>
-			<item xml:id="DtIndAnlagenAG">
-				<term type="pref" xml:lang="de">Deutsche Industrieanlagen AG</term>
-				<term type="alt" xml:lang="de">DIAG</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">com</note>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Industrieanlagen_Gesellschaft"/>
 			</item>
 			<item xml:id="EAP">
 				<term type="pref" xml:lang="de">Europäische Arbeiter-Partei</term>
@@ -3207,14 +3174,6 @@
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/20037-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/GMD-Forschungszentrum_Informationstechnik"/>
-			</item>
-			<item xml:id="GSG">
-				<term type="pref" xml:lang="de">Grenzschutzgruppe 9</term>
-				<term type="alt" xml:lang="de">GSG 9</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/4100247-7"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/GSG_9_der_Bundespolizei"/>
 			</item>
 			<item xml:id="GSG-9">
 				<term type="pref" xml:lang="de">Grenzschutzgruppe 9</term>
@@ -4992,16 +4951,6 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/219809-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Partido_Socialista_Obrero_Espa%C3%B1ol"/>
 			</item>
-			<item xml:id="PVAP">
-				<term type="pref" xml:lang="pl">Polska Zjednoczona Partia Robotnicza</term>
-				<term type="alt" xml:lang="de">Polnische Vereinigte Arbeiterpartei</term>
-				<term type="alt" xml:lang="pl">PZPR</term>
-				<term type="alt" xml:lang="de">PVAP</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/1009009-5"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Polnische_Vereinigte_Arbeiterpartei"/>
-			</item>
 			<item xml:id="PZPR">
 				<term type="pref" xml:lang="pl">Polska Zjednoczona Partia Robotnicza</term>
 				<term type="alt" xml:lang="de">Polnische Vereinigte Arbeiterpartei</term>
@@ -5011,6 +4960,7 @@
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1009009-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Polska_Zjednoczona_Partia_Robotnicza"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Polnische_Vereinigte_Arbeiterpartei"/>
 			</item>
 			<item xml:id="Pais">
 				<term type="pref" xml:lang="es">El País</term>
@@ -5143,7 +5093,10 @@
 			</item>
 			<item xml:id="RGW">
 				<term type="pref" xml:lang="de">Rat für gegenseitige Wirtschaftshilfe</term>
+				<term type="alt" xml:lang="en">Council for Mutual Economic Assistance</term>
 				<term type="alt" xml:lang="de">RGW</term>
+				<term type="alt" xml:lang="en">CMEA</term>
+				<term type="alt" xml:lang="en">COMECON</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1016341-4"/>
@@ -6477,7 +6430,6 @@
 			</item>
 			<item xml:id="WAVerFrak">
 				<term type="pref" xml:lang="de">Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung</term>
-				<term type="alt" xml:lang="de">WAV</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4501763-3"/>
