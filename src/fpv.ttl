@@ -5536,6 +5536,15 @@ ex:LESt a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+ex:Libe a skos:Concept ;
+  skos:prefLabel "Libération"@fr ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4361488-7> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Lib%C3%A9ration> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
 ex:Life a skos:Concept ;
   skos:prefLabel "Life"@en ;
   skos:notation "news"^^fpv:entityType ;
