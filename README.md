@@ -34,11 +34,18 @@ Die Verarbeitung der Daten soll automatisiert über GitHub Actions erfolgen:
 
 ```
 /
-├── .github/ 	-- Workflow für die GH-Actions
-├── dist/		-- TEI-XML für die Edition und JSONL für die Suche in der Edition
-├── docs/		-- Verzeichnis für HTML für Webseite mit dem Vokabular
-├── scripts/	-- Verzeichnis sämtlicher genutzter Scripte
-├── src/		-- Vokabular im Turtle-Format (RDF/SKOS).
+├── .github/ 			-- Workflow für die GH-Actions
+├── dist/				-- TEI-XML für die Edition und JSONL für die Suche in der Edition
+├── docs/				-- Verzeichnis für HTML für Webseite mit dem Vokabular
+├── scripts/			-- Verzeichnis sämtlicher genutzter Scripte
+├── skos-editor-build/	-- Lokaler SKOS-Editor für `fpv.ttl` (in Entwicklung)
+├── src/				-- Vokabular im Turtle-Format (RDF/SKOS).
 ├── README.md
 ```
+
+## SKOS-Editor (in Entwicklung) & KI-Transparenz
+
+Unter `skos-editor-build/FPV-Editor/` entsteht ein lokaler Windows-Editor für die Pflege von `src/fpv.ttl` ohne manuelle Turtle-Bearbeitung (Details siehe [`skos-editor-build/FPV-Editor/README.md`](skos-editor-build/FPV-Editor/README.md)).
+
+Die Entwicklung und Überarbeitung des Editors erfolgt mit Unterstützung von KI-Coding-Assistenten (u. a. Google Antigravity). Alle Änderungen werden durch automatisierte Tests sowie manuelle Prüfungen und Praxistests der Redaktion abgesichert; die fachliche und technische Verantwortung liegt bei der Edition. KI-unterstützte Commits werden in der Git-Historie über `Assisted-by:`- und `Co-authored-by:`-Trailer ausgewiesen.
 
