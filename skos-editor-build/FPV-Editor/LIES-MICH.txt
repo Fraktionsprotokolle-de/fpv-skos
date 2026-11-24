@@ -1,0 +1,66 @@
+FPV-Editor – Installation und Start (Windows 11, ohne Administratorrechte)
+=========================================================================
+
+Der FPV-Editor bearbeitet die Turtle-Datei fpv.ttl (kontrolliertes Vokabular
+von fraktionsprotokolle.de). Er läuft nur auf Ihrem Rechner; es wird nichts
+ins Internet gesendet.
+
+
+1. ZIP-Datei entsperren (falls Windows dies anbietet)
+-----------------------------------------------------
+Rechtsklick auf FPV-Editor.zip -> Eigenschaften. Unten im Reiter "Allgemein"
+steht, falls die Datei aus dem Internet oder per Cloud kam, ein Haken
+"Zulassen". Haken setzen, OK klicken. Das ZIP erst DANACH entpacken.
+(Gibt es den Haken nicht, ist nichts zu tun.)
+
+
+2. Entpacken - an einen lokalen Ort
+-----------------------------------
+Rechtsklick auf FPV-Editor.zip -> "Alle extrahieren ...". Im Feld "Dateien
+extrahieren nach" den Vorschlag ersetzen durch (Ihr Windows-Benutzername an
+Stelle von IhrName):
+
+    C:\Users\IhrName\FPV-Editor
+
+Danach liegt FPV-Editor.exe direkt in diesem Ordner.
+
+Bitte NICHT ablegen in:
+  - Nextcloud-, OneDrive- oder Dropbox-Ordnern (auch nicht "Dokumente" oder
+    "Desktop", falls diese mit OneDrive synchronisiert werden),
+  - Netzlaufwerken,
+  - der ZIP-Vorschau (also nicht FPV-Editor.exe direkt im ZIP doppelklicken).
+Der Ordner muss vollständig bleiben: Nie nur FPV-Editor.exe kopieren, immer
+den ganzen Ordner FPV-Editor.
+
+
+3. Starten
+----------
+Doppelklick auf FPV-Editor.exe. Es erscheint ein kleines Fenster, und der
+Browser öffnet sich mit dem Editor. Das kleine Fenster muss während der Arbeit
+geöffnet bleiben. Beenden: Im Editor "App beenden" oder im kleinen Fenster
+"App beenden".
+
+Beim ersten Start kann Windows eine blaue Meldung "Der Computer wurde durch
+Windows geschützt" zeigen. Dann "Weitere Informationen" und danach
+"Trotzdem ausführen" wählen. Das Programm ist nicht digital signiert.
+
+Eine Verknüpfung auf dem Desktop: Rechtsklick auf FPV-Editor.exe ->
+"Weitere Optionen anzeigen" -> "Senden an" -> "Desktop (Verknüpfung erstellen)".
+(Bitte keine Kopie der EXE auf den Desktop legen, nur die Verknüpfung.)
+
+
+4. Aktualisieren auf eine neue Fassung
+--------------------------------------
+Den alten Ordner FPV-Editor vollständig löschen (Editor vorher beenden), dann
+das neue ZIP wie oben entpacken. Nicht über den alten Ordner kopieren.
+Ihre fpv.ttl und die Sicherungen liegen NICHT in diesem Ordner und bleiben
+unberührt.
+
+
+5. Wenn etwas nicht funktioniert
+--------------------------------
+Meldung "Programm unvollständig": Der Ordner ist nicht vollständig oder wurde
+verändert. Ordner löschen und das ZIP erneut entpacken (Schritt 2).
+Besteht die Meldung weiter, bitte die Datei startup.log (im Ordner FPV-Editor;
+ist der Ordner schreibgeschützt, unter %LOCALAPPDATA%\FPV-Editor) an die
+Betreuung des Programms schicken.

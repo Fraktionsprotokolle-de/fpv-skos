@@ -1,0 +1,30 @@
+# Virtuelle Python-Umgebung
+.venv/
+venv/
+
+# Offline-Wheels (lokal für build_windows.bat, gehören nicht ins Repo)
+wheels/
+
+# PyInstaller-Build-Artefakte und Auslieferungs-ZIPs
+build/
+dist/
+*.spec
+
+# Python- und Test-Caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Laufzeitdateien, Logs und lokale Sicherungen
+startup.log
+fpv_backups/
+*.ttl.bak
+
+# Falls fpv.ttl testweise in den Projektordner kopiert wird (liegt sonst in eigenem Git-Repo)
+fpv.ttl
+
+# Windows / Editor
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
