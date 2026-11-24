@@ -28,7 +28,7 @@ STATIC_DIR = os.path.join(APP_ROOT, "static")
 # Dateien der Oberfläche, ohne die der Editor nicht funktioniert. Fehlt eine,
 # ist die Installation unvollständig (z. B. Ordner nur teilweise kopiert oder
 # synchronisiert) -- das wird beim Start geprüft und verständlich gemeldet.
-REQUIRED_STATIC_FILES = ("index.html", "app.js")
+REQUIRED_STATIC_FILES = ("index.html", "app.js", "styles.css")
 
 
 def check_static_files(static_dir: str | None = None) -> list[str]:
@@ -97,10 +97,15 @@ class AppState:
         # vorhandenen nach vorne, statt einen zweiten zu öffnen.
         #   status: "idle" | "open" | "done"; result: Pfad ("" = abgebrochen)
         self.choose = {"status": "idle", "result": None, "error": None}
-        # (sha256 des Dateistands, Synonym-Index): der Graph der Datei muss fuer
-        # die Live-Pruefung der Synonymliste nicht bei jedem Tastendruck neu
-        # geparst werden (ca. 0,3 s bei 860 Konzepten).
+        # (sha256 des Dateistands, RDFLib-Graph / Synonym-Index): der Graph
+        # der Datei muss fuer Live-Synonympruefung, Loeschen, Umbenennen und
+        # State-Aufbau nicht mehrfach neu geparst werden.
+        self.graph_cache = None
         self.synonym_cache = None
+        # (normierter Pfad, mtime_ns, size) des zuletzt gelesenen Dateistands,
+        # damit lesende Live-Pruefungen (/api/synonym-check) die Datei nicht
+        # bei jeder Eingabepause komplett von Platte lesen muessen.
+        self.loaded_stat = None
         # Vorgemerkte, noch nicht gespeicherte Eintraege, wie sie die
         # Oberflaeche zuletzt gemeldet hat: {"items": [...], "version": sha}
         # oder None. Dient dem Startfenster (Warnung/Speichern beim Beenden).
@@ -108,6 +113,31 @@ class AppState:
 
 
 STATE = AppState()
+
+
+def _stat_key(path: str):
+    try:
+        st = os.stat(path)
+        return (os.path.normcase(os.path.abspath(path)), st.st_mtime_ns, st.st_size)
+    except OSError:
+        return None
+
+
+def _set_loaded(loaded: core.LoadedFile):
+    STATE.loaded = loaded
+    STATE.loaded_stat = _stat_key(loaded.path)
+
+
+def _fresh_loaded_for_read() -> core.LoadedFile:
+    """Liefert den aktuellen Dateistand fuer rein lesende Pruefungen, ohne die
+    Datei bei unveraenderter mtime/Groesse erneut komplett von Platte zu lesen."""
+    cur = STATE.loaded
+    if cur is not None and STATE.loaded_stat is not None:
+        if _stat_key(cur.path) == STATE.loaded_stat:
+            return cur
+    fresh = core.read_ttl_file(cur.path)
+    _set_loaded(fresh)
+    return fresh
 
 
 def _normalize_alts_input(raw, default_lang: str) -> list:
@@ -118,24 +148,49 @@ def _normalize_alts_input(raw, default_lang: str) -> list:
     out = []
     for item in (raw or []):
         if isinstance(item, dict):
-            text = str(item.get("text", "")).strip()
+            text = core.normalize_single_line(item.get("text", "")).strip()
             lang = str(item.get("lang") or "").strip() or default_lang
         else:
-            text = str(item).strip()
+            text = core.normalize_single_line(item).strip()
             lang = default_lang
         if text:
             out.append({"text": text, "lang": lang})
     return out
 
 
-def _synonym_index(fresh):
+def _graph_for(fresh: core.LoadedFile):
+    """RDFLib-Graph des Dateistands `fresh` (mit Cache pro sha256)."""
+    cache = STATE.graph_cache
+    if cache and cache[0] == fresh.sha256:
+        return cache[1]
+    g = core.parse_graph(fresh.text)
+    STATE.graph_cache = (fresh.sha256, g)
+    return g
+
+
+def _synonym_index(fresh: core.LoadedFile):
     """Synonym-Index des Dateistands `fresh` (mit Cache pro sha256)."""
     cache = STATE.synonym_cache
     if cache and cache[0] == fresh.sha256:
         return cache[1]
-    index = core.build_synonym_index(fresh.text)
+    index = core.build_synonym_index_from_graph(_graph_for(fresh))
     STATE.synonym_cache = (fresh.sha256, index)
     return index
+
+
+def _build_state_cached(loaded: core.LoadedFile, *, findings=None, graph=None, syn_index=None) -> dict:
+    """Baut das Zustandsobjekt fuer `loaded` und fuellt/nutzt dabei den
+    Graph- und Synonym-Cache pro sha256, ohne die Datei doppelt zu parsen."""
+    if findings is None:
+        cached_graph = graph
+        if cached_graph is None and STATE.graph_cache and STATE.graph_cache[0] == loaded.sha256:
+            cached_graph = STATE.graph_cache[1]
+        findings, graph, syn_index = core.validate_whole_file_with_graph(loaded.text, graph=cached_graph)
+    if graph is not None:
+        STATE.graph_cache = (loaded.sha256, graph)
+        if syn_index is not None:
+            STATE.synonym_cache = (loaded.sha256, syn_index)
+    return core.build_state(loaded, findings=findings)
 
 
 def _alt_texts(alts) -> list:
@@ -148,10 +203,10 @@ def _record_from_data(data: dict) -> "core.Record":
     lang = str(data.get("lang", "de")).strip() or "de"
     return core.Record(
         id=str(data.get("id", "")).strip(),
-        pref=str(data.get("pref", "")).strip(),
+        pref=core.normalize_single_line(data.get("pref", "")).strip(),
         lang=lang,
         type=str(data.get("type", "")).strip(),
-        note=str(data.get("note", "")).strip(),
+        note=core.normalize_single_line(data.get("note", "")).strip(),
         synonym=bool(data.get("synonym", False)),
         # altLabels kommen als {text, lang}-Objekte; ein reiner String wird
         # zur Sicherheit weiterhin akzeptiert (siehe _normalize_alts_input).
@@ -186,8 +241,10 @@ def save_batch(items, version):
                 "error_type": "VersionConflict",
             }, 409
 
-        def fail(message, rec_id, findings=None, status=400):
+        def fail(message, rec_id, findings=None, status=400, error_type=None):
             body = {"error": f"Eintrag \u201e{rec_id}\u201c: {message} Nichts wurde geschrieben.", "failed_id": rec_id}
+            if error_type:
+                body["error_type"] = error_type
             if findings:
                 body["findings"] = findings
             return body, status
@@ -223,12 +280,13 @@ def save_batch(items, version):
                     return fail(
                         block.protect_reason or "Block ist gesch\u00fctzt und wird nicht \u00fcber das Formular bearbeitet.",
                         original_id,
+                        error_type="ProtectedBlockError",
                     )
                 text = text[:block.start] + block_text.rstrip("\n") + text[block.end:]
             records.append((rec, is_new))
 
         edited_ids = {r.id for r, _n in records}
-        whole_findings = core.validate_whole_file(text)
+        whole_findings, new_graph, new_syn_index = core.validate_whole_file_with_graph(text)
         blocking_errors = [
             f for f in whole_findings
             if f.level == "error" and (f.concept_id is None or f.concept_id in edited_ids)
@@ -272,11 +330,16 @@ def save_batch(items, version):
         except core.FpvError as exc:
             return {"error": str(exc), "error_type": type(exc).__name__}, 500
 
-        STATE.loaded = core.read_ttl_file(ttl_path)
+        _set_loaded(core.read_ttl_file(ttl_path))
         # Gespeichert: nichts ist mehr vorgemerkt, die Zwischensicherung entfaellt.
         STATE.pending = None
         core.clear_recovery(ttl_path)
-        result = core.build_state(STATE.loaded)
+        if STATE.loaded.text == text:
+            result = _build_state_cached(
+                STATE.loaded, findings=whole_findings, graph=new_graph, syn_index=new_syn_index
+            )
+        else:
+            result = _build_state_cached(STATE.loaded)
         result["write_method"] = wr.method
         result["backup_label"] = wr.backup_label
         result["backup_path"] = wr.backup_path
@@ -330,7 +393,7 @@ def create_app() -> Flask:
         with STATE.lock:
             if STATE.loaded is None:
                 return jsonify({"path": None, "records": [], "findings": [], "sha256": None})
-            return jsonify(core.build_state(STATE.loaded))
+            return jsonify(_build_state_cached(STATE.loaded))
 
     # -----------------------------------------------------------------
     # GET /api/backups
@@ -349,9 +412,9 @@ def create_app() -> Flask:
     def _load_path(path: str):
         loaded = core.read_ttl_file(path)
         with STATE.lock:
-            STATE.loaded = loaded
+            _set_loaded(loaded)
             STATE.pending = None
-        return core.build_state(loaded)
+            return _build_state_cached(loaded)
 
     # -----------------------------------------------------------------
     # POST /api/open  { path }
@@ -458,6 +521,7 @@ def create_app() -> Flask:
         with STATE.lock:
             previous = STATE.loaded.path if STATE.loaded else None
             STATE.loaded = None
+            STATE.loaded_stat = None
             STATE.pending = None
             # Der manuell gewählte Sicherungsort gilt laut Übergabe §5 nur für
             # die laufende Sitzung und bezieht sich auf EINE bestimmte Datei;
@@ -484,136 +548,24 @@ def create_app() -> Flask:
             # Frisch von der Platte lesen, damit "Datei prüfen" auch externe
             # Änderungen seit dem Laden erkennt.
             fresh = core.read_ttl_file(STATE.loaded.path)
-            STATE.loaded = fresh
-            return jsonify(core.build_state(fresh))
+            _set_loaded(fresh)
+            return jsonify(_build_state_cached(fresh))
 
     # -----------------------------------------------------------------
     # POST /api/save  { original_id, data, version }
+    #   Duenner Wrapper um save_batch() fuer Abwaertskompatibilitaet
+    #   (Oberflaeche nutzt /api/save-batch).
     # -----------------------------------------------------------------
     @app.post("/api/save")
     def api_save():
         require_token()
         payload = request.get_json(silent=True) or {}
-        original_id = payload.get("original_id")  # None/"" => Neuanlage
-        data = payload.get("data") or {}
-        version = payload.get("version")
-
-        with STATE.lock:
-            if STATE.loaded is None:
-                return error_response(core.FpvError("Keine Datei geladen."))
-            ttl_path = STATE.loaded.path
-
-            # Version gegen den TATSÄCHLICHEN Stand auf der Platte prüfen,
-            # nicht nur gegen den zuletzt im Speicher gehaltenen Stand.
-            fresh = core.read_ttl_file(ttl_path)
-            if version != fresh.sha256:
-                return error_response(
-                    core.VersionConflict(
-                        "Die Datei wurde seit dem Laden extern verändert. "
-                        "Bitte neu laden und Änderungen erneut vornehmen."
-                    ),
-                    status=409,
-                )
-
-            is_new = not original_id
-            rec = _record_from_data(data)
-
-            existing_ids = {m.group(1) for m in core._BLOCK_START_RE.finditer(fresh.text)}
-            if not is_new and rec.id != original_id:
-                return error_response(core.FpvError("Eine bestehende ID darf nicht geändert werden."))
-
-            field_findings = core.validate_record_fields(rec, is_new=is_new, existing_ids=existing_ids)
-            field_errors = [f for f in field_findings if f.level == "error"]
-            if field_errors:
-                return jsonify({
-                    "error": "Validierung fehlgeschlagen.",
-                    "findings": [f.to_json() for f in field_findings],
-                }), 400
-
-            new_block_text = core.render_record_to_block(rec)
-
-            if is_new:
-                sep = "" if fresh.text.endswith("\n\n") else ("\n" if fresh.text.endswith("\n") else "\n\n")
-                new_full_text = fresh.text + sep + new_block_text
-            else:
-                block = core.find_block(fresh.text, original_id)
-                if block is None:
-                    return error_response(core.FpvError(f"Block '{original_id}' nicht gefunden."))
-                if block.protected:
-                    return error_response(core.ProtectedBlockError(
-                        block.protect_reason or "Block ist geschützt und wird nicht über das Formular bearbeitet."
-                    ))
-                # block.end liegt direkt NACH dem abschliessenden "."; der Abstand zum
-                # naechsten Block steht noch im Rest der Datei. Der gerenderte Block
-                # endet mit "\n" und muss deshalb ohne dieses Ende eingesetzt werden,
-                # sonst kommt bei jedem Speichern eine Leerzeile dazu.
-                new_full_text = fresh.text[:block.start] + new_block_text.rstrip("\n") + fresh.text[block.end:]
-
-            whole_findings = core.validate_whole_file(new_full_text)
-            # Nur Fehler blockieren das Schreiben, die entweder die Datei als
-            # Ganzes betreffen (Turtle-Syntax nicht parsbar; kein konkreter
-            # concept_id zuordenbar) oder GENAU den gerade bearbeiteten
-            # Datensatz. Vorbestehende Fehler in ANDEREN Datensätzen blockieren
-            # nicht mehr — sonst entsteht ein Deadlock: Der Editor erlaubt nur
-            # das Bearbeiten eines Datensatzes zur Zeit, könnte also nie
-            # gespeichert werden, solange irgendwo sonst in der Datei ein
-            # (unabhängiger) Altfehler existiert. Diese Änderung geht auf
-            # ausdrückliches Nutzerfeedback zurück: "besser mit Fehler
-            # speichern als stundenlange Arbeit verlieren". Die reine
-            # Turtle-Syntaxgültigkeit bleibt dabei weiterhin eine harte
-            # Voraussetzung zum Schreiben — nur strukturelle/Feld-Befunde zu
-            # FREMDEN Datensätzen werden nicht mehr als Blocker behandelt.
-            blocking_errors = [
-                f for f in whole_findings
-                if f.level == "error" and (f.concept_id is None or f.concept_id == rec.id)
-            ]
-            if blocking_errors:
-                return jsonify({
-                    "error": "Die resultierende Gesamtdatei wäre ungültig; nichts wurde geschrieben.",
-                    "findings": [f.to_json() for f in blocking_errors],
-                }), 400
-
-            # Synonymliste: Eine Benennung darf nicht bei zwei Konzepten stehen, die
-            # beide in die Typesense-Synonymliste gehen. Blockiert werden nur NEU
-            # entstehende Kollisionen dieses Konzepts; bereits vorhandene
-            # (Altlasten) erscheinen nur als Hinweis, sonst waere dieses Konzept
-            # nicht mehr speicherbar (gleiche Begruendung wie oben).
-            try:
-                syn_conflicts = core.synonym_conflicts_for_record(
-                    _synonym_index(fresh), "__NEU__" if is_new else rec.id,
-                    rec.pref, _alt_texts(rec.alts), rec.synonym,
-                )
-            except Exception:
-                syn_conflicts = []  # nicht parsbarer Altstand: faengt die Gesamtpruefung ab
-            new_conflicts = [c for c in syn_conflicts if c["is_new"]]
-            if new_conflicts:
-                return jsonify({
-                    "error": (
-                        "Nichts wurde geschrieben: Eine Benennung steht schon bei einem anderen Konzept der "
-                        "Synonymliste, die Suche w\u00fcrde beide finden. Bitte die Benennung bei einem der "
-                        "Konzepte entfernen oder bei einem den Haken \u201eIn Synonymliste verwenden\u201c wegnehmen."
-                    ),
-                    "findings": [
-                        core.Finding("error", core.synonym_conflict_message(c), rec.id).to_json()
-                        for c in new_conflicts
-                    ],
-                }), 400
-
-            try:
-                wr = core.write_ttl_atomically(
-                    ttl_path, new_full_text, fresh.uses_crlf, fresh.raw_bytes, STATE.manual_backup_dir
-                )
-            except core.BackupError as exc:
-                return error_response(exc, status=507)
-            except core.FpvError as exc:
-                return error_response(exc, status=500)
-
-            STATE.loaded = core.read_ttl_file(ttl_path)
-            result = core.build_state(STATE.loaded)
-            result["write_method"] = wr.method
-            result["backup_label"] = wr.backup_label
-            result["backup_path"] = wr.backup_path
-            return jsonify(result)
+        item = {
+            "original_id": payload.get("original_id"),
+            "data": payload.get("data") or {},
+        }
+        body, status = save_batch([item], payload.get("version"))
+        return jsonify(body), status
 
     # -----------------------------------------------------------------
     # POST /api/save-batch  { version, items: [{original_id, data}, ...] }
@@ -724,7 +676,7 @@ def create_app() -> Flask:
             if block is None:
                 return error_response(core.FpvError(f"Block '{concept_id}' nicht gefunden."))
 
-            refs = core.find_referencing_subjects(fresh.text, concept_id)
+            refs = core.find_referencing_subjects(fresh.text, concept_id, graph=_graph_for(fresh))
             if refs:
                 return error_response(
                     core.ReferencedError(
@@ -747,18 +699,19 @@ def create_app() -> Flask:
             except core.FpvError as exc:
                 return error_response(exc, status=500)
 
-            STATE.loaded = core.read_ttl_file(ttl_path)
-            result = core.build_state(STATE.loaded)
+            _set_loaded(core.read_ttl_file(ttl_path))
+            result = _build_state_cached(STATE.loaded)
             result["write_method"] = wr.method
             result["backup_label"] = wr.backup_label
             result["backup_path"] = wr.backup_path
             return jsonify(result)
 
     # -----------------------------------------------------------------
-    # POST /api/synonym-check  { original_id, data: {id, pref, alts, synonym} }
+    # POST /api/synonym-check  { original_id, data: {id, pref, alts, synonym}, drafts? }
     #   Live-Pruefung im Formular: Kollisionen der Benennungen dieses Konzepts
-    #   mit anderen Konzepten der Synonymliste. Schreibt nichts. `is_new`
-    #   unterscheidet neue (blockierende) von bereits vorhandenen Kollisionen.
+    #   mit anderen Konzepten der Synonymliste (inkl. optionaler vorgemerkter
+    #   Entwuerfe aus der Oberflaeche). Schreibt nichts. `is_new` unterscheidet
+    #   neue (blockierende) von bereits vorhandenen Kollisionen.
     # -----------------------------------------------------------------
     @app.post("/api/synonym-check")
     def api_synonym_check():
@@ -766,21 +719,37 @@ def create_app() -> Flask:
         payload = request.get_json(silent=True) or {}
         original_id = payload.get("original_id")
         data = payload.get("data") or {}
+        raw_drafts = payload.get("drafts") or []
         with STATE.lock:
             if STATE.loaded is None:
                 return error_response(core.FpvError("Keine Datei geladen."))
-            fresh = core.read_ttl_file(STATE.loaded.path)
+            fresh = _fresh_loaded_for_read()
             try:
                 index = _synonym_index(fresh)
             except Exception as exc:
                 return error_response(core.FpvError(f"Datei nicht lesbar: {exc}"))
             default_lang = str(data.get("lang", "de")).strip() or "de"
+            other_drafts = []
+            for item in raw_drafts if isinstance(raw_drafts, list) else []:
+                if not isinstance(item, dict):
+                    continue
+                d_data = item.get("data") or {}
+                d_lang = str(d_data.get("lang", "de")).strip() or "de"
+                other_drafts.append({
+                    "key": item.get("key"),
+                    "original_id": item.get("original_id"),
+                    "id": str(d_data.get("id", "")).strip(),
+                    "pref": core.normalize_single_line(d_data.get("pref", "")).strip(),
+                    "alts": _alt_texts(_normalize_alts_input(d_data.get("alts"), d_lang)),
+                    "synonym": bool(d_data.get("synonym", False)),
+                })
             conflicts = core.synonym_conflicts_for_record(
                 index,
                 str(original_id) if original_id else "__NEU__",
-                str(data.get("pref", "")).strip(),
+                core.normalize_single_line(data.get("pref", "")).strip(),
                 _alt_texts(_normalize_alts_input(data.get("alts"), default_lang)),
                 bool(data.get("synonym", False)),
+                other_drafts=other_drafts,
             )
             return jsonify({"conflicts": conflicts})
 
@@ -798,9 +767,10 @@ def create_app() -> Flask:
         with STATE.lock:
             if STATE.loaded is None:
                 return error_response(core.FpvError("Keine Datei geladen."))
-            fresh = core.read_ttl_file(STATE.loaded.path)
+            fresh = _fresh_loaded_for_read()
             try:
-                _block, referrers, blocked = core.plan_rename(fresh.text, concept_id)
+                g = _graph_for(fresh)
+                _block, referrers, blocked = core.plan_rename(fresh.text, concept_id, graph=g)
             except core.FpvError as exc:
                 return error_response(exc)
             refs = []
@@ -815,7 +785,7 @@ def create_app() -> Flask:
                 "uri": core.EX + concept_id,
                 "referrers": refs,
                 "blocked": blocked,
-                "new_id_problem": core.check_new_id(fresh.text, concept_id, new_id) if new_id else None,
+                "new_id_problem": core.check_new_id(fresh.text, concept_id, new_id, graph=g) if new_id else None,
             })
 
     # -----------------------------------------------------------------
@@ -845,13 +815,18 @@ def create_app() -> Flask:
                     status=409,
                 )
             try:
-                new_text, updated = core.rename_concept(fresh.text, old_id, new_id)
+                old_graph = _graph_for(fresh)
+                new_text, updated, new_graph = core.rename_concept(
+                    fresh.text, old_id, new_id, graph=old_graph, return_graph=True
+                )
             except core.ReferencedError as exc:
                 return error_response(exc, status=409)
             except core.FpvError as exc:
                 return error_response(exc)
 
-            whole_findings = core.validate_whole_file(new_text)
+            whole_findings, new_graph, new_syn_index = core.validate_whole_file_with_graph(
+                new_text, graph=new_graph
+            )
             blocking = [
                 f for f in whole_findings
                 if f.level == "error" and (f.concept_id is None or f.concept_id == new_id)
@@ -871,8 +846,13 @@ def create_app() -> Flask:
             except core.FpvError as exc:
                 return error_response(exc, status=500)
 
-            STATE.loaded = core.read_ttl_file(ttl_path)
-            result = core.build_state(STATE.loaded)
+            _set_loaded(core.read_ttl_file(ttl_path))
+            if STATE.loaded.text == new_text:
+                result = _build_state_cached(
+                    STATE.loaded, findings=whole_findings, graph=new_graph, syn_index=new_syn_index
+                )
+            else:
+                result = _build_state_cached(STATE.loaded)
             result["write_method"] = wr.method
             result["backup_label"] = wr.backup_label
             result["backup_path"] = wr.backup_path
@@ -941,8 +921,8 @@ def create_app() -> Flask:
             except core.FpvError as exc:
                 return error_response(exc, status=500)
 
-            STATE.loaded = core.read_ttl_file(ttl_path)
-            result = core.build_state(STATE.loaded)
+            _set_loaded(core.read_ttl_file(ttl_path))
+            result = _build_state_cached(STATE.loaded)
             result["write_method"] = wr.method
             result["backup_label"] = wr.backup_label
             result["backup_path"] = wr.backup_path

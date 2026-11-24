@@ -1143,6 +1143,7 @@ def test_static_check_complete_install_has_no_problem():
 
 def test_static_check_reports_missing_index_html(tmp_path):
     (tmp_path / "app.js").write_text("// leer genug", encoding="utf-8")
+    (tmp_path / "styles.css").write_text("/* css */", encoding="utf-8")
     assert fpv_app.check_static_files(str(tmp_path)) == ["index.html"]
     text = fpv_app.describe_static_problem(str(tmp_path))
     assert "index.html" in text and "_internal" in text and "app.js," not in text.split("Fehlend:")[1].split("\n")[0]
@@ -1150,9 +1151,10 @@ def test_static_check_reports_missing_index_html(tmp_path):
 
 
 def test_static_check_reports_missing_folder_and_empty_file(tmp_path):
-    assert set(fpv_app.check_static_files(str(tmp_path / "gibt-es-nicht"))) == {"index.html", "app.js"}
+    assert set(fpv_app.check_static_files(str(tmp_path / "gibt-es-nicht"))) == {"index.html", "app.js", "styles.css"}
     (tmp_path / "index.html").write_text("", encoding="utf-8")  # 0 Byte = unvollständig synchronisiert
     (tmp_path / "app.js").write_text("x", encoding="utf-8")
+    (tmp_path / "styles.css").write_text("x", encoding="utf-8")
     assert fpv_app.check_static_files(str(tmp_path)) == ["index.html"]
 
 
@@ -1453,7 +1455,35 @@ def test_backup_goes_to_one_place_and_failure_blocks_write(tmp_path, monkeypatch
     blocker.write_text("x", encoding="utf-8")
     with pytest.raises(core.BackupError) as exc:
         core.create_verified_backup(ttl, b"alt", str(blocker))
-    assert "NICHT verändert" in str(exc.value) and "Sicherungsort wählen" in str(exc.value)
+    assert "NICHT verändert" in str(exc.value) and "Frühere Stände" in str(exc.value)
+
+
+def test_backup_rotation_keeps_only_newest_n(tmp_path, monkeypatch):
+    monkeypatch.setattr(core, "MAX_BACKUPS_PER_FILE", 3)
+    bdir = tmp_path / "backups"
+    bdir.mkdir()
+    ttl = str(tmp_path / "fpv.ttl")
+    unrelated = bdir / "not-a-backup.txt"
+    unrelated.write_text("behalten", encoding="utf-8")
+
+    created = []
+    for i in range(5):
+        _lbl, p = core.create_verified_backup(ttl, f"stand-{i}".encode("utf-8"), str(bdir))
+        # Eindeutige mtime setzen, damit Reihenfolge unter Windows deterministisch ist.
+        ts = 1_700_000_000 + i * 10
+        os.utime(p, (ts, ts))
+        created.append(p)
+    # Noch eine sechste Sicherung ausloesen -> Rotation behaelt genau die 3 neuesten.
+    _lbl, p5 = core.create_verified_backup(ttl, b"stand-5", str(bdir))
+    os.utime(p5, (1_700_000_100, 1_700_000_100))
+    created.append(p5)
+
+    remaining = sorted(p.name for p in bdir.glob("*.ttl.bak"))
+    assert len(remaining) == 3
+    assert unrelated.exists(), "Fremddateien im Ordner duerfen nie geloescht werden"
+    # Die 3 neuesten Staende (3, 4, 5) muessen ueberlebt haben.
+    contents = {p.read_text(encoding="utf-8") for p in bdir.glob("*.ttl.bak")}
+    assert contents == {"stand-3", "stand-4", "stand-5"}
 
 
 def test_batch_returns_507_and_keeps_file_when_backup_impossible(env):
@@ -1704,3 +1734,234 @@ def test_choose_requires_token(env):
 def test_ping(env):
     status, resp = _get(env, "/api/ping")
     assert status == 200 and resp["ok"] is True
+
+
+# ---------------------------------------------------------------------
+# Architektur-Verbesserungen: Zeilenumbrueche, storage_check, Wrapper,
+# Graph-Cache, Live-Synonympruefung mit Entwuerfen, ausgelagertes CSS
+# ---------------------------------------------------------------------
+
+def test_note_newlines_normalized_to_spaces_on_save(env):
+    state = _open(env)
+    abb = _record(state, "ABB")
+    abb["note"] = "Erste Zeile\nZweite Zeile\r\n  Dritte Zeile"
+    status, resp = _post(env, "/api/save-batch", {
+        "version": state["sha256"],
+        "items": [{"original_id": "ABB", "data": abb}],
+    })
+    assert status == 200, resp
+    assert _record(resp, "ABB")["note"] == "Erste Zeile Zweite Zeile Dritte Zeile"
+    text = open(env["ttl_path"], encoding="utf-8").read()
+    assert 'skos:note "Erste Zeile Zweite Zeile Dritte Zeile"@de .' in text
+
+    # Auch direktes Rendern eines Records mit Newline darf kein ungueltiges Turtle erzeugen.
+    rendered = core.render_record_to_block(core.Record(
+        id="TestNL", pref="A\nB", lang="de", type="org",
+        note="Zeile 1\r\nZeile 2", synonym=False,
+        alts=[{"text": "Alt\nText", "lang": "de"}],
+    ))
+    assert '"A B"@de' in rendered
+    assert '"Alt Text"@de' in rendered
+    assert '"Zeile 1 Zeile 2"@de .' in rendered
+
+
+def test_note_only_newlines_rejected_as_empty(env):
+    state = _open(env)
+    abb = _record(state, "ABB")
+    abb["note"] = " \n\r\n\t "
+    status, resp = _post(env, "/api/save-batch", {
+        "version": state["sha256"],
+        "items": [{"original_id": "ABB", "data": abb}],
+    })
+    assert status == 400
+    assert any("skos:note" in f["message"] for f in resp["findings"])
+
+
+def test_storage_check_only_active_backup_and_ttl_dir_no_empty_dirs(tmp_path, monkeypatch):
+    ttl_dir = tmp_path / "repo"
+    ttl_dir.mkdir()
+    ttl = ttl_dir / "fpv.ttl"
+    ttl.write_text(SAMPLE, encoding="utf-8")
+
+    localappdata = tmp_path / "localappdata"
+    localappdata.mkdir()
+    monkeypatch.setenv("LOCALAPPDATA", str(localappdata))
+
+    results = core.storage_check(str(ttl))
+    assert len(results) == 2
+    assert all(r["writable"] for r in results)
+    ttl_entry = next(r for r in results if os.path.normcase(os.path.abspath(r["path"])) == os.path.normcase(os.path.abspath(str(ttl_dir))))
+    assert ttl_entry["replace_tested"] is True
+    # Keine leeren fpv_backups-Ordner neben TTL und keine Rest-Ordner unter LOCALAPPDATA.
+    assert not (ttl_dir / "fpv_backups").exists()
+    assert not (localappdata / "FPV-Editor").exists()
+    assert not any(p.name.startswith(".fpv_write_test") for p in ttl_dir.iterdir())
+
+    # Wenn manual_dir == ttl_dir, wird der Ordner nur einmal geprueft (mit replace_tested=True).
+    same_results = core.storage_check(str(ttl), manual_dir=str(ttl_dir))
+    assert len(same_results) == 1
+    assert same_results[0]["writable"] is True and same_results[0]["replace_tested"] is True
+
+    # Bereits bestehende Ordner bleiben erhalten.
+    existing_backup = tmp_path / "existing_backup"
+    existing_backup.mkdir()
+    res_existing = core.storage_check(str(ttl), manual_dir=str(existing_backup))
+    assert len(res_existing) == 2 and existing_backup.is_dir()
+
+
+def test_api_save_clears_pending_and_recovery(env):
+    state = _open(env)
+    items = _pending_items(state)
+    _post(env, "/api/pending", {"items": items, "version": state["sha256"], "persist": True})
+    status, resp = _post(env, "/api/save", {
+        "original_id": "ABB", "data": items[0]["data"], "version": state["sha256"],
+    })
+    assert status == 200, resp
+    assert fpv_app.STATE.pending is None
+    assert _get(env, "/api/recovery")[1]["exists"] is False
+
+
+def test_graph_cache_avoids_redundant_parses_on_save_rename_and_synonym_check(env, tmp_path, monkeypatch):
+    env, ttl_path = _rename_env(env, tmp_path)
+    orig_parse = core.Graph.parse
+    parse_count = 0
+
+    def counting_parse(self, *args, **kwargs):
+        nonlocal parse_count
+        parse_count += 1
+        return orig_parse(self, *args, **kwargs)
+
+    monkeypatch.setattr(core.Graph, "parse", counting_parse)
+
+    # 1) Oeffnen: genau 1 Parse (fuellt Graph- und Synonym-Cache).
+    state = _open(env)
+    assert parse_count == 1
+
+    # 2) Live-Synonympruefung bei unveraenderter Datei: 0 neue Parses.
+    parse_count = 0
+    status, _ = _post(env, "/api/synonym-check", {
+        "original_id": "Ruhrstatut",
+        "data": {"id": "Ruhrstatut", "pref": "Test", "synonym": True, "alts": [{"text": "X", "lang": "de"}]},
+    })
+    assert status == 200
+    assert parse_count == 0
+
+    # 3) Speichern: genau 1 Parse (Validierung der neuen Datei wird fuer build_state wiederverwendet).
+    parse_count = 0
+    rec = _record(state, "Montanunion")
+    rec["note"] = "Cache-Test."
+    status, state = _post(env, "/api/save-batch", {
+        "version": state["sha256"],
+        "items": [{"original_id": "Montanunion", "data": rec}],
+    })
+    assert status == 200, state
+    assert parse_count == 1
+
+    # 4) Umbenennen: genau 1 Parse (nur neuer Text; alter Graph kommt aus dem Cache).
+    parse_count = 0
+    status, state = _post(env, "/api/rename", {
+        "id": "Ruhrstatut", "new_id": "Ruhrstatut1949", "version": state["sha256"],
+    })
+    assert status == 200, state
+    assert parse_count == 1
+
+
+def test_synonym_check_includes_pending_drafts_and_detects_external_changes(env, tmp_path):
+    env, ttl_path = _rename_env(env, tmp_path, text=SYN_SAMPLE, name="syn_drafts.ttl")
+    _open(env)
+
+    # 1) Kollision mit anderem vorgemerkten bestehenden Eintrag.
+    body = {
+        "original_id": "Missionswerk",
+        "data": {"id": "Missionswerk", "pref": "Berliner Missionswerk", "synonym": True,
+                 "alts": [{"text": "SpezialKuerzel", "lang": "de"}]},
+        "drafts": [{
+            "key": "BMW",
+            "original_id": "BMW",
+            "data": {"id": "BMW", "pref": "Bayerische Motoren Werke", "synonym": True,
+                     "alts": [{"text": "spezialkuerzel", "lang": "de"}]},
+        }],
+    }
+    status, resp = _post(env, "/api/synonym-check", body)
+    assert status == 200
+    assert len(resp["conflicts"]) == 1
+    c = resp["conflicts"][0]
+    assert c["other_id"] == "BMW" and c["is_new"] is True and c["in_draft"] is True and c["draft_key"] == "BMW"
+
+    # 2) Kollision mit einem noch ungespeicherten neuen Eintrag (ohne ID).
+    body_new = {
+        "original_id": "Missionswerk",
+        "data": {"id": "Missionswerk", "pref": "Berliner Missionswerk", "synonym": True,
+                 "alts": [{"text": "Brandneu", "lang": "de"}]},
+        "drafts": [{
+            "key": "__NEW__:1",
+            "original_id": None,
+            "data": {"id": "", "pref": "Neuer Verein", "synonym": True,
+                     "alts": [{"text": "Brandneu", "lang": "de"}]},
+        }],
+    }
+    status, resp = _post(env, "/api/synonym-check", body_new)
+    assert status == 200
+    assert len(resp["conflicts"]) == 1
+    assert resp["conflicts"][0]["other_id"] == "__NEW__:1"
+    assert resp["conflicts"][0]["draft_key"] == "__NEW__:1"
+    assert resp["conflicts"][0]["in_draft"] is True and resp["conflicts"][0]["is_new"] is True
+
+    # 3) Ein Entwurf, der den Synonym-Haken bei MoPoHH deaktiviert, loest die Kollision live auf.
+    body_resolved = {
+        "original_id": "MoPoBerlin",
+        "data": {"id": "MoPoBerlin", "pref": "Berliner Morgenpost", "synonym": True,
+                 "alts": [{"text": "MoPo", "lang": "de"}]},
+        "drafts": [{
+            "key": "MoPoHH",
+            "original_id": "MoPoHH",
+            "data": {"id": "MoPoHH", "pref": "Hamburger Morgenpost", "synonym": False,
+                     "alts": [{"text": "Mopo", "lang": "de"}]},
+        }],
+    }
+    status, resp = _post(env, "/api/synonym-check", body_resolved)
+    assert status == 200 and resp["conflicts"] == []
+
+    # 4) Externe Aenderung an der Datei wird trotz Stat-Cache erkannt.
+    ttl_path.write_text(
+        ttl_path.read_text(encoding="utf-8") + _syn_block("ExternNeu", "Externer Verein", ["ExtKuerzel"]),
+        encoding="utf-8",
+    )
+    status, resp = _post(env, "/api/synonym-check", {
+        "original_id": "Missionswerk",
+        "data": {"id": "Missionswerk", "pref": "Berliner Missionswerk", "synonym": True,
+                 "alts": [{"text": "ExtKuerzel", "lang": "de"}]},
+    })
+    assert status == 200
+    assert [(x["other_id"], x["is_new"]) for x in resp["conflicts"]] == [("ExternNeu", True)]
+
+
+def test_styles_css_served_and_linked(env):
+    resp_index = env["client"].get("/")
+    assert resp_index.status_code == 200
+    html = resp_index.get_data(as_text=True)
+    assert '/static/styles.css' in html
+    assert 'id="toast-bar"' in html
+    assert 'id="findings-filter"' in html
+    assert 'id="welcome-no-file"' in html
+
+    resp_css = env["client"].get("/static/styles.css")
+    assert resp_css.status_code == 200
+    css = resp_css.get_data(as_text=True)
+    assert ".backup-more" in css
+    assert ".toast-bar" in css
+    assert ".filter-pill" in css
+    assert ".welcome-card" in css
+    assert ".tech-details" in css
+    assert ".type-pill" in css
+
+    # Alle destruktiven Rueckfragen nutzen eigene App-Modals statt Browser-confirm().
+    resp_js = env["client"].get("/static/app.js")
+    assert resp_js.status_code == 200
+    js = resp_js.get_data(as_text=True)
+    import re as _re
+    js_no_comments = _re.sub(r"//.*", "", js)
+    assert not _re.search(r"\bconfirm\s*\(", js_no_comments), "Rohes Browser-confirm() in app.js gefunden"
+    assert "showConfirmModal" in js
+    assert "showBanner" in js
+    assert "appendTechDetails" in js

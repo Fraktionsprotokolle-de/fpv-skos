@@ -500,12 +500,19 @@ class Record:
         return asdict(self)
 
 
+def normalize_single_line(s: str) -> str:
+    """Ersetzt Zeilenumbrüche (CR/LF) samt umgebendem horizontalem Leerraum
+    durch ein einzelnes Leerzeichen, damit einfach zitierte Turtle-Literale
+    nie durch rohe Zeilenumbrüche ungültig werden."""
+    return re.sub(r"[ \t]*[\r\n]+[ \t]*", " ", str(s or ""))
+
+
 def _unescape_literal(s: str) -> str:
     return s.replace('\\"', '"').replace("\\\\", "\\")
 
 
 def _escape_literal(s: str) -> str:
-    return s.replace("\\", "\\\\").replace('"', '\\"')
+    return normalize_single_line(s).replace("\\", "\\\\").replace('"', '\\"')
 
 
 def parse_block_to_record(block: Block) -> Record:
@@ -689,11 +696,18 @@ def validate_record_fields(rec: Record, *, is_new: bool, existing_ids: set) -> l
     return findings
 
 
-def validate_whole_file(text: str) -> list:
-    """Prüft die gesamte Datei: doppelte IDs im Quelltext (auch wenn RDF-Set-
-    Semantik identische Tripel zusammenfassen und eine reine Tripelzählung sie
-    übersehen würde — siehe Übergabe §2), strukturelle Turtle-Gültigkeit via
-    RDFLib, sowie Feldregeln je nicht geschütztem Block."""
+def parse_graph(text: str) -> Graph:
+    """Parst einen Turtle-Text in einen RDFLib-Graph."""
+    g = Graph()
+    g.parse(data=text, format="turtle")
+    return g
+
+
+def validate_whole_file_with_graph(text: str, graph: Optional[Graph] = None):
+    """Prüft die gesamte Datei wie validate_whole_file() und gibt zusätzlich
+    den geparsten RDFLib-Graph sowie den Synonym-Index zurück, damit Aufrufer
+    denselben Stand nicht mehrfach parsen müssen. Bei Syntaxfehlern ist der
+    Graph None."""
     findings = []
 
     # 1) Doppelte IDs im Quelltext (Regex-Scan, unabhängig vom RDF-Graph).
@@ -713,12 +727,14 @@ def validate_whole_file(text: str) -> list:
             ))
 
     # 2) Strukturelle Gültigkeit via RDFLib.
-    g = Graph()
-    try:
-        g.parse(data=text, format="turtle")
-    except Exception as exc:
-        findings.append(Finding("error", f"Turtle ist syntaktisch ungültig: {exc}"))
-        return findings  # Feldprüfung ohne gültiges Parsing wenig sinnvoll
+    g = graph
+    if g is None:
+        g = Graph()
+        try:
+            g.parse(data=text, format="turtle")
+        except Exception as exc:
+            findings.append(Finding("error", f"Turtle ist syntaktisch ungültig: {exc}"))
+            return findings, None, {}  # Feldprüfung ohne gültiges Parsing wenig sinnvoll
 
     # 3) Feldregeln je Block.
     existing_ids = set(seen.keys())
@@ -763,7 +779,7 @@ def validate_whole_file(text: str) -> list:
     # 4) Synonymliste: dieselbe Benennung bei mehreren Konzepten. Als HINWEIS,
     #    nicht als Fehler: vorhandene Altlasten duerfen das Speichern anderer
     #    Aenderungen nicht blockieren. NEU entstehende Kollisionen blockiert
-    #    api_save gesondert (siehe synonym_conflicts_for_record).
+    #    save_batch gesondert (siehe synonym_conflicts_for_batch).
     try:
         syn_index = build_synonym_index_from_graph(g)
     except Exception:  # pragma: no cover - defensiv, Graph wurde oben schon geparst
@@ -776,6 +792,15 @@ def validate_whole_file(text: str) -> list:
             list(group["concepts"]),
         ))
 
+    return findings, g, syn_index
+
+
+def validate_whole_file(text: str, graph: Optional[Graph] = None) -> list:
+    """Prüft die gesamte Datei: doppelte IDs im Quelltext (auch wenn RDF-Set-
+    Semantik identische Tripel zusammenfassen und eine reine Tripelzählung sie
+    übersehen würde — siehe Übergabe §2), strukturelle Turtle-Gültigkeit via
+    RDFLib, sowie Feldregeln je nicht geschütztem Block."""
+    findings, _g, _syn = validate_whole_file_with_graph(text, graph=graph)
     return findings
 
 
@@ -918,13 +943,41 @@ def _synonym_pairs(index: dict, concept_id: str) -> set:
     return pairs
 
 
-def synonym_conflicts_for_record(base_index: dict, concept_id: str, pref: str, alt_texts, active: bool) -> list:
+def synonym_conflicts_for_record(
+    base_index: dict,
+    concept_id: str,
+    pref: str,
+    alt_texts,
+    active: bool,
+    *,
+    other_drafts: Optional[list] = None,
+) -> list:
     """Kollisionen eines (bearbeiteten) Konzepts mit anderen. `base_index` ist der
     gespeicherte Stand der Datei; das Konzept wird darin durch die neuen Werte
-    ersetzt. `is_new` = die Kollision besteht im gespeicherten Stand noch nicht
-    (nur diese blockieren das Speichern; Altlasten nicht)."""
+    ersetzt. Optional können weitere vorgemerkte Entwürfe (`other_drafts`) in den
+    Vergleichsstand eingerechnet werden, sodass die Live-Prüfung auch Kollisionen
+    zwischen zwei noch nicht gespeicherten Einträgen meldet. `is_new` = die
+    Kollision besteht im gespeicherten Stand noch nicht (nur diese blockieren
+    das Speichern; Altlasten nicht)."""
     new_labels = synonym_effective_labels([pref] + list(alt_texts), active)
     new_index = {c: e for c, e in base_index.items() if c != concept_id}
+    draft_meta = {}
+    for idx, d in enumerate(other_drafts or []):
+        if not isinstance(d, dict):
+            continue
+        orig_id = d.get("original_id")
+        if orig_id and orig_id != concept_id:
+            new_index.pop(orig_id, None)
+        d_key = str(d.get("key") or orig_id or f"__ENTWURF__:{idx}")
+        eff_id = str(d.get("id") or orig_id or d_key)
+        if eff_id == concept_id:
+            continue
+        d_pref = str(d.get("pref") or "").strip()
+        d_alts = list(d.get("alts") or [])
+        d_labels = synonym_effective_labels([d_pref] + d_alts, bool(d.get("synonym", False)))
+        if d_labels:
+            new_index[eff_id] = SynonymEntry(pref=d_pref or eff_id, labels=d_labels)
+            draft_meta[eff_id] = {"draft_key": d_key, "in_draft": True}
     if new_labels:
         new_index[concept_id] = SynonymEntry(pref=pref, labels=new_labels)
     old_pairs = _synonym_pairs(base_index, concept_id)
@@ -938,13 +991,17 @@ def synonym_conflicts_for_record(base_index: dict, concept_id: str, pref: str, a
                 continue
             seen.add((key, other_id))
             spellings = members[key][other_id]
-            result.append({
+            entry = {
                 "label": label,
                 "other_id": other_id,
                 "other_pref": new_index[other_id].pref,
                 "other_label": label if label in spellings else sorted(spellings)[0],
                 "is_new": (key, other_id) not in old_pairs,
-            })
+            }
+            if other_id in draft_meta:
+                entry["in_draft"] = True
+                entry["draft_key"] = draft_meta[other_id]["draft_key"]
+            result.append(entry)
     return result
 
 
@@ -996,13 +1053,12 @@ def synonym_conflict_message(c: dict) -> str:
     return text + ", das ebenfalls in der Synonymliste verwendet wird."
 
 
-def find_referencing_subjects(text: str, concept_id: str) -> list:
+def find_referencing_subjects(text: str, concept_id: str, graph: Optional[Graph] = None) -> list:
     """Findet andere RDF-Knoten, die per URI <.../id/CONCEPT_ID> auf die ID
     verweisen (z. B. exactMatch/closeMatch anderer Konzepte, oder ein
     zukünftiges skos:broader). Nutzt den geparsten Graphen, nicht nur den
     eigenen Block, damit Verweise aus der GESAMTEN Datei erkannt werden."""
-    g = Graph()
-    g.parse(data=text, format="turtle")
+    g = graph if graph is not None else parse_graph(text)
     target = URIRef(EX + concept_id)
     own_subject = target
     refs = []
@@ -1087,7 +1143,7 @@ def _rename_in_block_text(raw: str, old_id: str, new_id: str):
     return "".join(out), count
 
 
-def plan_rename(text: str, old_id: str):
+def plan_rename(text: str, old_id: str, graph: Optional[Graph] = None):
     """Ermittelt, was ein Umbenennen betrifft. Rueckgabe: (block, referrers,
     blocked). `referrers` = bearbeitbare Bloecke, die auf die ID verweisen;
     `blocked` = Liste {id, reason} fuer Verweise, die nicht sicher angepasst
@@ -1100,8 +1156,7 @@ def plan_rename(text: str, old_id: str):
             "Der Eintrag ist geschützt; die Kennung kann nur in einem Texteditor geändert werden. "
             + (block.protect_reason or "")
         )
-    g = Graph()
-    g.parse(data=text, format="turtle")
+    g = graph if graph is not None else parse_graph(text)
     target = URIRef(EX + old_id)
     subjects = {str(s) for s, _p, _o in g.triples((None, None, target)) if s != target}
     referrers = []
@@ -1121,7 +1176,7 @@ def plan_rename(text: str, old_id: str):
     return block, referrers, blocked
 
 
-def check_new_id(text: str, old_id: str, new_id: str) -> Optional[str]:
+def check_new_id(text: str, old_id: str, new_id: str, graph: Optional[Graph] = None) -> Optional[str]:
     """Gibt eine Fehlermeldung zurueck, wenn `new_id` nicht verwendbar ist."""
     if not ID_PATTERN.match(new_id or ""):
         return "Die neue Kennung darf nur Buchstaben (ohne Umlaute), Ziffern sowie . _ - enthalten und muss mit Buchstabe oder _ beginnen."
@@ -1130,23 +1185,24 @@ def check_new_id(text: str, old_id: str, new_id: str) -> Optional[str]:
     existing = {m.group(1) for m in _BLOCK_START_RE.finditer(text)}
     if new_id in existing:
         return f"Die Kennung '{new_id}' ist bereits vergeben."
-    g = Graph()
-    g.parse(data=text, format="turtle")
+    g = graph if graph is not None else parse_graph(text)
     uri = URIRef(EX + new_id)
     if (uri, None, None) in g or (None, None, uri) in g:
         return f"Die Kennung '{new_id}' wird in der Datei bereits verwendet (z. B. als Verweisziel)."
     return None
 
 
-def rename_concept(text: str, old_id: str, new_id: str):
+def rename_concept(text: str, old_id: str, new_id: str, graph: Optional[Graph] = None, *, return_graph: bool = False):
     """Benennt ein Konzept um und zieht alle Verweise in bearbeitbaren Bloecken
-    mit. Gibt (neuer_volltext, [ids der angepassten Verweis-Bloecke]) zurueck.
+    mit. Gibt (neuer_volltext, [ids der angepassten Verweis-Bloecke]) zurueck
+    (mit return_graph=True zusätzlich den geparsten neuen Graphen).
     Vor der Rueckgabe wird bewiesen, dass der RDF-Graph des neuen Textes exakt
     dem alten Graphen entspricht, in dem nur die URI der ID ersetzt wurde."""
-    problem = check_new_id(text, old_id, new_id)
+    g_old = graph if graph is not None else parse_graph(text)
+    problem = check_new_id(text, old_id, new_id, graph=g_old)
     if problem:
         raise FpvError(problem)
-    block, referrers, blocked = plan_rename(text, old_id)
+    block, referrers, blocked = plan_rename(text, old_id, graph=g_old)
     if blocked:
         listing = "; ".join(f"{b['id']} ({b['reason']})" for b in blocked[:5])
         raise ReferencedError(
@@ -1165,10 +1221,7 @@ def rename_concept(text: str, old_id: str, new_id: str):
 
     # Beweis: nur die ID hat sich geaendert.
     from rdflib.compare import isomorphic
-    g_old = Graph()
-    g_old.parse(data=text, format="turtle")
-    g_new = Graph()
-    g_new.parse(data=new_text, format="turtle")
+    g_new = parse_graph(new_text)
     old_uri, new_uri = URIRef(EX + old_id), URIRef(EX + new_id)
 
     def mapped(term):
@@ -1179,9 +1232,12 @@ def rename_concept(text: str, old_id: str, new_id: str):
         expected.add((mapped(s_), p_, mapped(o_)))
     if not isomorphic(expected, g_new):
         raise FpvError("Interne Prüfung fehlgeschlagen: Das Umbenennen hätte mehr als die Kennung verändert. Es wurde nichts geschrieben.")
-    if find_block(new_text, old_id) is not None or find_referencing_subjects(new_text, old_id):
+    if find_block(new_text, old_id) is not None or find_referencing_subjects(new_text, old_id, graph=g_new):
         raise FpvError("Interne Prüfung fehlgeschlagen: Die alte Kennung kommt noch vor. Es wurde nichts geschrieben.")
-    return new_text, [b.id for b in referrers]
+    updated_ids = [b.id for b in referrers]
+    if return_graph:
+        return new_text, updated_ids, g_new
+    return new_text, updated_ids
 
 
 # --------------------------------------------------------------------------
@@ -1390,6 +1446,38 @@ def backup_write_location(ttl_path: str, manual_dir: Optional[str] = None) -> tu
     )
 
 
+MAX_BACKUPS_PER_FILE = 15
+
+
+def _prune_old_backups(dir_path: str, key: str, keep: int = MAX_BACKUPS_PER_FILE) -> None:
+    """Behält pro Datei höchstens die `keep` neuesten Sicherungen (.ttl.bak mit
+    passendem Dateischlüssel) im aktiven Sicherungsordner und entfernt ältere.
+    Fehler beim Aufräumen werden ignoriert, damit ein erfolgreiches Speichern
+    dadurch nie scheitert."""
+    if keep <= 0:
+        return
+    try:
+        entries = []
+        for name in os.listdir(dir_path):
+            if name.startswith("fpv-") and key in name and name.endswith(".ttl.bak"):
+                full = os.path.join(dir_path, name)
+                try:
+                    st = os.stat(full)
+                except OSError:
+                    continue
+                entries.append((st.st_mtime_ns, name, full))
+        if len(entries) <= keep:
+            return
+        entries.sort(key=lambda e: (e[0], e[1]), reverse=True)
+        for _mtime, _name, full in entries[keep:]:
+            try:
+                os.remove(full)
+            except OSError:
+                pass
+    except OSError:
+        pass
+
+
 def create_verified_backup(ttl_path: str, raw_bytes: bytes, manual_dir: Optional[str] = None):
     """Erstellt eine geprüfte (schreib-lese-verglichene) Sicherung der ALTEN
     Bytes an EINEM Ort (siehe backup_write_location). Gibt (label, path)
@@ -1405,11 +1493,12 @@ def create_verified_backup(ttl_path: str, raw_bytes: bytes, manual_dir: Optional
     errors: list = []
     result = _try_write_readback(path, raw_bytes, filename, errors)
     if result:
+        _prune_old_backups(path, key, MAX_BACKUPS_PER_FILE)
         return label, result
     raise BackupError(
         "Die Sicherung konnte nicht angelegt werden, die Datei wurde NICHT verändert.\n"
         f"Ort: {path}\nGrund: {errors[0] if errors else 'unbekannt'}\n\n"
-        "Über „Sicherungsort wählen“ lässt sich ein anderer Ordner festlegen."
+        "Über „Frühere Stände …“ → „Erweitert“ lässt sich ein anderer Ordner festlegen."
     )
 
 
@@ -1442,26 +1531,49 @@ def list_backups(ttl_path: str, manual_dir: Optional[str] = None) -> list:
     return found
 
 
+def _missing_parent_dirs(dir_path: str) -> list:
+    """Liefert noch nicht existierende Verzeichnisse auf dem Weg zu `dir_path`,
+    vom tiefsten nach oben, damit eine Schreibprobe keine leeren Ordner
+    zurücklässt."""
+    missing = []
+    cur = os.path.abspath(dir_path)
+    while cur and not os.path.exists(cur):
+        missing.append(cur)
+        parent = os.path.dirname(cur)
+        if parent == cur:
+            break
+        cur = parent
+    return missing
+
+
 def storage_check(ttl_path: str, manual_dir: Optional[str] = None) -> list:
-    """„Schreibzugriff prüfen“: versucht in jedem Kandidatenordner eine kleine
-    Testdatei anzulegen (und im TTL-Ordner zusätzlich deren ERSATZ per
-    os.replace, da das eigentliche Speichern genau das tut). Belegt NICHT,
-    dass die TTL selbst geöffnet/ersetzt werden darf — nur, dass der Ordner
-    grundsätzlich beschreibbar ist."""
+    """„Schreibzugriff prüfen“: testet den aktiven Sicherungsort sowie den
+    TTL-Ordner (dort zusätzlich per os.replace, da das eigentliche Speichern
+    genau das tut). Belegt NICHT, dass die TTL selbst geöffnet/ersetzt werden
+    darf — nur, dass die Ordner grundsätzlich beschreibbar sind. Neu angelegte
+    Ordner und Testdateien werden anschließend wieder entfernt."""
     ttl_dir = os.path.dirname(os.path.abspath(ttl_path))
+    ttl_norm = os.path.normcase(os.path.abspath(ttl_dir))
+    backup_label, backup_dir = backup_write_location(ttl_path, manual_dir)
+
+    targets = [(backup_label, backup_dir)]
+    if os.path.normcase(os.path.abspath(backup_dir)) != ttl_norm:
+        targets.append(("TTL-Ordner", ttl_dir))
+
     results = []
-    for label, path in backup_candidate_locations(ttl_path, manual_dir):
+    for label, path in targets:
         entry = {"location": label, "path": path, "writable": False, "error": None, "replace_tested": False}
+        created_dirs = _missing_parent_dirs(path)
+        probe = os.path.join(path, ".fpv_write_test.tmp")
+        probe2 = os.path.join(path, ".fpv_write_test2.tmp")
         try:
             os.makedirs(path, exist_ok=True)
-            probe = os.path.join(path, ".fpv_write_test.tmp")
             with open(probe, "wb") as f:
                 f.write(b"fpv-write-test")
                 f.flush()
                 os.fsync(f.fileno())
             entry["writable"] = True
-            if os.path.normcase(os.path.abspath(path)) == os.path.normcase(os.path.abspath(ttl_dir)):
-                probe2 = os.path.join(path, ".fpv_write_test2.tmp")
+            if os.path.normcase(os.path.abspath(path)) == ttl_norm:
                 with open(probe2, "wb") as f:
                     f.write(b"fpv-write-test-2")
                     f.flush()
@@ -1471,6 +1583,18 @@ def storage_check(ttl_path: str, manual_dir: Optional[str] = None) -> list:
             os.remove(probe)
         except OSError as exc:
             entry["error"] = f"{type(exc).__name__}: {exc}"
+        finally:
+            for p in (probe, probe2):
+                try:
+                    if os.path.exists(p):
+                        os.remove(p)
+                except OSError:
+                    pass
+            for d in created_dirs:
+                try:
+                    os.rmdir(d)
+                except OSError:
+                    pass
         results.append(entry)
     return results
 
@@ -1561,9 +1685,10 @@ def restore_backup(ttl_path: str, backup_full_path: str, manual_backup_dir: Opti
 # Hilfsfunktionen für app.py: Gesamtoperationen
 # --------------------------------------------------------------------------
 
-def build_state(loaded: LoadedFile) -> dict:
+def build_state(loaded: LoadedFile, *, findings: Optional[list] = None) -> dict:
     records = []
-    findings = validate_whole_file(loaded.text)
+    if findings is None:
+        findings = validate_whole_file(loaded.text)
     for block in iter_all_blocks(loaded.text):
         if block.protected:
             records.append({

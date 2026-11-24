@@ -19,10 +19,15 @@ const App = {
   persistDueAt: null,   // Zeitpunkt (ms) der naechsten Zwischensicherung auf Platte
   lastPersistTime: null,
   persistError: null,
+  // UI-Zustand: Filter im Pruefungspanel und beruehrte Pflichtfelder im Formular.
+  findingFilter: "all", // "all" | "error" | "warning"
+  touchedFields: new Set(),
 };
 const AUTOSAVE_INTERVAL_MS = 10 * 60 * 1000;
 let syncTimer = null;
+let treeSearchTimer = null;
 let currentDeleteTargetId = null;
+let modalCancelHandler = null;
 
 // ---------------------------------------------------------------------
 // Fetch-Hilfsfunktionen
@@ -95,10 +100,46 @@ function handleApiError(err, title) {
 }
 
 // ---------------------------------------------------------------------
-// Modale Fenster
+// Status-Banner (Toast) fuer unkritische Rueckmeldungen
+// ---------------------------------------------------------------------
+
+let toastTimer = null;
+let toastAutoMs = 0;
+
+function showBanner(text, kind, opts) {
+  const bar = document.getElementById("toast-bar");
+  const inner = document.getElementById("toast-inner");
+  const icon = document.getElementById("toast-icon");
+  const msg = document.getElementById("toast-text");
+  const k = kind || "info";
+  const icons = { ok: "\u2713", info: "\u2139", warn: "\u26a0", error: "!" };
+  inner.className = "toast-inner kind-" + k;
+  icon.textContent = icons[k] || "\u2139";
+  msg.textContent = text;
+  bar.hidden = false;
+
+  clearTimeout(toastTimer);
+  const sticky = !!(opts && opts.sticky);
+  toastAutoMs = sticky ? 0 : (opts && opts.durationMs) || (k === "warn" || k === "error" ? 10000 : 6500);
+  if (toastAutoMs > 0) {
+    toastTimer = setTimeout(hideBanner, toastAutoMs);
+  }
+}
+
+function hideBanner() {
+  clearTimeout(toastTimer);
+  toastTimer = null;
+  toastAutoMs = 0;
+  const bar = document.getElementById("toast-bar");
+  if (bar) bar.hidden = true;
+}
+
+// ---------------------------------------------------------------------
+// Modale Fenster (kritische Meldungen & Sicherheitsabfragen)
 // ---------------------------------------------------------------------
 
 function showModal(title, body, kind, opts) {
+  modalCancelHandler = null;
   const overlay = document.getElementById("modal-overlay");
   const box = document.getElementById("modal-box");
   // opts.noClose: kein Schliessen-Knopf, Escape wirkt nicht (z. B. solange
@@ -110,13 +151,58 @@ function showModal(title, body, kind, opts) {
   const closeBtn = document.getElementById("modal-close");
   closeBtn.textContent = kind === "progress" ? "Schlie\u00dfen" : "OK";
   overlay.classList.remove("hidden");
-  closeBtn.focus();
+  if (!(opts && opts.noClose)) closeBtn.focus();
 }
 
-// Einheitliche Rueckmeldungen: JEDE Aktion endet in einem Dialog, auch wenn
-// nichts getan wurde ("Nichts durchgefuehrt") oder alles unauffaellig war.
+// Einheitliche Sicherheitsabfrage im App-Design (ersetzt Browser-confirm()).
+// Fokus liegt immer auf "Abbrechen", damit versehentliches Enter nie loescht.
+function showConfirmModal(title, body, opts) {
+  const o = opts || {};
+  return new Promise((resolve) => {
+    let settled = false;
+    const finish = (val) => {
+      if (settled) return;
+      settled = true;
+      modalCancelHandler = null;
+      hideModal();
+      resolve(val);
+    };
+
+    showModal(title, body, o.kind || "warn", { noClose: true });
+    modalCancelHandler = () => finish(false);
+
+    const extra = document.getElementById("modal-extra");
+    const row = document.createElement("div");
+    row.className = "confirm-actions";
+
+    const cancelBtn = document.createElement("button");
+    cancelBtn.type = "button";
+    cancelBtn.className = "secondary";
+    cancelBtn.textContent = o.cancelLabel || "Abbrechen";
+    cancelBtn.addEventListener("click", () => finish(false));
+
+    const okBtn = document.createElement("button");
+    okBtn.type = "button";
+    okBtn.className = o.danger ? "danger" : "";
+    okBtn.textContent = o.confirmLabel || "Best\u00e4tigen";
+    okBtn.addEventListener("click", () => finish(true));
+
+    row.appendChild(cancelBtn);
+    row.appendChild(okBtn);
+    extra.appendChild(row);
+    cancelBtn.focus();
+  });
+}
+
+// Unkritische Hinweise & Abbrueche erscheinen oben im Status-Banner statt als
+// blockierendes Modal — jede Aktion bleibt dennoch deutlich sichtbar.
 function showNothingDone(action, reason) {
-  showModal("Nichts durchgef\u00fchrt", `${action}: ${reason}`, "info");
+  showBanner(`${action}: ${reason}`, "info");
+}
+
+function fileBaseName(path) {
+  if (!path) return "";
+  return String(path).split(/[\\/]/).pop() || path;
 }
 
 function requireFile(action) {
@@ -154,6 +240,7 @@ function stateKind(state) {
 }
 
 function hideModal() {
+  modalCancelHandler = null;
   document.getElementById("modal-overlay").classList.add("hidden");
 }
 
@@ -202,26 +289,53 @@ function showPromptModal(title, message, onSubmit) {
   input.focus();
 }
 
+// Ausklappbare technische Details im Modal (Pfad, Schreibmethode usw.):
+// Laien sehen oben eine klare, knappe Meldung; fuer Rueckfragen oder Support
+// bleiben alle technischen Angaben per Klick zugaenglich.
+function appendTechDetails(lines) {
+  const extra = document.getElementById("modal-extra");
+  const details = document.createElement("details");
+  details.className = "tech-details";
+  const summary = document.createElement("summary");
+  summary.textContent = "Technische Details anzeigen";
+  const body = document.createElement("div");
+  body.className = "tech-details-body";
+  body.textContent = (lines || []).filter(Boolean).join("\n");
+  details.appendChild(summary);
+  details.appendChild(body);
+  extra.appendChild(details);
+}
+
+function friendlyBackupLocation(loc) {
+  const s = String(loc || "");
+  if (!s) return "Sicherungsordner";
+  if (s.includes("LOCALAPPDATA") || s.includes(".fpv-editor")) return "Automatischer Sicherungsordner";
+  if (s.toLowerCase().includes("manuell")) return "Selbst gew\u00e4hlter Ordner";
+  return s;
+}
+
 function showBackupsModal(backups) {
   const overlay = document.getElementById("modal-overlay");
   const box = document.getElementById("modal-box");
   box.className = "modal state-info";
   document.getElementById("modal-close").textContent = "Schlie\u00dfen";
-  document.getElementById("modal-title").textContent = "Sicherungen";
+  document.getElementById("modal-title").textContent = "Fr\u00fchere St\u00e4nde";
   document.getElementById("modal-body").textContent = backups.length
-    ? `${backups.length} Sicherung(en) gefunden (neueste zuerst). Ein manuell gew\u00e4hlter Sicherungsort gilt nur f\u00fcr die laufende Sitzung.`
-    : "Keine Sicherungen an den bekannten Orten gefunden.";
+    ? `${backups.length === 1 ? "1 gespeicherter Stand" : backups.length + " gespeicherte St\u00e4nde"} (bis zu 15 lokale St\u00e4nde werden automatisch vorgehalten, \u00e4ltere liegen in Git). Vor jeder Wiederherstellung wird Ihr aktueller Stand gesichert.`
+    : "F\u00fcr diese Datei gibt es noch keine lokalen Sicherungen. Sie entstehen automatisch im Hintergrund vor jedem Speichern.";
   const extra = document.getElementById("modal-extra");
   extra.innerHTML = "";
   if (backups.length) {
     const ul = document.createElement("ul");
     ul.className = "backup-list";
-    for (const b of backups) {
+    backups.forEach((b, idx) => {
       const li = document.createElement("li");
       const info = document.createElement("div");
+      info.title = b.path || b.filename || "";
+      const latestBadge = idx === 0 ? `<span class="backup-latest">Neuester</span>` : "";
       info.innerHTML =
-        `<div>${escapeHtml(b.filename)}</div>` +
-        `<div class="meta">${escapeHtml(b.location)} \u00b7 ${formatTimestamp(b.mtime)} \u00b7 ${formatBytes(b.size)}</div>`;
+        `<div class="backup-title">Stand vom ${escapeHtml(formatTimestamp(b.mtime))}${latestBadge}</div>` +
+        `<div class="meta">${escapeHtml(formatBytes(b.size))} \u00b7 ${escapeHtml(friendlyBackupLocation(b.location))}</div>`;
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "secondary";
@@ -230,14 +344,18 @@ function showBackupsModal(backups) {
       li.appendChild(info);
       li.appendChild(btn);
       ul.appendChild(li);
-    }
+    });
     extra.appendChild(ul);
   }
+  const details = document.createElement("details");
+  details.className = "tech-details";
+  const summary = document.createElement("summary");
+  summary.textContent = "Erweitert (Sicherungsort & Schreibtest)";
   const more = document.createElement("div");
   more.className = "backup-more";
   for (const [label, help, fn] of [
     ["Sicherungsort w\u00e4hlen \u2026", "Neue Sicherungen in einen eigenen Ordner legen (gilt nur f\u00fcr diese Sitzung).", doChooseBackupDir],
-    ["Schreibzugriff pr\u00fcfen", "Testet, ob am Sicherungsort geschrieben werden kann.", doStorageCheck],
+    ["Schreibzugriff pr\u00fcfen", "Testet, ob am Sicherungsort und im Dateiordner geschrieben werden kann.", doStorageCheck],
   ]) {
     const btn = document.createElement("button");
     btn.type = "button";
@@ -250,26 +368,49 @@ function showBackupsModal(backups) {
     });
     more.appendChild(btn);
   }
-  extra.appendChild(more);
+  details.appendChild(summary);
+  details.appendChild(more);
+  extra.appendChild(details);
   overlay.classList.remove("hidden");
 }
 
 async function restoreBackup(b) {
-  if (pendingCount() && !confirm(
-    `${pendingCount()} Eintrag/Eintr\u00e4ge sind noch nicht gespeichert. Beim Wiederherstellen einer Sicherung gehen diese \u00c4nderungen verloren.\n\nTrotzdem fortfahren?`
-  )) return;
-  if (!confirm(`Sicherung \u201e${b.filename}\u201c wiederherstellen? Der aktuelle Stand wird zuvor ebenfalls gesichert.`)) return;
-  if (pendingCount()) await discardPendingOnServer();
-  showModal("Wiederherstellen \u2026", "Aktueller Stand wird gesichert, dann wird die Sicherung eingespielt.", "progress");
+  const n = pendingCount();
+  let msg =
+    `Den fr\u00fcheren Stand vom ${formatTimestamp(b.mtime)} wiederherstellen?\n\n` +
+    "Ihr aktueller Stand wird zuvor automatisch gesichert.";
+  if (n) {
+    msg +=
+      `\n\nAchtung: ${n === 1 ? "1 Eintrag ist" : n + " Eintr\u00e4ge sind"} noch nicht gespeichert. ` +
+      "Beim Wiederherstellen gehen diese nicht gespeicherten \u00c4nderungen verloren.";
+  }
+  const confirmed = await showConfirmModal("Fr\u00fcheren Stand wiederherstellen?", msg, {
+    confirmLabel: "Stand wiederherstellen",
+    cancelLabel: "Abbrechen",
+    danger: true,
+    kind: "warn",
+  });
+  if (!confirmed) {
+    showNothingDone("Wiederherstellen", "Abgebrochen; die Datei bleibt unver\u00e4ndert.");
+    return;
+  }
+  if (n) await discardPendingOnServer();
+  showModal("Wiederherstellen \u2026", "Aktueller Stand wird gesichert, dann wird der fr\u00fchere Stand eingespielt.", "progress");
   try {
     const resp = await apiPost("/api/restore", { path: b.path });
     App.state = resp;
     afterFileLoaded();
     showModal(
-      "Wiederhergestellt",
-      `Sicherung \u201e${b.filename}\u201c wurde eingespielt.\n\nNeue Sicherung des vorherigen Standes: ${resp.backup_label} (${resp.backup_path})`,
+      "Fr\u00fcherer Stand wiederhergestellt",
+      `Der Stand vom ${formatTimestamp(b.mtime)} wurde erfolgreich eingespielt.\n\n` +
+        "Ihr bisheriger Stand wurde zuvor automatisch gesichert.",
       "ok"
     );
+    appendTechDetails([
+      `Wiederhergestellte Datei: ${b.filename}`,
+      `Sicherung des vorherigen Stands: ${resp.backup_path}`,
+      `Schreibmethode: ${resp.write_method === "atomic" ? "atomar (os.replace)" : "direkter R\u00fcckfall (r+b)"}`,
+    ]);
   } catch (err) {
     handleApiError(err, "Wiederherstellung fehlgeschlagen");
   }
@@ -311,13 +452,17 @@ function groupLetterFor(name) {
 // Vormerken: Aenderungen mehrerer Eintraege sammeln, gemeinsam speichern
 // ---------------------------------------------------------------------
 
+function normalizeSingleLine(s) {
+  return String(s || "").replace(/[ \t]*[\r\n]+[ \t]*/g, " ");
+}
+
 function collectFormData() {
   return {
     id: document.getElementById("f-id").value.trim(),
     lang: document.getElementById("f-lang").value.trim() || "de",
     type: document.getElementById("f-type").value,
-    pref: document.getElementById("f-pref").value.trim(),
-    note: document.getElementById("f-note").value.trim(),
+    pref: normalizeSingleLine(document.getElementById("f-pref").value).trim(),
+    note: normalizeSingleLine(document.getElementById("f-note").value).trim(),
     synonym: document.getElementById("f-synonym").checked,
     alts: collectAltRows(),
     exact: collectRowValues("exact-list"),
@@ -449,10 +594,19 @@ function renderPending() {
   box.appendChild(note);
 }
 
-function discardAll() {
+async function discardAll() {
   const n = pendingCount();
   if (!n) return;
-  if (!confirm(`Alle ${n} nicht gespeicherten \u00c4nderungen verwerfen? Die Datei selbst bleibt unver\u00e4ndert.`)) {
+  const confirmed = await showConfirmModal(
+    "Alle nicht gespeicherten \u00c4nderungen verwerfen?",
+    `Alle ${n} nicht gespeicherten ${n === 1 ? "\u00c4nderung" : "\u00c4nderungen"} wirklich verwerfen?\n\nDie TTL-Datei selbst bleibt unver\u00e4ndert.`,
+    {
+      confirmLabel: n === 1 ? "1 \u00c4nderung verwerfen" : `Alle ${n} \u00c4nderungen verwerfen`,
+      cancelLabel: "Abbrechen",
+      danger: true,
+    }
+  );
+  if (!confirmed) {
     showNothingDone("Alle verwerfen", "Abgebrochen; die \u00c4nderungen bleiben erhalten.");
     return;
   }
@@ -466,7 +620,10 @@ function discardAll() {
   else if (id) selectRecordSilently(id);
   renderPending();
   renderTree();
-  showModal("Verworfen", `${n} nicht gespeicherte ${n === 1 ? "\u00c4nderung wurde" : "\u00c4nderungen wurden"} verworfen. Die Datei ist unver\u00e4ndert.`, "ok");
+  showBanner(
+    `${n} nicht gespeicherte ${n === 1 ? "\u00c4nderung wurde" : "\u00c4nderungen wurden"} verworfen. Die Datei ist unver\u00e4ndert.`,
+    "ok"
+  );
 }
 
 // ---------------------------------------------------------------------
@@ -574,11 +731,10 @@ function restoreRecovery(r) {
   }
   renderTree();
   renderPending();
-  showModal(
-    "Wiederhergestellt",
-    `${r.items.length} ${r.items.length === 1 ? "Eintrag steht" : "Eintr\u00e4ge stehen"} wieder als vorgemerkt bereit (\u25cf in der Liste links). ` +
-      "Bitte pr\u00fcfen und mit \u201eAlle \u00c4nderungen speichern\u201c in die Datei schreiben.",
-    "ok"
+  showBanner(
+    `${r.items.length} ${r.items.length === 1 ? "Eintrag" : "Eintr\u00e4ge"} aus Zwischensicherung wiederhergestellt (\u25cf links). Zum Schreiben \u201eAlle \u00c4nderungen speichern\u201c klicken.`,
+    "ok",
+    { durationMs: 9000 }
   );
 }
 
@@ -634,18 +790,26 @@ function openDraft(key) {
   }
 }
 
-// Fuer Aktionen, die die geoeffnete Datei wechseln (oeffnen, schliessen)
-// nicht gespeicherte Eintraege gehen dabei verloren. Der Text sagt,
+// Fuer Aktionen, die die geoeffnete Datei wechseln (oeffnen, schliessen):
+// nicht gespeicherte Eintraege gehen dabei verloren. Der Text sagt klar,
 // was die Aktion tut und was mit den Aenderungen geschieht.
-function confirmDiscardIfDirty(kind) {
+async function confirmDiscardIfDirty(kind) {
   const n = pendingCount();
   if (!n) return true;
   const what = n === 1 ? "1 Eintrag ist" : `${n} Eintr\u00e4ge sind`;
   const texts = {
-    open: `${what} noch nicht gespeichert. Beim \u00d6ffnen einer anderen Datei gehen diese \u00c4nderungen verloren.\n\nTrotzdem \u00f6ffnen?`,
+    open: `${what} noch nicht gespeichert. Beim \u00d6ffnen einer anderen Datei gehen diese \u00c4nderungen verloren.\n\nTrotzdem eine andere Datei \u00f6ffnen?`,
     close: `${what} noch nicht gespeichert. Beim Schlie\u00dfen der Datei gehen diese \u00c4nderungen verloren.\n\nTrotzdem schlie\u00dfen?`,
   };
-  return confirm(texts[kind] || `${what} noch nicht gespeichert. Trotzdem verwerfen?`);
+  const labels = {
+    open: "Verwerfen und andere Datei \u00f6ffnen",
+    close: "Verwerfen und Datei schlie\u00dfen",
+  };
+  return showConfirmModal(
+    "Nicht gespeicherte \u00c4nderungen",
+    texts[kind] || `${what} noch nicht gespeichert. Trotzdem verwerfen?`,
+    { confirmLabel: labels[kind] || "Verwerfen", cancelLabel: "Abbrechen", danger: true }
+  );
 }
 
 function markDirty() {
@@ -659,7 +823,20 @@ function markDirty() {
 }
 
 function markCurrentRowChanged() {
-  if (!App.selectedId || App.selectedId === "__NEW__") return;
+  if (!App.selectedId) return;
+  if (App.selectedId === "__NEW__") {
+    const row = document.querySelector("#tree-root .concept-row.draft-new.selected");
+    if (row) {
+      const prefVal = normalizeSingleLine(document.getElementById("f-pref").value).trim() || "(ohne Bezeichnung)";
+      const idVal = document.getElementById("f-id").value.trim();
+      const typeVal = document.getElementById("f-type").value || "org";
+      const prefEl = row.querySelector(".pref");
+      const metaEl = row.querySelector(".meta");
+      if (prefEl) prefEl.textContent = prefVal;
+      if (metaEl) metaEl.textContent = `${idVal ? "ex:" + idVal : "Kennung noch offen"} \u00b7 ${typeVal} \u00b7 neu`;
+    }
+    return;
+  }
   const node = document.querySelector(`[data-concept-id="${cssEscape(App.selectedId)}"]`);
   if (node) node.classList.add("changed");
 }
@@ -694,6 +871,24 @@ async function runSynonymCheck() {
     return;
   }
   const isNew = App.selectedId === "__NEW__";
+  // Weitere vorgemerkte Eintraege mitschicken, damit Kollisionen zwischen zwei
+  // noch nicht gespeicherten Eintraegen schon waehrend der Eingabe auffallen.
+  const otherDrafts = [];
+  for (const [key, d] of App.drafts.entries()) {
+    if (key === App.currentKey) continue;
+    if (!isNew && d.originalId === App.selectedId) continue;
+    otherDrafts.push({
+      key,
+      original_id: d.originalId,
+      data: {
+        id: (d.data && d.data.id) || "",
+        lang: (d.data && d.data.lang) || "de",
+        pref: (d.data && d.data.pref) || "",
+        synonym: !!(d.data && d.data.synonym),
+        alts: (d.data && d.data.alts) || [],
+      },
+    });
+  }
   let resp;
   try {
     resp = await apiPost("/api/synonym-check", {
@@ -701,10 +896,11 @@ async function runSynonymCheck() {
       data: {
         id: document.getElementById("f-id").value.trim(),
         lang: document.getElementById("f-lang").value.trim() || "de",
-        pref: document.getElementById("f-pref").value.trim(),
+        pref: normalizeSingleLine(document.getElementById("f-pref").value).trim(),
         synonym: true,
         alts: collectAltRows(),
       },
+      drafts: otherDrafts,
     });
   } catch {
     return;
@@ -731,7 +927,12 @@ function renderSynonymConflicts(conflicts) {
   const ul = document.createElement("ul");
   for (const c of conflicts) {
     const li = document.createElement("li");
-    let text = `\u201e${c.label}\u201c steht auch bei ex:${c.other_id} (${c.other_pref})`;
+    const isUnnamedNewDraft = c.in_draft && String(c.other_id || "").startsWith("__NEW__:");
+    const targetDesc = isUnnamedNewDraft
+      ? "einem neuen, noch nicht gespeicherten Eintrag" +
+        (c.other_pref && !String(c.other_pref).startsWith("__NEW__:") ? ` (${c.other_pref})` : "")
+      : `ex:${c.other_id} (${c.other_pref})` + (c.in_draft ? " [vorgemerkte \u00c4nderung]" : "");
+    let text = `\u201e${c.label}\u201c steht auch bei ${targetDesc}`;
     if (c.other_label !== c.label) text += `, dort als \u201e${c.other_label}\u201c (Gro\u00df-/Kleinschreibung z\u00e4hlt nicht als Unterschied)`;
     li.appendChild(document.createTextNode(text + ". "));
     if (blocking && !c.is_new) {
@@ -744,7 +945,10 @@ function renderSynonymConflicts(conflicts) {
     open.type = "button";
     open.className = "subtle";
     open.textContent = "Eintrag \u00f6ffnen";
-    open.addEventListener("click", () => jumpToConcept(c.other_id));
+    open.addEventListener("click", () => {
+      if (c.draft_key && App.drafts.has(c.draft_key)) openDraft(c.draft_key);
+      else jumpToConcept(c.other_id);
+    });
     li.appendChild(open);
     ul.appendChild(li);
   }
@@ -776,8 +980,8 @@ function updateSaveStatus() {
   } else if (App.justSaved && App.justSaved.ids.includes(App.selectedId)) {
     el.classList.add("saved");
     el.textContent =
-      `Gespeichert um ${App.justSaved.time} \u00b7 Sicherung erstellt` +
-      (App.justSaved.atomic ? "" : " \u00b7 nicht atomar geschrieben (siehe Meldung)");
+      `Gespeichert um ${App.justSaved.time}` +
+      (App.justSaved.atomic ? "" : " \u00b7 direkt \u00fcberschrieben (siehe Meldung)");
   } else if (App.selectedId === "__NEW__") {
     el.textContent = "Neuer Eintrag \u2014 noch nicht gespeichert";
   } else {
@@ -785,22 +989,22 @@ function updateSaveStatus() {
   }
 }
 
-// Sicherungsstatus in der Werkzeugleiste: neueste VORHANDENE Sicherung dieser
-// Datei. Das ist keine Zusage, dass die naechste Sicherung gelingt.
+// Sicherungsstatus als dezenter Tooltip auf dem Button "Fruehere Staende ...".
 async function refreshBackupStatus() {
-  const el = document.getElementById("backup-status");
+  const btn = document.getElementById("btn-backup-menu");
+  if (!btn) return;
   if (!App.state || !App.state.path) {
-    el.textContent = "Keine Datei geladen";
+    btn.title = "Zeigt fr\u00fchere lokale St\u00e4nde dieser Datei (erst Datei \u00f6ffnen).";
     return;
   }
   try {
     const resp = await apiGet("/api/backups");
     const list = resp.backups || [];
-    el.textContent = list.length
-      ? `Letzte Sicherung: ${formatTimestamp(Math.max(...list.map((b) => b.mtime)))}`
-      : "Noch keine Sicherung gefunden";
+    btn.title = list.length
+      ? `Fr\u00fchere lokale St\u00e4nde anzeigen (${list.length} vorhanden, neuester: ${formatTimestamp(Math.max(...list.map((b) => b.mtime)))}).`
+      : "Noch keine lokale Sicherung f\u00fcr diese Datei vorhanden.";
   } catch {
-    el.textContent = "Sicherungsstatus nicht abrufbar";
+    btn.title = "Fr\u00fchere lokale St\u00e4nde dieser Datei anzeigen.";
   }
 }
 
@@ -821,16 +1025,89 @@ function matchesFilter(r, term, typeFilter) {
   return hay.includes(term);
 }
 
+function newDraftEntries() {
+  const list = [];
+  for (const d of App.drafts.values()) {
+    if (!d.originalId) list.push(d);
+  }
+  if (App.selectedId === "__NEW__" && (!App.currentKey || !App.drafts.has(App.currentKey))) {
+    list.push({
+      key: App.currentKey || "__NEW__:current",
+      originalId: null,
+      data: {
+        id: document.getElementById("f-id").value.trim(),
+        pref: normalizeSingleLine(document.getElementById("f-pref").value).trim(),
+        type: document.getElementById("f-type").value || "org",
+      },
+      isCurrentOnly: true,
+    });
+  }
+  return list;
+}
+
 function renderTree() {
   const root = document.getElementById("tree-root");
   root.innerHTML = "";
 
+  const hasFile = !!(App.state && App.state.path);
   const term = document.getElementById("tree-search").value.trim().toLowerCase();
   const typeFilter = document.getElementById("tree-type-filter").value;
   const records = App.state ? App.state.records : [];
   const visible = records.filter((r) => matchesFilter(r, term, typeFilter));
+  const newDrafts = hasFile ? newDraftEntries() : [];
 
-  document.getElementById("tree-counter").textContent = `${visible.length} / ${records.length} Konzepte`;
+  document.getElementById("tree-counter").textContent = hasFile
+    ? `${visible.length} / ${records.length} Konzepte` + (newDrafts.length ? ` (+${newDrafts.length} neu)` : "")
+    : "0 / 0 Konzepte";
+
+  if (!hasFile) {
+    const empty = document.createElement("div");
+    empty.className = "tree-empty";
+    empty.textContent = "Noch keine Datei ge\u00f6ffnet.";
+    root.appendChild(empty);
+    return;
+  }
+
+  const frag = document.createDocumentFragment();
+
+  // Neue, noch nicht gespeicherte Eintraege oben sichtbar halten.
+  if (newDrafts.length) {
+    const groupDiv = document.createElement("div");
+    groupDiv.className = "letter-group draft-new-group";
+    const header = document.createElement("div");
+    header.className = "letter-header";
+    header.innerHTML = `<span>Neu (noch nicht gespeichert)</span><span>${newDrafts.length}</span>`;
+    const body = document.createElement("div");
+    body.className = "letter-body";
+    for (const d of newDrafts) {
+      const row = document.createElement("div");
+      const isSelected = App.selectedId === "__NEW__" && (d.isCurrentOnly || d.key === App.currentKey);
+      row.className = "concept-row draft-new changed" + (isSelected ? " selected" : "");
+      const prefText = d.data.pref || "(ohne Bezeichnung)";
+      const idText = d.data.id ? `ex:${d.data.id}` : "Kennung noch offen";
+      row.innerHTML =
+        `<div class="pref">${escapeHtml(prefText)}</div>` +
+        `<div class="meta">${escapeHtml(idText)} \u00b7 ${escapeHtml(d.data.type || "org")} \u00b7 neu</div>`;
+      if (!d.isCurrentOnly) {
+        row.addEventListener("click", () => openDraft(d.key));
+      }
+      body.appendChild(row);
+    }
+    groupDiv.appendChild(header);
+    groupDiv.appendChild(body);
+    frag.appendChild(groupDiv);
+  }
+
+  if (!visible.length && !newDrafts.length) {
+    const empty = document.createElement("div");
+    empty.className = "tree-empty";
+    empty.textContent = records.length
+      ? "Keine passenden Eintr\u00e4ge gefunden. Suche oder Typfilter zur\u00fccksetzen."
+      : "Die Datei enth\u00e4lt noch keine Konzepte.";
+    frag.appendChild(empty);
+    root.appendChild(frag);
+    return;
+  }
 
   const groups = {};
   for (const r of visible) {
@@ -881,45 +1158,89 @@ function renderTree() {
       // scrollen kann (siehe jumpToConcept).
       row.setAttribute("data-concept-id", r.id);
       const prefText = r.protected ? r.id : r.pref || "(ohne Bezeichnung)";
+      const typeCode = r.protected ? "?" : (r.type || "?");
+      const typeClass = r.protected ? "" : ` t-${escapeHtml(r.type || "")}`;
       row.innerHTML =
         `<div class="pref">${escapeHtml(prefText)}</div>` +
-        `<div class="meta">ex:${escapeHtml(r.id)} \u00b7 ${escapeHtml(r.protected ? "?" : r.type)}</div>`;
+        `<div class="meta"><span>ex:${escapeHtml(r.id)}</span><span class="type-pill${typeClass}">${escapeHtml(typeCode)}</span></div>`;
       row.addEventListener("click", () => selectRecord(r.id));
       body.appendChild(row);
     }
 
     groupDiv.appendChild(header);
     groupDiv.appendChild(body);
-    root.appendChild(groupDiv);
+    frag.appendChild(groupDiv);
   }
+  root.appendChild(frag);
 }
 
 // ---------------------------------------------------------------------
-// Editorformular
+// Editorformular & Bedienelemente je nach Dateizustand
 // ---------------------------------------------------------------------
+
+function updateFileControls() {
+  const hasFile = !!(App.state && App.state.path);
+  const noFileIds = [
+    "btn-close-file", "btn-validate-file", "btn-backup-menu",
+    "btn-new-entry", "btn-save",
+    "tree-search", "tree-type-filter", "btn-clear-search", "btn-expand-all", "btn-collapse-all",
+  ];
+  for (const id of noFileIds) {
+    const el = document.getElementById(id);
+    if (el) el.disabled = !hasFile;
+  }
+  const delBtn = document.getElementById("btn-delete");
+  if (delBtn) {
+    const canDelete = hasFile && !!currentDeleteTargetId;
+    delBtn.disabled = !canDelete;
+    delBtn.title = !hasFile
+      ? "Erst eine Datei \u00f6ffnen."
+      : canDelete
+        ? "L\u00f6scht diesen Eintrag nach Sicherheitsabfrage und Sicherung."
+        : "Zuerst links einen gespeicherten Eintrag ausw\u00e4hlen.";
+  }
+  const welcomeNoFile = document.getElementById("welcome-no-file");
+  const welcomeNoSel = document.getElementById("welcome-no-selection");
+  if (welcomeNoFile && welcomeNoSel) {
+    welcomeNoFile.hidden = hasFile;
+    welcomeNoSel.hidden = !hasFile;
+  }
+}
 
 function clearEditor() {
   document.getElementById("editor-empty").style.display = "block";
   document.getElementById("editor-form").style.display = "none";
   App.selectedId = null;
   App.currentKey = null;
+  App.touchedFields.clear();
   currentDeleteTargetId = null;
+  updateFileControls();
   renderPending();
   renderSaveHint();
   updateSaveStatus();
   scheduleSynonymCheck(true);
 }
 
+function isValidHttpUrl(val) {
+  return /^https?:\/\/\S+$/i.test(String(val || "").trim());
+}
+
 function fillRowList(containerId, values, placeholder) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
-  (values || []).forEach((v) => addRow(containerId, v, placeholder));
+  const list = values && values.length ? values : [""];
+  list.forEach((v) => addRow(containerId, v, placeholder));
 }
 
 function addRow(containerId, value, placeholder) {
   const container = document.getElementById(containerId);
-  const row = document.createElement("div");
   const isAlt = containerId === "alt-list";
+  const isLink = !isAlt;
+
+  const wrapper = isLink ? document.createElement("div") : null;
+  if (wrapper) wrapper.className = "link-item";
+
+  const row = document.createElement("div");
   row.className = isAlt ? "alt-row" : "link-row";
 
   // altLabels tragen ihr EIGENES Sprachkennzeichen. Ohne dieses Feld wurden
@@ -929,7 +1250,7 @@ function addRow(containerId, value, placeholder) {
   const lang = value && typeof value === "object" ? value.lang : "";
 
   const input = document.createElement("input");
-  input.type = "text";
+  input.type = isLink ? "url" : "text";
   input.className = "row-text";
   input.value = text || "";
   input.placeholder = placeholder || "";
@@ -947,19 +1268,75 @@ function addRow(containerId, value, placeholder) {
     langInput.addEventListener("input", markDirty);
   }
 
+  let openBtn = null;
+  let errEl = null;
+  let checkUrl = null;
+  if (isLink) {
+    openBtn = document.createElement("button");
+    openBtn.type = "button";
+    openBtn.className = "row-open-link";
+    openBtn.textContent = "\u00d6ffnen \u2197";
+    openBtn.title = "Internetadresse im Browser \u00f6ffnen, um den Link zu pr\u00fcfen";
+    openBtn.addEventListener("click", () => {
+      const url = input.value.trim();
+      if (isValidHttpUrl(url)) window.open(url, "_blank", "noopener,noreferrer");
+    });
+
+    errEl = document.createElement("p");
+    errEl.className = "field-check";
+
+    checkUrl = () => {
+      const v = input.value.trim();
+      const valid = isValidHttpUrl(v);
+      openBtn.disabled = !valid;
+      if (v && !valid) {
+        input.classList.add("invalid");
+        errEl.className = "field-check error";
+        errEl.textContent = "Ung\u00fcltige Internetadresse \u2014 muss mit https:// oder http:// beginnen.";
+      } else {
+        input.classList.remove("invalid");
+        errEl.className = "field-check";
+        errEl.textContent = "";
+      }
+    };
+    input.addEventListener("input", checkUrl);
+    input.addEventListener("blur", checkUrl);
+    checkUrl();
+  }
+
   const removeBtn = document.createElement("button");
   removeBtn.type = "button";
   removeBtn.className = "row-remove";
   removeBtn.textContent = "\u2715";
-  removeBtn.title = "Entfernen";
+  removeBtn.title = "Zeile leeren / entfernen";
   removeBtn.addEventListener("click", () => {
-    row.remove();
+    const itemEl = wrapper || row;
+    // Bleibt es die einzige Zeile, wird sie geleert statt komplett geloescht,
+    // damit das Eingabefeld immer sofort zum Eintippen bereitsteht.
+    if (container.children.length <= 1) {
+      const hadVal = !!input.value.trim();
+      input.value = "";
+      if (langInput) langInput.value = document.getElementById("f-lang").value.trim() || "de";
+      if (checkUrl) checkUrl();
+      if (hadVal) markDirty();
+      input.focus();
+      return;
+    }
+    itemEl.remove();
     markDirty();
   });
 
   row.appendChild(input);
   if (langInput) row.appendChild(langInput);
+  if (openBtn) row.appendChild(openBtn);
   row.appendChild(removeBtn);
+
+  if (wrapper) {
+    wrapper.appendChild(row);
+    wrapper.appendChild(errEl);
+    container.appendChild(wrapper);
+    return wrapper;
+  }
   container.appendChild(row);
   return row;
 }
@@ -989,15 +1366,25 @@ function addRelatedRow(id) {
 
   const info = document.createElement("div");
   info.className = "related-info";
-  const name = document.createElement("span");
-  name.className = "related-name";
-  name.textContent = rec ? recordLabel(rec) || id : id;
+  if (rec) {
+    const nameBtn = document.createElement("button");
+    nameBtn.type = "button";
+    nameBtn.className = "related-name-btn";
+    nameBtn.textContent = recordLabel(rec) || id;
+    nameBtn.title = `Zum verkn\u00fcpften Eintrag \u201e${id}\u201c springen`;
+    nameBtn.addEventListener("click", () => jumpToConcept(id));
+    info.appendChild(nameBtn);
+  } else {
+    const name = document.createElement("span");
+    name.className = "related-name";
+    name.textContent = id;
+    info.appendChild(name);
+  }
   const meta = document.createElement("span");
   meta.className = "related-meta";
   meta.textContent = rec
     ? `ex:${id}` + (rec.type ? ` \u00b7 ${rec.type}` : "") + (rec.protected ? " \u00b7 gesch\u00fctzter Eintrag" : "")
     : `ex:${id} \u00b7 in dieser Datei nicht gefunden`;
-  info.appendChild(name);
   info.appendChild(meta);
 
   const removeBtn = document.createElement("button");
@@ -1288,13 +1675,35 @@ function showProtectedEditor(rec) {
 
   document.getElementById("concept-form").classList.add("protected-mode");
   currentDeleteTargetId = rec.id;
+  updateFileControls();
   renderSaveHint();
   updateSaveStatus();
   scheduleSynonymCheck(true);
 }
 
-// Sofort-Hinweis bei der Neuanlage: Jede Kennung darf nur einmal vorkommen.
-// Massgeblich bleibt die Pruefung im Server; das hier erspart nur den Umweg
+// Sofort-Hinweis fuer Pflichtfelder (Bevorzugte Benennung, Kurzbeschreibung).
+// Bei einer frischen Neuanlage erscheinen Hinweise erst, nachdem das Feld
+// beruehrt oder verlassen wurde — bei bestehenden Eintraegen mit Luecken sofort.
+function updateFieldChecks(forceAll) {
+  const isNew = App.selectedId === "__NEW__";
+  const checks = [
+    { id: "f-pref", boxId: "pref-check", msg: "Pflichtfeld: Bitte eine bevorzugte Benennung eintragen." },
+    { id: "f-note", boxId: "note-check", msg: "Pflichtfeld: Bitte eine kurze Erl\u00e4uterung eintragen (erscheint als Mouseover)." },
+  ];
+  for (const c of checks) {
+    const input = document.getElementById(c.id);
+    const box = document.getElementById(c.boxId);
+    if (!input || !box) continue;
+    const val = normalizeSingleLine(input.value).trim();
+    const shouldWarn = !val && (forceAll || !isNew || App.touchedFields.has(c.id));
+    input.classList.toggle("invalid", shouldWarn);
+    box.className = shouldWarn ? "field-check error" : "field-check";
+    box.textContent = shouldWarn ? c.msg : "";
+  }
+}
+
+// Sofort-Hinweis bei der Neuanlage: Format + Eindeutigkeit der Kennung.
+// Massgeblich bleibt die Pruefung im Server; das hier erspart den Umweg
 // ueber eine Fehlermeldung nach dem Speichern.
 function updateIdCheck() {
   const box = document.getElementById("id-check");
@@ -1304,7 +1713,20 @@ function updateIdCheck() {
   input.classList.remove("invalid");
   if (App.selectedId !== "__NEW__" || !App.state) return;
   const id = input.value.trim();
-  if (!id) return;
+  if (!id) {
+    if (App.touchedFields.has("f-id")) {
+      input.classList.add("invalid");
+      box.classList.add("error");
+      box.textContent = "Pflichtfeld: Bitte eine eindeutige Kennung eintragen (z. B. ABB).";
+    }
+    return;
+  }
+  if (!ID_RE.test(id)) {
+    input.classList.add("invalid");
+    box.classList.add("error");
+    box.textContent = "Ung\u00fcltige Kennung: nur Buchstaben ohne Umlaute, Ziffern sowie . _ - (Anfang: Buchstabe oder _).";
+    return;
+  }
 
   const same = findRecord(id);
   if (same) {
@@ -1321,6 +1743,24 @@ function updateIdCheck() {
     btn.addEventListener("click", () => jumpToConcept(id));
     box.appendChild(btn);
     return;
+  }
+  // Auch andere vorgemerkte neue Eintraege pruefen.
+  for (const [k, d] of App.drafts.entries()) {
+    if (k === App.currentKey || d.originalId) continue;
+    if (d.data && d.data.id === id) {
+      input.classList.add("invalid");
+      box.classList.add("error");
+      box.appendChild(document.createTextNode(
+        `Diese Kennung wird bereits in einem anderen neuen, noch nicht gespeicherten Eintrag verwendet. `
+      ));
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "subtle";
+      btn.textContent = "Entwurf \u00f6ffnen";
+      btn.addEventListener("click", () => openDraft(k));
+      box.appendChild(btn);
+      return;
+    }
   }
   const similar = App.state.records.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (similar) {
@@ -1352,9 +1792,9 @@ function showEditorForm(rec, opts) {
   document.getElementById("f-note").value = rec.note || "";
   document.getElementById("f-synonym").checked = !!rec.synonym;
 
-  fillRowList("alt-list", rec.alts, "Alternative Benennung");
-  fillRowList("exact-list", rec.exact, "https://\u2026");
-  fillRowList("close-list", rec.close, "https://\u2026");
+  fillRowList("alt-list", rec.alts, "z. B. Abk\u00fcrzung oder andere Schreibweise");
+  fillRowList("exact-list", rec.exact, "z. B. https://d-nb.info/gnd/\u2026");
+  fillRowList("close-list", rec.close, "z. B. https://de.wikipedia.org/wiki/\u2026");
   fillRelated(rec.related);
 
   const idHelp = document.getElementById("id-help");
@@ -1363,12 +1803,15 @@ function showEditorForm(rec, opts) {
     : "";
   idInput.title = opts.isNew ? "" : "Gesperrt. \u00c4nderung nur \u00fcber \u201eKennung \u00e4ndern \u2026\u201c.";
   document.getElementById("btn-rename").hidden = !!opts.isNew;
-  updateIdCheck();
 
   currentDeleteTargetId = opts.isNew ? null : rec.id;
   App.dirty = false;
   App.saveFailed = false;
+  App.touchedFields.clear();
   App.currentKey = opts.key || (opts.isNew ? null : rec.id);
+  updateIdCheck();
+  updateFieldChecks(false);
+  updateFileControls();
   renderPending();
   renderSaveHint();
   updateSaveStatus();
@@ -1414,11 +1857,35 @@ function renderFindings() {
 
   const dot = document.getElementById("traffic-dot");
   const text = document.getElementById("traffic-text");
-  const hasFile = App.state && App.state.path;
+  const hasFile = !!(App.state && App.state.path);
   dot.className = "dot" + (errors ? " error" : warnings ? " warn" : hasFile ? " ok" : "");
   text.textContent = hasFile ? `${errors} Fehler, ${warnings} ${warnings === 1 ? "Hinweis" : "Hinweise"}` : "Keine Datei geladen.";
 
-  for (const f of findings) {
+  // Filter-Leiste aktualisieren (Alle / Fehler / Hinweise)
+  const filterBar = document.getElementById("findings-filter");
+  if (filterBar) {
+    filterBar.hidden = !hasFile || findings.length === 0;
+    const counts = { all: findings.length, error: errors, warning: warnings };
+    const names = { all: "Alle", error: "Fehler", warning: "Hinweise" };
+    filterBar.querySelectorAll(".filter-pill").forEach((btn) => {
+      const f = btn.dataset.filter;
+      btn.textContent = `${names[f]} (${counts[f]})`;
+      btn.classList.toggle("active", App.findingFilter === f);
+      btn.setAttribute("aria-pressed", App.findingFilter === f ? "true" : "false");
+    });
+  }
+
+  const visibleFindings = findings.filter((f) => App.findingFilter === "all" || f.level === App.findingFilter);
+  if (hasFile && findings.length > 0 && visibleFindings.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "findings-empty";
+    empty.textContent = App.findingFilter === "error"
+      ? "Keine Fehler vorhanden."
+      : "Keine Hinweise vorhanden.";
+    list.appendChild(empty);
+  }
+
+  for (const f of visibleFindings) {
     const div = document.createElement("div");
     if (f.concept_ids && f.concept_ids.length > 1) {
       // Befund betrifft mehrere Konzepte (z. B. Synonymliste): jede ID einzeln anklickbar.
@@ -1513,13 +1980,10 @@ function jumpToConcept(id) {
     search.value = "";
     filter.value = "";
   }
-  selectRecordSilently(id);
-  // Die Buchstabengruppe des Eintrags aufklappen, sonst bliebe die Zeile
-  // in einer zugeklappten Gruppe verborgen.
-  const record2 = findRecord(id);
-  const label = record2.protected ? record2.id : (record2.pref || record2.id);
+  // Buchstabengruppe VOR selectRecordSilently aufklappen, damit renderTree nur einmal laeuft.
+  const label = record.protected ? record.id : (record.pref || record.id);
   App.expandedLetters.add(groupLetterFor(label));
-  renderTree();
+  selectRecordSilently(id);
   const node = document.querySelector(`[data-concept-id="${cssEscape(id)}"]`);
   if (node) node.scrollIntoView({ block: "center" });
   document.getElementById("editor-panel").scrollTop = 0;
@@ -1550,10 +2014,12 @@ function afterFileLoaded() {
   App.drafts.clear();
   App.currentKey = null;
   App.failedId = null;
+  App.findingFilter = "all";
   clearEditor();
   renderTree();
   renderFindings();
   updatePathBar();
+  updateFileControls();
   App.justSaved = null;
   refreshBackupStatus();
   checkRecovery();
@@ -1573,8 +2039,20 @@ async function validateWholeFile() {
     renderFindings();
     updatePathBar();
 
+    const changedExternally = !!(previousSha && App.state.sha256 !== previousSha);
+    const { errors, warnings } = findingCounts(App.state);
+    if (!changedExternally && errors === 0) {
+      showBanner(
+        warnings
+          ? `Datei gepr\u00fcft: keine Fehler, ${warnings} ${warnings === 1 ? "Hinweis" : "Hinweise"} im Pr\u00fcfungspanel rechts.`
+          : "Datei gepr\u00fcft: keine Fehler und keine Hinweise.",
+        warnings ? "warn" : "ok"
+      );
+      return;
+    }
+
     let body = describeState(App.state);
-    if (previousSha && App.state.sha256 !== previousSha) {
+    if (changedExternally) {
       body +=
         "\n\nHinweis: Die Datei wurde seit dem letzten Einlesen au\u00dferhalb des Editors " +
         "ver\u00e4ndert und ist jetzt neu eingelesen.";
@@ -1586,8 +2064,7 @@ async function validateWholeFile() {
       }
     }
     const kind = stateKind(App.state);
-    const title = kind === "ok" ? "Datei gepr\u00fcft \u2014 keine Beanstandungen" : "Datei gepr\u00fcft";
-    showModal(title, body, kind);
+    showModal("Datei gepr\u00fcft", body, kind);
   } catch (err) {
     handleApiError(err, "Pr\u00fcfung fehlgeschlagen");
   }
@@ -1638,10 +2115,20 @@ async function pollChooseResult() {
       const resp = await apiPost("/api/choose-result", {});
       if (resp.status === "open") continue;
       if (resp.status === "loaded") {
+        hideModal();
         App.state = resp;
         afterFileLoaded();
-        showModal("Datei ge\u00f6ffnet", describeState(App.state), stateKind(App.state));
+        const { errors, warnings } = findingCounts(App.state);
+        const summary = errors || warnings
+          ? `${errors} Fehler, ${warnings} ${warnings === 1 ? "Hinweis" : "Hinweise"} (Details rechts)`
+          : "keine Befunde";
+        showBanner(
+          `Datei ge\u00f6ffnet: ${fileBaseName(App.state.path)} \u2014 ${App.state.records.length} Konzepte (${summary}).`,
+          errors ? "warn" : warnings ? "info" : "ok",
+          { durationMs: errors ? 10000 : 7000 }
+        );
       } else if (resp.status === "cancelled") {
+        hideModal();
         showNothingDone("Datei \u00f6ffnen", "Es wurde keine Datei ausgew\u00e4hlt; die bisherige Datei bleibt ge\u00f6ffnet.");
       } else {
         // "idle": Ergebnis wurde bereits von einem anderen Browser-Tab abgeholt.
@@ -1661,7 +2148,7 @@ async function openFile() {
     showChooseWaitingModal();
     return;
   }
-  if (!confirmDiscardIfDirty("open")) {
+  if (!(await confirmDiscardIfDirty("open"))) {
     showNothingDone("Datei \u00f6ffnen", "Abgebrochen; die nicht gespeicherten \u00c4nderungen bleiben erhalten.");
     return;
   }
@@ -1716,7 +2203,7 @@ function showServerGone(text) {
 
 async function doCloseFile() {
   if (!requireFile("Datei schlie\u00dfen")) return;
-  if (!confirmDiscardIfDirty("close")) {
+  if (!(await confirmDiscardIfDirty("close"))) {
     showNothingDone("Datei schlie\u00dfen", "Abgebrochen; die Datei bleibt ge\u00f6ffnet.");
     return;
   }
@@ -1731,13 +2218,8 @@ async function doCloseFile() {
     document.getElementById("tree-type-filter").value = "";
     App.expandedLetters.clear();
     afterFileLoaded();
-    showModal(
-      "Datei geschlossen",
-      `Die Datei wurde geschlossen:\n${previous}\n\n` +
-        "Es wurde nichts ver\u00e4ndert. Mit \u201eDatei \u00f6ffnen \u2026\u201c k\u00f6nnen Sie jetzt " +
-        "eine andere .ttl-Datei \u00f6ffnen.\n\n" +
-        "Hinweis: Ein zuvor manuell gew\u00e4hlter Sicherungsort wurde ebenfalls " +
-        "zur\u00fcckgesetzt, damit er nicht versehentlich f\u00fcr eine andere Datei gilt.",
+    showBanner(
+      `Datei geschlossen (${fileBaseName(previous)}). Es wurde nichts ver\u00e4ndert; ein manuell gew\u00e4hlter Sicherungsort wurde zur\u00fcckgesetzt.`,
       "ok"
     );
   } catch (err) {
@@ -1747,7 +2229,7 @@ async function doCloseFile() {
 
 async function doStorageCheck() {
   if (!requireFile("Schreibzugriff pr\u00fcfen")) return;
-  showModal("Schreibzugriff pr\u00fcfen \u2026", "Kandidatenordner werden getestet.", "progress");
+  showModal("Schreibzugriff pr\u00fcfen \u2026", "Sicherungsort und Dateiordner werden getestet.", "progress");
   try {
     const resp = await apiPost("/api/storage-check", {});
     const lines = resp.results
@@ -1948,16 +2430,20 @@ async function doRename(oldId, newId) {
     selectRecordSilently(newId);
     refreshBackupStatus();
     const updated = (resp.renamed && resp.renamed.updated_references) || [];
-    const methodText = resp.write_method === "atomic" ? "atomar (os.replace)" : "nicht-atomarer R\u00fcckfall (r+b)";
-    let msg =
+    const methodText = resp.write_method === "atomic" ? "atomar (os.replace)" : "direkter R\u00fcckfall (r+b)";
+    const msg =
       `ex:${oldId}  \u2192  ex:${newId}\n\n` +
       (updated.length
-        ? `Verweise angepasst in ${updated.length} Konzept(en): ${updated.map((i) => "ex:" + i).join(", ")}\n\n`
-        : "Kein anderes Konzept verwies auf den Eintrag.\n\n") +
-      `Sicherung: ${resp.backup_label}\n(${resp.backup_path})\nSchreibmethode: ${methodText}\n\n` +
-      "Denken Sie daran: Verwendungen der alten Kennung au\u00dferhalb dieser Datei (z. B. Editions-XML, Typesense-Index) " +
+        ? `Verweise wurden automatisch angepasst in ${updated.length} Konzept(en): ${updated.map((i) => "ex:" + i).join(", ")}\n\n`
+        : "Kein anderes Konzept in dieser Datei verwies auf den Eintrag.\n\n") +
+      "Der vorherige Stand wurde automatisch gesichert (wiederherstellbar \u00fcber \u201eFr\u00fchere St\u00e4nde \u2026\u201c).\n\n" +
+      "Bitte beachten: Verwendungen der alten Kennung au\u00dferhalb dieser Datei (z. B. Editions-XML, Typesense-Index) " +
       "m\u00fcssen von Hand angepasst werden.";
     showModal("Kennung ge\u00e4ndert", msg, "ok");
+    appendTechDetails([
+      `Sicherung: ${resp.backup_path}`,
+      `Schreibmethode: ${methodText}`,
+    ]);
   } catch (err) {
     handleApiError(err, "Kennung \u00e4ndern fehlgeschlagen");
   }
@@ -1977,10 +2463,9 @@ const HELP_TEXT =
   "Datei \u00f6ffnen\n" +
   "\u201eDatei \u00f6ffnen \u2026\u201c zeigt das Windows-Fenster zur Dateiauswahl. Solange es offen ist, steht im Browser ein Hinweis. " +
   "Ist das Fenster nicht zu sehen, liegt es hinter dem Browser: \u201eFenster nach vorne holen\u201c anklicken oder in der Taskleiste auf \u201eFPV-Editor\u201c klicken.\n\n" +
-  "Sicherung\n" +
-  "Vor jedem Speichern wird die alte Fassung der Datei einmal gesichert und die Sicherung gepr\u00fcft (Schreiben, Zur\u00fccklesen, Bytevergleich). " +
-  "Sie liegt unter %LOCALAPPDATA%\\FPV-Editor\\backups, au\u00dferhalb Ihres Arbeitsordners, oder im Ordner, den Sie unter \u201eFr\u00fchere St\u00e4nde wiederherstellen \u2026\u201c \u2192 \u201eSicherungsort w\u00e4hlen\u201c festlegen. " +
-  "Erst danach wird die TTL-Datei ge\u00e4ndert. Gelingt die Sicherung nicht, bleibt die Datei unver\u00e4ndert.\n\n" +
+  "Fr\u00fchere St\u00e4nde (lokales Sicherheitsnetz)\n" +
+  "Vor jedem Speichern legt der Editor still eine lokale Sicherung des vorherigen Stands an (die letzten 15 St\u00e4nde bleiben unter %LOCALAPPDATA%\\FPV-Editor\\backups erhalten, \u00e4ltere werden automatisch aufger\u00e4umt; langfristige Historie liegt in Git). " +
+  "\u00dcber \u201eFr\u00fchere St\u00e4nde \u2026\u201c l\u00e4sst sich ein Stand von vor dem letzten Commit jederzeit zur\u00fcckholen.\n\n" +
   "Was das Speichern verhindert\n" +
   "Nur Fehler in den Eintr\u00e4gen, die Sie gerade speichern, und Fehler, die die ganze Datei betreffen (z. B. ung\u00fcltiges Turtle). " +
   "Hinweise und Fehler in anderen Eintr\u00e4gen verhindern das Speichern nicht.\n\n" +
@@ -1998,8 +2483,10 @@ const HELP_TEXT =
   "Kennungen\n" +
   "Die Kennung (ID) ist Teil der Adresse (URI) des Konzepts und deshalb im Formular gesperrt. \u00c4ndern l\u00e4sst sie sich nur bewusst \u00fcber \u201eKennung \u00e4ndern \u2026\u201c unter dem Feld: " +
   "Verweise in anderen Eintr\u00e4gen werden dabei automatisch angepasst. Verwendungen au\u00dferhalb der Datei (Edition, Typesense) nicht; die m\u00fcssen von Hand ge\u00e4ndert werden.\n\n" +
-  "Technische Namen\n" +
-  "Grau neben den Feldbezeichnungen stehen die Feldnamen der Datei (z. B. skos:prefLabel). Sie helfen bei der Fehlersuche im Quelltext.";
+  "Technische Namen & Tastenk\u00fcrzel\n" +
+  "Grau neben den Feldbezeichnungen stehen die Feldnamen der Datei (z. B. skos:prefLabel). Sie helfen bei der Fehlersuche im Quelltext. " +
+  "Mit Strg+S k\u00f6nnen Sie alle vorgemerkten \u00c4nderungen direkt speichern. Kurzbeschreibungen (skos:note) sind einzeilig \u2014 Enter wird automatisch zu einem Leerzeichen. " +
+  "Unkritische Hinweise erscheinen oben im Statusbanner, Fehler und Sicherheitsabfragen immer als eigenes Dialogfenster.";
 
 function showHelp() {
   showModal("Hilfe", HELP_TEXT, "info");
@@ -2015,11 +2502,7 @@ function doChooseBackupDir() {
       try {
         const resp = await apiPost("/api/backup-directory", { path: value });
         refreshBackupStatus();
-        showModal(
-          "Sicherungsort \u00fcbernommen",
-          `Sicherungen werden f\u00fcr die laufende Sitzung zuerst in diesem Ordner versucht:\n${resp.path}`,
-          "ok"
-        );
+        showBanner(`Sicherungsort f\u00fcr diese Sitzung \u00fcbernommen: ${resp.path}`, "ok");
       } catch (err) {
         handleApiError(err, "Sicherungsort ung\u00fcltig");
       }
@@ -2033,7 +2516,17 @@ async function doQuit() {
     showQuitChoice(n);
     return;
   }
-  if (!confirm("FPV-Editor wirklich beenden?")) {
+  const confirmed = await showConfirmModal(
+    "FPV-Editor beenden?",
+    "Den FPV-Editor wirklich beenden?\n\nDanach funktioniert die Seite im Browser nicht mehr; das Browserfenster kann anschlie\u00dfend geschlossen werden.",
+    {
+      confirmLabel: "Programm beenden",
+      cancelLabel: "Weiterarbeiten",
+      danger: true,
+      kind: "warn",
+    }
+  );
+  if (!confirmed) {
     showNothingDone("App beenden", "Abgebrochen; die App l\u00e4uft weiter.");
     return;
   }
@@ -2158,37 +2651,59 @@ async function saveAll(opts) {
     const methodText =
       resp.write_method === "atomic"
         ? "atomar (os.replace)"
-        : "nicht-atomarer R\u00fcckfall (r+b) \u2014 siehe Hinweis unten";
-    let msg =
-      (items.length === 1
-        ? `Der Eintrag \u201e${savedIds[0]}\u201c wurde gespeichert.`
-        : `${items.length} Eintr\u00e4ge wurden gespeichert:\n${savedIds.map((i) => "\u2022 ex:" + i).join("\n")}`) +
-      `\n\nSicherung des vorherigen Stands: ${resp.backup_label}\n(${resp.backup_path})\nSchreibmethode: ${methodText}`;
-    if (resp.write_method !== "atomic") {
-      msg +=
-        "\n\nHinweis: Der R\u00fcckfall ist NICHT atomar. Bei einem Absturz w\u00e4hrend des Schreibens " +
-        "kann eine Wiederherstellung aus der eben erstellten Sicherung n\u00f6tig sein.";
-    }
+        : "direkter R\u00fcckfall (r+b)";
+    const singleRec = items.length === 1 ? findRecord(savedIds[0]) : null;
+    const singleLabel = singleRec && !singleRec.protected && singleRec.pref
+      ? `\u201e${singleRec.pref}\u201c (ex:${savedIds[0]})`
+      : `\u201e${savedIds[0]}\u201c`;
     const otherErrors = (resp.findings || []).filter((f) => f.level === "error" && !savedIds.includes(f.concept_id));
-    if (otherErrors.length) {
-      msg +=
-        `\n\nHinweis: Die Datei enth\u00e4lt an ${otherErrors.length} weiteren Stelle(n) noch ` +
-        "Fehler, die NICHT mit Ihren \u00c4nderungen zusammenh\u00e4ngen und deshalb das Speichern " +
-        "nicht verhindert haben. Details siehe rechtes Pr\u00fcfungspanel.";
-    }
+    const techLines = [
+      `Sicherung: ${resp.backup_path}`,
+      `Schreibmethode: ${methodText}`,
+    ];
+
     if (thenQuit) {
       await apiPost("/api/quit", { force: true });
-      showModal(
-        "Gespeichert \u2014 wird beendet",
-        `${msg}\n\nDie Anwendung wird beendet. Dieses Browserfenster kann geschlossen werden.`,
-        "ok"
-      );
+      const msg =
+        (items.length === 1
+          ? `Der Eintrag ${singleLabel} wurde gespeichert.`
+          : `${items.length} Eintr\u00e4ge wurden gespeichert:\n${savedIds.map((i) => "\u2022 ex:" + i).join("\n")}`) +
+        "\n\nDie Anwendung wird jetzt beendet. Dieses Browserfenster kann geschlossen werden.";
+      showModal("Gespeichert \u2014 Programm wird beendet", msg, "ok");
+      appendTechDetails(techLines);
       return;
     }
-    showModal("Gespeichert", msg, "ok");
+
+    if (resp.write_method !== "atomic") {
+      let msg =
+        (items.length === 1
+          ? `Der Eintrag ${singleLabel} wurde gespeichert.`
+          : `${items.length} Eintr\u00e4ge wurden gespeichert:\n${savedIds.map((i) => "\u2022 ex:" + i).join("\n")}`) +
+        "\n\nHinweis: Die Datei musste direkt \u00fcberschrieben werden. Sollte dabei ein Problem aufgetreten sein, " +
+        "l\u00e4sst sich der vorherige Stand \u00fcber \u201eFr\u00fchere St\u00e4nde \u2026\u201c zur\u00fcckholen.";
+      if (otherErrors.length) {
+        msg += `\n\nAu\u00dferdem gibt es in ${otherErrors.length} anderen Eintr\u00e4gen noch Fehler (siehe Pr\u00fcfungspanel rechts).`;
+      }
+      showModal("Gespeichert (mit Hinweis)", msg, "warn");
+      appendTechDetails(techLines);
+      return;
+    }
+
+    // Regelfall (atomar gespeichert): kein blockierendes Modal, sondern klares
+    // gruenes Status-Banner oben + Zeitstempel neben dem Speichern-Knopf.
+    hideModal();
+    let banner = items.length === 1
+      ? `Gespeichert: ${singleLabel}.`
+      : `Gespeichert: ${items.length} Eintr\u00e4ge (${savedIds.slice(0, 5).map((i) => "ex:" + i).join(", ")}${savedIds.length > 5 ? " \u2026" : ""}).`;
+    if (otherErrors.length) {
+      banner += ` Hinweis: ${otherErrors.length} Fehler in anderen Eintr\u00e4gen (siehe rechts).`;
+    }
+    showBanner(banner, "ok", { durationMs: 8000 });
   } catch (err) {
     App.saveFailed = true;
     App.failedId = err.failedId || null;
+    updateFieldChecks(true);
+    updateIdCheck();
     updateSaveStatus();
     renderPending();
     handleApiError(
@@ -2201,7 +2716,7 @@ async function saveAll(opts) {
 }
 
 // Setzt NUR den gerade geoeffneten Eintrag auf den gespeicherten Stand zurueck.
-function discardCurrent() {
+async function discardCurrent() {
   if (!requireFile("Eintrag zur\u00fccksetzen")) return;
   if (!App.selectedId) {
     showNothingDone("Eintrag zur\u00fccksetzen", "Es ist kein Eintrag ge\u00f6ffnet.");
@@ -2218,7 +2733,18 @@ function discardCurrent() {
     return;
   }
   const isNew = App.selectedId === "__NEW__";
-  if (!confirm(isNew ? "Den neuen Eintrag verwerfen?" : "Die \u00c4nderungen an diesem Eintrag verwerfen?")) {
+  const confirmed = await showConfirmModal(
+    isNew ? "Neuen Eintrag verwerfen?" : "\u00c4nderungen an diesem Eintrag verwerfen?",
+    isNew
+      ? "Den neuen, noch nicht gespeicherten Eintrag wirklich verwerfen?"
+      : `Die nicht gespeicherten \u00c4nderungen am Eintrag \u201e${App.selectedId}\u201c wirklich verwerfen? Andere vorgemerkte Eintr\u00e4ge bleiben erhalten.`,
+    {
+      confirmLabel: isNew ? "Neuen Eintrag verwerfen" : "\u00c4nderungen verwerfen",
+      cancelLabel: "Abbrechen",
+      danger: true,
+    }
+  );
+  if (!confirmed) {
     showNothingDone("Eintrag zur\u00fccksetzen", "Abgebrochen; die \u00c4nderungen bleiben erhalten.");
     return;
   }
@@ -2229,7 +2755,10 @@ function discardCurrent() {
   else selectRecordSilently(id);
   renderPending();
   renderTree();
-  showModal("Zur\u00fcckgesetzt", isNew ? "Der neue Eintrag wurde verworfen." : `Der Eintrag \u201e${id}\u201c steht wieder auf dem gespeicherten Stand.`, "ok");
+  showBanner(
+    isNew ? "Der neue Eintrag wurde verworfen." : `Der Eintrag \u201e${id}\u201c steht wieder auf dem gespeicherten Stand.`,
+    "ok"
+  );
 }
 
 async function onDeleteClick() {
@@ -2253,7 +2782,19 @@ async function onDeleteClick() {
     );
     return;
   }
-  if (!confirm(`Eintrag \u201e${id}\u201c wirklich l\u00f6schen? Dies kann nur \u00fcber eine Sicherung r\u00fcckg\u00e4ngig gemacht werden.`)) {
+  const rec = findRecord(id);
+  const displayName = rec && !rec.protected && rec.pref ? `\u201e${rec.pref}\u201c (ex:${id})` : `ex:${id}`;
+  const confirmed = await showConfirmModal(
+    "Eintrag endg\u00fcltig l\u00f6schen?",
+    `Eintrag ${displayName} wirklich aus der Datei l\u00f6schen?\n\nVor dem L\u00f6schen wird automatisch eine gepr\u00fcfte Sicherung angelegt. Das L\u00f6schen kann nur \u00fcber diese Sicherung r\u00fcckg\u00e4ngig gemacht werden.`,
+    {
+      confirmLabel: "Eintrag endg\u00fcltig l\u00f6schen",
+      cancelLabel: "Abbrechen",
+      danger: true,
+      kind: "error",
+    }
+  );
+  if (!confirmed) {
     showNothingDone("Eintrag l\u00f6schen", `Abgebrochen; der Eintrag \u201e${id}\u201c wurde nicht gel\u00f6scht.`);
     return;
   }
@@ -2268,15 +2809,48 @@ async function onDeleteClick() {
     renderFindings();
     updatePathBar();
     refreshBackupStatus();
-    const methodText = resp.write_method === "atomic" ? "atomar (os.replace)" : "nicht-atomarer R\u00fcckfall (r+b)";
+    const methodText = resp.write_method === "atomic" ? "atomar (os.replace)" : "direkter R\u00fcckfall (r+b)";
     showModal(
-      "Gel\u00f6scht",
-      `Der Eintrag \u201e${id}\u201c wurde gel\u00f6scht.\n\nSicherung: ${resp.backup_label}\n(${resp.backup_path})\nSchreibmethode: ${methodText}`,
+      "Eintrag gel\u00f6scht",
+      `Der Eintrag ${displayName} wurde aus der Datei gel\u00f6scht.\n\n` +
+        "Der vorherige Stand wurde automatisch gesichert und kann bei Bedarf \u00fcber \u201eFr\u00fchere St\u00e4nde \u2026\u201c zur\u00fcckgeholt werden.",
       "ok"
     );
+    appendTechDetails([
+      `Sicherung: ${resp.backup_path}`,
+      `Schreibmethode: ${methodText}`,
+    ]);
   } catch (err) {
     handleApiError(err, "L\u00f6schen fehlgeschlagen");
   }
+}
+
+// Kurzbeschreibung (skos:note) ist einzeilig: Enter darf keinen Zeilenumbruch
+// erzeugen, sondern wird wie eingefuegte Zeilenumbrueche zu einem Leerzeichen
+// normalisiert (verhindert ungueltiges Turtle und bleibt fuer Mouseover sauber).
+function setupNoteSingleLine() {
+  const noteEl = document.getElementById("f-note");
+  noteEl.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Enter") return;
+    ev.preventDefault();
+    const start = noteEl.selectionStart ?? noteEl.value.length;
+    const end = noteEl.selectionEnd ?? noteEl.value.length;
+    const before = noteEl.value.slice(0, start);
+    const after = noteEl.value.slice(end);
+    const needsSpace = before.length > 0 && !/[ \t]$/.test(before) && !/^[ \t]/.test(after);
+    const insert = needsSpace ? " " : "";
+    noteEl.value = before + insert + after;
+    const pos = start + insert.length;
+    noteEl.setSelectionRange(pos, pos);
+    if (insert || start !== end) markDirty();
+  });
+  noteEl.addEventListener("input", () => {
+    if (!/[\r\n]/.test(noteEl.value)) return;
+    const pos = noteEl.selectionStart ?? noteEl.value.length;
+    const beforeNorm = normalizeSingleLine(noteEl.value.slice(0, pos));
+    noteEl.value = normalizeSingleLine(noteEl.value);
+    noteEl.setSelectionRange(beforeNorm.length, beforeNorm.length);
+  });
 }
 
 // ---------------------------------------------------------------------
@@ -2285,13 +2859,28 @@ async function onDeleteClick() {
 
 document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("modal-close").addEventListener("click", hideModal);
+  document.getElementById("toast-close").addEventListener("click", hideBanner);
+  const toastBar = document.getElementById("toast-bar");
+  toastBar.addEventListener("mouseenter", () => clearTimeout(toastTimer));
+  toastBar.addEventListener("mouseleave", () => {
+    if (!toastBar.hidden && toastAutoMs > 0) {
+      toastTimer = setTimeout(hideBanner, 3000);
+    }
+  });
+
   document.addEventListener("keydown", (ev) => {
-    if (
-      ev.key === "Escape" &&
-      !document.getElementById("modal-overlay").classList.contains("hidden") &&
-      !document.getElementById("modal-box").classList.contains("no-close")
-    )
-      hideModal();
+    if ((ev.ctrlKey || ev.metaKey) && !ev.altKey && ev.key.toLowerCase() === "s") {
+      ev.preventDefault();
+      if (App.state && App.state.path) saveAll();
+      return;
+    }
+    if (ev.key === "Escape" && !document.getElementById("modal-overlay").classList.contains("hidden")) {
+      if (typeof modalCancelHandler === "function") {
+        modalCancelHandler();
+      } else if (!document.getElementById("modal-box").classList.contains("no-close")) {
+        hideModal();
+      }
+    }
   });
 
   document.getElementById("btn-validate-file").addEventListener("click", validateWholeFile);
@@ -2302,9 +2891,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("btn-quit").addEventListener("click", doQuit);
 
   document.getElementById("btn-open").addEventListener("click", openFile);
+  document.getElementById("btn-welcome-open").addEventListener("click", openFile);
 
-  document.getElementById("tree-search").addEventListener("input", renderTree);
+  document.getElementById("tree-search").addEventListener("input", () => {
+    clearTimeout(treeSearchTimer);
+    treeSearchTimer = setTimeout(renderTree, 120);
+  });
   document.getElementById("tree-type-filter").addEventListener("change", renderTree);
+
+  document.querySelectorAll("#findings-filter .filter-pill").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      App.findingFilter = btn.dataset.filter || "all";
+      renderFindings();
+    });
+  });
 
   document.getElementById("btn-expand-all").addEventListener("click", () => {
     const term = document.getElementById("tree-search").value.trim().toLowerCase();
@@ -2321,13 +2921,45 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderTree();
   });
 
-  document.getElementById("btn-add-alt").addEventListener("click", () => addRow("alt-list", "", "Alternative Benennung"));
-  document.getElementById("btn-add-exact").addEventListener("click", () => addRow("exact-list", "", "https://\u2026"));
-  document.getElementById("btn-add-close").addEventListener("click", () => addRow("close-list", "", "https://\u2026"));
+  document.getElementById("btn-add-alt").addEventListener("click", () => {
+    const r = addRow("alt-list", "", "z. B. Abk\u00fcrzung oder andere Schreibweise");
+    const inp = r.querySelector("input.row-text");
+    if (inp) inp.focus();
+  });
+  document.getElementById("btn-add-exact").addEventListener("click", () => {
+    const r = addRow("exact-list", "", "z. B. https://d-nb.info/gnd/\u2026");
+    const inp = r.querySelector("input.row-text");
+    if (inp) inp.focus();
+  });
+  document.getElementById("btn-add-close").addEventListener("click", () => {
+    const r = addRow("close-list", "", "z. B. https://de.wikipedia.org/wiki/\u2026");
+    const inp = r.querySelector("input.row-text");
+    if (inp) inp.focus();
+  });
   setupRelatedPicker();
-  document.getElementById("f-id").addEventListener("input", updateIdCheck);
+  setupNoteSingleLine();
+  document.getElementById("f-id").addEventListener("input", () => {
+    App.touchedFields.add("f-id");
+    updateIdCheck();
+  });
+  document.getElementById("f-id").addEventListener("blur", () => {
+    App.touchedFields.add("f-id");
+    updateIdCheck();
+  });
+  for (const fieldId of ["f-pref", "f-note"]) {
+    const el = document.getElementById(fieldId);
+    el.addEventListener("input", () => {
+      App.touchedFields.add(fieldId);
+      updateFieldChecks(false);
+    });
+    el.addEventListener("blur", () => {
+      App.touchedFields.add(fieldId);
+      updateFieldChecks(false);
+    });
+  }
   document.getElementById("btn-close-file").addEventListener("click", doCloseFile);
   document.getElementById("btn-clear-search").addEventListener("click", () => {
+    clearTimeout(treeSearchTimer);
     document.getElementById("tree-search").value = "";
     document.getElementById("tree-type-filter").value = "";
     renderTree();
@@ -2356,6 +2988,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderTree();
   renderFindings();
   updatePathBar();
+  updateFileControls();
   renderPending();
   refreshBackupStatus();
   await checkRecovery();
