@@ -155,63 +155,71 @@ Ablauf aus `LIES-MICH.txt`, Entpacken mit „Alle extrahieren".
 | `bundle_check.py` | Manifest schreiben/laden, Programmordner gegen das Manifest prüfen (fehlend, falsche Größe, abweichende Prüfsumme, Cloud-Platzhalter), Standortwarnungen (Sync-Ordner, Netzpfad, ZIP-Vorschau) |
 | `make_release.py` | Letzter Build-Schritt: Manifest + `LIES-MICH.txt` in den Ordner, ZIP bauen, ZIP gegen das Manifest nachprüfen |
 | `LIES-MICH.txt` | Installationsanleitung für die Nutzer*innen (wird in den Programmordner/ZIP kopiert) |
-| `static/index.html` | Drei-Spalten-Oberfläche (Baum / Formular / Validierung) inkl. eingebettetem CSS |
-| `static/app.js` | Gesamte Frontend-Logik: Baum, Suche/Filter, Formular, Modals, alle API-Aufrufe |
+| `static/index.html` | Drei-Spalten-Oberfläche (Baum / Formular / Validierung), Status-Banner und Modals |
+| `static/styles.css` | Ausgelagertes lokales Stylesheet (ohne externe Schriften/CDNs) |
+| `static/app.js` | Gesamte Frontend-Logik: Baum, Suche/Filter, Formular, Status-Banner, Modals, alle API-Aufrufe |
 | `requirements.txt` | `Flask>=3.1,<4`, `rdflib>=7.1,<8` |
 | `build_windows.bat` | Offline-Build der EXE aus `wheels/` |
 | `diagnose_windows.bat` | Zusätzlicher Build **mit** Konsole zur Fehlersuche, startet die EXE sofort |
 | `start_mit_python.bat` | Startet `launcher.py` direkt über die vorhandene `.venv`, ohne Neubau |
-| `tests/test_editor.py` | Integrationstests (Stand Phase 3: 102) |
-| `wheels/` | Offline-Wheels für Windows/Python 3.14 (u. a. `pefile`, `pywin32-ctypes` für PyInstaller) |
+| `tests/test_editor.py` | Integrationstests (aktuell: 110) |
+| `wheels/` | Offline-Wheels für Windows/Python 3.14 (lokal, via `.gitignore` nicht im Repo) |
 
-## Sicherung (ein Ort, seit Phase 3)
+## Sicherung (leises Sicherheitsnetz, Rotation auf 15 Stände)
 
+Da `fpv.ttl` langfristig in Git/GitHub versioniert wird, dienen lokale
+Sicherungen vor allem als kurzfristiges Sicherheitsnetz zwischen zwei Commits.
 Vor jedem Schreibvorgang wird die *alte* Datei **einmal** an **einem** Ort
 gesichert und geprüft (Schreiben, `fsync`, Zurücklesen, Bytevergleich):
 
 - standardmäßig `%LOCALAPPDATA%\FPV-Editor\backups\<Dateischlüssel>`
   (ohne Administratorrechte beschreibbar, außerhalb eines Git-Arbeitsordners;
   ohne `LOCALAPPDATA`: `~\.fpv-editor\backups\<Dateischlüssel>`),
-- oder, wenn über „Sicherungsort wählen“ gesetzt, dem gewählten Ordner
-  (nur für die laufende Sitzung).
+- oder, wenn unter *„Frühere Stände …“ → „Erweitert“ → „Sicherungsort wählen …“*
+  gesetzt, im gewählten Ordner (nur für die laufende Sitzung).
 
-Die frühere zehnstufige Ausweichkaskade ist **entfernt** (Entscheidung des
-Nutzers, da die `fpv.ttl` in Git liegt). Folge: Scheitert dieser eine Ort,
-bleibt die TTL unverändert, der Server antwortet mit HTTP 507, und die Meldung
-nennt Ort und Grund; als Ausweg dient „Sicherungsort wählen“. Beim Auflisten
-(„Frühere Stände wiederherstellen“) werden weiterhin **alle** früheren Orte
-durchsucht, damit ältere Sicherungen auffindbar bleiben
-(`backup_candidate_locations`). Der `<Dateischlüssel>` ist ein Hash des
-TTL-Pfads; Dateinamen enthalten Zeitstempel und einen zufälligen Hex-Suffix.
+Pro TTL-Datei werden automatisch nur die **15 neuesten** lokalen Stände
+behalten (`MAX_BACKUPS_PER_FILE = 15`); ältere `.ttl.bak`-Dateien im aktiven
+Sicherungsordner werden nach erfolgreicher Sicherung selbstständig entfernt.
 
-**Nicht auf Windows geprüft:** ob `%LOCALAPPDATA%` auf allen Kollegenrechnern
+Die frühere zehnstufige Ausweichkaskade ist **entfernt**. Scheitert der aktive
+Sicherungsort, bleibt die TTL unverändert, der Server antwortet mit HTTP 507,
+und die Meldung nennt Ort und Grund. Beim Auflisten (*„Frühere Stände …“*)
+werden weiterhin alle früheren Orte durchsucht, damit ältere Sicherungen
+auffindbar bleiben (`backup_candidate_locations`). Der `<Dateischlüssel>` ist
+ein Hash des TTL-Pfads; Dateinamen enthalten Zeitstempel und einen zufälligen
+Hex-Suffix. `storage_check()` prüft nur noch den aktiven Sicherungsort sowie
+den TTL-Ordner und hinterlässt keine leeren Ordner.
+
+**Nicht auf allen Kollegenrechnern geprüft:** ob `%LOCALAPPDATA%` überall
 beschreibbar ist (Gruppenrichtlinien, umgeleitete Profile).
 
 ## Sammel-Speichern (seit Phase 3)
 
 Die Oberfläche merkt Änderungen mehrerer Einträge vor (Wechsel zu einem
 anderen Eintrag übernimmt das Formular in `App.drafts`; ●-Markierung im Baum,
-Liste „Noch nicht gespeichert“ in der Eintragsleiste). „Alle Änderungen
-speichern“ sendet alles an `POST /api/save-batch`
-(`{version, items: [{original_id, data}, …]}`):
+neue Einträge oben in einer eigenen Gruppe, Liste „Noch nicht gespeichert“ in
+der Eintragsleiste). „Alle Änderungen speichern“ (`Strg+S`) sendet alles an
+`POST /api/save-batch` (`{version, items: [{original_id, data}, …]}`):
 
 - eine Versionsprüfung (SHA-256), alle Einträge nacheinander in den Text
-  eingesetzt, Feldprüfung je Eintrag, dann **eine** Gesamtprüfung,
-  **eine** Synonymprüfung über alle geänderten Konzepte gemeinsam
-  (`synonym_conflicts_for_batch`; Kollisionen der Einträge untereinander
-  zählen als neu), **eine** Sicherung, **ein** Schreibvorgang.
+  eingesetzt (Zeilenumbrüche in `skos:note` werden zu Leerzeichen normalisiert),
+  Feldprüfung je Eintrag, dann **eine** Gesamtprüfung, **eine** Synonymprüfung
+  über alle geänderten Konzepte gemeinsam (`synonym_conflicts_for_batch`;
+  Kollisionen der Einträge untereinander zählen als neu), **eine** Sicherung,
+  **ein** Schreibvorgang.
 - Alles oder nichts: Scheitert ein Eintrag, wird nichts geschrieben; die
   Antwort enthält `failed_id` und `findings`.
 - Blockierend sind Fehler, die die ganze Datei betreffen, oder Fehler in einem
-  der gerade gespeicherten Einträge (wie bisher beim Einzelspeichern).
+  der gerade gespeicherten Einträge.
 - „Kennung ändern“ und „Eintrag löschen“ sind gesperrt, solange andere
   Einträge vorgemerkt sind (Umbenennen ändert Verweise in anderen Einträgen;
   eine Vormerkung würde sie überschreiben).
-- Die Live-Synonymprüfung im Formular prüft weiter nur gegen den gespeicherten
-  Stand; Kollisionen zwischen zwei vorgemerkten Einträgen meldet erst das
-  Speichern.
-- `/api/save` bleibt als Einzelspeichern erhalten (die Oberfläche nutzt es
-  nicht mehr).
+- Die Live-Synonymprüfung im Formular (`/api/synonym-check`) berücksichtigt
+  neben dem gespeicherten Stand (pro `sha256` gecacht) auch die übrigen
+  vorgemerkten Einträge (`App.drafts`).
+- `/api/save` bleibt als dünner Wrapper um `save_batch()` für
+  Abwärtskompatibilität erhalten (die Oberfläche nutzt `/api/save-batch`).
 
 ## Beenden-Schutz und Zwischensicherung (seit Phase 3)
 
@@ -384,31 +392,35 @@ anderes per `skos:related` zeigt, lässt sich nicht löschen.
 
 ## Tests
 
-`tests/test_editor.py` enthält 24 Integrationstests, alle aktuell grün
-(`python -m pytest tests/test_editor.py -v`):
+`tests/test_editor.py` enthält **110 Integrationstests**, alle aktuell grün
+(`python -m pytest tests/test_editor.py -q`):
 
-Token-Pflicht für mutierende Endpunkte, Bearbeitung erhält den Rest der
-Quelldatei, Blöcke mit unbekanntem Prädikat werden nicht angetastet,
-Löschen eines unreferenzierten Konzepts, Ablehnung des Löschens eines
-referenzierten Konzepts, erfolgreiches Neuanlegen, Ablehnung doppelter IDs,
-Versionskonflikt bei veraltetem Speichern, Erhalt von CRLF-Zeilenenden,
-Anlegen und Auflisten von Sicherungen, Fallback-Schreiben bei simuliertem
-`PermissionError`, Wiederherstellung aus einer Sicherung, Schutz bei mehrfacher `skos:notation`,
-Meldung falscher/fehlender Notation-Datentypen, **Speichern wird durch
-einen Altfehler in einem fremden Datensatz nicht mehr blockiert**,
-Speichern bleibt blockiert, wenn der Fehler den gerade bearbeiteten
-Datensatz selbst betrifft, Speichern bleibt in jedem Fall blockiert, wenn
-das Ergebnis syntaktisch ungültiges Turtle wäre (per Monkeypatch simuliert,
-da über das normale Formular praktisch nicht erreichbar), `skos:related`
-sperrt den Block nicht und überlebt einen Speichervorgang,
-Sprachkennzeichen einzelner altLabels bleiben erhalten, ein ins Leere
-zeigender `skos:related`-Verweis ist nur ein Hinweis und kein Blocker,
-`skos:related` verhindert das Löschen des Ziels, geschützte Blöcke liefern
-ihren Quelltext mit, Schließen einer Datei leert den Zustand.
+- Grundfunktionen & Sicherheit: Token-Pflicht für mutierende Endpunkte,
+  quellenerhaltendes Bearbeiten, Schutz verlustgefährdeter Blöcke (unbekanntes
+  Prädikat, Kommentare, dreifach zitierte Literale, mehrfaches `prefLabel` /
+  `skos:notation`), Rohtext-Ausgabe geschützter Blöcke, Neuanlage, Ablehnung
+  doppelter IDs, Versionskonflikt, CRLF-Erhalt, Löschschutz (inkl.
+  `skos:related`), `skos:related`-Roundtrip, Erhalt einzelner `altLabel`-Sprachen,
+  `skos:notation`-Datentypprüfung, Datei schließen.
+- Speichern, Sammel-Speichern & Sicherungen: Altfehler-Deadlock-Schutz,
+  Syntaxbruch-Schutz, `/api/save-batch` (alles oder nichts, eine Sicherung),
+  `/api/save`-Wrapper, Normalisierung von Zeilenumbrüchen in `skos:note`,
+  Fallback-Schreiben bei simuliertem `PermissionError`, Backup-Rotation (15
+  Stände), `storage_check()` ohne leere Ordner, Wiederherstellung.
+- Synonymliste, Umbenennen & Caching: Abgleich mit `ttl2jsonl.py`, neue vs.
+  vorhandene Kollisionen, Live-Prüfung inkl. vorgemerkter Entwürfe,
+  Graph-Caching ohne redundantes Parsen, sicheres Umbenennen mit
+  RDF-Isomorphie-Nachweis.
+- Betrieb & Auslieferung: Zwischensicherung/Recovery, `quit_gate` (mit/ohne
+  Vormerkungen und bei offenem Dateidialog), nicht-blockierende Dateiauswahl
+  (`/api/choose` + `/api/choose-result`), `/api/ping`, statische Dateiprüfung
+  (inkl. `styles.css` und Verzicht auf Browser-`confirm()`), Manifest-,
+  Standort- und ZIP-Prüfung (`bundle_check.py`, `make_release.py`).
 
-Die Tests isolieren die Sicherungskaskade in ein temporäres Verzeichnis
-(`monkeypatch` von `fpv_core.backup_candidate_locations`), sodass beim
-Testen nie echte `%LOCALAPPDATA%`- oder `%TEMP%`-Ordner berührt werden.
+Die Tests isolieren Sicherungs- und Recovery-Pfade in temporäre Verzeichnisse,
+sodass beim Testen nie echte `%LOCALAPPDATA%`- oder `%TEMP%`-Ordner berührt
+werden. Zusätzlich wird die JavaScript-Syntax mit `node --check static/app.js`
+geprüft.
 
 ## Bekannte Einschränkungen und offene Punkte
 
@@ -504,16 +516,13 @@ Diese Fehler traten erst beim Arbeiten mit der echten `fpv.ttl` zutage:
 
 ### Weiterhin ungeprüft oder offen
 
-- **Die eigentliche Ursache des ursprünglichen `PermissionError` /
-  `WinError 5` beim Anlegen von Sicherungen ist weiterhin nicht
-  diagnostiziert.** Der Neuaufbau macht den Schreibpfad robuster
-  (verifizierte Sicherung vor jeder Änderung, atomares Schreiben mit
-  dokumentiertem Fallback, zehn Kandidatenorte statt einem, Deduplizierung),
-  aber ein erfolgreicher Speicher-/Sicherungsvorgang auf dem betroffenen
-  Rechner ist bislang **nicht nachgewiesen** — die Testläufe kamen bisher
-  nur bis zum Start der Oberfläche. Nächster sinnvoller Schritt: „Schreibzugriff
-  prüfen" in der laufenden App und ein Speicherversuch auf einer **Kopie**
-  der echten `fpv.ttl`.
+- **Speichern und Build auf Windows bestätigt:** Start, Offline-EXE-Build
+  (`build_windows.bat` mit Python 3.14 x64) und Speichern funktionieren laut
+  Praxistest des Nutzers auf Windows. Die Ursache des ursprünglichen
+  `PermissionError` / `WinError 5` aus der früheren Fassung wurde nicht
+  abschließend diagnostiziert; der robuste Schreibpfad (verifizierte Sicherung
+  unter `%LOCALAPPDATA%`, atomares `os.replace` mit dokumentiertem Rückfall)
+  fängt ihn ab.
 - **Windows Defender meldet beim Entpacken des Projekt-ZIPs mitunter
   `Trojan:Win32/MalUri.A!cl`.** Betroffen sind ausschließlich die
   mitgelieferten Wheels in `wheels/`, die kompilierte Windows-Binaries
@@ -527,15 +536,17 @@ Diese Fehler traten erst beim Arbeiten mit der echten `fpv.ttl` zutage:
   Beschreibung dieser Kennung enthält keine technischen Details, es handelt
   sich um eine generische Heuristik-Kategorie. Eine abschließende
   Beurteilung kann nur ein Scan der konkreten Datei liefern.
-- **`start_mit_python.bat` ist weiterhin nicht auf Windows ausgeführt
-  worden** (im Gegensatz zu den beiden anderen Skripten).
-- **Verhalten bei sehr großen Vokabularen (~1000+ Concepts) ist ungetestet**
-  — die Testdaten decken nur kleine Beispieldateien ab. Die
-  Baum-Rendering-Logik im Frontend ist nicht auf diesem Maßstab profiliert.
-- **Abgleich mit `validate_fpv.py`** (nachträglich hochgeladen und geprüft,
-  siehe unten). **`Readme-fuer-fpv.md` wurde nie hochgeladen** und ist damit
-  weiterhin nicht einbezogen — falls sie zusätzliche Regeln enthält, sind die
-  nicht berücksichtigt.
+- **`start_mit_python.bat` und Einsatz auf weiteren Kollegenrechnern**
+  (z. B. Gruppenrichtlinien für `%LOCALAPPDATA%`, Edge/Firefox, Absturz-Recovery)
+  sind noch nicht flächendeckend getestet.
+- **Verhalten bei sehr großen Vokabularen (~1000+ Concepts)** ist bisher nur
+  mit der realen `fpv.ttl` (~857 Konzepte) genutzt, nicht aber gezielt darüber
+  hinaus profiliert.
+- **Abgleich mit `validate_fpv.py`, `check_duplicate-id.py` und
+  `src/Readme-fuer-fpv.md`:** Die Regeln aus `src/Readme-fuer-fpv.md` (Pflichtfelder
+  `ex:ID`, `a skos:Concept`, `skos:prefLabel`, `skos:notation`,
+  `ex:useInSynonymList`, `skos:note`; keine Platzhalter wie `/`; `skos:note` als
+  Mouseover) decken sich mit dem Editor.
 
 ### Abgleich mit `validate_fpv.py` und `check_duplicate-id.py`
 
@@ -606,6 +617,18 @@ hochgeladen wurde). Ergebnis:
   Moniker!" ausgelöst. Der Datei-**Öffnen**-Dialog dagegen nutzt weiterhin
   einen nativen `tkinter.filedialog.askopenfilename`-Dialog (laut
   Spezifikation nur dort vorgesehen).
+
+## KI-Unterstützung und Transparenz
+
+Dieser Editor wurde mit Unterstützung von KI-Coding-Assistenten (u. a. Google
+Antigravity) entwickelt und weiterentwickelt. Sämtliche Änderungen werden durch
+automatisierte Tests (`tests/test_editor.py`, `node --check`) sowie manuelle
+Prüfungen und Windows-Testläufe durch die Projektbeteiligten abgesichert; die
+fachliche und technische Verantwortung liegt bei der Redaktion.
+
+Commits, an denen KI beteiligt war, werden in der Git-Historie transparent über
+die Trailer-Zeilen `Assisted-by:` und `Co-authored-by:` ausgewiesen (siehe
+`AGENTS.md`).
 
 ## Auslieferung zukünftiger Korrekturen
 

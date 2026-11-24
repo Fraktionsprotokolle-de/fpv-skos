@@ -42,15 +42,22 @@ node --check static/app.js
 Beides muss fehlerfrei sein. Neue Funktionen bekommen Tests in
 `tests/test_editor.py`.
 
-## Dateikonventionen
+## Dateikonventionen & Git-Transparenz
 
 - `.bat`-Dateien **immer mit CRLF-Zeilenenden und ohne BOM** speichern
   (sonst verschluckt `cmd.exe` Zeichen – ist bereits passiert).
-- Python-, JS-, HTML- und Markdown-Dateien: UTF-8 ohne BOM.
+- Python-, JS-, CSS-, HTML- und Markdown-Dateien: UTF-8 ohne BOM.
 - In `static/app.js` werden Umlaute in Zeichenketten überwiegend als
   `ä` usw. geschrieben; diesen Stil beibehalten.
 - Für Korrekturen dem Nutzer **nur die geänderten Einzeldateien** nennen bzw.
   liefern, keinen Gesamtumbau.
+- **KI-Beteiligung in Git dokumentieren:** Jeder Commit, bei dem KI beteiligt
+  war (und jeder Commit-Vorschlag an den Nutzer), endet nach einer Leerzeile
+  mit den Trailer-Zeilen:
+  ```text
+  Assisted-by: Google Antigravity (KI-Coding-Assistent)
+  Co-authored-by: Google Antigravity <antigravity@noreply.google.com>
+  ```
 
 ## Nicht anfassen ohne Rückfrage
 
