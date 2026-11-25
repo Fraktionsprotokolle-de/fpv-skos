@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-25">25. November 2026, 11:19 Uhr</date>
+				<date when="2026-11-25">25. November 2026, 13:52 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -477,7 +477,7 @@
 				<term type="alt" xml:lang="it">Avanti! Giornale socialista</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="closeMatch" target="https://zdb-katalog.de/title.xhtml?idn=014429705"/>
+				<ref type="closeMatch" target="https://ld.zdb-services.de/resource/799366-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Avanti!_(Zeitung)"/>
 			</item>
 			<item xml:id="BAG">
@@ -1662,7 +1662,7 @@
 				<term type="alt" xml:lang="en">Cleveland Plain Dealer</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
-				<ref type="closeMatch" target="https://zdb-katalog.de/title.xhtml?idn=977654583"/>
+				<ref type="closeMatch" target="https://ld.zdb-services.de/resource/2212891-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/The_Plain_Dealer_(Zeitung)"/>
 			</item>
 			<item xml:id="Combank">
@@ -2619,7 +2619,7 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Atomgemeinschaft"/>
 			</item>
 			<item xml:id="EUREKA">
-				<term type="pref" xml:lang="de">European Research Coordination Agency</term>
+				<term type="pref" xml:lang="en">European Research Coordination Agency</term>
 				<term type="alt" xml:lang="de">EUREKA</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
@@ -2634,6 +2634,16 @@
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/90793-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Organisation_zur_Sicherung_der_Luftfahrt"/>
+			</item>
+			<item xml:id="EURat">
+				<term type="pref" xml:lang="de">Rat der Europäischen Union</term>
+				<term type="alt" xml:lang="de">EU-Ministerrat</term>
+				<term type="alt" xml:lang="en">Council of the European Union</term>
+				<term type="alt" xml:lang="fr">Counseil de l'Union européenne</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">org</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/5100052-0"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Rat_der_Europ%C3%A4ischen_Union"/>
 			</item>
 			<item xml:id="EVG">
 				<term type="pref" xml:lang="de">Europäische Verteidigungsgemeinschaft</term>
@@ -2688,6 +2698,14 @@
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2092484-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/TNS_Emnid"/>
+			</item>
+			<item xml:id="Entscheidung">
+				<term type="pref" xml:lang="de">Die Entscheidung</term>
+				<term type="alt" xml:lang="de">Die Entscheidung. Das Magazin der Jungen Union Deutschlands</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://ld.zdb-services.de/resource/216282-9"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Die_Entscheidung_(Zeitschrift)"/>
 			</item>
 			<item xml:id="Eska">
 				<term type="pref" xml:lang="de">Eska Automotiv GmbH</term>
@@ -3021,6 +3039,14 @@
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2010328-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Filmfabrik_Wolfen"/>
+			</item>
+			<item xml:id="FrN">
+				<term type="pref" xml:lang="de">Fränkische Nachrichten</term>
+				<term type="alt" xml:lang="de">Fränkische Nachrichten. Tageszeitung für das baden-württembergische Frankenland</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/7712927-1"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Fr%C3%A4nkische_Nachrichten"/>
 			</item>
 			<item xml:id="Framatome">
 				<term type="pref" xml:lang="fr">Franco-Américaine de Constructions Atomiques</term>
@@ -3442,6 +3468,14 @@
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2144155-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Haus_%26_Grund"/>
+			</item>
+			<item xml:id="Heimkehrer">
+				<term type="pref" xml:lang="de">Der Heimkehrer</term>
+				<term type="alt" xml:lang="de">Der Heimkehrer. Stimme der Kriegsgeneration</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://d-nb.info/010823085"/>
+				<ref type="closeMatch" target="https://ld.zdb-services.de/resource/140200-6"/>
 			</item>
 			<item xml:id="Helaba">
 				<term type="pref" xml:lang="de">Hessische Landesbank</term>
@@ -5244,6 +5278,15 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2008004-9"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Reichsbahn_(1945%E2%80%931993)"/>
 			</item>
+			<item xml:id="Report">
+				<term type="pref" xml:lang="de">Report</term>
+				<term type="alt" xml:lang="de">Report Baden-Baden</term>
+				<term type="alt" xml:lang="de">Report Mainz</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="exactMatch" target="http://d-nb.info/gnd/1122466005"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Report_Mainz"/>
+			</item>
 			<item xml:id="RepublicaPortugal">
 				<term type="pref" xml:lang="pt">República</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
@@ -5727,6 +5770,14 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/10004461-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sozialverband_Deutschland"/>
 			</item>
+			<item xml:id="Sonde">
+				<term type="pref" xml:lang="de">Sonde</term>
+				<term type="alt" xml:lang="de">Sonde. Neue christlich-demokratische Politik</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://d-nb.info/012780529"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Civis_mit_Sonde"/>
+			</item>
 			<item xml:id="SozialeSicherheit">
 				<term type="pref" xml:lang="de">Soziale Sicherheit</term>
 				<term type="alt" xml:lang="de">Soziale Sicherheit. Zeitschrift für Arbeit und Soziales</term>
@@ -5741,6 +5792,13 @@
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4056205-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Der_Spiegel"/>
+			</item>
+			<item xml:id="Sportschau">
+				<term type="pref" xml:lang="de">Sportschau</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="exactMatch" target="http://d-nb.info/gnd/1023836254"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sportschau"/>
 			</item>
 			<item xml:id="SpringerVerlag">
 				<term type="pref" xml:lang="de">Axel-Springer-Verlag</term>
@@ -5816,6 +5874,15 @@
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1266204946"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Kombinat_Sternradio"/>
+			</item>
+			<item xml:id="StrZ">
+				<term type="pref" xml:lang="de">Straubinger Zeitung</term>
+				<term type="alt" xml:lang="de">Straubinger Tagblatt</term>
+				<term type="alt" xml:lang="de">Straubinger Anzeiger</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="exactMatch" target="http://d-nb.info/gnd/4451094-9"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Mediengruppe_Attenkofer"/>
 			</item>
 			<item xml:id="Suedkurier">
 				<term type="pref" xml:lang="de">Südkurier</term>
@@ -6722,6 +6789,14 @@
 				<note type="entityType">news</note>
 				<ref type="closeMatch" target="https://d-nb.info/011134151"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zeitschrift_f%C3%BCr_Parlamentsfragen"/>
+			</item>
+			<item xml:id="ZRP">
+				<term type="pref" xml:lang="de">Zeitschrift für Rechtspolitik</term>
+				<term type="alt" xml:lang="de">ZRP</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://d-nb.info/011134755"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Zeitschrift_f%C3%BCr_Rechtspolitik"/>
 			</item>
 			<item xml:id="ZaS">
 				<term type="pref" xml:lang="de">Zeitung am Sonntag</term>

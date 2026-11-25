@@ -248,6 +248,7 @@
 {"id": "EGKS", "synonyms": ["EGKS", "Europäische Gemeinschaft für Kohle und Stahl"]}
 {"id": "EKD", "synonyms": ["EKD", "Evangelische Kirche in Deutschland"]}
 {"id": "ELDFraktionEP", "synonyms": ["ELD", "Liberale und Demokratische Fraktion", "Liberale und Demokratische Fraktion im Europäischen Parlament"]}
+{"id": "Entscheidung", "synonyms": ["Die Entscheidung", "Die Entscheidung. Das Magazin der Jungen Union Deutschlands"]}
 {"id": "Emnid", "synonyms": ["EMNID-Institut", "Institut für Erforschung der öffentlichen Meinung, Marktforschung, Nachrichten, Informationen und Dienstleistungen"]}
 {"id": "EPG", "synonyms": ["EPG", "Europäische Politische Gemeinschaft"]}
 {"id": "EPU", "synonyms": ["EPU", "Europäische Parlamentarier-Union"]}
@@ -255,6 +256,7 @@
 {"id": "ESG", "synonyms": ["ESG", "Evangelische Studentengemeinde", "Evangelische Studentengemeinde in der BRD und Berlin (West)"]}
 {"id": "EUCD", "synonyms": ["EUCD", "Europäische Union Christlicher Demokraten"]}
 {"id": "EUGH", "synonyms": ["EuGH", "Europäischer Gerichtshof"]}
+{"id": "EURat", "synonyms": ["Council of the European Union", "Counseil de l'Union européenne", "EU-Ministerrat", "Rat der Europäischen Union"]}
 {"id": "EURATOM", "synonyms": ["EAG", "EURATOM", "Europäische Atomgemeinschaft"]}
 {"id": "EUREKA", "synonyms": ["EUREKA", "European Research Coordination Agency"]}
 {"id": "EuRH", "synonyms": ["EuRH", "Europäischer Rechnungshof"]}
@@ -294,6 +296,7 @@
 {"id": "FPOe", "synonyms": ["FPÖ", "Freiheitliche Partei Österreichs"]}
 {"id": "Framatome", "synonyms": ["Framatome", "Franco-Américaine de Constructions Atomiques"]}
 {"id": "FreiePresse", "synonyms": ["Freie Presse", "Freie Presse. Tageszeitung für Bielefeld Stadt und Land"]}
+{"id": "FrN", "synonyms": ["Fränkische Nachrichten", "Fränkische Nachrichten. Tageszeitung für das baden-württembergische Frankenland"]}
 {"id": "Frontal", "synonyms": ["Frontal", "Frontal. Zeitschrift für demokratische Studenten"]}
 {"id": "FRUS", "synonyms": ["FRUS", "Foreign Relations of the United States"]}
 {"id": "FSK", "synonyms": ["FSK", "Freiwillige Selbstkontrolle der Filmwirtschaft"]}
@@ -329,6 +332,7 @@
 {"id": "HDW", "synonyms": ["HDW", "Howaldtswerke-Deutsche Werft"]}
 {"id": "Helaba", "synonyms": ["Helaba", "Hessische Landesbank"]}
 {"id": "HelabaThue", "synonyms": ["Helaba", "Landesbank Hessen-Thüringen"]}
+{"id": "Heimkehrer", "synonyms": ["Der Heimkehrer", "Der Heimkehrer. Stimme der Kriegsgeneration"]}
 {"id": "Herstatt", "synonyms": ["Herstatt-Bank", "I. D. Herstatt KGaA"]}
 {"id": "HHeadS", "synonyms": ["HHS", "Hearst Headline Service"]}
 {"id": "HIAG", "synonyms": ["HIAG", "Hilfsgemeinschaft auf Gegenseitigkeit der Angehörigen der ehemaligen Waffen-SS"]}
@@ -492,6 +496,7 @@
 {"id": "RBosch", "synonyms": ["Bosch", "Robert Bosch GmbH"]}
 {"id": "RCDS", "synonyms": ["RCDS", "Ring Christlich-Demokratischer Studenten"]}
 {"id": "ReichsbahnDDR", "synonyms": ["DR", "Deutsche Reichsbahn"]}
+{"id": "Report", "synonyms": ["Report", "Report Baden-Baden", "Report Mainz"]}
 {"id": "ReRi", "synonyms": ["Chinesische Volkszeitung", "Renmin Ribao"]}
 {"id": "RGBlatt", "synonyms": ["RGBl.", "Reichsgesetzblatt"]}
 {"id": "RGW", "synonyms": ["CMEA", "COMECON", "Council for Mutual Economic Assistance", "RGW", "Rat für gegenseitige Wirtschaftshilfe"]}
@@ -526,6 +531,7 @@
 {"id": "SHB", "synonyms": ["SHB", "Sozialistischer Hochschulbund"]}
 {"id": "SJ", "synonyms": ["Gesellschaft Jesu", "Jesuiten", "SJ", "Societas Jesu"]}
 {"id": "SMAD", "synonyms": ["SMAD", "Sowjetische Militäradministration in Deutschland"]}
+{"id": "Sonde", "synonyms": ["Sonde", "Sonde. Neue christlich-demokratische Politik"]}
 {"id": "SOPADE", "synonyms": ["SOPADE", "SOPADE. Querschnitt durch Politik und Wirtschaft. Sozialdemokratische Parteikorrespondenz"]}
 {"id": "SoVD", "synonyms": ["SoVD", "Sozialverband Deutschland"]}
 {"id": "SozialeSicherheit", "synonyms": ["Soziale Sicherheit", "Soziale Sicherheit. Zeitschrift für Arbeit und Soziales"]}
@@ -545,6 +551,7 @@
 {"id": "STEAG", "synonyms": ["STEAG", "Steinkohlen-Elektrizität AG"]}
 {"id": "STEG", "synonyms": ["STEG", "Staatliche Erfassungsgesellschaft für öffentliches Gut"]}
 {"id": "StN", "synonyms": ["StN", "Stuttgarter Nachrichten"]}
+{"id": "StrZ", "synonyms": ["Straubinger Anzeiger", "Straubinger Tagblatt", "Straubinger Zeitung"]}
 {"id": "StZ", "synonyms": ["StZ", "Stuttgarter Zeitung"]}
 {"id": "SuedtirolerVolkspartei", "synonyms": ["SVP", "Südtiroler Volkspartei"]}
 {"id": "Svenska", "synonyms": ["SvD", "Svenska Dagbladet"]}
@@ -629,3 +636,4 @@
 {"id": "ZdK", "synonyms": ["ZdK", "Zentralkomitee der Katholiken Deutschlands", "Zentralkomitee der deutschen Katholiken"]}
 {"id": "ZK", "synonyms": ["ZK der SED", "Zentralkomitee der SED"]}
 {"id": "ZParl", "synonyms": ["ZParl", "Zeitschrift für Parlamentsfragen"]}
+{"id": "ZRP", "synonyms": ["ZRP", "Zeitschrift für Rechtspolitik"]}
