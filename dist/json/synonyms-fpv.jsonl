@@ -134,8 +134,8 @@
 {"id": "CdE", "synonyms": ["Council of Europe", "Counseil de l’Europe", "Europarat"]}
 {"id": "CDS", "synonyms": ["CDS", "Centre des démocrates sociaux"]}
 {"id": "CDU", "synonyms": ["CDU", "Christlich-Demokratische Union Deutschlands"]}
-{"id": "CDUFraktionBT", "synonyms": ["CDU/CSU-Bundestagsfraktion", "CDU/CSU-Fraktion im Deutschen Bundestag"]}
-{"id": "CDUFraktionsvorstandBT", "synonyms": ["CDU/CSU-Fraktionsvorstand", "Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag"]}
+{"id": "CDUCSUFraktionBT", "synonyms": ["Bundestagsfraktion der CDU/CSU", "CDU/CSU-Bundestagsfraktion", "CDU/CSU-Fraktion im Deutschen Bundestag"]}
+{"id": "CDUCSUFraktionsvorstandBT", "synonyms": ["CDU/CSU-Fraktionsvorstand", "Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag"]}
 {"id": "CEMT", "synonyms": ["CEMT", "Conférence Européenne des Ministres des Transports", "ECMT", "European Conference of Ministers of Transport", "Europäische Konferenz der Verkehrsminister", "Europäische Verkehrsministerkonferenz"]}
 {"id": "CFP", "synonyms": ["CFP", "Compagnie Française des Pétroles"]}
 {"id": "CGB", "synonyms": ["CGB", "Christlicher Gewerkschaftsbund", "Christlicher Gewerkschaftsbund Deutschlands"]}
@@ -237,6 +237,8 @@
 {"id": "DWK", "synonyms": ["DWK", "Deutsche Wirtschaftskommission"]}
 {"id": "DWKern", "synonyms": ["DWK", "Deutsche Gesellschaft für Wiederaufarbeitung von Kernbrennstoffen"]}
 {"id": "DZP", "synonyms": ["DZP", "Deutsche Zentrumspartei", "Zentrum"]}
+{"id": "DZPFraktionBT", "synonyms": ["Bundestagsfraktion der Deutschen Zentrumspartei", "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"]}
+{"id": "DZPFraktionBT", "synonyms": ["Bundestagsfraktion der Deutschen Zentrumspartei", "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"]}
 {"id": "EAP", "synonyms": ["EAP", "Europäische Arbeiter-Partei"]}
 {"id": "ECE", "synonyms": ["ECE", "Economic Commission for Europe", "UNECE", "United Nations Economic Commission for Europe", "Wirtschaftskommission für Europa", "Wirtschaftskommission für Europa der Vereinten Nationen"]}
 {"id": "ECOFIN", "synonyms": ["ECOFIN", "EU-Finanzministerrat", "Ecofin-Rat", "Economic and Financial Affairs Council", "Rat für Wirtschaft und Finanzen"]}
@@ -245,7 +247,7 @@
 {"id": "EGB", "synonyms": ["EGB", "Europäischer Gewerkschaftsbund"]}
 {"id": "EGKS", "synonyms": ["EGKS", "Europäische Gemeinschaft für Kohle und Stahl"]}
 {"id": "EKD", "synonyms": ["EKD", "Evangelische Kirche in Deutschland"]}
-{"id": "ELD", "synonyms": ["ELD", "Liberale und Demokratische Fraktion", "Liberale und Demokratische Fraktion im Europäischen Parlament"]}
+{"id": "ELDFraktionEP", "synonyms": ["ELD", "Liberale und Demokratische Fraktion", "Liberale und Demokratische Fraktion im Europäischen Parlament"]}
 {"id": "Emnid", "synonyms": ["EMNID-Institut", "Institut für Erforschung der öffentlichen Meinung, Marktforschung, Nachrichten, Informationen und Dienstleistungen"]}
 {"id": "EPG", "synonyms": ["EPG", "Europäische Politische Gemeinschaft"]}
 {"id": "EPU", "synonyms": ["EPU", "Europäische Parlamentarier-Union"]}
@@ -274,7 +276,7 @@
 {"id": "FDJ", "synonyms": ["FDJ", "Freie Deutsche Jugend"]}
 {"id": "fdk", "synonyms": ["Freie Demokratische Korrespondenz", "fdk"]}
 {"id": "FDP", "synonyms": ["FDP", "Freie Demokratische Partei"]}
-{"id": "FDP-FraktionBT", "synonyms": ["FDP-Bundestagsfraktion", "Fraktion der Freien Demokraten"]}
+{"id": "FDPFraktionBT", "synonyms": ["Bundestagsfraktion der FDP", "Bundestagsfraktion der Freien Demokraten", "FDP-Bundestagsfraktion", "FDP-Fraktion im Deutschen Bundestag"]}
 {"id": "FDV", "synonyms": ["FDV", "Freie Deutsche Volkspartei"]}
 {"id": "Fed", "synonyms": ["Fed", "Federal Reserve", "Federal Reserve System"]}
 {"id": "FedAA", "synonyms": ["FAA", "Federal Aviation Administration"]}
@@ -528,9 +530,9 @@
 {"id": "SoVD", "synonyms": ["SoVD", "Sozialverband Deutschland"]}
 {"id": "SozialeSicherheit", "synonyms": ["Soziale Sicherheit", "Soziale Sicherheit. Zeitschrift für Arbeit und Soziales"]}
 {"id": "SPD", "synonyms": ["SPD", "Sozialdemokratische Partei Deutschlands"]}
-{"id": "SPD-LTFraktionBayern", "synonyms": ["SPD-Fraktion im Bayerischen Landtag", "SPD-Landtagsfraktion in Bayern"]}
-{"id": "SPDFraktionBT", "synonyms": ["Bundestagsfraktion der SPD", "SPD-Fraktion im Deutschen Bundestag", "Sozialdemokratische Bundestagsfraktion"]}
-{"id": "SPDFraktionvorstandBT", "synonyms": ["SPD-Fraktionvorstand", "Vorstand der Sozialdemokratischen Bundestagsfraktion"]}
+{"id": "SPDFraktionBT", "synonyms": ["Bundestagsfraktion der SPD", "SPD-Bundestagsfraktion", "SPD-Fraktion im Deutschen Bundestag", "Sozialdemokratische Bundestagsfraktion"]}
+{"id": "SPDFraktionsvorstandBT", "synonyms": ["SPD-Fraktionvorstand", "Vorstand der Bundestagsfraktion der SPD", "Vorstand der Sozialdemokratischen Bundestagsfraktion"]}
+{"id": "SPDFraktionLTBayern", "synonyms": ["Bayerische Landtagsfraktion der SPD", "SPD-Fraktion im Bayerischen Landtag"]}
 {"id": "SPOe", "synonyms": ["SPÖ", "Sozialdemokratische Partei Österreichs"]}
 {"id": "SpringerVerlag", "synonyms": ["Axel-Springer-Verlag", "Springer"]}
 {"id": "SPS", "synonyms": ["SPS", "Sozialdemokratische Partei des Saarlandes"]}
@@ -603,6 +605,7 @@
 {"id": "VW", "synonyms": ["VW AG", "Volkswagen AG"]}
 {"id": "WamS", "synonyms": ["WamS", "Welt am Sonntag"]}
 {"id": "WAV", "synonyms": ["WAV", "Wirtschaftliche Aufbau-Vereinigung"]}
+{"id": "WAVFraktionBT", "synonyms": ["Bundestagsfraktion der Wirtschaftlichen Aufbau-Vereinigung", "Fraktion der Wirtschaftlichen Aufbau-Vereinigung im Deutschen Bundestag"]}
 {"id": "WAZ", "synonyms": ["WAZ", "Westdeutsche Allgemeine Zeitung"]}
 {"id": "WBA", "synonyms": ["WBA", "Willy-Brandt-Archiv"]}
 {"id": "WDR", "synonyms": ["WDR", "Westdeutscher Rundfunk", "Westdeutscher Rundfunk Köln"]}

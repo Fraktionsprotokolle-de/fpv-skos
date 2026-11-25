@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-20">20. November 2026, 12:52 Uhr</date>
+				<date when="2026-11-25">25. November 2026, 11:19 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -906,8 +906,9 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2029155-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Presse-_und_Informationsamt_der_Bundesregierung"/>
 			</item>
-			<item xml:id="BPFraktBT">
+			<item xml:id="BPFraktionBT">
 				<term type="pref" xml:lang="de">Bundestagsfraktion der Bayernpartei</term>
+				<term type="alt" xml:lang="de">Fraktion der Bayernpartei im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1020500-7"/>
@@ -1415,8 +1416,9 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1010501-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Christlich_Demokratische_Union_Deutschlands"/>
 			</item>
-			<item xml:id="CDUFraktionBT">
-				<term type="pref" xml:lang="de">CDU/CSU-Bundestagsfraktion</term>
+			<item xml:id="CDUCSUFraktionBT">
+				<term type="pref" xml:lang="de">Bundestagsfraktion der CDU/CSU</term>
+				<term type="alt" xml:lang="de">CDU/CSU-Bundestagsfraktion</term>
 				<term type="alt" xml:lang="de">CDU/CSU-Fraktion im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
@@ -1424,7 +1426,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2124998-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Fraktion_der_CDU/CSU_im_Deutschen_Bundestag"/>
 			</item>
-			<item xml:id="CDUFraktionsvorstandBT">
+			<item xml:id="CDUCSUFraktionsvorstandBT">
 				<term type="pref" xml:lang="de">CDU/CSU-Fraktionsvorstand</term>
 				<term type="alt" xml:lang="de">Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
@@ -2086,6 +2088,13 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/30964-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Partei"/>
 			</item>
+			<item xml:id="DPFraktionBT">
+				<term type="pref" xml:lang="de">Bundestagsfraktion der Deutschen Partei</term>
+				<term type="pref" xml:lang="de">Fraktion der Deutschen Partei im Deutschen Bundestag</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">pol</note>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Partei"/>
+			</item>
 			<item xml:id="DPG">
 				<term type="pref" xml:lang="de">Deutsche Parlamentarische Gesellschaft</term>
 				<term type="alt" xml:lang="de">DPG</term>
@@ -2277,11 +2286,11 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2008369-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei"/>
 			</item>
-			<item xml:id="DZPFraktBT">
+			<item xml:id="DZPFraktionBT">
 				<term type="pref" xml:lang="de">Bundestagsfraktion der Deutschen Zentrumspartei</term>
+				<term type="pref" xml:lang="de">Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/2008369-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei"/>
 			</item>
 			<item xml:id="DZuWz">
@@ -2396,12 +2405,6 @@
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2008626-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutscher_Presserat"/>
-			</item>
-			<item xml:id="DeuParteiFrak">
-				<term type="pref" xml:lang="de">Fraktion der Deutschen Partei im Bundestag</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Partei"/>
 			</item>
 			<item xml:id="DjD">
 				<term type="pref" xml:lang="de">Deutsche Jungdemokraten</term>
@@ -2523,7 +2526,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2009798-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Evangelische_Kirche_in_Deutschland"/>
 			</item>
-			<item xml:id="ELD">
+			<item xml:id="ELDFraktionEP">
 				<term type="pref" xml:lang="de">Liberale und Demokratische Fraktion</term>
 				<term type="alt" xml:lang="de">Liberale und Demokratische Fraktion im Europäischen Parlament</term>
 				<term type="alt" xml:lang="de">ELD</term>
@@ -2814,12 +2817,15 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/37037-X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Freie_Demokratische_Partei"/>
 			</item>
-			<item xml:id="FDP-FraktionBT">
-				<term type="pref" xml:lang="de">FDP-Bundestagsfraktion</term>
-				<term type="alt" xml:lang="de">Fraktion der Freien Demokraten</term>
+			<item xml:id="FDPFraktionBT">
+				<term type="pref" xml:lang="de">Bundestagsfraktion der FDP</term>
+				<term type="alt" xml:lang="de">Bundestagsfraktion der Freien Demokraten</term>
+				<term type="alt" xml:lang="de">FDP-Bundestagsfraktion</term>
+				<term type="alt" xml:lang="de">FDP-Fraktion im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028872-4"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2117566-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Fraktion_der_Freien_Demokraten"/>
 			</item>
 			<item xml:id="FDV">
@@ -3941,7 +3947,9 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Kommunistische_Partei_Deutschlands"/>
 			</item>
 			<item xml:id="KPDFraktionBT">
-				<term type="pref" xml:lang="de">Bundestagsfraktion der Kommunistischen Partei Deutschlands</term>
+				<term type="pref" xml:lang="de">Bundestagsfraktion der KPD</term>
+				<term type="alt" xml:lang="de">KPD-Bundestagsfraktion</term>
+				<term type="alt" xml:lang="de">KPD-Fraktion im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/806513-5"/>
@@ -5504,26 +5512,28 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2022139-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Sozialdemokratische_Partei_Deutschlands"/>
 			</item>
-			<item xml:id="SPD-LTFraktionBayern">
-				<term type="pref" xml:lang="de">SPD-Fraktion im Bayerischen Landtag</term>
-				<term type="alt" xml:lang="de">SPD-Landtagsfraktion in Bayern</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">pol</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/1003681-7"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/BayernSPD"/>
-			</item>
 			<item xml:id="SPDFraktionBT">
 				<term type="pref" xml:lang="de">Bundestagsfraktion der SPD</term>
-				<term type="alt" xml:lang="de">Sozialdemokratische Bundestagsfraktion</term>
+				<term type="alt" xml:lang="de">SPD-Bundestagsfraktion</term>
 				<term type="alt" xml:lang="de">SPD-Fraktion im Deutschen Bundestag</term>
+				<term type="alt" xml:lang="de">Sozialdemokratische Bundestagsfraktion</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028880-3"/>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2125599-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/SPD-Bundestagsfraktion"/>
 			</item>
-			<item xml:id="SPDFraktionvorstandBT">
-				<term type="pref" xml:lang="de">Vorstand der Sozialdemokratischen Bundestagsfraktion</term>
+			<item xml:id="SPDFraktionLTBayern">
+				<term type="pref" xml:lang="de">Bayerische Landtagsfraktion der SPD</term>
+				<term type="alt" xml:lang="de">SPD-Fraktion im Bayerischen Landtag</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">pol</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/1003681-7"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/BayernSPD"/>
+			</item>
+			<item xml:id="SPDFraktionsvorstandBT">
+				<term type="pref" xml:lang="de">Vorstand der Bundestagsfraktion der SPD</term>
+				<term type="alt" xml:lang="de">Vorstand der Sozialdemokratischen Bundestagsfraktion</term>
 				<term type="alt" xml:lang="de">SPD-Fraktionvorstand</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
@@ -6435,11 +6445,11 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4501763-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschaftliche_Aufbau-Vereinigung_(Partei)"/>
 			</item>
-			<item xml:id="WAVerFrak">
-				<term type="pref" xml:lang="de">Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung</term>
+			<item xml:id="WAVFraktionBT">
+				<term type="pref" xml:lang="de">Bundestagsfraktion der Wirtschaftlichen Aufbau-Vereinigung</term>
+				<term type="alt" xml:lang="de">Fraktion der Wirtschaftlichen Aufbau-Vereinigung im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/4501763-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Wirtschaftliche_Aufbau-Vereinigung_(Partei)"/>
 			</item>
 			<item xml:id="WAZ">
