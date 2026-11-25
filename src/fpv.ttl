@@ -1502,8 +1502,9 @@ ex:BpB a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:BPFraktBT a skos:Concept ;
+ex:BPFraktionBT a skos:Concept ;
   skos:prefLabel "Bundestagsfraktion der Bayernpartei"@de ;
+  skos:altLabel "Fraktion der Bayernpartei im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1020500-7> ;
@@ -1899,8 +1900,9 @@ ex:CDU a skos:Concept ;
   # Klären: GND verweis auf die CDU in der DDR, Wikipedia auf die gesamtdeutsche Partei.
 
 
-ex:CDUFraktionBT a skos:Concept ;
-  skos:prefLabel "CDU/CSU-Bundestagsfraktion"@de ;
+ex:CDUCSUFraktionBT a skos:Concept ;
+  skos:prefLabel "Bundestagsfraktion der CDU/CSU"@de ;
+  skos:altLabel "CDU/CSU-Bundestagsfraktion"@de ;
   skos:altLabel "CDU/CSU-Fraktion im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
@@ -1908,17 +1910,15 @@ ex:CDUFraktionBT a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2124998-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_CDU/CSU_im_Deutschen_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID eher: CDUCSUFraktionBT. Vgl. die ID: BPFraktBT und ggf. andere.
 
 
-ex:CDUFraktionsvorstandBT a skos:Concept ;
+ex:CDUCSUFraktionsvorstandBT a skos:Concept ;
   skos:prefLabel "CDU/CSU-Fraktionsvorstand"@de ;
   skos:altLabel "Vorstand der CDU/CSU-Fraktion im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_CDU/CSU_im_Deutschen_Bundestag> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID eher: CDUCSUFraktionsvorstandBT.
 
 
 ex:CEMT a skos:Concept ;
@@ -2614,15 +2614,6 @@ ex:DeuNStift a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:DeuParteiFrak a skos:Concept ;
-  skos:prefLabel "Fraktion der Deutschen Partei im Bundestag"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID anpassen an DP, dort einordnen.
-
-
 ex:DeuPR a skos:Concept ;
   skos:prefLabel "Deutscher Presserat"@de ;
   skos:notation "org"^^fpv:entityType ;
@@ -2965,8 +2956,17 @@ ex:DP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/30964-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # siehe DHP (Vorgängerin), siehe DeuParteiFrak (hierher).
+  # siehe DHP (Vorgängerin), siehe DPFraktionBT.
 
+
+ex:DPFraktionBT a skos:Concept ;
+  skos:prefLabel "Bundestagsfraktion der Deutschen Partei"@de ;
+  skos:prefLabel "Fraktion der Deutschen Partei im Deutschen Bundestag"@de ;
+  skos:notation "pol"^^fpv:entityType ;
+ ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  
 
 ex:dpa a skos:Concept ;
   skos:prefLabel "Deutsche Presse-Agentur"@de ;
@@ -3253,11 +3253,11 @@ ex:DZP a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:DZPFraktBT a skos:Concept ;
+ex:DZPFraktionBT a skos:Concept ;
   skos:prefLabel "Bundestagsfraktion der Deutschen Zentrumspartei"@de ;
+  skos:prefLabel "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2008369-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -3396,7 +3396,7 @@ ex:EKD a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:ELD a skos:Concept ;
+ex:ELDFraktionEP a skos:Concept ;
   skos:prefLabel "Liberale und Demokratische Fraktion"@de ;
   skos:altLabel "Liberale und Demokratische Fraktion im Europäischen Parlament"@de ;
   skos:altLabel "ELD"@de ;
@@ -3793,15 +3793,17 @@ ex:FDP a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:FDP-FraktionBT a skos:Concept ;
-  skos:prefLabel "FDP-Bundestagsfraktion"@de ;
-  skos:altLabel "Fraktion der Freien Demokraten" ;
+ex:FDPFraktionBT a skos:Concept ;
+  skos:prefLabel "Bundestagsfraktion der FDP"@de ;
+  skos:altLabel "Bundestagsfraktion der Freien Demokraten" ;
+  skos:altLabel "FDP-Bundestagsfraktion"@de ;
+  skos:altLabel "FDP-Fraktion im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028872-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/2117566-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Fraktion_der_Freien_Demokraten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID eher: FDPFraktionBT, siehe weitere Fraktionen.
 
 
 ex:FDV a skos:Concept ;
@@ -5323,13 +5325,14 @@ ex:KPD a skos:Concept ;
 
 
 ex:KPDFraktionBT a skos:Concept ;
-  skos:prefLabel "Bundestagsfraktion der Kommunistischen Partei Deutschlands"@de ;
+  skos:prefLabel "Bundestagsfraktion der KPD"@de ;
+  skos:altLabel "KPD-Bundestagsfraktion"@de ;
+  skos:altLabel "KPD-Fraktion im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/806513-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Kommunistische_Partei_Deutschlands> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Für prefLabel siehe weitere Fraktionen.
 
 
 ex:KPDML a skos:Concept ;
@@ -7441,37 +7444,37 @@ ex:SPD a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:SPD-LTFraktionBayern a skos:Concept ;
-  skos:prefLabel "SPD-Fraktion im Bayerischen Landtag"@de ;
-  skos:altLabel "SPD-Landtagsfraktion in Bayern"@de ;
-  skos:notation "pol"^^fpv:entityType ;
- ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/1003681-7> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/BayernSPD> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
-
-
 ex:SPDFraktionBT a skos:Concept ;
   skos:prefLabel "Bundestagsfraktion der SPD"@de ;
-  skos:altLabel "Sozialdemokratische Bundestagsfraktion"@de ;
+  skos:altLabel "SPD-Bundestagsfraktion"@de ;
   skos:altLabel "SPD-Fraktion im Deutschen Bundestag"@de ;
+  skos:altLabel "Sozialdemokratische Bundestagsfraktion"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028880-3> ;
   skos:exactMatch <https://d-nb.info/gnd/2125599-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/SPD-Bundestagsfraktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # vgl. weitere Fraktionen.
 
 
-ex:SPDFraktionvorstandBT a skos:Concept ;
-  skos:prefLabel "Vorstand der Sozialdemokratischen Bundestagsfraktion"@de ;
+ex:SPDFraktionsvorstandBT a skos:Concept ;
+  skos:prefLabel "Vorstand der Bundestagsfraktion der SPD"@de ;
+  skos:altLabel "Vorstand der Sozialdemokratischen Bundestagsfraktion"@de ;
   skos:altLabel "SPD-Fraktionvorstand"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/SPD-Bundestagsfraktion> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # vgl. weitere Fraktionsvorstände.
+
+
+ex:SPDFraktionLTBayern a skos:Concept ;
+  skos:prefLabel "Bayerische Landtagsfraktion der SPD"@de ;
+  skos:altLabel "SPD-Fraktion im Bayerischen Landtag"@de ;
+  skos:notation "pol"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/1003681-7> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/BayernSPD> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:SPDPressedienst a skos:Concept ;
@@ -8603,14 +8606,13 @@ ex:WAV a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:WAVerFrak a skos:Concept ;
-  skos:prefLabel "Bundestagsfraktion der Wirtschaftlichen Aufbauvereinigung"@de ;
+ex:WAVFraktionBT a skos:Concept ;
+  skos:prefLabel "Bundestagsfraktion der Wirtschaftlichen Aufbau-Vereinigung"@de ;
+  skos:altLabel "Fraktion der Wirtschaftlichen Aufbau-Vereinigung im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4501763-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Wirtschaftliche_Aufbau-Vereinigung_(Partei)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet. Label abstimmen mit anderen Fraktionen.
 
 
 ex:WAZ a skos:Concept ;
