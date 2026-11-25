@@ -586,10 +586,9 @@ ex:Avanti a skos:Concept ;
   skos:altLabel "Avanti! Giornale socialista"@it ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:closeMatch <https://zdb-katalog.de/title.xhtml?idn=014429705> ;
+  skos:closeMatch <https://ld.zdb-services.de/resource/799366-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Avanti!_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # nicht in GND, Verweis auf ZDB.
 
 
 ex:AvD a skos:Concept ;
@@ -2033,10 +2032,9 @@ ex:ClevelandPlain a skos:Concept ;
   skos:altLabel "Cleveland Plain Dealer"@en ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:closeMatch <https://zdb-katalog.de/title.xhtml?idn=977654583> ;
+  skos:closeMatch <https://ld.zdb-services.de/resource/2212891-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/The_Plain_Dealer_(Zeitung)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # nicht in der GND, Verweis auf ZDB. Prüfen, ob Angabe in Klammern notwendig.
 
 
 ex:CMA a skos:Concept ;
@@ -3408,6 +3406,16 @@ ex:ELDFraktionEP a skos:Concept ;
   # Abkürzung prüfen.
 
 
+ex:Entscheidung a skos:Concept ;
+  skos:prefLabel "Die Entscheidung"@de ;
+  skos:altLabel "Die Entscheidung. Das Magazin der Jungen Union Deutschlands"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://ld.zdb-services.de/resource/216282-9> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Die_Entscheidung_(Zeitschrift)> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
 ex:Emnid a skos:Concept ;
   skos:prefLabel "EMNID-Institut"@de ;
   skos:altLabel "Institut für Erforschung der öffentlichen Meinung, Marktforschung, Nachrichten, Informationen und Dienstleistungen"@de ;
@@ -3530,6 +3538,18 @@ ex:EurArchiv a skos:Concept ;
   # prüfen, wo verwendet.
 
 
+ex:EURat a skos:Concept ;
+  skos:prefLabel "Rat der Europäischen Union"@de ;
+  skos:altLabel "EU-Ministerrat"@de ;
+  skos:altLabel "Council of the European Union"@en ;
+  skos:altLabel "Counseil de l'Union européenne"@fr ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/5100052-0> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Rat_der_Europ%C3%A4ischen_Union> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
 ex:EURATOM a skos:Concept ;
   skos:prefLabel "Europäische Atomgemeinschaft"@de ;
   skos:altLabel "EAG"@de ;
@@ -3542,7 +3562,7 @@ ex:EURATOM a skos:Concept ;
 
 
 ex:EUREKA a skos:Concept ;
-  skos:prefLabel "European Research Coordination Agency"@de ;
+  skos:prefLabel "European Research Coordination Agency"@en ;
   skos:altLabel "EUREKA"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
@@ -4007,6 +4027,15 @@ ex:FriedKruppAG a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Friedrich_Krupp_AG> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # Prüfen, wo verwendet. GND verweist auf Zeitraum 1903-1943, ggf. ändern.
+
+ex:FrN a skos:Concept ;
+  skos:prefLabel "Fränkische Nachrichten"@de ;
+  skos:altLabel "Fränkische Nachrichten. Tageszeitung für das baden-württembergische Frankenland"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/7712927-1> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Fr%C3%A4nkische_Nachrichten> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Frontal a skos:Concept ;
@@ -4499,6 +4528,16 @@ ex:HelabaThue a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Landesbank_Hessen-Th%C3%BCringen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # Zeitraum: ab 1992. siehe Helaba.
+
+
+ex:Heimkehrer a skos:Concept ;
+  skos:prefLabel "Der Heimkehrer"@de ;
+  skos:altLabel "Der Heimkehrer. Stimme der Kriegsgeneration"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/010823085> ;
+  skos:closeMatch <https://ld.zdb-services.de/resource/140200-6> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:Herstatt a skos:Concept ;
@@ -6808,6 +6847,17 @@ ex:ReichsbahnDDR a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+ex:Report a skos:Concept ;
+  skos:prefLabel "Report"@de ;
+  skos:altLabel "Report Baden-Baden"@de ;
+  skos:altLabel "Report Mainz"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/1122466005> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Report_Mainz> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
 ex:RepublicaPortugal a skos:Concept ;
   skos:prefLabel "República"@pt ;
   skos:notation "news"^^fpv:entityType ;
@@ -7393,6 +7443,16 @@ ex:SMAD a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+ex:Sonde a skos:Concept ;
+  skos:prefLabel "Sonde"@de ;
+  skos:altLabel "Sonde. Neue christlich-demokratische Politik"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/012780529> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Civis_mit_Sonde> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
 ex:SOPADE a skos:Concept ;
   skos:prefLabel "SOPADE"@de ;
   skos:altLabel "SOPADE. Querschnitt durch Politik und Wirtschaft. Sozialdemokratische Parteikorrespondenz"@de ;
@@ -7514,6 +7574,15 @@ ex:SPOe a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Sozialdemokratische_Partei_%C3%96sterreichs> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # Püfen, wo verwendet. GND für Sozialistische Partei Öserreichs (1945-1991): https://d-nb.info/gnd/3589-0.
+
+
+ex:Sportschau a skos:Concept ;
+  skos:prefLabel "Sportschau"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/1023836254> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Sportschau> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:SpringerVerlag a skos:Concept ;
@@ -7674,6 +7743,17 @@ ex:StN a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4308640-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Stuttgarter_Nachrichten> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+ex:StrZ a skos:Concept ;
+  skos:prefLabel "Straubinger Zeitung"@de ;
+  skos:altLabel "Straubinger Tagblatt"@de ;
+  skos:altLabel "Straubinger Anzeiger"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <http://d-nb.info/gnd/4451094-9> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Mediengruppe_Attenkofer> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -8989,4 +9069,14 @@ ex:ZParl a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Zeitschrift_f%C3%BCr_Parlamentsfragen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # prüfen, wo verwendet.
+
+
+ex:ZRP a skos:Concept ;
+  skos:prefLabel "Zeitschrift für Rechtspolitik"@de ;
+  skos:altLabel "ZRP"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://d-nb.info/011134755> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Zeitschrift_f%C3%BCr_Rechtspolitik> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
