@@ -60,7 +60,7 @@ ex:AAPD a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/1233778501> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
+  # nur in bibliographischen Angaben verwendet.
 
 
 ex:ABB a skos:Concept ;
@@ -120,7 +120,7 @@ ex:ACDP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2042610-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_f%C3%BCr_Christlich-Demokratische_Politik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # nicht verwendet.
 
 
 ex:ACSP a skos:Concept ;
@@ -131,17 +131,15 @@ ex:ACSP a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1239763-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_f%C3%BCr_Christlich-Soziale_Politik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # nicht verwendet.
 
 
 ex:AD a skos:Concept ;
   skos:prefLabel "Amerika-Dienst"@de ;
-  skos:altLabel "AD"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/16143799-0> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # altLabel beibehalten?
 
 
 ex:ADAC a skos:Concept ;
@@ -182,7 +180,7 @@ ex:AdG a skos:Concept ;
   skos:closeMatch <https://d-nb.info/01000372X> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_der_Gegenwart> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # nur in bibliographischen Angaben verwendet.
 
 
 ex:ADGB a skos:Concept ;
@@ -213,19 +211,17 @@ ex:ADL a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/3068203-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_des_Liberalismus> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-# prüfen, wo verwendet.
-#  ID evtl. als "AdL"
+# nur in bibliographischen Angaben verwendet.
+# "ADL" oder "AdL" ?
 
 
-ex:AdLESt a skos:Concept ;
+ex:AdLES a skos:Concept ;
   skos:prefLabel "Archiv der Ludwig-Erhard-Stiftung"@de ;
-  skos:altLabel "AdLESt"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1203669976> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
-  #  ID evtl. als "AdLES", altLabel ggf. löschen.
+  # nicht verwendet.
 
 
 ex:ADN a skos:Concept ;
@@ -246,7 +242,7 @@ ex:AdsD a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2004983-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_der_sozialen_Demokratie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # fast nur in bibliographischen Angaben, zudem einigen Kommentaren zur Überlieferung verwendet.
 
 
 ex:AEG a skos:Concept ;
@@ -328,7 +324,7 @@ ex:AGG a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/10354420-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Archiv_Gr%C3%BCnes_Ged%C3%A4chtnis> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # nicht verwendet.
 
 
 ex:AHK a skos:Concept ;
@@ -369,7 +365,6 @@ ex:AJ a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/012178004> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
 
 
 ex:AKP-Gruppe a skos:Concept ;
@@ -396,7 +391,7 @@ ex:AL a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:AL-OEsterreich a skos:Concept ;
+ex:ALOe a skos:Concept ;
   skos:prefLabel "Alternative Liste Österreichs"@de ;
   skos:altLabel "Alternative Liste Österreich"@de ;
   skos:altLabel "ALÖ"@de ;
@@ -405,17 +400,6 @@ ex:AL-OEsterreich a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/407324-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Alternative_Liste_%C3%96sterreichs> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID ändern zu "ALOe".
-
-
-ex:AllgZeitMainz a skos:Concept ;
-  skos:prefLabel "Allgemeine Zeitung"@de ;
-  skos:notation "news"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/4751692-6> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Allgemeine_Zeitung_(Mainz)> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Wenn sich dieser Eintrag nur im Literaturverzeichnis findet und nicht in den Protokollen, dann löschen.
 
 
 ex:ANC a skos:Concept ;
@@ -516,7 +500,7 @@ ex:ASF a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:ASJur a skos:Concept ;
+ex:ASJ a skos:Concept ;
   skos:prefLabel "Arbeitsgemeinschaft sozialdemokratischer Juristinnen und Juristen"@de ;
   skos:altLabel "ASJ"@de ;
   skos:notation "pol"^^fpv:entityType ;
@@ -524,7 +508,6 @@ ex:ASJur a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2109194-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_sozialdemokratischer_Juristinnen_und_Juristen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID ggf. ändern zu ASJ.
 
 
 ex:AsozF a skos:Concept ;
@@ -535,7 +518,6 @@ ex:AsozF a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/116038-2> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Arbeitsgemeinschaft_sozialdemokratischer_Frauen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID ggf. als ASozF.
 
 
 ex:ASU a skos:Concept ;
@@ -630,6 +612,16 @@ ex:AZ a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
+ex:AZMainz a skos:Concept ;
+  skos:prefLabel "Allgemeine Zeitung"@de ;
+  skos:prefLabel "Mainzer Allgemeine"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/4751692-6> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Allgemeine_Zeitung_(Mainz)> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
 
 #  B
 
@@ -649,9 +641,9 @@ ex:BAG a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35158-1> ;
+  skos:exactMatch <http://d-nb.info/gnd/2116689-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesarbeitsgericht> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND für 1954-1990. weitere ggf. ergänzen. Klären auch in Bezug auf Ministerien.
 
 
 ex:BAMF a skos:Concept ;
@@ -683,7 +675,7 @@ ex:BArch a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/39454-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesarchiv_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # nicht verwendet.
 
 
 ex:BASF a skos:Concept ;
@@ -715,7 +707,7 @@ ex:Bayern a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4005044-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayern> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Klären im Zusammenhang mit Geografika.
+  # Geografikum.
 
 
 ex:BayHStA a skos:Concept ;
@@ -726,7 +718,7 @@ ex:BayHStA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2005486-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayerisches_Hauptstaatsarchiv> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # nicht verwendet.
 
 
 ex:Baykur a skos:Concept ;
@@ -738,22 +730,12 @@ ex:Baykur a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:BayrLV a skos:Concept ;
+ex:BayLV a skos:Concept ;
   skos:prefLabel "Bayrische Landvolk-Zeitung"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Zeitung in der ZDB nicht gefunden. Titel prüfen. ID ggf. ändern zu: BayLV.
-
-
-ex:BayStabi a skos:Concept ;
-  skos:prefLabel "Bayerische Staatsbibliothek"@de ;
-  skos:altLabel "BSB"@de ;
-  skos:notation "org"^^fpv:entityType ;
- ex:useInSynonymList "true"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/2031351-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
+  # Im Protokoll: "Bayerische Landvolkszeitung". Zeitung mit diversen Schreibweisen in der ZDB nicht gefunden. Mehrere Treffer für "Bayerische Volkszeitung", aber alle aus den 1930er Jahren.
 
 
 ex:BayStBk a skos:Concept ;
@@ -1581,6 +1563,16 @@ ex:BRRH a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/5031805-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bund_der_Ruhestandsbeamten,_Rentner_und_Hinterbliebenen> ;
   skos:note "Der BRH war von 1953 bis 2013 der Seniorenverband im Deutschen Beamtenbund."@de .
+
+
+ex:BSB a skos:Concept ;
+  skos:prefLabel "Bayerische Staatsbibliothek"@de ;
+  skos:altLabel "BSB"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2031351-2> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:BStU a skos:Concept ;
@@ -2418,7 +2410,7 @@ ex:DDR a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4011890-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Geografikum. Prüfen, wo verwendet.
+  # Geografikum.
 
 
 ex:DDRVolkskammer a skos:Concept ;
@@ -4381,7 +4373,7 @@ ex:GUS a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2128486-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gemeinschaft_Unabh%C3%A4ngiger_Staaten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Geografikum, siehe DDR. Prüfen, wo verwendet.
+  # Geografikum.
 
 
 ex:GVP a skos:Concept ;
@@ -6163,7 +6155,7 @@ ex:NRW a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4042570-8> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Nordrhein-Westfalen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Geografikum. notation. Prüfen, wo verwendet.
+  # Geografikum.
 
 
 ex:NRZ a skos:Concept ;
@@ -8492,7 +8484,7 @@ ex:VereinigWirtschaftsgeb a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35103-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bizone> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Geografikum
+  # Geografikum.
 
 
 ex:Vermittlungssausschuss a skos:Concept ;
