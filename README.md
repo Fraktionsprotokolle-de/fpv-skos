@@ -47,5 +47,7 @@ Die Verarbeitung der Daten soll automatisiert über GitHub Actions erfolgen:
 
 Unter `skos-editor-build/FPV-Editor/` entsteht ein lokaler Windows-Editor für die Pflege von `src/fpv.ttl` ohne manuelle Turtle-Bearbeitung (Details siehe [`skos-editor-build/FPV-Editor/README.md`](skos-editor-build/FPV-Editor/README.md)).
 
+- **Aktuelle Windows-Version (fertiges ZIP, kein Selbstbauen nötig):** [FPV-Editor.zip herunterladen](https://github.com/Fraktionsprotokolle-de/fpv-skos/releases/latest/download/FPV-Editor.zip) *(wird bei Änderungen am Editor automatisch per GitHub Actions gebaut und geprüft; Release-Übersicht unter [Releases](https://github.com/Fraktionsprotokolle-de/fpv-skos/releases/tag/editor-latest))*.
+
 Die Entwicklung und Überarbeitung des Editors erfolgt mit Unterstützung von KI-Coding-Assistenten (u. a. Google Antigravity). Alle Änderungen werden durch automatisierte Tests sowie manuelle Prüfungen und Praxistests der Redaktion abgesichert; die fachliche und technische Verantwortung liegt bei der Edition. KI-unterstützte Commits werden in der Git-Historie über `Assisted-by:`- und `Co-authored-by:`-Trailer ausgewiesen.
 

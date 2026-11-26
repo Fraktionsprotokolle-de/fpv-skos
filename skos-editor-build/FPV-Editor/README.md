@@ -111,6 +111,20 @@ Dieser Diagnose-Build ist komplett getrennt vom normalen Build und
 Beide Build-Skripte setzen voraus, dass `wheels/` vorhanden ist; sie
 installieren nichts aus dem Internet.
 
+### Automatischer Windows-Build über GitHub Actions
+
+Bei jedem Push auf `main` mit Änderungen unter `skos-editor-build/FPV-Editor/`
+(oder manuell über *Actions → „Build and Release FPV-Editor (Windows)“*) führt
+`.github/workflows/build-editor.yml` auf `windows-latest` (Python 3.14)
+automatisch `pytest`, `node --check`, PyInstaller und `make_release.py` aus und
+veröffentlicht das geprüfte Archiv unter dem festen Download-Link:
+
+- `https://github.com/Fraktionsprotokolle-de/fpv-skos/releases/latest/download/FPV-Editor.zip`
+
+So bleibt die Git-Historie frei von großen Binärdateien, während Anwenderinnen
+und Anwender jederzeit die aktuelle Windows-Version herunterladen können, ohne
+selbst bauen zu müssen.
+
 ### Verteilung als ZIP und Prüfung beim Start
 
 Schritt 7 von `build_windows.bat` (und gleichlautend in `diagnose_windows.bat`)

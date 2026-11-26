@@ -1,0 +1,117 @@
+name: Build and Release FPV-Editor (Windows)
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'skos-editor-build/FPV-Editor/**'
+      - '.github/workflows/build-editor.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fpv-editor-release
+  cancel-in-progress: true
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: skos-editor-build/FPV-Editor
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.14
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+
+      - name: Setup Node.js (JS syntax check)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install runtime, test, and build dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt pytest "pyinstaller>=6,<7" pefile pywin32-ctypes
+
+      - name: Run automated tests and JS syntax check
+        run: |
+          python -m pytest tests/test_editor.py -q
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          node --check static/app.js
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Build Windows bundle with PyInstaller
+        run: |
+          python -m PyInstaller --onedir --noconsole --name FPV-Editor `
+            --add-data "static;static" --collect-submodules rdflib.plugins launcher.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Verify critical files in bundle
+        run: |
+          $required = @(
+            "dist\FPV-Editor\FPV-Editor.exe",
+            "dist\FPV-Editor\_internal\static\index.html",
+            "dist\FPV-Editor\_internal\static\app.js",
+            "dist\FPV-Editor\_internal\static\styles.css"
+          )
+          foreach ($f in $required) {
+            if (-not (Test-Path $f) -or (Get-Item $f).Length -eq 0) {
+              Write-Error "Kritische Datei fehlt oder ist leer: $f"
+              exit 1
+            }
+          }
+
+      - name: Build and verify FPV-Editor.zip
+        run: |
+          python make_release.py dist\FPV-Editor dist\FPV-Editor.zip
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FPV-Editor-Windows
+          path: skos-editor-build/FPV-Editor/dist/FPV-Editor.zip
+          retention-days: 14
+
+      - name: Publish rolling GitHub Release (editor-latest)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $tag = "editor-latest"
+          $date = (Get-Date).ToUniversalTime().ToString("dd.MM.yyyy HH:mm")
+          $shortSha = "${{ github.sha }}".Substring(0, 7)
+          $notes = @"
+          Aktueller Windows-Build des **FPV-Editors** (automatisch gebaut und geprüft am $date UTC aus Commit ``$shortSha``).
+
+          ### Direkter Download & Einrichtung (ohne Administratorrechte)
+          1. Unten **``FPV-Editor.zip``** herunterladen (oder jederzeit über den festen Link ``releases/latest/download/FPV-Editor.zip``).
+          2. Rechtsklick auf die ZIP-Datei → **Alle extrahieren …** in einen lokalen Ordner, z. B. ``C:\Users\<Ihr Name>\FPV-Editor`` (**nicht** in Nextcloud/OneDrive).
+          3. Im entpackten Ordner **``FPV-Editor.exe``** starten (weitere Hinweise in ``LIES-MICH.txt`` im ZIP).
+          "@
+          $notesFile = "dist\release-notes.md"
+          Set-Content -Path $notesFile -Value $notes -Encoding utf8NoBOM
+
+          git tag -f $tag "${{ github.sha }}"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          git push -f origin "refs/tags/$tag"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -eq 0) {
+            gh release edit $tag --title "FPV-Editor (aktueller Stand)" --notes-file $notesFile --latest
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            gh release upload $tag "dist\FPV-Editor.zip" --clobber
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          } else {
+            gh release create $tag "dist\FPV-Editor.zip" --title "FPV-Editor (aktueller Stand)" --notes-file $notesFile --latest
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
