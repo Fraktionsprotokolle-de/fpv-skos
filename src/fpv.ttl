@@ -614,7 +614,7 @@ ex:AZ a skos:Concept ;
 
 ex:AZMainz a skos:Concept ;
   skos:prefLabel "Allgemeine Zeitung"@de ;
-  skos:prefLabel "Mainzer Allgemeine"@de ;
+  skos:altLabel "Mainzer Allgemeine"@de ;
   skos:notation "news"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4751692-6> ;
@@ -738,7 +738,7 @@ ex:BayLV a skos:Concept ;
   # Im Protokoll: "Bayerische Landvolkszeitung". Zeitung mit diversen Schreibweisen in der ZDB nicht gefunden. Mehrere Treffer für "Bayerische Volkszeitung", aber alle aus den 1930er Jahren.
 
 
-ex:BayStBk a skos:Concept ;
+ex:BayStBank a skos:Concept ;
   skos:prefLabel "Bayerische Staatsbank"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
@@ -768,7 +768,7 @@ ex:BBD a skos:Concept ;
   # Zeitraum des Bestehens: 1990-1997. siehe BBR.
 
 
-ex:BBk a skos:Concept ;
+ex:BBank a skos:Concept ;
   skos:prefLabel "Deutsche Bundesbank"@de ;
   skos:altLabel "BBk"@de ;
   skos:altLabel "DBB"@de ;
@@ -2523,16 +2523,6 @@ ex:DerSelbs a skos:Concept ;
   # Prüfen, wo verwendet. GND bisher Hg., in der ZDB mehrere Treffer, wahrscheinlich https://d-nb.info/010716521.
 
 
-ex:DesdnerB a skos:Concept ;
-  skos:prefLabel "Dresdner Bank"@de ;
-  skos:altLabel "DB"@de ;
-  skos:notation "com"^^fpv:entityType ;
- ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/63008-1> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Dresdner_Bank> ;
-  skos:note "Erläuterungen können jetzt hier stehen."@de .
-
-
 ex:Destatis a skos:Concept ;
   skos:prefLabel "Statistisches Bundesamt"@de ;
   skos:altLabel "StBA"@de ;
@@ -2556,7 +2546,7 @@ ex:DeTeWe a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:DeuBa a skos:Concept ;
+ex:DeuBank a skos:Concept ;
   skos:prefLabel "Deutsche Bank"@de ;
   skos:notation "com"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
@@ -2581,6 +2571,15 @@ ex:DeuMag a skos:Concept ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4539986-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutschland-Magazin> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
+ex:DeuMo a skos:Concept ;
+  skos:prefLabel "Deutsches Monatsblatt"@de ;
+  skos:altLabel "Deutsches Monatsblatt. Christlich-demokratische Zeitung für Politik, Wirtschaft, Kultur"@de ;
+  skos:notation "news"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://ld.zdb-services.de/resource/42191-1> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
@@ -2951,7 +2950,7 @@ ex:DP a skos:Concept ;
 
 ex:DPFraktionBT a skos:Concept ;
   skos:prefLabel "Bundestagsfraktion der Deutschen Partei"@de ;
-  skos:prefLabel "Fraktion der Deutschen Partei im Deutschen Bundestag"@de ;
+  skos:altLabel "Fraktion der Deutschen Partei im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Partei> ;
@@ -3017,6 +3016,16 @@ ex:DR a skos:Concept ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Konservative_Partei_%E2%80%93_Deutsche_Rechtspartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
   # lt. Wikipedia: Deutsche Konservative Partei – Deutsche Rechtspartei (DKP – DRP).
+
+
+ex:DreBank a skos:Concept ;
+  skos:prefLabel "Dresdner Bank"@de ;
+  skos:altLabel "DB"@de ;
+  skos:notation "com"^^fpv:entityType ;
+ ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/63008-1> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Dresdner_Bank> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
 ex:DRK a skos:Concept ;
@@ -3245,7 +3254,7 @@ ex:DZP a skos:Concept ;
 
 ex:DZPFraktionBT a skos:Concept ;
   skos:prefLabel "Bundestagsfraktion der Deutschen Zentrumspartei"@de ;
-  skos:prefLabel "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"@de ;
+  skos:altLabel "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei> ;
