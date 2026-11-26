@@ -12,7 +12,6 @@
 {"id": "ADGB", "synonyms": ["ADGB", "Allgemeiner Deutscher Gewerkschaftsbund"]}
 {"id": "ADK", "synonyms": ["ADK", "Arbeitsgemeinschaft Demokratischer Kreise"]}
 {"id": "ADL", "synonyms": ["AdL", "Archiv des Liberalismus"]}
-{"id": "AdLESt", "synonyms": ["AdLESt", "Archiv der Ludwig-Erhard-Stiftung"]}
 {"id": "ADN", "synonyms": ["ADN", "Allgemeiner Deutscher Nachrichtendienst"]}
 {"id": "AdsD", "synonyms": ["AdsD", "Archiv der sozialen Demokratie"]}
 {"id": "AEG", "synonyms": ["AEG", "Allgemeine Elektricitäts-Gesellschaft"]}
@@ -25,7 +24,7 @@
 {"id": "AHK", "synonyms": ["AHK", "Alliierte Hohe Kommission", "Alliierte Hohe Kommission für Deutschland"]}
 {"id": "AJ", "synonyms": ["Arbeiterjugend", "Arbeiterjugend. Zeitung der Sozialistischen Jugend Deutschlands Die Falken"]}
 {"id": "AKP-Gruppe", "synonyms": ["AKP-Gruppe", "African, Caribbean and Pacific Group of States", "OACPS", "OEACP", "Organisation Afrikanischer, Karibischer und Pazifischer Staaten", "Organisation des Etats d’Afrique, des Caraïbes et du Pacifique"]}
-{"id": "AL-OEsterreich", "synonyms": ["ALÖ", "Alternative Liste Österreich", "Alternative Liste Österreichs"]}
+{"id": "ALOe", "synonyms": ["ALÖ", "Alternative Liste Österreich", "Alternative Liste Österreichs"]}
 {"id": "ANC", "synonyms": ["ANC", "African National Congress"]}
 {"id": "AOK", "synonyms": ["AOK", "Allgemeine Ortskrankenkasse"]}
 {"id": "APRA", "synonyms": ["APRA", "Alianza Popular Revolucionaria Americana", "Amerikanische Revolutionäre Volksallianz"]}
@@ -34,7 +33,7 @@
 {"id": "ArthurAndersen", "synonyms": ["Arthur Andersen", "Arthur Andersen LLP"]}
 {"id": "ASD", "synonyms": ["ASD", "Axel-Springer-Inland-Dienst", "Axel-Springer-Inlandsdienst"]}
 {"id": "ASF", "synonyms": ["ASF", "Aktion Sühnezeichen Friedensdienste"]}
-{"id": "ASJur", "synonyms": ["ASJ", "Arbeitsgemeinschaft sozialdemokratischer Juristinnen und Juristen"]}
+{"id": "ASJ", "synonyms": ["ASJ", "Arbeitsgemeinschaft sozialdemokratischer Juristinnen und Juristen"]}
 {"id": "AsozF", "synonyms": ["ASF", "Arbeitsgemeinschaft Sozialdemokratischer Frauen"]}
 {"id": "ASU", "synonyms": ["ASU", "Arabische Sozialistische Union", "Ittiḥād al-Ištirākī al-'Arabī"]}
 {"id": "Atomwaffensperrvertrag", "synonyms": ["Atomwaffensperrvertrag", "Kernwaffensperrvertrag", "Non-Proliferation-Treaty", "Nuklearer Nichtverbreitungsvertrag", "Treaty on the Non-Proliferation of Nuclear Weapons"]}
@@ -51,7 +50,6 @@
 {"id": "BaslerAZ", "synonyms": ["Abend-Zeitung, Basel", "Basler AZ", "Basler Arbeiter-Zeitung"]}
 {"id": "Bayern", "synonyms": ["Bayern", "Freistaat Bayern"]}
 {"id": "BayHStA", "synonyms": ["BayHStA", "Bayerisches Hauptstaatsarchiv"]}
-{"id": "BayStabi", "synonyms": ["BSB", "Bayerische Staatsbibliothek"]}
 {"id": "BBC", "synonyms": ["BBC", "British Broadcasting Corporation"]}
 {"id": "BBD", "synonyms": ["BBD", "Bundesbaudirektion"]}
 {"id": "BBk", "synonyms": ["BBk", "DBB", "Deutsche Bundesbank"]}
@@ -114,6 +112,7 @@
 {"id": "BPrA", "synonyms": ["BPrA", "Bundespräsidialamt"]}
 {"id": "BRH", "synonyms": ["BRH", "Bundesrechnungshof"]}
 {"id": "BRRH", "synonyms": ["BRH", "Bund der Ruhestandsbeamten, Rentner und Hinterbliebenen"]}
+{"id": "BSB", "synonyms": ["BSB", "Bayerische Staatsbibliothek"]}
 {"id": "BStU", "synonyms": ["BStU", "Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik"]}
 {"id": "BTParlA", "synonyms": ["Parlamentsarchiv", "Parlamentsarchiv des Deutschen Bundestages"]}
 {"id": "Bulletin", "synonyms": ["Bulletin der Bundesregierung", "Bulletin des Presse- und Informationsamtes der Bundesregierung"]}
@@ -596,6 +595,7 @@
 {"id": "VdH", "synonyms": ["VdH", "Verband der Heimkehrer, Kriegsgefangenen und Vermisstenangehörigen Deutschlands"]}
 {"id": "VdK", "synonyms": ["VdK", "Verband der Kriegsbeschädigten, Kriegshinterbliebenen und Sozialrentner Deutschlands"]}
 {"id": "VDMA", "synonyms": ["VDMA", "Verband Deutscher Maschinen- und Anlagenbau"]}
+{"id": "VDR", "synonyms": ["VDR", "Verband Deutscher Rentenversicherungsträger"]}
 {"id": "VdS", "synonyms": ["VdS", "Verband deutscher Soldaten"]}
 {"id": "VDS", "synonyms": ["VDS", "Verband Deutscher Studentenschaften"]}
 {"id": "VEBA", "synonyms": ["VEBA", "Vereinigte Elektrizitäts- und Bergwerks-AG"]}

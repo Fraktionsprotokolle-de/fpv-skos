@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-25">25. November 2026, 13:52 Uhr</date>
+				<date when="2026-11-26">26. November 2026, 08:48 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -89,7 +89,6 @@
 			</item>
 			<item xml:id="AD">
 				<term type="pref" xml:lang="de">Amerika-Dienst</term>
-				<term type="alt" xml:lang="de">AD</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/16143799-0"/>
@@ -226,7 +225,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2064924-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/B%C3%BCndnis_90/Die_Gr%C3%BCnen_Berlin"/>
 			</item>
-			<item xml:id="AL-OEsterreich">
+			<item xml:id="ALOe">
 				<term type="pref" xml:lang="de">Alternative Liste Österreichs</term>
 				<term type="alt" xml:lang="de">Alternative Liste Österreich</term>
 				<term type="alt" xml:lang="de">ALÖ</term>
@@ -300,7 +299,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2044021-2"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Aktion_S%C3%BChnezeichen_Friedensdienste"/>
 			</item>
-			<item xml:id="ASJur">
+			<item xml:id="ASJ">
 				<term type="pref" xml:lang="de">Arbeitsgemeinschaft sozialdemokratischer Juristinnen und Juristen</term>
 				<term type="alt" xml:lang="de">ASJ</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
@@ -348,6 +347,14 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4301118-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Abendzeitung"/>
 			</item>
+			<item xml:id="AZMainz">
+				<term type="pref" xml:lang="de">Allgemeine Zeitung</term>
+				<term type="pref" xml:lang="de">Mainzer Allgemeine</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/4751692-6"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Allgemeine_Zeitung_(Mainz)"/>
+			</item>
 			<item xml:id="Abend">
 				<term type="pref" xml:lang="de">Der Abend</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
@@ -363,9 +370,8 @@
 				<ref type="closeMatch" target="https://d-nb.info/01000372X"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Archiv_der_Gegenwart"/>
 			</item>
-			<item xml:id="AdLESt">
+			<item xml:id="AdLES">
 				<term type="pref" xml:lang="de">Archiv der Ludwig-Erhard-Stiftung</term>
-				<term type="alt" xml:lang="de">AdLESt</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1203669976"/>
@@ -417,13 +423,6 @@
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1246778939"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Airbus_(Zivilflugzeugsparte)"/>
-			</item>
-			<item xml:id="AllgZeitMainz">
-				<term type="pref" xml:lang="de">Allgemeine Zeitung</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">news</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/4751692-6"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Allgemeine_Zeitung_(Mainz)"/>
 			</item>
 			<item xml:id="ArDL">
 				<term type="pref" xml:lang="en">Arthur D. Little</term>
@@ -486,6 +485,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35158-1"/>
+				<ref type="exactMatch" target="http://d-nb.info/gnd/2116689-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesarbeitsgericht"/>
 			</item>
 			<item xml:id="BAMF">
@@ -963,6 +963,14 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5054695-8"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesrat_(Deutschland)"/>
 			</item>
+			<item xml:id="BSB">
+				<term type="pref" xml:lang="de">Bayerische Staatsbibliothek</term>
+				<term type="alt" xml:lang="de">BSB</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">org</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2031351-2"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek"/>
+			</item>
 			<item xml:id="BStU">
 				<term type="pref" xml:lang="de">Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik</term>
 				<term type="alt" xml:lang="de">BStU</term>
@@ -1099,20 +1107,17 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2005486-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayerisches_Hauptstaatsarchiv"/>
 			</item>
+			<item xml:id="BayLV">
+				<term type="pref" xml:lang="de">Bayrische Landvolk-Zeitung</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+			</item>
 			<item xml:id="BayStBk">
 				<term type="pref" xml:lang="de">Bayerische Staatsbank</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2005372-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayerische_Staatsbank"/>
-			</item>
-			<item xml:id="BayStabi">
-				<term type="pref" xml:lang="de">Bayerische Staatsbibliothek</term>
-				<term type="alt" xml:lang="de">BSB</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/2031351-2"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek"/>
 			</item>
 			<item xml:id="Bayern">
 				<term type="pref" xml:lang="de">Freistaat Bayern</term>
@@ -1128,11 +1133,6 @@
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4209049-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayernkurier"/>
-			</item>
-			<item xml:id="BayrLV">
-				<term type="pref" xml:lang="de">Bayrische Landvolk-Zeitung</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">news</note>
 			</item>
 			<item xml:id="BdB">
 				<term type="pref" xml:lang="de">Bundesverband deutscher Banken</term>
@@ -6328,6 +6328,15 @@
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2069391-6"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/VDMA_e.V."/>
+			</item>
+			<item xml:id="VDR">
+				<term type="pref" xml:lang="de">Verband Deutscher Rentenversicherungsträger</term>
+				<term type="alt" xml:lang="de">VDR</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">org</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2000449-7"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/4404190-1"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Verband_Deutscher_Rentenversicherungstr%C3%A4ger"/>
 			</item>
 			<item xml:id="VDS">
 				<term type="pref" xml:lang="de">Verband Deutscher Studentenschaften</term>
