@@ -52,7 +52,7 @@
 {"id": "BayHStA", "synonyms": ["BayHStA", "Bayerisches Hauptstaatsarchiv"]}
 {"id": "BBC", "synonyms": ["BBC", "British Broadcasting Corporation"]}
 {"id": "BBD", "synonyms": ["BBD", "Bundesbaudirektion"]}
-{"id": "BBk", "synonyms": ["BBk", "DBB", "Deutsche Bundesbank"]}
+{"id": "BBank", "synonyms": ["BBk", "DBB", "Deutsche Bundesbank"]}
 {"id": "BBR", "synonyms": ["BBR", "Bundesamt für Bauwesen und Raumordnung"]}
 {"id": "BBU", "synonyms": ["BBU", "Bundesverband Bürgerinitiativen Umweltschutz"]}
 {"id": "BDA", "synonyms": ["BDA", "Bundesvereinigung der Deutschen Arbeitgeberverbände"]}
@@ -186,6 +186,7 @@
 {"id": "Destatis", "synonyms": ["Destatis", "StBA", "Statistisches Bundesamt"]}
 {"id": "DeTeWe", "synonyms": ["DeTeWe", "Deutsche Telephonwerke", "Deutsche Telephonwerke und Kabelindustrie"]}
 {"id": "DeuGK", "synonyms": ["DGK", "Deutsches Grünes Kreuz"]}
+{"id": "DeuMo", "synonyms": ["Deutsches Monatsblatt", "Deutsches Monatsblatt. Christlich-demokratische Zeitung für Politik, Wirtschaft, Kultur"]}
 {"id": "DeuNK", "synonyms": ["DNK", "Deutsches Nationalkomitee für Denkmalschutz"]}
 {"id": "DFB", "synonyms": ["DFB", "Deutscher Fußball-Bund"]}
 {"id": "DFD", "synonyms": ["DFD", "Demokratischer Frauenbund Deutschlands"]}
@@ -236,7 +237,6 @@
 {"id": "DWK", "synonyms": ["DWK", "Deutsche Wirtschaftskommission"]}
 {"id": "DWKern", "synonyms": ["DWK", "Deutsche Gesellschaft für Wiederaufarbeitung von Kernbrennstoffen"]}
 {"id": "DZP", "synonyms": ["DZP", "Deutsche Zentrumspartei", "Zentrum"]}
-{"id": "DZPFraktionBT", "synonyms": ["Bundestagsfraktion der Deutschen Zentrumspartei", "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"]}
 {"id": "DZPFraktionBT", "synonyms": ["Bundestagsfraktion der Deutschen Zentrumspartei", "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"]}
 {"id": "EAP", "synonyms": ["EAP", "Europäische Arbeiter-Partei"]}
 {"id": "ECE", "synonyms": ["ECE", "Economic Commission for Europe", "UNECE", "United Nations Economic Commission for Europe", "Wirtschaftskommission für Europa", "Wirtschaftskommission für Europa der Vereinten Nationen"]}

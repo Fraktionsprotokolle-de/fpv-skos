@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-26">26. November 2026, 08:48 Uhr</date>
+				<date when="2026-11-26">26. November 2026, 13:52 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -349,7 +349,7 @@
 			</item>
 			<item xml:id="AZMainz">
 				<term type="pref" xml:lang="de">Allgemeine Zeitung</term>
-				<term type="pref" xml:lang="de">Mainzer Allgemeine</term>
+				<term type="alt" xml:lang="de">Mainzer Allgemeine</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4751692-6"/>
@@ -544,7 +544,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/75385-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesverband_B%C3%BCrgerinitiativen_Umweltschutz"/>
 			</item>
-			<item xml:id="BBk">
+			<item xml:id="BBank">
 				<term type="pref" xml:lang="de">Deutsche Bundesbank</term>
 				<term type="alt" xml:lang="de">BBk</term>
 				<term type="alt" xml:lang="de">DBB</term>
@@ -1112,7 +1112,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">news</note>
 			</item>
-			<item xml:id="BayStBk">
+			<item xml:id="BayStBank">
 				<term type="pref" xml:lang="de">Bayerische Staatsbank</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
@@ -2090,7 +2090,7 @@
 			</item>
 			<item xml:id="DPFraktionBT">
 				<term type="pref" xml:lang="de">Bundestagsfraktion der Deutschen Partei</term>
-				<term type="pref" xml:lang="de">Fraktion der Deutschen Partei im Deutschen Bundestag</term>
+				<term type="alt" xml:lang="de">Fraktion der Deutschen Partei im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Partei"/>
@@ -2288,7 +2288,7 @@
 			</item>
 			<item xml:id="DZPFraktionBT">
 				<term type="pref" xml:lang="de">Bundestagsfraktion der Deutschen Zentrumspartei</term>
-				<term type="pref" xml:lang="de">Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag</term>
+				<term type="alt" xml:lang="de">Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei"/>
@@ -2344,14 +2344,6 @@
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1067149953"/>
 			</item>
-			<item xml:id="DesdnerB">
-				<term type="pref" xml:lang="de">Dresdner Bank</term>
-				<term type="alt" xml:lang="de">DB</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">com</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/63008-1"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Dresdner_Bank"/>
-			</item>
 			<item xml:id="Destatis">
 				<term type="pref" xml:lang="de">Statistisches Bundesamt</term>
 				<term type="alt" xml:lang="de">StBA</term>
@@ -2362,7 +2354,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2116281-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Statistisches_Bundesamt"/>
 			</item>
-			<item xml:id="DeuBa">
+			<item xml:id="DeuBank">
 				<term type="pref" xml:lang="de">Deutsche Bank</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">com</note>
@@ -2383,6 +2375,13 @@
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4539986-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Deutschland-Magazin"/>
+			</item>
+			<item xml:id="DeuMo">
+				<term type="pref" xml:lang="de">Deutsches Monatsblatt</term>
+				<term type="alt" xml:lang="de">Deutsches Monatsblatt. Christlich-demokratische Zeitung für Politik, Wirtschaft, Kultur</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">news</note>
+				<ref type="closeMatch" target="https://ld.zdb-services.de/resource/42191-1"/>
 			</item>
 			<item xml:id="DeuNK">
 				<term type="pref" xml:lang="de">Deutsches Nationalkomitee für Denkmalschutz</term>
@@ -2428,6 +2427,14 @@
 				<note type="entityType">news</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4560234-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Mlad%C3%A1_fronta_Dnes"/>
+			</item>
+			<item xml:id="DreBank">
+				<term type="pref" xml:lang="de">Dresdner Bank</term>
+				<term type="alt" xml:lang="de">DB</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">com</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/63008-1"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Dresdner_Bank"/>
 			</item>
 			<item xml:id="DtBauernV">
 				<term type="pref" xml:lang="de">Deutscher Bauernverband</term>
