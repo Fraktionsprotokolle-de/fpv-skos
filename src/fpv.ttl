@@ -913,7 +913,7 @@ ex:BergmannBorsig a skos:Concept ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
 
-ex:BerlinerStimme a skos:Concept ;
+ex:BerStimme a skos:Concept ;
   skos:prefLabel "Berliner Stimme"@de ;
   skos:altLabel "Berliner Stimme. Wochenzeitung für Politik, Wirtschaft und Kultur" ;
   skos:altLabel "Berliner Stimme. Sozialdemokratische Wochenzeitung" ;
@@ -923,7 +923,6 @@ ex:BerlinerStimme a skos:Concept ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:closeMatch <https://d-nb.info/014041561> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID ggf. BS oder BerStimme. Erste drei altLabels evtl. löschen.
 
 
 ex:BerMoPo a skos:Concept ;
@@ -949,12 +948,11 @@ ex:BEWAG a skos:Concept ;
 
 ex:Beweg2Juni a skos:Concept ;
   skos:prefLabel "Bewegung 2. Juni"@de ;
-  skos:notation "org"^^fpv:entityType ;
+  skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/4402133-1> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bewegung_2._Juni> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # notation überdenken.
 
 
 ex:BfA a skos:Concept ;
@@ -965,7 +963,6 @@ ex:BfA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2117026-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesversicherungsanstalt_f%C3%BCr_Angestellte> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # notation überdenken.
 
 
 ex:BfArbeit a skos:Concept ;
@@ -1048,7 +1045,7 @@ ex:BHE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2096567-9> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesamtdeutscher_Block_/_Bund_der_Heimatvertriebenen_und_Entrechteten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Prüfen, wo verwendet. siehe auch GBBHE (https://d-nb.info/gnd/2001963-4).
+  # siehe auch GBBHE.
 
 
 ex:BidW a skos:Concept ;
@@ -1120,7 +1117,7 @@ ex:BMAS a skos:Concept ;
   # Zeitraum des Bestehens: 1957-1990, 1990-2002 (andere GND).
 
 
-ex:BMAtom a skos:Concept ;
+ex:BMAt a skos:Concept ;
   skos:prefLabel "Bundesministerium für Atomfragen"@de ;
   skos:altLabel "BMAt"@de ;
   skos:notation "org"^^fpv:entityType ;
@@ -1128,7 +1125,7 @@ ex:BMAtom a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/35168-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Bildung_und_Forschung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # ID ggf. ändern in BMAt.
+  # nicht verwendet.
 
 
 ex:BMB a skos:Concept ;
@@ -1203,9 +1200,10 @@ ex:BMF a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028782-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/3009228-0> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND ab 1990: https://d-nb.info/gnd/3009228-0.
+  # Zeitraum des Bestehens: seit 1969. Vorgänger: Bundesschatzministerium.
 
 
 ex:BMFa a skos:Concept ;
@@ -1261,9 +1259,10 @@ ex:BMI a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028854-2> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_des_Innern,_f%C3%BCr_Bau_und_Heimat> ;
+  skos:exactMatch <https://d-nb.info/gnd/2117465-9> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_des_Innern> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND ab 1990: https://d-nb.info/gnd/2117465-9.
+  # Zeitraum des Bestehens: 1949-2018, seit 2025. 2018-2021: BM des Innern, für Bau und Heimat, 2021-2025: BM des Innern und für Heimat
 
 
 ex:BMJ a skos:Concept ;
@@ -1272,9 +1271,10 @@ ex:BMJ a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028822-0> ;
-  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Justiz_und_f%C3%BCr_Verbraucherschutz> ;
+  skos:exactMatch <https://d-nb.info/gnd/2118801-4> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Justiz> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND ab 1990: https://d-nb.info/gnd/2118801-4.
+  # Zeitraum des Bestehens: 1949-2013, 2021-2025. 2013-2021, seit 2025: BM der Justiz und für Verbraucherschutz.
 
 
 ex:BMJFG a skos:Concept ;
@@ -1329,9 +1329,11 @@ ex:BMV a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2036867-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/2117656-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Verkehr_(Deutschland)> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND ab 1990: https://d-nb.info/gnd/2117656-5.
+  # Zeitraum des Bestehens: 1949-1998, seit 2025. 1998-2005: BM für Verkehr, Bau- und Wohnungswesen.
+  # 2005-2013: BM für Verkehr, Bau und Stadtentwicklung. 2013-2021: BM für Verkehr und Digitale Infrastruktur. 2021-1025: BM für Digitales und Verkehr.
 
 
 ex:BMVg a skos:Concept ;
@@ -1340,9 +1342,9 @@ ex:BMVg a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028830-X> ;
+  skos:exactMatch <https://d-nb.info/gnd/2117075-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_der_Verteidigung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND ab 1990: https://d-nb.info/gnd/2117075-7.
 
 
 ex:BMVt a skos:Concept ;
@@ -1383,9 +1385,10 @@ ex:BMWi a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2028855-4> ;
+  skos:exactMatch <https://d-nb.info/gnd/5029261-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND ab 1990 (bis 1998): https://d-nb.info/gnd/5029261-4.
+  # Zeitraum des Bestehens: 1949-1998.
   # anschließend: BM für Wirtschaft und Technologie (1998-2002), BM für Wirtschaft und Arbeit (2002-2005).
   # zwischenzeitlich: BMWF (1971-1972).
 
@@ -1407,9 +1410,10 @@ ex:BMZ a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/35174-X> ;
+  skos:exactMatch <https://d-nb.info/gnd/5032588-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_wirtschaftliche_Zusammenarbeit_und_Entwicklung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND ab 1990: https://d-nb.info/gnd/5032588-7.
+  # Zeitraum des Bestehens: 1953-1993.
   # ab 1993: BM für Wirtschaftliche Zusammenarbeit und Entwicklung.
 
 
@@ -1469,6 +1473,7 @@ ex:BPA a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2029155-3> ;
+  skos:exactMatch <https://d-nb.info/gnd/2117039-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Presse-_und_Informationsamt_der_Bundesregierung> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1488,10 +1493,8 @@ ex:BPFraktionBT a skos:Concept ;
   skos:altLabel "Fraktion der Bayernpartei im Deutschen Bundestag"@de ;
   skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "false"^^xsd:boolean ;
-  skos:exactMatch <https://d-nb.info/gnd/1020500-7> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bayernpartei> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # GND und Wikipedia identisch mit BP.
 
 
 ex:BPK a skos:Concept ;
@@ -1541,6 +1544,7 @@ ex:BRH a skos:Concept ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/2044205-1> ;
+  skos:exactMatch <https://d-nb.info/gnd/3014165-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesrechnungshof> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
 
@@ -1576,14 +1580,14 @@ ex:BSB a skos:Concept ;
 
 
 ex:BStU a skos:Concept ;
-  skos:prefLabel "Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik"@de ;
-  skos:altLabel "BStU"@de ;
+  skos:prefLabel "BStU"@de ;
+  skos:altLabel "Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik"@de ;
   skos:notation "org"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/5078273-3> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Bundesbeauftragter_f%C3%BCr_die_Stasi-Unterlagen> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Wechsel von prefLabel und altLabel überlegen.
+  # Zeitraum des Bestehens: 1990-2021.
 
 
 ex:BT a skos:Concept ;
@@ -1605,7 +1609,7 @@ ex:BTParlA a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/1043102-0> ;
   skos:exactMatch <https://d-nb.info/gnd/16013267-8> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # prüfen, wo verwendet.
+  # nur in bibliographischen Angaben verwendet.
 
 
 ex:BTPraesident a skos:Concept ;
@@ -1616,7 +1620,10 @@ ex:BTPraesident a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/4377827-6> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Pr%C3%A4sident_des_Deutschen_Bundestages> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # Prüfen, wo verwendet. Ggf. überlegen, wie "Bundestagspräsidentin" abgebildet werden kann.
+  # teils verwendet für Amt, teils für Person.
+  # evtl. streichen (es gibt auch nicht Bundeskanzler oder Bundespräsident, allerdings Reichstagspräsident).
+  # alternativ überlegen, wie "Bundestagspräsidentin" abgebildet werden kann.
+  # Zusammenhang mit BTPraesidium, leider keine Normdaten.
 
 
 ex:BTPraesidium a skos:Concept ;
@@ -4168,7 +4175,7 @@ ex:GBBHE a skos:Concept ;
   skos:exactMatch <https://d-nb.info/gnd/2001963-4> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Gesamtdeutscher_Block/Bund_der_Heimatvertriebenen_und_Entrechteten> ;
   skos:note "Erläuterungen können jetzt hier stehen."@de .
-  # siehe auch BHE (https://d-nb.info/gnd/2096567-9).
+  # siehe auch BHE.
 
 
 ex:GdED a skos:Concept ;
@@ -6811,7 +6818,7 @@ ex:Quick a skos:Concept ;
 ex:RAF a skos:Concept ;
   skos:prefLabel "Rote Armee Fraktion"@de ;
   skos:altLabel "RAF"@de ;
-  skos:notation "org"^^fpv:entityType ;
+  skos:notation "pol"^^fpv:entityType ;
  ex:useInSynonymList "true"^^xsd:boolean ;
   skos:exactMatch <https://d-nb.info/gnd/1007504-5> ;
   skos:closeMatch <https://de.wikipedia.org/wiki/Rote_Armee_Fraktion> ;
