@@ -8432,6 +8432,17 @@ ex:VDMA a skos:Concept ;
   # prüfen, wo verwendet. Zeitraum des Bestehens: seit 1980; Vorgänger (seit 1892): Verband Deutscher Maschinenbau-Anstalten, https://d-nb.info/gnd/2025294-8.
 
 
+ex:VDR a skos:Concept ;
+  skos:prefLabel "Verband Deutscher Rentenversicherungsträger"@de ;
+  skos:altLabel "VDR"@de ;
+  skos:notation "org"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:exactMatch <https://d-nb.info/gnd/2000449-7> ;
+  skos:exactMatch <https://d-nb.info/gnd/4404190-1> ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Verband_Deutscher_Rentenversicherungstr%C3%A4ger> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+
 ex:VdS a skos:Concept ;
   skos:prefLabel "Verband deutscher Soldaten"@de ;
   skos:altLabel "VdS"@de ;
