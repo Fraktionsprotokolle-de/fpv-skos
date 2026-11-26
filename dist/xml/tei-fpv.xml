@@ -7,7 +7,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</publisher>
-				<date when="2026-11-26">26. November 2026, 13:52 Uhr</date>
+				<date when="2026-11-26">26. November 2026, 15:52 Uhr</date>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</licence>
 				</availability>
@@ -671,7 +671,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028862-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Arbeit_und_Soziales"/>
 			</item>
-			<item xml:id="BMAtom">
+			<item xml:id="BMAt">
 				<term type="pref" xml:lang="de">Bundesministerium für Atomfragen</term>
 				<term type="alt" xml:lang="de">BMAt</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
@@ -733,6 +733,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028782-3"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/3009228-0"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Finanzen"/>
 			</item>
 			<item xml:id="BMFT">
@@ -773,7 +774,8 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028854-2"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_des_Innern,_f%C3%BCr_Bau_und_Heimat"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2117465-9"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_des_Innern"/>
 			</item>
 			<item xml:id="BMJ">
 				<term type="pref" xml:lang="de">Bundesministerium der Justiz</term>
@@ -781,7 +783,8 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028822-0"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Justiz_und_f%C3%BCr_Verbraucherschutz"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2118801-4"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Justiz"/>
 			</item>
 			<item xml:id="BMJFG">
 				<term type="pref" xml:lang="de">Bundesministerium für Jugend, Familie, Frauen und Gesundheit</term>
@@ -821,6 +824,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2036867-7"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2117656-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Verkehr_(Deutschland)"/>
 			</item>
 			<item xml:id="BMVg">
@@ -829,6 +833,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028830-X"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2117075-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_der_Verteidigung"/>
 			</item>
 			<item xml:id="BMVt">
@@ -862,6 +867,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2028855-4"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/5029261-4"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Wirtschaft_und_Energie"/>
 			</item>
 			<item xml:id="BMWo">
@@ -878,6 +884,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/35174-X"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/5032588-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_wirtschaftliche_Zusammenarbeit_und_Entwicklung"/>
 			</item>
 			<item xml:id="BND">
@@ -904,6 +911,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2029155-3"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/2117039-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Presse-_und_Informationsamt_der_Bundesregierung"/>
 			</item>
 			<item xml:id="BPFraktionBT">
@@ -911,7 +919,6 @@
 				<term type="alt" xml:lang="de">Fraktion der Bayernpartei im Deutschen Bundestag</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">pol</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/1020500-7"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayernpartei"/>
 			</item>
 			<item xml:id="BPK">
@@ -945,6 +952,7 @@
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/2044205-1"/>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/3014165-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bundesrechnungshof"/>
 			</item>
 			<item xml:id="BRRH">
@@ -972,8 +980,8 @@
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek"/>
 			</item>
 			<item xml:id="BStU">
-				<term type="pref" xml:lang="de">Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik</term>
-				<term type="alt" xml:lang="de">BStU</term>
+				<term type="pref" xml:lang="de">BStU</term>
+				<term type="alt" xml:lang="de">Der/Die Bundesbeauftragte für die Unterlagen des Staatssicherheitsdienstes der ehemaligen Deutschen Demokratischen Republik</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
 				<note type="entityType">org</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/5078273-3"/>
@@ -1192,14 +1200,7 @@
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4439183-3"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Berliner_Morgenpost"/>
 			</item>
-			<item xml:id="BergmannBorsig">
-				<term type="pref" xml:lang="de">Bergmann-Borsig</term>
-				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">com</note>
-				<ref type="exactMatch" target="https://d-nb.info/gnd/7533735-6"/>
-				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bergmann-Borsig"/>
-			</item>
-			<item xml:id="BerlinerStimme">
+			<item xml:id="BerStimme">
 				<term type="pref" xml:lang="de">Berliner Stimme</term>
 				<term type="alt" xml:lang="de">Berliner Stimme. Wochenzeitung für Politik, Wirtschaft und Kultur</term>
 				<term type="alt" xml:lang="de">Berliner Stimme. Sozialdemokratische Wochenzeitung</term>
@@ -1209,10 +1210,17 @@
 				<note type="entityType">news</note>
 				<ref type="closeMatch" target="https://d-nb.info/014041561"/>
 			</item>
+			<item xml:id="BergmannBorsig">
+				<term type="pref" xml:lang="de">Bergmann-Borsig</term>
+				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
+				<note type="entityType">com</note>
+				<ref type="exactMatch" target="https://d-nb.info/gnd/7533735-6"/>
+				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bergmann-Borsig"/>
+			</item>
 			<item xml:id="Beweg2Juni">
 				<term type="pref" xml:lang="de">Bewegung 2. Juni</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
+				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/4402133-1"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Bewegung_2._Juni"/>
 			</item>
@@ -5119,7 +5127,7 @@
 				<term type="pref" xml:lang="de">Rote Armee Fraktion</term>
 				<term type="alt" xml:lang="de">RAF</term>
 				<note type="definition" xml:lang="de">Erläuterungen können jetzt hier stehen.</note>
-				<note type="entityType">org</note>
+				<note type="entityType">pol</note>
 				<ref type="exactMatch" target="https://d-nb.info/gnd/1007504-5"/>
 				<ref type="closeMatch" target="https://de.wikipedia.org/wiki/Rote_Armee_Fraktion"/>
 			</item>

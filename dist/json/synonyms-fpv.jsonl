@@ -64,7 +64,7 @@
 {"id": "BdL", "synonyms": ["Bank deutscher Länder", "BdL"]}
 {"id": "BdSt", "synonyms": ["BDSt", "Bund Deutscher Steuerbeamter", "Deutsche Steuer-Gewerkschaft"]}
 {"id": "BdV", "synonyms": ["BdV", "Bund der Vertriebenen", "Bund der Vertriebenen – Vereinigte Landsmannschaften und Landesverbände"]}
-{"id": "BerlinerStimme", "synonyms": ["BS", "Berliner Stimme", "Berliner Stimme. Sozialdemokratische Wochenzeitung", "Berliner Stimme. Wochenzeitung für Politik, Wirtschaft und Kultur", "Berliner Stimme. Zeitung der Berliner Sozialdemokratie"]}
+{"id": "BerStimme", "synonyms": ["BS", "Berliner Stimme", "Berliner Stimme. Sozialdemokratische Wochenzeitung", "Berliner Stimme. Wochenzeitung für Politik, Wirtschaft und Kultur", "Berliner Stimme. Zeitung der Berliner Sozialdemokratie"]}
 {"id": "BerMoPo", "synonyms": ["Berliner Morgenpost", "MoPo"]}
 {"id": "BEWAG", "synonyms": ["BEWAG", "Berliner Städtische Elektrizitätswerke Aktiengesellschaft"]}
 {"id": "BfA", "synonyms": ["BfA", "Bundesversicherungsanstalt für Angestellte"]}
@@ -80,7 +80,7 @@
 {"id": "BKA", "synonyms": ["BKA", "Bundeskriminalamt"]}
 {"id": "BMA", "synonyms": ["BMA", "Bundesministerium für Arbeit"]}
 {"id": "BMAS", "synonyms": ["BMA", "Bundesministerium für Arbeit und Sozialordnung"]}
-{"id": "BMAtom", "synonyms": ["BMAt", "Bundesministerium für Atomfragen"]}
+{"id": "BMAt", "synonyms": ["BMAt", "Bundesministerium für Atomfragen"]}
 {"id": "BMB", "synonyms": ["BMB", "Bundesministerium für innerdeutsche Beziehungen"]}
 {"id": "BMBR", "synonyms": ["BMBR", "Bundesministerium für Angelegenheiten des Bundesrates und der Länder"]}
 {"id": "BMBW", "synonyms": ["BMBW", "Bundesministerium für Bildung und Wissenschaft"]}
