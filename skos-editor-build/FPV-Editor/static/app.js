@@ -1014,11 +1014,17 @@ async function refreshBackupStatus() {
 
 function matchesFilter(r, term, typeFilter) {
   if (typeFilter) {
-    if (r.protected || r.type !== typeFilter) return false;
+    const types = Array.isArray(r.types) && r.types.length ? r.types : (r.type ? [r.type] : []);
+    if (!types.includes(typeFilter)) return false;
   }
   if (!term) return true;
   const altTexts = (r.alts || []).map((a) => (a && typeof a === "object" ? a.text : a));
-  const hay = [r.id, r.pref, ...altTexts, ...(r.exact || []), ...(r.close || []), ...(r.related || [])]
+  const prefTexts = Array.isArray(r.prefs) && r.prefs.length ? r.prefs : (r.pref ? [r.pref] : []);
+  const hay = [
+    r.id, ...prefTexts, ...altTexts,
+    ...(r.exact || []), ...(r.close || []), ...(r.related || []),
+    r.note, r.raw,
+  ]
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
@@ -1111,7 +1117,7 @@ function renderTree() {
 
   const groups = {};
   for (const r of visible) {
-    const label = r.protected ? r.id : (r.pref || r.id);
+    const label = r.pref || r.id;
     const letter = groupLetterFor(label);
     (groups[letter] = groups[letter] || []).push(r);
   }
@@ -1127,8 +1133,8 @@ function renderTree() {
   for (const letter of letters) {
     const group = groups[letter];
     group.sort((a, b) => {
-      const la = a.protected ? a.id : (a.pref || a.id);
-      const lb = b.protected ? b.id : (b.pref || b.id);
+      const la = a.pref || a.id;
+      const lb = b.pref || b.id;
       return la.localeCompare(lb, "de");
     });
 
@@ -1157,9 +1163,9 @@ function renderTree() {
       // Marker, damit ein Befund im rechten Panel gezielt zu dieser Zeile
       // scrollen kann (siehe jumpToConcept).
       row.setAttribute("data-concept-id", r.id);
-      const prefText = r.protected ? r.id : r.pref || "(ohne Bezeichnung)";
-      const typeCode = r.protected ? "?" : (r.type || "?");
-      const typeClass = r.protected ? "" : ` t-${escapeHtml(r.type || "")}`;
+      const prefText = r.pref || (r.protected ? r.id : "(ohne Bezeichnung)");
+      const typeCode = r.type || "?";
+      const typeClass = r.type ? ` t-${escapeHtml(r.type)}` : "";
       row.innerHTML =
         `<div class="pref">${escapeHtml(prefText)}</div>` +
         `<div class="meta"><span>ex:${escapeHtml(r.id)}</span><span class="type-pill${typeClass}">${escapeHtml(typeCode)}</span></div>`;
@@ -1354,7 +1360,7 @@ function relatedIds() {
 }
 
 function recordLabel(rec) {
-  return rec.protected ? "" : rec.pref || "";
+  return rec.pref || "";
 }
 
 function addRelatedRow(id) {
@@ -1421,7 +1427,7 @@ function relatedCandidates(term) {
   for (const r of App.state.records) {
     if (r.id === own || chosen.has(r.id)) continue;
     const label = recordLabel(r);
-    const alts = r.protected ? [] : (r.alts || []).map((a) => (typeof a === "string" ? a : a.text)).filter(Boolean);
+    const alts = (r.alts || []).map((a) => (typeof a === "string" ? a : a.text)).filter(Boolean);
     const idL = r.id.toLowerCase();
     const labL = label.toLowerCase();
     const altHit = alts.find((a) => a.toLowerCase().includes(t));
@@ -1646,25 +1652,38 @@ function protectedShort(rec) {
 function showProtectedEditor(rec) {
   document.getElementById("editor-empty").style.display = "none";
   document.getElementById("editor-form").style.display = "block";
-  document.getElementById("editor-title").textContent = rec.id;
+  document.getElementById("editor-title").textContent = rec.pref || rec.id;
   document.getElementById("editor-subline").textContent =
-    `ex:${rec.id} \u00b7 gesch\u00fctzter Block` + (rec.line ? ` \u00b7 ab Zeile ${rec.line}` : "");
+    `ex:${rec.id}` + (rec.type ? ` \u00b7 ${rec.type}` : "") + " \u00b7 gesch\u00fctzter Block" + (rec.line ? ` \u00b7 ab Zeile ${rec.line}` : "");
 
+  const hasError = ((App.state && App.state.findings) || []).some(
+    (f) => f.level === "error" && f.concept_id === rec.id
+  );
   const notice = document.getElementById("protected-notice");
+  notice.className = "finding " + (hasError ? "error" : "warning");
   notice.style.display = "block";
   notice.textContent = explainProtected(rec);
 
-  // Quelltext des Blocks anzeigen, damit erkennbar ist, WAS genau das
-  // Problem verursacht — vorher blieb der Block komplett unsichtbar.
+  // Quelltext des Blocks anzeigen und problematische Zeilen rot markieren.
   const rawWrap = document.getElementById("protected-raw-wrap");
   const rawPre = document.getElementById("protected-raw");
   if (rec.raw) {
     rawPre.textContent = "";
-    const badPred = ((rec.protect_reason || "").match(/Unbekanntes Pr\u00e4dikat im Block: '(.+)'/) || [])[1];
+    const reason = rec.protect_reason || "";
+    const badPred = (reason.match(/Unbekanntes Pr\u00e4dikat im Block: '(.+)'/) || [])[1];
+    const multiPref = /skos:prefLabel/.test(reason);
+    const multiNotation = /skos:notation/.test(reason);
     rec.raw.split("\n").forEach((line) => {
       const span = document.createElement("span");
       span.textContent = line;
-      if (badPred && line.trim().startsWith(badPred + " ")) span.className = "bad-line";
+      const trimmed = line.trim();
+      if (
+        (badPred && trimmed.startsWith(badPred + " ")) ||
+        (multiPref && /^skos:prefLabel\b/.test(trimmed)) ||
+        (multiNotation && /^skos:notation\b/.test(trimmed))
+      ) {
+        span.className = "bad-line";
+      }
       rawPre.appendChild(span);
     });
     rawWrap.style.display = "block";
@@ -1981,7 +2000,7 @@ function jumpToConcept(id) {
     filter.value = "";
   }
   // Buchstabengruppe VOR selectRecordSilently aufklappen, damit renderTree nur einmal laeuft.
-  const label = record.protected ? record.id : (record.pref || record.id);
+  const label = record.pref || record.id;
   App.expandedLetters.add(groupLetterFor(label));
   selectRecordSilently(id);
   const node = document.querySelector(`[data-concept-id="${cssEscape(id)}"]`);
@@ -2911,7 +2930,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const typeFilter = document.getElementById("tree-type-filter").value;
     const records = (App.state ? App.state.records : []).filter((r) => matchesFilter(r, term, typeFilter));
     for (const r of records) {
-      const label = r.protected ? r.id : r.pref || r.id;
+      const label = r.pref || r.id;
       App.expandedLetters.add(groupLetterFor(label));
     }
     renderTree();

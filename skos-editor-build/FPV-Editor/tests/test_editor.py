@@ -1965,3 +1965,62 @@ def test_styles_css_served_and_linked(env):
     assert "showConfirmModal" in js
     assert "showBanner" in js
     assert "appendTechDetails" in js
+
+
+def test_multiple_preflabel_is_reported_as_error_and_exposes_search_metadata(env, tmp_path):
+    """Praxisfall ex:DZPFraktionBT: Ein Block mit 2 skos:prefLabel bleibt zum
+    Schutz nicht im Formular bearbeitbar, muss aber (1) im Pruefungspanel als
+    FEHLER ausgewiesen werden und (2) seine Labels/Typ/Links fuer Suche,
+    Typfilter und Baumanzeige mitliefern, ohne das Speichern anderer Konzepte
+    zu blockieren."""
+    sample = SAMPLE + """
+ex:DZPFraktionBT a skos:Concept ;
+  skos:prefLabel "Bundestagsfraktion der Deutschen Zentrumspartei"@de ;
+  skos:prefLabel "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag"@de ;
+  skos:notation "pol"^^fpv:entityType ;
+ ex:useInSynonymList "true"^^xsd:boolean ;
+  skos:closeMatch <https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei> ;
+  skos:note "Erläuterungen können jetzt hier stehen."@de .
+
+ex:KommentarMitFehler a skos:Concept ;
+  # Kommentar schuetzt den Block
+  skos:prefLabel "Eintrag mit Kommentar und kaputtem Link"@de ;
+  skos:notation "org"^^xsd:string ;
+  ex:useInSynonymList "false"^^xsd:boolean ;
+  skos:closeMatch <hhttps://de.wikipedia.org/wiki/Tippfehler> ;
+  skos:note "Notiz."@de .
+"""
+    ttl_path = tmp_path / "multi_pref.ttl"
+    ttl_path.write_bytes(sample.encode("utf-8"))
+    env = dict(env)
+    env["ttl_path"] = str(ttl_path)
+
+    state = _open(env)
+    dzp = _record(state, "DZPFraktionBT")
+    assert dzp["protected"] is True
+    assert dzp["pref"] == "Bundestagsfraktion der Deutschen Zentrumspartei"
+    assert len(dzp["prefs"]) == 2
+    assert "Fraktion der Deutschen Zentrumspartei im Deutschen Bundestag" in dzp["prefs"]
+    assert dzp["type"] == "pol"
+    assert dzp["close"] == ["https://de.wikipedia.org/wiki/Deutsche_Zentrumspartei"]
+
+    dzp_findings = [f for f in state["findings"] if f["concept_id"] == "DZPFraktionBT"]
+    assert any(f["level"] == "error" and "Mehrfaches skos:prefLabel (2×)" in f["message"] for f in dzp_findings)
+    # Kein redundanter doppelter Schutz-Hinweis fuer exakt denselben Fehler.
+    assert not any(f["level"] == "warning" for f in dzp_findings)
+
+    # Auch echte Fehler IN einem kommentar-geschuetzten Block werden gemeldet (plus Schutz-Hinweis).
+    kmf_findings = [f for f in state["findings"] if f["concept_id"] == "KommentarMitFehler"]
+    assert any(f["level"] == "error" and "xsd:string" in f["message"] for f in kmf_findings)
+    assert any(f["level"] == "error" and "closeMatch-Link" in f["message"] for f in kmf_findings)
+    assert any(f["level"] == "warning" for f in kmf_findings)
+
+    # Speichern eines ANDEREN gueltigen Konzepts darf durch diesen Altfehler nicht blockiert werden.
+    abb = _record(state, "ABB")
+    abb["note"] = "Speichern trotz fremdem Doppel-prefLabel."
+    status, resp = _post(env, "/api/save-batch", {
+        "version": state["sha256"],
+        "items": [{"original_id": "ABB", "data": abb}],
+    })
+    assert status == 200, resp
+    assert _record(resp, "ABB")["note"] == "Speichern trotz fremdem Doppel-prefLabel."

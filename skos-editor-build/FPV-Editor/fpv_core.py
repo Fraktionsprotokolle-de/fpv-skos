@@ -515,6 +515,240 @@ def _escape_literal(s: str) -> str:
     return normalize_single_line(s).replace("\\", "\\\\").replace('"', '\\"')
 
 
+def _strip_turtle_comments(raw: str) -> str:
+    """Entfernt Turtle-Kommentare (# bis Zeilenende) außerhalb von Strings
+    ("..." bzw. \"\"\"...\"\"\") und URIs (<...>), damit geschützte Blöcke
+    trotz Kommentaren sicher lesend ausgewertet werden können."""
+    out = []
+    i = 0
+    n = len(raw)
+    in_string = False
+    in_triple = False
+    in_uri = False
+    while i < n:
+        ch = raw[i]
+        if in_triple:
+            if raw[i:i + 3] == '"""':
+                out.append('"""')
+                in_triple = False
+                i += 3
+                continue
+            out.append(ch)
+            i += 1
+            continue
+        if in_string:
+            out.append(ch)
+            if ch == "\\" and i + 1 < n:
+                out.append(raw[i + 1])
+                i += 2
+                continue
+            if ch == '"':
+                in_string = False
+            i += 1
+            continue
+        if in_uri:
+            out.append(ch)
+            if ch == ">":
+                in_uri = False
+            i += 1
+            continue
+        if ch == '"':
+            if raw[i:i + 3] == '"""':
+                in_triple = True
+                out.append('"""')
+                i += 3
+                continue
+            in_string = True
+            out.append(ch)
+            i += 1
+            continue
+        if ch == "<":
+            in_uri = True
+            out.append(ch)
+            i += 1
+            continue
+        if ch == "#":
+            nl = raw.find("\n", i)
+            if nl == -1:
+                break
+            out.append("\n")
+            i = nl + 1
+            continue
+        out.append(ch)
+        i += 1
+    return "".join(out)
+
+
+def extract_readonly_metadata(block: Block) -> dict:
+    """Liest aus einem (auch geschützten) Block alle sicher erkennbaren Felder
+    rein lesend aus – für Suche, Typfilter, Baumanzeige und Fehlerprüfung.
+    Verändert den Block nie."""
+    cleaned = _strip_turtle_comments(block.raw)
+    header_m = _BLOCK_START_RE.match(cleaned)
+    body = cleaned[header_m.end():] if header_m else ""
+    try:
+        segments = _split_top_level_statements(body)
+    except Exception:
+        segments = []
+
+    prefs = []
+    pref_lang = "de"
+    alts = []
+    types = []
+    notations_raw = []
+    exact = []
+    close = []
+    related = []
+    note = ""
+    has_note = False
+    unknown_predicates = []
+    has_non_ex_related = False
+
+    for seg in segments:
+        parts = seg.strip().split(None, 1)
+        if len(parts) < 1:
+            continue
+        predicate = parts[0]
+        value = parts[1].strip() if len(parts) > 1 else ""
+        if predicate not in KNOWN_PREDICATES:
+            unknown_predicates.append(predicate)
+            continue
+
+        lit = _LITERAL_RE.match(value)
+        uri = _URI_RE.match(value)
+
+        if predicate == "skos:prefLabel":
+            if lit:
+                prefs.append(_unescape_literal(lit.group(1)))
+                if len(prefs) == 1 and lit.group(2):
+                    pref_lang = lit.group(2)
+        elif predicate == "skos:altLabel":
+            if lit:
+                alts.append({"text": _unescape_literal(lit.group(1)), "lang": lit.group(2)})
+        elif predicate == "skos:notation":
+            if lit:
+                val = _unescape_literal(lit.group(1))
+                types.append(val)
+                notations_raw.append((val, lit.group(3)))
+        elif predicate == "skos:exactMatch":
+            if uri:
+                exact.append(uri.group(1))
+        elif predicate == "skos:closeMatch":
+            if uri:
+                close.append(uri.group(1))
+        elif predicate == "skos:note":
+            has_note = True
+            if lit:
+                note = _unescape_literal(lit.group(1))
+        elif predicate == "skos:related":
+            ids = _parse_related_objects(value)
+            if ids:
+                related.extend(ids)
+            else:
+                has_non_ex_related = True
+
+    for alt in alts:
+        if not alt.get("lang"):
+            alt["lang"] = pref_lang
+
+    has_triple = '"""' in block.raw or "'''" in block.raw
+    has_comment = cleaned != block.raw
+    return {
+        "pref": prefs[0] if prefs else "",
+        "prefs": prefs,
+        "lang": pref_lang,
+        "alts": alts,
+        "type": types[0] if types else "",
+        "types": types,
+        "notations_raw": notations_raw,
+        "exact": exact,
+        "close": close,
+        "related": related,
+        "note": note,
+        "has_note": has_note,
+        "unknown_predicates": unknown_predicates,
+        "has_comment": has_comment,
+        "has_triple_quote": has_triple,
+        "has_non_ex_related": has_non_ex_related,
+    }
+
+
+def _validate_protected_block(block: Block) -> list:
+    """Prüft auch geschützte Blöcke auf echte SKOS/FPV-Fehler (z. B. mehrere
+    skos:prefLabel, fehlende/mehrfache/ungültige skos:notation, fehlerhafte
+    URLs), damit extern angelegte Fehler im Prüfungspanel als Fehler erscheinen."""
+    meta = extract_readonly_metadata(block)
+    block_errors = []
+
+    if len(meta["prefs"]) == 0 and not meta["has_triple_quote"]:
+        block_errors.append(Finding(
+            "error",
+            "skos:prefLabel fehlt (erforderlich: genau eine bevorzugte Benennung).",
+            block.id,
+        ))
+    elif len(meta["prefs"]) > 1:
+        block_errors.append(Finding(
+            "error",
+            f"Mehrfaches skos:prefLabel ({len(meta['prefs'])}×): Jeder Eintrag darf genau eine "
+            "bevorzugte Benennung haben (weitere Benennungen gehören in skos:altLabel).",
+            block.id,
+        ))
+
+    if len(meta["types"]) == 0:
+        block_errors.append(Finding("error", "skos:notation (Typcode) fehlt.", block.id))
+    elif len(meta["types"]) > 1:
+        block_errors.append(Finding(
+            "error",
+            f"Mehrfaches skos:notation ({len(meta['types'])}×): Ein Eintrag darf nur eine Typangabe haben.",
+            block.id,
+        ))
+
+    for val, dt in meta["notations_raw"]:
+        if val not in TYPE_CODES:
+            block_errors.append(Finding(
+                "error",
+                f"Typcode '{val}' ist ungültig. Erlaubt: {', '.join(sorted(TYPE_CODES))}.",
+                block.id,
+            ))
+        if dt is None:
+            block_errors.append(Finding(
+                "error",
+                f'skos:notation "{val}" ohne Datentyp-Angabe (erwartet ^^fpv:entityType).',
+                block.id,
+            ))
+        elif dt != "fpv:entityType":
+            block_errors.append(Finding(
+                "error",
+                f'skos:notation "{val}" hat den Datentyp ^^{dt} statt des erwarteten ^^fpv:entityType.',
+                block.id,
+            ))
+
+    for uri in meta["exact"]:
+        if not (uri.startswith("http://") or uri.startswith("https://")):
+            block_errors.append(Finding("error", f"exactMatch-Link ungültig (kein http/https): {uri}", block.id))
+    for uri in meta["close"]:
+        if not (uri.startswith("http://") or uri.startswith("https://")):
+            block_errors.append(Finding("error", f"closeMatch-Link ungültig (kein http/https): {uri}", block.id))
+
+    out = list(block_errors)
+    # Schutz-Hinweis nur ergänzen, wenn ein nicht-fehlerbedingter Schutzgrund
+    # vorliegt (z. B. unbekanntes Prädikat, Kommentar, dreifache Anführungszeichen)
+    # oder gar kein konkreter Fehler ermittelt wurde.
+    has_other_protection = (
+        bool(meta["unknown_predicates"])
+        or meta["has_comment"]
+        or meta["has_triple_quote"]
+        or meta["has_non_ex_related"]
+    )
+    if has_other_protection or not block_errors:
+        out.append(Finding(
+            "warning",
+            f"Block wird zum Schutz vor Informationsverlust nicht geprüft: {block.protect_reason}",
+            block.id,
+        ))
+    return out
+
+
 def parse_block_to_record(block: Block) -> Record:
     """Parst einen (nicht geschützten) Block in ein Formularmodell.
     Wirft ProtectedBlockError, falls der Block geschützt ist."""
@@ -736,15 +970,11 @@ def validate_whole_file_with_graph(text: str, graph: Optional[Graph] = None):
             findings.append(Finding("error", f"Turtle ist syntaktisch ungültig: {exc}"))
             return findings, None, {}  # Feldprüfung ohne gültiges Parsing wenig sinnvoll
 
-    # 3) Feldregeln je Block.
+    # 3) Feldregeln je Block (inkl. echter Fehler in geschützten Blöcken).
     existing_ids = set(seen.keys())
     for block in iter_all_blocks(text):
         if block.protected:
-            findings.append(Finding(
-                "warning",
-                f"Block wird zum Schutz vor Informationsverlust nicht geprüft: {block.protect_reason}",
-                block.id,
-            ))
+            findings.extend(_validate_protected_block(block))
             continue
         try:
             rec = parse_block_to_record(block)
@@ -1691,14 +1921,23 @@ def build_state(loaded: LoadedFile, *, findings: Optional[list] = None) -> dict:
         findings = validate_whole_file(loaded.text)
     for block in iter_all_blocks(loaded.text):
         if block.protected:
+            meta = extract_readonly_metadata(block)
             records.append({
                 "id": block.id,
+                "pref": meta["pref"],
+                "prefs": meta["prefs"],
+                "lang": meta["lang"],
+                "type": meta["type"],
+                "types": meta["types"],
+                "alts": meta["alts"],
+                "exact": meta["exact"],
+                "close": meta["close"],
+                "related": meta["related"],
+                "note": meta["note"],
                 "protected": True,
                 "protect_reason": block.protect_reason,
                 # Rohtext des Blocks mitliefern, damit die Oberfläche bei
-                # geschützten Blöcken wenigstens ANZEIGEN kann, was drinsteht.
-                # Vorher sah der Nutzer nur "geschützt" ohne jeden Hinweis
-                # darauf, welche Zeile das Problem verursacht.
+                # geschützten Blöcken ANZEIGEN und durchsuchen kann, was drinsteht.
                 "raw": block.raw,
                 "line": loaded.text.count("\n", 0, block.start) + 1,
             })
